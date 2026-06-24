@@ -19,7 +19,7 @@ addLayer("settings", {
             style: { width: '125px', minHeight: '50px', color: "var(--textColor)", background: "var(--miscButtonDisable)", borderRadius: '0px', border: "3px solid var(--regBorder)", margin: "0px 5px" },
         },
         4: {
-            title() { return "Savebank<br><small style='color:#f44'>[HEAVILY WIP]</small>" },
+            title() { return "Savebank<br><small style='color:#f44'>[高度开发中]</small>" },
             canClick() { return true },
             unlocked() { return true },
             onClick() {
@@ -46,7 +46,7 @@ addLayer("settings", {
             style: { width: '125px', minHeight: '50px', color: "var(--textColor)", background: "var(--miscButtonDisable)", borderRadius: '0px', border: "3px solid var(--regBorder)", margin: "0px 5px" },
         },
         11: {
-            title() { return "Save" },
+            title() { return "保存" },
             canClick: true,
             unlocked: true,
             onClick() {
@@ -55,7 +55,7 @@ addLayer("settings", {
             style: { width: '100px', minHeight: '80px', color: "var(--textColor)", background: "var(--miscButton)", borderRadius: '0', border: "3px solid var(--miscButtonDisable)"},
         },
         13: {
-            title() { return "Import String" },
+            title() { return "导入存档" },
             canClick: true,
             unlocked: true,
             onClick() {
@@ -64,7 +64,7 @@ addLayer("settings", {
             style: { width: '100px', minHeight: '80px', color: "var(--textColor)", background: "var(--miscButton)", borderRadius: '0', border: "3px solid var(--miscButtonDisable)"},
         },
         14: {
-            title() { return "Autosave<hr style='border:1px solid #888;margin-top:1px'>" + options.autosave },
+            title() { return "自动保存<hr style='border:1px solid #888;margin-top:1px'>" + options.autosave },
             canClick: true,
             unlocked: true,
             onClick() {
@@ -82,7 +82,7 @@ addLayer("settings", {
             style: { width: '100px', minHeight: '80px', color: "var(--textColor)", background: "var(--miscButton)", borderRadius: '0', border: "3px solid var(--miscButtonDisable)"},
         },
         16: {
-            title() { return "Export to Clipboard" },
+            title() { return "导出到剪贴板" },
             canClick: true,
             unlocked: true,
             onClick() {
@@ -91,7 +91,7 @@ addLayer("settings", {
             style: { width: '100px', minHeight: '80px', color: "var(--textColor)", background: "var(--miscButton)", borderRadius: '0', border: "3px solid var(--miscButtonDisable)"},
         },
         17: {
-            title() { return "HARD RESET" },
+            title() { return "硬重置" },
             canClick: true,
             unlocked: true,
             onClick() {
@@ -100,17 +100,17 @@ addLayer("settings", {
             style: { width: '100px', minHeight: '80px', color: "#c88", background: "#300", borderRadius: '0', border: "3px solid #200"},
         },
         18: {
-            title() { return "Save Backup" },
+            title() { return "保存备份" },
             canClick: true,
             unlocked: true,
-            tooltip() {return "Saves a backup of your save.<br>Doesn't protect you from cache clears,<br>but does from corruption.<br>Only way to definitively prevent save loss<br>is regularly exporting your files."},
+            tooltip() {return "保存你的存档备份。<br>不能防止缓存清除，<br>但可以防止损坏。<br>彻底防止存档丢失的唯一方法<br>是定期导出你的文件。"},
             onClick() {
                 saveBackup()
             },
             style: { width: '100px', minHeight: '80px', color: "var(--textColor)", background: "var(--miscButton)", borderRadius: '0', border: "3px solid var(--miscButtonDisable)"},
         },
         19: {
-            title() { return "Load Backup<br><div style='color:#c88;background:#300;font-size:10px;border:3px solid #200;line-height:1;margin-bottom:-20px;margin-top:2px'>RESETS CURRENT SAVE</div>" },
+            title() { return "加载备份<br><div style='color:#c88;background:#300;font-size:10px;border:3px solid #200;line-height:1;margin-bottom:-20px;margin-top:2px'>会重置当前存档</div>" },
             canClick: true,
             unlocked: true,
             onClick() {
@@ -119,7 +119,7 @@ addLayer("settings", {
             style: { width: '100px', minHeight: '80px', color: "var(--textColor)", background: "var(--miscButton)", borderRadius: '0', border: "3px solid var(--miscButtonDisable)"},
         },
         21: {
-            title() { return "Hide Milestone Popups<hr style='border:1px solid #888;margin-top:1px'>" + options.hideMilestonePopups },
+            title() { return "隐藏里程碑弹窗<hr style='border:1px solid #888;margin-top:1px'>" + options.hideMilestonePopups },
             canClick: true,
             unlocked: true,
             onClick() {
@@ -128,7 +128,7 @@ addLayer("settings", {
             style: { width: '100px', minHeight: '60px', color: "var(--textColor)", background: "var(--miscButton)", fontSize: "8px", lineHeight: "1", borderRadius: '0', border: "3px solid var(--miscButtonDisable)"},
         },
         22: {
-            title() { return "Hide Achievement Popups<hr style='border:1px solid #888;margin-top:1px'>" + options.hideAchievementPopups },
+            title() { return "隐藏成就弹窗<hr style='border:1px solid #888;margin-top:1px'>" + options.hideAchievementPopups },
             canClick: true,
             unlocked: true,
             onClick() {
@@ -137,7 +137,7 @@ addLayer("settings", {
             style: { width: '100px', minHeight: '60px', color: "var(--textColor)", background: "var(--miscButton)", fontSize: "8px", lineHeight: "1", borderRadius: '0', border: "3px solid var(--miscButtonDisable)"},
         },
         23: {
-            title() { return "Hide General Popups<hr style='border:1px solid #888;margin-top:1px'>" + options.hideGeneralPopups },
+            title() { return "隐藏通用弹窗<hr style='border:1px solid #888;margin-top:1px'>" + options.hideGeneralPopups },
             canClick: true,
             unlocked: true,
             onClick() {
@@ -146,7 +146,7 @@ addLayer("settings", {
             style: { width: '100px', minHeight: '60px', color: "var(--textColor)", background: "var(--miscButton)", fontSize: "8px", lineHeight: "1", borderRadius: '0', border: "3px solid var(--miscButtonDisable)"},
         },
         24: {
-            title() { return "Instant Cutscene Text<hr style='border:1px solid #888;margin-top:1px'>" + options.instantCutsceneText },
+            title() { return "即时过场文本<hr style='border:1px solid #888;margin-top:1px'>" + options.instantCutsceneText },
             canClick: true,
             unlocked: true,
             onClick() {
@@ -155,7 +155,7 @@ addLayer("settings", {
             style: { width: '100px', minHeight: '60px', color: "var(--textColor)", background: "var(--miscButton)", fontSize: "8px", lineHeight: "1", borderRadius: '0', border: "3px solid var(--miscButtonDisable)"},
         },
         25: {
-            title() { return "Canvas Performance Mode<hr style='border:1px solid #888;margin-top:1px'>" + options.performanceMode },
+            title() { return "画布性能模式<hr style='border:1px solid #888;margin-top:1px'>" + options.performanceMode },
             canClick: true,
             unlocked: true,
             tooltip: "Disables fancy backgrounds and removes shadows from canvas elements.",
@@ -165,7 +165,7 @@ addLayer("settings", {
             style: { width: '100px', minHeight: '60px', color: "var(--textColor)", background: "var(--miscButton)", fontSize: "8px", lineHeight: "1", borderRadius: '0', border: "3px solid var(--miscButtonDisable)"},
         },
         26: {
-            title() { return player.depth3.milestone[25] == 0 ? "[FEATURE NOT UNLOCKED]" : "Bullet Hell Keyboard Controls<hr style='border:1px solid #888;margin-top:1px'>" + options.bhKeyboard },
+            title() { return player.depth3.milestone[25] == 0 ? "[功能未解锁]" : "弹幕地狱键盘控制<hr style='border:1px solid #888;margin-top:1px'>" + options.bhKeyboard },
             canClick() {return player.depth3.milestone[25] > 0},
             unlocked: true,
             onClick() {
@@ -179,7 +179,7 @@ addLayer("settings", {
         },
 
         27: {
-            title() { return "Toggle Hotkeys<hr style='border:1px solid #888;margin-top:1px'>" + options.toggleHotkey },
+            title() { return "切换快捷键<hr style='border:1px solid #888;margin-top:1px'>" + options.toggleHotkey },
             canClick: true,
             unlocked: true,
             onClick() {
@@ -188,7 +188,7 @@ addLayer("settings", {
             style: { width: '100px', minHeight: '60px', color: "var(--textColor)", background: "var(--miscButton)", fontSize: "9px", lineHeight: "1.1", borderRadius: '0', border: "3px solid var(--miscButtonDisable)"},
         },
         28: {
-            title() { return "Toggle Music<hr style='border:1px solid #888;margin-top:1px'>" + options.musicToggle },
+            title() { return "切换音乐<hr style='border:1px solid #888;margin-top:1px'>" + options.musicToggle },
             canClick: true,
             unlocked: true,
             onClick() {
@@ -255,10 +255,10 @@ addLayer("settings", {
         },
 
         100: {
-            title() {return player.c.cutscenes["U3-Earned-Starmetal"] < 2 ? "[LOCKED]" : options.themeDarken ? "Change to light mode" : "Change to dark mode"},
+            title() {return player.c.cutscenes["U3-Earned-Starmetal"] < 2 ? "[已锁定]" : options.themeDarken ? "切换到浅色模式" : "切换到深色模式"},
             canClick() {return player.c.cutscenes["U3-Earned-Starmetal"] > 1},
             unlocked: "true",
-            tooltip() {return player.c.cutscenes["U3-Earned-Starmetal"] < 2 ? "Obtained from a dark place." : ""},
+            tooltip() {return player.c.cutscenes["U3-Earned-Starmetal"] < 2 ? "从黑暗之地获得。" : ""},
             onClick() {
                 if (options.themeDarken) {
                     options.themeDarken = false
@@ -368,10 +368,10 @@ addLayer("settings", {
             },
         },
         104: {
-            title() {return hasUpgrade("i", 16) || player.in.unlockedInfinity ? "Wood Theme" : "[LOCKED]"},
+            title() {return hasUpgrade("i", 16) || player.in.unlockedInfinity ? "木质主题" : "[已锁定]"},
             canClick() {return options.theme != "wood" && (hasUpgrade("i", 16) || player.in.unlockedInfinity)},
             unlocked: "true",
-            tooltip() {return !(hasUpgrade("i", 16) || player.in.unlockedInfinity) ? "Obtained from your first organic SPV." : ""},
+            tooltip() {return !(hasUpgrade("i", 16) || player.in.unlockedInfinity) ? "从你的第一个有机超物理值获得。" : ""},
             onClick() {
                 options.theme = "wood"
 	            changeTheme();
@@ -396,10 +396,10 @@ addLayer("settings", {
             },
         },
         105: {
-            title() {return player.in.unlockedInfinity ? "Gold Theme" : "[LOCKED]"},
+            title() {return player.in.unlockedInfinity ? "金色主题" : "[已锁定]"},
             canClick() {return options.theme != "gold" && player.in.unlockedInfinity},
             unlocked: "true",
-            tooltip() {return !player.in.unlockedInfinity ? "Obtained from reaching your limits." : ""},
+            tooltip() {return !player.in.unlockedInfinity ? "从达到你的极限获得。" : ""},
             onClick() {
                 options.theme = "gold"
 	            changeTheme();
@@ -424,10 +424,10 @@ addLayer("settings", {
             },
         },
         106: {
-            title() {return hasChallenge("ip", 18) || player.s.highestSingularityPoints.gt(0) ? "Silver Theme" : "[LOCKED]"},
+            title() {return hasChallenge("ip", 18) || player.s.highestSingularityPoints.gt(0) ? "银色主题" : "[已锁定]"},
             canClick() {return options.theme != "silver" && (hasChallenge("ip", 18) || player.s.highestSingularityPoints.gt(0))},
             unlocked: "true",
-            tooltip() {return !(hasChallenge("ip", 18) || player.s.highestSingularityPoints.gt(0)) ? "Obtained from reaching a blocked limit." : ""},
+            tooltip() {return !(hasChallenge("ip", 18) || player.s.highestSingularityPoints.gt(0)) ? "从达到一个被封锁的极限获得。" : ""},
             onClick() {
                 options.theme = "silver"
 	            changeTheme();
@@ -452,10 +452,10 @@ addLayer("settings", {
             },
         },
         107: {
-            title() {return player.in.unlockedBreak ? "Moss Theme" : "[LOCKED]"},
+            title() {return player.in.unlockedBreak ? "苔藓主题" : "[已锁定]"},
             canClick() {return options.theme != "moss" && player.in.unlockedBreak},
             unlocked: "true",
-            tooltip() {return !player.in.unlockedBreak ? "Obtained from surpassing your limits." : ""},
+            tooltip() {return !player.in.unlockedBreak ? "从超越你的极限获得。" : ""},
             onClick() {
                 options.theme = "moss"
 	            changeTheme();
@@ -480,7 +480,7 @@ addLayer("settings", {
             },
         },
         108: {
-            title() {return player.s.highestSingularityPoints.gt(0) ? "Coral Theme" : "[LOCKED]"},
+            title() {return player.s.highestSingularityPoints.gt(0) ? "Coral Theme" : "[已锁定]"},
             canClick() {return options.theme != "coral" && player.s.highestSingularityPoints.gt(0)},
             unlocked: "true",
             tooltip() {return player.s.highestSingularityPoints.lte(0) ? "Compress mass to an infinitesimally small space." : ""},
@@ -508,7 +508,7 @@ addLayer("settings", {
             },
         },
         109: {
-            title() {return player.au2.au2Unlocked ? "Midnight Theme" : "[LOCKED]"},
+            title() {return player.au2.au2Unlocked ? "Midnight Theme" : "[已锁定]"},
             canClick() {return options.theme != "midnight" && player.au2.au2Unlocked},
             unlocked: "true",
             tooltip() {return !player.au2.au2Unlocked ? "Begin exploration of a vast expanse." : ""},
