@@ -705,7 +705,7 @@
         11: {
             title: "Ranked Darkness",
             unlocked() { return true },
-            description: "Unlocks Ranks.",
+            description: "解锁等级。",
             cost: new Decimal(10),
             currencyLocation() { return player.du },
             currencyDisplayName: "Dark Celestial Points",
@@ -733,7 +733,7 @@
         13: {
             title: "暗威望",
             unlocked() { return true },
-            description: "Unlocks Prestige.",
+            description: "解锁威望。",
             cost: new Decimal(10000),
             currencyLocation() { return player.du },
             currencyDisplayName: "Dark Celestial Points",

@@ -418,7 +418,7 @@ function loadVue() {
 				<span v-if= "layers[layer].upgrades[data].title"><h3 v-html="run(layers[layer].upgrades[data].title, layers[layer].upgrades[data])"></h3><br></span>
 				<span v-html="run(layers[layer].upgrades[data].description, layers[layer].upgrades[data])"></span>
 				<span v-if="layers[layer].upgrades[data].effectDisplay"><br>Currently: <span v-html="run(layers[layer].upgrades[data].effectDisplay, layers[layer].upgrades[data])"></span></span>
-				<br><br>Cost: {{ formatSimple(tmp[layer].upgrades[data].cost) }} {{(tmp[layer].upgrades[data].currencyDisplayName ? tmp[layer].upgrades[data].currencyDisplayName : tmp[layer].resource)}}
+				<br><br>消耗： {{ formatSimple(tmp[layer].upgrades[data].cost) }} {{(tmp[layer].upgrades[data].currencyDisplayName ? tmp[layer].upgrades[data].currencyDisplayName : tmp[layer].resource)}}
 			</span>
 			<tooltip v-if="layers[layer].upgrades[data].tooltip" :text="run(layers[layer].upgrades[data].tooltip, layers[layer].upgrades[data])"></tooltip>
 
@@ -437,7 +437,7 @@ function loadVue() {
 				<span v-if= "layers[layer].upgrades[data].title"><h3 v-html="run(layers[layer].upgrades[data].title, layers[layer].upgrades[data])"></h3><br></span>
 				<span v-html="run(layers[layer].upgrades[data].description, layers[layer].upgrades[data])"></span>
 				<span v-if="layers[layer].upgrades[data].effectDisplay"><br>Currently: <span v-html="run(layers[layer].upgrades[data].effectDisplay, layers[layer].upgrades[data])"></span></span>
-				<br><br>Cost: {{ formatWhole(tmp[layer].upgrades[data].cost) }} {{(tmp[layer].upgrades[data].currencyDisplayName ? tmp[layer].upgrades[data].currencyDisplayName : tmp[layer].resource)}}
+				<br><br>消耗： {{ formatWhole(tmp[layer].upgrades[data].cost) }} {{(tmp[layer].upgrades[data].currencyDisplayName ? tmp[layer].upgrades[data].currencyDisplayName : tmp[layer].resource)}}
 			</span>
 			<div class='bottomTooltip' v-if="layers[layer].upgrades[data].tooltip" v-html="run(layers[layer].upgrades[data].tooltip, layers[layer].upgrades[data])"></div>
 
@@ -457,7 +457,7 @@ function loadVue() {
 				<span v-if= "layers[layer].upgrades[data].title"><h3 v-html="run(layers[layer].upgrades[data].title, layers[layer].upgrades[data])"></h3><br></span>
 				<span v-html="run(layers[layer].upgrades[data].description, layers[layer].upgrades[data])"></span>
 				<span v-if="layers[layer].upgrades[data].effectDisplay"><br>Currently: <span v-html="run(layers[layer].upgrades[data].effectDisplay, layers[layer].upgrades[data])"></span></span>
-				<br><br>Cost: {{ formatWhole(tmp[layer].upgrades[data].cost) }} {{(tmp[layer].upgrades[data].currencyDisplayName ? tmp[layer].upgrades[data].currencyDisplayName : tmp[layer].resource)}}
+				<br><br>消耗： {{ formatWhole(tmp[layer].upgrades[data].cost) }} {{(tmp[layer].upgrades[data].currencyDisplayName ? tmp[layer].upgrades[data].currencyDisplayName : tmp[layer].resource)}}
 			</span>
 			<tooltip v-if="layers[layer].upgrades[data].tooltip" :text="run(layers[layer].upgrades[data].tooltip, layers[layer].upgrades[data])"></tooltip>
 
@@ -751,11 +751,11 @@ function loadVue() {
 				<div v-bind:class="{jinxTitle: true}" v-if="layers[layer].buyables[data].title">
 					<span v-html="run(layers[layer].buyables[data].title, layers[layer].buyables[data])"></span>
 				</div>
-				<div v-bind:class="{jinxCost: true}">
+				<div v-bind:class="{jinxCost true}">
 					<span v-if="!tmp[layer].buyables[data].extraAmount || tmp[layer].buyables[data].extraAmount.eq(0)" v-html="formatWhole(player[layer].buyables[data]) + '/' + formatWhole(tmp[layer].buyables[data].purchaseLimit)"></span>
 					<span v-if="tmp[layer].buyables[data].extraAmount && tmp[layer].buyables[data].extraAmount.neq(0)" v-html="formatWhole(player[layer].buyables[data]) + '+' + formatWhole(tmp[layer].buyables[data].extraAmount) + '/' + formatWhole(tmp[layer].buyables[data].purchaseLimit)"></span>
 					<br>
-					<span v-html="'Cost: ' + format(tmp[layer].buyables[data].cost)"></span>
+					<span v-html="'消耗： ' + format(tmp[layer].buyables[data].cost)"></span>
 				</div>
 				<div v-bind:class="{jinxTotal: true}" v-if="tmp[layer].buyables[data].total">
 					<span v-html="tmp[layer].buyables[data].total"></span>
