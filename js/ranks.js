@@ -364,15 +364,15 @@
         11: {
             title() {
                 if (player.r.rank.lte(20)) {
-                    return "<h2>Reset 天体点数, but rank up.</h2><br><h3>Req: " + format(player.r.rankReq) + " Points</h3>"
+                    return "<h2>重置天体点数，提升等级。</h2><br><h3>需求： " + format(player.r.rankReq) + " 点数</h3>"
                 } else if (player.r.rank.lte(100)) {
-                    return "<h2>Reset 天体点数, but rank up.</h2><br><h3>Req: " + format(player.r.rankReq) + " Points<br><small style='color:darkred'>[SOFTCAPPED]</small></h3>"
+                    return "<h2>重置天体点数，提升等级。</h2><br><h3>需求： " + format(player.r.rankReq) + " 点数<br><small style='color:darkred'>[软上限]</small></h3>"
                 } else if (player.r.rank.lt("1e4000")) {
-                    return "<h2>Reset 天体点数, but rank up.</h2><br><h3>Req: " + format(player.r.rankReq) + " Points<br><small style='color:darkred'>[SOFTCAPPED<sup>2</sup>]</small></h3>"
+                    return "<h2>重置天体点数，提升等级。</h2><br><h3>需求： " + format(player.r.rankReq) + " 点数<br><small style='color:darkred'>[软上限²]</small></h3>"
                 } else if (!hasUpgrade("cs", 101)) {
-                    return "<h2>Reset 天体点数, but rank up.</h2><br><h3><small style='color:darkred'>[HARDCAPPED]</small></h3>"
+                    return "<h2>重置天体点数，提升等级。</h2><br><h3><small style='color:darkred'>[硬上限]</small></h3>"
                 } else {
-                    return "<h2>Reset 天体点数, but rank up.</h2><br><h3>Req: " + format(player.r.rankReq) + " Points<br><small style='color:darkred'>[SOFTCAPPED<sup>3</sup>]</small></h3>"
+                    return "<h2>重置天体点数，提升等级。</h2><br><h3>需求： " + format(player.r.rankReq) + " 点数<br><small style='color:darkred'>[软上限³]</small></h3>"
                 }
             },
             canClick() { return player.points.gte(player.r.rankReq) && !hasUpgrade("p", 17) },
@@ -390,7 +390,7 @@
             },
         },
         12: {
-            title() { return "<h2>Reset 天体点数 and ranks, but tier up.</h2><br><h3>Req: " + formatWhole(player.r.tierReq) + " Rank</h3>" },
+            title() { return "<h2>重置天体点数和等级，提升阶位。</h2><br><h3>需求： " + formatWhole(player.r.tierReq) + " 等级</h3>" },
             canClick() { return player.r.rank.gte(player.r.tierReq) && !hasUpgrade("p", 18) },
             unlocked() { return true },
             onClick() {
@@ -407,7 +407,7 @@
             },
         },
         13: {
-            title() { return "<h2>Reset 天体点数, ranks, and tiers, but tetr up.</h2><br><h3>Req: " + formatWhole(player.r.tetrReq) + " Tier</h3>" },
+            title() { return "<h2>重置天体点数、等级和阶位，提升四阶。</h2><br><h3>需求： " + formatWhole(player.r.tetrReq) + " 阶位</h3>" },
             canClick() { return player.r.tier.gte(player.r.tetrReq) && !hasUpgrade("p", 22) && !hasMilestone("s", 19)},
             unlocked() { return hasUpgrade("i", 13) },
             onClick() {
@@ -425,11 +425,11 @@
         14: {
             title() {
                 if (player.r.pent.lt(5)) {
-                    return "<h2>Reset all content before grass, but pent.</h2><br><h3>Req: " + formatWhole(player.r.pentReq) + " Points</h3>"
+                    return "<h2>重置草地前的所有内容，但提升五阶。</h2><br><h3>需求： " + formatWhole(player.r.pentReq) + " 点数</h3>"
                 } else if (player.r.pent.gte(5) && player.r.pent.lt(30)) {
-                    return "<h2>Reset all content before grass, but pent.</h2><br><h3>Req: " + formatWhole(player.r.pentReq) + " Points<br><small style='color:darkred'>[SOFTCAPPED]</small></h3>"
+                    return "<h2>重置草地前的所有内容，但提升五阶。</h2><br><h3>需求： " + formatWhole(player.r.pentReq) + " 点数<br><small style='color:darkred'>[软上限]</small></h3>"
                 } else if (player.r.pent.gte(30)) {
-                    return "<h2>Reset all content before grass, but pent.</h2><br><h3>Req: " + formatWhole(player.r.pentReq) + " Points<br><small style='color:darkred'>[SOFTCAPPED<sup>2</sup>]</small></h3>"
+                    return "<h2>重置草地前的所有内容，但提升五阶。</h2><br><h3>需求： " + formatWhole(player.r.pentReq) + " 点数<br><small style='color:darkred'>[软上限²]</small></h3>"
                 }
             },
             canClick() { return player.r.pentToGet.gt(0) && (!hasUpgrade("i", 32) || inChallenge("ip", 14)) },
@@ -709,7 +709,7 @@
             requirementDescription: "<h3>Pent 22,500",
             effectDescription() {
                 let str = "Boosts singularity points based on pent above 22,500.<br>Currently: x" + format(player.r.pentMilestone15Effect)
-                if (player.r.pent.gte(150000)) str = str.concat(" <small style='color:red'>[SOFTCAPPED]</small>")
+                if (player.r.pent.gte(150000)) str = str.concat(" <small style='color:red'>[软上限]</small>")
                 return str
             },
             done() { return player.r.pent.gte(22500) && this.unlocked() },
@@ -752,6 +752,7 @@
     microtabs: {
         stuff: {
             "Main": {
+                title: "主要",
                 buttonStyle() { return { color: "white", borderRadius: "5px" } },
                 unlocked() { return true },
                 content: [
@@ -759,42 +760,42 @@
                     ["style-row", [
                         ["style-column", [
                             ["row", [
-                                ["raw-html", () => {return "Rank " + formatWhole(player.r.rank)}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                                ["raw-html", () => {return "等级 " +  formatWhole(player.r.rank)}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                                 ["raw-html", () => {return hasUpgrade("p", 14) ? "(+" + formatWhole(player.r.ranksToGet) + ")" : ""}, () => {
                                     let look = {color: "white", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}
                                     player.r.ranksToGet.gt(0) ? look.color = "white" : look.color = "gray"
                                     return look
                                 }],
                             ]],
-                            ["raw-html", () => { return "x" + format(player.r.rankEffect) + " Points" }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                            ["raw-html", () => { return "x" + format(player.r.rankEffect) + " 点数" }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                         ], {width: "399px", height: "75px"}],
                         ["clickable", 11],
                     ], {width: "800px", height: "75px", backgroundColor: "#333333", border: "2px solid white", borderBottom: "0px", borderRadius: "15px 15px 0px 0px"}],
                     ["style-row", [
                         ["style-column", [
                             ["row", [
-                                ["raw-html", () => {return "Tier " + formatWhole(player.r.tier)}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                                ["raw-html", () => {return "阶位 " +  formatWhole(player.r.tier)}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                                 ["raw-html", () => {return hasUpgrade("p", 14) ? "(+" + formatWhole(player.r.tiersToGet) + ")" : ""}, () => {
                                     let look = {color: "white", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}
                                     player.r.tiersToGet.gt(0) ? look.color = "white" : look.color = "gray"
                                     return look
                                 }],
                             ]],
-                            ["raw-html", () => { return "x" + format(player.r.tierEffect) + " Points" }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                            ["raw-html", () => { return "x" + format(player.r.tierEffect) + " 点数" }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                         ], {width: "399px", height: "75px"}],
                         ["clickable", 12],
                     ], () => {return hasUpgrade("i", 13) ? {width: "800px", height: "75px", backgroundColor: "#333333", border: "2px solid white", borderBottom: "0px", borderRadius: "0px"} : {width: "800px", height: "75px", backgroundColor: "#333333", border: "2px solid white", borderRadius: "0px 0px 15px 15px"}}],
                     ["style-row", [
                         ["style-column", [
                             ["row", [
-                                ["raw-html", () => {return "Tetr " + formatWhole(player.r.tetr)}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                                ["raw-html", () => {return "四阶 " +  formatWhole(player.r.tetr)}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                                 ["raw-html", () => {return hasUpgrade("p", 14) ? "(+" + formatWhole(player.r.tetrsToGet) + ")" : ""}, () => {
                                     let look = {color: "white", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}
                                     player.r.tetrsToGet.gt(0) ? look.color = "white" : look.color = "gray"
                                     return look
                                 }],
                             ]],
-                            ["raw-html", () => {return "x" + format(player.r.tetrEffect) + " Points" }, () => {
+                            ["raw-html", () => {return "x" + format(player.r.tetrEffect) + " 点数" }, () => {
                                 let look = {color: "white", fontFamily: "monospace"}
                                 if (hasUpgrade("p", 16)) {look.fontSize = "16px"} else {look.fontSize = "20px"}
                                 return look
@@ -804,7 +805,7 @@
                         ["clickable", 13],
                     ], () => {return hasUpgrade("i", 13) ? {width: "800px", height: "75px", backgroundColor: "#333333", border: "2px solid white", borderRadius: "0px 0px 15px 15px"} : {display: "none !important"}}],
                     ["style-column", [
-                        ["raw-html", function () { return "Total Mult: x" + format(player.r.rankEffect.mul(player.r.tierEffect.mul(player.r.tetrEffect))) }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                        ["raw-html", function () { return "总倍数： x" + format(player.r.rankEffect.mul(player.r.tierEffect.mul(player.r.tetrEffect))) }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
                     ], {width: "400px", height: "50px", backgroundColor: "#333333", border: "2px solid white", borderTop: "0px", borderRadius: "0px 0px 15px 15px"}],
                 ]
             },
@@ -824,7 +825,7 @@
                                 }],
                             ]],
                             ["raw-html", () => { return "x" + format(player.r.pentEffect) + " Prestige Points" }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
-                            ["raw-html", () => { return inChallenge("ip", 14) ? "/" + format(player.r.challengeIVEffect) + " Points" : "" }, {color: "red", fontSize: "20px", fontFamily: "monospace"}],
+                            ["raw-html", () => { return inChallenge("ip", 14) ? "/" + format(player.r.challengeIVEffect) + " 点数" : "" }, {color: "red", fontSize: "20px", fontFamily: "monospace"}],
                         ], {width: "399px", height: "100px"}],
                         ["clickable", 14],
                     ], {width: "800px", height: "100px", backgroundColor: "#333333", border: "2px solid white", borderBottom: "2px solid white", borderRadius: "15px"}],
@@ -851,7 +852,7 @@
                     ["milestone", 29],
                 ]
             },
-            "Time Reversal": {
+            "时间逆转": {
                 buttonStyle() { return {color: "white", borderRadius: "5px", borderColor: "grey", backgroundColor: "#d82cd4"}},
                 unlocked() { return hasUpgrade("i", 26) },
                 content: [
@@ -867,7 +868,7 @@
                         ["style-row", [
                             ["raw-html", () => {return "你有 " + format(player.r.timeCubes) + " time cubes"}, { color: "white", fontSize: "24px", fontFamily: "monospace" }],
                             ["raw-html", () => {return "(" + format(player.r.timeCubesPerSecond) + "/秒）"}, {color: "white", fontSize: "20px", fontFamily: "monospace", marginLeft: "12px"}],
-                            ["raw-html", () => {return player.r.timeCubesPerSecond.gte("1e10000") ? "<small style='margin-left:10px'>[SOFTCAPPED]</small>" : ""}, {color: "red", fontSize: "20px", fontFamily: "monospace"}],
+                            ["raw-html", () => {return player.r.timeCubesPerSecond.gte("1e10000") ? "<small style='margin-left:10px'>[软上限]</small>" : ""}, {color: "red", fontSize: "20px", fontFamily: "monospace"}],
                         ], {width: "650px", height: "50px", borderBottom: "2px solid #d82cd4"}],
                         ["style-column", [
                             ["raw-html", function () { return "Points: x" + format(player.r.timeCubeEffects[0]) }, () => { return player.points.gte("1e1000") ? {color: "white", fontSize: "20px", fontFamily: "monospace"} : {color: "grey", fontSize: "20px", fontFamily: "monospace"} }],
