@@ -164,10 +164,10 @@
             cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()) },
             canAfford() { return this.currency().gte(this.cost()) },
             title() {
-                return "Grass Factor I"
+                return "草地因子I"
             },
             display() {
-                return "which are boosting grass value by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "正在以x倍率提升草地值：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Fertilizer"
             },
             buy(mult) {
@@ -202,10 +202,10 @@
             cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()) },
             canAfford() { return this.currency().gte(this.cost()) },
             title() {
-                return "Grass Factor II"
+                return "草地因子II"
             },
             display() {
-                return "which are boosting grass value by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "正在以x倍率提升草地值：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Fertilizer"
             },
             buy(mult) {
@@ -240,10 +240,10 @@
             cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()) },
             canAfford() { return this.currency().gte(this.cost()) },
             title() {
-                return "Grass Factor III"
+                return "草地因子III"
             },
             display() {
-                return "which are boosting grass value by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "正在以x倍率提升草地值：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Fertilizer"
             },
             buy(mult) {
@@ -278,10 +278,10 @@
             cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()) },
             canAfford() { return this.currency().gte(this.cost()) },
             title() {
-                return "Grass Factor IV"
+                return "草地因子IV"
             },
             display() {
-                return "which are boosting grass value by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "正在以x倍率提升草地值：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Fertilizer"
             },
             buy(mult) {
@@ -319,7 +319,7 @@
                 return "Grass Factor V"
             },
             display() {
-                return "which are boosting grass value by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "正在以x倍率提升草地值：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Fertilizer"
             },
             buy(mult) {
@@ -357,7 +357,7 @@
                 return "Grass Factor VI"
             },
             display() {
-                return "which are boosting grass value by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "正在以x倍率提升草地值：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Fertilizer"
             },
             buy(mult) {
@@ -395,7 +395,7 @@
                 return "Grass Factor VII"
             },
             display() {
-                return "which are boosting grass value by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "正在以x倍率提升草地值：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Fertilizer"
             },
             buy(mult) {
@@ -433,7 +433,7 @@
                 return "Grass Factor VIII"
             },
             display() {
-                return "which are boosting grass value by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "正在以x倍率提升草地值：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Fertilizer"
             },
             buy(mult) {
@@ -469,11 +469,11 @@
             cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()) },
             canAfford() { return this.currency().gte(this.cost()) },
             title() {
-                return "Factor I"
+                return "因子I"
             },
             display() {
-                return "which are boosting 天体点数 by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Celestial Points"
+                return "正在以x倍率提升天体点数：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " 天体点数"
             },
             buy(mult) {
                 if (!hasAchievement("achievements", 3) && buyableEffect("f", 11).mul(buyableEffect("f", 12)).mul(buyableEffect("f", 13)).mul(buyableEffect("f", 14)).gte(1.95)) completeAchievement("achievements", 3)
@@ -508,11 +508,11 @@
             cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()) },
             canAfford() { return this.currency().gte(this.cost()) },
             title() {
-                return "Factor II"
+                return "因子II"
             },
             display() {
-                return "which are boosting 天体点数 by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Celestial Points"
+                return "正在以x倍率提升天体点数：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " 天体点数"
             },
             buy(mult) {
                 if (!hasAchievement("achievements", 3) && buyableEffect("f", 11).mul(buyableEffect("f", 12)).mul(buyableEffect("f", 13)).mul(buyableEffect("f", 14)).gte(1.95)) completeAchievement("achievements", 3)
@@ -546,11 +546,11 @@
             cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()) },
             canAfford() { return this.currency().gte(this.cost()) },
             title() {
-                return "Factor III"
+                return "因子III"
             },
             display() {
-                return "which are boosting 天体点数 by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Celestial Points"
+                return "正在以x倍率提升天体点数：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " 天体点数"
             },
             buy(mult) {
                 if (!hasAchievement("achievements", 3) && buyableEffect("f", 11).mul(buyableEffect("f", 12)).mul(buyableEffect("f", 13)).mul(buyableEffect("f", 14)).gte(1.95)) completeAchievement("achievements", 3)
@@ -584,11 +584,11 @@
             cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()) },
             canAfford() { return this.currency().gte(this.cost()) },
             title() {
-                return "Factor IV"
+                return "因子IV"
             },
             display() {
-                return "which are boosting 天体点数 by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Celestial Points"
+                return "正在以x倍率提升天体点数：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " 天体点数"
             },
             buy(mult) {
                 if (!hasAchievement("achievements", 3) && buyableEffect("f", 11).mul(buyableEffect("f", 12)).mul(buyableEffect("f", 13)).mul(buyableEffect("f", 14)).gte(1.95)) completeAchievement("achievements", 3)
@@ -625,8 +625,8 @@
                 return "Factor V"
             },
             display() {
-                return "which are boosting 天体点数 by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Celestial Points"
+                return "正在以x倍率提升天体点数：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " 天体点数"
             },
             buy(mult) {
                 if (mult != true && !hasUpgrade("p", 15)) {
@@ -662,8 +662,8 @@
                 return "Factor VI"
             },
             display() {
-                return "which are boosting 天体点数 by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Celestial Points"
+                return "正在以x倍率提升天体点数：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " 天体点数"
             },
             buy(mult) {
                 if (mult != true && !hasUpgrade("p", 15)) {
@@ -699,8 +699,8 @@
                 return "Factor VII"
             },
             display() {
-                return "which are boosting 天体点数 by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Celestial Points"
+                return "正在以x倍率提升天体点数：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " 天体点数"
             },
             buy(mult) {
                 if (mult != true && !hasUpgrade("p", 15)) {
@@ -736,8 +736,8 @@
                 return "Factor VIII"
             },
             display() {
-                return "which are boosting 天体点数 by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Celestial Points"
+                return "正在以x倍率提升天体点数：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " 天体点数"
             },
             buy(mult) {
                 if (!hasAchievement("achievements", 6)) completeAchievement("achievements", 6)
@@ -1373,8 +1373,8 @@
                 return "Point Factor"
             },
             display() {
-                return "which are boosting 天体点数 by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Celestial Points"
+                return "正在以x倍率提升天体点数：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " 天体点数"
             },
             buy(mult) {
                 if (mult != true && !hasUpgrade("p", 15)) {
@@ -1475,7 +1475,7 @@
                 return "Grass Factor"
             },
             display() {
-                return "which are boosting grass value by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "正在以x倍率提升草地值：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Fertilizer"
             },
             buy(mult) {
@@ -1502,20 +1502,21 @@
     microtabs: {
         stuff: {
             "Main": {
+                title: "主要",
                 buttonStyle() { return { borderColor: "white", color: "white", borderRadius: "5px" } },
                 unlocked() { return !hasUpgrade("cs", 201) },
                 content: [
                     ["blank", "25px"],
-                    ["raw-html", function () { return !tmp.f.buyables[14].unlocked ?  "Next factor unlocks at tier 2." : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
-                    ["raw-html", function () { return tmp.f.buyables[14].unlocked && !tmp.f.buyables[15].unlocked ?  "Next factor unlocks at tier 4." : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
-                    ["raw-html", function () { return tmp.f.buyables[15].unlocked && !tmp.f.buyables[16].unlocked ?  "Next factor unlocks at tetr 2." : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
-                    ["raw-html", function () { return tmp.f.buyables[16].unlocked && !tmp.f.buyables[17].unlocked ?  "Next factor unlocks at Prestige Upgrade III." : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
-                    ["raw-html", function () { return tmp.f.buyables[17].unlocked && !tmp.f.buyables[18].unlocked ?  "Next factor unlocks at tetr 4." : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                    ["raw-html", function () { return !tmp.f.buyables[14].unlocked ?  "下个因子在阶位2解锁。" : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                    ["raw-html", function () { return tmp.f.buyables[14].unlocked && !tmp.f.buyables[15].unlocked ?  "下个因子在阶位4解锁。" : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                    ["raw-html", function () { return tmp.f.buyables[15].unlocked && !tmp.f.buyables[16].unlocked ?  "下个因子在四阶2解锁。" : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                    ["raw-html", function () { return tmp.f.buyables[16].unlocked && !tmp.f.buyables[17].unlocked ?  "下个因子在威望升级III解锁。" : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                    ["raw-html", function () { return tmp.f.buyables[17].unlocked && !tmp.f.buyables[18].unlocked ?  "下个因子在四阶4解锁。" : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
                     ["blank", "25px"],
                     ["style-row", [["ex-buyable", 11], ["ex-buyable", 12], ["ex-buyable", 13], ["ex-buyable", 14],
                         ["ex-buyable", 15], ["ex-buyable", 16], ["ex-buyable", 17], ["ex-buyable", 18]], {maxWidth: "1200px"}],
                     ["blank", "25px"],
-                    ["raw-html", function () { return "Total Mult: x" + format(buyableEffect("f", 11).mul(buyableEffect("f", 12).mul(buyableEffect("f", 13)).mul(buyableEffect("f", 14)).mul(buyableEffect("f", 15)).mul(buyableEffect("f", 16)).mul(buyableEffect("f", 17)).mul(buyableEffect("f", 18)))) }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                    ["raw-html", function () { return "总倍数： x" + format(buyableEffect("f", 11).mul(buyableEffect("f", 12).mul(buyableEffect("f", 13)).mul(buyableEffect("f", 14)).mul(buyableEffect("f", 15)).mul(buyableEffect("f", 16)).mul(buyableEffect("f", 17)).mul(buyableEffect("f", 18)))) }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
                 ]
             },
             "力量": {
@@ -1538,15 +1539,15 @@
                     ["blank", "25px"],
                     ["raw-html", () => { return "<h3>You have " + format(player.p.prestigePoints) + " prestige points." }, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                     ["blank", "25px"],
-                    ["raw-html", function () { return !tmp.f.buyables[23].unlocked ?  "Next factor unlocks at 10,000 prestige points." : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
-                    ["raw-html", function () { return tmp.f.buyables[23].unlocked && !tmp.f.buyables[24].unlocked ?  "Next factor unlocks at 1e14 天体点数." : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
-                    ["raw-html", function () { return tmp.f.buyables[24].unlocked && !tmp.f.buyables[25].unlocked ?  "Next factor unlocks at tetr 11." : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
-                    ["raw-html", function () { return tmp.f.buyables[25].unlocked && !tmp.f.buyables[26].unlocked ?  "Next factor unlocks at 25 trees." : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
-                    ["raw-html", function () { return tmp.f.buyables[26].unlocked && !tmp.f.buyables[27].unlocked ?  "Next factor unlocks at ???." : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                    ["raw-html", function () { return !tmp.f.buyables[23].unlocked ?  "下个因子在10,000威望点数解锁。" : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                    ["raw-html", function () { return tmp.f.buyables[23].unlocked && !tmp.f.buyables[24].unlocked ?  "下个因子在1e14天体点数解锁。" : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                    ["raw-html", function () { return tmp.f.buyables[24].unlocked && !tmp.f.buyables[25].unlocked ?  "下个因子在四阶11解锁。" : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                    ["raw-html", function () { return tmp.f.buyables[25].unlocked && !tmp.f.buyables[26].unlocked ?  "下个因子在25棵树解锁。" : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                    ["raw-html", function () { return tmp.f.buyables[26].unlocked && !tmp.f.buyables[27].unlocked ?  "下个因子在???解锁。" : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
                     ["style-row", [["ex-buyable", 19], ["ex-buyable", 21], ["ex-buyable", 22], ["ex-buyable", 23],
                         ["ex-buyable", 24], ["ex-buyable", 25], ["ex-buyable", 26], ["ex-buyable", 27]], {maxWidth: "1200px"}],
                     ["blank", "25px"],
-                    ["raw-html", function () { return "Total Mult: x" + format(buyableEffect("f", 19).mul(buyableEffect("f", 21).mul(buyableEffect("f", 22)).mul(buyableEffect("f", 23)).mul(buyableEffect("f", 24)).mul(buyableEffect("f", 25)).mul(buyableEffect("f", 26)).mul(buyableEffect("f", 27)))) }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                    ["raw-html", function () { return "总倍数：x" + format(buyableEffect("f", 19).mul(buyableEffect("f", 21).mul(buyableEffect("f", 22)).mul(buyableEffect("f", 23)).mul(buyableEffect("f", 24)).mul(buyableEffect("f", 25)).mul(buyableEffect("f", 26)).mul(buyableEffect("f", 27)))) }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
                 ]
             },
             "Tree": {
@@ -1556,15 +1557,15 @@
                     ["blank", "25px"],
                     ["raw-html", function () { return "<h3>You have " + format(player.g.grass) + " grass." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
                     ["blank", "25px"],
-                    ["raw-html", function () { return !tmp.f.buyables[31].unlocked ?  "Next factor unlocks at Prestige Upgrade XII." : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
-                    ["raw-html", function () { return tmp.f.buyables[31].unlocked && !tmp.f.buyables[32].unlocked ?  "Next factor unlocks at Grass Upgrade VII." : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
-                    ["raw-html", function () { return tmp.f.buyables[32].unlocked && !tmp.f.buyables[33].unlocked ?  "Next factor unlocks at pent 3." : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
-                    ["raw-html", function () { return tmp.f.buyables[33].unlocked && !tmp.f.buyables[34].unlocked ?  "Next factor unlocks at 20 mods." : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
-                    ["raw-html", function () { return tmp.f.buyables[34].unlocked && !tmp.f.buyables[35].unlocked ?  "Next factor unlocks at pent 8." : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                    ["raw-html", function () { return !tmp.f.buyables[31].unlocked ?  "下个因子在威望升级XII解锁。" : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                    ["raw-html", function () { return tmp.f.buyables[31].unlocked && !tmp.f.buyables[32].unlocked ?  "下个因子在草地升级VII解锁。" : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                    ["raw-html", function () { return tmp.f.buyables[32].unlocked && !tmp.f.buyables[33].unlocked ?  "下个因子在五阶3解锁。" : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                    ["raw-html", function () { return tmp.f.buyables[33].unlocked && !tmp.f.buyables[34].unlocked ?  "下个因子在20模组解锁。" : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                    ["raw-html", function () { return tmp.f.buyables[34].unlocked && !tmp.f.buyables[35].unlocked ?  "下个因子在五阶8解锁。" : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
                     ["style-row", [["ex-buyable", 28], ["ex-buyable", 29], ["ex-buyable", 31], ["ex-buyable", 32],
                         ["ex-buyable", 33], ["ex-buyable", 34], ["ex-buyable", 35], ["ex-buyable", 36]], {maxWidth: "1200px"}],
                     ["blank", "25px"],
-                    ["raw-html", function () { return "Total Mult: x" + format(buyableEffect("f", 28).mul(buyableEffect("f", 29).mul(buyableEffect("f", 31)).mul(buyableEffect("f", 32)).mul(buyableEffect("f", 33)).mul(buyableEffect("f", 34)).mul(buyableEffect("f", 35)).mul(buyableEffect("f", 36)))) }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                    ["raw-html", function () { return "总倍数：x" + format(buyableEffect("f", 28).mul(buyableEffect("f", 29).mul(buyableEffect("f", 31)).mul(buyableEffect("f", 32)).mul(buyableEffect("f", 33)).mul(buyableEffect("f", 34)).mul(buyableEffect("f", 35)).mul(buyableEffect("f", 36)))) }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
                 ]
             },
             "草地": {
@@ -1578,7 +1579,7 @@
                     ["style-row", [["ex-buyable", 1], ["ex-buyable", 2], ["ex-buyable", 3], ["ex-buyable", 4],
                         ["ex-buyable", 5], ["ex-buyable", 6], ["ex-buyable", 7], ["ex-buyable", 8]], {maxWidth: "1200px"}],
                     ["blank", "25px"],
-                    ["raw-html", function () { return "Total Mult: x" + format(buyableEffect("f", 1).mul(buyableEffect("f", 2).mul(buyableEffect("f", 3)).mul(buyableEffect("f", 4)).mul(buyableEffect("f", 5)).mul(buyableEffect("f", 6)).mul(buyableEffect("f", 7)).mul(buyableEffect("f", 8)))) }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                    ["raw-html", function () { return "总倍数：x" + format(buyableEffect("f", 1).mul(buyableEffect("f", 2).mul(buyableEffect("f", 3)).mul(buyableEffect("f", 4)).mul(buyableEffect("f", 5)).mul(buyableEffect("f", 6)).mul(buyableEffect("f", 7)).mul(buyableEffect("f", 8)))) }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
                 ]
             },
             "Factored": {
