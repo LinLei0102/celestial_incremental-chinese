@@ -10,11 +10,11 @@
 
         //Cutscene Info
         cutsceneText: [
-            "You find yourself in a vast desert of black sand.",
-            "The wind is moderate. It is quite cold.",
-            "It seems as if it's always night. The stars stand in place.",
-            '"You hear a voice in the distance. "This place is dead. Bring it back to life and know your purpose."',
-            "As the voice fades away, you look at your own hands, and see ten points manifest as rings. One for each finger.",
+            "你发现自己置身于一片广袤的黑沙沙漠中。",
+            "风势适中。天气相当寒冷。",
+            "似乎永远是黑夜。星辰静止不动。",
+            ""你听到远处有个声音。「这个地方已经死了。让它复活，知晓你的使命。」"",
+            "随着声音消散，你看着自己的双手，看到十颗点化作指环，每根手指一枚。",
         ],
         cutsceneIndex: 0,
     }},
