@@ -46,7 +46,7 @@ addLayer("savebank", {
             style: { width: '125px', minHeight: '50px', color: "var(--textColor)", background: "var(--miscButtonDisable)", borderRadius: '0px', border: "3px solid var(--regBorder)", margin: "0px 5px" },
         },
         11: {
-            title() { return "Info" },
+            title() { return "信息" },
             canClick: true,
             unlocked: true,
             onClick() {
@@ -137,7 +137,7 @@ addLayer("savebank", {
         },
         // Start-Checkback
         101: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -154,7 +154,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "#83cecf", borderRadius: '0px', border: '0px solid white'},
         },
         102: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -171,7 +171,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "#83cecf", borderRadius: '0px', border: '0px solid white'},
         },
         103: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -188,7 +188,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "#83cecf", borderRadius: '0px', border: '0px solid white'},
         },
         104: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -205,7 +205,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "#83cecf", borderRadius: '0px', border: '0px solid white'},
         },
         105: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -222,7 +222,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "#83cecf", borderRadius: '0px', border: '0px solid white'},
         },
         106: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -239,7 +239,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "#83cecf", borderRadius: '0px', border: '0px solid white'},
         },
         107: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -256,7 +256,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "#83cecf", borderRadius: '0px', border: '0px solid white'},
         },
         108: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -273,7 +273,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "#83cecf", borderRadius: '0px', border: '0px solid white'},
         },
         109: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -290,7 +290,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "#83cecf", borderRadius: '0px', border: '0px solid white'},
         },
         110: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -308,7 +308,7 @@ addLayer("savebank", {
         },
         // Checkback-Infinity
         201: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -325,7 +325,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "#06366e", borderRadius: '0px', border: '0px solid white'},
         },
         202: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -342,7 +342,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "#06366e", borderRadius: '0px', border: '0px solid white'},
         },
         203: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -359,7 +359,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "#06366e", borderRadius: '0px', border: '0px solid white'},
         },
         204: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -377,7 +377,7 @@ addLayer("savebank", {
         },
         // Infinity-Tav
         301: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -394,7 +394,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "linear-gradient(315deg, rgba(211,161,101,1) 0%, #FFBF00 100%)", borderRadius: '0px', border: '0px solid white'},
         },
         302: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -411,7 +411,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "linear-gradient(315deg, rgba(211,161,101,1) 0%, #FFBF00 100%)", borderRadius: '0px', border: '0px solid white'},
         },
         303: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -428,7 +428,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "linear-gradient(315deg, rgba(211,161,101,1) 0%, #FFBF00 100%)", borderRadius: '0px', border: '0px solid white'},
         },
         304: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -445,7 +445,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "linear-gradient(315deg, rgba(211,161,101,1) 0%, #FFBF00 100%)", borderRadius: '0px', border: '0px solid white'},
         },
         305: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -462,7 +462,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "linear-gradient(315deg, rgba(211,161,101,1) 0%, #FFBF00 100%)", borderRadius: '0px', border: '0px solid white'},
         },
         306: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -479,7 +479,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "linear-gradient(315deg, rgba(211,161,101,1) 0%, #FFBF00 100%)", borderRadius: '0px', border: '0px solid white'},
         },
         307: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -496,7 +496,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "linear-gradient(315deg, rgba(211,161,101,1) 0%, #FFBF00 100%)", borderRadius: '0px', border: '0px solid white'},
         },
         308: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -513,7 +513,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "linear-gradient(315deg, rgba(211,161,101,1) 0%, #FFBF00 100%)", borderRadius: '0px', border: '0px solid white'},
         },
         309: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -530,7 +530,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "linear-gradient(315deg, rgba(211,161,101,1) 0%, #FFBF00 100%)", borderRadius: '0px', border: '0px solid white'},
         },
         310: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -547,7 +547,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "linear-gradient(315deg, rgba(211,161,101,1) 0%, #FFBF00 100%)", borderRadius: '0px', border: '0px solid white'},
         },
         311: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -564,7 +564,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "linear-gradient(315deg, rgba(211,161,101,1) 0%, #FFBF00 100%)", borderRadius: '0px', border: '0px solid white'},
         },
         312: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -581,7 +581,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "linear-gradient(315deg, rgba(211,161,101,1) 0%, #FFBF00 100%)", borderRadius: '0px', border: '0px solid white'},
         },
         401: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -598,7 +598,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "linear-gradient(150deg, #008080, 0%, #b2d8d8 100%)", borderRadius: '0px', border: '0px solid white'},
         },
         402: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -615,7 +615,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "linear-gradient(150deg, #008080, 0%, #b2d8d8 100%)", borderRadius: '0px', border: '0px solid white'},
         },
         403: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -632,7 +632,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "linear-gradient(150deg, #008080, 0%, #b2d8d8 100%)", borderRadius: '0px', border: '0px solid white'},
         },
         404: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -649,7 +649,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "linear-gradient(150deg, #008080, 0%, #b2d8d8 100%)", borderRadius: '0px', border: '0px solid white'},
         },
         405: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -666,7 +666,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "linear-gradient(150deg, #008080, 0%, #b2d8d8 100%)", borderRadius: '0px', border: '0px solid white'},
         },
         406: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -683,7 +683,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "linear-gradient(150deg, #008080, 0%, #b2d8d8 100%)", borderRadius: '0px', border: '0px solid white'},
         },
         407: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -700,7 +700,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "linear-gradient(150deg, #008080, 0%, #b2d8d8 100%)", borderRadius: '0px', border: '0px solid white'},
         },
         408: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -717,7 +717,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "linear-gradient(150deg, #008080, 0%, #b2d8d8 100%)", borderRadius: '0px', border: '0px solid white'},
         },
         409: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -734,7 +734,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "linear-gradient(150deg, #008080, 0%, #b2d8d8 100%)", borderRadius: '0px', border: '0px solid white'},
         },
         501: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -751,7 +751,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "linear-gradient(150deg, #889110, 0%, #73A112 100%)", borderRadius: '0px', border: '0px solid white'},
         },
         502: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -768,7 +768,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "linear-gradient(150deg, #889110, 0%, #73A112 100%)", borderRadius: '0px', border: '0px solid white'},
         },
         503: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -785,7 +785,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "linear-gradient(150deg, #889110, 0%, #73A112 100%)", borderRadius: '0px', border: '0px solid white'},
         },
         504: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -802,7 +802,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "linear-gradient(150deg, #889110, 0%, #73A112 100%)", borderRadius: '0px', border: '0px solid white'},
         },
         505: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -819,7 +819,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "linear-gradient(150deg, #889110, 0%, #73A112 100%)", borderRadius: '0px', border: '0px solid white'},
         },
         506: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -836,7 +836,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "linear-gradient(150deg, #889110, 0%, #73A112 100%)", borderRadius: '0px', border: '0px solid white'},
         },
         507: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -853,7 +853,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "linear-gradient(150deg, #889110, 0%, #73A112 100%)", borderRadius: '0px', border: '0px solid white'},
         },
         508: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -870,7 +870,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "linear-gradient(150deg, #889110, 0%, #73A112 100%)", borderRadius: '0px', border: '0px solid white'},
         },
         509: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -887,7 +887,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "linear-gradient(150deg, #889110, 0%, #73A112 100%)", borderRadius: '0px', border: '0px solid white'},
         },
         510: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -904,7 +904,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "linear-gradient(150deg, #889110, 0%, #73A112 100%)", borderRadius: '0px', border: '0px solid white'},
         },
         511: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
@@ -921,7 +921,7 @@ addLayer("savebank", {
             style: { width: '100px', minHeight: '50px', background: "linear-gradient(150deg, #889110, 0%, #73A112 100%)", borderRadius: '0px', border: '0px solid white'},
         },
         512: {
-            title: "Load",
+            title: "加载",
             canClick: true,
             unlocked: true,
             onClick() {
