@@ -547,7 +547,7 @@ addLayer("settings", {
                     ], {width: "306px", height: "30px", borderBottom: "3px solid var(--regBorder)"}],
                     ["style-row", [
                         ["clickable", 11], ["style-row", [], {width: "3px", height: "80px", background: "var(--regBorder)"}],
-                        ["raw-html", () => "<label class=can for='importfile' style='display:flex;align-items:center;justify-content:center;width:94px;height:74px;background:var(--miscButton);border:3px solid var(--miscButtonDisable)'>Import<br>file</label><input id='importfile' type='file' onchange='importFile()' style='display:none' />", {color: "var(--textColor)", fontFamily: "monospace"}], ["style-row", [], {width: "3px", height: "80px", background: "var(--regBorder)"}],
+                        ["raw-html", () => "<label class=can for='importfile' style='display:flex;align-items:center;justify-content:center;width:94px;height:74px;background:var(--miscButton);border:3px solid var(--miscButtonDisable)'>导入<br>文件</label><input id='importfile' type='file' onchange='importFile()' style='display:none' />", {color: "var(--textColor)", fontFamily: "monospace"}], ["style-row", [], {width: "3px", height: "80px", background: "var(--regBorder)"}],
                         ["clickable", 13],
                     ], {width: "306px", borderBottom: "3px solid var(--regBorder)"}],
                     ["style-row", [
