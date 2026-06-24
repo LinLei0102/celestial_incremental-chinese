@@ -492,7 +492,7 @@
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px", width: "150px"},
         },
         13: {
-            title: "Next Enhancer",
+            title: "下一个强化器",
             unlocked() { return true },
             description: "Unlocks the next enhancer, and raises the first replicanti point softcap effect by ^0.01.",
             cost: new Decimal(9999),

@@ -141,7 +141,7 @@ function showCutscene(dialogue, opt = {}) {
 
     // Next button
     const nextBtn = document.createElement('button');
-    nextBtn.textContent = 'Next';
+    nextBtn.textContent = '继续';
     Object.assign(nextBtn.style, {
         position: 'absolute',
         right: '36px',
@@ -158,7 +158,7 @@ function showCutscene(dialogue, opt = {}) {
 
     // Skip button (new)
     const skipBtn = document.createElement('button');
-    skipBtn.textContent = 'Skip';
+    skipBtn.textContent = '跳过';
     Object.assign(skipBtn.style, {
         position: 'absolute',
         right: '36px',

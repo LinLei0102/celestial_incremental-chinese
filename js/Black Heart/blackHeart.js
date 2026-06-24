@@ -1779,7 +1779,7 @@ addLayer("bh", {
             style: {width: "250px", minHeight: "40px", color: "black", border: "3px solid rgba(0,0,0,0.5)", backgroundColor: "white", borderRadius: "15px"},
         },
         "Stagnant-Timer": {
-            title() {return player.bh.stagnantTimer.gt(0) ? "<h3>Check back in <br>" + formatTime(player.bh.stagnantTimer) + "." : "<h3>Skip forward by <br>5 Seconds"},
+            title() {return player.bh.stagnantTimer.gt(0) ? "<h3>请稍候<br>" + formatTime(player.bh.stagnantTimer) + "." : "<h3>前进<br>5秒"},
             canClick() {return player.bh.stagnantTimer.lte(0)},
             unlocked() {return BHS[player.bh.currentStage].timeStagnation},
             onClick() {
@@ -1794,7 +1794,7 @@ addLayer("bh", {
             },
         },
         "Stagnant-Auto": {
-            title: "Auto<br>Skip",
+            title: "自动<br>跳过",
             canClick: true,
             unlocked: true,
             onClick() {
