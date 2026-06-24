@@ -189,7 +189,7 @@ addLayer("achievements", {
             marked: true,
         },
         23: {
-            name: "Swarmed",
+            name: "蜂拥",
             image: "resources/achievements/1_23.png",
             tooltip: "<h3>Swarmed</h3><hr style='margin-bottom:4px'>Reset for over<br>1e25 grasshoppers<br><br>Reward: Double<br>grasshopper gain.",
             color: "white",
@@ -197,7 +197,7 @@ addLayer("achievements", {
             marked: true,
         },
         24: {
-            name: "Pent-Uncapped",
+            name: "五阶无上限",
             image: "resources/achievements/1_24.png",
             tooltip: "<h3>Pent-Uncapped</h3><hr style='margin-bottom:4px'>Gain a 31st pent.",
             color: "white",
@@ -206,28 +206,28 @@ addLayer("achievements", {
         },
 
         101: {
-            name: "To Infinity",
+            name: "向无限",
             image: "resources/achievements/2_01.png",
             tooltip: "<h3>To Infinity</h3><hr style='margin-bottom:4px'>Reach infinity.",
             color: "#ffbf00",
             unlocked: true,
         },
         102: {
-            name: "New Dimensions",
+            name: "新维度",
             image: "resources/achievements/2_00.png",
             tooltip: "<h3>New Dimensions</h3><hr style='margin-bottom:4px'>Do your first dimension<br>boost.",
             color: "#ffbf00",
             unlocked: true,
         },
         103: {
-            name: "Fueled Gains",
+            name: "燃料获得",
             image: "resources/achievements/2_03.png",
             tooltip: "<h3>Fueled Gains</h3><hr style='margin-bottom:4px'>Do your first rocket<br>fuel reset.",
             color: "#ffbf00",
             unlocked: true,
         },
         104: {
-            name: "Paid Friends",
+            name: "付费朋友",
             image: "resources/achievements/2_04.png",
             tooltip: "<h3>Paid Friends</h3><hr style='margin-bottom:4px'>Buy a pet from the<br>pet shop.<br><br>Reward: +5% crate roll<br>chance.<br><small>(Chance to roll more times)</small>",
             color: "#ffbf00",
@@ -235,21 +235,21 @@ addLayer("achievements", {
             marked: true,
         },
         105: {
-            name: "Kept Time",
+            name: "守时",
             image: "resources/achievements/2_00.png",
             tooltip: "<h3>Kept Time</h3><hr style='margin-bottom:4px'>Reach the third<br>infinity milestone.",
             color: "#ffbf00",
             unlocked: true,
         },
         106: {
-            name: "Galactic Gains",
+            name: "银河获得",
             image: "resources/achievements/2_00.png",
             tooltip: "<h3>Galactic Gains</h3><hr style='margin-bottom:4px'>Buy an antimatter galaxy.",
             color: "#ffbf00",
             unlocked: true,
         },
         107: {
-            name: "Unnecessary Feature",
+            name: "不必要的特性",
             image: "resources/achievements/2_07.png",
             tooltip: "<h3>Unnecessary Feature</h3><hr style='margin-bottom:4px'>Beat infinity challenge 1.<br><br>Reward: x1.1 Infinities.",
             color: "#ffbf00",
@@ -258,7 +258,7 @@ addLayer("achievements", {
             marked: true,
         },
         108: {
-            name: "Pest Lover",
+            name: "害虫爱好者",
             image: "resources/achievements/2_08.png",
             tooltip: "<h3>Pest Lover</h3><hr style='margin-bottom:4px'>Obtain 250,000 pests.<br><br>Reward: Grasshops remove<br>twice as many pests.",
             color: "#ffbf00",
@@ -266,7 +266,7 @@ addLayer("achievements", {
             marked: true,
         },
         109: {
-            name: "Pest Exterminator",
+            name: "害虫灭绝者",
             image: "resources/achievements/2_09.png",
             tooltip: "<h3>Pest Exterminator</h3><hr style='margin-bottom:4px'>Beat infinity challenge 2.<br><br>Reward: x1.1 Infinities.",
             color: "#ffbf00",
@@ -275,7 +275,7 @@ addLayer("achievements", {
             marked: true,
         },
         110: {
-            name: "Rough Resets",
+            name: "粗暴重置",
             image: "resources/achievements/2_00.png",
             tooltip: "<h3>Rough Resets</h3><hr style='margin-bottom:4px'>Reset for over<br>6 β-Provenance.<br><br>Reward: β-Provenances<br>are 10% cheaper.",
             color: "#ffbf00",
@@ -284,7 +284,7 @@ addLayer("achievements", {
             marked: true,
         },
         111: {
-            name: "Hexing Challenge",
+            name: "魔咒挑战",
             image: "resources/achievements/2_00.png",
             tooltip: "<h3>Hexing Challenge</h3><hr style='margin-bottom:4px'>Beat infinity challenge 3.<br><br>Reward: x1.1 Infinities.",
             color: "#ffbf00",
@@ -293,7 +293,7 @@ addLayer("achievements", {
             marked: true,
         },
         112: {
-            name: "Wrong Goal!",
+            name: "错误目标！",
             image: "resources/achievements/2_12.png",
             tooltip: "<h3>Wrong Goal!</h3><hr style='margin-bottom:4px'>Reach infinity in<br>infinity challenge 4.<br><br>Reward: Decrease pent<br>requirement by /10",
             color: "#ffbf00",
@@ -301,7 +301,7 @@ addLayer("achievements", {
             marked: true,
         },
         113: {
-            name: "Pent Down",
+            name: "五阶已满",
             image: "resources/achievements/2_13.png",
             tooltip: "<h3>Pent Down</h3><hr style='margin-bottom:4px'>Beat infinity challenge 4.<br><br>Reward: x1.1 Infinities.",
             color: "#ffbf00",
@@ -310,14 +310,14 @@ addLayer("achievements", {
             marked: true,
         },
         114: {
-            name: "Doublin'",
+            name: "翻倍",
             image: "resources/achievements/2_14.png",
             tooltip: "<h3>Doublin'</h3><hr style='margin-bottom:4px'>Buy an IP Doubler.",
             color: "#ffbf00",
             unlocked: true,
         },
         115: {
-            name: "Not Very Boosty",
+            name: "不太助推",
             image: "resources/achievements/2_15.png",
             tooltip: "<h3>Not Very Boosty</h3><hr style='margin-bottom:4px'>Buy a \"Challenge Dice<br>Boosty!!! :D\".<br><br>Reward: Double Dice Points.",
             color: "#ffbf00",
@@ -325,7 +325,7 @@ addLayer("achievements", {
             marked: true,
         },
         116: {
-            name: "Dicey Challenge",
+            name: "骰子挑战",
             image: "resources/achievements/2_16.png",
             tooltip: "<h3>Dicey Challenge</h3><hr style='margin-bottom:4px'>Beat infinity challenge 5.<br><br>Reward: x1.1 Infinities.",
             color: "#ffbf00",
@@ -334,7 +334,7 @@ addLayer("achievements", {
             marked: true,
         },
         117: {
-            name: "Golden Time",
+            name: "黄金时间",
             image: "resources/achievements/2_17.png",
             tooltip: "<h3>Golden Time</h3><hr style='margin-bottom:4px'>Evolve Unsmith.",
             color: "#ffbf00",
@@ -342,21 +342,21 @@ addLayer("achievements", {
             unlocked: true,
         },
         118: {
-            name: "Automated Scripts",
+            name: "自动脚本",
             image: "resources/achievements/2_00.png",
             tooltip: "<h3>Automated Scripts</h3><hr style='margin-bottom:4px'>Reach the twelfth<br>infinity milestone.",
             color: "#ffbf00",
             unlocked: true,
         },
         119: {
-            name: "Requirement Met?",
+            name: "满足需求？",
             image: "resources/achievements/2_19.png",
             tooltip: "<h3>Requirement Met?</h3><hr style='margin-bottom:4px'>Reset for over<br>1e15 rocket fuel.",
             color: "#ffbf00",
             unlocked: true,
         },
         120: {
-            name: "Nightmare Fuel",
+            name: "噩梦燃料",
             image: "resources/achievements/2_20.png",
             tooltip: "<h3>Nightmare Fuel</h3><hr style='margin-bottom:4px'>Beat infinity challenge 6.<br><br>Reward: x1.1 Infinities.",
             color: "#ffbf00",
@@ -365,14 +365,14 @@ addLayer("achievements", {
             marked: true,
         },
         121: {
-            name: "Bless Up",
+            name: "祝福上涨",
             image: "resources/achievements/2_00.png",
             tooltip: "<h3>Bless Up</h3><hr style='margin-bottom:4px'>Do your first<br>blessing reset.",
             color: "#ffbf00",
             unlocked: true,
         },
         122: {
-            name: "ShardNG",
+            name: "碎片NG",
             image: "resources/achievements/2_22.png",
             tooltip: "<h3>ShardNG</h3><hr style='margin-bottom:4px'>Beat infinity challenge 7.<br><br>Reward: x1.1 Infinities.",
             color: "#ffbf00",
@@ -389,7 +389,7 @@ addLayer("achievements", {
             marked: true,
         },
         124: {
-            name: "The 8th Dimension is a lie",
+            name: "第八维度是个谎言",
             image: "resources/achievements/2_00.png",
             tooltip: "<h3>The 8th Dimension is a lie</h3><hr style='margin-bottom:4px'>Beat infinity challenge 8.<br><br>Reward: x1.1 Infinities.",
             color: "#ffbf00",
@@ -399,7 +399,7 @@ addLayer("achievements", {
         },
 
         901: {
-            name: "Buzzing Beginnings",
+            name: "嗡嗡的开始",
             image: "resources/achievements/10_00.png",
             tooltip: "<h3>Buzzing Beginnings</h3><hr style='margin-bottom:4px'>Buy your first research",
             color: "#f9c901",
@@ -407,7 +407,7 @@ addLayer("achievements", {
             unlocked: true,
         },
         902: {
-            name: "Picked Poppies",
+            name: "采摘罂粟",
             image: "resources/achievements/10_00.png",
             tooltip: "<h3>Picked Poppies</h3><hr style='margin-bottom:4px'>Pick your first<br>red flower<br><br>Reward: +5% BPS",
             color: "#f9c901",
@@ -415,7 +415,7 @@ addLayer("achievements", {
             marked: true,
         },
         903: {
-            name: "Red Bouquet",
+            name: "红色花束",
             image: "resources/achievements/10_00.png",
             tooltip: "<h3>Red Bouquet</h3><hr style='margin-bottom:4px'>Have at least one of<br>every red circular flower<br><br>Reward: +1 Base Picking Power",
             color: "#f9c901",
@@ -423,7 +423,7 @@ addLayer("achievements", {
             marked: true,
         },
         904: {
-            name: "Powdery Pollen",
+            name: "粉末花粉",
             image: "resources/achievements/10_00.png",
             tooltip: "<h3>Powdery Pollen</h3><hr style='margin-bottom:4px'>Choose the pollen path<br><br>Reward: +25% Flower Gain",
             color: "#f9c901",
@@ -431,7 +431,7 @@ addLayer("achievements", {
             marked: true,
         },
         905: {
-            name: "Blooming Blue",
+            name: "蓝色绽放",
             image: "resources/achievements/10_00.png",
             tooltip: "<h3>Blooming Blue</h3><hr style='margin-bottom:4px'>Pick your first<br>blue flower<br><br>Reward: +10% BPS",
             color: "#f9c901",
@@ -439,7 +439,7 @@ addLayer("achievements", {
             marked: true,
         },
         906: {
-            name: "<small>You're telling me a bee made this bread?</small>",
+            name: "<small>你确定是蜜蜂做了这个面包？</small>",
             image: "resources/achievements/10_00.png",
             tooltip: "<h3>You're telling me a<br>bee made this bread?</h3><hr style='margin-bottom:4px'>Do your first<br>bee bread reset<br><br>Reward: +50% Pollen Gain",
             color: "#f9c901",
@@ -447,7 +447,7 @@ addLayer("achievements", {
             marked: true,
         },
         907: {
-            name: "Pink Pickings",
+            name: "粉色采摘",
             image: "resources/achievements/10_00.png",
             tooltip: "<h3>Pink Pickings</h3><hr style='margin-bottom:4px'>Pick your first<br>pink flower<br><br>Reward: +25% BPS",
             color: "#f9c901",
@@ -455,7 +455,7 @@ addLayer("achievements", {
             marked: true,
         },
         908: {
-            name: "Nutritious Nectar",
+            name: "营养花蜜",
             image: "resources/achievements/10_00.png",
             tooltip: "<h3>Nutritious Nectar</h3><hr style='margin-bottom:4px'>Choose the nectar path<br><br>Reward: +0.1 GBE",
             color: "#f9c901",
@@ -463,7 +463,7 @@ addLayer("achievements", {
             marked: true,
         },
         909: {
-            name: "Gathered Green",
+            name: "采集绿色",
             image: "resources/achievements/10_00.png",
             tooltip: "<h3>Gathered Green</h3><hr style='margin-bottom:4px'>Pick your first<br>green flower<br><br>Reward: +10% BPS",
             color: "#f9c901",
@@ -471,7 +471,7 @@ addLayer("achievements", {
             marked: true,
         },
         910: {
-            name: "Mitochondria is the ... wait wrong cell",
+            name: "线粒体是……等等，细胞不对",
             image: "resources/achievements/10_00.png",
             tooltip: "<h3>Mitochondria is the<br>... wait wrong cell</h3><hr style='margin-bottom:4px'>Do your first<br>honey-cell reset<br><br>Reward: +20% Nectar Gain",
             color: "#f9c901",
@@ -479,7 +479,7 @@ addLayer("achievements", {
             marked: true,
         },
         911: {
-            name: "Blond Blossom",
+            name: "金发花朵",
             image: "resources/achievements/10_00.png",
             tooltip: "<h3>Blond Blossom</h3><hr style='margin-bottom:4px'>Pick your first<br>yellow flower<br><br>Reward: +25% BPS",
             color: "#f9c901",
@@ -487,7 +487,7 @@ addLayer("achievements", {
             marked: true,
         },
         912: {
-            name: "Not Another One!",
+            name: "别再来了！",
             image: "resources/achievements/10_12.png",
             tooltip: "<h3>Not Another One!</h3><hr style='margin-bottom:4px'>Do an aleph reset<br><br>Reward: Flower timers<br>are 10% faster",
             color: "#f9c901",
@@ -495,7 +495,7 @@ addLayer("achievements", {
             marked: true,
         },
         913: {
-            name: "Both Sides",
+            name: "双面",
             image: "resources/achievements/10_00.png",
             tooltip: "<h3>Both Sides</h3><hr style='margin-bottom:4px'>Do both aleph reset types<br><br>Reward: +50% Aleph Resources",
             color: "#f9c901",
@@ -503,7 +503,7 @@ addLayer("achievements", {
             marked: true,
         },
         914: {
-            name: "Oh! That is where I put that!",
+            name: "哦！原来我把它放那儿了！",
             image: "resources/achievements/10_00.png",
             tooltip: "<h3>Oh! That is where<br>I put that!</h3><hr style='margin-bottom:4px'>Purchase the forgotten<br>pollen upgrade<br><br>Reward: +50% Pollen<br>+20% Nectar",
             color: "#f9c901",
@@ -511,14 +511,14 @@ addLayer("achievements", {
             marked: true,
         },
         915: {
-            name: "Infested Domain",
+            name: "侵染领域",
             image: "resources/achievements/10_00.png",
             tooltip: "<h3>Infested Domain</h3><hr style='margin-bottom:4px'>Gain your first<br>T3 alternate infinity",
             color: "#f9c901",
             unlocked: true,
         },
         916: {
-            name: "Break ... what exactly?",
+            name: "突破……突破什么？",
             image: "resources/achievements/10_00.png",
             tooltip: "<h3>Break ... what exactly?</h3><hr style='margin-bottom:4px'>Expand your hives limits<br><br>Reward: +25% Pre-Aleph<br>Resources",
             color: "#f9c901",
@@ -527,7 +527,7 @@ addLayer("achievements", {
             marked: true,
         },
         917: {
-            name: "How many nectars are there!?!",
+            name: "到底有多少种花蜜！？",
             image: "resources/achievements/10_00.png",
             tooltip: "<h3>How many nectars<br>are there!?!</h3><hr style='margin-bottom:4px'>Do your first<br>Nectar ε reset<br><br>Reward: +5% Cell<br>Effect Base",
             color: "#f9c901",
@@ -535,14 +535,14 @@ addLayer("achievements", {
             marked: true,
         },
         918: {
-            name: "Do you even care about this?",
+            name: "你真的在乎这个吗？",
             image: "resources/achievements/10_00.png",
             tooltip: "<h3>Do you even<br>care about this?</h3><hr style='margin-bottom:4px'>Do your first<br>apathy reset",
             color: "#f9c901",
             unlocked: true,
         },
         919: {
-            name: "Fully Apathetic",
+            name: "完全冷漠",
             image: "resources/achievements/10_00.png",
             tooltip: "<h3>Fully Apathetic</h3><hr style='margin-bottom:4px'>Expand your hives<br>limits again<br><br>Reward: +25% Pre-Aleph<br>Resources",
             color: "#f9c901",
@@ -551,7 +551,7 @@ addLayer("achievements", {
             marked: true,
         },
         920: {
-            name: "Beyond the Queen",
+            name: "女王之上",
             image: "resources/achievements/10_00.png",
             tooltip: "<h3>Beyond the Queen</h3><hr style='margin-bottom:4px'>Gain an empress bee<br><br>Reward: +50% BB Milestone<br>Effectiveness",
             color: "#f9c901",
@@ -559,7 +559,7 @@ addLayer("achievements", {
             marked: true,
         },
         921: {
-            name: "Draining Depths",
+            name: "抽干深度",
             image: "resources/achievements/10_00.png",
             tooltip: "<h3>Draining Depths</h3><hr style='margin-bottom:4px'>Enter depth 4<br><br>Reward: +1 SP",
             color: "#f9c901",
@@ -567,7 +567,7 @@ addLayer("achievements", {
             marked: true,
         },
         922: {
-            name: "Wasp War Machine",
+            name: "黄蜂战争机器",
             image: "resources/achievements/10_22.png",
             tooltip: "<h3>Wasp War Machine</h3><hr style='margin-bottom:4px'>Obtain Vespasian<br><br>Reward: +1 DMG",
             color: "#f9c901",
@@ -575,7 +575,7 @@ addLayer("achievements", {
             marked: true,
         },
         923: {
-            name: "Flying Finale",
+            name: "飞行终章",
             image: "resources/achievements/10_00.png",
             tooltip: "<h3>Flying Finale</h3><hr style='margin-bottom:4px'>Enter Aleph's Chamber<br><br>Reward: +1 MND",
             color: "#f9c901",
@@ -583,7 +583,7 @@ addLayer("achievements", {
             marked: true,
         },
         924: {
-            name: "Regicide",
+            name: "弑君",
             image: "resources/achievements/10_00.png",
             tooltip: "<h3>Regicide</h3><hr style='margin-bottom:4px'>Defeat Aleph",
             color: "#f9c901",
