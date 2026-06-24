@@ -872,7 +872,7 @@ function loadVue() {
 		props: ['layer', 'data'],
 		template: `
 			<div v-if="tmp[layer].buyables && tmp[layer].buyables.respec && !(tmp[layer].buyables.showRespec !== undefined && tmp[layer].buyables.showRespec == false)">
-				<div class="tooltipBox respecCheckbox"><input type="checkbox" v-model="player[layer].noRespecConfirm" ><tooltip v-bind:text="'Disable respec confirmation'"></tooltip></div>
+				<div class="tooltipBox respecCheckbox"><input type="checkbox" v-model="player[layer].noRespecConfirm" ><tooltip v-bind:text="'禁用重置确认'"></tooltip></div>
 				<button v-on:click="respecBuyables(layer)" v-bind:class="{ longUpg: true, can: player[layer].unlocked, locked: !player[layer].unlocked }" style="margin-right: 18px">{{tmp[layer].buyables.respecText ? tmp[layer].buyables.respecText : "Respec"}}</button>
 			</div>
 			`
@@ -1458,7 +1458,7 @@ function loadVue() {
 			<img v-bind:src="layers.jukebox.songs[data].img" style='width:93px;height:93px;border:2px solid var(--regBorder);margin-top:1px'></img>
 			<div style="display:flex;align-items:center;width:89px;height:24px;background:var(--miscButton);border-radius:15px;margin-top:1px;padding:auto 3px">
 				<div style="line-height:0.9">
-					<span style="font-size:10px;user-select:none" v-html="data != 'none' ? layers[layer].songs[data].name + '<br>' : 'Disable'"></span>
+					<span style="font-size:10px;user-select:none" v-html="data != 'none' ? layers[layer].songs[data].name + '<br>' : '禁用'"></span>
 				</div>
 			</div>
 			<div style="display:flex;align-items:center;width:89px;height:20px;background:var(--miscButton);border-radius:15px;margin-top:3px;padding:auto 3px">
