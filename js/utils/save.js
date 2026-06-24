@@ -333,7 +333,7 @@ function importSave(imported = undefined, forced = false) {
 		imported = prompt("Paste your save here. Don't screw up the timeline though.");
 	try {
 		tempPlr = Object.assign(getStartPlayer(), JSON.parse(atob(imported)));
-		if (tempPlr.versionType != modInfo.id && !forced && !confirm("This save may or may not work, just press 'ok' and see what happens.")) // Wrong save (use "Forced" to force it to accept.)
+		if (tempPlr.versionType != modInfo.id && !forced && !confirm("此存档可能有效也可能无效，按「确定」看看会发生什么。")) // Wrong save (use "Forced" to force it to accept.)
 			return;
 		player = tempPlr;
 		player.versionType = modInfo.id;
@@ -424,7 +424,7 @@ function removePlayerExcess() {
 
 
 function loadBackup() {
-	if (!confirm("So are you sure you want to reset everything???")) return
+	if (!confirm("你真的确定要重置所有内容吗？？？")) return
 	window.ldb.get(modInfo.id + "_backup", function (get) {
 		player = null
 		if (get === null || get === undefined) {
