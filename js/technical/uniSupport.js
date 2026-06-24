@@ -99,7 +99,7 @@ function addUniverse(uniName, uniData){ // Call this to add universes from a dif
 }
 
 addUniverse("U1", {
-    name: "Universe 1<br>Overworld",
+    name: "宇宙1<br>主世界",
     symbol: "1",
     tree: [["i"], ["r", "f"], ["p", "t", "g"], ["gh", "pol", "m"], ["pe", "rf", "d"], ["cb", "fa"]],
     nodeStyle() {
@@ -119,7 +119,7 @@ addUniverse("U1", {
 })
 
 addUniverse("UA", {
-    name: "Universe α<br>Hex",
+    name: "宇宙α<br>魔咒",
     symbol: "α",
     tree: [["hpr", "hsa"], ["hre", "hpu"], ["hbl", "hcu", "hve"], ["hpw", "hrm"]],
     nodeStyle() {
@@ -140,7 +140,7 @@ addUniverse("UA", {
 })
 
 addUniverse("U2", {
-    name: "Universe 2<br>Antimatter World",
+    name: "宇宙2<br>反物质世界",
     symbol: "2",
     tree: [["in"], ["ad", "ip"], ["ta", "tad"], ["bi", "id", "om"], ["ca", "ro"/*, ["mi"]*/]],
     nodeStyle() {
@@ -167,7 +167,7 @@ addUniverse("U2", {
 })
 
 addUniverse("A1", {
-    name: "Alt-Universe 1<br>Cantepocalypse",
+    name: "替代宇宙1<br>坎特天启",
     symbol: "A1",
     tree: [["cp"], ["ar", "pr"], ["an", "rt", "rg"], ["oi", "gs", "en"], ["fu"]],
     nodeStyle() {
@@ -188,7 +188,7 @@ addUniverse("A1", {
 })
 
 addUniverse("A2", {
-    name: "Alt-Universe 2<br>Cosmic Cosmos",
+    name: "替代宇宙2<br>宇宙宇宙",
     symbol: "A2",
     tree: [["st"], ["pl", "se"], ["ir"], ["sb"]],
     nodeStyle() {
@@ -210,7 +210,7 @@ addUniverse("A2", {
 })
 
 addUniverse("U3", {
-    name: "Universe 3<br>Domain of Singularity",
+    name: "宇宙3<br>奇点领域",
     symbol: "3",
     tree: [["s"], ["co", "cof"], ["ra", "cs", "sd"], ["sma", "sme"], ["bh"]],
     nodeStyle() {
@@ -231,7 +231,7 @@ addUniverse("U3", {
 })
 
 addUniverse("D1", {
-    name: "Dark Universe 1<br>Shadow Overworld",
+    name: "暗宇宙1<br>暗影主世界",
     symbol: "D1",
     tree: [["funify", "le","bl"], ["dr", "dp", "rp"], ["dg", "db", "dgr", "dgj"], ["dn", "dv", "ds"]],
     nodeStyle() {
@@ -265,7 +265,7 @@ addUniverse("CB", {
 })
 
 addUniverse("CH", {
-    name: "Universe γ<br>Hall of Celestials",
+    name: "宇宙γ<br>天神殿堂",
     symbol: "γ",
     tree: [["ch"]],
     nodeStyle() {
