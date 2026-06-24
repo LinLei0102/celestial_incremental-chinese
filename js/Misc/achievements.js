@@ -244,7 +244,7 @@ addLayer("achievements", {
         106: {
             name: "银河获得",
             image: "resources/achievements/2_00.png",
-            tooltip: "<h3>银河系 Gains</h3><hr style='margin-bottom:4px'>Buy an antimatter galaxy.",
+            tooltip: "<h3>银河系 Gains</h3><hr style='margin-bottom:4px'>购买一个反物质星系。",
             color: "#ffbf00",
             unlocked: true,
         },
@@ -433,7 +433,7 @@ addLayer("achievements", {
         905: {
             name: "蓝色绽放",
             image: "resources/achievements/10_00.png",
-            tooltip: "<h3>绽放 Blue</h3><hr style='margin-bottom:4px'>Pick your first<br>blue flower<br><br>Reward: +10% BPS",
+            tooltip: "<h3>绽放 Blue</h3><hr style='margin-bottom:4px'>采摘你的第一朵<br>蓝色花<br><br>奖励：+10% BPS",
             color: "#f9c901",
             unlocked: true,
             marked: true,
@@ -529,7 +529,7 @@ addLayer("achievements", {
         917: {
             name: "到底有多少种花蜜！？",
             image: "resources/achievements/10_00.png",
-            tooltip: "<h3>How many nectars<br>are there!?!</h3><hr style='margin-bottom:4px'>Do your first<br>Nectar ε reset<br><br>Reward: +5% Cell<br>Effect Base",
+            tooltip: "<h3>How many nectars<br>are there!?!</h3><hr style='margin-bottom:4px'>进行你的第一次<br>花蜜ε重置<br><br>奖励：+5%细胞<br>效果基础值",
             color: "#f9c901",
             unlocked: true,
             marked: true,
