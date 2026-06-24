@@ -703,7 +703,7 @@
                 ["clickable", 2],
                 ["style-column", [
                     ["style-row", [
-                        ["raw-html", function () { return player.rf.abilityIndex != -1 ? player.rf.abilityDesc[player.rf.abilityIndex][0] : "Nothing Selected" }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                        ["raw-html", function () { return player.rf.abilityIndex != -1 ? player.rf.abilityDesc[player.rf.abilityIndex][0] : "未选择" }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                     ], {width: "372px", height: "38px", borderBottom: "2px solid white"}],
                     ["style-row", [
                         ["raw-html", function () { return player.rf.abilityIndex != -1 ? player.rf.abilityDesc[player.rf.abilityIndex][1] : "" }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
