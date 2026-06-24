@@ -741,25 +741,25 @@ addLayer("achievements", {
                 ], () => {return tmp.achievements.microtabs.stars[2].unlocked ? {width: "155px", height: "40px", borderBottom: "3px solid white"} : {display: "none !important"}}],
                 /*
                 ["style-row", [
-                    ["category-button", ["<span style='color:#9bedff'>★★★</span>★★<br><small style='color:#c00'>[NOT IMPLEMENTED]</small>", "stars", 3], {width: "155px", height: "40px", color: "#aaa", background: "#354040", borderRight: "3px solid white"}],
+                    ["category-button", ["<span style='color:#9bedff'>★★★</span>★★<br><small style='color:#c00'>[未实现]</small>", "stars", 3], {width: "155px", height: "40px", color: "#aaa", background: "#354040", borderRight: "3px solid white"}],
                 ], () => {return tmp.achievements.microtabs.stars[3].unlocked ? {width: "155px", height: "40px", borderBottom: "3px solid white"} : {display: "none !important"}}],
                 ["style-row", [
-                    ["category-button", ["<span style='color:#9bedff'>★★★★</span>★<br><small style='color:#c00'>[NOT IMPLEMENTED]</small>", "stars", 4], {width: "155px", height: "40px", color: "#aaa", background: "#113204", borderRight: "3px solid white"}],
+                    ["category-button", ["<span style='color:#9bedff'>★★★★</span>★<br><small style='color:#c00'>[未实现]</small>", "stars", 4], {width: "155px", height: "40px", color: "#aaa", background: "#113204", borderRight: "3px solid white"}],
                 ], () => {return tmp.achievements.microtabs.stars[4].unlocked ? {width: "155px", height: "40px", borderBottom: "3px solid white"} : {display: "none !important"}}],
                 ["style-row", [
-                    ["category-button", ["★★★★★<br><small style='color:#c00'>[NOT IMPLEMENTED]</small>", "stars", 5], {width: "155px", height: "40px", color: "#9bedff", background: "#032737", borderRight: "3px solid white"}],
+                    ["category-button", ["★★★★★<br><small style='color:#c00'>[未实现]</small>", "stars", 5], {width: "155px", height: "40px", color: "#9bedff", background: "#032737", borderRight: "3px solid white"}],
                 ], () => {return tmp.achievements.microtabs.stars[5].unlocked ? {width: "155px", height: "40px", borderBottom: "3px solid white"} : {display: "none !important"}}],
                 ["style-row", [
-                    ["category-button", ["<span style='color:#88e688'>★</span>★★★★<br><small style='color:#c00'>[NOT IMPLEMENTED]</small>", "stars", 6], {width: "155px", height: "40px", color: "#9bedff", background: "#330d0d", borderRight: "3px solid white"}],
+                    ["category-button", ["<span style='color:#88e688'>★</span>★★★★<br><small style='color:#c00'>[未实现]</small>", "stars", 6], {width: "155px", height: "40px", color: "#9bedff", background: "#330d0d", borderRight: "3px solid white"}],
                 ], () => {return tmp.achievements.microtabs.stars[6].unlocked ? {width: "155px", height: "40px", borderBottom: "3px solid white"} : {display: "none !important"}}],
                 ["style-row", [
-                    ["category-button", ["<span style='color:#88e688'>★★</span>★★★<br><small style='color:#c00'>[NOT IMPLEMENTED]</small>", "stars", 7], {width: "155px", height: "40px", color: "#9bedff", background: "#111", borderRight: "3px solid white"}],
+                    ["category-button", ["<span style='color:#88e688'>★★</span>★★★<br><small style='color:#c00'>[未实现]</small>", "stars", 7], {width: "155px", height: "40px", color: "#9bedff", background: "#111", borderRight: "3px solid white"}],
                 ], () => {return tmp.achievements.microtabs.stars[7].unlocked ? {width: "155px", height: "40px", borderBottom: "3px solid white"} : {display: "none !important"}}],
                 ["style-row", [
-                    ["category-button", ["<span style='color:#88e688'>★★★</span>★★<br><small style='color:#c00'>[NOT IMPLEMENTED]</small>", "stars", 8], {width: "155px", height: "40px", color: "#9bedff", background: "#370530", borderRight: "3px solid white"}],
+                    ["category-button", ["<span style='color:#88e688'>★★★</span>★★<br><small style='color:#c00'>[未实现]</small>", "stars", 8], {width: "155px", height: "40px", color: "#9bedff", background: "#370530", borderRight: "3px solid white"}],
                 ], () => {return tmp.achievements.microtabs.stars[8].unlocked ? {width: "155px", height: "40px", borderBottom: "3px solid white"} : {display: "none !important"}}],
                 ["style-row", [
-                    ["category-button", ["<span style='color:#88e688'>★★★★</span>★<br><small style='color:#c00'>[NOT IMPLEMENTED]</small>", "stars", 9], {width: "155px", height: "40px", color: "#9bedff", background: "#160239", borderRight: "3px solid white"}],
+                    ["category-button", ["<span style='color:#88e688'>★★★★</span>★<br><small style='color:#c00'>[未实现]</small>", "stars", 9], {width: "155px", height: "40px", color: "#9bedff", background: "#160239", borderRight: "3px solid white"}],
                 ], () => {return tmp.achievements.microtabs.stars[9].unlocked ? {width: "155px", height: "40px", borderBottom: "3px solid white"} : {display: "none !important"}}],
                 */
                 ["style-row", [
@@ -771,11 +771,11 @@ addLayer("achievements", {
             ], {width: "630px", height: "415px"}],
         ], {width: "800px", height: "415px", backgroundColor: "black", border: "3px solid white"}],
         ["style-column", [
-            ["raw-html", "Achievements with a green border can be clicked to obtain.", {color: "white", fontSize: "18px", fontFamily: "monospace"}],
+            ["raw-html", "可点击绿色边框的成就来领取。", {color: "white", fontSize: "18px", fontFamily: "monospace"}],
         ], {width: "800px", height: "30px", backgroundColor: "rgba(0,0,0,0.5)", borderLeft: "3px solid white", borderRight: "3px solid white", borderBottom: "1px solid white"}],
         ["style-column", [
-            ["raw-html", "<span style='color:red'>WARNING:</span> Achievements are currently <span style='color:red'>WIP</span> and are missing pages and icons.", {color: "white", fontSize: "18px", fontFamily: "monospace"}],
-            ["raw-html", "(They do give rewards though, so maybe look at them a little)", {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+            ["raw-html", "<span style='color:red'>警告：</span>成就目前<span style='color:red'>开发中</span>，缺少页面和图标。", {color: "white", fontSize: "18px", fontFamily: "monospace"}],
+            ["raw-html", "（但它们确实提供奖励，所以还是看看吧）", {color: "white", fontSize: "16px", fontFamily: "monospace"}],
         ], {width: "800px", height: "50px", backgroundColor: "rgba(0,0,0,0.5)", borderLeft: "3px solid white", borderRight: "3px solid white", borderBottom: "3px solid white", borderRadius: "0 0 25px 25px"}],
         ["blank", "25px"],
     ],
