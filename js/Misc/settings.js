@@ -543,7 +543,7 @@ addLayer("settings", {
             ["column", [
                 ["style-column", [
                     ["style-row", [
-                        ["raw-html", "Save Options", {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}]
+                        ["raw-html", "存档选项", {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}]
                     ], {width: "306px", height: "30px", borderBottom: "3px solid var(--regBorder)"}],
                     ["style-row", [
                         ["clickable", 11], ["style-row", [], {width: "3px", height: "80px", background: "var(--regBorder)"}],
@@ -564,10 +564,10 @@ addLayer("settings", {
                 ["blank", "8px"],
                 ["style-column", [
                     ["style-row", [
-                        ["raw-html", "Visual Options", {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}],
+                        ["raw-html", "视觉选项", {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}],
                     ], {width: "306px", height: "30px", borderBottom: "3px solid var(--regBorder)"}],
                     ["style-row", [
-                        ["raw-html", "Themes", {color: "var(--textColor)", fontSize: "16px", fontFamily: "monospace"}],
+                        ["raw-html", "主题", {color: "var(--textColor)", fontSize: "16px", fontFamily: "monospace"}],
                     ], {width: "306px", height: "25px", background: "var(--miscButtonDisable)", borderBottom: "3px solid var(--regBorder)"}],
                     ["style-row", [
                         ["clickable", 101], ["style-row", [], {width: "3px", height: "45px", background: "var(--regBorder)"}],
@@ -588,7 +588,7 @@ addLayer("settings", {
                         ["clickable", 100]
                     ], {width: "306px", borderBottom: "3px solid var(--regBorder)"}],
                     ["style-row", [
-                        ["raw-html", "Layouts", {color: "var(--textColor)", fontSize: "16px", fontFamily: "monospace"}],
+                        ["raw-html", "布局", {color: "var(--textColor)", fontSize: "16px", fontFamily: "monospace"}],
                     ], {width: "306px", height: "25px", background: "var(--miscButtonDisable)", borderBottom: "3px solid var(--regBorder)"}],
                     ["style-row", [
                         ["clickable", 31], ["style-row", [], {width: "3px", height: "45px", background: "var(--regBorder)"}],
@@ -601,7 +601,7 @@ addLayer("settings", {
             ["column", [
                 ["style-column", [
                     ["style-row", [
-                        ["raw-html", "Toggle Options", {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}]
+                        ["raw-html", "开关选项", {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}]
                     ], {width: "306px", height: "30px", borderBottom: "3px solid var(--regBorder)"}],
                     ["style-row", [
                         ["clickable", 21], ["style-row", [], {width: "3px", height: "60px", background: "var(--regBorder)"}],
@@ -616,40 +616,40 @@ addLayer("settings", {
                     ["style-row", [
                         ["clickable", 27],
                         ["style-column", [
-                            ["raw-html", "General Hotkeys", {color: "var(--textColor)", fontSize: "14px", fontFamily: "monospace"}],
-                            ["raw-html", "Alt - Toggle Music Off", {color: "var(--textColor)", fontSize: "12px", fontFamily: "monospace"}],
-                            ["raw-html", "[More in the future]", {color: "var(--textColor)", fontSize: "12px", fontFamily: "monospace"}],
+                            ["raw-html", "通用快捷键", {color: "var(--textColor)", fontSize: "14px", fontFamily: "monospace"}],
+                            ["raw-html", "Alt - 切换音乐关闭", {color: "var(--textColor)", fontSize: "12px", fontFamily: "monospace"}],
+                            ["raw-html", "[未来更多]", {color: "var(--textColor)", fontSize: "12px", fontFamily: "monospace"}],
                         ], {width: "203px", height: "60px", borderLeft: "3px solid var(--regBorder)"}],
                     ], {width: "306px", borderBottom: "3px solid var(--regBorder)"}],
                     ["style-row", [
                         ["clickable", 28],
                         ["style-column", [
-                            ["raw-html", () => {return "Volume: " + options.musicVolume}, {color: "var(--textColor)", fontSize: "16px", fontFamily: "monospace"}],
+                            ["raw-html", () => {return "音量: " + options.musicVolume}, {color: "var(--textColor)", fontSize: "16px", fontFamily: "monospace"}],
                             ["blank", "5px"],
-                            ["raw-html", () => {return "</td><td><div style=\"margin: 0 10px\"><input type=range id=volume name=Music Volume min=1 max=10 value=" + options.musicVolume + " oninput=updateMusicVolume()><br>"}, {color: "var(--textColor)", fontSize: "18px", fontFamily: "monospace"}],
+                            ["raw-html", () => {return "</td><td><div style=\"margin: 0 10px\"><input type=range id=音量 name=音乐音量 min=1 max=10 value=" + options.musicVolume + " oninput=updateMusicVolume()><br>"}, {color: "var(--textColor)", fontSize: "18px", fontFamily: "monospace"}],
                         ], {width: "203px", height: "57px", borderLeft: "3px solid var(--regBorder)"}],
                     ], {width: "306px"}],
                 ], {width: "306px", background: "var(--layerBackground)", border: "3px solid var(--regBorder)"}],
                 ["blank", "8px"],
                 ["top-column", [
                     ["style-row", [
-                        ["raw-html", "Credits", {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}],
+                        ["raw-html", "致谢", {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}],
                     ], {width: "306px", height: "30px", borderBottom: "3px solid var(--regBorder)"}],
                     ["top-column", [
                         ["blank", "10px"]
-                        ["raw-html", "Game by Icecreamdude", {color: "var(--textColor)", fontSize: "14px", fontFamily: "monospace"}],
-                        ["raw-html", "Music: Icecreamdude !Sweet 150percent Citrine/Niko/Flushmak<br>" +
-                            "Content: Icecreamdude Forwaken<br>" +
-                            "Ideas: Nova<br>" +
-                            "Art: Jtoh_Sc Lemonsja<br>" +
-                            "Testing: Nova Piterpicher Vel<br>" +
-                            "Bug Fixing: Tsanth Forwaken", {color: "var(--textColor)", fontSize: "12px", fontFamily: "monospace"}],
+                        ["raw-html", "游戏制作：Icecreamdude", {color: "var(--textColor)", fontSize: "14px", fontFamily: "monospace"}],
+                        ["raw-html", "音乐：Icecreamdude !Sweet 150percent Citrine/Niko/Flushmak<br>" +
+                            "内容：Icecreamdude Forwaken<br>" +
+                            "创意：Nova<br>" +
+                            "美术：Jtoh_Sc Lemonsja<br>" +
+                            "测试：Nova Piterpicher Vel<br>" +
+                            "修复：Tsanth Forwaken", {color: "var(--textColor)", fontSize: "12px", fontFamily: "monospace"}],
                     ], {width: "306px", height: "206px"}],
                     ["style-row", [
-                        ["raw-html", () => "<a href=https://discord.gg/icecreamdude-s-incremental-games-850817562040467556><button class=can style='display:flex;align-items:center;justify-content:center;width:306px;height:40px;font-size:20px;color:#dde0fc;background:#5865f2;border:3px solid #2c3279'>Join the Discord!</button></a>", {fontFamily: "monospace",}],
+                        ["raw-html", () => "<a href=https://discord.gg/icecreamdude-s-incremental-games-850817562040467556><button class=can style='display:flex;align-items:center;justify-content:center;width:306px;height:40px;font-size:20px;color:#dde0fc;background:#5865f2;border:3px solid #2c3279'>加入 Discord！</button></a>", {fontFamily: "monospace",}],
                     ], {width: "306px", height: "40px", borderTop: "3px solid var(--regBorder)"}],
                     ["style-row", [
-                        ["raw-html", () => {return "Playtime: " + formatTime(player.timePlayed)}, {color: "var(--textColor)", fontSize: "16px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "游戏时间：" + formatTime(player.timePlayed)}, {color: "var(--textColor)", fontSize: "16px", fontFamily: "monospace"}],
                     ], {width: "306px", height: "30px", borderTop: "3px solid var(--regBorder)"}],
                 ], {width: "306px", height: "315px", background: "var(--layerBackground)", border: "3px solid var(--regBorder)"}],
             ]],
