@@ -10,7 +10,7 @@ addLayer("achievements", {
         1: {
             name: "首次重置<br><small>(众多之一)</small>",
             image: "resources/achievements/1_01.png",
-            tooltip: "<h3>First Reset <small>(of many)</small></h3><hr style='margin-bottom:4px'>Obtain your first rank.",
+            tooltip: "<h3>首次重置 <small>(of many)</small></h3><hr style='margin-bottom:4px'>Obtain your first rank.",
             color: "white",
             complete() {return hasUpgrade("p", 17)},
             unlocked: true,
@@ -18,7 +18,7 @@ addLayer("achievements", {
         2: {
             name: "小小的开始",
             image: "resources/achievements/1_02.png",
-            tooltip: "<h3>Small Beginnings</h3><hr style='margin-bottom:4px'>Obtain your first tier.<br><br>Reward: Ranks are 20% cheaper.",
+            tooltip: "<h3>小小的开始</h3><hr style='margin-bottom:4px'>Obtain your first tier.<br><br>Reward: Ranks are 20% cheaper.",
             color: "white",
             complete() {return hasUpgrade("p", 18)},
             unlocked: true,
@@ -27,7 +27,7 @@ addLayer("achievements", {
         3: {
             name: "分别翻倍",
             image: "resources/achievements/1_03.png",
-            tooltip: "<h3>Seperate Doubling</h3><hr style='margin-bottom:4px'>Reach x2 points from factors.",
+            tooltip: "<h3>分别翻倍</h3><hr style='margin-bottom:4px'>Reach x2 points from factors.",
             color: "white",
             complete() {return hasUpgrade("p", 15) || hasUpgrade("cs", 201)},
             unlocked: true,
@@ -35,7 +35,7 @@ addLayer("achievements", {
         4: {
             name: "四阶，别打米诺",
             image: "resources/achievements/1_04.png",
-            tooltip: "<h3>Tetr, Hold the Mino</h3><hr style='margin-bottom:4px'>Obtain your first tetr.<br><br>Reward: Ranks and Tiers are<br>15% cheaper.",
+            tooltip: "<h3>四阶，别打米诺</h3><hr style='margin-bottom:4px'>Obtain your first tetr.<br><br>Reward: Ranks and Tiers are<br>15% cheaper.",
             color: "white",
             complete() {return hasUpgrade("p", 22) || hasMilestone("s", 19)},
             unlocked: true,
@@ -44,7 +44,7 @@ addLayer("achievements", {
         5: {
             name: "威望初升",
             image: "resources/achievements/1_05.png",
-            tooltip: "<h3>Prestigious</h3><hr style='margin-bottom:4px'>Do your first prestige reset.<br><br>Reward: Ranks, Tiers, and Tetrs<br>are 10% cheaper.",
+            tooltip: "<h3>威望初升</h3><hr style='margin-bottom:4px'>Do your first prestige reset.<br><br>Reward: Ranks, Tiers, and Tetrs<br>are 10% cheaper.",
             color: "white",
             unlocked: true,
             marked: true,
@@ -52,7 +52,7 @@ addLayer("achievements", {
         6: {
             name: "八倍因子",
             image: "resources/achievements/1_06.png",
-            tooltip: "<h3>Octuple Factors</h3><hr style='margin-bottom:4px'>Buy a Factor VIII.",
+            tooltip: "<h3>八倍因子</h3><hr style='margin-bottom:4px'>Buy a Factor VIII.",
             color: "white",
             complete() {return hasUpgrade("p", 15) || hasUpgrade("cs", 201)},
             unlocked: true,
@@ -60,7 +60,7 @@ addLayer("achievements", {
         7: {
             name: "因子驱动",
             image: "resources/achievements/1_07.png",
-            tooltip: "<h3>Factor Powered</h3><hr style='margin-bottom:4px'>Buy a Power Factor.",
+            tooltip: "<h3>因子驱动</h3><hr style='margin-bottom:4px'>Buy a Power Factor.",
             color: "white",
             complete() {return hasUpgrade("p", 21) || hasUpgrade("cs", 201)},
             unlocked: true,
@@ -68,7 +68,7 @@ addLayer("achievements", {
         8: {
             name: "落叶归根",
             image: "resources/achievements/1_08.png",
-            tooltip: "<h3>Leaf Leavings</h3><hr style='margin-bottom:4px'>Buy a Leaf Producer.",
+            tooltip: "<h3>落叶归根</h3><hr style='margin-bottom:4px'>Buy a Leaf Producer.",
             color: "white",
             complete() {return hasMilestone("r", 12)},
             unlocked: true,
@@ -76,7 +76,7 @@ addLayer("achievements", {
         9: {
             name: "更长的叶片",
             image: "resources/achievements/1_09.png",
-            tooltip: "<h3>Longer Blades</h3><hr style='margin-bottom:4px'>Increase your grass value.<br><br>Reward: Grass spawn time<br>reduced by 10%.",
+            tooltip: "<h3>更长的叶片</h3><hr style='margin-bottom:4px'>Increase your grass value.<br><br>Reward: Grass spawn time<br>reduced by 10%.",
             color: "white",
             complete() {return hasMilestone("r", 13)},
             unlocked: true,
@@ -85,7 +85,7 @@ addLayer("achievements", {
         10: {
             name: "五阶蓄力",
             image: "resources/achievements/1_10.png",
-            tooltip: "<h3>Pent Up</h3><hr style='margin-bottom:4px'>Obtain your first pent.",
+            tooltip: "<h3>五阶蓄力</h3><hr style='margin-bottom:4px'>Obtain your first pent.",
             color: "white",
             complete() {return hasUpgrade("i", 32) || inChallenge("ip", 14)},
             unlocked: true,
@@ -93,7 +93,7 @@ addLayer("achievements", {
         11: {
             name: "自然休眠",
             image: "resources/achievements/1_11.png",
-            tooltip: "<h3>Natural Dormancy</h3><hr style='margin-bottom:4px'>Unlock golden grass.<br><br>Reward: Increase grass value by 25%.",
+            tooltip: "<h3>自然休眠</h3><hr style='margin-bottom:4px'>Unlock golden grass.<br><br>Reward: Increase grass value by 25%.",
             color: "white",
             complete() {return hasMilestone('r', 15) || hasMilestone("ip", 11)},
             unlocked: true,
@@ -102,7 +102,7 @@ addLayer("achievements", {
         12: {
             name: "金色骗局",
             image: "resources/achievements/1_12.png",
-            tooltip: "<h3>Golden Scam</h3><hr style='margin-bottom:4px'>Increase your golden grass value.<br><br>Reward: Golden grass spawn time<br>reduced by 10%.",
+            tooltip: "<h3>金色骗局</h3><hr style='margin-bottom:4px'>Increase your golden grass value.<br><br>Reward: Golden grass spawn time<br>reduced by 10%.",
             color: "white",
             complete() {return hasMilestone('r', 13)},
             unlocked: true,
@@ -111,14 +111,14 @@ addLayer("achievements", {
         13: {
             name: "虫群增益",
             image: "resources/achievements/1_13.png",
-            tooltip: "<h3>Bugged Buffs</h3><hr style='margin-bottom:4px'>Do your first grasshop reset.",
+            tooltip: "<h3>虫群增益</h3><hr style='margin-bottom:4px'>Do your first grasshop reset.",
             color: "white",
             unlocked: true,
         },
         14: {
             name: "取消排名",
             image: "resources/achievements/1_14.png",
-            tooltip: "<h3>Unranked</h3><hr style='margin-bottom:4px'>Prestige without having any<br>ranks/tiers/tetrs.<br><br>Reward: Increase grass value<br>by 50%.",
+            tooltip: "<h3>取消排名</h3><hr style='margin-bottom:4px'>Prestige without having any<br>ranks/tiers/tetrs.<br><br>Reward: Increase grass value<br>by 50%.",
             color: "white",
             complete() {return hasMilestone('r', 15) || hasMilestone("ip", 11)},
             unlocked: true,
@@ -127,7 +127,7 @@ addLayer("achievements", {
         15: {
             name: "小额回报",
             image: "resources/achievements/1_15.png",
-            tooltip: "<h3>Small Returns</h3><hr style='margin-bottom:4px'>Buy a grass factor.<br><br>Reward: Increase fertilizer<br>gain by 50%.",
+            tooltip: "<h3>小额回报</h3><hr style='margin-bottom:4px'>Buy a grass factor.<br><br>Reward: Increase fertilizer<br>gain by 50%.",
             color: "white",
             complete() {return hasMilestone("r", 16) || hasUpgrade("cs", 201)},
             unlocked: true,
@@ -136,7 +136,7 @@ addLayer("achievements", {
         16: {
             name: "震撼力",
             image: "resources/achievements/1_16.png",
-            tooltip: "<h3>Shockingly Powerful</h3><hr style='margin-bottom:4px'>Buy a Factor Study I.",
+            tooltip: "<h3>震撼力</h3><hr style='margin-bottom:4px'>Buy a Factor Study I.",
             color: "white",
             complete() {return hasMilestone("ip", 17) || getBuyableAmount("gh", 16).gte(20)},
             unlocked: true,
@@ -144,7 +144,7 @@ addLayer("achievements", {
         17: {
             name: "你好世界",
             image: "resources/achievements/1_17.png",
-            tooltip: "<h3>Hello World</h3><hr style='margin-bottom:4px'>Do your first<br>code experience reset.<br><br>Reward: Decrease pent<br>requirement by /8.",
+            tooltip: "<h3>你好世界</h3><hr style='margin-bottom:4px'>Do your first<br>code experience reset.<br><br>Reward: Decrease pent<br>requirement by /8.",
             color: "white",
             unlocked: true,
             marked: true,
@@ -152,7 +152,7 @@ addLayer("achievements", {
         18: {
             name: "定时获得",
             image: "resources/achievements/1_18.png",
-            tooltip: "<h3>Timed Gains</h3><hr style='margin-bottom:4px'>Unlock Check Back.",
+            tooltip: "<h3>定时获得</h3><hr style='margin-bottom:4px'>Unlock Check Back.",
             color: "white",
             complete() {return hasMilestone("ip", 19) || hasMilestone("s", 17)},
             unlocked: true,
@@ -160,14 +160,14 @@ addLayer("achievements", {
         19: {
             name: "幸运获得",
             image: "resources/achievements/1_19.png",
-            tooltip: "<h3>Lucky Gains</h3><hr style='margin-bottom:4px'>Enable dice OTF.",
+            tooltip: "<h3>幸运获得</h3><hr style='margin-bottom:4px'>Enable dice OTF.",
             color: "white",
             unlocked: true,
         },
         20: {
             name: "倍增机会",
             image: "resources/achievements/1_20.png",
-            tooltip: "<h3>Multiplied Chances</h3><hr style='margin-bottom:4px'>Gain a second die.<br><br>Reward: Increase dice point<br>gain by 25%.",
+            tooltip: "<h3>倍增机会</h3><hr style='margin-bottom:4px'>Gain a second die.<br><br>Reward: Increase dice point<br>gain by 25%.",
             color: "white",
             complete() {return hasUpgrade("d", 11) || hasUpgrade("tad", 13)},
             unlocked: true,
@@ -176,14 +176,14 @@ addLayer("achievements", {
         21: {
             name: "新朋友",
             image: "resources/achievements/1_21.png",
-            tooltip: "<h3>New Friends</h3><hr style='margin-bottom:4px'>Gain your first pet.",
+            tooltip: "<h3>新朋友</h3><hr style='margin-bottom:4px'>Gain your first pet.",
             color: "white",
             unlocked: true,
         },
         22: {
             name: "全押",
             image: "resources/achievements/1_22.png",
-            tooltip: "<h3>All In</h3><hr style='margin-bottom:4px'>Do a booster dice roll<br>while having all t1 boost<br>effects be greater then 1.<br><br>Reward: Unlock a toggle for<br>faster booster rolls.",
+            tooltip: "<h3>全押</h3><hr style='margin-bottom:4px'>Do a booster dice roll<br>while having all t1 boost<br>effects be greater then 1.<br><br>Reward: Unlock a toggle for<br>faster booster rolls.",
             color: "white",
             unlocked: true,
             marked: true,
@@ -191,7 +191,7 @@ addLayer("achievements", {
         23: {
             name: "蜂拥",
             image: "resources/achievements/1_23.png",
-            tooltip: "<h3>Swarmed</h3><hr style='margin-bottom:4px'>Reset for over<br>1e25 grasshoppers<br><br>Reward: Double<br>grasshopper gain.",
+            tooltip: "<h3>蜂拥</h3><hr style='margin-bottom:4px'>Reset for over<br>1e25 grasshoppers<br><br>Reward: Double<br>grasshopper gain.",
             color: "white",
             unlocked: true,
             marked: true,
@@ -199,7 +199,7 @@ addLayer("achievements", {
         24: {
             name: "五阶无上限",
             image: "resources/achievements/1_24.png",
-            tooltip: "<h3>Pent-Uncapped</h3><hr style='margin-bottom:4px'>Gain a 31st pent.",
+            tooltip: "<h3>五阶无上限</h3><hr style='margin-bottom:4px'>Gain a 31st pent.",
             color: "white",
             complete() {return hasUpgrade("i", 32) || inChallenge("ip", 14)},
             unlocked: true,
@@ -208,28 +208,28 @@ addLayer("achievements", {
         101: {
             name: "向无限",
             image: "resources/achievements/2_01.png",
-            tooltip: "<h3>To Infinity</h3><hr style='margin-bottom:4px'>Reach infinity.",
+            tooltip: "<h3>向无限</h3><hr style='margin-bottom:4px'>Reach infinity.",
             color: "#ffbf00",
             unlocked: true,
         },
         102: {
             name: "新维度",
             image: "resources/achievements/2_00.png",
-            tooltip: "<h3>New Dimensions</h3><hr style='margin-bottom:4px'>Do your first dimension<br>boost.",
+            tooltip: "<h3>新维度</h3><hr style='margin-bottom:4px'>Do your first dimension<br>boost.",
             color: "#ffbf00",
             unlocked: true,
         },
         103: {
             name: "燃料获得",
             image: "resources/achievements/2_03.png",
-            tooltip: "<h3>Fueled Gains</h3><hr style='margin-bottom:4px'>Do your first rocket<br>fuel reset.",
+            tooltip: "<h3>燃料获得</h3><hr style='margin-bottom:4px'>Do your first rocket<br>fuel reset.",
             color: "#ffbf00",
             unlocked: true,
         },
         104: {
             name: "付费朋友",
             image: "resources/achievements/2_04.png",
-            tooltip: "<h3>Paid Friends</h3><hr style='margin-bottom:4px'>Buy a pet from the<br>pet shop.<br><br>Reward: +5% crate roll<br>chance.<br><small>(Chance to roll more times)</small>",
+            tooltip: "<h3>付费朋友</h3><hr style='margin-bottom:4px'>Buy a pet from the<br>pet shop.<br><br>Reward: +5% crate roll<br>chance.<br><small>(Chance to roll more times)</small>",
             color: "#ffbf00",
             unlocked: true,
             marked: true,
@@ -237,21 +237,21 @@ addLayer("achievements", {
         105: {
             name: "守时",
             image: "resources/achievements/2_00.png",
-            tooltip: "<h3>Kept Time</h3><hr style='margin-bottom:4px'>Reach the third<br>infinity milestone.",
+            tooltip: "<h3>守时</h3><hr style='margin-bottom:4px'>Reach the third<br>infinity milestone.",
             color: "#ffbf00",
             unlocked: true,
         },
         106: {
             name: "银河获得",
             image: "resources/achievements/2_00.png",
-            tooltip: "<h3>Galactic Gains</h3><hr style='margin-bottom:4px'>Buy an antimatter galaxy.",
+            tooltip: "<h3>银河系 Gains</h3><hr style='margin-bottom:4px'>Buy an antimatter galaxy.",
             color: "#ffbf00",
             unlocked: true,
         },
         107: {
             name: "不必要的特性",
             image: "resources/achievements/2_07.png",
-            tooltip: "<h3>Unnecessary Feature</h3><hr style='margin-bottom:4px'>Beat infinity challenge 1.<br><br>Reward: x1.1 Infinities.",
+            tooltip: "<h3>不必要的特性</h3><hr style='margin-bottom:4px'>Beat infinity challenge 1.<br><br>Reward: x1.1 Infinities.",
             color: "#ffbf00",
             complete() {return hasChallenge("ip", 11)},
             unlocked: true,
@@ -260,7 +260,7 @@ addLayer("achievements", {
         108: {
             name: "害虫爱好者",
             image: "resources/achievements/2_08.png",
-            tooltip: "<h3>Pest Lover</h3><hr style='margin-bottom:4px'>Obtain 250,000 pests.<br><br>Reward: Grasshops remove<br>twice as many pests.",
+            tooltip: "<h3>害虫爱好者</h3><hr style='margin-bottom:4px'>Obtain 250,000 pests.<br><br>Reward: Grasshops remove<br>twice as many pests.",
             color: "#ffbf00",
             unlocked: true,
             marked: true,
@@ -268,7 +268,7 @@ addLayer("achievements", {
         109: {
             name: "害虫灭绝者",
             image: "resources/achievements/2_09.png",
-            tooltip: "<h3>Pest Exterminator</h3><hr style='margin-bottom:4px'>Beat infinity challenge 2.<br><br>Reward: x1.1 Infinities.",
+            tooltip: "<h3>害虫灭绝者</h3><hr style='margin-bottom:4px'>Beat infinity challenge 2.<br><br>Reward: x1.1 Infinities.",
             color: "#ffbf00",
             complete() {return hasChallenge("ip", 12)},
             unlocked: true,
@@ -277,7 +277,7 @@ addLayer("achievements", {
         110: {
             name: "粗暴重置",
             image: "resources/achievements/2_00.png",
-            tooltip: "<h3>Rough Resets</h3><hr style='margin-bottom:4px'>Reset for over<br>6 β-Provenance.<br><br>Reward: β-Provenances<br>are 10% cheaper.",
+            tooltip: "<h3>粗暴重置</h3><hr style='margin-bottom:4px'>Reset for over<br>6 β-Provenance.<br><br>Reward: β-Provenances<br>are 10% cheaper.",
             color: "#ffbf00",
             complete() {return hasMilestone("hre", 6)},
             unlocked: true,
@@ -286,7 +286,7 @@ addLayer("achievements", {
         111: {
             name: "魔咒挑战",
             image: "resources/achievements/2_00.png",
-            tooltip: "<h3>Hexing Challenge</h3><hr style='margin-bottom:4px'>Beat infinity challenge 3.<br><br>Reward: x1.1 Infinities.",
+            tooltip: "<h3>魔咒挑战</h3><hr style='margin-bottom:4px'>Beat infinity challenge 3.<br><br>Reward: x1.1 Infinities.",
             color: "#ffbf00",
             complete() {return hasChallenge("ip", 13)},
             unlocked: true,
@@ -295,7 +295,7 @@ addLayer("achievements", {
         112: {
             name: "错误目标！",
             image: "resources/achievements/2_12.png",
-            tooltip: "<h3>Wrong Goal!</h3><hr style='margin-bottom:4px'>Reach infinity in<br>infinity challenge 4.<br><br>Reward: Decrease pent<br>requirement by /10",
+            tooltip: "<h3>错误目标！</h3><hr style='margin-bottom:4px'>Reach infinity in<br>infinity challenge 4.<br><br>Reward: Decrease pent<br>requirement by /10",
             color: "#ffbf00",
             unlocked: true,
             marked: true,
@@ -303,7 +303,7 @@ addLayer("achievements", {
         113: {
             name: "五阶已满",
             image: "resources/achievements/2_13.png",
-            tooltip: "<h3>Pent Down</h3><hr style='margin-bottom:4px'>Beat infinity challenge 4.<br><br>Reward: x1.1 Infinities.",
+            tooltip: "<h3>五阶已满</h3><hr style='margin-bottom:4px'>Beat infinity challenge 4.<br><br>Reward: x1.1 Infinities.",
             color: "#ffbf00",
             complete() {return hasChallenge("ip", 14)},
             unlocked: true,
@@ -312,14 +312,14 @@ addLayer("achievements", {
         114: {
             name: "翻倍",
             image: "resources/achievements/2_14.png",
-            tooltip: "<h3>Doublin'</h3><hr style='margin-bottom:4px'>Buy an IP Doubler.",
+            tooltip: "<h3>翻倍</h3><hr style='margin-bottom:4px'>Buy an IP Doubler.",
             color: "#ffbf00",
             unlocked: true,
         },
         115: {
             name: "不太助推",
             image: "resources/achievements/2_15.png",
-            tooltip: "<h3>Not Very Boosty</h3><hr style='margin-bottom:4px'>Buy a \"Challenge Dice<br>Boosty!!! :D\".<br><br>Reward: Double Dice Points.",
+            tooltip: "<h3>不太助推</h3><hr style='margin-bottom:4px'>Buy a \"Challenge Dice<br>Boosty!!! :D\".<br><br>Reward: Double Dice Points.",
             color: "#ffbf00",
             unlocked: true,
             marked: true,
@@ -327,7 +327,7 @@ addLayer("achievements", {
         116: {
             name: "骰子挑战",
             image: "resources/achievements/2_16.png",
-            tooltip: "<h3>Dicey Challenge</h3><hr style='margin-bottom:4px'>Beat infinity challenge 5.<br><br>Reward: x1.1 Infinities.",
+            tooltip: "<h3>骰子挑战</h3><hr style='margin-bottom:4px'>Beat infinity challenge 5.<br><br>Reward: x1.1 Infinities.",
             color: "#ffbf00",
             complete() {return hasChallenge("ip", 15)},
             unlocked: true,
@@ -336,7 +336,7 @@ addLayer("achievements", {
         117: {
             name: "黄金时间",
             image: "resources/achievements/2_17.png",
-            tooltip: "<h3>Golden Time</h3><hr style='margin-bottom:4px'>Evolve Unsmith.",
+            tooltip: "<h3>黄金时间</h3><hr style='margin-bottom:4px'>Evolve Unsmith.",
             color: "#ffbf00",
             complete() {return getLevelableAmount("pet", 1103).gt(0)},
             unlocked: true,
@@ -344,21 +344,21 @@ addLayer("achievements", {
         118: {
             name: "自动脚本",
             image: "resources/achievements/2_00.png",
-            tooltip: "<h3>Automated Scripts</h3><hr style='margin-bottom:4px'>Reach the twelfth<br>infinity milestone.",
+            tooltip: "<h3>自动脚本</h3><hr style='margin-bottom:4px'>Reach the twelfth<br>infinity milestone.",
             color: "#ffbf00",
             unlocked: true,
         },
         119: {
             name: "满足需求？",
             image: "resources/achievements/2_19.png",
-            tooltip: "<h3>Requirement Met?</h3><hr style='margin-bottom:4px'>Reset for over<br>1e15 rocket fuel.",
+            tooltip: "<h3>满足需求？</h3><hr style='margin-bottom:4px'>Reset for over<br>1e15 rocket fuel.",
             color: "#ffbf00",
             unlocked: true,
         },
         120: {
             name: "噩梦燃料",
             image: "resources/achievements/2_20.png",
-            tooltip: "<h3>Nightmare Fuel</h3><hr style='margin-bottom:4px'>Beat infinity challenge 6.<br><br>Reward: x1.1 Infinities.",
+            tooltip: "<h3>噩梦燃料</h3><hr style='margin-bottom:4px'>Beat infinity challenge 6.<br><br>Reward: x1.1 Infinities.",
             color: "#ffbf00",
             complete() {return hasChallenge("ip", 16)},
             unlocked: true,
@@ -367,14 +367,14 @@ addLayer("achievements", {
         121: {
             name: "祝福上涨",
             image: "resources/achievements/2_00.png",
-            tooltip: "<h3>Bless Up</h3><hr style='margin-bottom:4px'>Do your first<br>blessing reset.",
+            tooltip: "<h3>祝福上涨</h3><hr style='margin-bottom:4px'>Do your first<br>blessing reset.",
             color: "#ffbf00",
             unlocked: true,
         },
         122: {
             name: "碎片NG",
             image: "resources/achievements/2_22.png",
-            tooltip: "<h3>ShardNG</h3><hr style='margin-bottom:4px'>Beat infinity challenge 7.<br><br>Reward: x1.1 Infinities.",
+            tooltip: "<h3>碎片NG</h3><hr style='margin-bottom:4px'>Beat infinity challenge 7.<br><br>Reward: x1.1 Infinities.",
             color: "#ffbf00",
             complete() {return hasChallenge("ip", 17)},
             unlocked: true,
@@ -391,7 +391,7 @@ addLayer("achievements", {
         124: {
             name: "第八维度是个谎言",
             image: "resources/achievements/2_00.png",
-            tooltip: "<h3>The 8th Dimension is a lie</h3><hr style='margin-bottom:4px'>Beat infinity challenge 8.<br><br>Reward: x1.1 Infinities.",
+            tooltip: "<h3>第八维度是个谎言</h3><hr style='margin-bottom:4px'>Beat infinity challenge 8.<br><br>Reward: x1.1 Infinities.",
             color: "#ffbf00",
             complete() {return hasChallenge("ip", 18)},
             unlocked: true,
@@ -401,7 +401,7 @@ addLayer("achievements", {
         901: {
             name: "嗡嗡的开始",
             image: "resources/achievements/10_00.png",
-            tooltip: "<h3>Buzzing Beginnings</h3><hr style='margin-bottom:4px'>Buy your first research",
+            tooltip: "<h3>嗡嗡的开始</h3><hr style='margin-bottom:4px'>Buy your first research",
             color: "#f9c901",
             complete() {return getBuyableAmount("bee", 11).gte(0)},
             unlocked: true,
@@ -409,7 +409,7 @@ addLayer("achievements", {
         902: {
             name: "采摘罂粟",
             image: "resources/achievements/10_00.png",
-            tooltip: "<h3>Picked Poppies</h3><hr style='margin-bottom:4px'>Pick your first<br>red flower<br><br>Reward: +5% BPS",
+            tooltip: "<h3>采摘罂粟</h3><hr style='margin-bottom:4px'>Pick your first<br>red flower<br><br>Reward: +5% BPS",
             color: "#f9c901",
             unlocked: true,
             marked: true,
@@ -417,7 +417,7 @@ addLayer("achievements", {
         903: {
             name: "红色花束",
             image: "resources/achievements/10_00.png",
-            tooltip: "<h3>Red Bouquet</h3><hr style='margin-bottom:4px'>Have at least one of<br>every red circular flower<br><br>Reward: +1 Base Picking Power",
+            tooltip: "<h3>红色花束</h3><hr style='margin-bottom:4px'>Have at least one of<br>every red circular flower<br><br>Reward: +1 Base Picking Power",
             color: "#f9c901",
             unlocked: true,
             marked: true,
@@ -425,7 +425,7 @@ addLayer("achievements", {
         904: {
             name: "粉末花粉",
             image: "resources/achievements/10_00.png",
-            tooltip: "<h3>Powdery Pollen</h3><hr style='margin-bottom:4px'>Choose the pollen path<br><br>Reward: +25% Flower Gain",
+            tooltip: "<h3>粉末花粉</h3><hr style='margin-bottom:4px'>Choose the pollen path<br><br>Reward: +25% Flower Gain",
             color: "#f9c901",
             unlocked: true,
             marked: true,
@@ -433,7 +433,7 @@ addLayer("achievements", {
         905: {
             name: "蓝色绽放",
             image: "resources/achievements/10_00.png",
-            tooltip: "<h3>Blooming Blue</h3><hr style='margin-bottom:4px'>Pick your first<br>blue flower<br><br>Reward: +10% BPS",
+            tooltip: "<h3>绽放 Blue</h3><hr style='margin-bottom:4px'>Pick your first<br>blue flower<br><br>Reward: +10% BPS",
             color: "#f9c901",
             unlocked: true,
             marked: true,
@@ -449,7 +449,7 @@ addLayer("achievements", {
         907: {
             name: "粉色采摘",
             image: "resources/achievements/10_00.png",
-            tooltip: "<h3>Pink Pickings</h3><hr style='margin-bottom:4px'>Pick your first<br>pink flower<br><br>Reward: +25% BPS",
+            tooltip: "<h3>粉色采摘</h3><hr style='margin-bottom:4px'>Pick your first<br>pink flower<br><br>Reward: +25% BPS",
             color: "#f9c901",
             unlocked: true,
             marked: true,
@@ -457,7 +457,7 @@ addLayer("achievements", {
         908: {
             name: "营养花蜜",
             image: "resources/achievements/10_00.png",
-            tooltip: "<h3>Nutritious Nectar</h3><hr style='margin-bottom:4px'>Choose the nectar path<br><br>Reward: +0.1 GBE",
+            tooltip: "<h3>营养花蜜</h3><hr style='margin-bottom:4px'>Choose the nectar path<br><br>Reward: +0.1 GBE",
             color: "#f9c901",
             unlocked: true,
             marked: true,
@@ -465,7 +465,7 @@ addLayer("achievements", {
         909: {
             name: "采集绿色",
             image: "resources/achievements/10_00.png",
-            tooltip: "<h3>Gathered Green</h3><hr style='margin-bottom:4px'>Pick your first<br>green flower<br><br>Reward: +10% BPS",
+            tooltip: "<h3>采集绿色</h3><hr style='margin-bottom:4px'>Pick your first<br>green flower<br><br>Reward: +10% BPS",
             color: "#f9c901",
             unlocked: true,
             marked: true,
@@ -481,7 +481,7 @@ addLayer("achievements", {
         911: {
             name: "金发花朵",
             image: "resources/achievements/10_00.png",
-            tooltip: "<h3>Blond Blossom</h3><hr style='margin-bottom:4px'>Pick your first<br>yellow flower<br><br>Reward: +25% BPS",
+            tooltip: "<h3>金发花朵</h3><hr style='margin-bottom:4px'>Pick your first<br>yellow flower<br><br>Reward: +25% BPS",
             color: "#f9c901",
             unlocked: true,
             marked: true,
@@ -489,7 +489,7 @@ addLayer("achievements", {
         912: {
             name: "别再来了！",
             image: "resources/achievements/10_12.png",
-            tooltip: "<h3>Not Another One!</h3><hr style='margin-bottom:4px'>Do an aleph reset<br><br>Reward: Flower timers<br>are 10% faster",
+            tooltip: "<h3>别再来了！</h3><hr style='margin-bottom:4px'>Do an aleph reset<br><br>Reward: Flower timers<br>are 10% faster",
             color: "#f9c901",
             unlocked: true,
             marked: true,
@@ -497,7 +497,7 @@ addLayer("achievements", {
         913: {
             name: "双面",
             image: "resources/achievements/10_00.png",
-            tooltip: "<h3>Both Sides</h3><hr style='margin-bottom:4px'>Do both aleph reset types<br><br>Reward: +50% Aleph Resources",
+            tooltip: "<h3>双面</h3><hr style='margin-bottom:4px'>Do both aleph reset types<br><br>Reward: +50% Aleph Resources",
             color: "#f9c901",
             unlocked: true,
             marked: true,
@@ -513,14 +513,14 @@ addLayer("achievements", {
         915: {
             name: "侵染领域",
             image: "resources/achievements/10_00.png",
-            tooltip: "<h3>Infested Domain</h3><hr style='margin-bottom:4px'>Gain your first<br>T3 alternate infinity",
+            tooltip: "<h3>侵染领域</h3><hr style='margin-bottom:4px'>Gain your first<br>T3 alternate infinity",
             color: "#f9c901",
             unlocked: true,
         },
         916: {
             name: "突破……突破什么？",
             image: "resources/achievements/10_00.png",
-            tooltip: "<h3>Break ... what exactly?</h3><hr style='margin-bottom:4px'>Expand your hives limits<br><br>Reward: +25% Pre-Aleph<br>Resources",
+            tooltip: "<h3>突破……突破什么？</h3><hr style='margin-bottom:4px'>Expand your hives limits<br><br>Reward: +25% Pre-Aleph<br>Resources",
             color: "#f9c901",
             complete() {return player.tad.hiveExpand},
             unlocked: true,
@@ -544,7 +544,7 @@ addLayer("achievements", {
         919: {
             name: "完全冷漠",
             image: "resources/achievements/10_00.png",
-            tooltip: "<h3>Fully Apathetic</h3><hr style='margin-bottom:4px'>Expand your hives<br>limits again<br><br>Reward: +25% Pre-Aleph<br>Resources",
+            tooltip: "<h3>完全冷漠</h3><hr style='margin-bottom:4px'>Expand your hives<br>limits again<br><br>Reward: +25% Pre-Aleph<br>Resources",
             color: "#f9c901",
             complete() {return hasChallenge("fu", 12)},
             unlocked: true,
@@ -553,7 +553,7 @@ addLayer("achievements", {
         920: {
             name: "女王之上",
             image: "resources/achievements/10_00.png",
-            tooltip: "<h3>Beyond the Queen</h3><hr style='margin-bottom:4px'>Gain an empress bee<br><br>Reward: +50% BB Milestone<br>Effectiveness",
+            tooltip: "<h3>女王之上</h3><hr style='margin-bottom:4px'>Gain an empress bee<br><br>Reward: +50% BB Milestone<br>Effectiveness",
             color: "#f9c901",
             unlocked: true,
             marked: true,
@@ -561,7 +561,7 @@ addLayer("achievements", {
         921: {
             name: "抽干深度",
             image: "resources/achievements/10_00.png",
-            tooltip: "<h3>Draining Depths</h3><hr style='margin-bottom:4px'>Enter depth 4<br><br>Reward: +1 SP",
+            tooltip: "<h3>抽干深度</h3><hr style='margin-bottom:4px'>Enter depth 4<br><br>Reward: +1 SP",
             color: "#f9c901",
             unlocked: true,
             marked: true,
@@ -569,7 +569,7 @@ addLayer("achievements", {
         922: {
             name: "黄蜂战争机器",
             image: "resources/achievements/10_22.png",
-            tooltip: "<h3>Wasp War Machine</h3><hr style='margin-bottom:4px'>Obtain Vespasian<br><br>Reward: +1 DMG",
+            tooltip: "<h3>黄蜂战争机器</h3><hr style='margin-bottom:4px'>Obtain Vespasian<br><br>Reward: +1 DMG",
             color: "#f9c901",
             unlocked: true,
             marked: true,
@@ -577,7 +577,7 @@ addLayer("achievements", {
         923: {
             name: "飞行终章",
             image: "resources/achievements/10_00.png",
-            tooltip: "<h3>Flying Finale</h3><hr style='margin-bottom:4px'>Enter Aleph's Chamber<br><br>Reward: +1 MND",
+            tooltip: "<h3>飞行终章</h3><hr style='margin-bottom:4px'>Enter Aleph's Chamber<br><br>Reward: +1 MND",
             color: "#f9c901",
             unlocked: true,
             marked: true,
@@ -585,7 +585,7 @@ addLayer("achievements", {
         924: {
             name: "弑君",
             image: "resources/achievements/10_00.png",
-            tooltip: "<h3>Regicide</h3><hr style='margin-bottom:4px'>Defeat Aleph",
+            tooltip: "<h3>弑君</h3><hr style='margin-bottom:4px'>Defeat Aleph",
             color: "#f9c901",
             complete() {return player.alephsChamber.milestone[25] > 0},
             unlocked: true,
