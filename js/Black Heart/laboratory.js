@@ -1,0 +1,1188 @@
+addLayer("laboratory", {
+    name: "The Laboratory", // This is optional, only used in a few places, If absent it just uses the layer id.
+    symbol() {return player.laboratory.unlocked ? "LA" : "??"}, // This appears on the layer's node. Default is the id with the first letter capitalized
+    universe: "BH",
+    row: 1,
+    position: 0, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
+    onClick() {
+        if (player.laboratory.unlocked) player.subtabs["bh"]["stages"] = "laboratory"
+    },
+    startData() { return {
+        unlocked: true,
+        highestCombo: new Decimal(0),
+
+        matosDust: new Decimal(0),
+        matosShard: new Decimal(0),
+        matosFragment: new Decimal(0),
+        matosEssence: new Decimal(0),
+
+        matosMult: new Decimal(1),
+        cooldown: new Decimal(0),
+        cooldownMax: new Decimal(1200),
+    }},
+    automate() {},
+    nodeStyle() {
+        let str = {}
+        if (!player.laboratory.unlocked) {
+            str = {
+                background: "linear-gradient(45deg, #131e0f 0%, #323c1f 100%)",
+                backgroundOrigin: "border-box",
+                borderColor: "#071b00",
+                color: "#0c3000",
+                textShadow: "1px 1px 1px black, -1px 1px 1px black, -1px -1px 1px black, 1px -1px 1px black, 0px 0px 5px black",
+                margin: "0 0 20px 10px !important",
+            }
+        } else {
+            str = {
+                background: "linear-gradient(135deg, #21331b 0%, #84a83e 100%)",
+                backgroundOrigin: "border-box",
+                borderColor: "#0a2700",
+                color: "#1d6f00",
+                textShadow: "1px 1px 1px black, -1px 1px 1px black, -1px -1px 1px black, 1px -1px 1px black, 0px 0px 5px black",
+                margin: "0 0 20px 10px !important",
+            }
+        }
+        if (player.subtabs["bh"]["stages"] == "laboratory") str.outline = "3px solid #999"
+        return str
+    },
+    tooltip: "The Laboratory",
+    tooltipLocked: "Obtain ???.",
+    branches: ["depth4", "matosLair"],
+    color: "#b33793",
+    update(delta) {
+        player.laboratory.unlocked = getLevelableAmount("pet", 503).gt(0) || getLevelableTier("pet", 503).gt(0)
+
+        player.laboratory.matosMult = new Decimal(1)
+
+        player.laboratory.cooldown = player.laboratory.cooldown.sub(delta)
+
+        player.laboratory.cooldownMax = new Decimal(1200)
+        if (hasUpgrade("laboratory", 14)) player.laboratory.cooldownMax = player.laboratory.cooldownMax.div(upgradeEffect("laboratory", 14))
+    },
+    clickables: {
+        "enter": {
+            title() {return player.laboratory.cooldown.lte(0) ? "<h2>Enter the Laboratory" : "Check back in " + formatTime(player.laboratory.cooldown) + "."},
+            canClick() {return player.laboratory.cooldown.lte(0)},
+            unlocked: true,
+            onClick() {
+                BHStageEnter("laboratory")
+                player.laboratory.cooldown = player.laboratory.cooldownMax
+            },
+            style() {
+                let look = {width: "200px", minHeight: "75px", color: "white", background: "linear-gradient(135deg, #21331b 0%, #84a83e 100%)", border: "3px solid #000", borderRadius: "20px", textShadow: "1px 1px 1px black, -1px 1px 1px black, -1px -1px 1px black, 1px -1px 1px black, 0px 0px 3px black"}
+                if (player.laboratory.cooldown.gt(0)) look.background = "#bf8f8f"
+                return look
+            },
+        },
+    },
+    upgrades: {
+        1: {
+            title: "MD-01",
+            unlocked: true,
+            description: "Unlocks Vespasians \"Paralytic Bite\" skill.",
+            cost: new Decimal(64),
+            currencyLocation() { return player.laboratory },
+            currencyDisplayName: "Matos Dust",
+            currencyInternalName: "matosDust",
+            style() {
+                let look = {minHeight: "100px", borderRadius: "15px", color: "white", border: "2px solid rgba(0,0,0,0.5)", margin: "2px"}
+                hasUpgrade(this.layer, this.id) ? look.backgroundColor = "#1a3b0f" : !canAffordUpgrade(this.layer, this.id) ? look.backgroundColor =  "#361e1e" : look.backgroundColor = "#250121"
+                return look
+            },
+        },
+        2: {
+            title: "MD-02",
+            unlocked: true,
+            description: "Unlocks Vespasians \"Overdrive\" skill.",
+            cost: new Decimal(1024),
+            currencyLocation() { return player.laboratory },
+            currencyDisplayName: "Matos Dust",
+            currencyInternalName: "matosDust",
+            style() {
+                let look = {minHeight: "100px", borderRadius: "15px", color: "white", border: "2px solid rgba(0,0,0,0.5)", margin: "2px"}
+                hasUpgrade(this.layer, this.id) ? look.backgroundColor = "#1a3b0f" : !canAffordUpgrade(this.layer, this.id) ? look.backgroundColor =  "#361e1e" : look.backgroundColor = "#250121"
+                return look
+            },
+        },
+        3: {
+            title: "MD-03",
+            unlocked: true,
+            description: "Increases Vespasians base agility by +10.",
+            cost: new Decimal(16384),
+            currencyLocation() { return player.laboratory },
+            currencyDisplayName: "Matos Dust",
+            currencyInternalName: "matosDust",
+            style() {
+                let look = {minHeight: "100px", borderRadius: "15px", color: "white", border: "2px solid rgba(0,0,0,0.5)", margin: "2px"}
+                hasUpgrade(this.layer, this.id) ? look.backgroundColor = "#1a3b0f" : !canAffordUpgrade(this.layer, this.id) ? look.backgroundColor =  "#361e1e" : look.backgroundColor = "#250121"
+                return look
+            },
+        },
+        4: {
+            title: "MD-04",
+            unlocked: true,
+            description: "Increase laboratory timer based on matos dust.",
+            cost: new Decimal(131072),
+            currencyLocation() { return player.laboratory },
+            currencyDisplayName: "Matos Dust",
+            currencyInternalName: "matosDust",
+            effect() {
+                return player.laboratory.matosDust.add(1).log(10).div(20).add(1)
+            },
+            effectDisplay() { return "x" + formatSimple(upgradeEffect(this.layer, this.id)) }, // Add formatting to the effect
+            style() {
+                let look = {minHeight: "100px", borderRadius: "15px", color: "white", border: "2px solid rgba(0,0,0,0.5)", margin: "2px"}
+                hasUpgrade(this.layer, this.id) ? look.backgroundColor = "#1a3b0f" : !canAffordUpgrade(this.layer, this.id) ? look.backgroundColor =  "#361e1e" : look.backgroundColor = "#250121"
+                return look
+            },
+        },
+        5: {
+            title: "MD-05",
+            unlocked: true,
+            description: "Decuple ID softcap base and raise IDs effects by ^10.",
+            cost: new Decimal(256),
+            currencyLocation() { return player.laboratory },
+            currencyDisplayName: "Matos Dust",
+            currencyInternalName: "matosDust",
+            style() {
+                let look = {minHeight: "100px", borderRadius: "15px", color: "white", border: "2px solid rgba(0,0,0,0.5)", margin: "2px"}
+                hasUpgrade(this.layer, this.id) ? look.backgroundColor = "#1a3b0f" : !canAffordUpgrade(this.layer, this.id) ? look.backgroundColor =  "#361e1e" : look.backgroundColor = "#250121"
+                return look
+            },
+        },
+        6: {
+            title: "MD-06",
+            unlocked: true,
+            description: "Boost base core scrap gain based on core fragments.",
+            tooltip: "Boost is based on the core fragment most similar to each scrap.",
+            cost: new Decimal(4096),
+            currencyLocation() { return player.laboratory },
+            currencyDisplayName: "Matos Dust",
+            currencyInternalName: "matosDust",
+            style() {
+                let look = {minHeight: "100px", borderRadius: "15px", color: "white", border: "2px solid rgba(0,0,0,0.5)", margin: "2px"}
+                hasUpgrade(this.layer, this.id) ? look.backgroundColor = "#1a3b0f" : !canAffordUpgrade(this.layer, this.id) ? look.backgroundColor =  "#361e1e" : look.backgroundColor = "#250121"
+                return look
+            },
+        },
+
+        11: {
+            title: "MS-01",
+            unlocked() {return player.laboratory.highestCombo.gt(5)},
+            description: "Unlocks Vespasians \"Impale\" skill.",
+            cost: new Decimal(4),
+            currencyLocation() { return player.laboratory },
+            currencyDisplayName: "Matos Shards",
+            currencyInternalName: "matosShard",
+            style() {
+                let look = {minHeight: "100px", borderRadius: "15px", color: "white", border: "2px solid rgba(0,0,0,0.5)", margin: "2px"}
+                hasUpgrade(this.layer, this.id) ? look.backgroundColor = "#1a3b0f" : !canAffordUpgrade(this.layer, this.id) ? look.backgroundColor =  "#361e1e" : look.backgroundColor = "#250121"
+                return look
+            },
+        },
+        12: {
+            title: "MS-02",
+            unlocked() {return player.laboratory.highestCombo.gt(5)},
+            description: "Unlocks Vespasians \"Peak Performance\" skill.",
+            cost: new Decimal(64),
+            currencyLocation() { return player.laboratory },
+            currencyDisplayName: "Matos Shards",
+            currencyInternalName: "matosShard",
+            style() {
+                let look = {minHeight: "100px", borderRadius: "15px", color: "white", border: "2px solid rgba(0,0,0,0.5)", margin: "2px"}
+                hasUpgrade(this.layer, this.id) ? look.backgroundColor = "#1a3b0f" : !canAffordUpgrade(this.layer, this.id) ? look.backgroundColor =  "#361e1e" : look.backgroundColor = "#250121"
+                return look
+            },
+        },
+        13: {
+            title: "MS-03",
+            unlocked() {return player.laboratory.highestCombo.gt(5)},
+            description: "Increases Vespasians base damage by +4.",
+            cost: new Decimal(1024),
+            currencyLocation() { return player.laboratory },
+            currencyDisplayName: "Matos Shards",
+            currencyInternalName: "matosShard",
+            style() {
+                let look = {minHeight: "100px", borderRadius: "15px", color: "white", border: "2px solid rgba(0,0,0,0.5)", margin: "2px"}
+                hasUpgrade(this.layer, this.id) ? look.backgroundColor = "#1a3b0f" : !canAffordUpgrade(this.layer, this.id) ? look.backgroundColor =  "#361e1e" : look.backgroundColor = "#250121"
+                return look
+            },
+        },
+        14: {
+            title: "MS-04",
+            unlocked() {return player.laboratory.highestCombo.gt(5)},
+            description: "Reduce laboratory cooldown based on matos shards.",
+            cost: new Decimal(16384),
+            currencyLocation() { return player.laboratory },
+            currencyDisplayName: "Matos Shards",
+            currencyInternalName: "matosShard",
+            effect() {
+                return player.laboratory.matosShard.add(1).log(10).div(20).add(1)
+            },
+            effectDisplay() { return "/" + formatSimple(upgradeEffect(this.layer, this.id)) }, // Add formatting to the effect
+            style() {
+                let look = {minHeight: "100px", borderRadius: "15px", color: "white", border: "2px solid rgba(0,0,0,0.5)", margin: "2px"}
+                hasUpgrade(this.layer, this.id) ? look.backgroundColor = "#1a3b0f" : !canAffordUpgrade(this.layer, this.id) ? look.backgroundColor =  "#361e1e" : look.backgroundColor = "#250121"
+                return look
+            },
+        },
+        15: {
+            title: "MS-05",
+            unlocked() {return player.laboratory.highestCombo.gt(5)},
+            description: "Improve stored space energy formula.",
+            cost: new Decimal(16),
+            currencyLocation() { return player.laboratory },
+            currencyDisplayName: "Matos Shards",
+            currencyInternalName: "matosShard",
+            style() {
+                let look = {minHeight: "100px", borderRadius: "15px", color: "white", border: "2px solid rgba(0,0,0,0.5)", margin: "2px"}
+                hasUpgrade(this.layer, this.id) ? look.backgroundColor = "#1a3b0f" : !canAffordUpgrade(this.layer, this.id) ? look.backgroundColor =  "#361e1e" : look.backgroundColor = "#250121"
+                return look
+            },
+        },
+        16: {
+            title: "MS-06",
+            unlocked() {return player.laboratory.highestCombo.gt(5)},
+            description: "Unlock a 6th starmetal essence generator.",
+            cost: new Decimal(256),
+            currencyLocation() { return player.laboratory },
+            currencyDisplayName: "Matos Shards",
+            currencyInternalName: "matosShard",
+            style() {
+                let look = {minHeight: "100px", borderRadius: "15px", color: "white", border: "2px solid rgba(0,0,0,0.5)", margin: "2px"}
+                hasUpgrade(this.layer, this.id) ? look.backgroundColor = "#1a3b0f" : !canAffordUpgrade(this.layer, this.id) ? look.backgroundColor =  "#361e1e" : look.backgroundColor = "#250121"
+                return look
+            },
+        },
+    },
+    buyables: {
+        1: {
+            costBase() { return new Decimal(16) },
+            costGrowth() { return new Decimal(4) },
+            purchaseLimit() { return new Decimal(25) },
+            currency() { return player.laboratory.matosDust},
+            pay(amt) { player.laboratory.matosDust = this.currency().sub(amt) },
+            effect(x) {return getBuyableAmount(this.layer, this.id).div(1000).add(1)},
+            unlocked: true,
+            cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()).floor() },
+            canAfford() {return this.currency().gte(this.cost())},
+            display() {
+                return "<h3>MD-07</h3> (" + formatWhole(getBuyableAmount(this.layer, this.id)) + "/25)\n\
+                    Reduce combo scaling\n\
+                    Currently: -" + formatShortSimple(tmp[this.layer].buyables[this.id].effect.sub(1).mul(100), 2) + "%\n\ \n\
+                    Cost: " + formatWhole(tmp[this.layer].buyables[this.id].cost) + "<br>Matos Dust"
+            },
+            buy() {
+                this.pay(this.cost())
+                setBuyableAmount(this.layer, this.id, getBuyableAmount(this.layer, this.id).add(1))
+            },
+            style() {
+                let look = {width: "120px", height: "100px", color: "white", border: "2px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"}
+                getBuyableAmount(this.layer, this.id).gte(this.purchaseLimit()) ? look.background = "#1a3b0f" : !this.canAfford() ? look.background =  "#361e1e" : look.background = "#250121"
+                return look
+            },
+        },
+        2: {
+            costBase() { return new Decimal(32) },
+            costGrowth() { return new Decimal(2) },
+            purchaseLimit() { return new Decimal(50) },
+            currency() { return player.laboratory.matosDust},
+            pay(amt) { player.laboratory.matosDust = this.currency().sub(amt) },
+            effect(x) {return getBuyableAmount(this.layer, this.id).div(100).add(1)},
+            unlocked: true,
+            cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()).floor() },
+            canAfford() {return this.currency().gte(this.cost())},
+            display() {
+                return "<h3>MD-08</h3> (" + formatWhole(getBuyableAmount(this.layer, this.id)) + "/50)\n\
+                    Boost charge gain\n\
+                    Currently: ^" + formatSimple(tmp[this.layer].buyables[this.id].effect, 2) + "\n\ \n\
+                    Cost: " + formatWhole(tmp[this.layer].buyables[this.id].cost) + "<br>Matos Dust"
+            },
+            buy() {
+                this.pay(this.cost())
+                setBuyableAmount(this.layer, this.id, getBuyableAmount(this.layer, this.id).add(1))
+            },
+            style() {
+                let look = {width: "120px", height: "100px", color: "white", border: "2px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"}
+                getBuyableAmount(this.layer, this.id).gte(this.purchaseLimit()) ? look.background = "#1a3b0f" : !this.canAfford() ? look.background =  "#361e1e" : look.background = "#250121"
+                return look
+            },
+        },
+
+        11: {
+            costBase() { return new Decimal(1) },
+            costGrowth() { return new Decimal(4) },
+            purchaseLimit() { return new Decimal(25) },
+            currency() { return player.laboratory.matosShard},
+            pay(amt) { player.laboratory.matosShard = this.currency().sub(amt) },
+            effect(x) {return getBuyableAmount(this.layer, this.id).div(100).add(1)},
+            unlocked() {return player.laboratory.highestCombo.gt(5)},
+            cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()).floor() },
+            canAfford() {return this.currency().gte(this.cost())},
+            display() {
+                return "<h3>MS-07</h3> (" + formatWhole(getBuyableAmount(this.layer, this.id)) + "/25)\n\
+                    Increase chance to double celestialite rewards\n\
+                    Currently: +" + formatWhole(tmp[this.layer].buyables[this.id].effect.sub(1).mul(100)) + "%\n\ \n\
+                    Cost: " + formatWhole(tmp[this.layer].buyables[this.id].cost) + "<br>Matos Shards"
+            },
+            buy() {
+                this.pay(this.cost())
+                setBuyableAmount(this.layer, this.id, getBuyableAmount(this.layer, this.id).add(1))
+            },
+            style() {
+                let look = {width: "120px", height: "100px", color: "white", border: "2px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"}
+                getBuyableAmount(this.layer, this.id).gte(this.purchaseLimit()) ? look.background = "#1a3b0f" : !this.canAfford() ? look.background =  "#361e1e" : look.background = "#250121"
+                return look
+            },
+        },
+        12: {
+            costBase() { return new Decimal(2) },
+            costGrowth() { return new Decimal(2) },
+            purchaseLimit() { return new Decimal(50) },
+            currency() { return player.laboratory.matosShard},
+            pay(amt) { player.laboratory.matosShard = this.currency().sub(amt) },
+            effect(x) {return getBuyableAmount(this.layer, this.id).div(100).add(1)},
+            unlocked() {return player.laboratory.highestCombo.gt(5)},
+            cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()).floor() },
+            canAfford() {return this.currency().gte(this.cost())},
+            display() {
+                return "<h3>MS-08</h3> (" + formatWhole(getBuyableAmount(this.layer, this.id)) + "/50)\n\
+                    Raise steel gain\n\
+                    Currently: ^" + formatSimple(tmp[this.layer].buyables[this.id].effect, 2) + "\n\ \n\
+                    Cost: " + formatWhole(tmp[this.layer].buyables[this.id].cost) + "<br>Matos Shards"
+            },
+            buy() {
+                this.pay(this.cost())
+                setBuyableAmount(this.layer, this.id, getBuyableAmount(this.layer, this.id).add(1))
+            },
+            style() {
+                let look = {width: "120px", height: "100px", color: "white", border: "2px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"}
+                getBuyableAmount(this.layer, this.id).gte(this.purchaseLimit()) ? look.background = "#1a3b0f" : !this.canAfford() ? look.background =  "#361e1e" : look.background = "#250121"
+                return look
+            },
+        },
+    },
+    tabFormat: [
+        ["style-row", [
+            ["theme-scroll-column", [
+                ["style-row", [
+                    ["raw-html", () => {return "You have " + formatWhole(player.laboratory.matosDust) + " Matos Dust."}, {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}],
+                ], {width: "547px", height: "35px", background: "var(--miscButtonHover)", borderBottom: "3px solid var(--regBorder)"}],
+                ["blank", "4px"],
+                ["row", [["upgrade", 1], ["upgrade", 2], ["upgrade", 3], ["upgrade", 4]]],
+                ["row", [["upgrade", 5], ["upgrade", 6], ["buyable", 1], ["buyable", 2]]],
+                ["blank", "4px"],
+                ["style-row", [
+                    ["raw-html", () => {return "You have " + formatWhole(player.laboratory.matosShard) + " Matos Shards."}, {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}],
+                ], () => {return player.laboratory.highestCombo.gt(5) ? {width: "547px", height: "35px", background: "var(--miscButtonHover)", borderTop: "3px solid var(--regBorder)", borderBottom: "3px solid var(--regBorder)"} : {display: "none !important"}}],
+                ["blank", "4px"],
+                ["row", [["upgrade", 11], ["upgrade", 12], ["upgrade", 13], ["upgrade", 14]]],
+                ["row", [["upgrade", 15], ["upgrade", 16], ["buyable", 11], ["buyable", 12]]],
+                ["blank", "4px"],
+                ["style-column", [
+                    ["raw-html", () => {return "You have " + formatWhole(player.laboratory.matosFragment) + " Matos Fragments."}, {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "Boosts matos dust gain by x" + formatSimple(player.laboratory.matosFragment.add(1).log(10).add(1))}, {color: "var(--textColor)", fontSize: "16px", fontFamily: "monospace"}],
+                ], () => {return player.laboratory.highestCombo.gt(10) ? {width: "547px", height: "40px", background: "var(--miscButtonHover)", borderTop: "3px solid var(--regBorder)", borderBottom: "3px solid var(--regBorder)"} : {display: "none !important"}}],
+                ["blank", "4px"],
+
+                ["blank", "4px"],
+                ["style-column", [
+                    ["raw-html", () => {return "You have " + formatWhole(player.laboratory.matosEssence) + " Matos Essence."}, {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "Boosts matos shard gain by x" + formatSimple(player.laboratory.matosEssence.add(1).log(10).add(1))}, {color: "var(--textColor)", fontSize: "16px", fontFamily: "monospace"}],
+                ], () => {return player.laboratory.highestCombo.gt(15) ? {width: "547px", height: "40px", background: "var(--miscButtonHover)", borderTop: "3px solid var(--regBorder)", borderBottom: "3px solid var(--regBorder)"} : {display: "none !important"}}],
+                ["blank", "4px"],
+
+                ["blank", "4px"],
+            ], {width: "547px", height: "420px", background: "var(--miscButton)", borderRadius: "0 0 0 27px"}],
+            ["style-column", [
+                ["style-column", [
+                    ["style-column", [
+                        ["raw-html", "The Laboratory", {color: "var(--textColor)", fontSize: "24px", fontFamily: "monospace"}],
+                    ], {width: "200px", height: "35px", borderBottom: "2px solid var(--regBorder)", marginBottom: "10px"}],
+                    ["clickable", "enter"],
+                ], {width: "250px", height: "147px", background: "var(--miscButtonDisable)", borderBottom: "3px solid var(--regBorder)"}],
+                ["top-column", [
+                    ["blank", "5px"],
+                    ["style-column", [
+                        ["raw-html", "Properties", {color: "var(--textColor)", fontSize: "24px", fontFamily: "monospace"}],
+                    ], {width: "200px", height: "35px", borderBottom: "2px solid var(--regBorder)", marginBottom: "10px"}],
+                    ["raw-html", () => {return Decimal.sub(2, player.bh.comboScalingReduction).gt(1) ? "<u>Combo Scaling" : ""}, {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return Decimal.sub(2, player.bh.comboScalingReduction).gt(1) ? formatSimple(Decimal.sub(2, player.bh.comboScalingReduction).max(1).sub(1).mul(100)) + "%" : ""}, {color: "var(--textColor)", fontSize: "16px", fontFamily: "monospace"}],
+                    ["blank", "5px"],
+                    ["raw-html", "<u>Timed", {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return formatTime(BHS.laboratory.timer())}, {color: "var(--textColor)", fontSize: "16px", fontFamily: "monospace"}],
+                    ["raw-html", "<u>Cooldown", {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return formatTime(player.laboratory.cooldownMax)}, {color: "var(--textColor)", fontSize: "16px", fontFamily: "monospace"}],
+                ], {width: "250px", height: "197px", background: "var(--layerBackground)"}],
+                ["style-row", [
+                    ["layer-proxy", ["bh", [
+                        ["row", [["clickable", "Auto-Enter"], ["blank", ["10px", "10px"]], ["clickable", "Auto-Exit"]]],
+                    ]]],
+                ], {width: "250px", height: "70px", background: "var(--miscButtonDisable)", borderTop: "3px solid var(--regBorder)", borderRadius: "0 0 27px 0"}],
+            ], {width: "250px", height: "420px", borderLeft: "3px solid var(--regBorder)"}],
+        ], {width: "800px", height: "420px"}],
+    ],
+    layerShown() {return player.startedGame && player.al.cocoonLevel >= 16},
+})
+
+BHS.laboratory = {
+    nameCap: "The Laboratory",
+    nameLow: "the laboratory",
+    music: "music/matosSomber.mp3",
+    comboLimit: Infinity,
+    comboScaling: 2,
+    comboScalingStart: 0,
+    respawnTime: new Decimal(0),
+    celestialiteNerf() {return levelableEffect("pet", 503)[3]},
+    timer() {
+        let time = new Decimal(120)
+        if (hasUpgrade("laboratory", 4)) time = time.mul(upgradeEffect("laboratory", 4))
+        return time
+    },
+    generateCelestialite(combo) {
+        if (typeof combo == "object") combo = combo.toNumber()
+        switch (combo) {
+            case 0:
+                return "f00"
+            case 1:
+                return "f01"
+            case 2:
+                return "f02"
+            case 3:
+                return "f03"
+            case 4:
+                return "f04"
+            case 5:
+                return "f05"
+            case 6:
+                return "f06"
+            case 7:
+                return "f07"
+            case 8:
+                return "f08"
+            case 9:
+                return "f09"
+            case 10:
+                return "f10"
+            case 11:
+                return "f11"
+            case 12:
+                return "f12"
+            case 13:
+                return "f13"
+            case 14:
+                return "f14"
+            case 15:
+                return "f15"
+            default:
+                let num = Math.floor(Math.random()*16)
+                num = num.toString().padStart(2, '0')
+                return "f" + num
+        }
+    },
+}
+
+BHC.f00 = {
+    name: "Celestialite F-00",
+    symbol: "00",
+    style: {
+        background: "linear-gradient(135deg, #84a83e, #21331b)",
+        color: "black",
+        borderColor: "#0a2700",
+        fontSize: "60px",
+    },
+    health: new Decimal(100),
+    damage: new Decimal(5),
+    actions: {
+        0: {
+            name: "Flagellation",
+            instant: true,
+            type: "damage",
+            target: "celestialite",
+            method: "ranged",
+            value: new Decimal(1),
+            cooldown: new Decimal(8),
+        },
+    },
+    reward() {
+        let gain = {}
+        let random = Math.random()
+        if (random < 0.3 && player.bh.combo.gte(5)) {
+            gain.matosShard = Decimal.pow(2, player.bh.combo).div(32)
+        } else if (random < 0.5 && player.bh.combo.gte(10)) {
+            gain.matosFragment = Decimal.pow(2, player.bh.combo).div(1024)
+        } else if (random < 0.6 && player.bh.combo.gte(15)) {
+            gain.matosEssence = Decimal.pow(2, player.bh.combo).div(32768)
+        } else {
+            gain.matosDust = Decimal.pow(2, player.bh.combo)
+        }
+        return gain
+    },
+}
+
+BHC.f01 = {
+    name: "Celestialite F-01",
+    symbol: "01",
+    style: {
+        background: "linear-gradient(135deg, #84a83e, #21331b)",
+        color: "black",
+        borderColor: "#0a2700",
+        fontSize: "60px",
+    },
+    health: new Decimal(100),
+    damage: new Decimal(5),
+    mending: new Decimal(10),
+    actions: {
+        0: {
+            name: "Clean Wounds",
+            instant: true,
+            type: "heal",
+            target: "celestialite",
+            value: new Decimal(5),
+            cooldown: new Decimal(8),
+        },
+    },
+    reward() {
+        let gain = {}
+        let random = Math.random()
+        if (random < 0.3 && player.bh.combo.gte(5)) {
+            gain.matosShard = Decimal.pow(2, player.bh.combo).div(32)
+        } else if (random < 0.5 && player.bh.combo.gte(10)) {
+            gain.matosFragment = Decimal.pow(2, player.bh.combo).div(1024)
+        } else if (random < 0.6 && player.bh.combo.gte(15)) {
+            gain.matosEssence = Decimal.pow(2, player.bh.combo).div(32768)
+        } else {
+            gain.matosDust = Decimal.pow(2, player.bh.combo)
+        }
+        return gain
+    },
+}
+
+BHC.f02 = {
+    name: "Celestialite F-02",
+    symbol: "02",
+    style: {
+        background: "linear-gradient(135deg, #84a83e, #21331b)",
+        color: "black",
+        borderColor: "#0a2700",
+        fontSize: "60px",
+    },
+    health: new Decimal(100),
+    damage: new Decimal(5),
+    actions: {
+        0: {
+            name: "Mangled Fist",
+            instant: true,
+            type: "damage",
+            target: "randomPlayer",
+            method: "physical",
+            value: new Decimal(1),
+            properties: {
+                "backfire": [1, 1],
+            },
+            cooldown: new Decimal(5),
+        },
+    },
+    reward() {
+        let gain = {}
+        let random = Math.random()
+        if (random < 0.3 && player.bh.combo.gte(5)) {
+            gain.matosShard = Decimal.pow(2, player.bh.combo).div(32)
+        } else if (random < 0.5 && player.bh.combo.gte(10)) {
+            gain.matosFragment = Decimal.pow(2, player.bh.combo).div(1024)
+        } else if (random < 0.6 && player.bh.combo.gte(15)) {
+            gain.matosEssence = Decimal.pow(2, player.bh.combo).div(32768)
+        } else {
+            gain.matosDust = Decimal.pow(2, player.bh.combo)
+        }
+        return gain
+    },
+}
+
+BHC.f03 = {
+    name: "Celestialite F-03",
+    symbol: "03",
+    style: {
+        background: "linear-gradient(135deg, #84a83e, #21331b)",
+        color: "black",
+        borderColor: "#0a2700",
+        fontSize: "60px",
+    },
+    health: new Decimal(100),
+    damage: new Decimal(5),
+    actions: {
+        0: {
+            name: "Doping",
+            instant: true,
+            type: "effect",
+            target: "celestialite",
+            properties: {
+                "agilityAdd": new Decimal(2),
+            },
+            cooldown: new Decimal(2),
+        },
+    },
+    reward() {
+        let gain = {}
+        let random = Math.random()
+        if (random < 0.3 && player.bh.combo.gte(5)) {
+            gain.matosShard = Decimal.pow(2, player.bh.combo).div(32)
+        } else if (random < 0.5 && player.bh.combo.gte(10)) {
+            gain.matosFragment = Decimal.pow(2, player.bh.combo).div(1024)
+        } else if (random < 0.6 && player.bh.combo.gte(15)) {
+            gain.matosEssence = Decimal.pow(2, player.bh.combo).div(32768)
+        } else {
+            gain.matosDust = Decimal.pow(2, player.bh.combo)
+        }
+        return gain
+    },
+}
+
+BHC.f04 = {
+    name: "Celestialite F-04",
+    symbol: "04",
+    style: {
+        background: "linear-gradient(135deg, #84a83e, #21331b)",
+        color: "black",
+        borderColor: "#0a2700",
+        fontSize: "60px",
+    },
+    health: new Decimal(100),
+    damage: new Decimal(5),
+    actions: {
+        0: {
+            name: "Shaking",
+            active: true,
+            constantType: "effect",
+            constantTarget: "celestialite",
+            effects: {
+                "attributes"() {return {"daze": new Decimal(0.5)}},
+            },
+            duration: new Decimal(5),
+            cooldown: new Decimal(10),
+        },
+    },
+    reward() {
+        let gain = {}
+        let random = Math.random()
+        if (random < 0.3 && player.bh.combo.gte(5)) {
+            gain.matosShard = Decimal.pow(2, player.bh.combo).div(32)
+        } else if (random < 0.5 && player.bh.combo.gte(10)) {
+            gain.matosFragment = Decimal.pow(2, player.bh.combo).div(1024)
+        } else if (random < 0.6 && player.bh.combo.gte(15)) {
+            gain.matosEssence = Decimal.pow(2, player.bh.combo).div(32768)
+        } else {
+            gain.matosDust = Decimal.pow(2, player.bh.combo)
+        }
+        return gain
+    },
+}
+
+BHC.f05 = {
+    name: "Celestialite F-05",
+    symbol: "05",
+    style: {
+        background: "linear-gradient(135deg, #84a83e, #21331b)",
+        color: "black",
+        borderColor: "#0a2700",
+        fontSize: "60px",
+    },
+    health: new Decimal(100),
+    damage: new Decimal(5),
+    actions: {
+        0: {
+            name: "Ramble",
+            instant: true,
+            type: "function",
+            target: "allPlayer",
+            onTrigger(index, slot, target) {
+                let random = Math.floor(Math.random()*12)
+                switch (random) {
+                    case 0:
+                        bhLog("<span style='color: #fff'>...")
+                        break;
+                    case 1:
+                        bhLog("<span style='color: #fff'>What type of things did Matos do to you?")
+                        break;
+                    case 2:
+                        bhLog("<span style='color: #fff'>Is there still an outside world?")
+                        break;
+                    case 3:
+                        bhLog("<span style='color: #fff'>It's still watching.")
+                        break;
+                    case 4:
+                        bhLog("<span style='color: #fff'>It's strange that a place like this can even be made. Using dark essence at this purity usually destroys matter itself.")
+                        break;
+                    case 5:
+                        bhLog("<span style='color: #fff'>I heard from some of the stronger experiments that Matos didn't even make this place, though I doubt their words.")
+                        break;
+                    case 6:
+                        bhLog("<span style='color: #fff'>I heard that Matos sometimes frees us from here ... but I have never seen a missing face.")
+                        break;
+                    case 7:
+                        bhLog("<span style='color: #fff'>Matos brought up something about a spirit. What is a spirit?")
+                        break;
+                    case 8:
+                        bhLog("<span style='color: #fff'>One of the older experiments tried to escape, but got disintegrated by the dark essence surrounding this lab. I miss them.")
+                        break;
+                    case 9:
+                        bhLog("<span style='color: #fff'>I heard from Matos that if you hold a coin clipper for a very long time, something would happen. Do you know what a coin clipper is?")
+                        break;
+                    case 10:
+                        bhLog("<span style='color: #fff'>Will we ever be free again?")
+                        break;
+                    case 11:
+                        bhLog("<span style='color: #fff'>Could we ever be whole again?")
+                        break;
+                }
+            },
+            cooldown: new Decimal(10),
+        },
+    },
+    reward() {
+        let gain = {}
+        let random = Math.random()
+        if (random < 0.3 && player.bh.combo.gte(5)) {
+            gain.matosShard = Decimal.pow(2, player.bh.combo).div(32)
+        } else if (random < 0.5 && player.bh.combo.gte(10)) {
+            gain.matosFragment = Decimal.pow(2, player.bh.combo).div(1024)
+        } else if (random < 0.6 && player.bh.combo.gte(15)) {
+            gain.matosEssence = Decimal.pow(2, player.bh.combo).div(32768)
+        } else {
+            gain.matosDust = Decimal.pow(2, player.bh.combo)
+        }
+        return gain
+    },
+}
+
+BHC.f06 = {
+    name: "Celestialite F-06",
+    symbol: "06",
+    style: {
+        background: "linear-gradient(135deg, #84a83e, #21331b)",
+        color: "black",
+        borderColor: "#0a2700",
+        fontSize: "60px",
+    },
+    health: new Decimal(100),
+    damage: new Decimal(5),
+    actions: {
+        0: {
+            name: "Malformed Punch",
+            instant: true,
+            type: "damage",
+            target: "randomPlayer",
+            method: "physical",
+            value: new Decimal(0.01),
+            cooldown: new Decimal(4),
+        },
+    },
+    reward() {
+        let gain = {}
+        let random = Math.random()
+        if (random < 0.3 && player.bh.combo.gte(5)) {
+            gain.matosShard = Decimal.pow(2, player.bh.combo).div(32)
+        } else if (random < 0.5 && player.bh.combo.gte(10)) {
+            gain.matosFragment = Decimal.pow(2, player.bh.combo).div(1024)
+        } else if (random < 0.6 && player.bh.combo.gte(15)) {
+            gain.matosEssence = Decimal.pow(2, player.bh.combo).div(32768)
+        } else {
+            gain.matosDust = Decimal.pow(2, player.bh.combo)
+        }
+        return gain
+    },
+}
+
+BHC.f07 = {
+    name: "Celestialite F-07",
+    symbol: "07",
+    style: {
+        background: "linear-gradient(135deg, #84a83e, #21331b)",
+        color: "black",
+        borderColor: "#0a2700",
+        fontSize: "60px",
+    },
+    health: new Decimal(100),
+    damage: new Decimal(5),
+    actions: {
+        0: {
+            name: "Time Distortion",
+            instant: true,
+            type: "reset",
+            target: "random",
+            properties: {
+                "backfire": [1, 0.1],
+            },
+            cooldown: new Decimal(6),
+        },
+    },
+    reward() {
+        let gain = {}
+        let random = Math.random()
+        if (random < 0.3 && player.bh.combo.gte(5)) {
+            gain.matosShard = Decimal.pow(2, player.bh.combo).div(32)
+        } else if (random < 0.5 && player.bh.combo.gte(10)) {
+            gain.matosFragment = Decimal.pow(2, player.bh.combo).div(1024)
+        } else if (random < 0.6 && player.bh.combo.gte(15)) {
+            gain.matosEssence = Decimal.pow(2, player.bh.combo).div(32768)
+        } else {
+            gain.matosDust = Decimal.pow(2, player.bh.combo)
+        }
+        return gain
+    },
+}
+
+BHC.f08 = {
+    name: "Celestialite F-08",
+    symbol: "08",
+    style: {
+        background: "linear-gradient(135deg, #84a83e, #21331b)",
+        color: "black",
+        borderColor: "#0a2700",
+        fontSize: "60px",
+    },
+    health: new Decimal(100),
+    damage: new Decimal(5),
+    actions: {
+        0: {
+            name: "Implode",
+            instant: true,
+            type: "damage",
+            target: "all",
+            method: "physical",
+            value: new Decimal(100),
+            cooldown: new Decimal(120),
+        },
+    },
+    reward() {
+        let gain = {}
+        let random = Math.random()
+        if (random < 0.3 && player.bh.combo.gte(5)) {
+            gain.matosShard = Decimal.pow(2, player.bh.combo).div(32)
+        } else if (random < 0.5 && player.bh.combo.gte(10)) {
+            gain.matosFragment = Decimal.pow(2, player.bh.combo).div(1024)
+        } else if (random < 0.6 && player.bh.combo.gte(15)) {
+            gain.matosEssence = Decimal.pow(2, player.bh.combo).div(32768)
+        } else {
+            gain.matosDust = Decimal.pow(2, player.bh.combo)
+        }
+        return gain
+    },
+}
+
+BHC.f09 = {
+    name: "Celestialite F-09",
+    symbol: "09",
+    style: {
+        background: "linear-gradient(135deg, #84a83e, #21331b)",
+        color: "black",
+        borderColor: "#0a2700",
+        fontSize: "60px",
+    },
+    health: new Decimal(100),
+    damage: new Decimal(5),
+    actions: {
+        0: {
+            name: "Mutation",
+            instant: true,
+            type: "effect",
+            target: "celestialite",
+            properties: {
+                "healthAdd"() {return Decimal.pow(2, player.bh.combo).mul(10)},
+            },
+            cooldown: new Decimal(10),
+        },
+    },
+    reward() {
+        let gain = {}
+        let random = Math.random()
+        if (random < 0.3 && player.bh.combo.gte(5)) {
+            gain.matosShard = Decimal.pow(2, player.bh.combo).div(32)
+        } else if (random < 0.5 && player.bh.combo.gte(10)) {
+            gain.matosFragment = Decimal.pow(2, player.bh.combo).div(1024)
+        } else if (random < 0.6 && player.bh.combo.gte(15)) {
+            gain.matosEssence = Decimal.pow(2, player.bh.combo).div(32768)
+        } else {
+            gain.matosDust = Decimal.pow(2, player.bh.combo)
+        }
+        return gain
+    },
+}
+
+BHC.f10 = {
+    name() {return player.bh.celestialite.actions[0].variables.attacks ? "Gwa" : "Celestialite F-10"},
+    symbol: "10",
+    icon() {return player.bh.celestialite.actions[0].variables.attacks ? "resources/gwa.png" : false},
+    style: {
+        background: "linear-gradient(135deg, #84a83e, #21331b)",
+        color: "black",
+        borderColor: "#0a2700",
+        fontSize: "60px",
+    },
+    health: new Decimal(100),
+    damage: new Decimal(5),
+    actions: {
+        0: {
+            name() {
+                if (player.bh.celestialite.actions[0].variables.attacks) {
+                    if (player.bh.celestialite.actions[0].variables.attacks == 0) {
+                        return "Mimic"
+                    }
+                    if (player.bh.celestialite.actions[0].variables.attacks == 1) {
+                        return "Gwa"
+                    }
+                }
+                return "Mimic"
+            },
+            instant: true,
+            type: "function",
+            target: "randomPlayer",
+            onTrigger(index, slot, target) {
+                if (!player.bh.celestialite.actions[0].variables.attacks) player.bh.celestialite.actions[0].variables.attacks = 0
+                switch (player.bh.celestialite.actions[0].variables.attacks) {
+                    case 0:
+                        player.bh.celestialite.actions[0].variables.attacks = 1
+                        break;
+                    case 1:
+                        bhLog("<span style='color: #fff'>Gwa")
+                        break;
+                    default:
+                        console.log("This isn't supposed to be triggered")
+                        player.bh.celestialite.actions[0].variables.attacks = 0
+                        break;
+                }
+            },
+            cooldown: new Decimal(5),
+        },
+    },
+    reward() {
+        let gain = {}
+        let random = Math.random()
+        if (random < 0.3 && player.bh.combo.gte(5)) {
+            gain.matosShard = Decimal.pow(2, player.bh.combo).div(32)
+        } else if (random < 0.5 && player.bh.combo.gte(10)) {
+            gain.matosFragment = Decimal.pow(2, player.bh.combo).div(1024)
+        } else if (random < 0.6 && player.bh.combo.gte(15)) {
+            gain.matosEssence = Decimal.pow(2, player.bh.combo).div(32768)
+        } else {
+            gain.matosDust = Decimal.pow(2, player.bh.combo)
+        }
+        return gain
+    },
+}
+
+BHC.f11 = {
+    name: "Celestialite F-11",
+    symbol: "11",
+    style: {
+        background: "linear-gradient(135deg, #84a83e, #21331b)",
+        color: "black",
+        borderColor: "#0a2700",
+        fontSize: "60px",
+        borderRadius: "50%"
+    },
+    health: new Decimal(100),
+    damage: new Decimal(5),
+    actions: {
+        0: {
+            name: "Roll",
+            instant: true,
+            type: "function",
+            target: "randomPlayer",
+            onTrigger(index, slot, target) {
+                bhLog("<span style='color: #fff'><i>RrrRrrRrr</i>")
+            },
+            cooldown: new Decimal(10),
+        },
+    },
+    reward() {
+        let gain = {}
+        let random = Math.random()
+        if (random < 0.3 && player.bh.combo.gte(5)) {
+            gain.matosShard = Decimal.pow(2, player.bh.combo).div(32)
+        } else if (random < 0.5 && player.bh.combo.gte(10)) {
+            gain.matosFragment = Decimal.pow(2, player.bh.combo).div(1024)
+        } else if (random < 0.6 && player.bh.combo.gte(15)) {
+            gain.matosEssence = Decimal.pow(2, player.bh.combo).div(32768)
+        } else {
+            gain.matosDust = Decimal.pow(2, player.bh.combo)
+        }
+        return gain
+    },
+}
+
+BHC.f12 = {
+    name: "Celestialite F-12",
+    symbol: "12",
+    style: {
+        background: "linear-gradient(135deg, #84a83e, #21331b)",
+        color: "black",
+        borderColor: "#0a2700",
+        fontSize: "60px",
+    },
+    health: new Decimal(100),
+    damage: new Decimal(5),
+    actions: {
+        0: {
+            name: "Concussion",
+            instant: true,
+            type: "damage",
+            target: "celestialite",
+            method: "physical",
+            value: new Decimal(0.01),
+            cooldown: new Decimal(8),
+
+            active: true,
+            constantType: "effect",
+            constantTarget: "celestialite",
+            effects: {
+                "attributes"() {return {"daze": new Decimal(0.5)}},
+            },
+            duration: new Decimal(3),
+        },
+    },
+    reward() {
+        let gain = {}
+        let random = Math.random()
+        if (random < 0.3 && player.bh.combo.gte(5)) {
+            gain.matosShard = Decimal.pow(2, player.bh.combo).div(32)
+        } else if (random < 0.5 && player.bh.combo.gte(10)) {
+            gain.matosFragment = Decimal.pow(2, player.bh.combo).div(1024)
+        } else if (random < 0.6 && player.bh.combo.gte(15)) {
+            gain.matosEssence = Decimal.pow(2, player.bh.combo).div(32768)
+        } else {
+            gain.matosDust = Decimal.pow(2, player.bh.combo)
+        }
+        return gain
+    },
+}
+
+BHC.f13 = {
+    name: "Celestialite F-13",
+    symbol: "13",
+    style: {
+        background: "linear-gradient(135deg, #84a83e, #21331b)",
+        color: "black",
+        borderColor: "#0a2700",
+        fontSize: "60px",
+    },
+    health: new Decimal(100),
+    damage: new Decimal(5),
+    actions: {
+        0: {
+            name: "Unlucky 1d100",
+            instant: true,
+            type: "function",
+            target: "randomPlayer",
+            onTrigger(index, slot, target) {
+                let roll = Math.ceil(Math.random()*100)
+                if (roll == 13) {
+                    bhLog("<span style='color: #fff'>Celestialite F-13 rolled a 13. Heals Celestialite F-13 for 13 health.")
+                    player.bh.celestialite.health = player.bh.celestialite.health.add(13).min(player.bh.celestialite.maxHealth)
+                } else {
+                    bhLog("<span style='color: #fff'>Celestialite F-13 rolled a " + formatWhole(roll) + ". Does nothing.")
+                }
+            },
+            cooldown: new Decimal(13),
+        },
+    },
+    reward() {
+        let gain = {}
+        let random = Math.random()
+        if (random < 0.3 && player.bh.combo.gte(5)) {
+            gain.matosShard = Decimal.pow(2, player.bh.combo).div(32)
+        } else if (random < 0.5 && player.bh.combo.gte(10)) {
+            gain.matosFragment = Decimal.pow(2, player.bh.combo).div(1024)
+        } else if (random < 0.6 && player.bh.combo.gte(15)) {
+            gain.matosEssence = Decimal.pow(2, player.bh.combo).div(32768)
+        } else {
+            gain.matosDust = Decimal.pow(2, player.bh.combo)
+        }
+        return gain
+    },
+}
+
+BHC.f14 = {
+    name: "Celestialite F-14",
+    symbol: "14",
+    style: {
+        background: "linear-gradient(135deg, #84a83e, #21331b)",
+        color: "black",
+        borderColor: "#0a2700",
+        fontSize: "60px",
+    },
+    health: new Decimal(100),
+    damage: new Decimal(5),
+    actions: {
+        0: {
+            name: "Healing Ray",
+            instant: true,
+            type: "heal",
+            target: "randomPlayerHeal",
+            value: new Decimal(25),
+            cooldown: new Decimal(8),
+        },
+    },
+    reward() {
+        let gain = {}
+        let random = Math.random()
+        if (random < 0.3 && player.bh.combo.gte(5)) {
+            gain.matosShard = Decimal.pow(2, player.bh.combo).div(32)
+        } else if (random < 0.5 && player.bh.combo.gte(10)) {
+            gain.matosFragment = Decimal.pow(2, player.bh.combo).div(1024)
+        } else if (random < 0.6 && player.bh.combo.gte(15)) {
+            gain.matosEssence = Decimal.pow(2, player.bh.combo).div(32768)
+        } else {
+            gain.matosDust = Decimal.pow(2, player.bh.combo)
+        }
+        return gain
+    },
+}
+
+BHC.f15 = {
+    name: "Celestialite F-15",
+    symbol: "15",
+    style: {
+        background: "linear-gradient(135deg, #84a83e, #21331b)",
+        color: "black",
+        borderColor: "#0a2700",
+        fontSize: "60px",
+    },
+    health: new Decimal(100),
+    damage: new Decimal(5),
+    actions: {
+        0: {
+            name: "Time Stabilization",
+            instant: true,
+            type: "function",
+            target: "celestialite",
+            onTrigger(index, slot, target) {
+                player.bh.timer = player.bh.timer.sub(0.1)
+                bhLog("<span style='color: #fff'>Celestialite F-15 reduces current time spent by -0.1s.")
+            },
+            cooldown: new Decimal(2),
+        },
+    },
+    reward() {
+        let gain = {}
+        let random = Math.random()
+        if (random < 0.3 && player.bh.combo.gte(5)) {
+            gain.matosShard = Decimal.pow(2, player.bh.combo).div(32)
+        } else if (random < 0.5 && player.bh.combo.gte(10)) {
+            gain.matosFragment = Decimal.pow(2, player.bh.combo).div(1024)
+        } else if (random < 0.6 && player.bh.combo.gte(15)) {
+            gain.matosEssence = Decimal.pow(2, player.bh.combo).div(32768)
+        } else {
+            gain.matosDust = Decimal.pow(2, player.bh.combo)
+        }
+        return gain
+    },
+}
+
+// Pot of Greed (just puts a gag message in the log)
+
+// Passive that constantly stuns the celestialite
+
+// Increase size of celestialite icon
+
+// Spawn a failed cookie (gives a random amount of matos resources)
