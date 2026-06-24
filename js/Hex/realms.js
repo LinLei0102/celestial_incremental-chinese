@@ -484,11 +484,11 @@ addLayer("hrm", {
                             }],
                         ]],
                         ["row", [
-                            ["raw-html", () => {return "Boosts Pre-Power resources by x" + format(player.hrm.realmEssenceEffects[0])}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+                            ["raw-html", () => {return "提升 Pre-Power resources by x" + format(player.hrm.realmEssenceEffects[0])}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ["raw-html", () => {return player.hrm.realmEssenceEffects[0].gte(1e10) ? "[HARDCAPPED]" : player.hrm.realmEssence.gte(7776) ? "[SOFTCAPPED]" : ""}, {color: "red", fontSize: "14px", fontFamily: "monospace", marginLeft: "8px"}],
                         ]],
                         ["row", [
-                            ["raw-html", () => {return "Boosts Checkback Tickspeed by x" + format(player.hrm.realmEssenceEffects[1])}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+                            ["raw-html", () => {return "提升 Checkback Tickspeed by x" + format(player.hrm.realmEssenceEffects[1])}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ["raw-html", () => {return player.hrm.realmEssenceEffects[1].gte(3) ? "[HARDCAPPED]" : player.hrm.realmEssence.gte(60466176) ? "[SOFTCAPPED]" : ""}, {color: "red", fontSize: "14px", fontFamily: "monospace", marginLeft: "8px"}],
                         ]],
                     ], {width: "600px", height: "75px", background: "linear-gradient(90deg, #530000, #533a00, #515300, #0e5300, #00531d, #005349, #004677, #003153, #230053, #4f0053)", borderTop: "3px solid white", borderLeft: "3px solid white", borderRight: "3px solid white", borderRadius: "20px 20px 0px 0px"}],

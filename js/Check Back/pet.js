@@ -1061,7 +1061,7 @@ addLayer("pet", {
         },
         32: {
             title() { return player.pet.legPetTimers[1].cooldown.lte(0) ? "<h3>Activate Skill</h3>" : player.pet.legPetTimers[1].current.gte(0) ? "Active: " + formatTime(player.pet.legPetTimers[1].current) + "." : "Check Back in " + formatTime(player.pet.legPetTimers[1].cooldown) + "."},
-            tooltip() { return "Boosts your damage in space battles by x1.5 for the next " + formatSimple(player.pet.legPetTimers[1].max.div(60)) + " minutes. Also unlocks a new ship."},
+            tooltip() { return "提升 your damage in space battles by x1.5 for the next " + formatSimple(player.pet.legPetTimers[1].max.div(60)) + " minutes. Also unlocks a new ship."},
             canClick() { return player.pet.legPetTimers[1].cooldown.lte(0) },
             unlocked() { return layers.pet.levelables.index == 502 },
             onClick () {

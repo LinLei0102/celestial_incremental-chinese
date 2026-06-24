@@ -283,7 +283,7 @@ BHA.kres_battleCry = {
     description(char) {
         let effect = new Decimal(50).add(player.bh.skillData["kres_battleCry"].level.mul(10))
         if (player.alephsChamber.milestone[25] >= 2) effect = effect.mul(Decimal.div(char.potency.add(100), 100))
-        return "Boosts the entire team's damage by +" + formatSimple(effect) + "% for 9s"
+        return "提升 the entire team's damage by +" + formatSimple(effect) + "% for 9s"
     },
     passiveText() {return "+" + formatSimple(player.bh.skillData["kres_battleCry"].maxLevel.div(5)) + " DMG"},
     char: "kres",
@@ -1115,7 +1115,7 @@ BHA.diceFive_luckyLift = {
     description(char) {
          let effect = new Decimal(80).add(player.bh.skillData["diceFive_luckyLift"].level.mul(10))
          if (player.alephsChamber.milestone[25] >= 2) effect = effect.mul(Decimal.div(char.potency.add(100), 100))
-         return "Boosts the entire team's luck by +" + formatWhole(effect) + "% for 10 seconds."},
+         return "提升 the entire team's luck by +" + formatWhole(effect) + "% for 10 seconds."},
     passiveText() {return "+" + formatSimple(player.bh.skillData["diceFive_luckyLift"].maxLevel.div(2)) + " LUCK"},
     char: "diceFive",
     spCost: new Decimal(14),

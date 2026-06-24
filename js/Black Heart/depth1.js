@@ -540,7 +540,7 @@ addLayer("depth1", {
                                     ["raw-html", () => {return "Highest Combo: " + formatWhole(player.depth1.highestCombo.min(250)) + "/" + BHS["depth1"].comboLimit}, {color: "var(--textColor)", fontSize: "18px", fontFamily: "monospace"}],
                                 ], {width: "225px", height: "35px", borderBottom: "2px solid var(--regBorder)", marginBottom: "2px"}],
                                 ["top-column", [
-                                    ["raw-html", () => {return "Boosts infinity points by x" + formatSimple(player.depth1.comboEffect)}, {color: "var(--textColor)", fontSize: "11px", fontFamily: "monospace"}],
+                                    ["raw-html", () => {return "提升 infinity points by x" + formatSimple(player.depth1.comboEffect)}, {color: "var(--textColor)", fontSize: "11px", fontFamily: "monospace"}],
                                 ], {width: "272px", height: "25px"}],
                                 ["top-column", [
                                     ["blank", "4px"],
@@ -620,7 +620,7 @@ addLayer("depth1", {
                                     ["raw-html", () => {return "Lowest Combo: " + formatWhole(player.depth1.lowestCombo.max(-250)) + "/-" + BHS["depth1"].comboLimit}, {color: "var(--textColor)", fontSize: "18px", fontFamily: "monospace"}],
                                 ], {width: "225px", height: "35px", borderBottom: "2px solid var(--regBorder)", marginBottom: "2px"}],
                                 ["top-column", [
-                                    ["raw-html", () => {return "Boosts base IP gain by ^" + formatSimple(player.depth1.negComboEffect)}, {color: "var(--textColor)", fontSize: "11px", fontFamily: "monospace"}],
+                                    ["raw-html", () => {return "提升 base IP gain by ^" + formatSimple(player.depth1.negComboEffect)}, {color: "var(--textColor)", fontSize: "11px", fontFamily: "monospace"}],
                                 ], {width: "272px", height: "25px"}],
                                 ["top-column", [
                                     ["blank", "4px"],

@@ -368,7 +368,7 @@ addLayer("depth4", {
                                     ["raw-html", () => {return "Highest Combo: " + formatWhole(player.depth4.highestCombo.min(250)) + "/" + BHS["depth4"].comboLimit}, {color: "var(--textColor)", fontSize: "18px", fontFamily: "monospace"}],
                                 ], {width: "225px", height: "35px", borderBottom: "2px solid var(--regBorder)", marginBottom: "2px"}],
                                 ["top-column", [
-                                    ["raw-html", () => {return "Boosts core scraps by x" + formatSimple(player.depth4.comboEffect)}, {color: "var(--textColor)", fontSize: "11px", fontFamily: "monospace"}],
+                                    ["raw-html", () => {return "提升 core scraps by x" + formatSimple(player.depth4.comboEffect)}, {color: "var(--textColor)", fontSize: "11px", fontFamily: "monospace"}],
                                 ], {width: "272px", height: "25px"}],
                                 ["top-column", [
                                     ["blank", "4px"],

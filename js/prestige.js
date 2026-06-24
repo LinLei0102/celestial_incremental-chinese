@@ -778,7 +778,7 @@
                     ]],
                     ["raw-html", "(Gain based on Tetr)", { color: "#b6658c", fontSize: "16px", fontFamily: "monospace" }],
                     ["row", [
-                        ["raw-html", () => {return "Boosts ranks, tiers, tetr, and pent effect by <h3>^" + format(player.p.crystalEffect, 5) + "</h3>."}, {color: "#b6658c", fontSize: "16px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "提升 ranks, tiers, tetr, and pent effect by <h3>^" + format(player.p.crystalEffect, 5) + "</h3>."}, {color: "#b6658c", fontSize: "16px", fontFamily: "monospace"}],
                         ["raw-html", () => {return (!hasUpgrade("cs", 304) && player.p.crystalEffect.gte(1.5)) || player.p.crystalEffect.gte(2) ? "<small style='margin-left:8px'>[HARDCAPPED]</small>" : hasUpgrade("cs", 304) && player.p.crystalEffect.gte(1.5) ? "<small style='margin-left:8px'>[SOFTCAPPED]</small>" : ""}, {color: "red", fontSize: "16px", fontFamily: "monospace"}],
                     ]],
                     ["blank", "25px"],
@@ -804,11 +804,11 @@
         ]],
         ["raw-html", () => {return player.p.prestigePointsToGet.gt(player.p.doomSoftcapStart) ? "SOFTCAP OF DOOM: Gain past " + format(player.p.doomSoftcapStart) + " is raised by ^" + format(player.p.doomSoftcap, 3) + "." : ""}, {color: "red", fontSize: "16px", fontFamily: "monospace"}],
         ["row", [
-            ["raw-html", () => {return hasUpgrade("p", 12) ? "Boosts celesial points by x" + format(player.p.prestigeEffect) : ""}, {color: "#31aeb0", fontSize: "20px", fontFamily: "monospace"}],
+            ["raw-html", () => {return hasUpgrade("p", 12) ? "提升天体点数 by x" + format(player.p.prestigeEffect) : ""}, {color: "#31aeb0", fontSize: "20px", fontFamily: "monospace"}],
             ["raw-html", () => {return hasUpgrade("p", 12) && player.p.prestigePoints.gte("1e100000") ? "[SOFTCAPPED]" : ""}, {color: "red", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}],
         ], () => {return hasUpgrade("p", 12) ? {} : {display: "none !important"}}],
         ["row", [
-            ["raw-html", () => {return hasUpgrade("g", 11) ? "Boosts grass value by x" + format(player.p.prestigeEffect2) : ""}, {color: "#31aeb0", fontSize: "20px", fontFamily: "monospace"}],
+            ["raw-html", () => {return hasUpgrade("g", 11) ? "提升 grass value by x" + format(player.p.prestigeEffect2) : ""}, {color: "#31aeb0", fontSize: "20px", fontFamily: "monospace"}],
             ["raw-html", () => {return hasUpgrade("g", 11) && player.p.prestigePoints.gte("1e150020") ? "[SOFTCAPPED]" : ""}, {color: "red", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}],
         ], () => {return hasUpgrade("g", 11) ? {} : {display: "none !important"}}],
         ["microtabs", "stuff", { 'border-width': '0px' }],

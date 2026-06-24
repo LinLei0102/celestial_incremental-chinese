@@ -1343,7 +1343,7 @@
                         ["raw-html", () => {return player.gh.fertilizerEffect.gte("1e15000") ? "[SOFTCAPPED]" : ""}, {color: "red", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}],
                     ]],
                     ["raw-html", () => {return player.gh.fertilizerPerSecond.gt(player.gh.doomSoftcap2Start) ? "SOFTCAP OF DOOM: Gain past " + format(player.gh.doomSoftcap2Start) + " is raised by ^" + format(player.gh.doomSoftcap2, 3) + "." : ""}, {color: "red", fontSize: "16px", fontFamily: "monospace"}],
-                    ["raw-html", function () { return "Boosts grass value by x" + format(player.gh.fertilizerEffect) + "." }, {color: "#EFD4B9", fontSize: "16px", fontFamily: "monospace"}],
+                    ["raw-html", function () { return "提升 grass value by x" + format(player.gh.fertilizerEffect) + "." }, {color: "#EFD4B9", fontSize: "16px", fontFamily: "monospace"}],
                     ["blank", "10px"],
                     ["row", [["clickable", 2], ["clickable", 3]]],
                     ["blank", "10px"],
@@ -1396,7 +1396,7 @@
                             return look
                         }],
                     ]],
-                    ["raw-html", () => { return "Boosts grasshopper gain by x" + format(player.gh.steelEffect)}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => { return "提升 grasshopper gain by x" + format(player.gh.steelEffect)}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                     ["blank", "25px"],
                     ["row", [["clickable", 12]]],
                     ["blank", "25px"],

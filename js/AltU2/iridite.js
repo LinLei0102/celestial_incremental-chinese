@@ -808,7 +808,7 @@ addLayer("ir", {
         11: {
             title: "Rejuvenation",
             unlocked() { return true },
-            description: "Boosts singularity point gain based on space rocks.",
+            description: "提升 singularity point gain based on space rocks.",
             cost: new Decimal(300),
             currencyLocation() { return player.ir },
             effect() {
@@ -826,7 +826,7 @@ addLayer("ir", {
         12: {
             title: "Replenish",
             unlocked() { return true },
-            description: "Boosts oil gain based on space rocks.",
+            description: "提升 oil gain based on space rocks.",
             cost: new Decimal(500),
             currencyLocation() { return player.ir },
             currencyDisplayName: "Space Rocks",
@@ -844,7 +844,7 @@ addLayer("ir", {
         13: {
             title: "Servitude",
             unlocked() { return true },
-            description: "Boosts check back XP gain based on space gems.",
+            description: "提升 check back XP gain based on space gems.",
             cost: new Decimal(800),
             currencyLocation() { return player.ir },
             currencyDisplayName: "Space Rocks",

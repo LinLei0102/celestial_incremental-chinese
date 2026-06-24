@@ -149,7 +149,7 @@
         11: {
             title: "Dotknight Upgrade I",
             unlocked() { return true },
-            description() { return "Boosts replicanti mult based on dotknight points." },
+            description() { return "提升 replicanti mult based on dotknight points." },
             cost: new Decimal(100),
             currencyLocation() { return player.ep0 },
             currencyDisplayName: "Dotknight Points",
@@ -163,7 +163,7 @@
         12: {
             title: "Dotknight Upgrade II",
             unlocked() { return true },
-            description() { return "Boosts time cubes based on dotknight points." },
+            description() { return "提升 time cubes based on dotknight points." },
             cost: new Decimal(250),
             currencyLocation() { return player.ep0 },
             currencyDisplayName: "Dotknight Points",
@@ -177,7 +177,7 @@
         13: {
             title: "Dotknight Upgrade III",
             unlocked() { return true },
-            description() { return "Boosts dragon points based on dotknight points." },
+            description() { return "提升 dragon points based on dotknight points." },
             cost: new Decimal(500),
             currencyLocation() { return player.ep0 },
             currencyDisplayName: "Dotknight Points",
@@ -476,7 +476,7 @@ addLayer("ep1", {
         11: {
             title: "Dragon Upgrade I",
             unlocked() { return true },
-            description() { return "Boosts crystals based on dragon points." },
+            description() { return "提升 crystals based on dragon points." },
             cost: new Decimal(100),
             currencyLocation() { return player.ep1 },
             currencyDisplayName: "Dragon Points",
@@ -490,7 +490,7 @@ addLayer("ep1", {
         12: {
             title: "Dragon Upgrade II",
             unlocked() { return true },
-            description() { return "Boosts AD tickspeed base based on dragon points." },
+            description() { return "提升 AD tickspeed base based on dragon points." },
             cost: new Decimal(250),
             currencyLocation() { return player.ep1 },
             currencyDisplayName: "Dragon Points",
@@ -504,7 +504,7 @@ addLayer("ep1", {
         13: {
             title: "Dragon Upgrade III",
             unlocked() { return true },
-            description() { return "Boosts cookies 每秒 based on dragon points." },
+            description() { return "提升 cookies 每秒 based on dragon points." },
             cost: new Decimal(500),
             currencyLocation() { return player.ep1 },
             currencyDisplayName: "Dragon Points",

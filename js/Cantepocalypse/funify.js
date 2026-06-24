@@ -3199,8 +3199,8 @@
                             return look
                         }],
                     ]],
-                    ["raw-html", () => {return "Boosts oil by x" + format(player.fu.funEffect)}, {color: "white", fontSize: "18px", fontFamily: "monospace"}],
-                    ["raw-html", () => {return "Boosts proto memories by x" + format(player.fu.funEffect2)}, {color: "white", fontSize: "18px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "提升 oil by x" + format(player.fu.funEffect)}, {color: "white", fontSize: "18px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "提升 proto memories by x" + format(player.fu.funEffect2)}, {color: "white", fontSize: "18px", fontFamily: "monospace"}],
                     ["blank", "25px"],
                     ["row", [["clickable", 11]]],
                     ["blank", "25px"],
@@ -3275,7 +3275,7 @@
                             return look
                         }],
                     ]],
-                    ["raw-html", () => { return inChallenge("fu", 11) ? "Boosts anonymity gain by x" + format(player.fu.jocusEssenceEffect) : player.fu.enterFear ? "Effect only active in Fear Challenge" : "" }, () => {
+                    ["raw-html", () => { return inChallenge("fu", 11) ? "提升 anonymity gain by x" + format(player.fu.jocusEssenceEffect) : player.fu.enterFear ? "Effect only active in Fear Challenge" : "" }, () => {
                         let look = {fontSize: "20px", fontFamily: "monospace"}
                         if (inChallenge("fu", 11)) {look.color = "white"} else {look.color = "gray"}
                         return look
@@ -3353,7 +3353,7 @@
                             return look
                         }],
                     ]],
-                    ["raw-html", () => { return "Boosts steel gain by x" + format(player.fu.happinessEffect2)}, {color: "#fcff04", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => { return "提升 steel gain by x" + format(player.fu.happinessEffect2)}, {color: "#fcff04", fontSize: "20px", fontFamily: "monospace"}],
                     ["raw-html", () => { return "Divides anger by /" + format(player.fu.happinessEffect)}, {color: "#fcff04", fontSize: "20px", fontFamily: "monospace"}],
                     ["blank", "20px"],
                     ["row", [["clickable", 4], ["clickable", 5], ["clickable", 14], ["clickable", 15], ["clickable", 16], ["clickable", 17], ["clickable", 18], ["clickable", 19]]],
@@ -3372,7 +3372,7 @@
                             return look
                         }],
                     ]],
-                    ["raw-html", () => { return "Boosts infinity points gain by x" + format(player.fu.sadnessEffect2)}, {color: "#110057", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => { return "提升 infinity points gain by x" + format(player.fu.sadnessEffect2)}, {color: "#110057", fontSize: "20px", fontFamily: "monospace"}],
                     ["raw-html", () => { return "Divides happiness by /" + format(player.fu.sadnessEffect)}, {color: "#110057", fontSize: "20px", fontFamily: "monospace"}],
                     ["blank", "20px"],
                     ["row", [["clickable", 4], ["clickable", 5], ["clickable", 14], ["clickable", 15], ["clickable", 16], ["clickable", 17], ["clickable", 18], ["clickable", 19]]],
@@ -3391,7 +3391,7 @@
                             return look
                         }],
                     ]],
-                    ["raw-html", () => { return "Boosts singularity point gain by x" + format(player.fu.angerEffect2)}, {color: "#ff2b3d", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => { return "提升 singularity point gain by x" + format(player.fu.angerEffect2)}, {color: "#ff2b3d", fontSize: "20px", fontFamily: "monospace"}],
                     ["raw-html", () => { return "Divides sadness by /" + format(player.fu.angerEffect)}, {color: "#ff2b3d", fontSize: "20px", fontFamily: "monospace"}],                    
                     ["blank", "20px"],
                     ["row", [["clickable", 4], ["clickable", 5], ["clickable", 14], ["clickable", 15], ["clickable", 16], ["clickable", 17], ["clickable", 18], ["clickable", 19]]],
@@ -3410,7 +3410,7 @@
                             return look
                         }],
                     ]],
-                    ["raw-html", () => { return inChallenge("fu", 11) ? "Boosts replicanti point mult post softcap by x" + format(player.fu.fearEffect2) : "Effect only active in Fear Challenge" }, () => {
+                    ["raw-html", () => { return inChallenge("fu", 11) ? "提升 replicanti point mult post softcap by x" + format(player.fu.fearEffect2) : "Effect only active in Fear Challenge" }, () => {
                         let look = {fontSize: "20px", fontFamily: "monospace"}
                         if (inChallenge("fu", 11)) {look.color = "gray"} else {look.color = "#222"}
                         return look
@@ -3434,7 +3434,7 @@
                         }],
                     ]],
                     ["row", [
-                        ["raw-html", () => { return inChallenge("fu", 12) ? "Boosts anonymity by ^" + format(player.fu.numbEffect2) : "Effect only active in Numbness Challenge" }, () => {
+                        ["raw-html", () => { return inChallenge("fu", 12) ? "提升 anonymity by ^" + format(player.fu.numbEffect2) : "Effect only active in Numbness Challenge" }, () => {
                             let look = {fontSize: "20px", fontFamily: "monospace"}
                             if (inChallenge("fu", 12)) {look.color = "white"} else {look.color = "gray"}
                             return look

@@ -576,7 +576,7 @@ addLayer("depth2", {
                                     ["raw-html", () => {return "Highest Combo: " + formatWhole(player.depth2.highestCombo.min(250)) + "/" + BHS["depth2"].comboLimit}, {color: "var(--textColor)", fontSize: "18px", fontFamily: "monospace"}],
                                 ], {width: "225px", height: "35px", borderBottom: "2px solid var(--regBorder)", marginBottom: "2px"}],
                                 ["top-column", [
-                                    ["raw-html", () => {return "Boosts Post-OTF Resources by x" + formatSimple(player.depth2.comboEffect)}, {color: "var(--textColor)", fontSize: "11px", fontFamily: "monospace"}],
+                                    ["raw-html", () => {return "提升 Post-OTF Resources by x" + formatSimple(player.depth2.comboEffect)}, {color: "var(--textColor)", fontSize: "11px", fontFamily: "monospace"}],
                                 ], {width: "272px", height: "25px"}],
                                 ["top-column", [
                                     ["blank", "4px"],
@@ -656,7 +656,7 @@ addLayer("depth2", {
                                     ["raw-html", () => {return "Lowest Combo: " + formatWhole(player.depth2.lowestCombo.max(-250)) + "/-" + BHS["depth2"].comboLimit}, {color: "var(--textColor)", fontSize: "18px", fontFamily: "monospace"}],
                                 ], {width: "225px", height: "35px", borderBottom: "2px solid var(--regBorder)", marginBottom: "2px"}],
                                 ["top-column", [
-                                    ["raw-html", () => {return "Boosts Pre-OTF Resources by x" + formatSimple(player.depth2.negComboEffect)}, {color: "var(--textColor)", fontSize: "11px", fontFamily: "monospace"}],
+                                    ["raw-html", () => {return "提升 Pre-OTF Resources by x" + formatSimple(player.depth2.negComboEffect)}, {color: "var(--textColor)", fontSize: "11px", fontFamily: "monospace"}],
                                 ], {width: "272px", height: "25px"}],
                                 ["top-column", [
                                     ["blank", "4px"],

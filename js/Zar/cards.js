@@ -2341,7 +2341,7 @@
         15: {
             title: "Just do that I guess",
             unlocked() { return player.cbs.shrineReactivated },
-            description: "Boosts chance point gain based on card generators.",
+            description: "提升 chance point gain based on card generators.",
             cost: new Decimal(10000),
             currencyLocation() { return player.car },
             currencyDisplayName: "Card Generators",

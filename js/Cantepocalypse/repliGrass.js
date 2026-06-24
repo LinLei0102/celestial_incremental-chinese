@@ -461,8 +461,8 @@ addLayer("rg", {
     },
     tabFormat: [
         ["raw-html", () => {return "你有 <h3>" + format(player.rg.repliGrass) + "</h3> repli-grass."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-        ["raw-html", () => { return "Boosts repli-leaf mult by x" + format(player.rg.repliGrassEffect) + "." }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
-        ["raw-html", () => { return "Boosts replicanti point mult by x" + format(player.rg.repliGrassEffect2) + "." }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+        ["raw-html", () => { return "提升 repli-leaf mult by x" + format(player.rg.repliGrassEffect) + "." }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+        ["raw-html", () => { return "提升 replicanti point mult by x" + format(player.rg.repliGrassEffect2) + "." }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
         ["microtabs", "stuff", { 'border-width': '0px' }],
         ["blank", "25px"],
     ],

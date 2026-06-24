@@ -1511,7 +1511,7 @@
         },
         207: {
             title() { return "Team Buff" },
-            tooltip() { return "Boosts the entire team's damage by 50% for 9s." },
+            tooltip() { return "提升 the entire team's damage by 50% for 9s." },
             canClick() { return !player.ma.deadCharacters[0] },
             unlocked() { return (player.ma.attackTimer3[0].lte(0) || !this.canClick()) && hasUpgrade("ma", 23) && player.ma.selectedCharacters[0] },
             onClick() {
@@ -4212,18 +4212,18 @@
                     ["blank", "25px"],
                     ["style-column", [
                         ["raw-html", () => {return "Depth 1 highest combo: " + formatWhole(player.ma.bestComboDepth1) + " kills"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-                        ["raw-html", () => {return "Boosts IP gain by x" + format(player.ma.bestComboDepth1Effect)}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
-                        ["raw-html", () => {return hasMilestone("ma", 102) ? "Boosts common matos fragment gain by x" + formatShort(player.ma.bestComboDepth1Effect2) : ""}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "提升 IP gain by x" + format(player.ma.bestComboDepth1Effect)}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return hasMilestone("ma", 102) ? "提升 common matos fragment gain by x" + formatShort(player.ma.bestComboDepth1Effect2) : ""}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
 
                         ["style-row", [], () => {return player.ma.secondAreaUnlock ? {width: "600px", height: "5px"} : {display: "none !important"}}],
                         ["raw-html", () => {return player.ma.secondAreaUnlock ? "Depth 2 highest combo: " + formatWhole(player.ma.bestComboDepth2) + " kills" : "" }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-                        ["raw-html", () => {return player.ma.secondAreaUnlock ? "Boosts NIP gain by x" + format(player.ma.bestComboDepth2Effect) : "" }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
-                        ["raw-html", () => {return hasMilestone("ma", 202) ? "Boosts rare matos fragment gain by x" + formatShort(player.ma.bestComboDepth2Effect2) : ""}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return player.ma.secondAreaUnlock ? "提升 NIP gain by x" + format(player.ma.bestComboDepth2Effect) : "" }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return hasMilestone("ma", 202) ? "提升 rare matos fragment gain by x" + formatShort(player.ma.bestComboDepth2Effect2) : ""}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                         
                         ["style-row", [], () => {return hasUpgrade("ma", 27) ? {width: "600px", height: "5px"} : {display: "none !important"}}],
                         ["raw-html", () => {return hasUpgrade("ma", 27) ? "Depth 3 highest combo: " + formatWhole(player.ma.bestComboDepth3) + " kills" : "" }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-                        ["raw-html", () => {return hasUpgrade("ma", 27) ? "Boosts SP gain by x" + format(player.ma.bestComboDepth3Effect) : "" }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
-                        ["raw-html", () => {return hasMilestone("ma", 302) ? "Boosts epic matos fragment gain by x" + formatShort(player.ma.bestComboDepth3Effect2) : ""}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return hasUpgrade("ma", 27) ? "提升 SP gain by x" + format(player.ma.bestComboDepth3Effect) : "" }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return hasMilestone("ma", 302) ? "提升 epic matos fragment gain by x" + formatShort(player.ma.bestComboDepth3Effect2) : ""}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                     ], {width: "600px", backgroundColor: "#1b0218", border: "3px solid #8a0e79", borderRadius: "20px", paddingTop: "10px", paddingBottom: "10px"}],
                     ["blank", "25px"],
                     ["microtabs", "combo", {borderWidth: "0px"}],

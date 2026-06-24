@@ -370,7 +370,7 @@ addLayer("depth3", {
                                     ["raw-html", () => {return "Highest Combo: " + formatWhole(player.depth3.highestCombo.min(250)) + "/" + BHS["depth3"].comboLimit}, {color: "var(--textColor)", fontSize: "18px", fontFamily: "monospace"}],
                                 ], {width: "225px", height: "35px", borderBottom: "2px solid var(--regBorder)", marginBottom: "2px"}],
                                 ["top-column", [
-                                    ["raw-html", () => {return "Boosts singularity points by x" + formatSimple(player.depth3.comboEffect)}, {color: "var(--textColor)", fontSize: "11px", fontFamily: "monospace"}],
+                                    ["raw-html", () => {return "提升 singularity points by x" + formatSimple(player.depth3.comboEffect)}, {color: "var(--textColor)", fontSize: "11px", fontFamily: "monospace"}],
                                 ], {width: "272px", height: "25px"}],
                                 ["top-column", [
                                     ["blank", "4px"],

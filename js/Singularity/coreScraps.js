@@ -1259,7 +1259,7 @@
                             }],
                         ]],
                         ["row", [
-                            ["raw-html", () => {return "Boosts time cube effects by ^" + formatShort(player.cs.scraps.point.effect)}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+                            ["raw-html", () => {return "提升 time cube effects by ^" + formatShort(player.cs.scraps.point.effect)}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ["raw-html", () => {return player.cs.scraps.point.amount.gte(1e10) ? "[SOFTCAPPED]" : ""}, {color: "red", fontSize: "14px", fontFamily: "monospace", marginLeft: "8px"}],
                         ]],
                     ], {width: "530px", height: "60px"}],
@@ -1385,7 +1385,7 @@
                             }],
                         ]],
                         ["row", [
-                            ["raw-html", () => {return "Boosts mod gain by ^" + formatShort(player.cs.scraps.code.effect, 3)}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+                            ["raw-html", () => {return "提升 mod gain by ^" + formatShort(player.cs.scraps.code.effect, 3)}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ["raw-html", () => {return player.cs.scraps.code.amount.gte(1e10) ? "[SOFTCAPPED]" : ""}, {color: "red", fontSize: "14px", fontFamily: "monospace", marginLeft: "8px"}],
                         ]],
                     ], {width: "530px", height: "60px"}],
@@ -1406,7 +1406,7 @@
                             }],
                         ]],
                         ["row", [
-                            ["raw-html", () => {return "Boosts tier 1 booster dice effects by ^" + formatShort(player.cs.scraps.dice.effect)}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+                            ["raw-html", () => {return "提升 tier 1 booster dice effects by ^" + formatShort(player.cs.scraps.dice.effect)}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ["raw-html", () => {return player.cs.scraps.dice.amount.gte(1e10) ? "[SOFTCAPPED]" : ""}, {color: "red", fontSize: "14px", fontFamily: "monospace", marginLeft: "8px"}],
                         ]],
                     ], {width: "530px", height: "60px"}],
@@ -1427,7 +1427,7 @@
                             }],
                         ]],
                         ["row", [
-                            ["raw-html", () => {return "Boosts rocket fuel effects by ^" + formatShort(player.cs.scraps.rocket.effect, 3)}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+                            ["raw-html", () => {return "提升 rocket fuel effects by ^" + formatShort(player.cs.scraps.rocket.effect, 3)}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ["raw-html", () => {return player.cs.scraps.rocket.amount.gte(1e10) ? "[SOFTCAPPED]" : ""}, {color: "red", fontSize: "14px", fontFamily: "monospace", marginLeft: "8px"}],
                         ]],
                     ], {width: "530px", height: "60px"}],
@@ -1469,7 +1469,7 @@
                             }],
                         ]],
                         ["row", [
-                            ["raw-html", () => {return "Boosts base infinity point gain by ^" + formatShort(player.cs.scraps.infinity.effect, 3)}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+                            ["raw-html", () => {return "提升 base infinity point gain by ^" + formatShort(player.cs.scraps.infinity.effect, 3)}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ["raw-html", () => {return player.cs.scraps.infinity.amount.gte(1e10) ? "[SOFTCAPPED]" : ""}, {color: "red", fontSize: "14px", fontFamily: "monospace", marginLeft: "8px"}],
                         ]],
                     ], {width: "530px", height: "60px"}],
@@ -1490,7 +1490,7 @@
                             }],
                         ]],
                         ["row", [
-                            ["raw-html", () => {return "Boosts check back xp by x" + formatShort(player.cs.scraps.checkback.effect)}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+                            ["raw-html", () => {return "提升 check back xp by x" + formatShort(player.cs.scraps.checkback.effect)}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ["raw-html", () => {return player.cs.scraps.checkback.amount.gte(1e10) ? "[SOFTCAPPED]" : ""}, {color: "red", fontSize: "14px", fontFamily: "monospace", marginLeft: "8px"}],
                         ]],
                     ], {width: "530px", height: "60px"}],
@@ -1511,7 +1511,7 @@
                             }],
                         ]],
                         ["row", [
-                            ["raw-html", () => {return "Boosts radiation gain by x" + formatShort(player.cs.scraps.radioactive.effect)}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+                            ["raw-html", () => {return "提升 radiation gain by x" + formatShort(player.cs.scraps.radioactive.effect)}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ["raw-html", () => {return player.cs.scraps.radioactive.amount.gte(1e10) ? "[SOFTCAPPED]" : ""}, {color: "red", fontSize: "14px", fontFamily: "monospace", marginLeft: "8px"}],
                         ]],
                     ], {width: "530px", height: "60px"}],

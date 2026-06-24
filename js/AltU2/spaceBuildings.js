@@ -77,7 +77,7 @@
                 return "Primary Space Building"
             },
             display() {
-                return "Boosts star gain by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "提升 star gain by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     <small>(Ignoring Softcap)</small>\n\
                     Cost: " + formatWhole(tmp[this.layer].buyables[this.id].cost) + " Space Rocks"
             },
@@ -112,7 +112,7 @@
                 return "Secondary Space Building"
             },
             display() {
-                return "Boosts core fragment scores by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "提升 core fragment scores by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + formatWhole(tmp[this.layer].buyables[this.id].cost) + " Space Rocks"
             },
             buy(mult) {
@@ -146,7 +146,7 @@
                 return "Tertiary Space Building"
             },
             display() {
-                return "Boosts infinity points by ^" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "提升 infinity points by ^" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + formatWhole(tmp[this.layer].buyables[this.id].cost) + " Space Gems"
             },
             buy(mult) {
@@ -180,7 +180,7 @@
                 return "Quarternary Space Building"
             },
             display() {
-                return "Boosts singularity points by ^" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "提升 singularity points by ^" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + formatWhole(tmp[this.layer].buyables[this.id].cost) + " Space Gems"
             },
             buy(mult) {
@@ -214,7 +214,7 @@
                 return "Quinary Space Building"
             },
             display() {
-                return "Boosts antimatter gain by ^" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "提升 antimatter gain by ^" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + formatWhole(tmp[this.layer].buyables[this.id].cost) + " Space Rocks"
             },
             buy(mult) {
@@ -248,7 +248,7 @@
                 return "Senary Space Building"
             },
             display() {
-                return "Boosts factor power, rank, tier, and tetr effects by ^" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "提升 factor power, rank, tier, and tetr effects by ^" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + formatWhole(tmp[this.layer].buyables[this.id].cost) + " Space Rocks"
             },
             buy(mult) {
@@ -277,7 +277,7 @@
                 content: [
                     ["blank", "25px"],
                     ["raw-html", () => { return "你有 <h3>" + format(player.sb.storedSpaceEnergy) + "</h3> space energy. (From Dark Universe)" }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-                    ["raw-html", () => { return "Boosts space building effects by " + formatSimple(player.sb.sseEffect.sub(1).mul(100)) + "%" }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => { return "提升 space building effects by " + formatSimple(player.sb.sseEffect.sub(1).mul(100)) + "%" }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                     ["blank", "25px"],
                     ["row", [["ex-buyable", 12],]],
                     ["blank", "25px"],

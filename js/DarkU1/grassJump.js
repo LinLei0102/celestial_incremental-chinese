@@ -97,7 +97,7 @@ addLayer("dgj", {
                 return "Pointed Jumps"
             },
             display() {
-                return "Boosts points by +100% per level\n\
+                return "提升 points by +100% per level\n\
                 Point gain is tripled every 25 levels\n\
                 Currently: x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                 Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Grassjumpers"
@@ -136,7 +136,7 @@ addLayer("dgj", {
                 return "Prancing Prestige"
             },
             display() {
-                return "Boosts prestige points by +100% per level\n\
+                return "提升 prestige points by +100% per level\n\
                 Prestige point gain is tripled every 25 levels\n\
                 Currently: x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                 Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Grassjumpers"
@@ -214,7 +214,7 @@ addLayer("dgj", {
                 return "Gambolling Grass"
             },
             display() {
-                return "Boosts dark grass gain/cap by +50% per level\n\
+                return "提升 dark grass gain/cap by +50% per level\n\
                 Dark grass gain/cap is doubled every 25 levels\n\
                 Currently: x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                 Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Grassjumpers"
@@ -253,7 +253,7 @@ addLayer("dgj", {
                 return "Vaulting Vapors"
             },
             display() {
-                return "Boosts cloud gain by +25% per level\n\
+                return "提升 cloud gain by +25% per level\n\
                 Cloud gain is multiplied by x1.5 every 25 levels\n\
                 Currently: x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                 Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Grassjumpers"
@@ -292,7 +292,7 @@ addLayer("dgj", {
                 return "Twitching Time"
             },
             display() {
-                return "Boosts eclipse shard gain by +5% per level\n\
+                return "提升 eclipse shard gain by +5% per level\n\
                 Eclipse shard gain is multiplied by x1.5 every 25 levels\n\
                 Currently: x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                 Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Grassjumpers"

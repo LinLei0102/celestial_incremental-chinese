@@ -381,14 +381,14 @@ addLayer("laboratory", {
                 ["blank", "4px"],
                 ["style-column", [
                     ["raw-html", () => {return "你有 " + formatWhole(player.laboratory.matosFragment) + " Matos Fragments."}, {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}],
-                    ["raw-html", () => {return "Boosts matos dust gain by x" + formatSimple(player.laboratory.matosFragment.add(1).log(10).add(1))}, {color: "var(--textColor)", fontSize: "16px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "提升 matos dust gain by x" + formatSimple(player.laboratory.matosFragment.add(1).log(10).add(1))}, {color: "var(--textColor)", fontSize: "16px", fontFamily: "monospace"}],
                 ], () => {return player.laboratory.highestCombo.gt(10) ? {width: "547px", height: "40px", background: "var(--miscButtonHover)", borderTop: "3px solid var(--regBorder)", borderBottom: "3px solid var(--regBorder)"} : {display: "none !important"}}],
                 ["blank", "4px"],
 
                 ["blank", "4px"],
                 ["style-column", [
                     ["raw-html", () => {return "你有 " + formatWhole(player.laboratory.matosEssence) + " Matos Essence."}, {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}],
-                    ["raw-html", () => {return "Boosts matos shard gain by x" + formatSimple(player.laboratory.matosEssence.add(1).log(10).add(1))}, {color: "var(--textColor)", fontSize: "16px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "提升 matos shard gain by x" + formatSimple(player.laboratory.matosEssence.add(1).log(10).add(1))}, {color: "var(--textColor)", fontSize: "16px", fontFamily: "monospace"}],
                 ], () => {return player.laboratory.highestCombo.gt(15) ? {width: "547px", height: "40px", background: "var(--miscButtonHover)", borderTop: "3px solid var(--regBorder)", borderBottom: "3px solid var(--regBorder)"} : {display: "none !important"}}],
                 ["blank", "4px"],
 

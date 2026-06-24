@@ -340,7 +340,7 @@
         13: {
             title: "AD Upgrade III",
             unlocked() { return true },
-            description: "Boosts rank effect based on antimatter.",
+            description: "提升 rank effect based on antimatter.",
             cost: new Decimal(1e25),
             currencyLocation() { return player.ad },
             currencyDisplayName: "Antimatter",
@@ -354,7 +354,7 @@
         14: {
             title: "AD Upgrade IV",
             unlocked() { return player.in.infinities.gte(2) },
-            description: "Boosts grass based on antimatter.",
+            description: "提升 grass based on antimatter.",
             cost: new Decimal(1e34),
             currencyLocation() { return player.ad },
             currencyDisplayName: "Antimatter",
@@ -368,7 +368,7 @@
         15: {
             title: "AD Upgrade V",
             unlocked() { return player.in.infinities.gte(2) },
-            description: "Boosts trees and leaves based on antimatter.",
+            description: "提升 trees and leaves based on antimatter.",
             cost: new Decimal(1e40),
             currencyLocation() { return player.ad },
             currencyDisplayName: "Antimatter",
@@ -382,7 +382,7 @@
         16: {
             title: "AD Upgrade VI",
             unlocked() { return player.in.infinities.gte(2) },
-            description: "Boosts grasshoppers and fertilizer based on antimatter.",
+            description: "提升 grasshoppers and fertilizer based on antimatter.",
             cost: new Decimal(1e50),
             currencyLocation() { return player.ad },
             currencyDisplayName: "Antimatter",
@@ -410,7 +410,7 @@
         18: {
             title: "AD Upgrade VIII",
             unlocked() { return player.in.infinities.gte(3) },
-            description: "Boosts mods and lines of code based on antimatter.",
+            description: "提升 mods and lines of code based on antimatter.",
             cost: new Decimal(1e78),
             currencyLocation() { return player.ad },
             currencyDisplayName: "Antimatter",
@@ -438,7 +438,7 @@
         21: {
             title: "AD Upgrade X",
             unlocked() { return player.in.infinities.gte(3) },
-            description: "Boosts code experience based on antimatter.",
+            description: "提升 code experience based on antimatter.",
             cost: new Decimal(1e110),
             currencyLocation() { return player.ad },
             currencyDisplayName: "Antimatter",
@@ -964,7 +964,7 @@
                 return look
             }],
         ]],
-        ["raw-html", () => {return "Boosts points by x" + format(player.ad.antimatterEffect) + " (based on points and antimatter)"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+        ["raw-html", () => {return "提升 points by x" + format(player.ad.antimatterEffect) + " (based on points and antimatter)"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
         ["raw-html", () => {return !hasChallenge("ip", 18) ? "UNAVOIDABLE HARDCAP: Gain past 1e300 is hardcapped" : "UNAVOIDABLE SOFTCAP: Gain past 1e300 is raised by ^" + formatShortSimple(player.ad.firstSoftcap, 3)}, () => {
             let look = {color: "red", fontSize: "16px", fontFamily: "monospace"}
             if (player.ad.antimatterPerSecond.lt(1e300)) look.color = "gray"
