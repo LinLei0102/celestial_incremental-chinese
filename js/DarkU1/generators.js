@@ -360,7 +360,7 @@
                         ["raw-html", () => {return (player.dg.generatorPowerPerSecond.gte(1e250)) ? "[SOFTCAPPED]" : ""}, {color: "red", fontSize: "18px", fontFamily: "monospace", marginLeft: "10px"}],
                     ]],
                     ["row", [
-                        ["raw-html", () => {return "提升 point gain by x" + format(player.dg.generatorPowerEffect)}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "提升 point gain x" + format(player.dg.generatorPowerEffect)}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                         ["raw-html", () => {
                             if (player.dg.generatorPower.lt(1e9)) {
                                 return ""

@@ -97,7 +97,7 @@ addLayer("dgj", {
                 return "Pointed Jumps"
             },
             display() {
-                return "提升 points by +100% per level\n\
+                return "提升点数 +100% per level\n\
                 Point gain is tripled every 25 levels\n\
                 Currently: x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                 Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Grassjumpers"
@@ -254,7 +254,7 @@ addLayer("dgj", {
             },
             display() {
                 return "提升 cloud gain by +25% per level\n\
-                Cloud gain is multiplied by x1.5 every 25 levels\n\
+                Cloud gain is multiplied x1.5 every 25 levels\n\
                 Currently: x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                 Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Grassjumpers"
             },
@@ -293,7 +293,7 @@ addLayer("dgj", {
             },
             display() {
                 return "提升 eclipse shard gain by +5% per level\n\
-                Eclipse shard gain is multiplied by x1.5 every 25 levels\n\
+                Eclipse shard gain is multiplied x1.5 every 25 levels\n\
                 Currently: x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                 Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Grassjumpers"
             },

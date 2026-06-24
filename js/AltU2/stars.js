@@ -2524,9 +2524,9 @@ addLayer("st", {
                         }],
                         ["raw-html", () => {return player.st.starPowerPerSecond.gt(1e300) ? "[SOFTCAPPED]" : ""}, {color: "red", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}],
                     ]],
-                    ["raw-html", () => { return "提升 point gain by ^" + format(player.st.starPowerEffect)}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
-                    ["raw-html", () => { return "提升 dice points and rocket fuel by x" + format(player.st.starPowerEffect2)}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
-                    ["raw-html", () => { return "提升 singularity dimensions by x" + format(player.st.starPowerEffect3)}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => { return "提升 point gain ^" + format(player.st.starPowerEffect)}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => { return "提升骰子点数和火箭燃料 x" + format(player.st.starPowerEffect2)}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => { return "提升 singularity dimensions x" + format(player.st.starPowerEffect3)}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                     ["blank", "25px"],
                     ["style-row", [["clickable", 3], ["clickable", 4], ["buyable", 1]], () => {
                         let look = {width: "410px", border: "2px solid white", borderRadius: "17px"}

@@ -233,7 +233,7 @@
         17: {
             title: "Finally boosting the other content :/",
             unlocked() { return hasUpgrade("za", 16) },
-            description: "提升 challenge dice points based on chance points.",
+            description: "提升 challenge dice points（基于 chance points.",
             cost: new Decimal(100000000),
             currencyLocation() { return player.za },
             currencyDisplayName: "Chance Points",
@@ -277,7 +277,7 @@
         22: {
             title: "I don't like bees but I do like flowers.",
             unlocked() { return hasUpgrade("za", 21) && player.al.show },
-            description: "提升 flower gain based on chance points.",
+            description: "提升 flower gain（基于 chance points.",
             cost: new Decimal(1e40),
             currencyLocation() { return player.za },
             currencyDisplayName: "Chance Points",

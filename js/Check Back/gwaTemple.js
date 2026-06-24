@@ -1086,7 +1086,7 @@ addLayer("gwaTemple", {
                                     return look
                                 }],
                             ]],
-                            ["raw-html", () => {return "提升 gwa points by ^" + formatSimple(player.gwaTemple.gwarkEffect, 2)}, {color: "#ffb", fontSize: "16px", fontFamily: "monospace"}],
+                            ["raw-html", () => {return "提升 gwa points ^" + formatSimple(player.gwaTemple.gwarkEffect, 2)}, {color: "#ffb", fontSize: "16px", fontFamily: "monospace"}],
                         ], {width: "394px", height: "60px", borderBottom: "3px solid #29291a"}],
                         ["clickable", 21],
                         ["always-scroll-column", [
@@ -1146,7 +1146,7 @@ addLayer("gwaTemple", {
             ["raw-html", () => { return "你有 <h3>" + format(player.gwaTemple.gwaPoints) + "</h3> gwa points" }, {color: "#ffb", fontSize: "24px", fontFamily: "monospace" }],
             ["raw-html", () => { return player.gwaTemple.gwaPointsGain.gt(0) ? "(+" + format(player.gwaTemple.gwaPointsGain) + ")" : ""}, {color: "#ffb", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
         ]],
-        ["raw-html", () => {return hasUpgrade("gwaTemple", 5) ? "提升 gwa pet effects by ^" + formatSimple(player.gwaTemple.gwaPointsEffect, 3) : ""}, {color: "#ffb", fontSize: "20px", fontFamily: "monospace"}],
+        ["raw-html", () => {return hasUpgrade("gwaTemple", 5) ? "提升 gwa pet effects ^" + formatSimple(player.gwaTemple.gwaPointsEffect, 3) : ""}, {color: "#ffb", fontSize: "20px", fontFamily: "monospace"}],
         ["raw-html", () => { return player.gwaTemple.gwaPoints.gte(1e100) ? "UNAVOIDABLE SOFTCAP: Gain past 1e100 is raised by ^" + formatShortSimple(player.gwaTemple.firstSoftcap, 3) : ""}, {color: "red", fontSize: "16px", fontFamily: "monospace"}],
         ["blank", "25px"],
         ["style-row", [

@@ -516,7 +516,7 @@
                         ]],
                         ["raw-html", () => {return player.t.treesToGet.gt(player.t.doomSoftcapStart) ? "SOFTCAP OF DOOM: Gain past " + format(player.t.doomSoftcapStart) + " is raised by ^" + format(player.t.doomSoftcap, 3) + "." : ""}, {color: "red", fontSize: "14px", fontFamily: "monospace"}],
                         ["row", [
-                            ["raw-html", () => {return "提升 prestige point gain by x" + format(player.t.treeEffect) + "."}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+                            ["raw-html", () => {return "提升 prestige point gain x" + format(player.t.treeEffect) + "."}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ["raw-html", () => {return player.t.treeEffect.gte("1e15000") ? "[SOFTCAPPED]" : ""}, {color: "red", fontSize: "16px", fontFamily: "monospace", marginLeft: "10px"}]
                         ]],
                         ["blank", "10px"],

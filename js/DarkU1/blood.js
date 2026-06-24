@@ -658,7 +658,7 @@
 
                     ]],
                     ["row", [
-                        ["raw-html", () => {return "提升 punchcard efficiency by ^" + formatSimple(player.bl.bloodEffect, 3) + ". (Only active effects)"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "提升 punchcard efficiency ^" + formatSimple(player.bl.bloodEffect, 3) + ". (Only active effects)"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                         ["raw-html", () => {return player.bl.blood.gte(6713) ? "<small style='margin-left: 10px'>[SOFTCAPPED]</small>" : ""}, {color: "red", fontSize: "20px", fontFamily: "monospace"}],
                     ]],
                     ["blank", "25px"],

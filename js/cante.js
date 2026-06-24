@@ -849,9 +849,9 @@
                 content: [
                     ["blank", "25px"],
                     ["raw-html", () => {return "你有 <h3>" + format(player.ca.replicanti) + "</h3> replicanti." }, { "color": "white", "font-size": "26px", "font-family": "monospace" }],
-                    ["raw-html", () => {return "提升 infinity points by x" + format(player.ca.replicantiEffect)}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
-                    ["raw-html", () => {return "提升 infinity dimensions by x" + format(player.ca.replicantiEffect2)}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
-                    ["raw-html", () => {return "提升 points by x" + format(player.ca.replicantiEffect3)}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "提升无限点数 x" + format(player.ca.replicantiEffect)}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "提升 infinity dimensions x" + format(player.ca.replicantiEffect2)}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "提升点数 x" + format(player.ca.replicantiEffect3)}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                     ["raw-html", () => {return !hasUpgrade("depth2", 6) ? "(Caps out at 1.79e308 replicanti)" : "After 1.79e308 replicanti, Replicanti Mult is divided by /" + format(player.ca.replicantiSoftcap) + "."}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                     ["blank", "25px"],
                     ["row", [["bar", "replicantiBar"]]],
@@ -880,7 +880,7 @@
                             return look
                         }],
                     ]],
-                    ["raw-html", () => {return "提升 antimatter galaxy effect base by x" + format(player.ca.galaxyDustEffect)}, {color: "#979EE8", fontSize: "16px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "提升 antimatter galaxy effect base x" + format(player.ca.galaxyDustEffect)}, {color: "#979EE8", fontSize: "16px", fontFamily: "monospace"}],
                     ["blank", "25px"],
                     ["row", [["clickable", 12]]],
                     ["blank", "25px"],
@@ -908,7 +908,7 @@
                         ], () => {return hasUpgrade("cp", 18) ? {width: "347px", height: "220px", borderRight: "3px solid white"} : {width: "700px", height: "220px"}}],
                         ["style-column", [
                             ["raw-html", () => {return "你有 <h3>" + formatWhole(player.ca.rememberanceCores) + "</h3> remembrance cores."}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
-                            ["raw-html", () => {return "提升 cante energy gain by x<h3>" + format(player.ca.rememberanceCoresEffect) + "</h3>."}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+                            ["raw-html", () => {return "提升 cante energy gain x<h3>" + format(player.ca.rememberanceCoresEffect) + "</h3>."}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ["blank", "10px"],
                             ["raw-html", () => {return "你有 <h3>" + format(player.oi.protoMemories) + "</h3> proto memories."}, {color: "white", fontSize: "12px", fontFamily: "monospace"}],
                             ["blank", "20px"],

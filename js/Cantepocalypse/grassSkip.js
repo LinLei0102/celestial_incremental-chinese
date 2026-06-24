@@ -632,7 +632,7 @@
                             return look
                         }],
                     ]],
-                    ["raw-html", () => {return "提升 rank, tier, and tetr points by x" + format(player.gs.grassSkippersEffect)}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "提升 rank, tier, and tetr points x" + format(player.gs.grassSkippersEffect)}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                     ["blank", "25px"],
                     ["style-row", [["ex-buyable", 11], ["ex-buyable", 12], ["ex-buyable", 13], ["ex-buyable", 14],
                         ["ex-buyable", 15], ["ex-buyable", 16], ["ex-buyable", 17], ["ex-buyable", 18]], {maxWidth: "1200px"}],

@@ -459,7 +459,7 @@
                         ["raw-html", () => {return "你有 " + formatWhole(player.rt.repliTrees) + " repli-trees"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                         ["raw-html", () => {return "(+" + format(player.rt.repliTreesToGet, 1) + ")"}, {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
                     ]],
-                    ["raw-html", () => {return "提升 anonymity gain by x" + format(player.rt.repliTreesEffect)}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "提升 anonymity gain x" + format(player.rt.repliTreesEffect)}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                     ["raw-html", () => {return "Repli-Leaves mult: x" + format(player.rt.repliLeavesMult, 4)}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                     ["raw-html", () => {return player.rt.repliTrees.gte(player.rt.repliTreeSoftcapStart) ? "After " + formatWhole(player.rt.repliTreeSoftcapStart) + " repli-trees, repli-leaf mult is divided by " + format(player.rt.repliTreeSoftcapEffect) : "" }, {color: "red", fontSize: "16px", fontFamily: "monospace"}],
                     ["raw-html", () => {return player.rt.repliTrees.gte("1e1000") ? "After 1e1000 repli-trees, repli-tree gain is raised by ^0.2." : "" }, {color: "red", fontSize: "14px", fontFamily: "monospace"}],

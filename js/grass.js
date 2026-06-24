@@ -1307,24 +1307,24 @@ addLayer('g', {
         ]],
         ["raw-html", () => {return player.g.grassVal.gt(player.g.doomSoftcapStart) ? "SOFTCAP OF DOOM: Value past " + format(player.g.doomSoftcapStart) + " is raised by ^" + format(player.g.doomSoftcap, 3) + "." : ""}, {color: "red", fontSize: "14px", fontFamily: "monospace"}],
         ["row", [
-            ["raw-html", () => {return "提升 leaf gain by x" + format(player.g.grassEffect)}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+            ["raw-html", () => {return "提升 leaf gain x" + format(player.g.grassEffect)}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
             ['raw-html', () => {return player.g.grassEffect.gte("1e25000") ? "[SOFTCAPPED]" : ""}, {color: "red", fontSize: "16px", fontFamily: "monospace", marginLeft: "10px"}]
         ]],
         ["style-row", [
-            ["raw-html", () => {return hasMilestone("r", 13) ? "提升 tree and 天体点数 gain by x" + format(player.g.grassEffect2) : hasUpgrade("g", 12) ? "提升 tree gain by x" + format(player.g.grassEffect2) : ""}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+            ["raw-html", () => {return hasMilestone("r", 13) ? "提升 tree and 天体点数 gain x" + format(player.g.grassEffect2) : hasUpgrade("g", 12) ? "提升 tree gain x" + format(player.g.grassEffect2) : ""}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
             ['raw-html', () => {return player.g.grassEffect2.gte("1e10000") ? "[SOFTCAPPED]" : ""}, {color: "red", fontSize: "16px", fontFamily: "monospace", marginLeft: "10px"}],
         ], () => {return hasUpgrade("g", 12) ? {marginBottom: "10px"} : {display: "none !important"}}],
         ["row", [
             ["raw-html", () => {return "你有 " + format(player.g.goldGrass) + " golden grass"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
             ["raw-html", () => {return "(+" + format(player.g.goldGrassVal) + " GGV)"}, {color: "white", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}],
         ], () => {return hasUpgrade("g", 13) ? {} : {display: "none !important"}}],
-        ["raw-html", () => {return hasUpgrade('g', 13) ? "提升 grass value by x" + format(player.g.goldGrassEffect) : ""}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+        ["raw-html", () => {return hasUpgrade('g', 13) ? "提升 grass value x" + format(player.g.goldGrassEffect) : ""}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
         ["style-row", [], () => {return hasUpgrade("g", 13) ? {width: "10px", height: "10px"} : {display: "none !important"}}],
         ["row", [
             ["raw-html", () => {return player.ev.evolutionsUnlocked[7] ? "你有 " + format(player.g.moonstone) + " moonstone" : ""}, {color: "white", fontSize: "20px", fontFamily: "monospace", userSelect: "none"}],
             ["raw-html", () => {return player.ev.evolutionsUnlocked[7] ? "(+" + format(player.g.moonstoneVal) + " MV)" : ""}, {color: "white", fontSize: "20px", fontFamily: "monospace", userSelect: "none", marginLeft: "10px"}],
         ], () => {return player.ev.evolutionsUnlocked[7] ? {} : {display: "none !important"}}],
-        ["raw-html", () => {return player.ev.evolutionsUnlocked[7] ? "提升 golden grass value by x" + format(player.g.moonstoneEffect) : ""}, {color: "white", fontSize: "16px", fontFamily: "monospace", userSelect: "none"}],
+        ["raw-html", () => {return player.ev.evolutionsUnlocked[7] ? "提升 golden grass value x" + format(player.g.moonstoneEffect) : ""}, {color: "white", fontSize: "16px", fontFamily: "monospace", userSelect: "none"}],
         ["style-row", [], () => {return player.ev.evolutionsUnlocked[7] ? {width: "10px", height: "10px"} : {display: "none !important"}}],
         ['microtabs', 'stuff', { 'border-width': '0px' }],
         ["blank", "25px"],

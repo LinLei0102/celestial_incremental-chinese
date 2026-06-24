@@ -699,13 +699,13 @@
                     ["blank", "25px"],
                     ["clickable", 12],
                     ["raw-html", () => { return player.i.pylonBuilt ? "你有 <h3>" + format(player.i.pylonEnergy) + "/" + format(player.i.pylonEnergyMax) +  "</h3> ancient pylon energy (" + format(player.i.pylonEnergyPerSecond) + "/秒）." : "" }, {color: "#000000ff", fontSize: "24px", fontFamily: "monospace"}],
-                    ["raw-html", () => {return player.i.pylonBuilt ? "提升 U1 tickspeed by x" + format(player.i.pylonEnergyEffect) + "." : ""}, {color: "black", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return player.i.pylonBuilt ? "提升 U1 tickspeed x" + format(player.i.pylonEnergyEffect) + "." : ""}, {color: "black", fontSize: "20px", fontFamily: "monospace"}],
                     ["row", [
-                        ["raw-html", () => {return player.i.pylonBuilt ? "提升 pre-otf multiplier by ^" + format(player.i.pylonEnergyEffect2) + "." : ""}, {color: "black", fontSize: "20px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return player.i.pylonBuilt ? "提升 pre-otf multiplier ^" + format(player.i.pylonEnergyEffect2) + "." : ""}, {color: "black", fontSize: "20px", fontFamily: "monospace"}],
                         ["raw-html", () => {return player.i.pylonEnergyEffect2.gt(10000) ? "<small style='margin-left:10px'>[SOFTCAPPED]</small>" : ""}, {color: "red", fontSize: "20px", fontFamily: "monospace"}],
                     ]],
                     ["row", [
-                        ["raw-html", () => {return player.i.pylonBuilt ? "提升 post-otf multiplier by ^" + format(player.i.pylonEnergyEffect3) + "." : ""}, {color: "black", fontSize: "20px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return player.i.pylonBuilt ? "提升 post-otf multiplier ^" + format(player.i.pylonEnergyEffect3) + "." : ""}, {color: "black", fontSize: "20px", fontFamily: "monospace"}],
                         ["raw-html", () => {return player.i.pylonEnergyEffect3.gt(1000) ? "<small style='margin-left:10px'>[SOFTCAPPED]</small>" : ""}, {color: "red", fontSize: "20px", fontFamily: "monospace"}],
                     ]],
                     ["raw-html", () => {return player.i.pylonBuilt ? "Passive effect: Boosts IP gain by x" + format(player.i.pylonPassiveEffect) + " (Based on points)" : ""}, {color: "black", fontSize: "20px", fontFamily: "monospace"}],

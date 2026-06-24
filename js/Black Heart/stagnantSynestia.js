@@ -339,7 +339,7 @@ addLayer("stagnantSynestia", {
                                     ["raw-html", () => {return "Highest Combo: " + formatWhole(player.stagnantSynestia.highestCombo.min(100)) + "/" + BHS["stagnantSynestia"].comboLimit}, {color: "var(--textColor)", fontSize: "18px", fontFamily: "monospace"}],
                                 ], {width: "225px", height: "35px", borderBottom: "2px solid var(--regBorder)", marginBottom: "2px"}],
                                 ["top-column", [
-                                    ["raw-html", () => {return "提升 check back xp by x" + formatSimple(player.stagnantSynestia.comboEffect, 2)}, {color: "var(--textColor)", fontSize: "12px", fontFamily: "monospace"}],
+                                    ["raw-html", () => {return "提升 check back xp x" + formatSimple(player.stagnantSynestia.comboEffect, 2)}, {color: "var(--textColor)", fontSize: "12px", fontFamily: "monospace"}],
                                 ], {width: "272px", height: "25px"}],
                                 ["style-column", [
                                     ["raw-html", () => {return "<p style='line-height:1.2'>Milestones multiply tickspeed during celestialite respawn by x" + formatSimple(player.stagnantSynestia.milestoneEffect, 2)}, {color: "var(--textColor)", fontSize: "12px", fontFamily: "monospace"}],

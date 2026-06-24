@@ -1533,7 +1533,7 @@
                         }],
                     ]],
                     ["row", [
-                        ["raw-html", () => { return "提升 天体点数 by x" + format(player.f.factorPowerEffect) + "." }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                        ["raw-html", () => { return "提升天体点数 x" + format(player.f.factorPowerEffect) + "." }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                         ["raw-html", () => { return player.f.factorPowerEffect.gte("1e25000") ? "[SOFTCAPPED]" : "" }, {color: "red", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}],
                     ]],
                     ["blank", "25px"],
@@ -1597,7 +1597,7 @@
                     ]],
                     ["raw-html", () => {return player.f.factorPowerPerSecond.gt(player.f.doomSoftcapStart) ? "SOFTCAP OF DOOM: Gain past " + format(player.f.doomSoftcapStart) + " is raised by ^" + format(player.f.doomSoftcap, 3) + "." : ""}, {color: "red", fontSize: "16px", fontFamily: "monospace"}],
                     ["row", [
-                        ["raw-html", () => { return "提升 天体点数 by x" + format(player.f.factorPowerEffect) + "." }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                        ["raw-html", () => { return "提升天体点数 x" + format(player.f.factorPowerEffect) + "." }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                         ["raw-html", () => { return player.f.factorPowerEffect.gte("1e25000") ? "[SOFTCAPPED]" : "" }, {color: "red", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}],
                     ]],
                     ["blank", "25px"],

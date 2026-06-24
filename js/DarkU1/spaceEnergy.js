@@ -642,7 +642,7 @@
                     ["row", [["clickable", 11]]],
                     ["blank", "25px"],
                     ["raw-html", () => { return "你有 " + format(player.ds.space) + " space. (based on product of length, width, and depth)"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-                    ["raw-html", () => { return "提升 starmetal alloy gain by x" + format(player.ds.spaceEffect) + "."}, {color: "white", fontSize: "18px", fontFamily: "monospace"}],
+                    ["raw-html", () => { return "提升 starmetal alloy gain x" + format(player.ds.spaceEffect) + "."}, {color: "white", fontSize: "18px", fontFamily: "monospace"}],
                     ["raw-html", () => { return !hasUpgrade("sma", 20) ? "<h4>(Reset on space energy reset)" : ""}, {color: "white", fontSize: "18px", fontFamily: "monospace"}],
                     ["blank", "25px"],
                     ["raw-html", () => { return "Length: " + format(player.ds.length) + ". (+" + format(player.ds.lengthPerSecond) + "/秒）"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],

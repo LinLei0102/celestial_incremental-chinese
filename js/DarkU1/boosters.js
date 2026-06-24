@@ -198,7 +198,7 @@
                     ['blank', '25px'],
                     ["raw-html", () => {return "你有 <h3>" + formatWhole(player.db.boosters) + "</h3> boosters"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                     ["raw-html", () => {return "(Best boosters: " + formatWhole(player.db.bestBoosters) + ")"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
-                    ["raw-html", () => {return "提升 point gain by x" + format(player.db.boosterEffect)}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "提升 point gain x" + format(player.db.boosterEffect)}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                     ['blank', '25px'],
                     ["row", [["clickable", 11]]],
                     ['blank', '25px'],

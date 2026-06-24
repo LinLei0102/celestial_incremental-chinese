@@ -145,7 +145,7 @@
         12: {
             title: "Upgrade (1, 2)",
             unlocked() { return hasUpgrade("ip", 11) },
-            description: "提升 antimatter based on completed dice runs.",
+            description: "提升 antimatter（基于 completed dice runs.",
             cost: new Decimal(2),
             currencyLocation() { return player.in },
             currencyDisplayName: "无限点数",
@@ -159,7 +159,7 @@
         13: {
             title: "Upgrade (1, 3)",
             unlocked() { return hasUpgrade("ip", 11) },
-            description: "提升 7th dimensions based on completed rocket fuel runs.",
+            description: "提升 7th dimensions（基于 completed rocket fuel runs.",
             cost: new Decimal(2),
             currencyLocation() { return player.in },
             currencyDisplayName: "无限点数",
@@ -173,7 +173,7 @@
         14: {
             title: "Upgrade (1, 4)",
             unlocked() { return hasUpgrade("ip", 11) },
-            description: "提升 factor power based on antimatter.",
+            description: "提升 factor power（基于 antimatter.",
             cost: new Decimal(6),
             currencyLocation() { return player.in },
             currencyDisplayName: "无限点数",
@@ -187,7 +187,7 @@
         21: {
             title: "Upgrade (2, 1)",
             unlocked() { return hasUpgrade("ip", 11) },
-            description: "提升 factor power and prestige points based on infinities.",
+            description: "提升 factor power and prestige points（基于 infinities.",
             cost: new Decimal(1),
             currencyLocation() { return player.in },
             currencyDisplayName: "无限点数",
@@ -201,7 +201,7 @@
         22: {
             title: "Upgrade (2, 2)",
             unlocked() { return hasUpgrade("ip", 11) },
-            description: "提升 tree and leaf gain based on infinities.",
+            description: "提升 tree and leaf gain（基于 infinities.",
             cost: new Decimal(4),
             currencyLocation() { return player.in },
             currencyDisplayName: "无限点数",
@@ -215,7 +215,7 @@
         23: {
             title: "Upgrade (2, 3)",
             unlocked() { return hasUpgrade("ip", 11) },
-            description: "提升 mod and lines of code gain based on infinities.",
+            description: "提升 mod and lines of code gain（基于 infinities.",
             cost: new Decimal(9),
             currencyLocation() { return player.in },
             currencyDisplayName: "无限点数",
@@ -229,7 +229,7 @@
         24: {
             title: "Upgrade (2, 4)",
             unlocked() { return hasUpgrade("ip", 11) },
-            description: "提升 golden grass gain based on infinities.",
+            description: "提升 golden grass gain（基于 infinities.",
             cost: new Decimal(16),
             currencyLocation() { return player.in },
             currencyDisplayName: "无限点数",
@@ -253,7 +253,7 @@
         32: {
             title: "Upgrade (3, 2)",
             unlocked() { return hasUpgrade("ip", 31) },
-            description: "提升 grasshoppers based on infinity points.",
+            description: "提升 grasshoppers（基于 infinity points.",
             cost: new Decimal(30),
             currencyLocation() { return player.in },
             currencyDisplayName: "无限点数",
@@ -275,7 +275,7 @@
         33: {
             title: "Upgrade (3, 3)",
             unlocked() { return hasUpgrade("ip", 31) },
-            description: "提升 mods based on infinity points.",
+            description: "提升 mods（基于 infinity points.",
             cost: new Decimal(100),
             currencyLocation() { return player.in },
             currencyDisplayName: "无限点数",
@@ -297,7 +297,7 @@
         34: {
             title: "Upgrade (3, 4)",
             unlocked() { return hasUpgrade("ip", 31) },
-            description: "提升 dice points and rocket fuel based on infinity points.",
+            description: "提升 dice points and rocket fuel（基于 infinity points.",
             cost: new Decimal(300),
             currencyLocation() { return player.in },
             currencyDisplayName: "无限点数",
@@ -319,7 +319,7 @@
         41: {
             title: "Upgrade (4, 1)",
             unlocked() { return hasUpgrade("ta", 14) },
-            description: "提升 negative infinity points based on infinity points.",
+            description: "提升 negative infinity points（基于 infinity points.",
             cost: new Decimal(20000),
             currencyLocation() { return player.in },
             currencyDisplayName: "无限点数",
@@ -333,7 +333,7 @@
         42: {
             title: "Upgrade (4, 2)",
             unlocked() { return hasUpgrade("ta", 14) },
-            description: "提升 infinity points based on negative infinity points.",
+            description: "提升 infinity points（基于 negative infinity points.",
             cost: new Decimal(40000),
             currencyLocation() { return player.in },
             currencyDisplayName: "无限点数",
@@ -357,7 +357,7 @@
         43: {
             title: "Upgrade (4, 3)",
             unlocked() { return hasUpgrade("ta", 14) },
-            description: "提升 AD (ignoring softcap) based on negative infinity points.",
+            description: "提升反物质维度（忽略软上限）基于 negative infinity points.",
             cost: new Decimal(80000),
             currencyLocation() { return player.in },
             currencyDisplayName: "无限点数",
@@ -371,7 +371,7 @@
         44: {
             title: "Upgrade (4, 4)",
             unlocked() { return hasUpgrade("ta", 14) },
-            description: "提升 dimension power based on infinity points.",
+            description: "提升 dimension power（基于 infinity points.",
             cost: new Decimal(160000),
             currencyLocation() { return player.in },
             currencyDisplayName: "无限点数",

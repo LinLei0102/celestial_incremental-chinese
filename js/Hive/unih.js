@@ -1289,7 +1289,7 @@ addLayer("bee", {
             ["style-row", [
                 ["style-column", [
                     ["raw-html", () => { return "Juicier Jelly - " + formatWhole(getBuyableAmount("bee", 12)) + "/" + formatWhole(layers.bee.buyables[12].purchaseLimit())}, {color: "#312f17", fontSize: "24px", fontFamily: "monospace"}],
-                    ["raw-html", () => { return "提升 BPS by x" + formatSimple(buyableEffect("bee", 12), 1)}, {color: "#312f17", fontSize: "16px", fontFamily: "monospace"}],
+                    ["raw-html", () => { return "提升 BPS x" + formatSimple(buyableEffect("bee", 12), 1)}, {color: "#312f17", fontSize: "16px", fontFamily: "monospace"}],
                 ], {width: "396px"}],
                 ["style-row", [], {width: "4px", height: "60px", background: "#8e4200"}],
                 ["buyable", 12],
@@ -1313,7 +1313,7 @@ addLayer("bee", {
             ["style-row", [
                 ["style-column", [
                     ["raw-html", () => { return "Magnified Bees - " + formatWhole(getBuyableAmount("bee", 15)) + "/" + formatWhole(layers.bee.buyables[15].purchaseLimit())}, { color: "#312f17", fontSize: "24px", fontFamily: "monospace" }],
-                    ["raw-html", () => { return "提升 BPS by ^" + formatSimple(buyableEffect("bee", 15), 3)}, { color: "#312f17", fontSize: "16px", fontFamily: "monospace" }]
+                    ["raw-html", () => { return "提升 BPS ^" + formatSimple(buyableEffect("bee", 15), 3)}, { color: "#312f17", fontSize: "16px", fontFamily: "monospace" }]
                 ], {width: "396px"}],
                 ["style-row", [], {width: "4px", height: "60px", background: "#8e4200"}],
                 ["buyable", 15],
@@ -1368,7 +1368,7 @@ addLayer("bee", {
                 ["style-row", [
                     ["style-column", [
                         ["raw-html", () => { return "Pollen Baskets - " + formatWhole(getBuyableAmount("bee", 31)) + "/" + formatWhole(layers.bee.buyables[31].purchaseLimit())}, { color: "#312f17", fontSize: "24px", fontFamily: "monospace" }],
-                        ["raw-html", () => { return "提升 Pollen by x" + formatSimple(buyableEffect("bee", 31), 1)}, { color: "#312f17", fontSize: "16px", fontFamily: "monospace" }]
+                        ["raw-html", () => { return "提升 Pollen x" + formatSimple(buyableEffect("bee", 31), 1)}, { color: "#312f17", fontSize: "16px", fontFamily: "monospace" }]
                     ], {width: "396px"}],
                     ["style-row", [], {width: "4px", height: "60px", background: "#8e4200"}],
                     ["buyable", 31],
@@ -1415,7 +1415,7 @@ addLayer("bee", {
                 ["style-row", [
                     ["style-column", [
                         ["raw-html", () => { return "Second Stomach - " + formatWhole(getBuyableAmount("bee", 41)) + "/" + formatWhole(layers.bee.buyables[41].purchaseLimit())}, { color: "#312f17", fontSize: "24px", fontFamily: "monospace" }],
-                        ["raw-html", () => { return "提升 Nectar α by x" + formatSimple(buyableEffect("bee", 41), 1)}, { color: "#312f17", fontSize: "16px", fontFamily: "monospace" }]
+                        ["raw-html", () => { return "提升 Nectar α x" + formatSimple(buyableEffect("bee", 41), 1)}, { color: "#312f17", fontSize: "16px", fontFamily: "monospace" }]
                     ], {width: "396px"}],
                     ["style-row", [], {width: "4px", height: "60px", background: "#8e4200"}],
                     ["buyable", 41],
@@ -1423,7 +1423,7 @@ addLayer("bee", {
                 ["style-row", [
                     ["style-column", [
                         ["raw-html", () => { return "Increased Density - " + formatWhole(getBuyableAmount("bee", 42)) + "/" + formatWhole(layers.bee.buyables[42].purchaseLimit())}, { color: "#312f17", fontSize: "24px", fontFamily: "monospace" }],
-                        ["raw-html", () => { return "提升 Nectar by x" + formatSimple(buyableEffect("bee", 42), 1)}, { color: "#312f17", fontSize: "16px", fontFamily: "monospace" }]
+                        ["raw-html", () => { return "提升 Nectar x" + formatSimple(buyableEffect("bee", 42), 1)}, { color: "#312f17", fontSize: "16px", fontFamily: "monospace" }]
                     ], {width: "396px"}],
                     ["style-row", [], {width: "4px", height: "60px", background: "#8e4200"}],
                     ["buyable", 42],
@@ -1463,7 +1463,7 @@ addLayer("bee", {
                 ["style-row", [
                     ["style-column", [
                         ["raw-html", () => { return "Tighter Clumps - " + formatWhole(getBuyableAmount("bee", 51)) + "/" + formatWhole(layers.bee.buyables[51].purchaseLimit())}, { color: "#312f17", fontSize: "24px", fontFamily: "monospace" }],
-                        ["raw-html", () => { return "提升 Bee Bread by x" + format(buyableEffect("bee", 51))}, { color: "#312f17", fontSize: "16px", fontFamily: "monospace" }]
+                        ["raw-html", () => { return "提升 Bee Bread x" + format(buyableEffect("bee", 51))}, { color: "#312f17", fontSize: "16px", fontFamily: "monospace" }]
                     ], {width: "396px"}],
                     ["style-row", [], {width: "4px", height: "60px", background: "#8e4200"}],
                     ["buyable", 51],
@@ -1471,7 +1471,7 @@ addLayer("bee", {
                 ["style-row", [
                     ["style-column", [
                         ["raw-html", () => { return "Improved Packing - " + formatWhole(getBuyableAmount("bee", 52)) + "/" + formatWhole(layers.bee.buyables[52].purchaseLimit())}, { color: "#312f17", fontSize: "24px", fontFamily: "monospace" }],
-                        ["raw-html", () => { return "提升 BB Tier Effectiveness by x" + formatSimple(buyableEffect("bee", 52), 1)}, { color: "#312f17", fontSize: "16px", fontFamily: "monospace" }]
+                        ["raw-html", () => { return "提升 BB Tier Effectiveness x" + formatSimple(buyableEffect("bee", 52), 1)}, { color: "#312f17", fontSize: "16px", fontFamily: "monospace" }]
                     ], {width: "396px"}],
                     ["style-row", [], {width: "4px", height: "60px", background: "#8e4200"}],
                     ["buyable", 52],
@@ -1502,7 +1502,7 @@ addLayer("bee", {
                 ["style-row", [
                     ["style-column", [
                         ["raw-html", () => { return "Denser Honey - " + formatWhole(getBuyableAmount("bee", 61)) + "/" + formatWhole(layers.bee.buyables[61].purchaseLimit())}, { color: "#312f17", fontSize: "24px", fontFamily: "monospace" }],
-                        ["raw-html", () => { return "提升 Honey-Cell Gain by x" + formatSimple(buyableEffect("bee", 61), 1)}, { color: "#312f17", fontSize: "16px", fontFamily: "monospace" }]
+                        ["raw-html", () => { return "提升 Honey-Cell Gain x" + formatSimple(buyableEffect("bee", 61), 1)}, { color: "#312f17", fontSize: "16px", fontFamily: "monospace" }]
                     ], {width: "396px"}],
                     ["style-row", [], {width: "4px", height: "60px", background: "#8e4200"}],
                     ["buyable", 61],
@@ -1510,7 +1510,7 @@ addLayer("bee", {
                 ["style-row", [
                     ["style-column", [
                         ["raw-html", () => { return "Succulent Sweetness - " + formatWhole(getBuyableAmount("bee", 62)) + "/" + formatWhole(layers.bee.buyables[62].purchaseLimit())}, { color: "#312f17", fontSize: "24px", fontFamily: "monospace" }],
-                        ["raw-html", () => { return "提升 Honey by x" + format(buyableEffect("bee", 62))}, { color: "#312f17", fontSize: "16px", fontFamily: "monospace" }]
+                        ["raw-html", () => { return "提升 Honey x" + format(buyableEffect("bee", 62))}, { color: "#312f17", fontSize: "16px", fontFamily: "monospace" }]
                     ], {width: "396px"}],
                     ["style-row", [], {width: "4px", height: "60px", background: "#8e4200"}],
                     ["buyable", 62],
@@ -1518,7 +1518,7 @@ addLayer("bee", {
                 ["style-row", [
                     ["style-column", [
                         ["raw-html", () => { return "Faster Congealing - " + formatWhole(getBuyableAmount("bee", 63)) + "/" + formatWhole(layers.bee.buyables[63].purchaseLimit())}, { color: "#312f17", fontSize: "24px", fontFamily: "monospace" }],
-                        ["raw-html", () => { return "提升 cell effect bases by x" + formatSimple(buyableEffect("bee", 63), 1)}, { color: "#312f17", fontSize: "16px", fontFamily: "monospace" }]
+                        ["raw-html", () => { return "提升 cell effect bases x" + formatSimple(buyableEffect("bee", 63), 1)}, { color: "#312f17", fontSize: "16px", fontFamily: "monospace" }]
                     ], {width: "396px"}],
                     ["style-row", [], {width: "4px", height: "60px", background: "#8e4200"}],
                     ["buyable", 63],

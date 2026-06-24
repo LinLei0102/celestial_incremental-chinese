@@ -1230,7 +1230,7 @@ addLayer("ev8", {
         19: {
             title: "Shard Research IX",
             unlocked() { return hasMilestone("s", 14) },
-            description: "提升 radiation gain based on unspent paragon shards.",
+            description: "提升 radiation gain（基于 unspent paragon shards.",
             cost: new Decimal(60),
             currencyLocation() { return player.cb },
             currencyDisplayName: "Evolution Shards",
@@ -1254,7 +1254,7 @@ addLayer("ev8", {
         22: {
             title: "Shard Research XI",
             unlocked() { return hasMilestone("s", 14) },
-            description: "提升 singularity point gain based on unspent evolution shards.",
+            description: "提升 singularity point gain（基于 unspent evolution shards.",
             cost: new Decimal(7),
             currencyLocation() { return player.cb },
             currencyDisplayName: "Paragon Shards",

@@ -705,7 +705,7 @@
                         }],
                         ['raw-html', () => {return player.oi.oilToGet.gte("1e10000") ? "<small style='margin-left:8px'>[SOFTCAPPED]</small>" : ""}, {color: "red", fontSize: "20px", fontFamily: "monospace"}]
                     ]],
-                    ["raw-html", () => {return "提升 repli-trees and extends repli-tree softcap by x" + format(player.oi.oilEffect)}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "提升 repli-trees and extends repli-tree softcap x" + format(player.oi.oilEffect)}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                     ["blank", "25px"],
                     ["row", [["clickable", 11]]],
                 ]
@@ -864,7 +864,7 @@
                     ["layer-proxy", ["ca", [
                         ["blank", "25px"],
                         ["raw-html", () => {return "你有 <h3>" + formatWhole(player.ca.rememberanceCores) + "</h3> rememberance cores."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-                        ["raw-html", () => {return "提升 cante energy gain by x<h3>" + format(player.ca.rememberanceCoresEffect) + "</h3>."}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "提升 cante energy gain x<h3>" + format(player.ca.rememberanceCoresEffect) + "</h3>."}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                         ["blank", "25px"],
                         ["raw-html", () => {return "你有 <h3>" + formatWhole(player.ca.canteCores) + "</h3> Cante cores."}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                         ["raw-html", () => {return "你有 <h3>" + format(player.oi.protoMemories) + "</h3> proto memories."}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],

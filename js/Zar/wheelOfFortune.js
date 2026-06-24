@@ -553,9 +553,9 @@
                     ["style-column", [ 
                     ["style-column", [ 
                     ["raw-html", function () { return "你有 <h3>" + format(player.wof.wheelPoints) + "</h3> wheel points." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
-                    ["raw-html", function () { return "提升 chance point gain by x" + format(player.wof.wheelPointsEffect) + "." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
+                    ["raw-html", function () { return "提升 chance point gain x" + format(player.wof.wheelPointsEffect) + "." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
                     ["raw-html", function () { return "Extends chance point softcap by x" + format(player.wof.wheelPointsEffect2) + "." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
-                    ["raw-html", function () { return "提升 heads and tails gain by x" + format(player.wof.wheelPointsEffect3) + "." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
+                    ["raw-html", function () { return "提升 heads and tails gain x" + format(player.wof.wheelPointsEffect3) + "." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
                     ], {width: "597px", height: "100px", background: "rgba(34, 124, 61, 0.5)", border: "3px solid #ccc",  borderBottom: "0px", borderTop: "0px", borderRadius: "0px 15px 0px 0px"}],
                     ["style-column", [ 
                     ["blank", "12.5px"],

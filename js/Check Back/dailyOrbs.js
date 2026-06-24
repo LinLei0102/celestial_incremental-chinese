@@ -765,7 +765,7 @@ addLayer("ev2", {
         ["blank", "10px"],
         ["style-column", [
             ["raw-html", () => {return "<h2>Day " + formatWhole(player.ev2.day) }, {color: "white", fontSize: "30px", fontFamily: "monospace"}],
-            ["raw-html", () => {return "提升 orb effects by x" + formatSimple(player.ev2.dayEffect, 1)}, {color: "white", fontSize: "16px", fontFamily: "monospace"}]
+            ["raw-html", () => {return "提升 orb effects x" + formatSimple(player.ev2.dayEffect, 1)}, {color: "white", fontSize: "16px", fontFamily: "monospace"}]
         ], {width: "265px", height: "80px", backgroundColor: "rgba(0,0,0,0.4)", borderRadius: "10px"}],
         ["blank", "10px"],
         ["row", [

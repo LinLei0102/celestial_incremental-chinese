@@ -665,7 +665,7 @@
         },
         19: {
             requirementDescription: "<h3>Pent 30",
-            effectDescription() { return "提升 tree and mod gain based on pent.<br>Currently: x" + format(player.r.pentMilestone9Effect[0]) + " and x" + format(player.r.pentMilestone9Effect[1]) + " respectively" },
+            effectDescription() { return "提升 tree and mod gain（基于 pent.<br>Currently: x" + format(player.r.pentMilestone9Effect[0]) + " and x" + format(player.r.pentMilestone9Effect[1]) + " respectively" },
             done() { return player.r.pent.gte(30) && this.unlocked() },
             unlocked() { return layerShown("cb") },
             style: {width: "600px", height: "70px", color: "rgba(0,0,0,0.5)", border: "5px solid rgba(0,0,0,0.5)", borderRadius: "10px", margin: "-2.5px"},
@@ -679,7 +679,7 @@
         },
         21: {
             requirementDescription: "<h3>Pent 12,500",
-            effectDescription() { return "提升 infinity points based on pent above 12,500.<br>Currently: x" + format(player.r.pentMilestone11Effect) },
+            effectDescription() { return "提升 infinity points（基于 pent above 12,500.<br>Currently: x" + format(player.r.pentMilestone11Effect) },
             done() { return player.r.pent.gte(12500) && this.unlocked() },
             unlocked() { return hasUpgrade("s", 16) && hasMilestone("r", 20) },
             style: {width: "600px", height: "70px", color: "rgba(0,0,0,0.5)", border: "5px solid rgba(0,0,0,0.5)", borderRadius: "10px", margin: "-2.5px"},
@@ -693,7 +693,7 @@
         },
         23: {
             requirementDescription: "<h3>Pent 17,500",
-            effectDescription() { return "提升 negative infinity points based on pent above 17,500.<br>Currently: x" + format(player.r.pentMilestone13Effect) },
+            effectDescription() { return "提升 negative infinity points（基于 pent above 17,500.<br>Currently: x" + format(player.r.pentMilestone13Effect) },
             done() { return player.r.pent.gte(17500) && this.unlocked() },
             unlocked() { return hasUpgrade("s", 16) && hasMilestone("r", 22) },
             style: {width: "600px", height: "70px", color: "rgba(0,0,0,0.5)", border: "5px solid rgba(0,0,0,0.5)", borderRadius: "10px", margin: "-2.5px"},
@@ -708,7 +708,7 @@
         25: {
             requirementDescription: "<h3>Pent 22,500",
             effectDescription() {
-                let str = "提升 singularity points based on pent above 22,500.<br>Currently: x" + format(player.r.pentMilestone15Effect)
+                let str = "提升 singularity points（基于 pent above 22,500.<br>Currently: x" + format(player.r.pentMilestone15Effect)
                 if (player.r.pent.gte(150000)) str = str.concat(" <small style='color:red'>[软上限]</small>")
                 return str
             },
@@ -725,14 +725,14 @@
         },
         27: {
             requirementDescription: "<h3>Pent 27,500",
-            effectDescription() { return "提升 time cubes effect by ^2." },
+            effectDescription() { return "提升 time cubes effect ^2." },
             done() { return player.r.pent.gte(27500) && this.unlocked() },
             unlocked() { return hasUpgrade("s", 16) && hasMilestone("r", 26) },
             style: {width: "600px", height: "55px", color: "rgba(0,0,0,0.5)", border: "5px solid rgba(0,0,0,0.5)", borderRadius: "10px", margin: "-2.5px"},
         },
         28: {
             requirementDescription: "<h3>Pent 30,000",
-            effectDescription() { return "提升 moonstone value based on time cubes.<br>Currently: x" + format(player.r.pentMilestone18Effect) },
+            effectDescription() { return "提升 moonstone value（基于 time cubes.<br>Currently: x" + format(player.r.pentMilestone18Effect) },
             done() { return player.r.pent.gte(30000) && this.unlocked() },
             unlocked() { return hasUpgrade("s", 16) && hasMilestone("r", 27) },
             style: {width: "600px", height: "70px", color: "rgba(0,0,0,0.5)", border: "5px solid rgba(0,0,0,0.5)", borderRadius: "10px", margin: "-2.5px"},

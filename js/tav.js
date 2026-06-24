@@ -1650,49 +1650,49 @@
                     ["row", [
                         ["style-column", [
                             ["raw-html", function () { return "1st Dimensional Power (" + format(buyableEffect("ta", 11)) + "x): " + format(player.ta.dimensionPower[0]) + " (+" + format(player.ta.dimensionPowerPerSecond[0]) + "/秒）"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }],
-                            ["raw-html", function () { return "提升 antimatter by x" + format(player.ta.dimensionPowerEffects[0])}, { color: "white", fontSize: "16px", fontFamily: "monospace" }]
+                            ["raw-html", function () { return "提升 antimatter x" + format(player.ta.dimensionPowerEffects[0])}, { color: "white", fontSize: "16px", fontFamily: "monospace" }]
                         ], {width: "700px"}],
                         ["buyable", 11]]],
                     ["row", [
                         ["style-column", [
                             ["raw-html", function () { return "2nd Dimensional Power (" + format(buyableEffect("ta", 12)) + "x): " + format(player.ta.dimensionPower[1]) + " (+" + format(player.ta.dimensionPowerPerSecond[1]) + "/秒）"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }],
-                            ["raw-html", function () { return "提升 1st dimensions by x" + format(player.ta.dimensionPowerEffects[1])}, { color: "white", fontSize: "16px", fontFamily: "monospace" }]
+                            ["raw-html", function () { return "提升 1st dimensions x" + format(player.ta.dimensionPowerEffects[1])}, { color: "white", fontSize: "16px", fontFamily: "monospace" }]
                         ], {width: "700px"}],
                         ["buyable", 12]]],
                     ["row", [
                         ["style-column", [
                             ["raw-html", function () { return "3rd Dimensional Power (" + format(buyableEffect("ta", 13)) + "x): " + format(player.ta.dimensionPower[2]) + " (+" + format(player.ta.dimensionPowerPerSecond[2]) + "/秒）"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }],
-                            ["raw-html", function () { return "提升 2nd dimensions by x" + format(player.ta.dimensionPowerEffects[2])}, { color: "white", fontSize: "16px", fontFamily: "monospace" }]
+                            ["raw-html", function () { return "提升 2nd dimensions x" + format(player.ta.dimensionPowerEffects[2])}, { color: "white", fontSize: "16px", fontFamily: "monospace" }]
                         ], {width: "700px"}],
                         ["buyable", 13]]],
                     ["row", [
                         ["style-column", [
                             ["raw-html", function () { return "4th Dimensional Power (" + format(buyableEffect("ta", 14)) + "x): " + format(player.ta.dimensionPower[3]) + " (+" + format(player.ta.dimensionPowerPerSecond[3]) + "/秒）"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }],
-                            ["raw-html", function () { return "提升 3rd dimensions by x" + format(player.ta.dimensionPowerEffects[3])}, { color: "white", fontSize: "16px", fontFamily: "monospace" }]
+                            ["raw-html", function () { return "提升 3rd dimensions x" + format(player.ta.dimensionPowerEffects[3])}, { color: "white", fontSize: "16px", fontFamily: "monospace" }]
                         ], {width: "700px"}],
                         ["buyable", 14]]],
                     ["row", [
                         ["style-column", [
                             ["raw-html", function () { return "5th Dimensional Power (" + format(buyableEffect("ta", 15)) + "x): " + format(player.ta.dimensionPower[4]) + " (+" + format(player.ta.dimensionPowerPerSecond[4]) + "/秒）"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }],
-                            ["raw-html", function () { return "提升 4th dimensions by x" + format(player.ta.dimensionPowerEffects[4])}, { color: "white", fontSize: "16px", fontFamily: "monospace" }]
+                            ["raw-html", function () { return "提升 4th dimensions x" + format(player.ta.dimensionPowerEffects[4])}, { color: "white", fontSize: "16px", fontFamily: "monospace" }]
                         ], {width: "700px"}],
                         ["buyable", 15]]],
                     ["row", [
                         ["style-column", [
                             ["raw-html", function () { return "6th Dimensional Power (" + format(buyableEffect("ta", 16)) + "x): " + format(player.ta.dimensionPower[5]) + " (+" + format(player.ta.dimensionPowerPerSecond[5]) + "/秒）"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }],
-                            ["raw-html", function () { return "提升 5th dimensions by x" + format(player.ta.dimensionPowerEffects[5])}, { color: "white", fontSize: "16px", fontFamily: "monospace" }]
+                            ["raw-html", function () { return "提升 5th dimensions x" + format(player.ta.dimensionPowerEffects[5])}, { color: "white", fontSize: "16px", fontFamily: "monospace" }]
                         ], {width: "700px"}],
                         ["buyable", 16]]],
                     ["row", [
                         ["style-column", [
                             ["raw-html", function () { return "7th Dimensional Power (" + format(buyableEffect("ta", 17)) + "x): " + format(player.ta.dimensionPower[6]) + " (+" + format(player.ta.dimensionPowerPerSecond[6]) + "/秒）"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }],
-                            ["raw-html", function () { return "提升 6th dimensions by x" + format(player.ta.dimensionPowerEffects[6])}, { color: "white", fontSize: "16px", fontFamily: "monospace" }]
+                            ["raw-html", function () { return "提升 6th dimensions x" + format(player.ta.dimensionPowerEffects[6])}, { color: "white", fontSize: "16px", fontFamily: "monospace" }]
                         ], {width: "700px"}],
                         ["buyable", 17]]],
                     ["row", [
                         ["style-column", [
                             ["raw-html", function () { return "8th Dimensional Power (" + format(buyableEffect("ta", 18)) + "x): " + format(player.ta.dimensionPower[7]) + " (+" + format(player.ta.dimensionPowerPerSecond[7]) + "/秒）"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }],
-                            ["raw-html", function () { return "提升 7th dimensions by x" + format(player.ta.dimensionPowerEffects[7])}, { color: "white", fontSize: "16px", fontFamily: "monospace" }]
+                            ["raw-html", function () { return "提升 7th dimensions x" + format(player.ta.dimensionPowerEffects[7])}, { color: "white", fontSize: "16px", fontFamily: "monospace" }]
                         ], {width: "700px"}],
                         ["buyable", 18]]],
                 ]
