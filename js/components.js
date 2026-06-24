@@ -1485,7 +1485,7 @@ function loadVue() {
 		props: ['layer', 'data'],
 		template: `
 		<div v-bind:class="{cutscenes: true, can: true}" v-on:click="player.c.cutscenes[data] = 0">
-			<span style="font-size:12px;user-select:none" v-html="data"></span>
+			<span style="font-size:12px;user-select:none" v-html="layers[layer].cutscenes[data].title ? layers[layer].cutscenes[data].title : data"></span>
 		</div>
 		`,
 	})
