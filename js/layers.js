@@ -717,13 +717,13 @@
                     ["clickable", 13],
                 ],
             },
-            "Cutscene Viewer": {
+            "过场查看器": {
                 buttonStyle() { return { color: "white", borderRadius: "5px" } },
                 unlocked() { return true},
                 content: [
                     ["blank", "25px"],
                     ["style-row", [
-                        ["raw-html", "Cutscene Viewer", {color: "var(--textColor)", fontSize: "24px", fontFamily: "monospace"}],
+                        ["raw-html", "过场查看器", {color: "var(--textColor)", fontSize: "24px", fontFamily: "monospace"}],
                     ], {width: "700px", height: "40px", background: "var(--scroll4)", border: "3px solid var(--regBorder)", marginBottom: "-3px"}],
                     ["theme-scroll-column", [
                         "cutscene-nodes",
