@@ -197,7 +197,7 @@ addLayer("settings", {
             style: { width: '100px', minHeight: '57px', color: "var(--textColor)", background: "var(--miscButton)", fontSize: "9px", lineHeight: "1.1", borderRadius: '0', border: "3px solid var(--miscButtonDisable)"},
         },
         31: {
-            title: "Tree Layout",
+            title: "树形布局",
             canClick() {return options.menuType != "Tree"},
             unlocked: "true",
             onClick() {
@@ -216,7 +216,7 @@ addLayer("settings", {
             },
         },
         32: {
-            title: "Tab Layout",
+            title: "标签布局",
             canClick() {return options.menuType != "Tab"},
             unlocked: "true",
             onClick() {
@@ -235,7 +235,7 @@ addLayer("settings", {
             },
         },
         33: {
-            title: "Grid Layout",
+            title: "网格布局",
             canClick() {return options.menuType != "Grid"},
             unlocked: "true",
             onClick() {
@@ -287,7 +287,7 @@ addLayer("settings", {
             },
         },
         101: {
-            title: "Default Theme",
+            title: "默认主题",
             canClick() {return options.theme != "default"},
             unlocked: "true",
             onClick() {
@@ -314,7 +314,7 @@ addLayer("settings", {
             },
         },
         102: {
-            title: "Bright Theme",
+            title: "亮色主题",
             canClick() {return options.theme != "bright"},
             unlocked: "true",
             onClick() {
@@ -341,7 +341,7 @@ addLayer("settings", {
             },
         },
         103: {
-            title: "Dark Theme",
+            title: "暗色主题",
             canClick() {return options.theme != "dark"},
             unlocked: "true",
             onClick() {
@@ -480,7 +480,7 @@ addLayer("settings", {
             },
         },
         108: {
-            title() {return player.s.highestSingularityPoints.gt(0) ? "Coral Theme" : "[已锁定]"},
+            title() {return player.s.highestSingularityPoints.gt(0) ? "珊瑚主题" : "[已锁定]"},
             canClick() {return options.theme != "coral" && player.s.highestSingularityPoints.gt(0)},
             unlocked: "true",
             tooltip() {return player.s.highestSingularityPoints.lte(0) ? "Compress mass to an infinitesimally small space." : ""},
@@ -508,7 +508,7 @@ addLayer("settings", {
             },
         },
         109: {
-            title() {return player.au2.au2Unlocked ? "Midnight Theme" : "[已锁定]"},
+            title() {return player.au2.au2Unlocked ? "午夜主题" : "[已锁定]"},
             canClick() {return options.theme != "midnight" && player.au2.au2Unlocked},
             unlocked: "true",
             tooltip() {return !player.au2.au2Unlocked ? "Begin exploration of a vast expanse." : ""},
