@@ -168,7 +168,7 @@
             },
             display() {
                 return "正在以x倍率提升草地值：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Fertilizer"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " Fertilizer"
             },
             buy(mult) {
                 if (!hasAchievement("achievements", 15)) completeAchievement("achievements", 15)
@@ -206,7 +206,7 @@
             },
             display() {
                 return "正在以x倍率提升草地值：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Fertilizer"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " Fertilizer"
             },
             buy(mult) {
                 if (!hasAchievement("achievements", 15)) completeAchievement("achievements", 15)
@@ -244,7 +244,7 @@
             },
             display() {
                 return "正在以x倍率提升草地值：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Fertilizer"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " Fertilizer"
             },
             buy(mult) {
                 if (!hasAchievement("achievements", 15)) completeAchievement("achievements", 15)
@@ -282,7 +282,7 @@
             },
             display() {
                 return "正在以x倍率提升草地值：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Fertilizer"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " Fertilizer"
             },
             buy(mult) {
                 if (!hasAchievement("achievements", 15)) completeAchievement("achievements", 15)
@@ -316,11 +316,11 @@
             cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()) },
             canAfford() { return this.currency().gte(this.cost()) },
             title() {
-                return "Grass Factor V"
+                return "草地因子V"
             },
             display() {
                 return "正在以x倍率提升草地值：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Fertilizer"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " Fertilizer"
             },
             buy(mult) {
                 if (!hasAchievement("achievements", 15)) completeAchievement("achievements", 15)
@@ -354,11 +354,11 @@
             cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()) },
             canAfford() { return this.currency().gte(this.cost()) },
             title() {
-                return "Grass Factor VI"
+                return "草地因子VI"
             },
             display() {
                 return "正在以x倍率提升草地值：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Fertilizer"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " Fertilizer"
             },
             buy(mult) {
                 if (!hasAchievement("achievements", 15)) completeAchievement("achievements", 15)
@@ -392,11 +392,11 @@
             cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()) },
             canAfford() { return this.currency().gte(this.cost()) },
             title() {
-                return "Grass Factor VII"
+                return "草地因子VII"
             },
             display() {
                 return "正在以x倍率提升草地值：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Fertilizer"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " Fertilizer"
             },
             buy(mult) {
                 if (!hasAchievement("achievements", 15)) completeAchievement("achievements", 15)
@@ -430,11 +430,11 @@
             cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()) },
             canAfford() { return this.currency().gte(this.cost()) },
             title() {
-                return "Grass Factor VIII"
+                return "草地因子VIII"
             },
             display() {
                 return "正在以x倍率提升草地值：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Fertilizer"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " Fertilizer"
             },
             buy(mult) {
                 if (!hasAchievement("achievements", 15)) completeAchievement("achievements", 15)
@@ -473,7 +473,7 @@
             },
             display() {
                 return "正在以x倍率提升天体点数：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " 天体点数"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " 天体点数"
             },
             buy(mult) {
                 if (!hasAchievement("achievements", 3) && buyableEffect("f", 11).mul(buyableEffect("f", 12)).mul(buyableEffect("f", 13)).mul(buyableEffect("f", 14)).gte(1.95)) completeAchievement("achievements", 3)
@@ -512,7 +512,7 @@
             },
             display() {
                 return "正在以x倍率提升天体点数：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " 天体点数"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " 天体点数"
             },
             buy(mult) {
                 if (!hasAchievement("achievements", 3) && buyableEffect("f", 11).mul(buyableEffect("f", 12)).mul(buyableEffect("f", 13)).mul(buyableEffect("f", 14)).gte(1.95)) completeAchievement("achievements", 3)
@@ -550,7 +550,7 @@
             },
             display() {
                 return "正在以x倍率提升天体点数：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " 天体点数"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " 天体点数"
             },
             buy(mult) {
                 if (!hasAchievement("achievements", 3) && buyableEffect("f", 11).mul(buyableEffect("f", 12)).mul(buyableEffect("f", 13)).mul(buyableEffect("f", 14)).gte(1.95)) completeAchievement("achievements", 3)
@@ -588,7 +588,7 @@
             },
             display() {
                 return "正在以x倍率提升天体点数：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " 天体点数"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " 天体点数"
             },
             buy(mult) {
                 if (!hasAchievement("achievements", 3) && buyableEffect("f", 11).mul(buyableEffect("f", 12)).mul(buyableEffect("f", 13)).mul(buyableEffect("f", 14)).gte(1.95)) completeAchievement("achievements", 3)
@@ -622,11 +622,11 @@
             cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()) },
             canAfford() { return this.currency().gte(this.cost()) },
             title() {
-                return "Factor V"
+                return "因子V"
             },
             display() {
                 return "正在以x倍率提升天体点数：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " 天体点数"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " 天体点数"
             },
             buy(mult) {
                 if (mult != true && !hasUpgrade("p", 15)) {
@@ -659,11 +659,11 @@
             cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()) },
             canAfford() { return this.currency().gte(this.cost()) },
             title() {
-                return "Factor VI"
+                return "因子VI"
             },
             display() {
                 return "正在以x倍率提升天体点数：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " 天体点数"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " 天体点数"
             },
             buy(mult) {
                 if (mult != true && !hasUpgrade("p", 15)) {
@@ -696,11 +696,11 @@
             cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()) },
             canAfford() { return this.currency().gte(this.cost()) },
             title() {
-                return "Factor VII"
+                return "因子VII"
             },
             display() {
                 return "正在以x倍率提升天体点数：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " 天体点数"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " 天体点数"
             },
             buy(mult) {
                 if (mult != true && !hasUpgrade("p", 15)) {
@@ -733,11 +733,11 @@
             cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()) },
             canAfford() { return this.currency().gte(this.cost()) },
             title() {
-                return "Factor VIII"
+                return "因子VIII"
             },
             display() {
                 return "正在以x倍率提升天体点数：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " 天体点数"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " 天体点数"
             },
             buy(mult) {
                 if (!hasAchievement("achievements", 6)) completeAchievement("achievements", 6)
@@ -772,11 +772,11 @@
             cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()) },
             canAfford() { return this.currency().gte(this.cost()) },
             title() {
-                return "Power Factor I"
+                return "力量因子I"
             },
             display() {
                 return "which are boosting factor power by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Prestige Points"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " Prestige Points"
             },
             buy(mult) {
                 if (!hasAchievement("achievements", 7)) completeAchievement("achievements", 7)
@@ -810,11 +810,11 @@
             cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()) },
             canAfford() { return this.currency().gte(this.cost()) },
             title() {
-                return "Power Factor II"
+                return "力量因子II"
             },
             display() {
                 return "which are boosting factor power by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Prestige Points"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " Prestige Points"
             },
             buy(mult) {
                 if (!hasAchievement("achievements", 7)) completeAchievement("achievements", 7)
@@ -848,11 +848,11 @@
             cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()) },
             canAfford() { return this.currency().gte(this.cost()) },
             title() {
-                return "Power Factor III"
+                return "力量因子III"
             },
             display() {
                 return "which are boosting factor power by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Prestige Points"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " Prestige Points"
             },
             buy(mult) {
                 if (!hasAchievement("achievements", 7)) completeAchievement("achievements", 7)
@@ -886,11 +886,11 @@
             cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()) },
             canAfford() { return this.currency().gte(this.cost()) },
             title() {
-                return "Power Factor IV"
+                return "力量因子IV"
             },
             display() {
                 return "which are boosting factor power by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Prestige Points"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " Prestige Points"
             },
             buy(mult) {
                 if (!hasAchievement("achievements", 7)) completeAchievement("achievements", 7)
@@ -924,11 +924,11 @@
             cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()) },
             canAfford() { return this.currency().gte(this.cost()) },
             title() {
-                return "Power Factor V"
+                return "力量因子V"
             },
             display() {
                 return "which are boosting factor power by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Prestige Points"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " Prestige Points"
             },
             buy(mult) {
                 if (!hasAchievement("achievements", 7)) completeAchievement("achievements", 7)
@@ -962,11 +962,11 @@
             cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()) },
             canAfford() { return this.currency().gte(this.cost()) },
             title() {
-                return "Power Factor VI"
+                return "力量因子VI"
             },
             display() {
                 return "which are boosting factor power by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Prestige Points"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " Prestige Points"
             },
             buy(mult) {
                 if (!hasAchievement("achievements", 7)) completeAchievement("achievements", 7)
@@ -1000,11 +1000,11 @@
             cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()) },
             canAfford() { return this.currency().gte(this.cost()) },
             title() {
-                return "Power Factor VII"
+                return "力量因子VII"
             },
             display() {
                 return "which are boosting factor power by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Prestige Points"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " Prestige Points"
             },
             buy(mult) {
                 if (!hasAchievement("achievements", 7)) completeAchievement("achievements", 7)
@@ -1038,11 +1038,11 @@
             cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()) },
             canAfford() { return this.currency().gte(this.cost()) },
             title() {
-                return "Power Factor VIII"
+                return "力量因子VIII"
             },
             display() {
                 return "which are boosting factor power by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Prestige Points"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " Prestige Points"
             },
             buy(mult) {
                 if (!hasAchievement("achievements", 7)) completeAchievement("achievements", 7)
@@ -1081,7 +1081,7 @@
             },
             display() {
                 return "which are boosting tree gain by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Grass"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " 草地"
             },
             buy(mult) {
                 if (mult != true && !hasMilestone("r", 16)) {
@@ -1118,7 +1118,7 @@
             },
             display() {
                 return "which are boosting tree gain by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Grass"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " 草地"
             },
             buy(mult) {
                 if (mult != true && !hasMilestone("r", 16)) {
@@ -1155,7 +1155,7 @@
             },
             display() {
                 return "which are boosting tree gain by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Grass"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " 草地"
             },
             buy(mult) {
                 if (mult != true && !hasMilestone("r", 16)) {
@@ -1192,7 +1192,7 @@
             },
             display() {
                 return "which are boosting tree gain by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Grass"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " 草地"
             },
             buy(mult) {
                 if (mult != true && !hasMilestone("r", 16)) {
@@ -1225,11 +1225,11 @@
             cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()) },
             canAfford() { return this.currency().gte(this.cost()) },
             title() {
-                return "Tree Factor V"
+                return "树木因子V"
             },
             display() {
                 return "which are boosting tree gain by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Grass"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " 草地"
             },
             buy(mult) {
                 if (mult != true && !hasMilestone("r", 16)) {
@@ -1262,11 +1262,11 @@
             cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()) },
             canAfford() { return this.currency().gte(this.cost()) },
             title() {
-                return "Tree Factor VI"
+                return "树木因子VI"
             },
             display() {
                 return "which are boosting tree gain by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Grass"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " 草地"
             },
             buy(mult) {
                 if (mult != true && !hasMilestone("r", 16)) {
@@ -1299,11 +1299,11 @@
             cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()) },
             canAfford() { return this.currency().gte(this.cost()) },
             title() {
-                return "Tree Factor VII"
+                return "树木因子VII"
             },
             display() {
                 return "which are boosting tree gain by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Grass"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " 草地"
             },
             buy(mult) {
                 if (mult != true && !hasMilestone("r", 16)) {
@@ -1336,11 +1336,11 @@
             cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()) },
             canAfford() { return this.currency().gte(this.cost()) },
             title() {
-                return "Tree Factor VIII"
+                return "树木因子VIII"
             },
             display() {
                 return "which are boosting tree gain by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Grass"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " 草地"
             },
             buy(mult) {
                 if (mult != true && !hasMilestone("r", 16)) {
@@ -1374,7 +1374,7 @@
             },
             display() {
                 return "正在以x倍率提升天体点数：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " 天体点数"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " 天体点数"
             },
             buy(mult) {
                 if (mult != true && !hasUpgrade("p", 15)) {
@@ -1408,7 +1408,7 @@
             },
             display() {
                 return "which are boosting factor power by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Prestige Points"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " Prestige Points"
             },
             buy(mult) {
                 if (mult != true && !hasUpgrade("p", 21)) {
@@ -1442,7 +1442,7 @@
             },
             display() {
                 return "which are boosting tree gain by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Grass"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " 草地"
             },
             buy(mult) {
                 if (mult != true && !hasMilestone("r", 16)) {
@@ -1476,7 +1476,7 @@
             },
             display() {
                 return "正在以x倍率提升草地值：x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Fertilizer"
+                    消耗：" + format(tmp[this.layer].buyables[this.id].cost) + " Fertilizer"
             },
             buy(mult) {
                 if (mult != true && !hasMilestone("r", 16)) {
