@@ -1,5 +1,5 @@
 ﻿addLayer("lo", {
-    name: "Lore", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "传说", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "L", // This appears on the layer's node. Default is the id with the first letter capitalized
     row: 1,
     position: 0, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
@@ -8,7 +8,7 @@
     }},
     automate() {},
     nodeStyle() {},
-    tooltip: "Portal",
+    tooltip: "传送门",
     color: "white",
     update(delta) {
         let onepersec = new Decimal(1)
@@ -48,7 +48,7 @@
     layerShown() { return player.startedGame == true }
 })
 addLayer("los", {
-    name: "Lore", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "传说", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "L", // This appears on the layer's node. Default is the id with the first letter capitalized
     row: 1,
     position: 0, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
@@ -57,7 +57,7 @@ addLayer("los", {
     }},
     automate() {},
     nodeStyle() {},
-    tooltip: "Portal",
+    tooltip: "传送门",
     color: "white",
     update(delta) {
         let onepersec = new Decimal(1)

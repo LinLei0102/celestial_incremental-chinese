@@ -1,5 +1,5 @@
 ﻿addLayer("ca", {
-    name: "Cante, Celestial of Replicanti", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "坎特，复制之天神", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol() { return "Ξ"} , // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "U2",
     row: 1,
@@ -188,7 +188,7 @@
     },
     clickables: {
         2: {
-            title() { return "Buy Max On" },
+            title() { return "批量购买 开" },
             canClick() { return player.buyMax == false },
             unlocked() { return true },
             onClick() {
@@ -197,7 +197,7 @@
             style: { width: '75px', "min-height": '50px', }
         },
         3: {
-            title() { return "Buy Max Off" },
+            title() { return "批量购买 关" },
             canClick() { return player.buyMax == true  },
             unlocked() { return true },
             onClick() {

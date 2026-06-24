@@ -1,5 +1,5 @@
 ﻿addLayer("oi", {
-    name: "Oil", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "石油", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "O", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "A1",
     row: 1,
@@ -48,7 +48,7 @@
         }
     },
     nodeStyle() {},
-    tooltip: "Oil",
+    tooltip: "石油",
     branches: ["an", "cb"],
     color: "#3c3642",
     update(delta) {
@@ -195,7 +195,7 @@
     },
     clickables: {
         3: {
-            title() { return "Buy Max On" },
+            title() { return "批量购买 开" },
             canClick() { return player.buyMax == false },
             unlocked() { return true },
             onClick() {
@@ -204,7 +204,7 @@
             style: { width: '75px', "min-height": '50px', }
         },
         4: {
-            title() { return "Buy Max Off" },
+            title() { return "批量购买 关" },
             canClick() { return player.buyMax == true  },
             unlocked() { return true },
             onClick() {

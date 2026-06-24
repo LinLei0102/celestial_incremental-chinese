@@ -1697,7 +1697,7 @@ BHC.dice4 = {
     },
 }
 BHC.zar = {
-    name: "Zar",
+    name: "扎尔",
     icon: "resources/zar.png",
     health: new Decimal(25000),
     damage: new Decimal(26),

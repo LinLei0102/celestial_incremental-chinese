@@ -9,7 +9,7 @@ addLayer("a", {
     resource: "achievement power", 
     row: "side",
     tooltip() { // Optional, tooltip displays when the layer is locked
-        return ("Achievements")
+        return ("成就")
     },
     achievementPopups: true,
     achievements: {

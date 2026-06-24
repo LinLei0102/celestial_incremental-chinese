@@ -1,5 +1,5 @@
 addLayer("achievements", {
-    name: "Achievements", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "成就", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "Ach", // This appears on the layer's node. Default is the id with the first letter capitalized
     row: "side",
     position: 0, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
@@ -591,7 +591,7 @@ addLayer("achievements", {
             unlocked: true,
         },
     },
-    tooltip: "Achievements",
+    tooltip: "成就",
     color: "white",
     microtabs: {
         stars: {
@@ -729,7 +729,7 @@ addLayer("achievements", {
     },
     tabFormat: [
         ["style-column", [
-            ["raw-html", "Achievements", {color: "white", fontSize: "30px", fontFamily: "monospace"}],
+            ["raw-html", "成就", {color: "white", fontSize: "30px", fontFamily: "monospace"}],
         ], {width: "800px", height: "50px", backgroundColor: "rgba(0,0,0,0.5)", borderTop: "3px solid white", borderLeft: "3px solid white", borderRight: "3px solid white", borderRadius: "25px 25px 0 0"}],
         ["style-row", [
             ["always-scroll-column", [

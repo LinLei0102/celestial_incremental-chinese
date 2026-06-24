@@ -1,5 +1,5 @@
 ﻿addLayer("ip", {
-    name: "Infinity", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "无限", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "∞", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "U2",
     row: 1,
@@ -49,7 +49,7 @@
             "border-color": "#7c5423",
         };
     },
-    tooltip: "Infinity",
+    tooltip: "无限",
     color: "#ffbf00",
     branches: ["ad"],
     update(delta) {
@@ -138,7 +138,7 @@
             description: "Unlocks Antimatter Dimensions.",
             cost: new Decimal(1),
             currencyLocation() { return player.in },
-            currencyDisplayName: "Infinity Points",
+            currencyDisplayName: "无限点数",
             currencyInternalName: "infinityPoints",
             style: {width: "150px", color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
@@ -148,7 +148,7 @@
             description: "Boosts antimatter based on completed dice runs.",
             cost: new Decimal(2),
             currencyLocation() { return player.in },
-            currencyDisplayName: "Infinity Points",
+            currencyDisplayName: "无限点数",
             currencyInternalName: "infinityPoints",
             effect() {
                 return player.ip.diceRuns.pow(1.1).add(1)
@@ -162,7 +162,7 @@
             description: "Boosts 7th dimensions based on completed rocket fuel runs.",
             cost: new Decimal(2),
             currencyLocation() { return player.in },
-            currencyDisplayName: "Infinity Points",
+            currencyDisplayName: "无限点数",
             currencyInternalName: "infinityPoints",
             effect() {
                 return player.ip.rocketFuelRuns.pow(0.9).add(1)
@@ -176,7 +176,7 @@
             description: "Boosts factor power based on antimatter.",
             cost: new Decimal(6),
             currencyLocation() { return player.in },
-            currencyDisplayName: "Infinity Points",
+            currencyDisplayName: "无限点数",
             currencyInternalName: "infinityPoints",
             effect() {
                 return player.ad.antimatter.plus(1).log10().pow(1.2).add(1)
@@ -190,7 +190,7 @@
             description: "Boosts factor power and prestige points based on infinities.",
             cost: new Decimal(1),
             currencyLocation() { return player.in },
-            currencyDisplayName: "Infinity Points",
+            currencyDisplayName: "无限点数",
             currencyInternalName: "infinityPoints",
             effect() {
                 return player.in.infinities.pow(1.4).add(1)
@@ -204,7 +204,7 @@
             description: "Boosts tree and leaf gain based on infinities.",
             cost: new Decimal(4),
             currencyLocation() { return player.in },
-            currencyDisplayName: "Infinity Points",
+            currencyDisplayName: "无限点数",
             currencyInternalName: "infinityPoints",
             effect() {
                 return player.in.infinities.pow(1.2).add(1)
@@ -218,7 +218,7 @@
             description: "Boosts mod and lines of code gain based on infinities.",
             cost: new Decimal(9),
             currencyLocation() { return player.in },
-            currencyDisplayName: "Infinity Points",
+            currencyDisplayName: "无限点数",
             currencyInternalName: "infinityPoints",
             effect() {
                 return player.in.infinities.pow(1.15).add(1)
@@ -232,7 +232,7 @@
             description: "Boosts golden grass gain based on infinities.",
             cost: new Decimal(16),
             currencyLocation() { return player.in },
-            currencyDisplayName: "Infinity Points",
+            currencyDisplayName: "无限点数",
             currencyInternalName: "infinityPoints",
             effect() {
                 return player.in.infinities.pow(0.3).add(1)
@@ -246,7 +246,7 @@
             description: "Unlocks more check back content and more IP upgrades.<br>(CB Level 100)",
             cost: new Decimal(10),
             currencyLocation() { return player.in },
-            currencyDisplayName: "Infinity Points",
+            currencyDisplayName: "无限点数",
             currencyInternalName: "infinityPoints",
             style: {width: "150px", color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
@@ -256,7 +256,7 @@
             description: "Boosts grasshoppers based on infinity points.",
             cost: new Decimal(30),
             currencyLocation() { return player.in },
-            currencyDisplayName: "Infinity Points",
+            currencyDisplayName: "无限点数",
             currencyInternalName: "infinityPoints",
             effect() {
                 if (player.in.infinityPoints.lt(1e200)) return player.in.infinityPoints.mul(0.5).pow(0.7).add(1)
@@ -278,7 +278,7 @@
             description: "Boosts mods based on infinity points.",
             cost: new Decimal(100),
             currencyLocation() { return player.in },
-            currencyDisplayName: "Infinity Points",
+            currencyDisplayName: "无限点数",
             currencyInternalName: "infinityPoints",
             effect() {
                 if (player.in.infinityPoints.lt(1e200)) return player.in.infinityPoints.mul(0.65).pow(0.65).add(1)
@@ -300,7 +300,7 @@
             description: "Boosts dice points and rocket fuel based on infinity points.",
             cost: new Decimal(300),
             currencyLocation() { return player.in },
-            currencyDisplayName: "Infinity Points",
+            currencyDisplayName: "无限点数",
             currencyInternalName: "infinityPoints",
             effect() {
                 if (player.in.infinityPoints.lt(1e200)) return player.in.infinityPoints.mul(0.3).pow(0.5).add(1)
@@ -322,7 +322,7 @@
             description: "Boosts negative infinity points based on infinity points.",
             cost: new Decimal(20000),
             currencyLocation() { return player.in },
-            currencyDisplayName: "Infinity Points",
+            currencyDisplayName: "无限点数",
             currencyInternalName: "infinityPoints",
             effect() {
                 return player.in.infinityPoints.plus(1).log10().mul(0.65).add(1)
@@ -336,7 +336,7 @@
             description: "Boosts infinity points based on negative infinity points.",
             cost: new Decimal(40000),
             currencyLocation() { return player.in },
-            currencyDisplayName: "Infinity Points",
+            currencyDisplayName: "无限点数",
             currencyInternalName: "infinityPoints",
             effect() {
                 let eff = new Decimal(1)
@@ -360,7 +360,7 @@
             description: "Boosts AD (ignoring softcap) based on negative infinity points.",
             cost: new Decimal(80000),
             currencyLocation() { return player.in },
-            currencyDisplayName: "Infinity Points",
+            currencyDisplayName: "无限点数",
             currencyInternalName: "infinityPoints",
             effect() {
                 return player.ta.negativeInfinityPoints.plus(1).log10().pow(1.35).mul(2.5).add(1)
@@ -374,7 +374,7 @@
             description: "Boosts dimension power based on infinity points.",
             cost: new Decimal(160000),
             currencyLocation() { return player.in },
-            currencyDisplayName: "Infinity Points",
+            currencyDisplayName: "无限点数",
             currencyInternalName: "infinityPoints",
             effect() {
                 return player.in.infinityPoints.plus(1).log10().pow(1.25).mul(0.5).add(1)
@@ -947,7 +947,7 @@
                     ], {maxWidth: "625px", padding: "5px 0", backgroundColor: "#332600", border: "3px solid #7f5f00", borderRadius: "20px"}],
                 ]
             },
-            "Milestones": {
+            "里程碑": {
                 buttonStyle() { return { color: "white", borderRadius: "5px" } },
                 unlocked() { return true },
                 content: [
@@ -972,7 +972,7 @@
                     ["milestone", 28],
                 ]
             },
-            "Challenges": {
+            "挑战": {
                 buttonStyle() { return { color: "white", borderRadius: "5px" } },
                 unlocked() { return hasMilestone("ip", 16) },
                 content: [

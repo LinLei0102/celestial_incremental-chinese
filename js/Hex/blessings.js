@@ -2,7 +2,7 @@ addLayer("hbl", {
     name: "Hex of Blessings",
     symbol: "Bl", // Decides what text appears on the node.
     universe: "UA",
-    tooltip: "Blessings", // Decides the nodes tooltip
+    tooltip: "祝福", // Decides the nodes tooltip
     nodeStyle: {background: "linear-gradient(140deg, #ffbf00 0%, #cc9800 100%)", backgroundOrigin: "borderBox", borderColor: "#7f5f00"},
     color: "#ffbf00", // Decides the nodes color.
     branches: ["hre"], // Decides the nodes branches.
@@ -391,7 +391,7 @@ addLayer("hbl", {
             description: "Increase jinx cap based on NIP.",
             cost: new Decimal(60),
             currencyLocation() { return player.hbl },
-            currencyDisplayName: "Blessings",
+            currencyDisplayName: "祝福",
             currencyInternalName: "blessings",
             effect() {
                 let eff = player.ta.negativeInfinityPoints.add(1).log(6).pow(0.6).ceil()
@@ -412,7 +412,7 @@ addLayer("hbl", {
             description: "IP boosts hex point gain.",
             cost: new Decimal(180),
             currencyLocation() { return player.hbl },
-            currencyDisplayName: "Blessings",
+            currencyDisplayName: "祝福",
             currencyInternalName: "blessings",
             effect() {
                 let eff = player.in.infinityPoints.add(1).log(6).pow(0.6).add(1)
@@ -428,7 +428,7 @@ addLayer("hbl", {
             description: "Infinities reduce refinement req.",
             cost: new Decimal(360),
             currencyLocation() { return player.hbl },
-            currencyDisplayName: "Blessings",
+            currencyDisplayName: "祝福",
             currencyInternalName: "blessings",
             effect() {
                 let eff = player.in.infinities.add(1).log(3).pow(0.6).add(1)
@@ -444,7 +444,7 @@ addLayer("hbl", {
             description: "Infinitums boost curse gain.",
             cost: new Decimal(720),
             currencyLocation() { return player.hbl },
-            currencyDisplayName: "Blessings",
+            currencyDisplayName: "祝福",
             currencyInternalName: "blessings",
             effect() {
                 let eff = player.tad.infinitum.add(1).log(6).pow(4).add(1).pow(player.hpu.purifiers[5].effect)
@@ -462,7 +462,7 @@ addLayer("hbl", {
             description: "Highest Rocket fuel boosts hex point gain.",
             cost: new Decimal(1440),
             currencyLocation() { return player.hbl },
-            currencyDisplayName: "Blessings",
+            currencyDisplayName: "祝福",
             currencyInternalName: "blessings",
             effect() {
                 let eff = player.ta.highestRocketFuel.add(1).log(6).pow(0.6).add(1)
@@ -481,7 +481,7 @@ addLayer("hbl", {
             },
             cost: new Decimal(2880),
             currencyLocation() { return player.hbl },
-            currencyDisplayName: "Blessings",
+            currencyDisplayName: "祝福",
             currencyInternalName: "blessings",
             effect() {
                 let eff = player.ta.highestDicePoints.add(1).log(60).pow(0.1).mul(0.6).add(1)

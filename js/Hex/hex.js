@@ -1,5 +1,5 @@
 ﻿addLayer("h", {
-    name: "Hex", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "魔咒", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "H", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "UA",
     row: 1,
@@ -18,7 +18,7 @@
     }},
     nodeStyle() { return {color: "white", backgroundColor: "black", borderColor: "#0061ff"}},
     glowColor: "rgba(0, 0, 0, 0)",
-    tooltip: "Hex",
+    tooltip: "魔咒",
     color: "#d4d4d4",
     update(delta) {
         let onepersec = new Decimal(1)

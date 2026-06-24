@@ -1,6 +1,6 @@
 // IDEA FOR NEXT TEMPORAL CHASM STAGE: TIME IS PAUSED, BUT AUTOMATICALLY TICKS FORWARD ONCE A SECOND (AKA, NON-SMOOTH TIME)
 addLayer("stagnantSynestia", {
-    name: "Stagnant Synestia", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "停滞融合体", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "SS", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "BH",
     row: 1,
@@ -45,7 +45,7 @@ addLayer("stagnantSynestia", {
         if (player.subtabs["bh"]["stages"] == "stagnantSynestia") str.outline = "3px solid #999"
         return str
     },
-    tooltip: "Stagnant Synestia",
+    tooltip: "停滞融合体",
     color: "#0091DC",
     update(delta) {
         player.stagnantSynestia.comboEffect = player.stagnantSynestia.highestCombo.min(100).div(50).add(1).pow(buyableEffect("stagnantSynestia", 2))
@@ -309,7 +309,7 @@ addLayer("stagnantSynestia", {
                         ["style-column", [
                             ["style-column", [
                                 ["style-column", [
-                                    ["raw-html", "Stagnant Synestia", {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}],
+                                    ["raw-html", "停滞融合体", {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}],
                                 ], {width: "200px", height: "35px", borderBottom: "2px solid var(--regBorder)", marginBottom: "5px"}],
                                 ["clickable", "enter"],
                             ], {width: "250px", height: "127px", background: "var(--miscButtonDisable)", borderBottom: "3px solid var(--regBorder)"}],
@@ -379,7 +379,7 @@ addLayer("stagnantSynestia", {
                         ["style-column", [
                             ["style-column", [
                                 ["style-column", [
-                                    ["raw-html", "Stagnant Synestia", {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}],
+                                    ["raw-html", "停滞融合体", {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}],
                                 ], {width: "200px", height: "35px", borderBottom: "2px solid var(--regBorder)", marginBottom: "5px"}],
                                 ["clickable", "enter"],
                             ], {width: "250px", height: "127px", background: "var(--miscButton)", borderBottom: "3px solid var(--regBorder)"}],
@@ -438,7 +438,7 @@ addLayer("stagnantSynestia", {
 })
 
 BHS.stagnantSynestia = {
-    nameCap: "Stagnant Synestia",
+    nameCap: "停滞融合体",
     nameLow: "stagnant synestia",
     music: "music/stagnant.mp3",
     comboLimit: 100,

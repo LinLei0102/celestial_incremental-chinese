@@ -1,5 +1,5 @@
 ﻿addLayer("d", {
-    name: "Dice", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "骰子", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "D", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "U1",
     row: 1,
@@ -125,7 +125,7 @@
         };
     },
     color: "white",
-    tooltip: "Dice",
+    tooltip: "骰子",
     branches() { return !player.zarDungeon.zarDefeated ? "cb" : ["cb", "m"] },
     update(delta) {
         let onepersec = new Decimal(1)
@@ -361,7 +361,7 @@
             style: { width: '150px', "min-height": '75px', fontSize: "9px", borderRadius: "10px", marginLeft: "25px"},
         },
         4: {
-            title() { return "Buy Max On" },
+            title() { return "批量购买 开" },
             canClick() { return player.buyMax == false },
             unlocked() { return true },
             onClick() {
@@ -370,7 +370,7 @@
             style: { width: '75px', "min-height": '50px', }
         },
         5: {
-            title() { return "Buy Max Off" },
+            title() { return "批量购买 关" },
             canClick() { return player.buyMax == true  },
             unlocked() { return true },
             onClick() {
@@ -1248,7 +1248,7 @@
     infoboxes: {},
     microtabs: {
         stuff: {
-            "Dice": {
+            "骰子": {
                 buttonStyle() { return { color: "white", borderRadius: "5px" } },
                 unlocked() { return true },
                 content: [

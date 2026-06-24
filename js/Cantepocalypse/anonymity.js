@@ -1,5 +1,5 @@
 ﻿addLayer("an", {
-    name: "Anonymity", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "匿名", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "AN", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "A1",
     row: 1,
@@ -29,7 +29,7 @@
         }
     },
     nodeStyle() {},
-    tooltip: "Anonymity",
+    tooltip: "匿名",
     branches: ["ar"],
     color: "#0c04c1",
     update(delta) {
@@ -116,7 +116,7 @@
             description: "Multiplies replicanti mult by x1.5.",
             cost: new Decimal(2),
             currencyLocation() { return player.an },
-            currencyDisplayName: "Anonymity",
+            currencyDisplayName: "匿名",
             currencyInternalName: "anonymity",
             style() {
                 let look = {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"}
@@ -130,7 +130,7 @@
             description: "Multiplies replicanti mult based on anonymity.",
             cost: new Decimal(5),
             currencyLocation() { return player.an },
-            currencyDisplayName: "Anonymity",
+            currencyDisplayName: "匿名",
             currencyInternalName: "anonymity",
             effect() {
                 return player.an.anonymity.plus(1).log10().pow(1.25).add(1)
@@ -148,7 +148,7 @@
             description: "Gain 5% of rank points per second.",
             cost: new Decimal(16),
             currencyLocation() { return player.an },
-            currencyDisplayName: "Anonymity",
+            currencyDisplayName: "匿名",
             currencyInternalName: "anonymity",
             style() {
                 let look = {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"}
@@ -162,7 +162,7 @@
             description: "Extend the first and second softcap by x1,000.",
             cost: new Decimal(48),
             currencyLocation() { return player.an },
-            currencyDisplayName: "Anonymity",
+            currencyDisplayName: "匿名",
             currencyInternalName: "anonymity",
             style() {
                 let look = {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"}
@@ -176,7 +176,7 @@
             description: "Gain 25% of rank points per second, and gain 5% of tier points per second.",
             cost: new Decimal(212),
             currencyLocation() { return player.an },
-            currencyDisplayName: "Anonymity",
+            currencyDisplayName: "匿名",
             currencyInternalName: "anonymity",
             style() {
                 let look = {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"}
@@ -190,7 +190,7 @@
             description: "Boost perk points based on anonymity.",
             cost: new Decimal(666),
             currencyLocation() { return player.an },
-            currencyDisplayName: "Anonymity",
+            currencyDisplayName: "匿名",
             currencyInternalName: "anonymity",
             effect() {
                 return player.an.anonymity.pow(0.15).div(6).add(1)
@@ -208,7 +208,7 @@
             description: "Gain 100% of rank points per second, and gain 25% of tier points per second, and gain 5% of tetr points per second.",
             cost: new Decimal(2345),
             currencyLocation() { return player.an },
-            currencyDisplayName: "Anonymity",
+            currencyDisplayName: "匿名",
             currencyInternalName: "anonymity",
             style() {
                 let look = {width: "150px", color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"}
@@ -222,7 +222,7 @@
             description: "Boost anonymity based on perk points.",
             cost: new Decimal(15000),
             currencyLocation() { return player.an },
-            currencyDisplayName: "Anonymity",
+            currencyDisplayName: "匿名",
             currencyInternalName: "anonymity",
             effect() {
                 return player.pr.perkPoints.pow(0.2).div(3).add(1)
@@ -240,7 +240,7 @@
             description: "Extend first and second softcap based on anonymity.",
             cost: new Decimal(250000),
             currencyLocation() { return player.an },
-            currencyDisplayName: "Anonymity",
+            currencyDisplayName: "匿名",
             currencyInternalName: "anonymity",
             effect() {
                 return player.an.anonymity.pow(0.75).mul(6).add(1)
@@ -258,7 +258,7 @@
             description: "Reduce repli-leaf time by 1.5s.",
             cost: new Decimal(4e6),
             currencyLocation() { return player.an },
-            currencyDisplayName: "Anonymity",
+            currencyDisplayName: "匿名",
             currencyInternalName: "anonymity",
             style() {
                 let look = {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"}
@@ -272,7 +272,7 @@
             description: "Weaken second softcap based on second softcap start.",
             cost: new Decimal(6e7),
             currencyLocation() { return player.an },
-            currencyDisplayName: "Anonymity",
+            currencyDisplayName: "匿名",
             currencyInternalName: "anonymity",
             effect() {
                 return player.cp.replicantiSoftcap2Start.plus(1).log10().pow(0.65).mul(5).add(1)
@@ -290,7 +290,7 @@
             description: "Multiplies replicanti mult more based on anonymity.",
             cost: new Decimal(2e10),
             currencyLocation() { return player.an },
-            currencyDisplayName: "Anonymity",
+            currencyDisplayName: "匿名",
             currencyInternalName: "anonymity",
             effect() {
                 return player.an.anonymity.plus(1).log10().pow(0.8).mul(1.7).add(1)

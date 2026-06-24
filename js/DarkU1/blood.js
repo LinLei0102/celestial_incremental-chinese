@@ -1,5 +1,5 @@
 ﻿addLayer("bl", {
-    name: "Blood", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "鲜血", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "BL", // This appears on the layer's node. Default is the id with the first letter capitalized
     row: 1,
     position: 0, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
@@ -33,7 +33,7 @@
             "color": "#eaf6f7",
         };
     },
-    tooltip: "Blood",
+    tooltip: "鲜血",
     branches: [["le", "#f57171ff"]],
     color: "#4f1818ff",
     update(delta) {

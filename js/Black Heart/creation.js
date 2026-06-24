@@ -1,5 +1,5 @@
 addLayer("creation", {
-    name: "Creation", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "创世", // This is optional, only used in a few places, If absent it just uses the layer id.
     universe: "BH",
     row: 1,
     position: 0, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order

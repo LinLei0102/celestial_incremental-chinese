@@ -45,7 +45,7 @@
     },
     nodeStyle: {background: "linear-gradient(45deg, #064461 0%, #4a7d94 100%)", backgroundOrigin: "border-box", borderColor: "#013851"},
     tooltip() {
-        if (player.ca.cantepocalypsePrep) return "Cantepocalypse"
+        if (player.ca.cantepocalypsePrep) return "坎特天启"
         return "Alternate Origin"
     },
     color: "#398",

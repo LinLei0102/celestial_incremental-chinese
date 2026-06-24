@@ -1,5 +1,5 @@
 addLayer("ev2", {
-    name: "Daily Orbs", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "每日宝珠", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "Do", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "CB",
     row: 1,
@@ -61,7 +61,7 @@ addLayer("ev2", {
 		backgroundOrigin: "border-box",
 		borderColor: "black",
     },
-    tooltip: "Daily Orbs",
+    tooltip: "每日宝珠",
     color: "#96DED1",
     update(delta) {
         let onepersec = player.cb.cbTickspeed

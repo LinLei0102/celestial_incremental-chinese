@@ -1,5 +1,5 @@
 ﻿addLayer("cs", {
-    name: "Core Scraps", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "核心残片", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "CS", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "U3",
     row: 1,
@@ -101,7 +101,7 @@
             "color": "#ababab",
         };
     },
-    tooltip: "Core Scraps",
+    tooltip: "核心残片",
     branches: ["ra", "sd"],
     color: "#4f4b45",
     update(delta) {

@@ -1,5 +1,5 @@
 ﻿addLayer("en", {
-    name: "Enhance", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "强化", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "E", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "A1",
     row: 1,
@@ -31,7 +31,7 @@
     },
     nodeStyle() {
     },
-    tooltip: "Enhance",
+    tooltip: "强化",
     branches: ["gs", "rg", "fu"],
     color: "#b82fbd",
     update(delta) {

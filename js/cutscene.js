@@ -909,7 +909,7 @@
             trigger() {return player.po.breakInfinity},
             dialogue: [
                 { text: "You see a new button appear on the altar.", },
-                { text: '"Break Infinity"', },
+                { text: '"突破无限"', },
                 { text: "The cloaked being appears.", },
                 { text: "Congratulations. You defeated your very first celestial.", portrait: "resources/secret.png"  },
                 { text: "Now you can gain more than 1.79e308 celestial points.", portrait: "resources/secret.png"  },

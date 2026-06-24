@@ -4985,7 +4985,7 @@ class SpaceArena {
                 this.ctx.font = "bold 28px monospace";
                 this.ctx.fillStyle = "#fff";
                 this.ctx.textAlign = "center";
-                this.ctx.fillText("Confirm", confirmX + confirmWidth / 2, confirmY + confirmHeight / 2 + 10);
+                this.ctx.fillText("确认", confirmX + confirmWidth / 2, confirmY + confirmHeight / 2 + 10);
                 this.ctx.restore();
             }
 

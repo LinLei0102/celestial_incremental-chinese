@@ -23,11 +23,11 @@ BHS.template = {
         if (typeof combo == "object") combo = combo.toNumber()
         switch (combo) {
             case 24:
-                return "template"
+                return "模板"
             default:
                 let random = Math.random()
-                let cel = ["template", "template", "template"]
-                if (combo >= 25) cel.push("template")
+                let cel = ["模板", "模板", "模板"]
+                if (combo >= 25) cel.push("模板")
                 return cel[Math.floor(Math.random()*cel.length)]
         }
     },
@@ -141,7 +141,7 @@ BH_CURRENCY = {
 // Celestialite who has there explosion value equal to their max health, and an action that constantly reduces their max health called defuse (FOR LAB)
 
 addLayer("bh", {
-    name: "Black Heart", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "黑心", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "BH", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "BH",
     innerNodes: [["darkTemple", "depth1", "depth2"], ["matosLair", "depth3"], ["laboratory", "depth4", "alephsChamber"], ["stagnantSynestia"]],
@@ -658,7 +658,7 @@ addLayer("bh", {
             textShadow: "1px 1px 1px black, -1px 1px 1px black, -1px -1px 1px black, 1px -1px 1px black, 0px 0px 5px black",
         };
     },
-    tooltip: "Black Heart",
+    tooltip: "黑心",
     color: "#8a0e79",
     branches: ["sma"],
     update(delta) {
@@ -3150,7 +3150,7 @@ addLayer("bh", {
             title: "BH",
             canClick: true,
             unlocked: true,
-            tooltip: "Black Heart",
+            tooltip: "黑心",
             onClick() {
                 player.bh.currentTree = 0
             },
@@ -4685,9 +4685,9 @@ addLayer("bh", {
                         ], {width: "300px", height: "720px", background: "var(--scroll4)", borderRight: "3px solid var(--regBorder)", borderRadius: "0 0 0 27px"}],
                         ["style-column", [
                             ["style-row", [
-                                ["category-button", ["Characters", "party", "characters"], {width: "164px", height: "40px", background: "var(--miscButton)"}],
+                                ["category-button", ["角色", "party", "characters"], {width: "164px", height: "40px", background: "var(--miscButton)"}],
                                 ["style-row", [], {width: "3px", height: "40px", backgroundColor: "var(--regBorder)"}],
-                                ["category-button", ["Skills", "party", "skills"], {width: "163px", height: "40px", background: "var(--miscButton)"}],
+                                ["category-button", ["技能", "party", "skills"], {width: "163px", height: "40px", background: "var(--miscButton)"}],
                                 ["style-row", [
                                     ["raw-html", "???", {color: "var(--textColor)", fontSize: "16px", fontFamily: "monospace"}],
                                 ], {width: "164px", height: "40px", backgroundColor: "var(--miscButtonDisable)", borderLeft: "3px solid var(--regBorder)", userSelect: "none"}],

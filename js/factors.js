@@ -1,5 +1,5 @@
 ﻿addLayer("f", {
-    name: "Factors", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "因子", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "F", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "U1",
     row: 1,
@@ -60,7 +60,7 @@
         if (hasMilestone("r", 16) && hasUpgrade("cs", 201)) buyBuyable("f", 104)
     },
     nodeStyle() {},
-    tooltip: "Factors",
+    tooltip: "因子",
     color() { return "#83cecf" },
     branches() { return !player.zarDungeon.zarDefeated ? "r" : ["r", "t", "g"] },
     update(delta) {
@@ -1518,7 +1518,7 @@
                     ["raw-html", function () { return "Total Mult: x" + format(buyableEffect("f", 11).mul(buyableEffect("f", 12).mul(buyableEffect("f", 13)).mul(buyableEffect("f", 14)).mul(buyableEffect("f", 15)).mul(buyableEffect("f", 16)).mul(buyableEffect("f", 17)).mul(buyableEffect("f", 18)))) }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
                 ]
             },
-            "Power": {
+            "力量": {
                 buttonStyle() { return { color: "white", borderRadius: "5px" } },
                 unlocked() { return (hasUpgrade("i", 15) || hasMilestone("ip", 26)) && !hasUpgrade("cs", 201) },
                 content: [
@@ -1567,7 +1567,7 @@
                     ["raw-html", function () { return "Total Mult: x" + format(buyableEffect("f", 28).mul(buyableEffect("f", 29).mul(buyableEffect("f", 31)).mul(buyableEffect("f", 32)).mul(buyableEffect("f", 33)).mul(buyableEffect("f", 34)).mul(buyableEffect("f", 35)).mul(buyableEffect("f", 36)))) }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
                 ]
             },
-            "Grass": {
+            "草地": {
                 buttonStyle() { return { borderColor: "#119B35", color: "white", borderRadius: "5px" } },
                 unlocked() { return (player.gh.buyables[15].gt(0) || hasMilestone("ip", 26)) && !hasUpgrade("cs", 201) },
                 content: [

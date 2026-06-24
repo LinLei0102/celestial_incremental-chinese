@@ -130,7 +130,7 @@ function whiteDiamondAttack(duration, width, height, diamondCount) {
 
     // Switch to Bullet Hell tab
     if (player && player.subtabs && player.subtabs["ma"]) {
-        player.subtabs["ma"]["stuff"] = "Bullet Hell";
+        player.subtabs["ma"]["stuff"] = "弹幕地狱";
     }
 
     // Create overlay
@@ -403,7 +403,7 @@ function whiteDiamondAttack(duration, width, height, diamondCount) {
             player &&
             player.subtabs &&
             player.subtabs["ma"] &&
-            player.subtabs["ma"]["stuff"] == "Bullet Hell" &&
+            player.subtabs["ma"]["stuff"] == "弹幕地狱" &&
             player.ma &&
             player.ma.currentDepth != 0
         ) {
@@ -413,7 +413,7 @@ function whiteDiamondAttack(duration, width, height, diamondCount) {
             player.ma.inBlackHeart = false
             toggleOpt('menuShown')
 
-            player.subtabs["ma"]["stuff"] = "Black Heart"
+            player.subtabs["ma"]["stuff"] = "黑心"
 
         }
     }, duration * 1000);
@@ -430,7 +430,7 @@ function bulletRainAttack(duration, width, height, bulletCountPerSecond) {
 
     // Switch to Bullet Hell tab
     if (player && player.subtabs && player.subtabs["ma"]) {
-        player.subtabs["ma"]["stuff"] = "Bullet Hell";
+        player.subtabs["ma"]["stuff"] = "弹幕地狱";
     }
 
     // Create overlay
@@ -601,7 +601,7 @@ function bulletRainAttack(duration, width, height, bulletCountPerSecond) {
             player &&
             player.subtabs &&
             player.subtabs["ma"] &&
-            player.subtabs["ma"]["stuff"] == "Bullet Hell" &&
+            player.subtabs["ma"]["stuff"] == "弹幕地狱" &&
             player.ma &&
             player.ma.currentDepth != 0
         ) {
@@ -609,7 +609,7 @@ function bulletRainAttack(duration, width, height, bulletCountPerSecond) {
         } else {
             player.ma.inBlackHeart = false;
             toggleOpt('menuShown');
-            player.subtabs["ma"]["stuff"] = "Black Heart";
+            player.subtabs["ma"]["stuff"] = "黑心";
         }
     }, duration * 1000);
 }
@@ -627,7 +627,7 @@ function movingCircleRadialBurstAttack(duration, width, height, burstInterval = 
 
     // Switch to Bullet Hell tab
     if (player && player.subtabs && player.subtabs["ma"]) {
-        player.subtabs["ma"]["stuff"] = "Bullet Hell";
+        player.subtabs["ma"]["stuff"] = "弹幕地狱";
     }
 
     // Create overlay
@@ -820,7 +820,7 @@ function movingCircleRadialBurstAttack(duration, width, height, burstInterval = 
                 player &&
                 player.subtabs &&
                 player.subtabs["ma"] &&
-                player.subtabs["ma"]["stuff"] == "Bullet Hell" &&
+                player.subtabs["ma"]["stuff"] == "弹幕地狱" &&
                 player.ma &&
                 player.ma.currentDepth != 0
             ) {
@@ -828,7 +828,7 @@ function movingCircleRadialBurstAttack(duration, width, height, burstInterval = 
             } else {
                 player.ma.inBlackHeart = false;
                 toggleOpt('menuShown');
-                player.subtabs["ma"]["stuff"] = "Black Heart";
+                player.subtabs["ma"]["stuff"] = "黑心";
             }
         }
     }
@@ -858,7 +858,7 @@ function bouncingDiamondsAttack(duration, width, height, diamondCount, diamondSp
 
     // Switch to Bullet Hell tab
     if (player && player.subtabs && player.subtabs["ma"]) {
-        player.subtabs["ma"]["stuff"] = "Bullet Hell";
+        player.subtabs["ma"]["stuff"] = "弹幕地狱";
     }
 
     // Create overlay
@@ -1022,7 +1022,7 @@ function bouncingDiamondsAttack(duration, width, height, diamondCount, diamondSp
                 player &&
                 player.subtabs &&
                 player.subtabs["ma"] &&
-                player.subtabs["ma"]["stuff"] == "Bullet Hell" &&
+                player.subtabs["ma"]["stuff"] == "弹幕地狱" &&
                 player.ma &&
                 player.ma.currentDepth != 0
             ) {
@@ -1030,7 +1030,7 @@ function bouncingDiamondsAttack(duration, width, height, diamondCount, diamondSp
             } else {
                 player.ma.inBlackHeart = false;
                 toggleOpt('menuShown');
-                player.subtabs["ma"]["stuff"] = "Black Heart";
+                player.subtabs["ma"]["stuff"] = "黑心";
             }
         }
     }
@@ -1060,7 +1060,7 @@ function knifeRainAttack(duration = 15, width = 700, height = 500, knifeRate = 1
 
     // Switch to Bullet Hell tab
     if (player && player.subtabs && player.subtabs["ma"]) {
-        player.subtabs["ma"]["stuff"] = "Bullet Hell";
+        player.subtabs["ma"]["stuff"] = "弹幕地狱";
     }
 
     // Create overlay
@@ -1177,7 +1177,7 @@ function knifeRainAttack(duration = 15, width = 700, height = 500, knifeRate = 1
                 player &&
                 player.subtabs &&
                 player.subtabs["ma"] &&
-                player.subtabs["ma"]["stuff"] == "Bullet Hell" &&
+                player.subtabs["ma"]["stuff"] == "弹幕地狱" &&
                 player.ma &&
                 player.ma.currentDepth != 0
             ) {
@@ -1185,7 +1185,7 @@ function knifeRainAttack(duration = 15, width = 700, height = 500, knifeRate = 1
             } else {
                 player.ma.inBlackHeart = false;
                 toggleOpt('menuShown');
-                player.subtabs["ma"]["stuff"] = "Black Heart";
+                player.subtabs["ma"]["stuff"] = "黑心";
             }
             return;
         }
@@ -1349,7 +1349,7 @@ function mazeAttack(duration, width, height, cellSize = 40) {
 
     // Switch to Bullet Hell tab
     if (player && player.subtabs && player.subtabs["ma"]) {
-        player.subtabs["ma"]["stuff"] = "Bullet Hell";
+        player.subtabs["ma"]["stuff"] = "弹幕地狱";
     }
 
     // Create overlay
@@ -1519,7 +1519,7 @@ function mazeAttack(duration, width, height, cellSize = 40) {
                 player &&
                 player.subtabs &&
                 player.subtabs["ma"] &&
-                player.subtabs["ma"]["stuff"] == "Bullet Hell" &&
+                player.subtabs["ma"]["stuff"] == "弹幕地狱" &&
                 player.ma &&
                 player.ma.currentDepth != 0
             ) {
@@ -1527,7 +1527,7 @@ function mazeAttack(duration, width, height, cellSize = 40) {
             } else {
                 player.ma.inBlackHeart = false;
                 toggleOpt('menuShown');
-                player.subtabs["ma"]["stuff"] = "Black Heart";
+                player.subtabs["ma"]["stuff"] = "黑心";
             }
             return;
         }
@@ -1621,7 +1621,7 @@ setTimeout(() => {
         player &&
         player.subtabs &&
         player.subtabs["ma"] &&
-        player.subtabs["ma"]["stuff"] == "Bullet Hell" &&
+        player.subtabs["ma"]["stuff"] == "弹幕地狱" &&
         player.ma &&
         player.ma.currentDepth != 0
     ) {
@@ -1629,7 +1629,7 @@ setTimeout(() => {
     } else {
         player.ma.inBlackHeart = false;
         toggleOpt('menuShown');
-        player.subtabs["ma"]["stuff"] = "Black Heart";
+        player.subtabs["ma"]["stuff"] = "黑心";
     }
     logPrint("<span style='color:rgb(139, 14, 52);'>You failed to reach the end of the maze! Everyone takes 25 damage.")
     for (let i = 0; i < player.ma.health.length; i++)
@@ -1651,7 +1651,7 @@ function mazeWithBulletsAttack(duration, width, height, cellSize = 40, bulletCou
 
     // Switch to Bullet Hell tab
     if (player && player.subtabs && player.subtabs["ma"]) {
-        player.subtabs["ma"]["stuff"] = "Bullet Hell";
+        player.subtabs["ma"]["stuff"] = "弹幕地狱";
     }
 
     // Create overlay
@@ -1851,7 +1851,7 @@ function mazeWithBulletsAttack(duration, width, height, cellSize = 40, bulletCou
                 player &&
                 player.subtabs &&
                 player.subtabs["ma"] &&
-                player.subtabs["ma"]["stuff"] == "Bullet Hell" &&
+                player.subtabs["ma"]["stuff"] == "弹幕地狱" &&
                 player.ma &&
                 player.ma.currentDepth != 0
             ) {
@@ -1859,7 +1859,7 @@ function mazeWithBulletsAttack(duration, width, height, cellSize = 40, bulletCou
             } else {
                 player.ma.inBlackHeart = false;
                 toggleOpt('menuShown');
-                player.subtabs["ma"]["stuff"] = "Black Heart";
+                player.subtabs["ma"]["stuff"] = "黑心";
             }
             return;
         }
@@ -1959,7 +1959,7 @@ function mazeWithBulletsAttack(duration, width, height, cellSize = 40, bulletCou
             player &&
             player.subtabs &&
             player.subtabs["ma"] &&
-            player.subtabs["ma"]["stuff"] == "Bullet Hell" &&
+            player.subtabs["ma"]["stuff"] == "弹幕地狱" &&
             player.ma &&
             player.ma.currentDepth != 0
         ) {
@@ -1967,7 +1967,7 @@ function mazeWithBulletsAttack(duration, width, height, cellSize = 40, bulletCou
         } else {
             player.ma.inBlackHeart = false;
             toggleOpt('menuShown');
-            player.subtabs["ma"]["stuff"] = "Black Heart";
+            player.subtabs["ma"]["stuff"] = "黑心";
         }
     }, duration * 1000);
 }
@@ -1991,7 +1991,7 @@ function arithmeticQuizAttack(duration = 15, width = 500, height = 300) {
 
     // Switch to Bullet Hell tab
     if (player && player.subtabs && player.subtabs["ma"]) {
-        player.subtabs["ma"]["stuff"] = "Bullet Hell";
+        player.subtabs["ma"]["stuff"] = "弹幕地狱";
     }
 
     // Create overlay
@@ -2242,7 +2242,7 @@ function arithmeticQuizAttack(duration = 15, width = 500, height = 300) {
             player &&
             player.subtabs &&
             player.subtabs["ma"] &&
-            player.subtabs["ma"]["stuff"] == "Bullet Hell" &&
+            player.subtabs["ma"]["stuff"] == "弹幕地狱" &&
             player.ma &&
             player.ma.currentDepth != 0
         ) {
@@ -2250,7 +2250,7 @@ function arithmeticQuizAttack(duration = 15, width = 500, height = 300) {
         } else {
             player.ma.inBlackHeart = false;
             toggleOpt('menuShown');
-            player.subtabs["ma"]["stuff"] = "Black Heart";
+            player.subtabs["ma"]["stuff"] = "黑心";
         }
     }
 
@@ -2269,7 +2269,7 @@ function arithmeticQuizAttack(duration = 15, width = 500, height = 300) {
             player &&
             player.subtabs &&
             player.subtabs["ma"] &&
-            player.subtabs["ma"]["stuff"] == "Bullet Hell" &&
+            player.subtabs["ma"]["stuff"] == "弹幕地狱" &&
             player.ma &&
             player.ma.currentDepth != 0
         ) {
@@ -2277,7 +2277,7 @@ function arithmeticQuizAttack(duration = 15, width = 500, height = 300) {
         } else {
             player.ma.inBlackHeart = false;
             toggleOpt('menuShown');
-            player.subtabs["ma"]["stuff"] = "Black Heart";
+            player.subtabs["ma"]["stuff"] = "黑心";
         }
     }, duration * 1000);
 }
@@ -2301,7 +2301,7 @@ function mathQuizAttack(difficulty, duration, width, height) {
 
     // Switch to Bullet Hell tab
     if (player && player.subtabs && player.subtabs["ma"]) {
-        player.subtabs["ma"]["stuff"] = "Bullet Hell";
+        player.subtabs["ma"]["stuff"] = "弹幕地狱";
     }
 
     // Create overlay
@@ -2853,7 +2853,7 @@ function mathQuizAttack(difficulty, duration, width, height) {
             player &&
             player.subtabs &&
             player.subtabs["ma"] &&
-            player.subtabs["ma"]["stuff"] == "Bullet Hell" &&
+            player.subtabs["ma"]["stuff"] == "弹幕地狱" &&
             player.ma &&
             player.ma.currentDepth != 0
         ) {
@@ -2861,7 +2861,7 @@ function mathQuizAttack(difficulty, duration, width, height) {
         } else {
             player.ma.inBlackHeart = false;
             toggleOpt('menuShown');
-            player.subtabs["ma"]["stuff"] = "Black Heart";
+            player.subtabs["ma"]["stuff"] = "黑心";
         }
     }
 
@@ -2879,7 +2879,7 @@ function mathQuizAttack(difficulty, duration, width, height) {
             player &&
             player.subtabs &&
             player.subtabs["ma"] &&
-            player.subtabs["ma"]["stuff"] == "Bullet Hell" &&
+            player.subtabs["ma"]["stuff"] == "弹幕地狱" &&
             player.ma &&
             player.ma.currentDepth != 0
         ) {
@@ -2887,7 +2887,7 @@ function mathQuizAttack(difficulty, duration, width, height) {
         } else {
             player.ma.inBlackHeart = false;
             toggleOpt('menuShown');
-            player.subtabs["ma"]["stuff"] = "Black Heart";
+            player.subtabs["ma"]["stuff"] = "黑心";
         }
     }, duration * 1000);
 }
@@ -2903,7 +2903,7 @@ function knifeThrowAttack(duration = 15, width = 700, height = 500, knifeRate = 
 
     // Switch to Bullet Hell tab
     if (player && player.subtabs && player.subtabs["ma"]) {
-        player.subtabs["ma"]["stuff"] = "Bullet Hell";
+        player.subtabs["ma"]["stuff"] = "弹幕地狱";
     }
 
     // Create overlay
@@ -3017,7 +3017,7 @@ function knifeThrowAttack(duration = 15, width = 700, height = 500, knifeRate = 
                 player &&
                 player.subtabs &&
                 player.subtabs["ma"] &&
-                player.subtabs["ma"]["stuff"] == "Bullet Hell" &&
+                player.subtabs["ma"]["stuff"] == "弹幕地狱" &&
                 player.ma &&
                 player.ma.currentDepth != 0
             ) {
@@ -3025,7 +3025,7 @@ function knifeThrowAttack(duration = 15, width = 700, height = 500, knifeRate = 
             } else {
                 player.ma.inBlackHeart = false;
                 toggleOpt('menuShown');
-                player.subtabs["ma"]["stuff"] = "Black Heart";
+                player.subtabs["ma"]["stuff"] = "黑心";
             }
             return;
         }
@@ -3153,7 +3153,7 @@ function radialKnifeBurstAttack(duration, width, height, burstInterval = 1200, k
 
     // Switch to Bullet Hell tab
     if (player && player.subtabs && player.subtabs["ma"]) {
-        player.subtabs["ma"]["stuff"] = "Bullet Hell";
+        player.subtabs["ma"]["stuff"] = "弹幕地狱";
     }
 
     // Create overlay
@@ -3367,7 +3367,7 @@ for (let k of knives) {
                 player &&
                 player.subtabs &&
                 player.subtabs["ma"] &&
-                player.subtabs["ma"]["stuff"] == "Bullet Hell" &&
+                player.subtabs["ma"]["stuff"] == "弹幕地狱" &&
                 player.ma &&
                 player.ma.currentDepth != 0
             ) {
@@ -3375,7 +3375,7 @@ for (let k of knives) {
             } else {
                 player.ma.inBlackHeart = false;
                 toggleOpt('menuShown');
-                player.subtabs["ma"]["stuff"] = "Black Heart";
+                player.subtabs["ma"]["stuff"] = "黑心";
             }
         }
     }
@@ -3415,7 +3415,7 @@ function bombExplosionAttack(
 
     // Switch to Bullet Hell tab
     if (player && player.subtabs && player.subtabs["ma"]) {
-        player.subtabs["ma"]["stuff"] = "Bullet Hell";
+        player.subtabs["ma"]["stuff"] = "弹幕地狱";
     }
 
     // Create overlay
@@ -3505,7 +3505,7 @@ function bombExplosionAttack(
                 player &&
                 player.subtabs &&
                 player.subtabs["ma"] &&
-                player.subtabs["ma"]["stuff"] == "Bullet Hell" &&
+                player.subtabs["ma"]["stuff"] == "弹幕地狱" &&
                 player.ma &&
                 player.ma.currentDepth != 0
             ) {
@@ -3513,7 +3513,7 @@ function bombExplosionAttack(
             } else {
                 player.ma.inBlackHeart = false;
                 toggleOpt('menuShown');
-                player.subtabs["ma"]["stuff"] = "Black Heart";
+                player.subtabs["ma"]["stuff"] = "黑心";
             }
             return;
         }
@@ -3702,7 +3702,7 @@ function shiftingKnifeArenaAttack(duration = 15, arenaW = 400, arenaH = 300, kni
 
     // Switch to Bullet Hell tab
     if (player && player.subtabs && player.subtabs["ma"]) {
-        player.subtabs["ma"]["stuff"] = "Bullet Hell";
+        player.subtabs["ma"]["stuff"] = "弹幕地狱";
     }
 
     // Create overlay
@@ -3833,7 +3833,7 @@ function spawnKnife() {
                 player &&
                 player.subtabs &&
                 player.subtabs["ma"] &&
-                player.subtabs["ma"]["stuff"] == "Bullet Hell" &&
+                player.subtabs["ma"]["stuff"] == "弹幕地狱" &&
                 player.ma &&
                 player.ma.currentDepth != 0
             ) {
@@ -4028,7 +4028,7 @@ function spawnKnife() {
             player &&
             player.subtabs &&
             player.subtabs["ma"] &&
-            player.subtabs["ma"]["stuff"] == "Bullet Hell" &&
+            player.subtabs["ma"]["stuff"] == "弹幕地狱" &&
             player.ma &&
             player.ma.currentDepth != 0
         ) {
@@ -4038,7 +4038,7 @@ function spawnKnife() {
             player.ma.inBlackHeart = false
             toggleOpt('menuShown')
 
-            player.subtabs["ma"]["stuff"] = "Black Heart"
+            player.subtabs["ma"]["stuff"] = "黑心"
 
         }
     }, duration * 1000);
@@ -4056,7 +4056,7 @@ function ultimateAttackPhase1(duration = 15) {
 
     // Switch to Bullet Hell tab
     if (player && player.subtabs && player.subtabs["ma"]) {
-        player.subtabs["ma"]["stuff"] = "Bullet Hell";
+        player.subtabs["ma"]["stuff"] = "弹幕地狱";
     }
 
     // Create overlay
@@ -4326,7 +4326,7 @@ function ultimateAttackPhase2(duration = 15) {
 
     // Switch to Bullet Hell tab
     if (player && player.subtabs && player.subtabs["ma"]) {
-        player.subtabs["ma"]["stuff"] = "Bullet Hell";
+        player.subtabs["ma"]["stuff"] = "弹幕地狱";
     }
 
     // Create overlay
@@ -4818,7 +4818,7 @@ function ultimateAttackPhase3(duration = 15) {
     }
     // Start
     if (player && player.subtabs && player.subtabs["ma"]) {
-        player.subtabs["ma"]["stuff"] = "Bullet Hell";
+        player.subtabs["ma"]["stuff"] = "弹幕地狱";
     }
     setupOverlay();
     px = window.innerWidth / 2;
@@ -4865,7 +4865,7 @@ function ultimateAttackSequence() {
     });
     setTimeout(() => {
         // All characters are still alive after 49 seconds
-        if (player.subtabs["ma"]["stuff"] == "Bullet Hell" && player.ma.currentCelestialiteType == 25) {
+        if (player.subtabs["ma"]["stuff"] == "弹幕地狱" && player.ma.currentCelestialiteType == 25) {
             if (!player.ma.matosDefeated) {
                 player.ma.matosDefeated = true
                 player.in.infinityPoints = new Decimal(0)

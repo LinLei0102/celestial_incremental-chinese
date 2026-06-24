@@ -1,5 +1,5 @@
 ﻿addLayer("in", {
-    name: "Roots", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "根源", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "RO", // This appears on the layer's node. Default is the id with the first letter capitalized
     row: 1,
     position: 0, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
@@ -39,7 +39,7 @@
             "border-color": "#333",
         }
     },
-    tooltip: "Roots",
+    tooltip: "根源",
     color: "#1b4",
     branches: ["ad", "ip"],
     update(delta) {
@@ -581,7 +581,7 @@
     challenges: {},
     infoboxes: {
         1: {
-            title: "Infinity",
+            title: "无限",
             body() { return "Tav, the celestial of limits, has placed a barrier on the superphysical value of celestial points. He introduced the magic number: 1.7976931...e308. A constant value that represented the point at which celestial points condensed into an infinity. When celestial points are condensed into an infinity, it also produces infinity points as a byproduct. This process is called a big crunch. Infinities are an ancient power, tracing back to the time of the original seven." },
             unlocked() { return true },      
         },
@@ -598,7 +598,7 @@
     },
     microtabs: {
         stuff: {
-            "Lore": {
+            "传说": {
                 buttonStyle() { return { color: "white", borderRadius: "5px" } },
                 unlocked() { return true },
                 content: [

@@ -1,5 +1,5 @@
 ﻿addLayer("pe", {
-    name: "Pests", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "害虫", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "PE", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "U1",
     row: 1,
@@ -20,7 +20,7 @@
             borderColor: "#770022",
         };
     },
-    tooltip: "Pests",
+    tooltip: "害虫",
     color: "#411c35",
     update(delta) {
         let onepersec = new Decimal(1)

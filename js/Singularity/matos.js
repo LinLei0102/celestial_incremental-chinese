@@ -372,10 +372,10 @@
         player.ma.depth2CooldownMax = new Decimal(600)
         player.ma.depth3CooldownMax = new Decimal(900)
 
-        if (player.subtabs["ma"]["stuff"] == "Bullet Hell") {
+        if (player.subtabs["ma"]["stuff"] == "弹幕地狱") {
             player.ma.celestialiteTimer = player.ma.celestialiteCooldown;
         }
-        if (player.ma.celestialiteTimer.lt(0) && player.subtabs["ma"]["stuff"] != "Bullet Hell") {
+        if (player.ma.celestialiteTimer.lt(0) && player.subtabs["ma"]["stuff"] != "弹幕地狱") {
             player.ma.celestialiteTimer = player.ma.celestialiteCooldown;
             
             // Filter out dead characters
@@ -666,7 +666,7 @@
             if (player.ma.celestialiteHealth.lt(7000) && player.ma.attacksDone.eq(0)) {
                 player.ma.celestialiteTimer = player.ma.celestialiteCooldown
                 flashScreen("This is what Nova wanted all along!", 3000)
-                if (player.subtabs["ma"]["stuff"] != "Bullet Hell") {
+                if (player.subtabs["ma"]["stuff"] != "弹幕地狱") {
                 setTimeout(() => {
                     whiteDiamondAttack(10, 700, 500, 2)
                 }, 3000)
@@ -676,7 +676,7 @@
             if (player.ma.celestialiteHealth.lt(6500) && player.ma.attacksDone.eq(1)) {
                 player.ma.celestialiteTimer = player.ma.celestialiteCooldown
                 flashScreen("He is our lord. He will save us all from this torture.", 3000)
-                if (player.subtabs["ma"]["stuff"] != "Bullet Hell") {
+                if (player.subtabs["ma"]["stuff"] != "弹幕地狱") {
                 setTimeout(() => {
                     bulletRainAttack(12, 700, 500, 10)
                 }, 3000)
@@ -686,7 +686,7 @@
             if (player.ma.celestialiteHealth.lt(6000) && player.ma.attacksDone.eq(2)) {
                 player.ma.celestialiteTimer = player.ma.celestialiteCooldown
                 flashScreen("Once he comes back, so will civilization!", 3000)
-                if (player.subtabs["ma"]["stuff"] != "Bullet Hell") {
+                if (player.subtabs["ma"]["stuff"] != "弹幕地狱") {
                 setTimeout(() => {
                     movingCircleRadialBurstAttack(12, 700, 500, 1200, 18, 6, 5)
                 }, 3000)
@@ -696,7 +696,7 @@
             if (player.ma.celestialiteHealth.lt(5500) && player.ma.attacksDone.eq(3)) {
                 player.ma.celestialiteTimer = player.ma.celestialiteCooldown
                 flashScreen("And it is too late for you guys... I have enough power!", 3000)
-                if (player.subtabs["ma"]["stuff"] != "Bullet Hell") {
+                if (player.subtabs["ma"]["stuff"] != "弹幕地狱") {
                 setTimeout(() => {
                     knifeThrowAttack(15, 500, 300, 1.2)
                 }, 3000)
@@ -706,7 +706,7 @@
             if (player.ma.celestialiteHealth.lt(5000) && player.ma.attacksDone.eq(4)) {
                 player.ma.celestialiteTimer = player.ma.celestialiteCooldown
                 flashScreen("I can bring Nova and the Novasent back!", 3000)
-                if (player.subtabs["ma"]["stuff"] != "Bullet Hell") {
+                if (player.subtabs["ma"]["stuff"] != "弹幕地狱") {
                 setTimeout(() => {
                     bouncingDiamondsAttack(15, 700, 500, 6, 3);
                 }, 3000)
@@ -716,7 +716,7 @@
             if (player.ma.celestialiteHealth.lt(4500) && player.ma.attacksDone.eq(5)) {
                 player.ma.celestialiteTimer = player.ma.celestialiteCooldown
                 flashScreen("Our great civilization will flourish! The sun will shine! The sky will be clear!", 3000)
-                if (player.subtabs["ma"]["stuff"] != "Bullet Hell") {
+                if (player.subtabs["ma"]["stuff"] != "弹幕地狱") {
                 setTimeout(() => {
                     layers.ma.generatePhase1Attack()
                 }, 3000)
@@ -726,7 +726,7 @@
             if (player.ma.celestialiteHealth.lt(4000) && player.ma.attacksDone.eq(6)) {
                 player.ma.celestialiteTimer = player.ma.celestialiteCooldown
                 flashScreen("My hopes. My dreams. They will all become true.", 3000)
-                if (player.subtabs["ma"]["stuff"] != "Bullet Hell") {
+                if (player.subtabs["ma"]["stuff"] != "弹幕地狱") {
                 setTimeout(() => {
                     layers.ma.generatePhase1Attack()
                 }, 3000)
@@ -736,7 +736,7 @@
             if (player.ma.celestialiteHealth.lt(3500) && player.ma.attacksDone.eq(7)) {
                 player.ma.celestialiteTimer = player.ma.celestialiteCooldown
                 flashScreen("NOVA WILL SAVE US ALL.", 3000)
-                if (player.subtabs["ma"]["stuff"] != "Bullet Hell") {
+                if (player.subtabs["ma"]["stuff"] != "弹幕地狱") {
                 setTimeout(() => {
                     radialKnifeBurstAttack(12, 500, 500, 1500, 5, 8);
                 }, 3000)
@@ -746,7 +746,7 @@
             if (player.ma.celestialiteHealth.lt(3000) && player.ma.attacksDone.eq(8)) {
                 player.ma.celestialiteTimer = player.ma.celestialiteCooldown
                 flashScreen("NOVA WILL BRING US PEACE.", 3000)
-                if (player.subtabs["ma"]["stuff"] != "Bullet Hell") {
+                if (player.subtabs["ma"]["stuff"] != "弹幕地狱") {
                 setTimeout(() => {
                     knifeRainAttack(duration = 15, width = 700, height = 500, knifeRate = 1.5, bulletRate = 7)
                 }, 3000)
@@ -756,7 +756,7 @@
             if (player.ma.celestialiteHealth.lt(2500) && player.ma.attacksDone.eq(9)) {
                 player.ma.celestialiteTimer = player.ma.celestialiteCooldown
                 flashScreen("NOVA WILL BRING US GLORY.", 3000)
-                if (player.subtabs["ma"]["stuff"] != "Bullet Hell") {
+                if (player.subtabs["ma"]["stuff"] != "弹幕地狱") {
                 setTimeout(() => {
                     mazeAttack(15, 750, 500, 50)
                 }, 3000)
@@ -766,7 +766,7 @@
             if (player.ma.celestialiteHealth.lt(2000) && player.ma.attacksDone.eq(10)) {
                 player.ma.celestialiteTimer = player.ma.celestialiteCooldown
                 flashScreen("NOVA WILL BRING US GREATNESS.", 3000)
-                if (player.subtabs["ma"]["stuff"] != "Bullet Hell") {
+                if (player.subtabs["ma"]["stuff"] != "弹幕地狱") {
                 setTimeout(() => {
                     shiftingKnifeArenaAttack(duration = 15, arenaW = 300, arenaH = 300, knifeRate = 2, borderW = 1000, borderH = 500)
                 }, 3000)
@@ -776,7 +776,7 @@
             if (player.ma.celestialiteHealth.lt(1500) && player.ma.attacksDone.eq(11)) {
                 player.ma.celestialiteTimer = player.ma.celestialiteCooldown
                 flashScreen("Nova will....", 3000)
-                if (player.subtabs["ma"]["stuff"] != "Bullet Hell") {
+                if (player.subtabs["ma"]["stuff"] != "弹幕地狱") {
                 setTimeout(() => {
                     bombExplosionAttack()
                 }, 3000)
@@ -786,7 +786,7 @@
             if (player.ma.celestialiteHealth.lt(1000) && player.ma.attacksDone.eq(12)) {
                 player.ma.celestialiteTimer = player.ma.celestialiteCooldown
                 flashScreen("Nova will.......", 3000)
-                if (player.subtabs["ma"]["stuff"] != "Bullet Hell") {
+                if (player.subtabs["ma"]["stuff"] != "弹幕地狱") {
                 setTimeout(() => {
                     layers.ma.generatePhase2Attack()
                 }, 3000)
@@ -796,7 +796,7 @@
             if (player.ma.celestialiteHealth.lt(500) && player.ma.attacksDone.eq(13)) {
                 player.ma.celestialiteTimer = player.ma.celestialiteCooldown
                 flashScreen("looks like my time is up...", 3000)
-                if (player.subtabs["ma"]["stuff"] != "Bullet Hell") {
+                if (player.subtabs["ma"]["stuff"] != "弹幕地狱") {
                 setTimeout(() => {
                     layers.ma.generatePhase2Attack()
                 }, 3000)
@@ -806,7 +806,7 @@
             if (player.ma.celestialiteHealth.lt(50) && player.ma.attacksDone.lt(15)) {
                 player.ma.celestialiteTimer = player.ma.celestialiteCooldown
                 flashScreen("BUT I CAN'T LET YOU GUYS CONTINUE", 3000)
-                if (player.subtabs["ma"]["stuff"] != "Bullet Hell") {
+                if (player.subtabs["ma"]["stuff"] != "弹幕地狱") {
                     setTimeout(() => {
                         ultimateAttackSequence();
                     }, 3000)
@@ -997,7 +997,7 @@
             onClick() {
                 player.ma.inBlackHeart = false
 
-                player.subtabs["ma"]["stuff"] = "Black Heart"
+                player.subtabs["ma"]["stuff"] = "黑心"
 
                 pauseUniverse("U1", "unpause", true)
                 pauseUniverse("UA", "unpause", true)
@@ -4203,7 +4203,7 @@
                     ["row", [["ex-buyable", 104]]],
                 ]
             },
-            "Black Heart": {
+            "黑心": {
                 buttonStyle: {color: "white", borderRadius: "15px"},
                 unlocked() { return player.ma.matosUnlock && !player.ma.inBlackHeart },
                 content: [
@@ -4236,7 +4236,7 @@
                     ["microtabs", "upg", { 'border-width': '0px' }],
                 ]
             },
-            "Perks": {
+            "特权": {
                 buttonStyle: {color: "white", borderRadius: "15px"},
                 unlocked() { return player.ma.matosDefeated && !player.ma.inBlackHeart  },
                 content: [
@@ -4341,7 +4341,7 @@
                     ], {width: "650px", height: "40px", backgroundColor: "#1b0218", border: "3px solid #8a0e79", borderRadius: "20px"}],
                 ]
             },
-            "Bullet Hell": {
+            "弹幕地狱": {
                 buttonStyle: {color: "white", borderRadius: "15px"},
                 unlocked() { return false },
                 content: [
@@ -4581,7 +4581,7 @@
                     
                 ]
             },
-            "Depth 1": {
+            "深度1": {
                 buttonStyle: {color: "white", borderRadius: "15px"},
                 unlocked() {return hasUpgrade("ma", 31)},
                 content: [
@@ -4599,7 +4599,7 @@
                     ], {width: "600px", height: "400px", backgroundColor: "rgba(0,0,0,0.5)", border: "3px solid #8a0e79"}],
                 ]
             },
-            "Depth 2": {
+            "深度2": {
                 buttonStyle: {color: "white", borderRadius: "15px"},
                 unlocked() {return hasUpgrade("ma", 31)},
                 content: [
@@ -4617,7 +4617,7 @@
                     ], {width: "600px", height: "400px", backgroundColor: "rgba(0,0,0,0.5)", border: "3px solid #8a0e79"}],
                 ]
             },
-            "Depth 3": {
+            "深度3": {
                 buttonStyle: {color: "white", borderRadius: "15px"},
                 unlocked() {return hasUpgrade("ma", 31)},
                 content: [
@@ -4659,7 +4659,7 @@ function logPrint(line) {
 
 function takeDamage() {
     // Only take damage in Bullet Hell
-    if (!player || !player.subtabs || !player.subtabs["ma"] || player.subtabs["ma"]["stuff"] !== "Bullet Hell") return;
+    if (!player || !player.subtabs || !player.subtabs["ma"] || player.subtabs["ma"]["stuff"] !== "弹幕地狱") return;
 
     const now = Date.now();
     // Immortality frames: only allow damage every 400ms

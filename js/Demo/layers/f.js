@@ -2,7 +2,7 @@
 addLayer("f", {
     infoboxes:{
         coolInfo: {
-            title: "Lore",
+            title: "传说",
             titleStyle: {'color': '#FE0000'},
             body: "DEEP LORE!",
             bodyStyle: {'background-color': "#0000EE"}

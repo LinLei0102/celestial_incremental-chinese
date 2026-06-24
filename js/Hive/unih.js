@@ -97,7 +97,7 @@ addLayer("bee", {
     },
     clickables: {
         1: {
-            title: "Buy Max On",
+            title: "批量购买 开",
             canClick() { return !player.bee.beeMax},
             unlocked: true,
             onClick() {
@@ -106,7 +106,7 @@ addLayer("bee", {
             style: {width: "80px", minHeight: "50px", borderRadius: "15px 0 0 15px"}
         },
         2: {
-            title: "Buy Max Off",
+            title: "批量购买 关",
             canClick() { return player.bee.beeMax},
             unlocked: true,
             onClick() {

@@ -1,5 +1,5 @@
 ﻿addLayer("po", {
-    name: "Portal", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "传送门", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "P", // This appears on the layer's node. Default is the id with the first letter capitalized
     row: 1,
     position: 0, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
@@ -81,7 +81,7 @@
     }},
     automate() {},
     nodeStyle() {},
-    tooltip: "Portal",
+    tooltip: "传送门",
     color: "white",
     update(delta) {
         let onepersec = new Decimal(1)
@@ -867,7 +867,7 @@
                         ["row", [
                             ["style-column", [
                                 ["style-column", [
-                                    ["raw-html", "Check Back", {color: "black", fontSize: "20px", fontFamily: "monospace"}],
+                                    ["raw-html", "回溯", {color: "black", fontSize: "20px", fontFamily: "monospace"}],
                                 ], {width: "200px", height: "47px", borderBottom: "3px solid #04224c"}],
                                 ["clickable", 201],
                             ], () => {return uniShown("CB") ? {width: "200px", height: "100px", background: "#094599", border: "3px solid #04224c", borderRadius: "15px", margin: "5px"} : {display: "none !important"}}],
@@ -913,13 +913,13 @@
                             ], () => {return uniShown("CB") && player.cb.highestLevel.gte(10) ? {width: "200px", height: "100px", background: "#4e7cff", border: "3px solid #273e7f", borderRadius: "15px", margin: "5px"} : {display: "none !important"}}],
                             ["style-column", [
                                 ["style-column", [
-                                    ["raw-html", "Punchcards", {color: "black", fontSize: "20px", fontFamily: "monospace"}],
+                                    ["raw-html", "打孔卡", {color: "black", fontSize: "20px", fontFamily: "monospace"}],
                                 ], {width: "200px", height: "47px", borderBottom: "3px solid #46517f"}],
                                 ["clickable", 402],
                             ], () => {return hasUpgrade("sma", 14) ? {width: "200px", height: "100px", background: "#8CA3FF", border: "3px solid #46517f", borderRadius: "15px", margin: "5px"} : {display: "none !important"}}],
                             ["style-column", [
                                 ["style-column", [
-                                    ["raw-html", "Black Heart", {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                                    ["raw-html", "黑心", {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                                 ], {width: "200px", height: "47px", borderBottom: "3px solid #8A0E79"}],
                                 ["clickable", 403],
                             ], () => {return uniShown("BH") ? {width: "200px", height: "100px", background: "black", border: "3px solid #8A0E79", borderRadius: "15px", margin: "5px"} : {display: "none !important"}}],

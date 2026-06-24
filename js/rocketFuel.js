@@ -1,5 +1,5 @@
 ﻿addLayer("rf", {
-    name: "Rocket Fuel", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "火箭燃料", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "RF", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "U1",
     row: 1,
@@ -59,7 +59,7 @@
             "border-color": "#119B35",
         }
     },
-    tooltip: "Rocket Fuel",
+    tooltip: "火箭燃料",
     color: "#949494",
     branches() {
         return player.po.dice ? ["gh", "d"] : ["gh", "cb"]
@@ -566,7 +566,7 @@
             description() { return "Keep pent on reset." },
             cost: new Decimal(4),
             currencyLocation() { return player.rf },
-            currencyDisplayName: "Rocket Fuel",
+            currencyDisplayName: "火箭燃料",
             currencyInternalName: "rocketFuel",
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
@@ -576,7 +576,7 @@
             description() { return "Gain 20% of prestige points and grass value per second." },
             cost: new Decimal(12),
             currencyLocation() { return player.rf },
-            currencyDisplayName: "Rocket Fuel",
+            currencyDisplayName: "火箭燃料",
             currencyInternalName: "rocketFuel",
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
@@ -586,7 +586,7 @@
             description() { return "Unlocks another ability." },
             cost: new Decimal(36),
             currencyLocation() { return player.rf },
-            currencyDisplayName: "Rocket Fuel",
+            currencyDisplayName: "火箭燃料",
             currencyInternalName: "rocketFuel",
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
@@ -596,7 +596,7 @@
             description() { return "Gain 1% of grasshoppers per second." },
             cost: new Decimal(120),
             currencyLocation() { return player.rf },
-            currencyDisplayName: "Rocket Fuel",
+            currencyDisplayName: "火箭燃料",
             currencyInternalName: "rocketFuel",
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
@@ -606,7 +606,7 @@
             description() { return "Unlocks yet another ability." },
             cost: new Decimal(540),
             currencyLocation() { return player.rf },
-            currencyDisplayName: "Rocket Fuel",
+            currencyDisplayName: "火箭燃料",
             currencyInternalName: "rocketFuel",
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
@@ -616,7 +616,7 @@
             description: "Rocket Fuel boosts itself.",
             cost: new Decimal(2222),
             currencyLocation() { return player.rf },
-            currencyDisplayName: "Rocket Fuel",
+            currencyDisplayName: "火箭燃料",
             currencyInternalName: "rocketFuel",
             effect() {
                 let eff = new Decimal(1)
@@ -640,7 +640,7 @@
             description: "Rocket Fuel boosts points, ignoring IC6 nerf.",
             cost: new Decimal(1e10),
             currencyLocation() { return player.rf },
-            currencyDisplayName: "Rocket Fuel",
+            currencyDisplayName: "火箭燃料",
             currencyInternalName: "rocketFuel",
             effect() {
                 return player.rf.rocketFuel.pow(0.5).mul(5).add(1)
@@ -654,7 +654,7 @@
             description: "Gain 20% of rocket fuel per second.",
             cost: new Decimal(1e12),
             currencyLocation() { return player.rf },
-            currencyDisplayName: "Rocket Fuel",
+            currencyDisplayName: "火箭燃料",
             currencyInternalName: "rocketFuel",
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
@@ -664,7 +664,7 @@
             description: "Re-activate rocket fuel effect, though at a weaker strength.",
             cost: new Decimal(1e16),
             currencyLocation() { return player.rf },
-            currencyDisplayName: "Rocket Fuel",
+            currencyDisplayName: "火箭燃料",
             currencyInternalName: "rocketFuel",
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
@@ -674,7 +674,7 @@
             description: "Improve \"Rocket Fuel Upgrade VI\".",
             cost: new Decimal(1e20),
             currencyLocation() { return player.rf },
-            currencyDisplayName: "Rocket Fuel",
+            currencyDisplayName: "火箭燃料",
             currencyInternalName: "rocketFuel",
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },

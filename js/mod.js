@@ -1,8 +1,8 @@
 ﻿let modInfo = {
-	name: "Celestial Incremental",
+	name: "天体递增",
 	id: "celestial", // NEVER CHANGE THIS, IF YOU DO ALL SAVES WILL DIE
 	author: "Icecreamdude",
-	pointsName: "celestial points",
+	pointsName: "天体点数",
 	modFiles: [
 		"layers.js", "cutscene.js", "tree.js", "ranks.js", "factors.js",
 		"prestige.js", "trees.js", "grass.js", "grasshop.js", "mods.js",
@@ -42,7 +42,7 @@
 // Set your version in num and name
 let VERSION = {
 	num: 190.26, // CHANGED TO NUMBER TO MAKE EASIER IN FUTURE (EX. 150 = v1.5.0)
-	name: "Battle Bonanza",
+	name: "战斗嘉年华",
 }
 
 function miscCode() {

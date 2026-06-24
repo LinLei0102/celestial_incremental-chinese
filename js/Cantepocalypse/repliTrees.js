@@ -1,5 +1,5 @@
 ﻿addLayer("rt", {
-    name: "Repli-Trees", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "复制树木", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "RT", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "A1",
     row: 1,
@@ -36,7 +36,7 @@
     },
     nodeStyle() {
     },
-    tooltip: "Repli-Trees",
+    tooltip: "复制树木",
     branches: ["an"],
     color: "#1cffac",
     update(delta) {
@@ -119,7 +119,7 @@
     },
     clickables: {
         2: {
-            title() { return "Buy Max On" },
+            title() { return "批量购买 开" },
             canClick() { return player.buyMax == false },
             unlocked() { return true },
             onClick() {
@@ -128,7 +128,7 @@
             style: { width: '75px', "min-height": '50px', }
         },
         3: {
-            title() { return "Buy Max Off" },
+            title() { return "批量购买 关" },
             canClick() { return player.buyMax == true  },
             unlocked() { return true },
             onClick() {
@@ -285,7 +285,7 @@
             cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()) },
             canAfford() { return this.currency().gte(this.cost()) },
             title() {
-                return "Repli-Trees"
+                return "复制树木"
             },
             display() {
                 return "which are boosting repli-tree gain by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\

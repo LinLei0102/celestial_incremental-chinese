@@ -1826,8 +1826,8 @@ function addObject(obj1, obj2, mult = 1) {
 }
 
 BHS.darkTemple = {
-    nameCap: "Dark Temple",
-    nameLow: "Dark Temple",
+    nameCap: "暗黑神殿",
+    nameLow: "暗黑神殿",
     music: "music/confrontation.mp3",
     comboLimit: 666,
     comboScaling: 6,

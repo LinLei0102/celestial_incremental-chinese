@@ -1,16 +1,16 @@
 addLayer("jukebox", {
-    name: "Jukebox", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "音乐盒", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "JB", // This appears on the layer's node. Default is the id with the first letter capitalized
     row: 1,
     position: 0, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
     startData() { return {
         unlocked: true,
     }},
-    tooltip: "Jukebox",
+    tooltip: "音乐盒",
     color: "white",
     clickables: {
         2: {
-            title() { return "Settings" },
+            title() { return "设置" },
             canClick() { return true },
             unlocked() { return true },
             onClick() {
@@ -28,7 +28,7 @@ addLayer("jukebox", {
             style: { width: '125px', minHeight: '50px', color: "var(--textColor)", background: "var(--miscButtonDisable)", borderRadius: '0px', border: "3px solid var(--regBorder)", margin: "0px 5px" },
         },
         5: {
-            title() { return "Changelog" },
+            title() { return "更新日志" },
             canClick() { return true },
             unlocked() { return true },
             onClick() {
@@ -37,7 +37,7 @@ addLayer("jukebox", {
             style: { width: '125px', minHeight: '50px', color: "var(--textColor)", background: "var(--miscButtonDisable)", borderRadius: '0px', border: "3px solid var(--regBorder)", margin: "0px 5px" },
         },
         7: {
-            title() { return "Jukebox" },
+            title() { return "音乐盒" },
             canClick() { return true },
             unlocked() { return true },
             onClick() {
@@ -72,15 +72,15 @@ addLayer("jukebox", {
             },
         },
         13: {
-            title: "Black Heart",
+            title: "黑心",
             canClick: true,
             unlocked() {return player.bh.unlockConditions.done},
             onClick() {
-                player.subtabs["jukebox"]["stuff"] = "Black Heart"
+                player.subtabs["jukebox"]["stuff"] = "黑心"
             },
             style() {
                 let look = {width: "200px", minHeight: "40px", fontSize: "14px", color: "var(--textColor)", background: "var(--miscButton)", border: "3px solid var(--miscButtonDisable)", borderRadius: "0"}
-                if (player.subtabs["jukebox"]["stuff"] == "Black Heart") look.borderColor = "var(--selected)"
+                if (player.subtabs["jukebox"]["stuff"] == "黑心") look.borderColor = "var(--selected)"
                 return look
             },
         },
@@ -113,7 +113,7 @@ addLayer("jukebox", {
         "portal": {
             artist: "Icecreamdude",
             name: "N/A",
-            description: "Portal",
+            description: "传送门",
             img: "resources/music/portal.png",
             file: "music/portal.mp3",
             unlocked() {return hasUpgrade('i', 21) || player.in.unlockedInfinity || player.s.highestSingularityPoints.gt(0)},
@@ -137,7 +137,7 @@ addLayer("jukebox", {
         "hex": {
             artist: "Icecreamdude",
             name: "N/A",
-            description: "Hex",
+            description: "魔咒",
             img: "resources/music/hex.png",
             file: "music/hex.mp3",
             unlocked() {return hasChallenge("ip", 13) || player.s.highestSingularityPoints.gt(0)},
@@ -225,7 +225,7 @@ addLayer("jukebox", {
         "hive": {
             artist: "Icecreamdude",
             name: "N/A",
-            description: "Hive",
+            description: "蜂巢",
             img: "resources/music/hive.png",
             file: "music/hive.mp3",
             unlocked() {return player.pol.unlockHive >= 2},
@@ -273,7 +273,7 @@ addLayer("jukebox", {
         "zar": {
             artist: "Icecreamdude",
             name: "N/A",
-            description: "Zar",
+            description: "扎尔",
             img: "resources/music/template.png",
             file: "music/zar.mp3",
             unlocked() {return player.zarDungeon.zarDefeated},
@@ -282,7 +282,7 @@ addLayer("jukebox", {
         "black-heart": {
             artist: "Citrine/Niko/Flushmak",
             name: "N/A",
-            description: "Black Heart",
+            description: "黑心",
             img: "resources/music/black-heart.png",
             file: "music/enteringBlackHeart.mp3",
             unlocked() {return player.bh.unlockConditions.done},
@@ -290,7 +290,7 @@ addLayer("jukebox", {
         "depth-1": {
             artist: "Icecreamdude",
             name: "N/A",
-            description: "Depth 1",
+            description: "深度1",
             img: "resources/music/depth-1.png",
             file: "music/celestialites.mp3",
             unlocked() {return player.bh.unlockConditions.done},
@@ -298,7 +298,7 @@ addLayer("jukebox", {
         "depth-2": {
             artist: "150percent",
             name: "N/A",
-            description: "Depth 2",
+            description: "深度2",
             img: "resources/music/depth-2.png",
             file: "music/blackHeart.mp3",
             unlocked() {return player.depth2.unlocked},
@@ -306,7 +306,7 @@ addLayer("jukebox", {
         "depth-3": {
             artist: "Icecreamdude",
             name: "N/A",
-            description: "Depth 3",
+            description: "深度3",
             img: "resources/music/depth-3.png",
             file: "music/depth3.mp3",
             unlocked() {return player.depth3.unlocked},
@@ -330,7 +330,7 @@ addLayer("jukebox", {
         "stagnant-synestia": {
             artist: "Icecreamdude",
             name: "N/A",
-            description: "Stagnant Synestia",
+            description: "停滞融合体",
             img: "resources/music/stagnant.png",
             file: "music/stagnant.mp3",
             unlocked() {return player.stagnantSynestia.unlocked},
@@ -338,7 +338,7 @@ addLayer("jukebox", {
         "depth-4": {
             artist: "Icecreamdude",
             name: "N/A",
-            description: "Depth 4",
+            description: "深度4",
             img: "resources/music/template.png",
             file: "music/depth4.mp3",
             unlocked() {return player.depth4.unlocked},
@@ -346,7 +346,7 @@ addLayer("jukebox", {
         "laboratory": {
             artist: "Icecreamdude",
             name: "N/A",
-            description: "Laboratory",
+            description: "实验室",
             img: "resources/music/template.png",
             file: "music/matosSomber.mp3",
             unlocked() {return player.laboratory.unlocked},
@@ -412,7 +412,7 @@ addLayer("jukebox", {
         "cante": {
             artist: "Icecreamdude",
             name: "N/A",
-            description: "Cante",
+            description: "坎特",
             img: "resources/music/cante.png",
             file: "music/canteCutscene.mp3",
             unlocked() {return (player.ca.unlockedCante && hasUpgrade("bi", 28)) || player.s.highestSingularityPoints.gt(0)},
@@ -420,7 +420,7 @@ addLayer("jukebox", {
         "singularity-waltz": {
             artist: "Icecreamdude",
             name: "N/A",
-            description: "Singularity",
+            description: "奇点",
             img: "resources/music/singularity-waltz.png",
             file: "music/singularityWaltzPiano.mp3",
             unlocked() {return player.s.highestSingularityPoints.gt(0)},
@@ -460,7 +460,7 @@ addLayer("jukebox", {
         "iridite": {
             artist: "Icecreamdude",
             name: "N/A",
-            description: "Iridite",
+            description: "铱晶",
             img: "resources/music/iridite.png",
             file: "music/iriditeCutscene.mp3",
             unlocked() {return player.se.starsExploreCount[0][1].gte(1)},
@@ -468,7 +468,7 @@ addLayer("jukebox", {
         "aleph": {
             artist: "Icecreamdude",
             name: "N/A",
-            description: "Aleph",
+            description: "阿列夫",
             img: "resources/music/aleph.png",
             file: "music/alephCutscene.mp3",
             unlocked() {return player.pol.unlockHive >= 2},
@@ -476,7 +476,7 @@ addLayer("jukebox", {
         "zar": {
             artist: "Icecreamdude",
             name: "N/A",
-            description: "Zar",
+            description: "扎尔",
             img: "resources/music/template.png",
             file: "music/zarCutscene.mp3",
             unlocked() {return player.d.diceSpaceUnlocked},
@@ -539,7 +539,7 @@ addLayer("jukebox", {
                     ["blank", "2px"],
                 ],
             },
-            "Black Heart": {
+            "黑心": {
                 buttonStyle() { return { 'color': 'white' } },
                 unlocked: true,
                 content: [
@@ -558,7 +558,7 @@ addLayer("jukebox", {
         ["row", [["clickable", 2], ["clickable", 7], ["clickable", 4], ["clickable", 5]]],
         ["blank", "50px"],
         ["style-column", [
-            ["raw-html", "Jukebox", {color: "var(--textColor)", fontSize: "24px", fontFamily: "monospace"}],
+            ["raw-html", "音乐盒", {color: "var(--textColor)", fontSize: "24px", fontFamily: "monospace"}],
         ], {width: "660px", height: "40px", background: "var(--scroll4)", border: "3px solid var(--menuBackground)", marginBottom: "-3px", borderRadius: "30px 30px 0 0"}],
         ["style-row", [
             ["style-column", [

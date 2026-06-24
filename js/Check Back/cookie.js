@@ -141,7 +141,7 @@ const BIG_COOKIE_NUMBER = {
 }
 
 addLayer("ep2", {
-    name: "Cookie", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "饼干", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "Co", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "CB",
     row: 1,
@@ -184,7 +184,7 @@ addLayer("ep2", {
         borderColor: "#422B21",
         color: "#422B21",
     },
-    tooltip: "Cookie",
+    tooltip: "饼干",
     color: "#cb79ed",
     update(delta) {
         let onepersec = new Decimal(1)
@@ -2196,7 +2196,7 @@ addLayer("ep2", {
             cost(x) {return Decimal.sumGeometricSeries(player.ep2.shopMult, this.costBase, this.costGrowth, (x || getBuyableAmount(this.layer, this.id)))},
             canAfford() {return player.ep2.cookies.gte(this.cost())},
             img: "resources/currencies/rank.png",
-            title: "Ranks",
+            title: "等级",
             buy() {
                 this.pay(this.cost())
                 setBuyableAmount(this.layer, this.id, getBuyableAmount(this.layer, this.id).add(player.ep2.shopMult))
@@ -2219,7 +2219,7 @@ addLayer("ep2", {
             cost(x) {return Decimal.sumGeometricSeries(player.ep2.shopMult, this.costBase, this.costGrowth, (x || getBuyableAmount(this.layer, this.id)))},
             canAfford() {return player.ep2.cookies.gte(this.cost())},
             img: "resources/currencies/factor_power.png",
-            title: "Factors",
+            title: "因子",
             buy() {
                 this.pay(this.cost())
                 setBuyableAmount(this.layer, this.id, getBuyableAmount(this.layer, this.id).add(player.ep2.shopMult))
@@ -2288,7 +2288,7 @@ addLayer("ep2", {
             cost(x) {return Decimal.sumGeometricSeries(player.ep2.shopMult, this.costBase, this.costGrowth, (x || getBuyableAmount(this.layer, this.id)))},
             canAfford() {return player.ep2.cookies.gte(this.cost())},
             img: "resources/currencies/trees.png",
-            title: "Trees",
+            title: "树木",
             buy() {
                 this.pay(this.cost())
                 setBuyableAmount(this.layer, this.id, getBuyableAmount(this.layer, this.id).add(player.ep2.shopMult))
@@ -2311,7 +2311,7 @@ addLayer("ep2", {
             cost(x) {return Decimal.sumGeometricSeries(player.ep2.shopMult, this.costBase, this.costGrowth, (x || getBuyableAmount(this.layer, this.id)))},
             canAfford() {return player.ep2.cookies.gte(this.cost())},
             img: "resources/currencies/grass.png",
-            title: "Grass",
+            title: "草地",
             buy() {
                 this.pay(this.cost())
                 setBuyableAmount(this.layer, this.id, getBuyableAmount(this.layer, this.id).add(player.ep2.shopMult))
@@ -2426,7 +2426,7 @@ addLayer("ep2", {
             cost(x) {return Decimal.sumGeometricSeries(player.ep2.shopMult, this.costBase, this.costGrowth, (x || getBuyableAmount(this.layer, this.id)))},
             canAfford() {return player.ep2.cookies.gte(this.cost())},
             img: "resources/currencies/mods.png",
-            title: "Mods",
+            title: "模组",
             buy() {
                 this.pay(this.cost())
                 setBuyableAmount(this.layer, this.id, getBuyableAmount(this.layer, this.id).add(player.ep2.shopMult))
@@ -2449,7 +2449,7 @@ addLayer("ep2", {
             cost(x) {return Decimal.sumGeometricSeries(player.ep2.shopMult, this.costBase, this.costGrowth, (x || getBuyableAmount(this.layer, this.id)))},
             canAfford() {return player.ep2.cookies.gte(this.cost())},
             img: "resources/currencies/dice.png",
-            title: "Dice",
+            title: "骰子",
             buy() {
                 this.pay(this.cost())
                 setBuyableAmount(this.layer, this.id, getBuyableAmount(this.layer, this.id).add(player.ep2.shopMult))
@@ -2472,7 +2472,7 @@ addLayer("ep2", {
             cost(x) {return Decimal.sumGeometricSeries(player.ep2.shopMult, this.costBase, this.costGrowth, (x || getBuyableAmount(this.layer, this.id)))},
             canAfford() {return player.ep2.cookies.gte(this.cost())},
             img: "resources/currencies/infinity.png",
-            title: "Infinity",
+            title: "无限",
             buy() {
                 this.pay(this.cost())
                 setBuyableAmount(this.layer, this.id, getBuyableAmount(this.layer, this.id).add(player.ep2.shopMult))
@@ -2585,7 +2585,7 @@ addLayer("ep2", {
             cost(x) {return Decimal.sumGeometricSeries(player.ep2.shopMult, this.costBase, this.costGrowth, (x || getBuyableAmount(this.layer, this.id)))},
             canAfford() {return player.ep2.cookies.gte(this.cost())},
             img: "resources/checkback/dotknightPetBuilding.png",
-            title: "Dotknight",
+            title: "圆点骑士",
             buy() {
                 this.pay(this.cost())
                 setBuyableAmount(this.layer, this.id, getBuyableAmount(this.layer, this.id).add(player.ep2.shopMult))
@@ -2625,7 +2625,7 @@ addLayer("ep2", {
             cost(x) {return Decimal.sumGeometricSeries(player.ep2.shopMult, this.costBase, this.costGrowth, (x || getBuyableAmount(this.layer, this.id)))},
             canAfford() {return player.ep2.cookies.gte(this.cost())},
             img: "resources/checkback/cookiePetBuilding.png",
-            title: "Cookie",
+            title: "饼干",
             buy() {
                 this.pay(this.cost())
                 setBuyableAmount(this.layer, this.id, getBuyableAmount(this.layer, this.id).add(player.ep2.shopMult))

@@ -1,5 +1,5 @@
 ﻿addLayer("cof", {
-    name: "Core Fragments", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "核心碎片", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "CF", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "U3",
     row: 1,
@@ -48,7 +48,7 @@
             color: "#000000",
         };
     },
-    tooltip: "Core Fragments",
+    tooltip: "核心碎片",
     branches: ["co", "s"],
     color: "#33031f",
     update(delta) {

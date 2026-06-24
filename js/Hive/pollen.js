@@ -1,5 +1,5 @@
 addLayer("bpl", {
-    name: "Pollen", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "花粉", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "PL", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "UB",
     row: 1,
@@ -57,7 +57,7 @@ addLayer("bpl", {
     nodeStyle() {
         return {borderColor: "#7f6b4e"}
     },
-    tooltip: "Pollen",
+    tooltip: "花粉",
     color: "#ffd69c",
     branches: ["bee"],
     update(delta) {
@@ -237,7 +237,7 @@ addLayer("bpl", {
                 return new Decimal(5)
             },
             currencyLocation() { return player.bpl },
-            currencyDisplayName: "Pollen",
+            currencyDisplayName: "花粉",
             currencyInternalName: "pollen",
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
@@ -253,7 +253,7 @@ addLayer("bpl", {
                 return new Decimal(15)
             },
             currencyLocation() { return player.bpl },
-            currencyDisplayName: "Pollen",
+            currencyDisplayName: "花粉",
             currencyInternalName: "pollen",
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
@@ -266,7 +266,7 @@ addLayer("bpl", {
                 return new Decimal(50)
             },
             currencyLocation() { return player.bpl },
-            currencyDisplayName: "Pollen",
+            currencyDisplayName: "花粉",
             currencyInternalName: "pollen",
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
@@ -279,7 +279,7 @@ addLayer("bpl", {
                 return new Decimal(150)
             },
             currencyLocation() { return player.bpl },
-            currencyDisplayName: "Pollen",
+            currencyDisplayName: "花粉",
             currencyInternalName: "pollen",
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
@@ -292,7 +292,7 @@ addLayer("bpl", {
                 return new Decimal(1000)
             },
             currencyLocation() { return player.bpl },
-            currencyDisplayName: "Pollen",
+            currencyDisplayName: "花粉",
             currencyInternalName: "pollen",
             effect() {
                 if (hasUpgrade("al", 128)) return Decimal.pow(2, player.bee.totalResearch.div(10))
@@ -310,7 +310,7 @@ addLayer("bpl", {
                 return new Decimal(25000)
             },
             currencyLocation() { return player.bpl },
-            currencyDisplayName: "Pollen",
+            currencyDisplayName: "花粉",
             currencyInternalName: "pollen",
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
@@ -326,7 +326,7 @@ addLayer("bpl", {
                 return new Decimal(500000)
             },
             currencyLocation() { return player.bpl },
-            currencyDisplayName: "Pollen",
+            currencyDisplayName: "花粉",
             currencyInternalName: "pollen",
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
@@ -339,7 +339,7 @@ addLayer("bpl", {
                 return new Decimal(2500000)
             },
             currencyLocation() { return player.bpl },
-            currencyDisplayName: "Pollen",
+            currencyDisplayName: "花粉",
             currencyInternalName: "pollen",
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
@@ -352,7 +352,7 @@ addLayer("bpl", {
                 return new Decimal(50000000)
             },
             currencyLocation() { return player.bpl },
-            currencyDisplayName: "Pollen",
+            currencyDisplayName: "花粉",
             currencyInternalName: "pollen",
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
@@ -366,7 +366,7 @@ addLayer("bpl", {
             },
             onPurchase() {if (!hasAchievement("achievements", 914)) completeAchievement("achievements", 914)},
             currencyLocation() { return player.bpl },
-            currencyDisplayName: "Pollen",
+            currencyDisplayName: "花粉",
             currencyInternalName: "pollen",
             effect() {
                 return player.ne.alpha.amount.pow(0.1).add(1)

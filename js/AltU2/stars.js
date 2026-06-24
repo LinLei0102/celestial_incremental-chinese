@@ -1,6 +1,6 @@
 ﻿
 addLayer("st", {
-    name: "Stars", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "星辰", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "✧", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "A2",
     row: 1,
@@ -38,7 +38,7 @@ addLayer("st", {
             color: "#eaf6f7",
         };
     },
-    tooltip: "Stars",
+    tooltip: "星辰",
     branches: [[""]],
     color: "#37078f",
     update(delta) {
@@ -255,7 +255,7 @@ addLayer("st", {
             },
         },
         3: {
-            title() { return "Buy Max On" },
+            title() { return "批量购买 开" },
             canClick() { return player.st.dimMax == false },
             unlocked() { return true },
             onClick() {
@@ -268,7 +268,7 @@ addLayer("st", {
             },
         },
         4: {
-            title() { return "Buy Max Off" },
+            title() { return "批量购买 关" },
             canClick() { return player.st.dimMax == true  },
             unlocked() { return true },
             onClick() {
@@ -1116,7 +1116,7 @@ addLayer("st", {
         },
         302: {
             image() { return this.canClick() ? "resources/Pets/diceRarePet.png" : "resources/secret.png"},
-            title() { return "Dice" },
+            title() { return "骰子" },
             description() {
                 return "x" + format(this.effect()[0]) + " to length, width, depth and spissitude.<br>"
             },
@@ -2652,7 +2652,7 @@ addLayer("st", {
                     ], {width: "550px", height: "700px", backgroundColor: "#4a4a4a80", border: "3px solid white", borderRadius: "15px 0 0 15px"}],
                 ]
             },
-            "Planets": {
+            "行星": {
                 buttonStyle() { return { color: "white", background: "linear-gradient(15deg, #34eb86 0%, #279ccf 50%, #411bb3 100%)", borderColor: "#59c2ff",borderRadius: "10px" } },
                 unlocked() { return true },
                 content: [

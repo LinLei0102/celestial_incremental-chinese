@@ -252,7 +252,7 @@ addUniverse("D1", {
 })
 
 addUniverse("CB", {
-    name: "Check Back",
+    name: "回溯",
     symbol: "CB",
     tree: [["cb", "gwaTemple"], ["ev0", "ev1", "ev2", "ev8"], ["ep0", "ep1", "ep2", "sp"]],
     nodeStyle() {
@@ -311,7 +311,7 @@ addUniverse("UB", {
 })
 
 addUniverse("BH", {
-    name: "Black Heart",
+    name: "黑心",
     symbol: "♥",
     tree: [["darkTemple", "depth1", "depth2"], ["matosLair", "depth3"], ["laboratory", "depth4", "alephsChamber"]],
     tree2: [["stagnantSynestia"]],

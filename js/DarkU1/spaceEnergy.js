@@ -1,5 +1,5 @@
 ﻿addLayer("ds", {
-    name: "Space Energy", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "空间能量", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "S", // This appears on the layer's node. Default is the id with the first letter capitalized
     row: 1,
     position: 0, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
@@ -666,7 +666,7 @@
                     ["dark-buyable", 107],
                 ]
             },
-            "Milestones": {
+            "里程碑": {
                 buttonStyle() { return { border: "2px solid #331ea5ff", borderRadius: "10px" } },
                 unlocked() { return false },
                 content: [

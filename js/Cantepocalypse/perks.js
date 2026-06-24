@@ -1,5 +1,5 @@
 ﻿addLayer("pr", {
-    name: "Perks", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "特权", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "PR", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "A1",
     row: 1,
@@ -27,7 +27,7 @@
     },
     nodeStyle() {
     },
-    tooltip: "Perks",
+    tooltip: "特权",
     branches: ["ar"],
     color: "#1D36A0",
     update(delta) {
@@ -53,7 +53,7 @@
     },
     clickables: {
         2: {
-            title() { return "Buy Max On" },
+            title() { return "批量购买 开" },
             canClick() { return player.buyMax == false },
             unlocked() { return true },
             onClick() {
@@ -62,7 +62,7 @@
             style: { width: '75px', "min-height": '50px', }
         },
         3: {
-            title() { return "Buy Max Off" },
+            title() { return "批量购买 关" },
             canClick() { return player.buyMax == true  },
             unlocked() { return true },
             onClick() {

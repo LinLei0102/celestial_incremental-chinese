@@ -1,5 +1,5 @@
 ﻿addLayer("sb", {
-    name: "Space Buildings", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "太空建筑", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "SB", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "A2",
     row: 1,
@@ -19,7 +19,7 @@
             color: "#eaf6f7",
         };
     },
-    tooltip: "Space Buildings",
+    tooltip: "太空建筑",
     branches: ["ir"],
     color: "#464646ff",
     update(delta) {

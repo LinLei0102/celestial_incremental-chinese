@@ -1,5 +1,5 @@
 ﻿addLayer("pl", {
-    name: "Planets", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "行星", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "♄", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "A2",
     row: 1,
@@ -26,7 +26,7 @@
             color: "#eaf6f7",
         };
     },
-    tooltip: "Planets",
+    tooltip: "行星",
     branches: ["st"],
     color: "#279ccf",
     update(delta) {

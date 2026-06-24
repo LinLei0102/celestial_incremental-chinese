@@ -576,7 +576,7 @@ addLayer('g', {
             description() { return "Boost pollinator gain based on golden grass." },
             cost: new Decimal("1e250"),
             currencyLocation() { return player.g },
-            currencyDisplayName: "Grass",
+            currencyDisplayName: "草地",
             currencyInternalName: "grass",
             effect() {
                 return player.g.goldGrass.add(1).log(10).pow(0.3).add(1)
@@ -590,7 +590,7 @@ addLayer('g', {
             description() { return "Raise golden grass effect by ^6." },
             cost: new Decimal("1e1200"),
             currencyLocation() { return player.g },
-            currencyDisplayName: "Grass",
+            currencyDisplayName: "草地",
             currencyInternalName: "grass",
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },

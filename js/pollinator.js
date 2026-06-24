@@ -1,6 +1,6 @@
 const POLLINATOR_INFO = {
     beetle: {
-        name: "Beetle",
+        name: "甲虫",
         image: "resources/pollinators/beetle.png",
         fact: "Beetles pollinate close to 90% of all flowering plants.",
         effect1: "Celestial Points: x",

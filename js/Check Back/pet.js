@@ -2987,7 +2987,7 @@ addLayer("pet", {
         },
         302: {
             image() { return this.canClick() ? "resources/Pets/diceRarePet.png" : "resources/secret.png"},
-            title() { return "Dice" },
+            title() { return "骰子" },
             lore() { return "One of Zar's creations. This pet will always output a random number between 1 and 6." }, 
             description() {
                 return "x" + format(this.effect()[0]) + " to dice points <small>(based on highest combo)</small>.<br>" +
@@ -3511,7 +3511,7 @@ addLayer("pet", {
         // EPIC PETS
         401: {
             image() { return this.canClick() ? "resources/Pets/dotknightEpicPet.png" : "resources/secret.png"},
-            title() { return "Dotknight" },
+            title() { return "圆点骑士" },
             lore() { return "A knight of unknown origin that wields the cursword, which is one of the most powerful swords. He is yet to awaken its true power." }, 
             description() {
                 return "x" + format(this.effect()[0]) + " to pet points <small>(based on XPBoost)</small>.<br>" +
@@ -3609,7 +3609,7 @@ addLayer("pet", {
         },
         403: {
             image() { return this.canClick() ? "resources/Pets/cookieEpicPet.png" : "resources/secret.png"},
-            title() { return "Cookie" },
+            title() { return "饼干" },
             lore() { return "This cookie is imbued with large amounts of incremental power. Clicking it would be very dangerous." }, 
             description() {
                 return "x" + format(this.effect()[0]) + " to cante energy <small>(based on cante cores)</small>.<br>" +
@@ -5453,7 +5453,7 @@ addLayer("pet", {
                 content: [
                     ["scroll-column", [
                         ["style-column", [
-                            ["raw-html", "Epic Pets", {color: "#cb79ed", fontSize: "20px", fontFamily: "monospace"}],
+                            ["raw-html", "史诗宠物", {color: "#cb79ed", fontSize: "20px", fontFamily: "monospace"}],
                         ], {width: "550px", height: "40px", backgroundColor: "#28182f", borderBottom: "3px solid #cb79ed", userSelect: "none"}],
                         ["blank", "5px"],
                         ["row", [["clickable", 1401], ["clickable", 1402], ["clickable", 1403], ["clickable", 1404]]],

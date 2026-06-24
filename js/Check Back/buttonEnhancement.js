@@ -1,5 +1,5 @@
 addLayer("ev1", {
-    name: "Button Enhancement", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "按钮强化", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "Be", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "CB",
     row: 1,
@@ -17,7 +17,7 @@ addLayer("ev1", {
 		backgroundOrigin: "border-box",
 		borderColor: "#750000"
     },
-    tooltip: "Button Enhancement",
+    tooltip: "按钮强化",
     color: "white",
     update(delta) {
         let onepersec = player.cb.cbTickspeed
@@ -45,7 +45,7 @@ addLayer("ev1", {
     },
     clickables: {
         2: {
-            title: "Buy Max On",
+            title: "批量购买 开",
             canClick() {return !player.ev1.buyMax},
             unlocked: true,
             onClick() {
@@ -54,7 +54,7 @@ addLayer("ev1", {
             style: {width: '80px', minHeight: "50px", borderRadius: "10px 0px 0px 10px"}
         },
         3: {
-            title: "Buy Max Off",
+            title: "批量购买 关",
             canClick() {return player.ev1.buyMax},
             unlocked: true,
             onClick() {

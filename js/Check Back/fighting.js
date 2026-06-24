@@ -313,11 +313,11 @@ addLayer("fi", {
             style: {width: "125px", minHeight: "60px", backgroundImage: "linear-gradient(90deg, #2e7ae4, #4ac5e6)", color: "black", borderRadius: "0px", border: "0px", borderBottom: "2px solid white"},
         },
         17: {
-            title() { return "Milestones" },
+            title() { return "里程碑" },
             canClick() { return true },
             unlocked() { return !player.fi.inBattle && hasUpgrade("fi", 15)},
             onClick() {
-                player.subtabs["fi"]["content"] = "Milestones"
+                player.subtabs["fi"]["content"] = "里程碑"
             },
             style: {width: "125px", minHeight: "60px", backgroundImage: "linear-gradient(90deg, #2e7ae4, #073e8bff)", color: "black", borderRadius: "0px", border: "0px", borderBottom: "2px solid white"},
         },
@@ -579,7 +579,7 @@ addLayer("fi", {
             }
         },
         15: {
-            title: "Milestones",
+            title: "里程碑",
             unlocked() { return true},
             description: "Unlocks milestones.",
             cost: new Decimal("2"),
@@ -821,7 +821,7 @@ addLayer("fi", {
                     ], {width: "550px", height: "700px", backgroundImage: "linear-gradient(90deg, #2e7ae4, #4ac5e6)", border: "0px solid rgb(218, 218, 218)", borderRadius: "0px 0px 0px 0px"}],
                 ],
             },
-            "Milestones": {
+            "里程碑": {
                 buttonStyle() { return {color: "#06366e"}},
                 unlocked() { return true },
                 content: [

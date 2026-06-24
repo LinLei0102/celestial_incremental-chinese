@@ -9,7 +9,7 @@ const CELL_MILESTONES = [
 // ADD STAMEN LAYER WHICH IS A FLOWER RESET LAYER
 // RESET LAYER AFTER NESTS IS A META LAYER THAT SWITCHES THE MAIN RESOURCE FROM BEES TO OTHER STUFF
 addLayer("ho", {
-    name: "Honey", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "蜂蜜", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "HO", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "UB",
     row: 1,
@@ -76,7 +76,7 @@ addLayer("ho", {
     nodeStyle() {
         return {borderColor: "#654700"}
     },
-    tooltip: "Honey",
+    tooltip: "蜂蜜",
     color: "#cb8e00",
     branches: ["ne"],
     update(delta) {
@@ -342,7 +342,7 @@ addLayer("ho", {
                 return new Decimal(1e6)
             },
             currencyLocation() { return player.ho },
-            currencyDisplayName: "Honey",
+            currencyDisplayName: "蜂蜜",
             currencyInternalName: "honey",
             effect() {
                 if (hasUpgrade("al", 223)) return Decimal.pow(3, player.ho.upgrades.length)
@@ -360,7 +360,7 @@ addLayer("ho", {
                 return new Decimal(3e6)
             },
             currencyLocation() { return player.ho },
-            currencyDisplayName: "Honey",
+            currencyDisplayName: "蜂蜜",
             currencyInternalName: "honey",
             effect() {
                 let lvl = new Decimal(0)
@@ -382,7 +382,7 @@ addLayer("ho", {
                 return new Decimal(1e7)
             },
             currencyLocation() { return player.ho },
-            currencyDisplayName: "Honey",
+            currencyDisplayName: "蜂蜜",
             currencyInternalName: "honey",
             effect() {
                 if (hasUpgrade("al", 223)) return player.ne.beta.amount.add(1).log(5).div(10).add(1)
@@ -400,7 +400,7 @@ addLayer("ho", {
                 return new Decimal(4e7)
             },
             currencyLocation() { return player.ho },
-            currencyDisplayName: "Honey",
+            currencyDisplayName: "蜂蜜",
             currencyInternalName: "honey",
             effect() {
                 if (hasUpgrade("al", 223)) return player.ne.gamma.amount.add(1).pow(0.04)
@@ -418,7 +418,7 @@ addLayer("ho", {
                 return new Decimal(2e8)
             },
             currencyLocation() { return player.ho },
-            currencyDisplayName: "Honey",
+            currencyDisplayName: "蜂蜜",
             currencyInternalName: "honey",
             effect() {
                 if (hasUpgrade("al", 223)) return player.ho.cell.add(1).log(5).div(4).add(1)
@@ -436,7 +436,7 @@ addLayer("ho", {
                 return new Decimal(1e9)
             },
             currencyLocation() { return player.ho },
-            currencyDisplayName: "Honey",
+            currencyDisplayName: "蜂蜜",
             currencyInternalName: "honey",
             effect() {
                 if (hasUpgrade("al", 223)) return player.fl.glossaryBase

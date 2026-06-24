@@ -1,5 +1,5 @@
 ﻿addLayer("wof", {
-    name: "Wheel of Fortune", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "命运之轮", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "<h4>WOF", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "DS",
     row: 1,
@@ -50,7 +50,7 @@
             transform: "translateX(50px)"
         }
     },
-    tooltip: "Wheel of Fortune",
+    tooltip: "命运之轮",
     color: "#3d8165ff",
     branches: ["cf",],
     update(delta) {

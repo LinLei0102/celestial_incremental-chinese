@@ -1,5 +1,5 @@
 ﻿addLayer("sm", {
-    name: "Slot Machine", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "老虎机", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "<h4>SM", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "DS",
     row: 1,
@@ -59,7 +59,7 @@
             transform: "translateY(-0px)",
         }
     },
-    tooltip: "Slot Machine",
+    tooltip: "老虎机",
     color: "#c1c436ff",
     branches: ["wof",],
     update(delta) {

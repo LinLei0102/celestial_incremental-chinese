@@ -1,5 +1,5 @@
 ﻿addLayer("gh", {
-    name: "Grasshop", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "草跃", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "GH", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "U1",
     row: 1,
@@ -61,7 +61,7 @@
         }
     },
     nodeStyle() {},
-    tooltip: "Grasshop",
+    tooltip: "草跃",
     color: "#19e04d",
     update(delta) {
         let onepersec = new Decimal(1)
@@ -254,7 +254,7 @@
     branches() { return !player.zarDungeon.zarDefeated ? "g" : ["p"] },
     clickables: {
         2: {
-            title() { return "Buy Max On" },
+            title() { return "批量购买 开" },
             canClick() { return player.gh.studyMax == false },
             unlocked() { return true },
             onClick() {
@@ -263,7 +263,7 @@
             style: { width: '80px', "min-height": '50px', borderRadius: '10px 0px 0px 10px'}
         },
         3: {
-            title() { return "Buy Max Off" },
+            title() { return "批量购买 关" },
             canClick() { return player.gh.studyMax == true  },
             unlocked() { return true },
             onClick() {
@@ -272,7 +272,7 @@
             style: { width: '80px', "min-height": '50px', borderRadius: '0px 10px 10px 0px'}
         },
         4: {
-            title() { return "Buy Max On" },
+            title() { return "批量购买 开" },
             canClick() { return player.gh.steelMax == false },
             unlocked() { return true },
             onClick() {
@@ -281,7 +281,7 @@
             style: { width: '75px', "min-height": '50px', }
         },
         5: {
-            title() { return "Buy Max Off" },
+            title() { return "批量购买 关" },
             canClick() { return player.gh.steelMax == true  },
             unlocked() { return true },
             onClick() {

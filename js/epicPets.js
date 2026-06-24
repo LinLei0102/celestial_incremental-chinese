@@ -1,5 +1,5 @@
 ﻿addLayer("ep0", {
-    name: "Dotknight", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "圆点骑士", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "Dk", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "CB",
     row: 1,
@@ -34,7 +34,7 @@
     nodeStyle: {
         backgroundColor: "#9176af",
     },
-    tooltip: "Dotknight",
+    tooltip: "圆点骑士",
     color: "#cb79ed",
     update(delta) {
         let onepersec = new Decimal(1)

@@ -1,5 +1,5 @@
 addLayer("ne", {
-    name: "Nectar", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "花蜜", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "NE", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "UB",
     row: 1,
@@ -61,7 +61,7 @@ addLayer("ne", {
     nodeStyle() {
         return {borderColor: "#6d3701"}
     },
-    tooltip: "Nectar",
+    tooltip: "花蜜",
     color: "#db6f02",
     branches: ["fl"],
     update(delta) {

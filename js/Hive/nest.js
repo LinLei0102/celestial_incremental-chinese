@@ -813,7 +813,7 @@ addLayer("n", {
                     ["upgrade", 71],
                 ],
             },
-            "Milestones": {
+            "里程碑": {
                 buttonStyle: {borderColor: "#E3987A", borderRadius: "15px"},
                 unlocked: true,
                 content: [

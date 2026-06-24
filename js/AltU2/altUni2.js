@@ -103,12 +103,12 @@
                     ["tree", universes.A2.tree],
                 ]
             },
-            "Portal": {
+            "传送门": {
                 buttonStyle() { return { color: "black", borderRadius: "5px", borderColor: "purple", background: "linear-gradient(45deg, #8a00a9, #0061ff)"}},
                 unlocked() { return true },
                 content: [],
             },
-            "Settings": {
+            "设置": {
                 buttonStyle() { return { color: "white", borderRadius: "5px" }},
                 unlocked() { return true },
                 content: [],

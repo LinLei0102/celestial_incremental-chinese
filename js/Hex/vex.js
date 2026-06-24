@@ -113,7 +113,7 @@ addLayer("hve", {
                 player.hve.rowCurrent[0] = player.hve.rowCurrent[0] - 1
             },
             currencyLocation() { return player.hve },
-            currencyDisplayName: "Vex",
+            currencyDisplayName: "烦恼",
             currencyInternalName: "vex",
             effect() {
                 let eff = player.h.hexPoint.div(1e36).add(1).log(1e6).pow(0.6).add(1).mul(2)
@@ -132,7 +132,7 @@ addLayer("hve", {
                 player.hve.rowCurrent[0] = player.hve.rowCurrent[0] - 1
             },
             currencyLocation() { return player.hve },
-            currencyDisplayName: "Vex",
+            currencyDisplayName: "烦恼",
             currencyInternalName: "vex",
             effect() {
                 let eff = player.hbl.blessings.div(1e5).add(1).log(36).pow(0.6).add(1).mul(2)
@@ -151,7 +151,7 @@ addLayer("hve", {
                 player.hve.rowCurrent[0] = player.hve.rowCurrent[0] - 1
             },
             currencyLocation() { return player.hve },
-            currencyDisplayName: "Vex",
+            currencyDisplayName: "烦恼",
             currencyInternalName: "vex",
             effect() {
                 let eff = player.hcu.curses.div(1e30).add(1).log(1e12).pow(0.6).add(1).mul(2)
@@ -170,7 +170,7 @@ addLayer("hve", {
                 player.hve.rowCurrent[1] = player.hve.rowCurrent[1] - 1
             },
             currencyLocation() { return player.hve },
-            currencyDisplayName: "Vex",
+            currencyDisplayName: "烦恼",
             currencyInternalName: "vex",
             style: {width: "110px", minHeight: "110px", margin: "5px", borderRadius: "50%"},
         },
@@ -184,7 +184,7 @@ addLayer("hve", {
                 player.hve.rowCurrent[1] = player.hve.rowCurrent[1] - 1
             },
             currencyLocation() { return player.hve },
-            currencyDisplayName: "Vex",
+            currencyDisplayName: "烦恼",
             currencyInternalName: "vex",
             style: {width: "110px", minHeight: "110px", margin: "5px", borderRadius: "50%"},
         },
@@ -198,7 +198,7 @@ addLayer("hve", {
                 player.hve.rowCurrent[1] = player.hve.rowCurrent[1] - 1
             },
             currencyLocation() { return player.hve },
-            currencyDisplayName: "Vex",
+            currencyDisplayName: "烦恼",
             currencyInternalName: "vex",
             style: {width: "110px", minHeight: "110px", margin: "5px", borderRadius: "50%"},
         },
@@ -212,7 +212,7 @@ addLayer("hve", {
                 player.hve.rowCurrent[2] = player.hve.rowCurrent[2] - 1
             },
             currencyLocation() { return player.hve },
-            currencyDisplayName: "Vex",
+            currencyDisplayName: "烦恼",
             currencyInternalName: "vex",
             style: {width: "110px", minHeight: "110px", margin: "5px", borderRadius: "50%"},
         },
@@ -226,7 +226,7 @@ addLayer("hve", {
                 player.hve.rowCurrent[2] = player.hve.rowCurrent[2] - 1
             },
             currencyLocation() { return player.hve },
-            currencyDisplayName: "Vex",
+            currencyDisplayName: "烦恼",
             currencyInternalName: "vex",
             style: {width: "110px", minHeight: "110px", margin: "5px", borderRadius: "50%"},
         },
@@ -242,7 +242,7 @@ addLayer("hve", {
                 player.hpu.purifiers[4].amount = player.hpu.purifiers[4].amount.add(1)
             },
             currencyLocation() { return player.hve },
-            currencyDisplayName: "Vex",
+            currencyDisplayName: "烦恼",
             currencyInternalName: "vex",
             style: {width: "110px", minHeight: "110px", margin: "5px", borderRadius: "50%"},
         },
@@ -256,7 +256,7 @@ addLayer("hve", {
                 player.hve.rowCurrent[3] = player.hve.rowCurrent[3] - 1
             },
             currencyLocation() { return player.hve },
-            currencyDisplayName: "Vex",
+            currencyDisplayName: "烦恼",
             currencyInternalName: "vex",
             effect() {
                 return player.hre.refinement.div(3).pow(0.6).div(6).add(1)
@@ -273,7 +273,7 @@ addLayer("hve", {
                 player.hve.rowCurrent[3] = player.hve.rowCurrent[3] - 1
             },
             currencyLocation() { return player.hve },
-            currencyDisplayName: "Vex",
+            currencyDisplayName: "烦恼",
             currencyInternalName: "vex",
             effect() {
                 return player.hbl.boons.add(1).log(12).pow(0.6).div(6).add(1)
@@ -290,7 +290,7 @@ addLayer("hve", {
                 player.hve.rowCurrent[3] = player.hve.rowCurrent[3] - 1
             },
             currencyLocation() { return player.hve },
-            currencyDisplayName: "Vex",
+            currencyDisplayName: "烦恼",
             currencyInternalName: "vex",
             effect() {
                 return player.hcu.jinxTotal.div(15).pow(0.6).div(6).add(1)
@@ -307,7 +307,7 @@ addLayer("hve", {
                 player.hve.rowCurrent[4] = player.hve.rowCurrent[4] - 1
             },
             currencyLocation() { return player.hve },
-            currencyDisplayName: "Vex",
+            currencyDisplayName: "烦恼",
             currencyInternalName: "vex",
             style: {width: "110px", minHeight: "110px", margin: "5px", borderRadius: "50%"},
         },
@@ -323,7 +323,7 @@ addLayer("hve", {
                 player.hve.rowCurrent[4] = player.hve.rowCurrent[4] - 1
             },
             currencyLocation() { return player.hve },
-            currencyDisplayName: "Vex",
+            currencyDisplayName: "烦恼",
             currencyInternalName: "vex",
             style: {width: "110px", minHeight: "110px", margin: "5px", borderRadius: "50%"},
         },
@@ -337,7 +337,7 @@ addLayer("hve", {
                 player.hve.rowCurrent[4] = player.hve.rowCurrent[4] - 1
             },
             currencyLocation() { return player.hve },
-            currencyDisplayName: "Vex",
+            currencyDisplayName: "烦恼",
             currencyInternalName: "vex",
             style: {width: "110px", minHeight: "110px", margin: "5px", borderRadius: "50%"},
         },
@@ -351,7 +351,7 @@ addLayer("hve", {
                 player.hve.rowCurrent[5] = player.hve.rowCurrent[5] - 1
             },
             currencyLocation() { return player.hve },
-            currencyDisplayName: "Vex",
+            currencyDisplayName: "烦恼",
             currencyInternalName: "vex",
             style: {width: "110px", minHeight: "110px", margin: "5px", borderRadius: "50%"},
         },
@@ -365,7 +365,7 @@ addLayer("hve", {
                 player.hve.rowCurrent[5] = player.hve.rowCurrent[5] - 1
             },
             currencyLocation() { return player.hve },
-            currencyDisplayName: "Vex",
+            currencyDisplayName: "烦恼",
             currencyInternalName: "vex",
             style: {width: "110px", minHeight: "110px", margin: "5px", borderRadius: "50%"},
         },
@@ -379,7 +379,7 @@ addLayer("hve", {
                 player.hve.rowCurrent[5] = player.hve.rowCurrent[5] - 1
             },
             currencyLocation() { return player.hve },
-            currencyDisplayName: "Vex",
+            currencyDisplayName: "烦恼",
             currencyInternalName: "vex",
             style: {width: "110px", minHeight: "110px", margin: "5px", borderRadius: "50%"},
         },

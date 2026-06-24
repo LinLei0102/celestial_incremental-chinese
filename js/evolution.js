@@ -1,5 +1,5 @@
 ﻿addLayer("ev", {
-    name: "Evolution", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "进化", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "E", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "CB",
     row: 1,
@@ -29,7 +29,7 @@
         */
     }},
     nodeStyle() {},
-    tooltip: "Evolution",
+    tooltip: "进化",
     color: "#06366e",
     update(delta) {
         let onepersec = player.cb.cbTickspeed
@@ -406,7 +406,7 @@
             }
         },
         5: {
-            title() { return "Dice" },
+            title() { return "骰子" },
             description() {
                 return "<div class='evoContainer'><h3>Costs:</h3>" +
                 "<br>"  + formatWhole(player.cb.evolutionShards) + "/25 Evolution Shards" +

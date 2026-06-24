@@ -1,5 +1,5 @@
 ﻿addLayer("car", {
-    name: "Cards", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "卡牌", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "<h4>CA", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "DS",
     row: 1,
@@ -40,7 +40,7 @@
             transform: "translateX(50px)"
         }
     },
-    tooltip: "Cards",
+    tooltip: "卡牌",
     color: "rgb(182, 0, 0)",
     branches: ["cbs",],
     update(delta) {

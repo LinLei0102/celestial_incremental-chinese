@@ -1,5 +1,5 @@
 ﻿addLayer("fa", {
-    name: "Factory", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "工厂", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "FA", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "U1",
     row: 1,
@@ -32,7 +32,7 @@
         }
     },
     branches() { return !player.zarDungeon.zarDefeated ? "cb" : ["cb", "d", "rf"] },
-    tooltip: "Factory",
+    tooltip: "工厂",
     color: "gray",
     update(delta) {
         let onepersec = new Decimal(1)

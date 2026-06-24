@@ -4,7 +4,7 @@
     [new Decimal(10), new Decimal(30), new Decimal(80)]
 ]
 addLayer("cb", {
-    name: "Check Back", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "回溯", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "CB", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "CB",
     row: 1,
@@ -176,7 +176,7 @@ addLayer("cb", {
         pityParaCurrent: new Decimal(0),
         pityMax: new Decimal(200),
     }},
-    tooltip: "Check Back",
+    tooltip: "回溯",
     color: "#094599",
     update(delta) {
         let onepersec = new Decimal(1)
@@ -2222,7 +2222,7 @@ addLayer("cb", {
     },
     infoboxes: {
         1: {
-            title: "Check Back",
+            title: "回溯",
             body() { return "Created by Marcel Acoplao, Check Back is a very powerful method for superphysical value extraction, due to it's high time demands. It was developed for celestial hunters in training, as a way to get stronger. However, it fell out of fashion as new methods for superphysical extraction became popular, such as ??? and ?????????." },
             unlocked() { return hasUpgrade("s", 23) },      
         },
@@ -2241,7 +2241,7 @@ addLayer("cb", {
                     ["microtabs", "buttons", { 'border-width': '0px' }],
                 ]
             },
-            "Lore": {
+            "传说": {
                 buttonStyle() { return { color: "#094599", borderColor: "#094599", borderRadius: "5px"}},
                 unlocked() { return hasUpgrade("s", 23) },
                 content: [
@@ -2270,7 +2270,7 @@ addLayer("cb", {
                     ], {width: "350px", height: "30px", background: "#094599", borderRadius: "20px"}],
                 ]
             },
-            "Evolution": {
+            "进化": {
                 buttonStyle() { return {color: "#1500bf", borderColor: "#1500bf", backgroundImage: "linear-gradient(90deg, #d487fd, #4b79ff)", borderRadius: "5px" }},
                 unlocked() { return player.cb.highestLevel.gte(35)  },
                 embedLayer: 'ev'

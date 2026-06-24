@@ -37,7 +37,7 @@ function shipBattleSkip(level = new Decimal(0), upgEffect = {}) {
 }
 
 addLayer("ir", {
-    name: "Iridite",
+    name: "铱晶",
     symbol: "✦",
     universe: "A2",
     row: 1,
@@ -934,7 +934,7 @@ addLayer("ir", {
             },
         },
         19: {
-            title: "Iridite",
+            title: "铱晶",
             unlocked() { return player.ir.ufoDefeated },
             description: "...",
             cost: new Decimal(10000),
@@ -1006,7 +1006,7 @@ addLayer("ir", {
             },
         },
         105: {
-            title: "Exploration",
+            title: "探索",
             unlocked() { return buyableEffect("sb", 12).gte(3) },
             description: "Unlock more star exploration nodes.",
             cost: new Decimal(12),
@@ -1201,7 +1201,7 @@ addLayer("ir", {
                         ["upgrade", 207]]],
                 ]
             },
-            "Perks": {
+            "特权": {
                 buttonStyle() { return {color: "white", borderRadius: "5px", borderColor: "#37078f"} },
                 unlocked() { return player.ir.iriditeDefeated && !player.ir.inBattle },
                 content: [

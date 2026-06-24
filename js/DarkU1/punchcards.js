@@ -1,5 +1,5 @@
 addLayer("pu", {
-    name: "Punchcards", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "打孔卡", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "PU", // This appears on the layer's node. Default is the id with the first letter capitalized
     row: 1,
     position: 0, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
@@ -32,7 +32,7 @@ addLayer("pu", {
             color: "#f5f7ff",
         };
     },
-    tooltip: "Punchcards",
+    tooltip: "打孔卡",
     color: "black",
     update(delta) {
         if (player.pu.selectedPunchcards[player.pu.selectionIndex] > 400) {
@@ -1076,7 +1076,7 @@ addLayer("pu", {
         200: {
             image() {return this.canClick() ? "resources/Punchcards/rarePunchcard0.png" : "resources/Punchcards/lockedPunchcard.png"},
             title() {
-                let str = "Cante"
+                let str = "坎特"
                 if (getLevelableTier(this.layer, this.id, true)) {str = str.concat("<small> [ACTIVE]</small>")} else {str = str.concat("<small style='color:gray'> [INACTIVE]</small>")}
                 return str
             },
@@ -1728,7 +1728,7 @@ addLayer("pu", {
         212: {
             image() {return this.canClick() ? "resources/Punchcards/rarePunchcard12.png" : "resources/Punchcards/lockedPunchcard.png"},
             title() {
-                let str = "Iridite"
+                let str = "铱晶"
                 if (getLevelableTier(this.layer, this.id, true)) {str = str.concat("<small> [ACTIVE]</small>")} else {str = str.concat("<small style='color:gray'> [INACTIVE]</small>")}
                 return str
             },
@@ -2101,7 +2101,7 @@ addLayer("pu", {
         305: {
             image() {return this.canClick() ? "resources/Punchcards/epicPunchcard5.png" : "resources/Punchcards/lockedPunchcard.png"},
             title() {
-                let str = "Challenge"
+                let str = "挑战"
                 if (getLevelableTier(this.layer, this.id, true)) {str = str.concat("<small> [ACTIVE]</small>")} else {str = str.concat("<small style='color:gray'> [INACTIVE]</small>")}
                 return str
             },
@@ -2264,7 +2264,7 @@ addLayer("pu", {
         308: {
             image() {return this.canClick() ? "resources/Punchcards/epicPunchcard8.png" : "resources/Punchcards/lockedPunchcard.png"},
             title() {
-                let str = "Aleph"
+                let str = "阿列夫"
                 if (getLevelableTier(this.layer, this.id, true)) {str = str.concat("<small> [ACTIVE]</small>")} else {str = str.concat("<small style='color:gray'> [INACTIVE]</small>")}
                 return str
             },
@@ -2372,7 +2372,7 @@ addLayer("pu", {
         402: {
             image() {return this.canClick() ? "resources/Punchcards/legendaryPunchcard2.png" : "resources/Punchcards/lockedPunchcard.png"},
             title() {
-                let str = "Zar"
+                let str = "扎尔"
                 if (getLevelableTier(this.layer, this.id, true)) {str = str.concat("<small> [ACTIVE]</small>")} else {str = str.concat("<small style='color:gray'> [INACTIVE]</small>")}
                 return str
             },

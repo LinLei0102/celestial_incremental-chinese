@@ -2,7 +2,7 @@ addLayer("hre", {
     name: "Hex of Refinement",
     symbol: "Rf", // Decides what text appears on the node.
     universe: "UA",
-    tooltip: "Refinement", // Decides the nodes tooltip
+    tooltip: "精炼", // Decides the nodes tooltip
     color: "#444", // Decides the nodes color.
     nodeStyle: {backgroundColor: "black", borderColor: "#ccc", color: "#ccc"}, // Decides the nodes style, in CSS format.
     branches: ["hpr", "hbl"], // Decides the nodes branches.
@@ -350,7 +350,7 @@ addLayer("hre", {
                     ]],
                 ]
             },
-            "Milestones": {
+            "里程碑": {
                 buttonStyle() { return {borderRadius: "5px"}},
                 unlocked: true,
                 content: [

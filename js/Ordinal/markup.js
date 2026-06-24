@@ -1,7 +1,7 @@
 const baseShiftCost = [new Decimal("200"), new Decimal("1000"), new Decimal("10000"), new Decimal("350000"), new Decimal("1e12"), new Decimal("1e21"), new Decimal("1e100")]
 
 addLayer("mu", {
-    name: "Markup", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "标记", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "MU", // This appears on the layer's node. Default is the id with the first letter capitalized
     row: 1,
     position: 0, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
@@ -20,7 +20,7 @@ addLayer("mu", {
     }},
     automate() {},
     nodeStyle() {},
-    tooltip: "Markup",
+    tooltip: "标记",
     color: "#DAA520",
     branches: [],
     update(delta) {

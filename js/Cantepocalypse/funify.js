@@ -1,6 +1,6 @@
 ﻿addLayer("fu", {
     name() {
-        return !player.fu.jocusCelestialActivate ? "Funify" : "Jocus, Celestial of Fun"
+        return !player.fu.jocusCelestialActivate ? "趣味化" : "Jocus, Celestial of Fun"
     }, // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol() {
         return !player.fu.jocusCelestialActivate ? "Fu" : "☻"
@@ -129,7 +129,7 @@
         };
     },
     tooltip() {
-        return !player.fu.jocusCelestialActivate ? "Funify" : "Jocus, Celestial of Fun"
+        return !player.fu.jocusCelestialActivate ? "趣味化" : "Jocus, Celestial of Fun"
     },
     color: "#fcff04",
     branches: ["oi", 'gs'],
@@ -393,7 +393,7 @@
     },
     clickables: {
         2: {
-            title() { return "Buy Max On" },
+            title() { return "批量购买 开" },
             canClick() { return player.fu.fMax == false },
             unlocked() { return true },
             onClick() {
@@ -402,7 +402,7 @@
             style: { width: '75px', "min-height": '50px', }
         },
         3: {
-            title() { return "Buy Max Off" },
+            title() { return "批量购买 关" },
             canClick() { return player.fu.fMax == true  },
             unlocked() { return true },
             onClick() {
@@ -3322,7 +3322,7 @@
                     ], {maxWidth: "750px"}],
                 ]
             },
-            "Perks": {
+            "特权": {
                 buttonStyle() { return { color: "white", borderRadius: "5px" } },
                 unlocked() { return hasChallenge("fu", 11) },
                 content: [

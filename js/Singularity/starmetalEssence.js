@@ -1,5 +1,5 @@
 ﻿addLayer("sme", {
-    name: "Starmetal Essence", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "星金属精华", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "SME", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "U3",
     row: 1,
@@ -32,7 +32,7 @@
             "color": "#282363",
         };
     },
-    tooltip: "Starmetal Essence",
+    tooltip: "星金属精华",
     branches: ["bh", "sd", "sma"],
     color: "#d460eb",
     update(delta) {
@@ -2170,7 +2170,7 @@
     infoboxes: {},
     microtabs: {
         stuff: {
-            "Generators": {
+            "发电机": {
                 buttonStyle() {return {color: "white", borderRadius: "10px"}},
                 unlocked: true,
                 content: [

@@ -1,5 +1,5 @@
 ﻿addLayer("s", {
-    name: "Genesis", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "创世", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "GE", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "U3",
     row: 1,
@@ -39,7 +39,7 @@
         backgroundOrigin: "border-box",
         borderColor: "#333",
     },
-    tooltip: "Genesis",
+    tooltip: "创世",
     color: "#a00",
     branches: ["co"],
     update(delta) {
@@ -682,7 +682,7 @@
     challenges: {},
     infoboxes: {
         1: {
-            title: "Singularity",
+            title: "奇点",
             body() { return "When mass is confined to an infinitely small point of space, it forms a singularity. Singularities are much more powerful versions of infinities, but their power was neglected by the original seven due to unknown reasons. It was believed that the power of singularity causes celestials to go rogue, as they become remorseless and evil due to some superphysical power. Others say that the original seven avoided using the power of singularity as it would lead to the destruction of worlds. The original seven opted to utilize eternities, which was an infinite concentration of time, instead of matter." },
             unlocked() { return hasMilestone("s", 11) },      
         },
@@ -692,7 +692,7 @@
             unlocked() { return hasMilestone("s", 19) },      
         },
         3: {
-            title: "Starmetal Alloy",
+            title: "星金属合金",
             body() { return "Starmetal Alloy is made by harnessing the power of photons into physical matter using superphysical values. However, when in the process of creating starmetal alloy, photons become dormant, which means there is no light. And in the absence of light, there is darkness. In darkness, superphysical values become altered. Values are harder to gain and are more prone to reset. This has made gaining starmetal alloy difficult." },
             unlocked() { return hasUpgrade("s", 21) },      
         },
@@ -712,7 +712,7 @@
                     ], {maxWidth: "800px"}],
                 ]
             },
-            "Milestones": {
+            "里程碑": {
                 buttonStyle() { return { color: "white", borderRadius: "5px" }},
                 unlocked() { return true },
                 content: [
@@ -748,7 +748,7 @@
                     ["style-row", [["ex-buyable", 11], ["ex-buyable", 12], ["ex-buyable", 13]], {maxWidth: "900px"}],
                 ]
             },
-            "Lore": {
+            "传说": {
                 buttonStyle() { return { 'color': 'white' } },
                 unlocked() { return true },
                 content:

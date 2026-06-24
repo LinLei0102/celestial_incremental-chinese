@@ -1,5 +1,5 @@
 addLayer("depth1", {
-    name: "Depth 1", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "深度1", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "D1", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "BH",
     row: 1,
@@ -59,7 +59,7 @@ addLayer("depth1", {
         if (player.subtabs["bh"]["stages"] == "depth1") str.outline = "3px solid #999"
         return str
     },
-    tooltip: "Depth 1",
+    tooltip: "深度1",
     color: "#8a0e79",
     update(delta) {
         player.depth1.comboEffect = Decimal.pow(3, player.depth1.highestCombo.min(250)).pow(buyableEffect("depth1", 2))
@@ -513,7 +513,7 @@ addLayer("depth1", {
                         ["style-column", [
                             ["style-column", [
                                 ["style-column", [
-                                    ["raw-html", "Depth 1", {color: "var(--textColor)", fontSize: "24px", fontFamily: "monospace"}],
+                                    ["raw-html", "深度1", {color: "var(--textColor)", fontSize: "24px", fontFamily: "monospace"}],
                                 ], {width: "200px", height: "35px", borderBottom: "2px solid var(--regBorder)", marginBottom: "5px"}],
                                 ["clickable", "enter"],
                             ], {width: "250px", height: "127px", background: "var(--miscButtonDisable)", borderBottom: "3px solid var(--regBorder)"}],
@@ -593,7 +593,7 @@ addLayer("depth1", {
                         ["style-column", [
                             ["style-column", [
                                 ["style-column", [
-                                    ["raw-html", "Depth 1", {color: "var(--textColor)", fontSize: "24px", fontFamily: "monospace"}],
+                                    ["raw-html", "深度1", {color: "var(--textColor)", fontSize: "24px", fontFamily: "monospace"}],
                                 ], {width: "200px", height: "35px", borderBottom: "2px solid var(--regBorder)", marginBottom: "5px"}],
                                 ["clickable", "enter"],
                             ], {width: "250px", height: "127px", background: "var(--miscButton)", borderBottom: "3px solid var(--regBorder)"}],
@@ -656,7 +656,7 @@ addLayer("depth1", {
 })
 
 BHS.depth1 = {
-    nameCap: "Depth 1",
+    nameCap: "深度1",
     nameLow: "depth 1",
     music: "music/celestialites.mp3",
     comboLimit: 250,

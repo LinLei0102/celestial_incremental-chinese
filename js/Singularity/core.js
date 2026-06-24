@@ -1,6 +1,6 @@
 const CORE_STRENGTH = [
     {
-        name: "Faulty",
+        name: "缺陷核心",
         color: "#bbb",
         buff: 1,
     }, {

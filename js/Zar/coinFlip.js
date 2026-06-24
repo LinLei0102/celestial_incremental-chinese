@@ -1,5 +1,5 @@
 ﻿addLayer("cf", {
-    name: "Coin Flip", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "抛硬币", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "<h4>CF", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "DS",
     row: 1,
@@ -66,7 +66,7 @@
             transform: "translateX(-50px)"
         }
     },
-    tooltip: "Coin Flip",
+    tooltip: "抛硬币",
     color: "#80613fff",
     branches: ["za",],
     update(delta) {

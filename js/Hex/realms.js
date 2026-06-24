@@ -2,7 +2,7 @@ addLayer("hrm", {
     name: "Hex of Realms",
     symbol: "Re", // Decides what text appears on the node.
     universe: "UA",
-    tooltip: "Realms", // Decides the nodes tooltip
+    tooltip: "领域", // Decides the nodes tooltip
     color: "white", // Decides the nodes color.
     nodeStyle: {color: "#ccc", background: "linear-gradient(180deg, #770000, #775400, #747700, #147700, #00772A, #007769, #004677, #000877, #330077, #710077)", borderColor: "#0061ff"}, // Decides the nodes style, in CSS format.
     branches: ["hpw"], // Decides the nodes branches.
@@ -436,7 +436,7 @@ addLayer("hrm", {
     },
     microtabs: {
         realm: {
-            "Challenges": {
+            "挑战": {
                 buttonStyle() { return {borderColor: "#ccc", borderRadius: "5px"}},
                 unlocked: true,
                 content: [

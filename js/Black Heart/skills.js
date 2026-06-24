@@ -1277,7 +1277,7 @@ BHA.creation_upgrade = {
     },
 }
 BHA.creation_prestige = {
-    name: "Prestige",
+    name: "威望",
     description() {return "Resets incremental energy and upgrade amount, but boosts The Creation's DMG, RGN, AGI and incremental energy gain by x" + format(player.creation.prestigeEffect) + ".<br>Req: " + format(player.creation.prestigeReq) + " incremental energy"},
     passiveText() {return "+" + formatSimple(player.bh.skillData["creation_prestige"].maxLevel.div(5)) + " DMG"},
     char: "creation",

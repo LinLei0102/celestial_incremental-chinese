@@ -1,5 +1,5 @@
 ﻿addLayer("cbs", {
-    name: "Check Back Shrine", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "回溯神殿", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "<h4>CBS", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "DS",
     row: 1,
@@ -45,7 +45,7 @@
             transform: "translateX(-50px)",
         }
     },
-    tooltip: "Check Back Shrine",
+    tooltip: "回溯神殿",
     color: "#3466acff",
     branches: ["sm",],
     update(delta) {

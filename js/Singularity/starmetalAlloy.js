@@ -1,5 +1,5 @@
 ﻿addLayer("sma", {
-    name: "Starmetal Alloy", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "星金属合金", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "SMA", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "U3",
     row: 1,
@@ -29,7 +29,7 @@
             "color": "#282363",
         };
     },
-    tooltip: "Starmetal Alloy",
+    tooltip: "星金属合金",
     branches() { return player.matosLair.milestone[25] == 0 ? ["ra", "sd"] : ["ra"] },
     color: "#d460eb",
     update(delta) {
@@ -222,7 +222,7 @@
             description: "Buff DCP based on dark starmetal upgrades.",
             cost: new Decimal("1"),
             currencyLocation() { return player.sma },
-            currencyDisplayName: "Starmetal Alloy",
+            currencyDisplayName: "星金属合金",
             currencyInternalName: "starmetalAlloy",
             effect() {
                 let amt = new Decimal(1)
@@ -245,7 +245,7 @@
             description: "Improve dark ranks and tiers effects.",
             cost: new Decimal("3"),
             currencyLocation() { return player.sma },
-            currencyDisplayName: "Starmetal Alloy",
+            currencyDisplayName: "星金属合金",
             currencyInternalName: "starmetalAlloy",
             style() {
                 let look = {borderRadius: "15px", color: "white", border: "2px solid", margin: "2px"}
@@ -260,7 +260,7 @@
             description: "Unlock dark generators.",
             cost: new Decimal("5"),
             currencyLocation() { return player.sma },
-            currencyDisplayName: "Starmetal Alloy",
+            currencyDisplayName: "星金属合金",
             currencyInternalName: "starmetalAlloy",
             style() {
                 let look = {borderRadius: "15px", color: "white", border: "2px solid", margin: "2px"}
@@ -275,7 +275,7 @@
             description: "Dark prestige points boost dark celestial point gain.",
             cost: new Decimal("8"),
             currencyLocation() { return player.sma },
-            currencyDisplayName: "Starmetal Alloy",
+            currencyDisplayName: "星金属合金",
             currencyInternalName: "starmetalAlloy",
             effect() {
                 if (hasUpgrade("cs", 302)) return player.dp.prestigePoints.pow(0.25).add(1)
@@ -295,7 +295,7 @@
             description: "Unlock starmetal punchcards.",
             cost: new Decimal("15"),
             currencyLocation() { return player.sma },
-            currencyDisplayName: "Starmetal Alloy",
+            currencyDisplayName: "星金属合金",
             currencyInternalName: "starmetalAlloy",
             style() {
                 let look = {borderRadius: "15px", color: "white", border: "2px solid", margin: "2px"}
@@ -311,7 +311,7 @@
             onPurchase() {player.pu.storedSelections = player.pu.storedSelections.add(1)},
             cost: new Decimal("22"),
             currencyLocation() { return player.sma },
-            currencyDisplayName: "Starmetal Alloy",
+            currencyDisplayName: "星金属合金",
             currencyInternalName: "starmetalAlloy",
             style() {
                 let look = {borderRadius: "15px", color: "white", border: "2px solid", margin: "2px"}
@@ -326,7 +326,7 @@
             description: "Unlock dark grass.",
             cost: new Decimal("30"),
             currencyLocation() { return player.sma },
-            currencyDisplayName: "Starmetal Alloy",
+            currencyDisplayName: "星金属合金",
             currencyInternalName: "starmetalAlloy",
             style() {
                 let look = {borderRadius: "15px", color: "white", border: "2px solid", margin: "2px"}
@@ -341,7 +341,7 @@
             description: "Unlock epic punchcards.",
             cost: new Decimal("45"),
             currencyLocation() { return player.sma },
-            currencyDisplayName: "Starmetal Alloy",
+            currencyDisplayName: "星金属合金",
             currencyInternalName: "starmetalAlloy",
             style() {
                 let look = {borderRadius: "15px", color: "white", border: "2px solid", margin: "2px"}
@@ -356,7 +356,7 @@
             description: "Unlock normality upgrades.",
             cost: new Decimal("5000"),
             currencyLocation() { return player.sma },
-            currencyDisplayName: "Starmetal Alloy",
+            currencyDisplayName: "星金属合金",
             currencyInternalName: "starmetalAlloy",
             style() {
                 let look = {borderRadius: "15px", color: "white", border: "2px solid", margin: "2px"}
@@ -371,7 +371,7 @@
             description: "Automate pent resets.",
             cost: new Decimal(1e7),
             currencyLocation() { return player.sma },
-            currencyDisplayName: "Starmetal Alloy",
+            currencyDisplayName: "星金属合金",
             currencyInternalName: "starmetalAlloy",
             style() {
                 let look = {borderRadius: "15px", color: "white", border: "2px solid", margin: "2px"}
@@ -386,7 +386,7 @@
             description: "Space energy resets no longer reset space.",
             cost: new Decimal(1e8),
             currencyLocation() { return player.sma },
-            currencyDisplayName: "Starmetal Alloy",
+            currencyDisplayName: "星金属合金",
             currencyInternalName: "starmetalAlloy",
             style() {
                 let look = {borderRadius: "15px", color: "white", border: "2px solid", margin: "2px"}
@@ -401,7 +401,7 @@
             description: "Autobuy normality upgrades.",
             cost: new Decimal(1e9),
             currencyLocation() { return player.sma },
-            currencyDisplayName: "Starmetal Alloy",
+            currencyDisplayName: "星金属合金",
             currencyInternalName: "starmetalAlloy",
             style() {
                 let look = {borderRadius: "15px", color: "white", border: "2px solid", margin: "2px"}
@@ -418,7 +418,7 @@
             description: "Unspent starmetal alloy boosts singularity point gain.",
             cost: new Decimal("3"),
             currencyLocation() { return player.sma },
-            currencyDisplayName: "Starmetal Alloy",
+            currencyDisplayName: "星金属合金",
             currencyInternalName: "starmetalAlloy",
             effect() {
                 return player.sma.starmetalAlloy.add(1).pow(1.2)
@@ -436,7 +436,7 @@
             description: "Unspent starmetal alloy boosts core scrap gain.",
             cost: new Decimal("6"),
             currencyLocation() { return player.sma },
-            currencyDisplayName: "Starmetal Alloy",
+            currencyDisplayName: "星金属合金",
             currencyInternalName: "starmetalAlloy",
             effect() {
                 return Decimal.pow(2, player.sma.starmetalAlloy.add(1).log(10))
@@ -454,7 +454,7 @@
             description: "Gain 10% of steel per second.",
             cost: new Decimal("12"),
             currencyLocation() { return player.sma },
-            currencyDisplayName: "Starmetal Alloy",
+            currencyDisplayName: "星金属合金",
             currencyInternalName: "starmetalAlloy",
             style() {
                 let look = {width: "150px", color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"}
@@ -468,7 +468,7 @@
             description: "Unlock auto singularity.",
             cost: new Decimal("25"),
             currencyLocation() { return player.sma },
-            currencyDisplayName: "Starmetal Alloy",
+            currencyDisplayName: "星金属合金",
             currencyInternalName: "starmetalAlloy",
             style() {
                 let look = {width: "150px", color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"}
@@ -482,7 +482,7 @@
             description: "Unlock starmetal buyables.",
             cost: new Decimal("50"),
             currencyLocation() { return player.sma },
-            currencyDisplayName: "Starmetal Alloy",
+            currencyDisplayName: "星金属合金",
             currencyInternalName: "starmetalAlloy",
             style() {
                 let look = {width: "150px", color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"}
@@ -496,7 +496,7 @@
             description: "Unlock radioactive core.",
             cost: new Decimal("150"),
             currencyLocation() { return player.sma },
-            currencyDisplayName: "Starmetal Alloy",
+            currencyDisplayName: "星金属合金",
             currencyInternalName: "starmetalAlloy",
             style() {
                 let look = {width: "150px", color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"}
@@ -510,7 +510,7 @@
             description: "Produce 1% core scrap per second",
             cost: new Decimal("500"),
             currencyLocation() { return player.sma },
-            currencyDisplayName: "Starmetal Alloy",
+            currencyDisplayName: "星金属合金",
             currencyInternalName: "starmetalAlloy",
             style() {
                 let look = {width: "175px", color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"}
@@ -524,7 +524,7 @@
             description: "Number of dice sides is multiplied based on best depth 1 combo, and unlock new singularity milestones.",
             cost: new Decimal("1111"),
             currencyLocation() { return player.sma },
-            currencyDisplayName: "Starmetal Alloy",
+            currencyDisplayName: "星金属合金",
             currencyInternalName: "starmetalAlloy",
             effect() {
                 return player.depth1.highestCombo.mul(0.01).add(1)
@@ -971,7 +971,7 @@
                     ["row", [["ex-buyable", 11], ["ex-buyable", 12], ["ex-buyable", 13], ["ex-buyable", 14]]],
                 ]
             },
-            "Punchcards": {
+            "打孔卡": {
                 buttonStyle() {return {color: "white", borderRadius: "10px"}},
                 unlocked() { return hasUpgrade("sma", 14) },
                 embedLayer: 'pu',

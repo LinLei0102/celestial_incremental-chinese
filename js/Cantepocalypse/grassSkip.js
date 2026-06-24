@@ -175,7 +175,7 @@
     },
     clickables: {
         2: {
-            title() { return "Buy Max On" },
+            title() { return "批量购买 开" },
             canClick() { return player.buyMax == false },
             unlocked() { return true },
             onClick() {
@@ -184,7 +184,7 @@
             style: { width: '75px', "min-height": '50px', }
         },
         3: {
-            title() { return "Buy Max Off" },
+            title() { return "批量购买 关" },
             canClick() { return player.buyMax == true  },
             unlocked() { return true },
             onClick() {
@@ -603,7 +603,7 @@
                         ["clickable", 11],
                     ], {width: "800px", height: "100px", backgroundColor: "#162e5e", border: "3px solid #0c1a36", borderRadius: "15px"}],
                     ["blank", "25px"],
-                    ["raw-html", "Milestones", {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                    ["raw-html", "里程碑", {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                     ["blank", "5px"],
                     ["milestone", 11],
                     ["milestone", 12],

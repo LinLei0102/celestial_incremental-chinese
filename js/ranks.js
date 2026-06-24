@@ -1,5 +1,5 @@
 ﻿﻿addLayer("r", {
-    name: "Ranks", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "等级", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "R", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "U1",
     row: 1,
@@ -57,7 +57,7 @@
         }
     },
     nodeStyle() {},
-    tooltip: "Ranks",
+    tooltip: "等级",
     color: "#eaf6f7",
     update(delta) {
         let onepersec = new Decimal(1)
@@ -344,7 +344,7 @@
     },
     clickables: {
         2: {
-            title() { return "Buy Max On" },
+            title() { return "批量购买 开" },
             canClick() { return player.r.timeMax == false },
             unlocked() { return true },
             onClick() {
@@ -353,7 +353,7 @@
             style: { width: '75px', "min-height": '50px', }
         },
         3: {
-            title() { return "Buy Max Off" },
+            title() { return "批量购买 关" },
             canClick() { return player.r.timeMax == true  },
             unlocked() { return true },
             onClick() {
@@ -448,7 +448,7 @@
             },
         },
         15: {
-            title() { return "Time Reversal<br>On" },
+            title() { return "时间逆转<br>开" },
             canClick() { return true },
             unlocked() { return player.r.timeReversed },
             onClick() {
@@ -457,7 +457,7 @@
             style: { width: '200px', "min-height": '100px', fontSize: '16px', backgroundColor: '#d82cd4', color: 'white', borderRadius: '13px'},
         },
         16: {
-            title() { return "Time Reversal<br>Off" },
+            title() { return "时间逆转<br>关" },
             canClick() { return true },
             unlocked() { return !player.r.timeReversed },
             onClick() {

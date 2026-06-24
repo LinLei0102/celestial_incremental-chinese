@@ -8,7 +8,7 @@
     }},
     automate() {},
     nodeStyle() {},
-    tooltip: "Ranks",
+    tooltip: "等级",
     color: "white",
     update(delta) {
         let onepersec = new Decimal(1)

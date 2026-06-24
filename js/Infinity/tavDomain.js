@@ -744,7 +744,7 @@ addLayer("tad", {
             },
         },
         21: {
-            title: "Buy Max On",
+            title: "批量购买 开",
             canClick() {return !player.tad.accumulationMax},
             unlocked: true,
             onClick() {
@@ -753,7 +753,7 @@ addLayer("tad", {
             style: {width: "80px", minHeight: "50px", border: "3px solid rgba(0,0,0,0.3)", borderRadius: "10px 0 0 10px"},
         },
         22: {
-            title: "Buy Max Off",
+            title: "批量购买 关",
             canClick() {return player.tad.accumulationMax},
             unlocked: true,
             onClick() {
@@ -762,7 +762,7 @@ addLayer("tad", {
             style: {width: "80px", minHeight: "50px", border: "3px solid rgba(0,0,0,0.3)", borderRadius: "0"}
         },
         23: {
-            title: "Buy Max On",
+            title: "批量购买 开",
             canClick() {return !player.tad.compressionMax},
             unlocked: true,
             onClick() {
@@ -775,7 +775,7 @@ addLayer("tad", {
             },
         },
         24: {
-            title: "Buy Max Off",
+            title: "批量购买 关",
             canClick() {return player.tad.compressionMax},
             unlocked: true,
             onClick() {
@@ -813,7 +813,7 @@ addLayer("tad", {
             style: { width: "80px", minHeight: '50px', border: "3px solid rgba(0,0,0,0.3)", borderRadius: '0px 10px 10px 0px' }
         },
         26: {
-            title: "Buy Max On",
+            title: "批量购买 开",
             canClick() {return !player.tad.stabilizationMax},
             unlocked: true,
             onClick() {
@@ -826,7 +826,7 @@ addLayer("tad", {
             },
         },
         27: {
-            title: "Buy Max Off",
+            title: "批量购买 关",
             canClick() {return player.tad.stabilizationMax},
             unlocked: true,
             onClick() {

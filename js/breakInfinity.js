@@ -1,5 +1,5 @@
 ﻿addLayer("bi", {
-    name: "Break Infinity", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "突破无限", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "BI", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "U2",
     row: 1,
@@ -66,7 +66,7 @@
             "border-color": "#2B7F0A",
         };
     },
-    tooltip: "Break Infinity",
+    tooltip: "突破无限",
     color: "#2B7F0A",
     branches: ["ta"],
     update(delta) {

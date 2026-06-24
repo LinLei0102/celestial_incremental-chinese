@@ -1,5 +1,5 @@
 ﻿addLayer("i", {
-    name: "Origin", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "起源", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "OR", // This appears on the layer's node. Default is the id with the first letter capitalized
     row: 1,
     position: 0, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
@@ -79,7 +79,7 @@
         backgroundOrigin: "border-box",
         borderColor: "#333",
     },
-    tooltip: "Origin",
+    tooltip: "起源",
     branches: ["r", "f"],
     color: "white",
     update(delta) {
@@ -305,7 +305,7 @@
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
         14: {
-            title: "Prestige",
+            title: "威望",
             unlocked() { return hasUpgrade("i", 13) },
             description: "Unlocks Prestige.",
             cost: new Decimal(150000),
@@ -325,7 +325,7 @@
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
         16: {
-            title: "Trees",
+            title: "树木",
             unlocked() { return hasUpgrade("i", 15) },
             description: "Unlocks Trees.",
             cost: new Decimal(1e15),
@@ -335,7 +335,7 @@
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
         17: {
-            title: "Grass",
+            title: "草地",
             unlocked() { return hasUpgrade("i", 16) },
             description: "Unlocks Grass.",
             cost: new Decimal(1e20),
@@ -355,7 +355,7 @@
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
         19: {
-            title: "Check Back",
+            title: "回溯",
             unlocked() { return hasUpgrade("i", 18) },
             description: "Unlocks Check Back.",
             onPurchase() {
@@ -488,7 +488,7 @@
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
         101: {
-            title: "Factory",
+            title: "工厂",
             unlocked() { return hasMilestone("s", 11)},
             description: "Unlocks the factory.",
             cost: new Decimal("1e16000"),
@@ -652,7 +652,7 @@
             unlocked() { return hasUpgrade("i", 21) },      
         },
         4: {
-            title: "Realms",
+            title: "领域",
             body() { return "The multiverse is divided into six realms. Each realm containing a certain amount of universes, and some realms are higher than others on a metaphysical plane. There are six realms: The creator realm, the higher plane of existence, the death realm, the dimensional realm, the dream realm, and the void. It is believed that long ago, a being of immense power had split the multiverse into the realms. Over time, each realm started to develop their own unique traits and lifeforms. Eventually, the realms started to have contact with one another, and a multiversal scale conflict broke out. Over time, some realms formed alliances against others. We are still in war." },
             unlocked() { return player.ca.defeatedCante || player.s.highestSingularityPoints.gt(0)},      
         },
@@ -672,7 +672,7 @@
                     ], {maxWidth: "800px"}],
                 ],
             },
-            "Lore": {
+            "传说": {
                 buttonStyle() { return { color: "white", borderRadius: "5px" } },
                 unlocked() { return true},
                 content: [

@@ -648,7 +648,7 @@ BHC.ma3 = {
 }
 
 BHC.aleph = {
-    name: "Aleph",
+    name: "阿列夫",
     icon: "resources/aleph.png",
     health: new Decimal(9000),
     damage: new Decimal(25),

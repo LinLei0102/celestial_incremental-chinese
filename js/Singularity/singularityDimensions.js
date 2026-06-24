@@ -1,5 +1,5 @@
 ﻿addLayer("sd", {
-    name: "Singularity Dimensions", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "奇点维度", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "SD", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "U3",
     row: 1,
@@ -35,7 +35,7 @@
             "color": "#3d1616",
         };
     },
-    tooltip: "Singularity Dimensions",
+    tooltip: "奇点维度",
     branches: ["cof",],
     color: "#3d1616",
     update(delta) {
@@ -109,7 +109,7 @@
     },
     clickables: {
         2: {
-            title() { return "Buy Max On" },
+            title() { return "批量购买 开" },
             canClick() { return player.sd.dimMax == false },
             unlocked() { return true },
             onClick() {
@@ -123,7 +123,7 @@
             },
         },
         3: {
-            title() { return "Buy Max Off" },
+            title() { return "批量购买 关" },
             canClick() { return player.sd.dimMax == true},
             unlocked() { return true },
             onClick() {

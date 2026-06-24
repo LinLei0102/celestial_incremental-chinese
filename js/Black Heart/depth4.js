@@ -1,5 +1,5 @@
 addLayer("depth4", {
-    name: "Depth 4", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "深度4", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "D4", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "BH",
     row: 1,
@@ -69,7 +69,7 @@ addLayer("depth4", {
         if (player.subtabs["bh"]["stages"] == "depth4") str.outline = "3px solid #999"
         return str
     },
-    tooltip: "Depth 4",
+    tooltip: "深度4",
     tooltipLocked: "Progress further into the hive to unlock.",
     branches: ["depth3"],
     color: "#c000c0",
@@ -338,7 +338,7 @@ addLayer("depth4", {
                         ["style-column", [
                             ["style-column", [
                                 ["style-column", [
-                                    ["raw-html", "Depth 4", {color: "var(--textColor)", fontSize: "24px", fontFamily: "monospace"}],
+                                    ["raw-html", "深度4", {color: "var(--textColor)", fontSize: "24px", fontFamily: "monospace"}],
                                 ], {width: "200px", height: "35px", borderBottom: "2px solid var(--regBorder)", marginBottom: "5px"}],
                                 ["clickable", "enter"],
                             ], {width: "250px", height: "127px", background: "var(--miscButtonDisable)", borderBottom: "3px solid var(--regBorder)"}],
@@ -416,7 +416,7 @@ addLayer("depth4", {
                         ["style-column", [
                             ["style-column", [
                                 ["style-column", [
-                                    ["raw-html", "Depth 4", {color: "var(--textColor)", fontSize: "24px", fontFamily: "monospace"}],
+                                    ["raw-html", "深度4", {color: "var(--textColor)", fontSize: "24px", fontFamily: "monospace"}],
                                 ], {width: "200px", height: "35px", borderBottom: "2px solid var(--regBorder)", marginBottom: "5px"}],
                                 ["clickable", "enter"],
                             ], {width: "250px", height: "127px", background: "var(--miscButton)", borderBottom: "3px solid var(--regBorder)"}],
@@ -482,7 +482,7 @@ addLayer("depth4", {
 })
 
 BHS.depth4 = {
-    nameCap: "Depth 4",
+    nameCap: "深度4",
     nameLow: "depth 4",
     music: "music/depth4.mp3",
     comboLimit: 250,

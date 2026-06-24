@@ -1,5 +1,5 @@
 ﻿addLayer("ra", {
-    name: "Radiation", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "辐射", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "RA", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "U3",
     row: 1,
@@ -23,7 +23,7 @@
             "color": "#260454",
         };
     },
-    tooltip: "Radiation",
+    tooltip: "辐射",
     branches: ["co"],
     color: "#0e8a22",
     update(delta) {

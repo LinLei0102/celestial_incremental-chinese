@@ -29,7 +29,7 @@ addLayer("dgj", {
             "color": "#00FEFF",
         };
     },
-    tooltip: "Grass Jump",
+    tooltip: "草跃迁",
     branches: [["dgr", "#309"]],
     color: "black",
     update(delta) {

@@ -1,5 +1,5 @@
 ﻿addLayer("ta", {
-    name: "Tav, Celestial of Limits", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "塔夫，极限之天神", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "<h2>→", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "U2",
     row: 1,
@@ -278,7 +278,7 @@
     },
     clickables: {
         2: {
-            title() { return "Buy Max On" },
+            title() { return "批量购买 开" },
             canClick() { return !player.ta.dimPowerMax },
             unlocked: true,
             onClick() {
@@ -287,7 +287,7 @@
             style: { width: "80px", minHeight: "50px", borderRadius: "15px 0px 0px 15px"}
         },
         3: {
-            title() { return "Buy Max Off" },
+            title() { return "批量购买 关" },
             canClick() { return player.ta.dimPowerMax},
             unlocked: true,
             onClick() {
@@ -1848,7 +1848,7 @@ addLayer("revc", {
     }},
     automate() {},
     nodeStyle() {},
-    tooltip: "Ranks",
+    tooltip: "等级",
     color: "white",
     update(delta) {
         let onepersec = new Decimal(1)

@@ -1,16 +1,16 @@
 addLayer("changelog", {
-    name: "Changelog", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "更新日志", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "CHLG", // This appears on the layer's node. Default is the id with the first letter capitalized
     row: 1,
     position: 0, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
     startData() { return {
         unlocked: true,
     }},
-    tooltip: "Changelog",
+    tooltip: "更新日志",
     color: "white",
     clickables: {
         2: {
-            title() { return "Settings" },
+            title() { return "设置" },
             canClick() { return true },
             unlocked() { return true },
             onClick() {
@@ -28,7 +28,7 @@ addLayer("changelog", {
             style: { width: '125px', minHeight: '50px', color: "var(--textColor)", background: "var(--miscButtonDisable)", borderRadius: '0px', border: "3px solid var(--regBorder)", margin: "0px 5px" },
         },
         5: {
-            title() { return "Changelog" },
+            title() { return "更新日志" },
             canClick() { return true },
             unlocked() { return true },
             onClick() {
@@ -37,7 +37,7 @@ addLayer("changelog", {
             style: { width: '125px', minHeight: '50px', color: "var(--textColor)", background: "var(--miscButtonDisable)", borderRadius: '0px', border: "3px solid var(--regBorder)", margin: "0px 5px" },
         },
         7: {
-            title() { return "Jukebox" },
+            title() { return "音乐盒" },
             canClick() { return true },
             unlocked() { return true },
             onClick() {

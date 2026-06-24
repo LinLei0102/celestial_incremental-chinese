@@ -1,5 +1,5 @@
 ﻿addLayer("dn", {
-    name: "Normality", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "常态", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "N", // This appears on the layer's node. Default is the id with the first letter capitalized
     row: 1,
     position: 0, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
@@ -30,7 +30,7 @@
             "color": "#eaf6f7",
         };
     },
-    tooltip: "Normality",
+    tooltip: "常态",
     branches: [["dgr", "#309"]],
     color: "#c1df00",
     update(delta) {
@@ -106,7 +106,7 @@
             description: "Autobuy prestige buyables.",
             cost: new Decimal(1e10),
             currencyLocation() { return player.dn },
-            currencyDisplayName: "Normality",
+            currencyDisplayName: "常态",
             currencyInternalName: "normality",
             style() {
                 let look = {borderRadius: "10px", color: "white", border: "2px solid #c1df00", margin: "1.5px"}
@@ -120,7 +120,7 @@
             description: "Autobuy generator buyables.",
             cost: new Decimal(1e12),
             currencyLocation() { return player.dn },
-            currencyDisplayName: "Normality",
+            currencyDisplayName: "常态",
             currencyInternalName: "normality",
             style() {
                 let look = {borderRadius: "10px", color: "white", border: "2px solid #c1df00", margin: "1.5px"}
@@ -134,7 +134,7 @@
             description: "Autobuy grass buyables.",
             cost: new Decimal(1e15),
             currencyLocation() { return player.dn },
-            currencyDisplayName: "Normality",
+            currencyDisplayName: "常态",
             currencyInternalName: "normality",
             style() {
                 let look = {borderRadius: "10px", color: "white", border: "2px solid #c1df00", margin: "1.5px"}
@@ -148,7 +148,7 @@
             description: "Unlock space energy.",
             cost: new Decimal(1e35),
             currencyLocation() { return player.dn },
-            currencyDisplayName: "Normality",
+            currencyDisplayName: "常态",
             currencyInternalName: "normality",
             style() {
                 let look = {borderRadius: "10px", color: "white", border: "2px solid #c1df00", margin: "1.5px"}

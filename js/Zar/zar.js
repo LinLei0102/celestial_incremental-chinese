@@ -1,5 +1,5 @@
 ﻿addLayer("za", {
-    name: "Zar", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "扎尔", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "<h4>⚅", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "DS",
     row: 1,

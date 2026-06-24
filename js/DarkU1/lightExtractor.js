@@ -1,5 +1,5 @@
 ﻿addLayer("le", {
-    name: "Light Extractor", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "光提取器", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "LE", // This appears on the layer's node. Default is the id with the first letter capitalized
     row: 1,
     position: 0, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
@@ -53,7 +53,7 @@
             color: "#f5f7ff",
         };
     },
-    tooltip: "Light Extractor",
+    tooltip: "光提取器",
     branches: ["in"],
     color: "black",
     update(delta) {
@@ -731,7 +731,7 @@
             }
         },
         13: {
-            title: "Dark Prestige",
+            title: "暗威望",
             unlocked() { return true },
             description: "Unlocks Prestige.",
             cost: new Decimal(10000),
@@ -843,7 +843,7 @@
             }
         },
         22: {
-            title: "Dark Grass",
+            title: "暗草地",
             unlocked() { return hasUpgrade("sma", 16) },
             description: "Unlock Dark Grass.",
             cost: new Decimal(1e36),
@@ -857,7 +857,7 @@
             }
         },
         23: {
-            title: "Normality",
+            title: "常态",
             unlocked() { return hasUpgrade("sma", 17) && !player.pet.legPetTimers[0].active },
             description: "Unlock Normality.",
             cost: new Decimal(1e48),
@@ -901,7 +901,7 @@
             }
         },
         102: {
-            title: "Vaporizer",
+            title: "汽化器",
             unlocked() { return hasUpgrade("sma", 17) && player.pet.legPetTimers[0].active },
             description: "Unlocks The Vaporizer.",
             cost: new Decimal(1e48),
@@ -1064,7 +1064,7 @@
     },
     microtabs: {
         stuff: {
-            "Lore": {
+            "传说": {
                 buttonStyle() { return { border: "2px solid #384166", borderRadius: "10px" } },
                 unlocked() { return true },
                 content: [
@@ -1166,7 +1166,7 @@
                     ]]],
                 ]
             },
-            "Punchcards": {
+            "打孔卡": {
                 buttonStyle() { return { border: "2px solid #384166", borderRadius: "10px" } },
                 unlocked() { return hasUpgrade("sma", 14) },
                 embedLayer: 'pu',

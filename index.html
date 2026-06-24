@@ -91,7 +91,7 @@
 		</div>
 		<canvas id="treeCanvas" class="canvas" v-if="!(tmp.gameEnded && !player.keepGoing)"></canvas>
 		<div v-if="false" id="loadingSection" class="fullWidth">
-			<h1>Loading... (If this takes too long it means there was a serious error!)←</h1>
+			<h1>加载中...(如果时间过长说明发生了严重错误！)←</h1>
 		</div>
 		<div class="vl" v-if="tmp.other.splitScreen && player.tab!='none' && !(tmp.gameEnded && !player.keepGoing)"></div>
 		<div v-if="(tmp.gameEnded && !player.keepGoing)" class="fullWidth">
@@ -108,9 +108,8 @@
 			<span v-if="modInfo.discordLink"><a class="link" v-bind:href="modInfo.discordLink"
 					target="_blank">{{modInfo.discordName}}</a><br></span>
 			<a class="link" href="https://discord.gg/F3xveHV" target="_blank"
-				v-bind:style="modInfo.discordLink ? {'font-size': '16px'} : {}">The Modding Tree Discord</a><br>
-			<a class="link" href="http://discord.gg/wwQfgPa" target="_blank" v-bind:style="{'font-size': '16px'}">Main
-				Prestige Tree server</a><br>
+				v-bind:style="modInfo.discordLink ? {'font-size': '16px'} : {}">模组树 Discord</a><br>
+			<a class="link" href="http://discord.gg/wwQfgPa" target="_blank" v-bind:style="{'font-size': '16px'}">主要威望树服务器</a><br>
 			<br><br>
 		</div>
 

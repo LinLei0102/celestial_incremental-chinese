@@ -1,5 +1,5 @@
 addLayer("ev0", {
-    name: "Coin Dust", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "硬币粉尘", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "Cd", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "CB",
     row: 1,
@@ -21,7 +21,7 @@ addLayer("ev0", {
 		borderColor: "#655421",
 		color: "#655421"
     },
-    tooltip: "Coin Dust",
+    tooltip: "硬币粉尘",
     color: "white",
     update(delta) {
         let onepersec = player.cb.cbTickspeed

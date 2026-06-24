@@ -1,5 +1,5 @@
 ﻿addLayer("ro", {
-    name: "Rockets", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "火箭", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "RO", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "U2",
     row: 1,
@@ -81,7 +81,7 @@
         };
       },
 
-    tooltip: "Rockets",
+    tooltip: "火箭",
     color: "#333c81",
     branches: ["ca", "om"],
     update(delta) {

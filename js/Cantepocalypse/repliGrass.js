@@ -1,5 +1,5 @@
 addLayer("rg", {
-    name: "Repli-Grass", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "复制草地", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "RG", // This appears on the layer's node. Default is the id with the first letter capitalized
     universe: "A1",
     row: 1,
@@ -32,7 +32,7 @@ addLayer("rg", {
         }
     },
     nodeStyle() {},
-    tooltip: "Repli-Grass",
+    tooltip: "复制草地",
     branches: ["rt"],
     color: "#67cc3b",
     update(delta) {

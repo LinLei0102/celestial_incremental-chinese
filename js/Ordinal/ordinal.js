@@ -1,5 +1,5 @@
 addLayer("od", {
-    name: "Ordinal", // This is optional, only used in a few places, If absent it just uses the layer id.
+    name: "序数", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "OD", // This appears on the layer's node. Default is the id with the first letter capitalized
     row: 1,
     position: 0, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
@@ -25,7 +25,7 @@ addLayer("od", {
             color: "black",
         };
     },
-    tooltip: "Ordinal",
+    tooltip: "序数",
     color: "white",
     branches: [],
     update(delta) {
