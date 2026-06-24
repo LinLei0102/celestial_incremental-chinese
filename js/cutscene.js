@@ -20,7 +20,6 @@
     }},
     cutscenes: {
         "U1-Start": {
-            title: "U1-开始",
             type: "normal",
             portrait: "resources/secret.png",
             background: "#000000",
@@ -57,7 +56,6 @@
             ],
         },
         "U1-Rank": {
-            title: "U1-等级",
             type: "normal",
             portrait: "resources/secret.png",
             trigger() {return player.r.rank.gte(1)},
@@ -70,7 +68,6 @@
             ],
         },
         "U1-Tetr": {
-            title: "U1-四阶",
             type: "normal",
             portrait: "resources/secret.png",
             trigger() {return hasUpgrade("i", 13)},
@@ -97,7 +94,6 @@
             ],
         },
         "U1-Prestige": {
-            title: "U1-威望",
             type: "normal",
             portrait: "resources/secret.png",
             trigger() {return player.p.prestigePoints.gte(1)},
@@ -114,7 +110,6 @@
             ],
         },
         "U1-Factor-Power": {
-            title: "U1-因子力量",
             type: "normal",
             portrait: "resources/secret.png",
             trigger() {return hasUpgrade("i", 15)},
@@ -129,7 +124,6 @@
             ],
         },
         "U1-Tree": {
-            title: "U1-树木",
             type: "normal",
             portrait: "resources/secret.png",
             trigger() {return player.t.trees.gte(1)},
@@ -155,7 +149,6 @@
             ],
         },
         "U1-Grass": {
-            title: "U1-草地",
             type: "normal",
             portrait: "resources/secret.png",
             trigger() {return player.g.grass.gte(1)},
@@ -170,7 +163,6 @@
             ],
         },
         "U1-Grasshoppers": {
-            title: "U1-蚱蜢",
             type: "normal",
             portrait: "resources/secret.png",
             trigger() {return player.gh.grasshoppers.gte(1)},
@@ -186,7 +178,6 @@
             ],
         },
         "CB-Start": {
-            title: "回溯-开始",
             type: "normal",
             background: "#094599",
             portrait: "resources/secret.png",
@@ -225,7 +216,6 @@
             ],
         },
         "U1-Portal": {
-            title: "U1-传送门",
             type: "normal",
             portrait: "resources/secret.png",
             trigger() {return hasUpgrade("i", 21)},
@@ -242,7 +232,6 @@
             ],
         },
         "U1-OTF": {
-            title: "U1-异界特性",
             type: "normal",
             background: "#000000",
             portrait: "resources/secret.png",
@@ -278,7 +267,6 @@
             ],
         },
         "U1-Dice": {
-            title: "U1-骰子",
             type: "normal",
             portrait: "resources/secret.png",
             trigger() {return player.d.buyables[12].gte(1)},
@@ -290,7 +278,6 @@
             ],
         },
         "U1-Rocket-Fuel": {
-            title: "U1-火箭燃料",
             type: "normal",
             portrait: "resources/secret.png",
             trigger() {return player.rf.rocketFuel.gte(1)},
@@ -302,7 +289,6 @@
             ],
         },
         "U1-Infinity": {
-            title: "U1-无限",
             type: "normal",
             background: "#b87c34",
             portrait: "resources/secret.png",
@@ -326,7 +312,6 @@
             ],
         },
         "U2-Infinity-Points": {
-            title: "U2-无限点数",
             type: "normal",
             background: "#cccccc",
             portrait: "resources/secret.png",
@@ -370,7 +355,6 @@
             ],
         },
         "U2-Antimatter": {
-            title: "U2-反物质",
             type: "normal",
             background: "#001f18",
             portrait: "resources/secret.png",
@@ -404,7 +388,6 @@
             ],
         },
         "U2-Start": {
-            title: "U2-开始",
             type: "normal",
             portrait: "resources/secret.png",
             trigger() {return hasUpgrade("ip", 11) && player.r.rank.gte(1)},
@@ -419,7 +402,6 @@
             ],
         },
         "CB-Crate": {
-            title: "回溯-宝箱",
             type: "normal",
             background: "#094599",
             portrait: "resources/secret.png",
@@ -441,7 +423,6 @@
             ],
         },
         "U2-8-Inf": {
-            title: "U2-8次无限",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/cutscenePiano.mp3",
@@ -463,7 +444,6 @@
             ],
         },
         "U2-IC1": {
-            title: "U2-无限挑战1",
             type: "normal",
             portrait: "resources/secret.png",
             trigger() {return hasChallenge("ip", 11)},
@@ -474,7 +454,6 @@
             ],
         },
         "U2-IC2": {
-            title: "U2-无限挑战2",
             type: "normal",
             portrait: "resources/secret.png",
             trigger() {return inChallenge("ip", 12) && player.gh.grasshoppers.gte(1)},
@@ -486,7 +465,6 @@
             ],
         },
         "U2-IC3": {
-            title: "U2-无限挑战3",
             type: "normal",
             portrait: "resources/secret.png",
             trigger() {return inChallenge("ip", 13)},
@@ -501,7 +479,6 @@
             ],
         },
         "U2-IC5": {
-            title: "U2-无限挑战5",
             type: "normal",
             portrait: "resources/secret.png",
             trigger() {return inChallenge("ip", 15) && player.d.challengeDicePoints.gte(1)},
@@ -513,7 +490,6 @@
             ],
         },
         "CB-Evo-Shard": {
-            title: "回溯-进化碎片",
             type: "normal",
             background: "#094599",
             portrait: "resources/secret.png",
@@ -535,7 +511,6 @@
             ],
         },
         "U2-IC6": {
-            title: "U2-无限挑战6",
             type: "normal",
             portrait: "resources/secret.png",
             trigger() {return inChallenge("ip", 16)},
@@ -549,7 +524,6 @@
             ],
         },
         "U2-IC7-Start": {
-            title: "U2-无限挑战7-开始",
             type: "normal",
             background: "#cccccc",
             portrait: "resources/secret.png",
@@ -572,7 +546,6 @@
             ],
         },
         "U2-IC7-End": {
-            title: "U2-无限挑战7-结束",
             type: "normal",
             portrait: "resources/secret.png",
             trigger() {return hasChallenge("ip", 17)},
@@ -583,7 +556,6 @@
             ],
         },
         "U2-IC8": {
-            title: "U2-无限挑战8",
             type: "normal",
             background: "#008080",
             portrait: "resources/secret.png",
@@ -622,7 +594,6 @@
             ],
         },
         "U2-NIP": {
-            title: "U2-负无限点数",
             type: "normal",
             background: "#008080",
             portrait: "resources/secret.png",
@@ -655,7 +626,6 @@
             ],
         },
         "CB-Unsmith-Evo": {
-            title: "回溯-铁匠锤进化",
             type: "normal",
             background: "#094599",
             portrait: "resources/secret.png",
@@ -683,7 +653,6 @@
             ],
         },
         "U2-NIP-V": {
-            title: "U2-负无限点数V",
             type: "normal",
             background: "#008080",
             portrait: "resources/secret.png",
@@ -719,7 +688,6 @@
             ],
         },
         "U2-NIP-VII": {
-            title: "U2-负无限点数VII",
             type: "normal",
             background: "#008080",
             portrait: "resources/secret.png",
@@ -748,7 +716,6 @@
             ],
         },
         "U2-Domain-Unlock": {
-            title: "U2-领域解锁",
             type: "normal",
             background: "#008080",
             portrait: "resources/secret.png",
@@ -774,7 +741,6 @@
             ],
         },
         "U2-Domain-Enter": {
-            title: "U2-领域进入",
             type: "normal",
             background: "#596c6c",
             portrait: "resources/secret.png",
@@ -786,7 +752,6 @@
             ],
         },
         "U2-Domain-Infinitum": {
-            title: "U2-领域-无限",
             type: "normal",
             background: "#596c6c",
             portrait: "resources/secret.png",
@@ -799,7 +764,6 @@
             ],
         },
         "U2-Domain-Expander": {
-            title: "U2-领域-扩展器",
             type: "normal",
             background: "#596c6c",
             portrait: "resources/secret.png",
@@ -811,7 +775,6 @@
             ],
         },
         "U2-Domain-Compression": {
-            title: "U2-领域-压缩",
             type: "normal",
             background: "#cccccc",
             portrait: "resources/secret.png",
@@ -856,7 +819,6 @@
             ],
         },
         "U2-Alt-Infinities": {
-            title: "U2-替代无限",
             type: "normal",
             background: "#596c6c",
             portrait: "resources/secret.png",
@@ -872,7 +834,6 @@
             ],
         },
         "U2-Tav-Death": {
-            title: "U2-塔夫之死",
             type: "normal",
             background: "#008080",
             portrait: "resources/secret.png",
@@ -925,7 +886,6 @@
             ],
         },
  /*       "U2-Tav-End": {
-            title: "U2-塔夫结束",
             type: "cinematic",
             background: "#000000",
             portrait: "resources/secret.png",
@@ -942,7 +902,6 @@
             ],
         }, */
         "U2-Break-Infinity": {
-            title: "U2-突破无限",
             type: "normal",
             background: "#000000",
             portrait: "resources/secret.png",
@@ -966,7 +925,6 @@
             ],
         },
         "CB-Gwa-Evo": {
-            title: "回溯-GWA进化",
             type: "normal",
             background: "#094599",
             portrait: "resources/secret.png",
@@ -980,7 +938,6 @@
             ],
         },
         "U2-BI-IP-IV": {
-            title: "U2-突破无限-无限点IV",
             type: "normal",
             background: "#000000",
             portrait: "resources/secret.png",
@@ -1002,7 +959,6 @@
             ],
         },
         "U1-Steel": {
-            title: "U1-钢铁",
             type: "normal",
             portrait: "resources/secret.png",
             trigger() {return player.gh.steel.gte(1)},
@@ -1017,7 +973,6 @@
             ],
         },
         "U1-Crystal": {
-            title: "U1-水晶",
             type: "normal",
             portrait: "resources/secret.png",
             trigger() {return player.p.crystals.gte(1)},
@@ -1032,7 +987,6 @@
             ],
         },
         "U1-Time-Reversal": {
-            title: "U1-时间逆转",
             type: "normal",
             background: "#000000",
             portrait: "resources/secret.png",
@@ -1070,7 +1024,6 @@
             ],
         },
         "U2-Cante": {
-            title: "U2-坎特",
             type: "normal",
             background: "linear-gradient(45deg, #0a82b9 0%, #7dd3f9 100%)",
             portrait: "resources/secret.png",
@@ -1094,7 +1047,6 @@
             ],
         },
         "U2-Replicanti-Cap": {
-            title: "U2-复制体上限",
             type: "normal",
             background: "linear-gradient(45deg, #0a82b9 0%, #7dd3f9 100%)",
             portrait: "resources/secret.png",
@@ -1116,7 +1068,6 @@
             ],
         },
         "U2-Replicanti-Galaxy": {
-            title: "U2-复制体星系",
             type: "normal",
             portrait: "resources/secret.png",
             trigger() {return player.ca.replicantiGalaxies.gte(1)},
@@ -1127,7 +1078,6 @@
             ],
         },
         "U2-Trials-Enter": {
-            title: "U2-试炼进入",
             type: "normal",
             background: "linear-gradient(45deg, #0a82b9 0%, #7dd3f9 100%)",
             portrait: "resources/secret.png",
@@ -1153,7 +1103,6 @@
             ],
         },
         "CB-Clock-Evo": {
-            title: "回溯-时钟进化",
             type: "normal",
             background: "#094599",
             portrait: "resources/secret.png",
@@ -1171,7 +1120,6 @@
             ],
         },
         "U2-Trial-1": {
-            title: "U2-试炼1",
             type: "normal",
             background: "#cccccc",
             portrait: "resources/secret.png",
@@ -1209,7 +1157,6 @@
             ],
         },
         "U2-Trial-2": {
-            title: "U2-试炼2",
             type: "normal",
             background: "#cccccc",
             portrait: "resources/secret.png",
@@ -1238,7 +1185,6 @@
             ],
         },
         "U2-Trial-3": {
-            title: "U2-试炼3",
             type: "normal",
             background: "#cccccc",
             portrait: "resources/secret.png",
@@ -1268,7 +1214,6 @@
             ],
         },
         "U2-Trial-4": {
-            title: "U2-试炼4",
             type: "normal",
             background: "#cccccc",
             portrait: "resources/secret.png",
@@ -1295,7 +1240,6 @@
             ],
         },
         "A1-Enter": {
-            title: "A1-进入",
             type: "normal",
             background: "linear-gradient(45deg, #0a82b9 0%, #7dd3f9 100%)",
             portrait: "resources/secret.png",
@@ -1324,7 +1268,6 @@
             ],
         },
         "A1-Anonymity": {
-            title: "A1-匿名",
             type: "normal",
             background: "linear-gradient(45deg, #0a82b9 0%, #7dd3f9 100%)",
             portrait: "resources/secret.png",
@@ -1358,7 +1301,6 @@
             ],
         },
         "A1-Portal": {
-            title: "A1-传送门",
             type: "normal",
             background: "#cccccc",
             portrait: "resources/secret.png",
@@ -1405,7 +1347,6 @@
             ],
         },
         "A1-Proto-Memories": {
-            title: "A1-原型记忆",
             type: "normal",
             background: "linear-gradient(45deg, #0a82b9 0%, #7dd3f9 100%)",
             portrait: "resources/secret.png",
@@ -1445,7 +1386,6 @@
             ],
         },
         "A1-Cante-Death": {
-            title: "A1-坎特之死",
             type: "normal",
             background: "linear-gradient(45deg, #0a82b9 0%, #7dd3f9 100%)",
             portrait: "resources/secret.png",
@@ -1472,7 +1412,6 @@
             ],
         },
         "U2-Cloaked-Reveal": {
-            title: "U2-黑袍揭示",
             type: "normal",
             background: "#000000",
             portrait: "resources/secret.png",
@@ -1507,7 +1446,6 @@
             ],
         },
         "U3-Start": {
-            title: "U3-开始",
             type: "normal",
             background: "#260300",
             portrait: "resources/secret.png",
@@ -1569,7 +1507,6 @@
             ],
         },
         "U3-Enter-Core": {
-            title: "U3-进入核心",
             type: "normal",
             background: "#260300",
             portrait: "resources/secret.png",
@@ -1614,7 +1551,6 @@
             ],
         },
         "U1-Factory": {
-            title: "U1-工厂",
             type: "normal",
             portrait: "resources/secret.png",
             trigger() {return hasUpgrade("i", 101)},
@@ -1627,7 +1563,6 @@
             ],
         },
         "U3-2nd-Singularity": {
-            title: "U3-第二次奇点",
             type: "normal",
             background: "#260300",
             portrait: "resources/secret.png",
@@ -1662,7 +1597,6 @@
             ],
         },
         "U3-3rd-Singularity": {
-            title: "U3-第三次奇点",
             type: "normal",
             background: "#260300",
             portrait: "resources/secret.png",
@@ -1682,7 +1616,6 @@
             ],
         },
         "U3-4th-Singularity": {
-            title: "U3-第四次奇点",
             type: "normal",
             background: "#260300",
             portrait: "resources/secret.png",
@@ -1697,7 +1630,6 @@
             ],
         },
         "A1-Funify-Start": {
-            title: "A1-趣味化开始",
             type: "normal",
             background: "#5e8503",
             portrait: "resources/secret.png",
@@ -1735,7 +1667,6 @@
             ],
         },
         "A1-SFRGT": {
-            title: "A1-恐惧",
             type: "normal",
             background: "#5e8503",
             portrait: "resources/secret.png",
@@ -1755,7 +1686,6 @@
             ],
         },
         "A1-Mood": {
-            title: "A1-情绪",
             type: "normal",
             background: "#cccccc",
             portrait: "resources/secret.png",
@@ -1780,7 +1710,6 @@
             ],
         },
         "A1-Fear-Enter": {
-            title: "A1-恐惧进入",
             type: "normal",
             background: "#5e8503",
             portrait: "resources/secret.png",
@@ -1797,7 +1726,6 @@
             ],
         },
         "A1-Fear-Finish": {
-            title: "A1-恐惧结束",
             type: "normal",
             background: "#5e8503",
             portrait: "resources/secret.png",
@@ -1814,7 +1742,6 @@
             ],
         },
         "U3-7th-Singularity": {
-            title: "U3-第七次奇点",
             type: "normal",
             background: "#260300",
             portrait: "resources/secret.png",
@@ -1859,7 +1786,6 @@
             ],
         },
         "HC-Enter": {
-            title: "天神殿堂-进入",
             type: "normal",
             background: "linear-gradient(90deg, #260b36, #0920b5)",
             portrait: "resources/secret.png",
@@ -1882,7 +1808,6 @@
             ],
         },
         "U3-25th-Singularity": {
-            title: "U3-第二十五次奇点",
             type: "normal",
             background: "#260300",
             portrait: "resources/secret.png",
@@ -1910,7 +1835,6 @@
             ],
         },
         "U3-Core-Scraps": {
-            title: "U3-核心残片",
             type: "normal",
             background: "#260300",
             portrait: "resources/secret.png",
@@ -1933,7 +1857,6 @@
             ],
         },
         "U3-Starmetal": {
-            title: "U3-星金属",
             type: "normal",
             background: "#260300",
             portrait: "resources/secret.png",
@@ -1957,7 +1880,6 @@
             ],
         },
         "D1-Enter": {
-            title: "D1-进入",
             type: "normal",
             background: "#000000",
             portrait: "resources/secret.png",
@@ -1977,7 +1899,6 @@
             ],
         },
         "U3-Earned-Starmetal": {
-            title: "U3-获得星金属",
             type: "normal",
             background: "#260300",
             portrait: "resources/secret.png",
@@ -2012,7 +1933,6 @@
             ],
         },
         "U3-Matos-Start": {
-            title: "U3-马托斯开始",
             type: "normal",
             portrait: "resources/secret.png",
             trigger() {return tmp.pu.levelables[302].canClick},
@@ -2028,7 +1948,6 @@
             ],
         },
         "U3-1st-Matos-Condition": {
-            title: "U3-马托斯条件1",
             type: "normal",
             background: "#830b00",
             portrait: "resources/secret.png",
@@ -2053,7 +1972,6 @@
             ],
         },
         "U3-2nd-Matos-Condition": {
-            title: "U3-马托斯条件2",
             type: "normal",
             background: "#830b00",
             portrait: "resources/secret.png",
@@ -2084,7 +2002,6 @@
             ],
         },
         "U3-3rd-Matos-Condition": {
-            title: "U3-马托斯条件3",
             type: "normal",
             background: "#830b00",
             portrait: "resources/secret.png",
@@ -2107,7 +2024,6 @@
             ],
         },
         "U3-4th-Matos-Condition": {
-            title: "U3-马托斯条件4",
             type: "normal",
             background: "#830b00",
             portrait: "resources/secret.png",
@@ -2127,7 +2043,6 @@
             ],
         },
         "U3-Matos-Unlock": {
-            title: "U3-马托斯解锁",
             type: "normal",
             background: "#260300",
             portrait: "resources/secret.png",
@@ -2184,7 +2099,6 @@
             ],
         },
         "A2-Unlock": {
-            title: "A2-解锁",
             type: "normal",
             background: "radial-gradient(circle, #151230, #000000)",
             portrait: "resources/secret.png",
@@ -2199,7 +2113,6 @@
             ],
         },
         "BH-Depth-1": {
-            title: "黑心-深度1",
             type: "normal",
             background: "linear-gradient(-180deg, #540818 0%, #3a0202 100%)",
             portrait: "resources/secret.png",
@@ -2228,7 +2141,6 @@
             ],
         },
         "BH-Depth-2": {
-            title: "黑心-深度2",
             type: "normal",
             background: "linear-gradient(-180deg, #720455 0%, #250121 100%)",
             portrait: "resources/secret.png",
@@ -2256,7 +2168,6 @@
             ],
         },
         "BH-Depth-3": {
-            title: "黑心-深度3",
             type: "normal",
             background: "linear-gradient(-180deg, #720804 0%, #720455 100%)",
             portrait: "resources/secret.png",
@@ -2268,7 +2179,6 @@
             ],
         },
         "BH-Matos-Lair": {
-            title: "黑心-马托斯巢穴",
             type: "normal",
             background: "linear-gradient(-180deg, #96221d 0%, #720804 100%)",
             portrait: "resources/secret.png",
@@ -2305,7 +2215,6 @@
             ],
         },
         "BH-Matos-Start": {
-            title: "黑心-马托斯开始",
             type: "normal",
             background: "linear-gradient(-180deg, #720804 0%, #720455 100%)",
             portrait: "resources/secret.png",
@@ -2335,7 +2244,6 @@
             onEnd() {player.bh.bhPause = false},
         },
         "BH-Matos-End": {
-            title: "黑心-马托斯结束",
             type: "normal",
             background: "linear-gradient(-180deg, #720804 0%, #720455 100%)",
             portrait: "resources/secret.png",
@@ -2372,7 +2280,6 @@
             ],
         },
         "U3-Nova-Intro": {
-            title: "U3-诺娃介绍",
             type: "normal",
             background: "linear-gradient(-180deg, #000000ff 0%, #20021dff 100%)",
             portrait: "resources/secret.png",
@@ -2418,7 +2325,6 @@
             ],
         },
         "U3-Post-Nova-Intro": {
-            title: "U3-诺娃介绍后",
             type: "normal",
             background: "#260300",
             portrait: "resources/secret.png",
@@ -2444,7 +2350,6 @@
             ],
         },
         "BH-Stagnant-Synestia-Intro": {
-            title: "黑心-停滞融合体介绍",
             type: "normal",
             background: "#260300",
             portrait: "resources/secret.png",
@@ -2463,7 +2368,6 @@
             ],
         },
         "A2-1st-Rocket-Upgrade": {
-            title: "A2-第一次火箭升级",
             type: "normal",
             background: "#1d1d1d",
             portrait: "resources/secret.png",
@@ -2491,7 +2395,6 @@
             ],
         },
         "A2-SE-A1": {
-            title: "A2-空间能量A1",
             type: "normal",
             background: "radial-gradient(circle, #151230, #000000)",
             portrait: "resources/secret.png",
@@ -2529,7 +2432,6 @@
             ],
         },
         "A2-SE-A2": {
-            title: "A2-空间能量A2",
             type: "normal",
             background: "radial-gradient(circle, #151230, #000000)",
             portrait: "resources/secret.png",
@@ -2551,7 +2453,6 @@
             ],
         },
         "A2-SE-A3": {
-            title: "A2-空间能量A3",
             type: "normal",
             background: "radial-gradient(circle, #151230, #000000)",
             portrait: "resources/secret.png",
@@ -2591,7 +2492,6 @@
             ],
         },
         "A2-SE-A4": {
-            title: "A2-空间能量A4",
             type: "normal",
             background: "radial-gradient(circle, #151230, #000000)",
             portrait: "resources/secret.png",
@@ -2617,7 +2517,6 @@
             ],
         },
         "A2-SE-A5": {
-            title: "A2-空间能量A5",
             type: "normal",
             background: "radial-gradient(circle, #151230, #000000)",
             portrait: "resources/secret.png",
@@ -2637,7 +2536,6 @@
             ],
         },
         "A2-Iridite-Unlock": {
-            title: "A2-铱晶解锁",
             type: "normal",
             background: "radial-gradient(circle, #151230, #000000)",
             portrait: "resources/secret.png",
@@ -2668,7 +2566,6 @@
             ],
         },
         "A2-Space-Battle-Enter": {
-            title: "A2-太空战斗进入",
             type: "normal",
             background: "radial-gradient(circle, #151230, #000000)",
             portrait: "resources/secret.png",
@@ -2694,7 +2591,6 @@
             ],
         },
         "A2-Space-Battle-L2": {
-            title: "A2-太空战斗L2",
             type: "normal",
             background: "radial-gradient(circle, #151230, #000000)",
             portrait: "resources/secret.png",
@@ -2724,7 +2620,6 @@
             ],
         },
         "A2-Space-Battle-L4": {
-            title: "A2-太空战斗L4",
             type: "normal",
             background: "radial-gradient(circle, #151230, #000000)",
             portrait: "resources/secret.png",
@@ -2743,7 +2638,6 @@
             ],
         },
         "D1-Space-Energy": {
-            title: "D1-空间能量",
             type: "normal",
             portrait: "resources/secret.png",
             trigger() {return player.ds.spaceEnergy.gte(1)},
@@ -2756,7 +2650,6 @@
             ],
         },
         "A2-Space-Buildings": {
-            title: "A2-太空建筑",
             type: "normal",
             background: "#cccccc",
             portrait: "resources/secret.png",
@@ -2787,7 +2680,6 @@
             ],
         },
         "A2-Space-Battle-UFO": {
-            title: "A2-太空战斗UFO",
             type: "normal",
             background: "radial-gradient(circle, #151230, #000000)",
             portrait: "resources/secret.png",
@@ -2812,7 +2704,6 @@
             ],
         },
         "A2-Iridite-Battle-Upgrade": {
-            title: "A2-铱晶战斗升级",
             type: "normal",
             background: "#5c4b4b",
             portrait: "resources/secret.png",
@@ -2839,7 +2730,6 @@
             ],
         },
         "A2-Iridite-Battle-Start": {
-            title: "A2-铱晶战斗开始",
             type: "normal",
             background: "radial-gradient(circle, #151230, #000000)",
             portrait: "resources/secret.png",
@@ -2858,7 +2748,6 @@
             ],
         },
         "A2-Iridite-Battle-Middle": {
-            title: "A2-铱晶战斗中段",
             type: "normal",
             background: "radial-gradient(circle, #151230, #000000)",
             portrait: "resources/secret.png",
@@ -2881,7 +2770,6 @@
             ],
         },
         "A2-Iridite-Battle-End": {
-            title: "A2-铱晶战斗结束",
             type: "normal",
             background: "radial-gradient(circle, #151230, #000000)",
             portrait: "resources/secret.png",
@@ -2930,7 +2818,6 @@
             ],
         },
         "U3-Sel-Dead": {
-            title: "U3-赛尔之死",
             type: "normal",
             background: "linear-gradient(-180deg, #720804 0%, #720455 100%)",
             portrait: "resources/secret.png",
@@ -2962,7 +2849,6 @@
             ],
         },
         "Hive-Start": {
-            title: "蜂巢-开始",
             type: "normal",
             background: "radial-gradient(circle, #2a1c00, #150e00)",
             portrait: "resources/secret.png",
@@ -2991,7 +2877,6 @@
             ],
         },
         "Hive-Branch-Start": {
-            title: "蜂巢-分支开始",
             type: "normal",
             background: "radial-gradient(circle, #2a1c00, #150e00)",
             portrait: "resources/secret.png",
@@ -3008,7 +2893,6 @@
             ],
         },
         "Hive-Branch-Mid": {
-            title: "蜂巢-分支中段",
             type: "normal",
             background: "radial-gradient(circle, #2a1c00, #150e00)",
             portrait: "resources/secret.png",
@@ -3033,7 +2917,6 @@
             ],
         },
         "Hive-Aleph-Start": {
-            title: "蜂巢-阿列夫开始",
             type: "normal",
             background: "radial-gradient(circle, #2a1c00, #150e00)",
             portrait: "resources/secret.png",
@@ -3063,7 +2946,6 @@
             ],
         },
         "Hive-Cocoon-1": {
-            title: "蜂巢-茧1",
             type: "normal",
             background: "radial-gradient(circle, #2a1c00, #150e00)",
             portrait: "resources/secret.png",
@@ -3085,7 +2967,6 @@
             ],
         },
         "Hive-Cocoon-5": {
-            title: "蜂巢-茧5",
             type: "normal",
             background: "radial-gradient(circle, #2a1c00, #150e00)",
             portrait: "resources/secret.png",
@@ -3107,7 +2988,6 @@
             ],
         },
         "Hive-Tad-Start": {
-            title: "蜂巢-塔德开始",
             type: "normal",
             background: "#596c6c",
             portrait: "resources/secret.png",
@@ -3125,7 +3005,6 @@
             ],
         },
         "Hive-Tad-Middle1": {
-            title: "蜂巢-塔德中段1",
             type: "normal",
             background: "#596c6c",
             portrait: "resources/secret.png",
@@ -3155,7 +3034,6 @@
             ],
         },
         "Hive-Tad-Middle2": {
-            title: "蜂巢-塔德中段2",
             type: "normal",
             background: "#596c6c",
             portrait: "resources/secret.png",
@@ -3177,7 +3055,6 @@
             ],
         },
         "Hive-Tad-End": {
-            title: "蜂巢-塔德结束",
             type: "normal",
             background: "#596c6c",
             portrait: "resources/secret.png",
@@ -3195,7 +3072,6 @@
             ],
         },
         "Hive-Hard-Start": {
-            title: "蜂巢-困难开始",
             type: "normal",
             background: "radial-gradient(circle, #2a1c00, #150e00)",
             portrait: "resources/secret.png",
@@ -3209,7 +3085,6 @@
             ],
         },
         "Hive-Cocoon-10": {
-            title: "蜂巢-茧10",
             type: "normal",
             background: "radial-gradient(circle, #2a1c00, #150e00)",
             portrait: "resources/secret.png",
@@ -3223,7 +3098,6 @@
             ],
         },
         "Hive-Numbness-Start": {
-            title: "蜂巢-麻木开始",
             type: "normal",
             background: "#5e8503",
             portrait: "resources/secret.png",
@@ -3241,7 +3115,6 @@
             ],
         },
         "Hive-Numbness-Middle": {
-            title: "蜂巢-麻木中段",
             type: "normal",
             background: "#5e8503",
             portrait: "resources/secret.png",
@@ -3278,7 +3151,6 @@
             ],
         },
         "Hive-Numbness-End": {
-            title: "蜂巢-麻木结束",
             type: "normal",
             background: "#5e8503",
             portrait: "resources/secret.png",
@@ -3291,7 +3163,6 @@
             ],
         },
         "Hive-Hard-Middle": {
-            title: "蜂巢-困难中段",
             type: "normal",
             background: "radial-gradient(circle, #2a1c00, #150e00)",
             portrait: "resources/secret.png",
@@ -3307,7 +3178,6 @@
             ],
         },
         "Hive-Depth4-Unlock": {
-            title: "蜂巢-深度4解锁",
             type: "normal",
             background: "linear-gradient(-180deg, #720804 0%, #720455 100%)",
             portrait: "resources/secret.png",
@@ -3323,7 +3193,6 @@
             ],
         },
         "Hive-Depth4-Enter": {
-            title: "蜂巢-深度4进入",
             type: "normal",
             background: "linear-gradient(-180deg, #720804 0%, #720455 100%)",
             portrait: "resources/secret.png",
@@ -3338,7 +3207,6 @@
             ],
         },
         "Hive-Chamber-Unlock": {
-            title: "蜂巢-密室解锁",
             type: "normal",
             background: "linear-gradient(-180deg, #720804 0%, #720455 100%)",
             portrait: "resources/secret.png",
@@ -3365,7 +3233,6 @@
             ],
         },
         "Hive-Chamber-Enter": {
-            title: "蜂巢-密室进入",
             type: "normal",
             background: "linear-gradient(-180deg, #720804 0%, #720455 100%)",
             portrait: "resources/secret.png",
@@ -3389,7 +3256,6 @@
             ],
         },
         "Hive-Chamber-Fight-Start": {
-            title: "蜂巢-密室战斗开始",
             type: "normal",
             background: "linear-gradient(-180deg, #720804 0%, #720455 100%)",
             portrait: "resources/secret.png",
@@ -3411,7 +3277,6 @@
             onEnd() {player.bh.bhPause = false},
         },
         "Hive-Chamber-Fight-Mid1": {
-            title: "蜂巢-密室战斗中段1",
             type: "normal",
             background: "#cccccc",
             portrait: "resources/secret.png",
@@ -3451,7 +3316,6 @@
             onEnd() {player.bh.bhPause = false},
         },
         "Hive-Chamber-Fight-Mid2": {
-            title: "蜂巢-密室战斗中段2",
             type: "normal",
             background: "#cccccc",
             portrait: "resources/secret.png",
@@ -3471,7 +3335,6 @@
             onEnd() {player.bh.bhPause = false},
         },
         "Hive-Chamber-Fight-End": {
-            title: "蜂巢-密室战斗结束",
             type: "normal",
             background: "linear-gradient(-180deg, #720804 0%, #720455 100%)",
             portrait: "resources/secret.png",
@@ -3523,7 +3386,6 @@
             ],
         },
         "CB-Vespasian": {
-            title: "回溯-韦斯帕西安",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/pianoCutscene.mp3",
@@ -3544,7 +3406,6 @@
             ],
         },
         "CB-Lab-Unlock": {
-            title: "回溯-实验室解锁",
             type: "normal",
             background: "linear-gradient(-180deg, #1d2312 0%, #0b1109 100%)", //ADD THE MATOS LAB COLORS
             portrait: "resources/secret.png",
@@ -3557,7 +3418,6 @@
             ],
         }, 
         "CB-Lab-Enter": {
-            title: "回溯-实验室进入",
             type: "normal",
             background: "linear-gradient(-180deg, #1d2312 0%, #0b1109 100%)", 
             portrait: "resources/secret.png",
@@ -3571,7 +3431,6 @@
             ],
         }, 
         "Hive-Nests-Unlock": {
-            title: "蜂巢-巢穴解锁",
             type: "normal",
             background: "radial-gradient(circle, #2a1c00, #150e00)",
             portrait: "resources/secret.png",
@@ -3591,7 +3450,6 @@
             ],
         }, 
         "Hive-Pylon": {
-            title: "蜂巢-能量柱",
             type: "normal",
             background: "radial-gradient(circle, #2a1c00, #150e00)",
             portrait: "resources/secret.png",
@@ -3605,7 +3463,6 @@
             ],
         },
         "D1-Legendary-Punchcards": {
-            title: "D1-传说打孔卡",
             type: "normal",
             background: "linear-gradient(-180deg, #000000 100%)",
             portrait: "resources/secret.png",
@@ -3631,7 +3488,6 @@
             ],
         },
         "D1-Humanity-Punchcard": {
-            title: "D1-人性打孔卡",
             type: "normal",
             background: "linear-gradient(-180deg, #000000 100%)",
             portrait: "resources/secret.png",
@@ -3660,7 +3516,6 @@
             ],
         },
         "D1-Blood": {
-            title: "D1-鲜血",
             type: "normal",
             portrait: "resources/secret.png",
             trigger() {return player.bl.blood.gte(1)},
@@ -3675,7 +3530,6 @@
             ],
         },
         "D1-Blood-Battle": {
-            title: "D1-鲜血战斗",
             type: "normal",
             portrait: "resources/secret.png",
             trigger() {return player.subtabs["bl"]['stuff'] == 'Battle'},
@@ -3689,7 +3543,6 @@
             ],
         },
         "D1-Nox-Intro": {
-            title: "D1-诺克斯介绍",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/aniciffoCutscene.mp3",
@@ -3710,7 +3563,6 @@
             ],
         },
         "D1-Nox-Battle-Start": {
-            title: "D1-诺克斯战斗开始",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/aniciffoCutscene.mp3",
@@ -3729,7 +3581,6 @@
             ],
         },
         "D1-Nox-Battle-End": {
-            title: "D1-诺克斯战斗结束",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/aniciffoCutscene.mp3",
@@ -3752,7 +3603,6 @@
             ],
         },
         "U1-Pylon": {
-            title: "U1-能量柱",
             type: "normal",
             portrait: "resources/secret.png",
             trigger() {return player.i.pylonBuilt },
@@ -3769,7 +3619,6 @@
             ],
         },
         "U2-Pylon": {
-            title: "U2-能量柱",
             type: "normal",
             portrait: "resources/secret.png",
             trigger() {return player.in.pylonBuilt },
@@ -3787,7 +3636,6 @@
             ],
         },
         "DS-Dice-Space": {
-            title: "骰子空间",
             type: "normal",
             portrait: "resources/secret.png",
             background: "linear-gradient(45deg, #666666ff 0%, #585858ff 100%)",
@@ -3804,7 +3652,6 @@
             ],
         },
         "DS-Zar-Reqs": {
-            title: "扎尔-需求",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/zarCutscene.mp3",
@@ -3829,7 +3676,6 @@
             ],
         },
         "DS-Zar-Unlock": {
-            title: "扎尔-解锁",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/zarCutscene.mp3",
@@ -3849,7 +3695,6 @@
             ],
         },
         "DS-Zar-CoinFlip": {
-            title: "扎尔-抛硬币",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/zarCutscene.mp3",
@@ -3870,7 +3715,6 @@
             ],
         },
         "DS-Zar-WheelOfFortune": {
-            title: "扎尔-命运之轮",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/zarCutscene.mp3",
@@ -3899,7 +3743,6 @@
             ],
         },
         "DS-Zar-SpinWheel": {
-            title: "扎尔-转轮",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/novasentFlashback.mp3",
@@ -3929,7 +3772,6 @@
             ],
         },
         "DS-Zar-Buyables": {
-            title: "扎尔-可购买",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/novasentFlashback.mp3",
@@ -3978,7 +3820,6 @@
             ],
         },
         "DS-Zar-Slots": {
-            title: "扎尔-老虎机",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/zarCutscene.mp3",
@@ -4021,7 +3862,6 @@
             ],
         },
         "DS-Zar-Slot-Spin": {
-            title: "扎尔-老虎机旋转",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/novasentFlashback.mp3",
@@ -4047,7 +3887,6 @@
             ],
         },
         "DS-Zar-Shrine": {
-            title: "扎尔-神殿",
             type: "normal",
             portrait: "resources/secret.png",
             background: "linear-gradient(180deg, #094599 0%, #062a5eff 50%, #094599 100%)",
@@ -4095,7 +3934,6 @@
             ],
         },
         "DS-Zar-Ritual": {
-            title: "扎尔-仪式",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/mysteryCutscene.mp3",
@@ -4119,7 +3957,6 @@
             ],
         },
         "DS-Zar-Ascension-Shard": {
-            title: "扎尔-飞升碎片",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/mysteryCutscene.mp3",
@@ -4144,7 +3981,6 @@
             ],
         },
         "DS-Zar-Shrine-Reactivate": {
-            title: "扎尔-神殿重激活",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/mysteryCutscene.mp3",
@@ -4160,7 +3996,6 @@
             ],
         },
         "DS-Zar-BlessingIV": {
-            title: "扎尔-祝福IV",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/novasentFlashback.mp3",
@@ -4179,7 +4014,6 @@
             ],
         },
         "DS-Zar-BlessingVII": {
-            title: "扎尔-祝福VII",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/mysteryCutscene.mp3",
@@ -4217,7 +4051,6 @@
             ],
         },
         "DS-Zar-Cards": {
-            title: "扎尔-卡牌",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/mysteryCutscene.mp3",
@@ -4239,7 +4072,6 @@
             ],
         },
         "DS-Zar-Pylon": {
-            title: "扎尔-能量柱",
             type: "normal",
             portrait: "resources/secret.png",
             background: "linear-gradient(180deg, #094599 0%, #062a5eff 50%, #094599 100%)",
@@ -4255,7 +4087,6 @@
 
         //REMINDER: Make enhance dust pet cutscene (reference the presence of ascension shards, and marcel's statue)
         "CB-Enhance-Dust": {
-            title: "回溯-强化粉尘",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/lament.mp3",
@@ -4287,7 +4118,6 @@
         },
         //note: zar is an ascensionist as well
                 "DS-Zar-Card-Generator": {
-            title: "扎尔-卡牌生成器",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/lament.mp3",
@@ -4321,7 +4151,6 @@
             ],
         },
         "DS-Zar-Card-Draw": {
-            title: "扎尔-抽牌",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/mysteryCutscene.mp3",
@@ -4348,7 +4177,6 @@
             ],
         },
         "DS-Zar-Card-Upgrade": {
-            title: "扎尔-卡牌升级",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/novasentFlashback.mp3",
@@ -4375,7 +4203,6 @@
             ],
         },
         "DS-Zar-Dungeon-Unlock": {
-            title: "扎尔-地下城解锁",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/novasentFlashback.mp3",
@@ -4402,7 +4229,6 @@
             ],
         },
         "DS-Zar-Dungeon-Open": {
-            title: "扎尔-地下城开门",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/mysteryCutscene.mp3",
@@ -4421,7 +4247,6 @@
             ],
         },
         "DS-Zar-Dungeon-Enter": {
-            title: "扎尔-地下城进入",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/navTheme.mp3",
@@ -4447,7 +4272,6 @@
             ],
         },
         "DS-Zar-Dungeon-Dice1": {
-            title: "扎尔-地下城骰子1",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/mysteryCutscene.mp3",
@@ -4468,7 +4292,6 @@
             ],
         },
         "DS-Zar-Dungeon-Dice2": {
-            title: "扎尔-地下城骰子2",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/mysteryCutscene.mp3",
@@ -4485,7 +4308,6 @@
             ],
         },
         "DS-Zar-Dungeon-Dice3": {
-            title: "扎尔-地下城骰子3",
             type: "normal",
             music: "music/navTheme.mp3",
             background: "#7d619c",
@@ -4524,7 +4346,6 @@
             ],
         },
         "DS-Zar-Dungeon-Dice4": {
-            title: "扎尔-地下城骰子4",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/mysteryCutscene.mp3",
@@ -4540,7 +4361,6 @@
             ],
         },
         "DS-Zar-Dungeon-Zar-Fight": {
-            title: "扎尔-地下城战斗",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/lament.mp3",
@@ -4576,7 +4396,6 @@
             ],
         },
         "DS-Zar-Dungeon-Zar-Fight2": {
-            title: "扎尔-地下城战斗2",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/cutsceneBox.mp3",
@@ -4605,7 +4424,6 @@
             ],
         },
         "DS-Zar-Dungeon-Zar-Fight3": {
-            title: "扎尔-地下城战斗3",
             type: "normal",
             portrait: "resources/secret.png",
             background: "linear-gradient(0deg, #bbbbbb 0%, #535353 100%)",
@@ -4620,7 +4438,6 @@
             ],
         },
         "DS-Zar-Dungeon-Zar-Fight4": {
-            title: "扎尔-地下城战斗4",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/navTheme.mp3",
@@ -4664,7 +4481,6 @@
             ],
         },
         "DS-Zar-Dungeon-Zar-Fight5": {
-            title: "扎尔-地下城战斗5",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/navTheme.mp3",
@@ -4694,7 +4510,6 @@
             ],
         },
         "DS-Zar-Dungeon-Zar-Fight6": {
-            title: "扎尔-地下城战斗6",
             type: "normal",
             portrait: "resources/4d1748.png",
             music: "music/lament.mp3",
@@ -4756,7 +4571,6 @@
             ],
         },
         "DS-Zar-Dungeon-Zar-Fight-End": {
-            title: "扎尔-地下城战斗结束",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/cinematicCutscene.mp3",
@@ -4819,7 +4633,6 @@
             ],
         },
         "DS-Zar-God": {
-            title: "扎尔-神",
             type: "normal",
             portrait: "resources/secret.png",
             music: "music/cutscenePiano.mp3",
@@ -4866,7 +4679,6 @@
             ],
         },
         "U3-Pylon": {
-            title: "U3-能量柱",
             type: "normal",
             background: "#260300",
             music: "music/singularityWaltzPiano.mp3",
