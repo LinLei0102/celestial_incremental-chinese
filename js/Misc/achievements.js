@@ -8,7 +8,7 @@ addLayer("achievements", {
     }},
     achievements: {
         1: {
-            name: "First Reset<br><small>(of many)</small>",
+            name: "首次重置<br><small>(众多之一)</small>",
             image: "resources/achievements/1_01.png",
             tooltip: "<h3>First Reset <small>(of many)</small></h3><hr style='margin-bottom:4px'>Obtain your first rank.",
             color: "white",
@@ -16,7 +16,7 @@ addLayer("achievements", {
             unlocked: true,
         },
         2: {
-            name: "Small Beginnings",
+            name: "小小的开始",
             image: "resources/achievements/1_02.png",
             tooltip: "<h3>Small Beginnings</h3><hr style='margin-bottom:4px'>Obtain your first tier.<br><br>Reward: Ranks are 20% cheaper.",
             color: "white",
@@ -25,7 +25,7 @@ addLayer("achievements", {
             marked: true,
         },
         3: {
-            name: "Seperate Doubling",
+            name: "分别翻倍",
             image: "resources/achievements/1_03.png",
             tooltip: "<h3>Seperate Doubling</h3><hr style='margin-bottom:4px'>Reach x2 points from factors.",
             color: "white",
@@ -33,7 +33,7 @@ addLayer("achievements", {
             unlocked: true,
         },
         4: {
-            name: "Tetr, Hold the Mino",
+            name: "四阶，别打米诺",
             image: "resources/achievements/1_04.png",
             tooltip: "<h3>Tetr, Hold the Mino</h3><hr style='margin-bottom:4px'>Obtain your first tetr.<br><br>Reward: Ranks and Tiers are<br>15% cheaper.",
             color: "white",
@@ -42,7 +42,7 @@ addLayer("achievements", {
             marked: true,
         },
         5: {
-            name: "Prestigious",
+            name: "威望初升",
             image: "resources/achievements/1_05.png",
             tooltip: "<h3>Prestigious</h3><hr style='margin-bottom:4px'>Do your first prestige reset.<br><br>Reward: Ranks, Tiers, and Tetrs<br>are 10% cheaper.",
             color: "white",
@@ -50,7 +50,7 @@ addLayer("achievements", {
             marked: true,
         },
         6: {
-            name: "Octuple Factors",
+            name: "八倍因子",
             image: "resources/achievements/1_06.png",
             tooltip: "<h3>Octuple Factors</h3><hr style='margin-bottom:4px'>Buy a Factor VIII.",
             color: "white",
@@ -58,7 +58,7 @@ addLayer("achievements", {
             unlocked: true,
         },
         7: {
-            name: "Factor Powered",
+            name: "因子驱动",
             image: "resources/achievements/1_07.png",
             tooltip: "<h3>Factor Powered</h3><hr style='margin-bottom:4px'>Buy a Power Factor.",
             color: "white",
@@ -66,7 +66,7 @@ addLayer("achievements", {
             unlocked: true,
         },
         8: {
-            name: "Leaf Leavings",
+            name: "落叶归根",
             image: "resources/achievements/1_08.png",
             tooltip: "<h3>Leaf Leavings</h3><hr style='margin-bottom:4px'>Buy a Leaf Producer.",
             color: "white",
@@ -74,7 +74,7 @@ addLayer("achievements", {
             unlocked: true,
         },
         9: {
-            name: "Longer Blades",
+            name: "更长的叶片",
             image: "resources/achievements/1_09.png",
             tooltip: "<h3>Longer Blades</h3><hr style='margin-bottom:4px'>Increase your grass value.<br><br>Reward: Grass spawn time<br>reduced by 10%.",
             color: "white",
@@ -83,7 +83,7 @@ addLayer("achievements", {
             marked: true,
         },
         10: {
-            name: "Pent Up",
+            name: "五阶蓄力",
             image: "resources/achievements/1_10.png",
             tooltip: "<h3>Pent Up</h3><hr style='margin-bottom:4px'>Obtain your first pent.",
             color: "white",
@@ -91,7 +91,7 @@ addLayer("achievements", {
             unlocked: true,
         },
         11: {
-            name: "Natural Dormancy",
+            name: "自然休眠",
             image: "resources/achievements/1_11.png",
             tooltip: "<h3>Natural Dormancy</h3><hr style='margin-bottom:4px'>Unlock golden grass.<br><br>Reward: Increase grass value by 25%.",
             color: "white",
@@ -100,7 +100,7 @@ addLayer("achievements", {
             marked: true,
         },
         12: {
-            name: "Golden Scam",
+            name: "金色骗局",
             image: "resources/achievements/1_12.png",
             tooltip: "<h3>Golden Scam</h3><hr style='margin-bottom:4px'>Increase your golden grass value.<br><br>Reward: Golden grass spawn time<br>reduced by 10%.",
             color: "white",
@@ -109,14 +109,14 @@ addLayer("achievements", {
             marked: true,
         },
         13: {
-            name: "Bugged Buffs",
+            name: "虫群增益",
             image: "resources/achievements/1_13.png",
             tooltip: "<h3>Bugged Buffs</h3><hr style='margin-bottom:4px'>Do your first grasshop reset.",
             color: "white",
             unlocked: true,
         },
         14: {
-            name: "Unranked",
+            name: "取消排名",
             image: "resources/achievements/1_14.png",
             tooltip: "<h3>Unranked</h3><hr style='margin-bottom:4px'>Prestige without having any<br>ranks/tiers/tetrs.<br><br>Reward: Increase grass value<br>by 50%.",
             color: "white",
@@ -125,7 +125,7 @@ addLayer("achievements", {
             marked: true,
         },
         15: {
-            name: "Small Returns",
+            name: "小额回报",
             image: "resources/achievements/1_15.png",
             tooltip: "<h3>Small Returns</h3><hr style='margin-bottom:4px'>Buy a grass factor.<br><br>Reward: Increase fertilizer<br>gain by 50%.",
             color: "white",
@@ -134,7 +134,7 @@ addLayer("achievements", {
             marked: true,
         },
         16: {
-            name: "Shockingly Powerful",
+            name: "震撼力",
             image: "resources/achievements/1_16.png",
             tooltip: "<h3>Shockingly Powerful</h3><hr style='margin-bottom:4px'>Buy a Factor Study I.",
             color: "white",
@@ -142,7 +142,7 @@ addLayer("achievements", {
             unlocked: true,
         },
         17: {
-            name: "Hello World",
+            name: "你好世界",
             image: "resources/achievements/1_17.png",
             tooltip: "<h3>Hello World</h3><hr style='margin-bottom:4px'>Do your first<br>code experience reset.<br><br>Reward: Decrease pent<br>requirement by /8.",
             color: "white",
@@ -150,7 +150,7 @@ addLayer("achievements", {
             marked: true,
         },
         18: {
-            name: "Timed Gains",
+            name: "定时获得",
             image: "resources/achievements/1_18.png",
             tooltip: "<h3>Timed Gains</h3><hr style='margin-bottom:4px'>Unlock Check Back.",
             color: "white",
@@ -158,14 +158,14 @@ addLayer("achievements", {
             unlocked: true,
         },
         19: {
-            name: "Lucky Gains",
+            name: "幸运获得",
             image: "resources/achievements/1_19.png",
             tooltip: "<h3>Lucky Gains</h3><hr style='margin-bottom:4px'>Enable dice OTF.",
             color: "white",
             unlocked: true,
         },
         20: {
-            name: "Multiplied Chances",
+            name: "倍增机会",
             image: "resources/achievements/1_20.png",
             tooltip: "<h3>Multiplied Chances</h3><hr style='margin-bottom:4px'>Gain a second die.<br><br>Reward: Increase dice point<br>gain by 25%.",
             color: "white",
@@ -174,14 +174,14 @@ addLayer("achievements", {
             marked: true,
         },
         21: {
-            name: "New Friends",
+            name: "新朋友",
             image: "resources/achievements/1_21.png",
             tooltip: "<h3>New Friends</h3><hr style='margin-bottom:4px'>Gain your first pet.",
             color: "white",
             unlocked: true,
         },
         22: {
-            name: "All In",
+            name: "全押",
             image: "resources/achievements/1_22.png",
             tooltip: "<h3>All In</h3><hr style='margin-bottom:4px'>Do a booster dice roll<br>while having all t1 boost<br>effects be greater then 1.<br><br>Reward: Unlock a toggle for<br>faster booster rolls.",
             color: "white",
