@@ -19,7 +19,7 @@ addLayer("settings", {
             style: { width: '125px', minHeight: '50px', color: "var(--textColor)", background: "var(--miscButtonDisable)", borderRadius: '0px', border: "3px solid var(--regBorder)", margin: "0px 5px" },
         },
         4: {
-            title() { return "Savebank<br><small style='color:#f44'>[高度开发中]</small>" },
+            title() { return "存档库<br><small style='color:#f44'>[高度开发中]</small>" },
             canClick() { return true },
             unlocked() { return true },
             onClick() {
