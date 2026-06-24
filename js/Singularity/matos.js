@@ -4547,6 +4547,7 @@
                 ]
             },
             "Upgrades": {
+                title: "升级",
                 buttonStyle: {color: "white", borderRadius: "15px"},
                 unlocked() { return player.ma.matosUnlock && !player.ma.inBlackHeart },
                 content: [

@@ -2775,6 +2775,7 @@ addLayer("ep2", {
                 ],
             },
             "Upgrades": {
+                title: "升级",
                 content: [
                     ["style-column", [["cookie-display", []]], {width: "365px", height: "80px"}],
                     ["always-scroll-column", [

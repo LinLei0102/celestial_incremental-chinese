@@ -1142,6 +1142,7 @@
                 ]
             },
             "Upgrades": {
+                title: "升级",
                 buttonStyle() { return { border: "2px solid #384166", borderRadius: "10px" } },
                 unlocked() { return true },
                 content: [

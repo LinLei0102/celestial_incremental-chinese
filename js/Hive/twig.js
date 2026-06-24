@@ -1081,6 +1081,7 @@ addLayer("tw", {
                 ],
             },
             "Upgrades": {
+                title: "升级",
                 buttonStyle: { borderRadius: "5px" },
                 unlocked: true,
                 content: [

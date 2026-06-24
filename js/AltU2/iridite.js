@@ -1182,6 +1182,7 @@ addLayer("ir", {
                 ]
             },
             "Upgrades": {
+                title: "升级",
                 buttonStyle() { return {color: "white", borderRadius: "5px", borderColor: "#37078f"}},
                 unlocked() { return player.ir.iriditeUnlocked && !player.ir.inBattle },
                 content: [

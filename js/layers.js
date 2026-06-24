@@ -660,6 +660,7 @@
     microtabs: {
         stuff: {
             "Upgrades": {
+                title: "升级",
                 buttonStyle() { return { color: "white", borderRadius: "5px" } },
                 unlocked() { return true },
                 content: [
