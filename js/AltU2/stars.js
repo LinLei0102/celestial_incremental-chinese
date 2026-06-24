@@ -296,7 +296,7 @@ addLayer("st", {
             image() { return this.canClick() ? "resources/Pets/gwaCommonPet.png" : "resources/secret.png"},
             title() { return "Gwa" },
             description() {
-                return "x" + format(this.effect()[0]) + " to dark 天体点数.<br>"
+                return "x" + format(this.effect()[0]) + " to 暗天体点数.<br>"
             },
             levelLimit() { return getLevelableTier(this.layer, this.id).mul(5).add(10).min(50)},
             effect() {
@@ -688,7 +688,7 @@ addLayer("st", {
             image() { return this.canClick() ? "resources/Pets/testeUncommonPet.png" : "resources/secret.png"},
             title() { return "Teste" },
             description() {
-                return "^" + format(this.effect()[0]) + " to dark 天体点数 softcap.<br>"
+                return "^" + format(this.effect()[0]) + " to 暗天体点数 softcap.<br>"
             },
             levelLimit() { return getLevelableTier(this.layer, this.id).mul(5).add(10).min(50)},
             effect() {

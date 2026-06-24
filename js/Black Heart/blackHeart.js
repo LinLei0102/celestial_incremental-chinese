@@ -4749,7 +4749,7 @@ addLayer("bh", {
                                         ["tooltip-row", [["raw-html", () => {return player.bh.characters[0].attributes.negative ? "—<div class='bottomTooltip' style='margin-top:0px'>Negative<hr>Incoming attacks have a <br>" + formatSimple(Decimal.mul(player.bh.characters[0].attributes.negative, Decimal.div(Decimal.add(100, player.bh.characters[0].luck), 100)).mul(100)) + "% chance to be turned<br>into heals.</div>" : ""}, {color: "#44b", fontSize: "30px", fontFamily: "monospace", textShadow: "1px 1px 1px black, -1px 1px 1px black, -1px -1px 1px black, 1px -1px 1px black", marginLeft: "2px"}]]],
                                     ], {width: "150px", height: "30px", marginTop: "-35px"}],
                                     ["blank", ["25px", "5px"]],
-                                    ["row", [["raw-html", () => {return player.bh.creationUsed ? "You have <h3>" + format(player.creation.incrementalEnergy) + "</h3> incremental energy." : ""}, {color: "#c9acff", fontSize: "18px", fontFamily: "monospace"}]]],
+                                    ["row", [["raw-html", () => {return player.bh.creationUsed ? "你有 <h3>" + format(player.creation.incrementalEnergy) + "</h3> incremental energy." : ""}, {color: "#c9acff", fontSize: "18px", fontFamily: "monospace"}]]],
                                 ], {margin: "5px"}],
                                 ["style-column", [
                                     ["clickable", "C1-Icon"],
@@ -4967,7 +4967,7 @@ addLayer("bh", {
             "win": {
                 content: [
                     ["style-column", [
-                        ["raw-html", "You have reached the end of this stage.", {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                        ["raw-html", "你已到达此阶段的终点。", {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                         ["raw-html", "You leave with your spoils.", {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                     ], {width: "800px", height: "80px", backgroundColor: "#1b0218", border: "3px solid #8a0e79", borderRadius: "20px"}],
                     ["blank", "25px"],

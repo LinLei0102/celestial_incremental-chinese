@@ -1321,7 +1321,7 @@ addLayer('g', {
         ["raw-html", () => {return hasUpgrade('g', 13) ? "Boosts grass value by x" + format(player.g.goldGrassEffect) : ""}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
         ["style-row", [], () => {return hasUpgrade("g", 13) ? {width: "10px", height: "10px"} : {display: "none !important"}}],
         ["row", [
-            ["raw-html", () => {return player.ev.evolutionsUnlocked[7] ? "You have " + format(player.g.moonstone) + " moonstone" : ""}, {color: "white", fontSize: "20px", fontFamily: "monospace", userSelect: "none"}],
+            ["raw-html", () => {return player.ev.evolutionsUnlocked[7] ? "你有 " + format(player.g.moonstone) + " moonstone" : ""}, {color: "white", fontSize: "20px", fontFamily: "monospace", userSelect: "none"}],
             ["raw-html", () => {return player.ev.evolutionsUnlocked[7] ? "(+" + format(player.g.moonstoneVal) + " MV)" : ""}, {color: "white", fontSize: "20px", fontFamily: "monospace", userSelect: "none", marginLeft: "10px"}],
         ], () => {return player.ev.evolutionsUnlocked[7] ? {} : {display: "none !important"}}],
         ["raw-html", () => {return player.ev.evolutionsUnlocked[7] ? "Boosts golden grass value by x" + format(player.g.moonstoneEffect) : ""}, {color: "white", fontSize: "16px", fontFamily: "monospace", userSelect: "none"}],

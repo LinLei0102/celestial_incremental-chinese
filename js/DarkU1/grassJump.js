@@ -326,7 +326,7 @@ addLayer("dgj", {
             },
         },
         12: {
-            effectDescription() { return "Increase dark 天体点数 gain by 100% per grass jump<br>Currently: x" + format(player.dgj.milestone2Effect) + "." },
+            effectDescription() { return "Increase 暗天体点数 gain by 100% per grass jump<br>Currently: x" + format(player.dgj.milestone2Effect) + "." },
             done() { return player.dgj.grassJump.gte(2) },
             style() {
                 let look = {width: "500px", minHeight: "75px", color: "white", border: "3px solid #00488F", borderTop: "0px", borderRadius: "0px"}
@@ -391,7 +391,7 @@ addLayer("dgj", {
                     ["style-row", [
                         ["clickable", 11],
                         ["style-row", [
-                            ["raw-html", () => {return player.dgj.grassJump.neq(1) ? "You have " + formatWhole(player.dgj.grassJump) + " Grass Jumps" : "You have 1 Grass Jump"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                            ["raw-html", () => {return player.dgj.grassJump.neq(1) ? "你有 " + formatWhole(player.dgj.grassJump) + " Grass Jumps" : "你有 1 Grass Jump"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                         ], {width: "280px", height: "74px", background: "black", border: "3px solid #00488F", borderRadius: "15px", marginLeft: "8px"}],
                     ], {backgroundColor: "#002e5c", border: "3px solid #00488F", borderRadius: "13px 13px 0px 0px", width: "588px", height: "100px"}],
                     ["style-row", [

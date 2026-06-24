@@ -272,7 +272,7 @@
         13: {
             title: "Dark Starmetal Upgrade IV",
             unlocked() { return hasUpgrade("sma", 12)},
-            description: "Dark prestige points boost dark 天体点数 gain.",
+            description: "Dark prestige points boost 暗天体点数 gain.",
             cost: new Decimal("8"),
             currencyLocation() { return player.sma },
             currencyDisplayName: "星金属合金",

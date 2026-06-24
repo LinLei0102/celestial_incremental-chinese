@@ -325,7 +325,7 @@ addLayer("stagnantSynestia", {
                                 ["raw-html", () => {return Decimal.sub(1.025, player.bh.comboScalingReduction).gt(1) ? formatSimple(Decimal.sub(1.025, player.bh.comboScalingReduction).max(1).sub(1).mul(100)) + "% starting at 25" : ""}, {color: "var(--textColor)", fontSize: "16px", fontFamily: "monospace"}],
                                 ["blank", "5px"],
                                 ["raw-html", "<u>Time Stagnation", {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}],
-                                ["raw-html", "You have to force time to move forward", {color: "var(--textColor)", fontSize: "16px", fontFamily: "monospace"}],
+                                ["raw-html", "你得强制让时间前进", {color: "var(--textColor)", fontSize: "16px", fontFamily: "monospace"}],
                             ], {width: "250px", height: "217px", background: "var(--layerBackground)"}],
                             ["style-row", [
                                 ["layer-proxy", ["bh", [
@@ -395,7 +395,7 @@ addLayer("stagnantSynestia", {
                                 ["raw-html", () => {return "Combo scaling increases based on combo value"}, {color: "var(--textColor)", fontSize: "16px", fontFamily: "monospace"}],
                                 ["blank", "5px"],
                                 ["raw-html", "<u>Time Stagnation", {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}],
-                                ["raw-html", "You have to force time to move forward", {color: "var(--textColor)", fontSize: "16px", fontFamily: "monospace"}],
+                                ["raw-html", "你得强制让时间前进", {color: "var(--textColor)", fontSize: "16px", fontFamily: "monospace"}],
                             ], {width: "250px", height: "217px", background: "var(--miscButtonDisable)"}],
                             ["style-row", [
                                 ["layer-proxy", ["bh", [

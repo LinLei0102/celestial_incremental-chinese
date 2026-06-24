@@ -3205,7 +3205,7 @@ addLayer("tad", {
                     ["clickable", 41],
                     ["blank", "25px"],
                     ["style-row", [
-                        ["raw-html", () => {return player.tad.exponentiate.neq(1) ? "You have exponentiated " + formatWhole(player.tad.exponentiate) + " times" : "You have exponentiated " + formatWhole(player.tad.exponentiate) + " time"}, {color: "rgba(0,0,0,0.6)", fontSize: "24px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return player.tad.exponentiate.neq(1) ? "你有 exponentiated " + formatWhole(player.tad.exponentiate) + " times" : "你有 exponentiated " + formatWhole(player.tad.exponentiate) + " time"}, {color: "rgba(0,0,0,0.6)", fontSize: "24px", fontFamily: "monospace"}],
                     ], {backgroundColor: "#ffd5b3", border: "3px solid #997f6b", borderRadius: "13px 13px 0px 0px", width: "588px", height: "40px"}],
                     ["style-row", [
                         ["style-column", [

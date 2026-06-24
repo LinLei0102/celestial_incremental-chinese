@@ -791,7 +791,7 @@ addLayer("n", {
                 content: [
                     ["blank", "5px"],
                     ["tooltip-row", [
-                        ["raw-html", () => {return player.n.nest.eq(1) ? "You have <h3>" + formatSimple(player.n.nest) + "</h3> Nest." : "You have <h3>" + formatSimple(player.n.nest) + "</h3> Nests." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return player.n.nest.eq(1) ? "你有 <h3>" + formatSimple(player.n.nest) + "</h3> Nest." : "你有 <h3>" + formatSimple(player.n.nest) + "</h3> Nests." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                         ["raw-html", () => {return player.n.nestGain.gt(1) ? "(+" + formatSimple(player.n.nestGain) + ")" : ""}, () => {
                             let look = {color: "white", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}
                             player.al.honeycomb.gte(1e25) && player.al.royalJelly.gte(1e25) ? look.color = "white" : look.color = "gray"
@@ -819,7 +819,7 @@ addLayer("n", {
                 content: [
                     ["blank", "15px"],
                     ["style-row", [
-                        ["raw-html", () => {return player.n.nestReset.eq(1) ? "You have 1 nest reset" : "You have " + formatWhole(player.n.nestReset) + " nest resets"}, {color: "rgba(0,0,0,0.6)", fontSize: "24px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return player.n.nestReset.eq(1) ? "你有 1 nest reset" : "你有 " + formatWhole(player.n.nestReset) + " nest resets"}, {color: "rgba(0,0,0,0.6)", fontSize: "24px", fontFamily: "monospace"}],
                     ], {backgroundColor: "#E3987A", border: "3px solid #9e6a55", borderRadius: "13px 13px 0px 0px", width: "588px", height: "40px"}],
                     ["style-row", [
                         ["style-column", [

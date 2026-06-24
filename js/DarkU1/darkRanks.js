@@ -248,13 +248,13 @@
         11: {
             title() {
                 if (player.dr.rank.lte(20)) {
-                    return "<h2>Reset dark 天体点数, but rank up.</h2><br><h3>Req: " + format(player.dr.rankReq) + " Points</h3>"
+                    return "<h2>Reset 暗天体点数, but rank up.</h2><br><h3>Req: " + format(player.dr.rankReq) + " Points</h3>"
                 } else if (player.dr.rank.lte(100)) {
-                    return "<h2>Reset dark 天体点数, but rank up.</h2><br><h3>Req: " + format(player.dr.rankReq) + " Points<br><small style='color:red'>[SOFTCAPPED]</small></h3>"
+                    return "<h2>Reset 暗天体点数, but rank up.</h2><br><h3>Req: " + format(player.dr.rankReq) + " Points<br><small style='color:red'>[SOFTCAPPED]</small></h3>"
                 } else if (player.dr.rank.lte(1e30)) {
-                    return "<h2>Reset dark 天体点数, but rank up.</h2><br><h3>Req: " + format(player.dr.rankReq) + " Points<br><small style='color:red'>[SOFTCAPPED<sup>2</sup>]</small></h3>"
+                    return "<h2>Reset 暗天体点数, but rank up.</h2><br><h3>Req: " + format(player.dr.rankReq) + " Points<br><small style='color:red'>[SOFTCAPPED<sup>2</sup>]</small></h3>"
                 } else {
-                    return "<h2>Reset dark 天体点数, but rank up.</h2><br><h3>Req: " + format(player.dr.rankReq) + " Points<br><small style='color:red'>[SOFTCAPPED<sup>3</sup>]</small></h3>"
+                    return "<h2>Reset 暗天体点数, but rank up.</h2><br><h3>Req: " + format(player.dr.rankReq) + " Points<br><small style='color:red'>[SOFTCAPPED<sup>3</sup>]</small></h3>"
                 }
             },
             canClick() { return player.du.points.gte(player.dr.rankReq) && player.dr.ranksToGet.gt(0) && !hasUpgrade("le", 16) },
@@ -271,7 +271,7 @@
             }
         },
         12: {
-            title() { return "<h2>Reset dark 天体点数 and ranks, but tier up.</h2><br><h3>Req: " + formatWhole(player.dr.tierReq) + " Rank</h3>" },
+            title() { return "<h2>Reset 暗天体点数 and ranks, but tier up.</h2><br><h3>Req: " + formatWhole(player.dr.tierReq) + " Rank</h3>" },
             canClick() { return player.dr.rank.gte(player.dr.tierReq) && player.dr.tiersToGet.gt(0) && !hasUpgrade("le", 19) },
             unlocked() { return true },
             onClick() {
@@ -286,7 +286,7 @@
             }
         },
         13: {
-            title() { return "<h2>Reset dark 天体点数, ranks, and tiers, but tetr up.</h2><br><h3>Req: " + formatWhole(player.dr.tetrReq) + " Tier</h3>" },
+            title() { return "<h2>Reset 暗天体点数, ranks, and tiers, but tetr up.</h2><br><h3>Req: " + formatWhole(player.dr.tetrReq) + " Tier</h3>" },
             canClick() { return player.dr.tier.gte(player.dr.tetrReq) && player.dr.tetrsToGet.gt(0) && !hasUpgrade("le", 21) },
             unlocked() { return true },
             onClick() {
@@ -302,7 +302,7 @@
             },
         },
         14: {
-            title() { return "<h2><small>Reset dark 天体点数 and previous rank content, but pent up.</small></h2><br><h3>Req: " + formatWhole(player.dr.pentReq) + " Tetr</h3>" },
+            title() { return "<h2><small>Reset 暗天体点数 and previous rank content, but pent up.</small></h2><br><h3>Req: " + formatWhole(player.dr.pentReq) + " Tetr</h3>" },
             canClick() { return player.dr.tetr.gte(player.dr.pentReq) && player.dr.pentsToGet.gt(0) },
             unlocked() { return getLevelableTier("pu", 207, true) },
             onClick() {
@@ -487,8 +487,8 @@
         },
     },
     tabFormat: [
-        ["raw-html", () => { return "你有 <h3>" + format(player.du.points) + "</h3> dark 天体点数." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-        ["raw-html", () => { return "You are gaining <h3>" + format(player.du.pointGain) + "</h3> dark 天体点数 每秒." }, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+        ["raw-html", () => { return "你有 <h3>" + format(player.du.points) + "</h3> 暗天体点数." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+        ["raw-html", () => { return "You are gaining <h3>" + format(player.du.pointGain) + "</h3> 暗天体点数 每秒." }, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
         ["raw-html", () => { return "UNAVOIDABLE SOFTCAP: /" + format(player.du.pointSoftcap) + " to gain." }, {color: "red", fontSize: "16px", fontFamily: "monospace"}],
         ["raw-html", () => { return player.du.pointGain.gte(player.du.secondSoftcapStart) ? "UNAVOIDABLE SOFTCAP<sup>2</sup>: Gain past " + format(player.du.secondSoftcapStart) + " is raised by ^" + format(player.du.pointSoftcap2) + "." : "" }, {color: "red", fontSize: "16px", fontFamily: "monospace"}],
         ["raw-html", () => { return player.pet.legPetTimers[0].current.gt(0) ? "ECLIPSE IS ACTIVE: " + formatTime(player.pet.legPetTimers[0].current) + "." : ""}, {color: "#FEEF5F", fontSize: "20px", fontFamily: "monospace"}],

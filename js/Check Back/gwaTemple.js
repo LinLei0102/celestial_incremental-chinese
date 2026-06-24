@@ -1079,7 +1079,7 @@ addLayer("gwaTemple", {
                     ["top-column", [
                         ["style-column", [
                             ["row", [
-                                ["raw-html", () => {return player.gwaTemple.gwark.neq(1) ? "You have <h3>" + formatWhole(player.gwaTemple.gwark) + "</h3> gwarks." : "You have <h3>" + formatWhole(player.gwaTemple.gwark) + "</h3> gwark." }, {color: "#ffb", fontSize: "20px", fontFamily: "monospace"}],
+                                ["raw-html", () => {return player.gwaTemple.gwark.neq(1) ? "你有 <h3>" + formatWhole(player.gwaTemple.gwark) + "</h3> gwarks." : "你有 <h3>" + formatWhole(player.gwaTemple.gwark) + "</h3> gwark." }, {color: "#ffb", fontSize: "20px", fontFamily: "monospace"}],
                                 ["raw-html", () => {return hasMilestone("gwaTemple", 17) ? "(+" + formatWhole(player.gwaTemple.gwarkGain) + ")" : "" }, () => {
                                     let look = {color: "white", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}
                                     player.gwaTemple.gwarkGain.gt(0) ? look.color = "#ffb" : look.color = "#886"

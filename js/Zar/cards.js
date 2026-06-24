@@ -1792,7 +1792,7 @@
             levelLimit() { return new Decimal(99) },
             description() {
                 let str = [
-                    "x" + format(this.effect()[0]) + " to dark 天体点数.<br>", //not implemented
+                    "x" + format(this.effect()[0]) + " to 暗天体点数.<br>", //not implemented
                     "x" + format(this.effect()[1]) + " to heart points.",
                 ]
                 return str.join("")

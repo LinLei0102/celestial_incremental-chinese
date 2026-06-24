@@ -3268,7 +3268,7 @@
                     ["row", [["challenge", 11]]],
                     ["blank", "25px"],
                     ["row", [
-                        ["raw-html", () => { return player.fu.enterFear ? "You have <h3>" + format(player.fu.jocusEssence) + "</h3> jocus essence" : "" }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                        ["raw-html", () => { return player.fu.enterFear ? "你有 <h3>" + format(player.fu.jocusEssence) + "</h3> jocus essence" : "" }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                         ["raw-html", () => { return inChallenge("fu", 11) ? "(+" + format(player.fu.jocusEssenceToGet) + ")" : "" }, () => {
                             let look = {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                             player.fu.jocusEssenceToGet.gte(1) ? look.color = "white" : look.color = "gray"
@@ -3294,7 +3294,7 @@
                     ["row", [["challenge", 12]]],
                     ["blank", "10px"],
                     ["row", [
-                        ["raw-html", () => { return player.fu.enterNumb ? "You have <h3>" + formatSimple(player.fu.apathy) + "</h3> apathy" : "" }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                        ["raw-html", () => { return player.fu.enterNumb ? "你有 <h3>" + formatSimple(player.fu.apathy) + "</h3> apathy" : "" }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                         ["raw-html", () => { return inChallenge("fu", 12) ? "(+" + formatSimple(player.fu.apathyToGet) + ")" : "" }, () => {
                             let look = {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                             player.fu.apathyToGet.gte(1) ? look.color = "white" : look.color = "gray"
