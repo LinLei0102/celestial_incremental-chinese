@@ -961,51 +961,51 @@ addLayer("savebank", {
                 content: [
                     ["row", [
                         ["style-row", [
-                            ["style-row", [["raw-html", "001 - Unlocked Prestige"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "001 - 已解锁威望"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 101],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                         ["style-row", [
-                            ["style-row", [["raw-html", "002 - Unlocked Power"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "002 - 已解锁力量"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 102],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["style-row", [["raw-html", "003 - Unlocked Trees"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "003 - 已解锁树木"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 103],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                         ["style-row", [
-                            ["style-row", [["raw-html", "004 - Unlocked Grass"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "004 - 已解锁草地"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 104],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["style-row", [["raw-html", "005 - Unlocked Pent 1"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "005 - 已解锁五阶1"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 105],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                         ["style-row", [
-                            ["style-row", [["raw-html", "006 - Unlocked Pent 2"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "006 - 已解锁五阶2"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 106],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["style-row", [["raw-html", "007 - First Grasshop Reset"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "007 - 首次草跃重置"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 107],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                         ["style-row", [
-                            ["style-row", [["raw-html", "008 - Unlocked Pent 3"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "008 - 已解锁五阶3"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 108],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["style-row", [["raw-html", "009 - Unlocked Pent 5"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "009 - 已解锁五阶5"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 109],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                         ["style-row", [
-                            ["style-row", [["raw-html", "010 - Unlocked Check Back"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "010 - 已解锁回溯"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 110],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                     ]],
@@ -1018,21 +1018,21 @@ addLayer("savebank", {
                 content: [
                     ["row", [
                         ["style-row", [
-                            ["style-row", [["raw-html", "011 - Unlocked Portal"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "011 - 已解锁传送门"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 201],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                         ["style-row", [
-                            ["style-row", [["raw-html", "012 - Reached 1e200 Points"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "012 - 达到1e200点数"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 202],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["style-row", [["raw-html", "013 - Reached 1e250 Points"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "013 - 达到1e250点数"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 203],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                         ["style-row", [
-                            ["style-row", [["raw-html", "014 - Reached First Infinity"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "014 - 首次达到无限"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 204],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                     ]],
@@ -1045,61 +1045,61 @@ addLayer("savebank", {
                 content: [
                     ["row", [
                         ["style-row", [
-                            ["style-row", [["raw-html", "015 - Halfway Through First Infinity"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "015 - 首次无限过半"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 301],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                         ["style-row", [
-                            ["style-row", [["raw-html", "016 - Reached Second Infinity"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "016 - 第二次达到无限"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 302],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["style-row", [["raw-html", "017 - Halfway Through Second Infinity"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "017 - 第二次无限过半"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 303],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                         ["style-row", [
-                            ["style-row", [["raw-html", "018 - Reached Third Infinity"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "018 - 第三次达到无限"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 304],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["style-row", [["raw-html", "019 - First Infinity Challenge"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "019 - 首次无限挑战"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 305],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                         ["style-row", [
-                            ["style-row", [["raw-html", "020 - Second Infinity Challenge"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "020 - 第二次无限挑战"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 306],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["style-row", [["raw-html", "021 - Third Infinity Challenge"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "021 - 第三次无限挑战"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 307],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                         ["style-row", [
-                            ["style-row", [["raw-html", "022 - Fourth Infinity Challenge"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "022 - 第四次无限挑战"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 308],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["style-row", [["raw-html", "023 - Fifth Infinity Challenge"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "023 - 第五次无限挑战"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 309],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                         ["style-row", [
-                            ["style-row", [["raw-html", "024 - Sixth Infinity Challenge"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "024 - 第六次无限挑战"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 310],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["style-row", [["raw-html", "025 - Seventh Infinity Challenge"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "025 - 第七次无限挑战"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 311],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                         ["style-row", [
-                            ["style-row", [["raw-html", "026 - Eigth Infinity Challenge"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "026 - 第八次无限挑战"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 312],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                     ]],
@@ -1112,47 +1112,47 @@ addLayer("savebank", {
                 content: [
                     ["row", [
                         ["style-row", [
-                            ["style-row", [["raw-html", "027 - Some NIP Collected"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "027 - 收集了一些负无限点数"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 401],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                         ["style-row", [
-                            ["style-row", [["raw-html", "028 - Fifth Tav NIP Upgrade"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "028 - 第五个塔夫负无限升级"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 402],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["style-row", [["raw-html", "029 - Sixth Tav NIP Upgrade"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "029 - 第六个塔夫负无限升级"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 403],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                         ["style-row", [
-                            ["style-row", [["raw-html", "030 - Seventh Tav NIP Upgrade"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "030 - 第七个塔夫负无限升级"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 404],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["style-row", [["raw-html", "031 - Eigth Tav NIP Upgrade"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "031 - 第八个塔夫负无限升级"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 405],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                         ["style-row", [
-                            ["style-row", [["raw-html", "032 - Ninth Tav NIP Upgrade"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "032 - 第九个塔夫负无限升级"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 406],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["style-row", [["raw-html", "033 - First Infinity in Tav's Domain"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "033 - 塔夫领域的首次无限"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 407],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                         ["style-row", [
-                            ["style-row", [["raw-html", "034 - 1,000 OIP Grind"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "034 - 1,000 OIP 研磨"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 408],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["style-row", [["raw-html", "035 - Break Infinity"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "035 - 突破无限"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 409],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                     ]],
@@ -1165,61 +1165,61 @@ addLayer("savebank", {
                 content: [
                     ["row", [
                         ["style-row", [
-                            ["style-row", [["raw-html", "036 - 10,000 Infinities post-TAD"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "036 - 塔夫领域后一万次无限"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 501],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                         ["style-row", [
-                            ["style-row", [["raw-html", "037 - BI-IP:1 and BI-NIP:2"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "037 - 突破无限-无限点:1 负无限点:2"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 502],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["style-row", [["raw-html", "038 - BI-IP:2 and BI-NIP:3<br>All hex graces"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "038 - 突破无限-无限点:2 负无限点:3<br>全魔咒恩典"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 503],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                         ["style-row", [
-                            ["style-row", [["raw-html", "039 - BI-IP:4 and BI-NIP:3"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "039 - 突破无限-无限点:4 负无限点:3"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 504],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["style-row", [["raw-html", "040 - BI-IP:4 and BI-NIP:7"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "040 - 突破无限-无限点:4 负无限点:7"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 505],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                         ["style-row", [
-                            ["style-row", [["raw-html", "041 - BI-IP:5 and BI-NIP:7"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "041 - 突破无限-无限点:5 负无限点:7"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 506],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["style-row", [["raw-html", "042 - BI-IP:6 and BI-NIP:8"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "042 - 突破无限-无限点:6 负无限点:8"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 507],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                         ["style-row", [
-                            ["style-row", [["raw-html", "043 - All Pollinator Upgrades"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "043 - 所有传粉者升级"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 508],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["style-row", [["raw-html", "044 - BI-IP:7 and BI-NIP:8"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "044 - 突破无限-无限点:7 负无限点:8"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 509],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                         ["style-row", [
-                            ["style-row", [["raw-html", "045 - BI-IP:8 and BI-NIP:8"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "045 - 突破无限-无限点:8 负无限点:8"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 510],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["style-row", [["raw-html", "046 - BI-IP:9 and BI-NIP:8"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "046 - 突破无限-无限点:9 负无限点:8"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 511],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                         ["style-row", [
-                            ["style-row", [["raw-html", "047 - BI-IP:9 and BI-NIP:9"]], { width: "296.5px", height: "50px" }],
+                            ["style-row", [["raw-html", "047 - 突破无限-无限点:9 负无限点:9"]], { width: "296.5px", height: "50px" }],
                             ["clickable", 512],
                         ], { width: "396.5", height: "50px", border: "2px solid white" }],
                     ]],
