@@ -64,7 +64,7 @@ addLayer("settings", {
             style: { width: '100px', minHeight: '80px', color: "var(--textColor)", background: "var(--miscButton)", borderRadius: '0', border: "3px solid var(--miscButtonDisable)"},
         },
         14: {
-            title() { return "自动保存<hr style='border:1px solid #888;margin-top:1px'>" + options.autosave },
+            title() { return "自动保存<hr style='border:1px solid #888;margin-top:1px'>" + (options.autosave ? "开" : "关") },
             canClick: true,
             unlocked: true,
             onClick() {
@@ -119,7 +119,7 @@ addLayer("settings", {
             style: { width: '100px', minHeight: '80px', color: "var(--textColor)", background: "var(--miscButton)", borderRadius: '0', border: "3px solid var(--miscButtonDisable)"},
         },
         21: {
-            title() { return "隐藏里程碑弹窗<hr style='border:1px solid #888;margin-top:1px'>" + options.hideMilestonePopups },
+            title() { return "隐藏里程碑弹窗<hr style='border:1px solid #888;margin-top:1px'>" + (options.hideMilestonePopups ? "开" : "关") },
             canClick: true,
             unlocked: true,
             onClick() {
@@ -128,7 +128,7 @@ addLayer("settings", {
             style: { width: '100px', minHeight: '60px', color: "var(--textColor)", background: "var(--miscButton)", fontSize: "8px", lineHeight: "1", borderRadius: '0', border: "3px solid var(--miscButtonDisable)"},
         },
         22: {
-            title() { return "隐藏成就弹窗<hr style='border:1px solid #888;margin-top:1px'>" + options.hideAchievementPopups },
+            title() { return "隐藏成就弹窗<hr style='border:1px solid #888;margin-top:1px'>" + (options.hideAchievementPopups ? "开" : "关") },
             canClick: true,
             unlocked: true,
             onClick() {
@@ -137,7 +137,7 @@ addLayer("settings", {
             style: { width: '100px', minHeight: '60px', color: "var(--textColor)", background: "var(--miscButton)", fontSize: "8px", lineHeight: "1", borderRadius: '0', border: "3px solid var(--miscButtonDisable)"},
         },
         23: {
-            title() { return "隐藏通用弹窗<hr style='border:1px solid #888;margin-top:1px'>" + options.hideGeneralPopups },
+            title() { return "隐藏通用弹窗<hr style='border:1px solid #888;margin-top:1px'>" + (options.hideGeneralPopups ? "开" : "关") },
             canClick: true,
             unlocked: true,
             onClick() {
@@ -146,7 +146,7 @@ addLayer("settings", {
             style: { width: '100px', minHeight: '60px', color: "var(--textColor)", background: "var(--miscButton)", fontSize: "8px", lineHeight: "1", borderRadius: '0', border: "3px solid var(--miscButtonDisable)"},
         },
         24: {
-            title() { return "即时过场文本<hr style='border:1px solid #888;margin-top:1px'>" + options.instantCutsceneText },
+            title() { return "即时过场文本<hr style='border:1px solid #888;margin-top:1px'>" + (options.instantCutsceneText ? "开" : "关") },
             canClick: true,
             unlocked: true,
             onClick() {
@@ -155,7 +155,7 @@ addLayer("settings", {
             style: { width: '100px', minHeight: '60px', color: "var(--textColor)", background: "var(--miscButton)", fontSize: "8px", lineHeight: "1", borderRadius: '0', border: "3px solid var(--miscButtonDisable)"},
         },
         25: {
-            title() { return "画布性能模式<hr style='border:1px solid #888;margin-top:1px'>" + options.performanceMode },
+            title() { return "画布性能模式<hr style='border:1px solid #888;margin-top:1px'>" + (options.performanceMode ? "开" : "关") },
             canClick: true,
             unlocked: true,
             tooltip: "Disables fancy backgrounds and removes shadows from canvas elements.",
@@ -165,7 +165,7 @@ addLayer("settings", {
             style: { width: '100px', minHeight: '60px', color: "var(--textColor)", background: "var(--miscButton)", fontSize: "8px", lineHeight: "1", borderRadius: '0', border: "3px solid var(--miscButtonDisable)"},
         },
         26: {
-            title() { return player.depth3.milestone[25] == 0 ? "[功能未解锁]" : "弹幕地狱键盘控制<hr style='border:1px solid #888;margin-top:1px'>" + options.bhKeyboard },
+            title() { return player.depth3.milestone[25] == 0 ? "[功能未解锁]" : "弹幕地狱键盘控制<hr style='border:1px solid #888;margin-top:1px'>" + (options.bhKeyboard ? "开" : "关") },
             canClick() {return player.depth3.milestone[25] > 0},
             unlocked: true,
             onClick() {
@@ -179,7 +179,7 @@ addLayer("settings", {
         },
 
         27: {
-            title() { return "切换快捷键<hr style='border:1px solid #888;margin-top:1px'>" + options.toggleHotkey },
+            title() { return "切换快捷键<hr style='border:1px solid #888;margin-top:1px'>" + (options.toggleHotkey ? "开" : "关") },
             canClick: true,
             unlocked: true,
             onClick() {
@@ -188,7 +188,7 @@ addLayer("settings", {
             style: { width: '100px', minHeight: '60px', color: "var(--textColor)", background: "var(--miscButton)", fontSize: "9px", lineHeight: "1.1", borderRadius: '0', border: "3px solid var(--miscButtonDisable)"},
         },
         28: {
-            title() { return "切换音乐<hr style='border:1px solid #888;margin-top:1px'>" + options.musicToggle },
+            title() { return "切换音乐<hr style='border:1px solid #888;margin-top:1px'>" + (options.musicToggle ? "开" : "关") },
             canClick: true,
             unlocked: true,
             onClick() {
