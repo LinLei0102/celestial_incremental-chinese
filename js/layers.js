@@ -275,7 +275,7 @@
     },
     upgrades: {
         11: {
-            title: "Feature I",
+            title: "特性 I",
             unlocked() { return true },
             description: "Unlocks Ranks.",
             cost: new Decimal(10),
@@ -285,7 +285,7 @@
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
         12: {
-            title: "Feature II",
+            title: "特性 II",
             unlocked() { return hasUpgrade("i", 11) },
             description: "Unlocks Factors.",
             cost: new Decimal(40),
@@ -295,7 +295,7 @@
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
         13: {
-            title: "Tetr",
+            title: "四阶",
             unlocked() { return hasUpgrade("i", 12) },
             description: "Unlocks Tetr (In ranks).",
             cost: new Decimal(2500),
@@ -315,7 +315,7 @@
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
         15: {
-            title: "Power Factors",
+            title: "力量因子",
             unlocked() { return hasUpgrade("i", 14) },
             description: "Unlocks Power Factors (In factors).",
             cost: new Decimal(4e10),
@@ -345,7 +345,7 @@
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
         18: {
-            title: "Pent",
+            title: "五阶",
             unlocked() { return hasUpgrade("i", 17) },
             description: "Unlocks Pent (in ranks).",
             cost: new Decimal(1e28),
@@ -378,7 +378,7 @@
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
         22: {
-            title: "Pollinate",
+            title: "授粉",
             unlocked() { return player.in.unlockedBreak},
             description: "Use the experience of pests to create Pollinators.",
             cost: new Decimal("1e450"),
@@ -388,7 +388,7 @@
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
         23: {
-            title: "Steel",
+            title: "钢铁",
             unlocked() { return hasUpgrade("i", 22) && hasUpgrade("bi", 106)},
             description: "Unlocks Steelie reset layer (in grasshop).",
             cost: new Decimal("1e800"),
@@ -398,7 +398,7 @@
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
         24: {
-            title: "Crystallize",
+            title: "结晶",
             unlocked() { return hasUpgrade("i", 23) && hasUpgrade("bi", 106)},
             description: "Unlocks Crystallize reset layer (in prestige).",
             cost: new Decimal("1e1000"),
@@ -408,7 +408,7 @@
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
         25: {
-            title: "Productive Pollination",
+            title: "高效授粉",
             unlocked() { return hasUpgrade("i", 24) && hasUpgrade("bi", 106)},
             description: "Unlocks more Pollinator upgrades.",
             cost: new Decimal("1e1200"),
@@ -418,7 +418,7 @@
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
         26: {
-            title: "Time Reversal",
+            title: "时间逆转",
             unlocked() { return hasUpgrade("i", 25) && hasUpgrade("bi", 106)},
             description: "Unlocks Time Reversal (in ranks layer).",
             cost: new Decimal("1e1400"),
@@ -428,7 +428,7 @@
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
         27: {
-            title: "Pentomation",
+            title: "五阶化",
             unlocked() { return hasUpgrade("i", 26) && hasUpgrade("bi", 106)},
             description: "Automatically gain pent without resetting.",
             cost: new Decimal("1e1600"),
@@ -438,7 +438,7 @@
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
         28: {
-            title: "2nd OTF slot...",
+            title: "第二OTF槽位...",
             unlocked() { return hasUpgrade("i", 27) && hasUpgrade("bi", 106)},
             description: "Gain a 2nd OTF slot.",
             cost: new Decimal("1e1800"),
@@ -448,7 +448,7 @@
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
         29: {
-            title: "True Refinement",
+            title: "真精炼",
             unlocked() { return hasUpgrade("i", 32) && hasUpgrade("bi", 106) && player.ca.unlockedCante},
             description: "Unlock Hex of Purity.",
             cost: new Decimal("1e3000"),
@@ -458,7 +458,7 @@
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
         30: {
-            title: "Hexing Power",
+            title: "魔咒力量",
             unlocked() { return hasUpgrade("i", 29) && hasUpgrade("bi", 106) && player.ca.unlockedCante},
             description: "Unlock Hex of Power.",
             cost: new Decimal("1e3600"),
@@ -468,7 +468,7 @@
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
         31: {
-            title: "Auto CDPs",
+            title: "自动CDP",
             unlocked() { return (hasUpgrade("i", 28) && hasUpgrade("bi", 106) && player.po.dice && player.ca.unlockedCante && player.ev.evolutionsUnlocked[5]) || hasUpgrade("i", 31)},
             description: "Gain 5% challenge dice points per second.",
             cost: new Decimal("1e4600"),
@@ -478,7 +478,7 @@
             style: {color: "rgba(0,0,0,0.8)", border: "3px solid rgba(0,0,0,0.5)", borderRadius: "15px", margin: "2px"},
         },
         32: {
-            title: "Completely Pentomated",
+            title: "完全五阶化",
             unlocked() { return hasUpgrade("i", 28) && hasUpgrade("bi", 106)},
             description: "You can now buy max pent.",
             cost: new Decimal("1e2400"),
@@ -637,17 +637,17 @@
     },
     infoboxes: {
         1: {
-            title: "Superphysical Values",
+            title: "超物理值",
             body() { return "Based on my research, a superphysical value refers to currencies such as points, prestige points, and infinity points; they aren't tangible items that physical beings can interact with, but they still exist in the universe for varying purposes. The main reason superphysical values exist within a Universe is to give structure and reason within the universe. They can also be used to promote growth of a real, non-superphysical value or physical objects. This also prevents total chaos from spawning. Superphysical values can be used to promote the growth of both real, physical values and other superphysical values. When a Universe is created, a default Superphysical Value is created with it. Superphysical Values can transform and evolve either by reaching a certain amount and causing a forced transformation, or through a manual transformation process." },
             unlocked() { return true },      
         },
         2: {
-            title: "Foresight",
+            title: "预知",
             body() { return "The power of sensing superphysical values is a power only a few can achieve. However, this is not so rare among us celestials. I don\'t know why, but this power is within our nature. Superphysical values aren\'t visible by eye, but they are visible using some kind of sensors, which are also made of superphysical values. I\'ve yet to name these sensors. Some advanced forms of foresight can lead to the manipulation of super physical values. Cante can manipulate replicanti, and Nova can manipulate singularity. Another advanced form of foresight is using superphysical values in physical ways. I, for example, can manipulate the laws of physics using superphysical values." },
             unlocked() { return hasUpgrade("i", 15) },       
         },
         3: {
-            title: "Universe",
+            title: "宇宙",
             body() { return "Throughout my time of traversing the multiverse, I've noticed many different types of universes. The first type is an empty universe. Theses universes only consist of boundaries, and within those boundaries, are nothing. The second type is a non-living universe. These universes have an abundance of matter, but a lack of living organisms. The third type universe is a living universe. These universes contain lifeforms, and even advanced civilizations in some cases. The final type of universe is a fantasy universe. These universes contain magic power, which can lead to the universe containing different supernatural elements within it. Now. I am trying to create a fifth type of universe. A universe that runs completely on superphysical values. It would benefit the celestials a lot." },
             unlocked() { return hasUpgrade("i", 21) },      
         },
