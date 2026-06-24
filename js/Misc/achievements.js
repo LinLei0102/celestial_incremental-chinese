@@ -10,7 +10,7 @@ addLayer("achievements", {
         1: {
             name: "首次重置<br><small>(众多之一)</small>",
             image: "resources/achievements/1_01.png",
-            tooltip: "<h3>首次重置 <small>(of many)</small></h3><hr style='margin-bottom:4px'>Obtain your first rank.",
+            tooltip: "<h3>首次重置 <small>(众多之一)</small></h3><hr style='margin-bottom:4px'>获得你的第一个等级。",
             color: "white",
             complete() {return hasUpgrade("p", 17)},
             unlocked: true,
@@ -383,7 +383,7 @@ addLayer("achievements", {
         123: {
             name: "4x4",
             image: "resources/achievements/2_00.png",
-            tooltip: "<h3>4x4</h3><hr style='margin-bottom:4px'>Reach 4 4th dimensions<br>without any dim-boosts<br>in infinity challenge 8.<br><br>Reward: Double Antimatter<br>Dimensions.",
+            tooltip: "<h3>4x4</h3><hr style='margin-bottom:4px'>在无限挑战8中达到4个第四维度<br>且没有任何维度助推。<br><br>奖励：双倍反物质维度。",
             color: "#ffbf00",
             unlocked: true,
             marked: true,
@@ -441,7 +441,7 @@ addLayer("achievements", {
         906: {
             name: "<small>你确定是蜜蜂做了这个面包？</small>",
             image: "resources/achievements/10_00.png",
-            tooltip: "<h3>You're telling me a<br>bee made this bread?</h3><hr style='margin-bottom:4px'>Do your first<br>bee bread reset<br><br>Reward: +50% Pollen Gain",
+            tooltip: "<h3>你确定是蜜蜂<br>做了这个面包？</h3><hr style='margin-bottom:4px'>进行你的第一次<br>蜂粮重置。<br><br>奖励：+50%花粉获得",
             color: "#f9c901",
             unlocked: true,
             marked: true,
@@ -473,7 +473,7 @@ addLayer("achievements", {
         910: {
             name: "线粒体是……等等，细胞不对",
             image: "resources/achievements/10_00.png",
-            tooltip: "<h3>Mitochondria is the<br>... wait wrong cell</h3><hr style='margin-bottom:4px'>Do your first<br>honey-cell reset<br><br>Reward: +20% Nectar Gain",
+            tooltip: "<h3>线粒体是……<br>等等，细胞不对</h3><hr style='margin-bottom:4px'>进行你的第一次<br>蜜细胞重置。<br><br>奖励：+20%花蜜获得",
             color: "#f9c901",
             unlocked: true,
             marked: true,
@@ -505,7 +505,7 @@ addLayer("achievements", {
         914: {
             name: "哦！原来我把它放那儿了！",
             image: "resources/achievements/10_00.png",
-            tooltip: "<h3>Oh! That is where<br>I put that!</h3><hr style='margin-bottom:4px'>Purchase the forgotten<br>pollen upgrade<br><br>Reward: +50% Pollen<br>+20% Nectar",
+            tooltip: "<h3>哦！原来我把它<br>放那儿了！</h3><hr style='margin-bottom:4px'>购买被遗忘的<br>花粉升级。<br><br>奖励：+50%花粉<br>+20%花蜜",
             color: "#f9c901",
             unlocked: true,
             marked: true,
@@ -537,7 +537,7 @@ addLayer("achievements", {
         918: {
             name: "你真的在乎这个吗？",
             image: "resources/achievements/10_00.png",
-            tooltip: "<h3>Do you even<br>care about this?</h3><hr style='margin-bottom:4px'>Do your first<br>apathy reset",
+            tooltip: "<h3>你真的<br>在乎这个吗？</h3><hr style='margin-bottom:4px'>进行你的第一次<br>冷漠重置。",
             color: "#f9c901",
             unlocked: true,
         },
