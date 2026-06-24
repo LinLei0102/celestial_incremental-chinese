@@ -946,11 +946,11 @@ addLayer("savebank", {
                 unlocked: true,
                 content: [
                     ["blank", "25px"],
-                    ["raw-html", "The savebank allows you to load a save from any part of the game.<br>", { "color": "white", "font-size": "16px", "font-family": "monospace" }],
+                    ["raw-html", "存档库允许你从游戏的任何阶段加载存档。<br>", { "color": "white", "font-size": "16px", "font-family": "monospace" }],
                     ["blank", "25px"],
-                    ["raw-html", "WARNING: Loading a save will write over your current save.<br>Please export your current save before messing with the savebank.", { "color": "red", "font-size": "16px", "font-family": "monospace" }],
+                    ["raw-html", "警告：加载存档将覆盖你当前的存档。<br>在使用存档库前请先导出当前存档。", { "color": "red", "font-size": "16px", "font-family": "monospace" }],
                     ["blank", "10px"],
-                    ["raw-html", "SPOILERS: Save names will spoil parts of the game, tread carefully.", { "color": "red", "font-size": "16px", "font-family": "monospace" }],
+                    ["raw-html", "剧透警告：存档名称会透露游戏部分内容，请谨慎浏览。", { "color": "red", "font-size": "16px", "font-family": "monospace" }],
                     ["blank", "25px"],
                 ]
             },
