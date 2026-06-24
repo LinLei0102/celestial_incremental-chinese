@@ -529,7 +529,7 @@
         },
         15: {
             requirementDescription: "<h3>Grass-Skip 7",
-            effectDescription() { return "Gain 10% of anonymity per second." },
+            effectDescription() { return "Gain 10% of anonymity 每秒." },
             done() { return player.gs.grassSkip.gte(7) },
             style: {width: "600px", height: "55px", color: "rgba(0,0,0,0.5)", border: "5px solid rgba(0,0,0,0.5)", borderRadius: "10px", margin: "-2.5px"},
         },
@@ -553,7 +553,7 @@
         },
         19: {
             requirementDescription: "<h3>Grass-Skip 30",
-            effectDescription() { return "Gain 500% of all alternate rank currencies per second." },
+            effectDescription() { return "Gain 500% of all alternate rank currencies 每秒." },
             done() { return player.gs.grassSkip.gte(30) },
             style: {width: "600px", height: "55px", color: "rgba(0,0,0,0.5)", border: "5px solid rgba(0,0,0,0.5)", borderRadius: "10px", margin: "-2.5px"},
         },
@@ -625,8 +625,8 @@
                 content: [
                     ["blank", "25px"],
                     ["row", [
-                        ["raw-html", () => {return "You have <h3>" + format(player.gs.grassSkippers) + "</h3> grass-skippers."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-                        ["raw-html", () => {return "(+" + format(player.gs.grassSkippersPerSecond) + "/s)"}, () => {
+                        ["raw-html", () => {return "你有 <h3>" + format(player.gs.grassSkippers) + "</h3> grass-skippers."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "(+" + format(player.gs.grassSkippersPerSecond) + "/秒）"}, () => {
                             let look = {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                             player.gs.grassSkippersPerSecond.gt(0) ? look.color = "white" : look.color = "gray"
                             return look
@@ -642,7 +642,7 @@
     },
 
     tabFormat: [
-        ["raw-html", () => {return "You have <h3>" + format(player.cp.replicantiPoints) + "</h3> replicanti points."}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+        ["raw-html", () => {return "你有 <h3>" + format(player.cp.replicantiPoints) + "</h3> replicanti points."}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
         ["raw-html", () => {return "Replicanti Mult: " + format(player.cp.replicantiPointsMult, 4) + "x"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
         ["row", [["bar", "replicantiBar"]]],
         ["microtabs", "stuff", { 'border-width': '0px' }],

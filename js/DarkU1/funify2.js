@@ -288,8 +288,8 @@ addLayer("funify", {
         },
     },
     tabFormat: [
-        ["raw-html", () => { return "You have <h3>" + format(player.du.points) + "</h3> dark celestial points." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-        ["raw-html", () => { return "You are gaining <h3>" + format(player.du.pointGain) + "</h3> dark celestial points per second." }, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+        ["raw-html", () => { return "你有 <h3>" + format(player.du.points) + "</h3> dark 天体点数." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+        ["raw-html", () => { return "You are gaining <h3>" + format(player.du.pointGain) + "</h3> dark 天体点数 每秒." }, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
         ["raw-html", () => { return "UNAVOIDABLE SOFTCAP: /" + format(player.du.pointSoftcap) + " to gain." }, {color: "red", fontSize: "16px", fontFamily: "monospace"}],
         ["raw-html", () => { return player.du.pointGain.gte(player.du.secondSoftcapStart) ? "UNAVOIDABLE SOFTCAP<sup>2</sup>: Gain past " + format(player.du.secondSoftcapStart) + " is raised by ^" + format(player.du.pointSoftcap2) + "." : "" }, {color: "red", fontSize: "16px", fontFamily: "monospace"}],
         ["raw-html", () => { return player.pet.legPetTimers[0].current.gt(0) ? "ECLIPSE IS ACTIVE: " + formatTime(player.pet.legPetTimers[0].current) + "." : ""}, {color: "#FEEF5F", fontSize: "20px", fontFamily: "monospace"}],
@@ -297,12 +297,12 @@ addLayer("funify", {
         ["style-row", [
             ["clickable", 11],
             ["style-row", [
-                ["raw-html", () => {return "You have " + formatWhole(player.funify.funify) + " Funify"}, {color: "rgba(0,0,0,0.8)", fontSize: "24px", fontFamily: "monospace"}],
+                ["raw-html", () => {return "你有 " + formatWhole(player.funify.funify) + " Funify"}, {color: "rgba(0,0,0,0.8)", fontSize: "24px", fontFamily: "monospace"}],
             ], {width: "350px", height: "74px", background: "#BFBF00", border: "3px solid #404000", borderRadius: "15px", marginLeft: "8px"}],
         ], {backgroundColor: "#E5E500", border: "3px solid #404000", borderRadius: "13px 13px 0px 0px", width: "762px", height: "100px"}],
         ["style-row", [
-            ["raw-html", () => {return "You have <h3>" + format(player.funify.funPoints) + "</h3> fun points"}, {color: "rgba(0,0,0,0.8)", fontSize: "20px", fontFamily: "monospace"}],
-            ["raw-html", () => {return "(+" + format(player.funify.funPointsGain) + "/s)"}, {color: "rgba(0,0,0,0.8)", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}],
+            ["raw-html", () => {return "你有 <h3>" + format(player.funify.funPoints) + "</h3> fun points"}, {color: "rgba(0,0,0,0.8)", fontSize: "20px", fontFamily: "monospace"}],
+            ["raw-html", () => {return "(+" + format(player.funify.funPointsGain) + "/秒）"}, {color: "rgba(0,0,0,0.8)", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}],
         ], {backgroundColor: "#cccc00", borderLeft: "3px solid #404000", borderRight: "3px solid #404000", borderBottom: "3px solid #404000", width: "762px", height: "40px"}],
         ["style-column", [
             ["row", [["ex-buyable", 11], ["ex-buyable", 12], ["ex-buyable", 13]]],

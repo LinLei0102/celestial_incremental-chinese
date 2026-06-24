@@ -1085,7 +1085,7 @@
             },
             display() {
                 return "<h3>SME-B8</h3> (" + formatWhole(getBuyableAmount(this.layer, this.id)) + "/10)\n\
-                    Gain a percentage of fragmentation fragment gain per second\n\
+                    Gain a percentage of fragmentation fragment gain 每秒\n\
                     Currently: +" + formatWhole(tmp[this.layer].buyables[this.id].effect.sub(1).mul(100)) + "%/s\n\ \n\
                     Cost:<br>" + formatShortWhole(player.cbs.ascensionShards) + "/" + formatShortWhole(tmp[this.layer].buyables[this.id].cost[0]) + " Asc-Shards\n\
                     " + formatShortWhole(player.sme.starmetalEssence) + "/" + formatShortWhole(tmp[this.layer].buyables[this.id].cost[1]) + " SME"
@@ -2175,8 +2175,8 @@
                 unlocked: true,
                 content: [
                     ["blank", "25px"],
-                    ["raw-html", function () { return "You have <h3>" + formatWhole(player.sma.starmetalAlloy) + "</h3> starmetal alloy." }, { "color": "white", "font-size": "20px", "font-family": "monospace" }],
-                    ["raw-html", function () { return "You have <h3>" + formatWhole(player.ra.radiation) + "</h3> radiation." }, { "color": "white", "font-size": "20px", "font-family": "monospace" }],
+                    ["raw-html", function () { return "你有 <h3>" + formatWhole(player.sma.starmetalAlloy) + "</h3> starmetal alloy." }, { "color": "white", "font-size": "20px", "font-family": "monospace" }],
+                    ["raw-html", function () { return "你有 <h3>" + formatWhole(player.ra.radiation) + "</h3> radiation." }, { "color": "white", "font-size": "20px", "font-family": "monospace" }],
                     ["blank", "25px"],
                     ["style-row", [["ex-buyable", 0], ["bar", 0], ["ex-buyable", 10]], {border: "3px solid white"}],
                     ["style-row", [["ex-buyable", 1], ["bar", 1], ["ex-buyable", 11]], {border: "3px solid white", marginTop: "-3px"}],
@@ -2235,7 +2235,7 @@
         },
     }, 
     tabFormat: [
-        ["raw-html", function () { return "You have <h3>" + format(player.sme.starmetalEssence) + "</h3> starmetal essence." }, { "color": "white", "font-size": "30px", "font-family": "monospace" }],
+        ["raw-html", function () { return "你有 <h3>" + format(player.sme.starmetalEssence) + "</h3> starmetal essence." }, { "color": "white", "font-size": "30px", "font-family": "monospace" }],
         ["raw-html", function () { return "Your starmetal essence extends generator time requirements by x<h3>" + format(player.sme.starmetalEssenceSoftcap) + "</h3>." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
         ["row", [["clickable", 1]]],
         ["microtabs", "stuff", { 'border-width': '0px' }],

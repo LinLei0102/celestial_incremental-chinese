@@ -369,9 +369,9 @@ addLayer("hpw", {
             title: "Might 6:2",
             unlocked: true,
             description() {
-                if (hasUpgrade("hpw", 51) && hasUpgrade("hpw", 53)) return "Deposit 1,000% of boons per second."
-                if (hasUpgrade("hpw", 51) || hasUpgrade("hpw", 53)) return "Deposit 100% of boons per second."
-                return "Deposit 10% of boons per second."
+                if (hasUpgrade("hpw", 51) && hasUpgrade("hpw", 53)) return "Deposit 1,000% of boons 每秒."
+                if (hasUpgrade("hpw", 51) || hasUpgrade("hpw", 53)) return "Deposit 100% of boons 每秒."
+                return "Deposit 10% of boons 每秒."
             },
             branches: [41, 42],
             cost() {return new Decimal(3600).pow(player.hpw.upgScale[5])},
@@ -1376,7 +1376,7 @@ addLayer("hpw", {
                 buttonStyle() { return {borderColor: "#5e0000", borderRadius: "5px"}},
                 unlocked: true,
                 content: [
-                    ["raw-html", () => {return "You have <h3>" + formatWhole(player.hpw.totalPower) + "</h3> total power." }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "你有 <h3>" + formatWhole(player.hpw.totalPower) + "</h3> total power." }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                     ["blank", "10px"],
                     ["milestone", 1],
                     ["milestone", 2],
@@ -1390,8 +1390,8 @@ addLayer("hpw", {
     },
     tabFormat: [
         ["row", [
-            ["raw-html", () => {return "You have <h3>" + format(player.h.hexPoint) + "</h3> hex points."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-            ["raw-html", () => {return player.h.hexPointGain.eq(0) ? "" : player.h.hexPointGain.gt(0) ? "(+" + format(player.h.hexPointGain) + "/s)" : "<span style='color:red'>(" + format(player.h.hexPointGain) + "/s)</span>"}, {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
+            ["raw-html", () => {return "你有 <h3>" + format(player.h.hexPoint) + "</h3> hex points."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+            ["raw-html", () => {return player.h.hexPointGain.eq(0) ? "" : player.h.hexPointGain.gt(0) ? "(+" + format(player.h.hexPointGain) + "/秒）" : "<span style='color:red'>(" + format(player.h.hexPointGain) + "/秒）</span>"}, {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
             ["raw-html", () => {return (inChallenge("hrm", 14) || player.h.hexPointGain.gte(1e308)) ? "[SOFTCAPPED]" : "" }, {color: "red", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
         ]],
         ["raw-html", () => {return inChallenge("hrm", 15) ? "Time Remaining: " + formatTime(player.hrm.dreamTimer) : ""}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
@@ -1401,7 +1401,7 @@ addLayer("hpw", {
         ], {width: "800px", height: "50px", backgroundColor: "#4c1919", border: "3px solid white", borderRadius: "20px"}],
         ["blank", "10px"],
         ["tooltip-row", [
-            ["raw-html", () => {return "You have <h3>" + formatWhole(player.hpw.power) + "</h3> Power." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+            ["raw-html", () => {return "你有 <h3>" + formatWhole(player.hpw.power) + "</h3> Power." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
             ["raw-html", () => {return "(+" + formatWhole(player.hpw.powerGain) + ")"}, () => {
                 let look = {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                 player.hbl.blessings.gte(6e5) ? look.color = "white" : look.color = "gray"

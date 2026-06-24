@@ -115,7 +115,7 @@
         },
         14: {
             requirementDescription: "<h3>12 Boosters",
-            effectDescription() { return "Gain 10% of grass value per second, and boost grass value and capacity based on boosters<br>Currently: x" + format(player.db.milestone4Effect) + "." },
+            effectDescription() { return "Gain 10% of grass value 每秒, and boost grass value and capacity based on boosters<br>Currently: x" + format(player.db.milestone4Effect) + "." },
             unlocked() {return player.ir.iriditeDefeated && getBuyableAmount("sme", 161).gte(1)},
             done() { return player.db.boosters.gte(12) && getBuyableAmount("sme", 161).gte(1) },
             style() {
@@ -126,7 +126,7 @@
         },
         15: {
             requirementDescription: "<h3>16 Boosters",
-            effectDescription() { return "Gain 100% of prestige points per second and autobuy all prestige point buyables." },
+            effectDescription() { return "Gain 100% of prestige points 每秒 and autobuy all prestige point buyables." },
             unlocked() {return player.ir.iriditeDefeated && getBuyableAmount("sme", 161).gte(2)},
             done() { return player.db.boosters.gte(16) && getBuyableAmount("sme", 161).gte(2) },
             style() {
@@ -196,7 +196,7 @@
                 unlocked() { return true },
                 content: [
                     ['blank', '25px'],
-                    ["raw-html", () => {return "You have <h3>" + formatWhole(player.db.boosters) + "</h3> boosters"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "你有 <h3>" + formatWhole(player.db.boosters) + "</h3> boosters"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                     ["raw-html", () => {return "(Best boosters: " + formatWhole(player.db.bestBoosters) + ")"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                     ["raw-html", () => {return "Boosts point gain by x" + format(player.db.boosterEffect)}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                     ['blank', '25px'],
@@ -233,8 +233,8 @@
         },
     },
     tabFormat: [
-        ["raw-html", () => { return "You have <h3>" + format(player.du.points) + "</h3> dark celestial points." }, {color: "white", fontSize: "24px", fontFamily: "monospace" }],
-        ["raw-html", () => { return "You are gaining <h3>" + format(player.du.pointGain) + "</h3> dark celestial points per second." }, {color: "white", fontSize: "16px", fontFamily: "monospace" }],
+        ["raw-html", () => { return "你有 <h3>" + format(player.du.points) + "</h3> dark 天体点数." }, {color: "white", fontSize: "24px", fontFamily: "monospace" }],
+        ["raw-html", () => { return "You are gaining <h3>" + format(player.du.pointGain) + "</h3> dark 天体点数 每秒." }, {color: "white", fontSize: "16px", fontFamily: "monospace" }],
         ["raw-html", () => { return "UNAVOIDABLE SOFTCAP: /" + format(player.du.pointSoftcap) + " to gain." }, {color: "red", fontSize: "16px", fontFamily: "monospace" }],
         ["raw-html", () => { return player.du.pointGain.gte(player.du.secondSoftcapStart) ? "UNAVOIDABLE SOFTCAP<sup>2</sup>: Gain past " + format(player.du.secondSoftcapStart) + " is raised by ^" + format(player.du.pointSoftcap2) + "." : "" }, {color: "red", fontSize: "16px", fontFamily: "monospace"}],
         ["raw-html", () => { return player.pet.legPetTimers[0].current.gt(0) ? "ECLIPSE IS ACTIVE: " + formatTime(player.pet.legPetTimers[0].current) + "." : ""}, {color: "#FEEF5F", fontSize: "20px", fontFamily: "monospace"}],

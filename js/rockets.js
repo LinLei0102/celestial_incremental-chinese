@@ -1112,7 +1112,7 @@
                 content: [
                     ["blank", "25px"],
                     ["style-column", [
-                        ["raw-html", function () { return "You have <h3>" + format(player.ro.activatedFuel) + "</h3> activated fuel." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                        ["raw-html", function () { return "你有 <h3>" + format(player.ro.activatedFuel) + "</h3> activated fuel." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
                         ["raw-html", function () { return "Activated fuel boosts golden grass value by x<h3>" + format(player.ro.activatedFuelEffect) + "</h3>." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
                         ["raw-html", function () { return "You will gain <h3>" + format(player.ro.activatedFuelToGet) + "</h3> activated fuel on reset." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
                     ], {width: "1000px", border: "3px solid #0a0c19", borderBottom: "0px", backgroundColor: "#191e40", paddingTop: "5px", paddingBottom: "5px", borderRadius: "15px 15px 0px 0px"}],
@@ -1120,10 +1120,10 @@
                         ["style-column", [
                     ["blank", "25px"],
                     ["raw-html", function () { return "Ingredients:" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
-                    ["raw-html", function () { return "You have <h3>" + format(player.rf.rocketFuel) + "</h3> rocket fuel, which gives a base of " + format(player.ro.activatedFuelContributions[0]) + " activated fuel." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
-                            ["raw-html", function () { return "You have <h3>" + format(player.g.goldGrass) + "</h3> golden grass, which multiplies activated fuel by x" + format(player.ro.activatedFuelContributions[1]) + "."}, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
-                            ["raw-html", function () { return "You have <h3>" + format(player.oi.oil) + "</h3> oil, which multiplies activated fuel x" + format(player.ro.activatedFuelContributions[2]) + "." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
-                            ["raw-html", function () { return "You have <h3>" + format(player.fa.charge) + "</h3> charge, which multiplies activated fuel x" + format(player.ro.activatedFuelContributions[3]) + "." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
+                    ["raw-html", function () { return "你有 <h3>" + format(player.rf.rocketFuel) + "</h3> rocket fuel, which gives a base of " + format(player.ro.activatedFuelContributions[0]) + " activated fuel." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
+                            ["raw-html", function () { return "你有 <h3>" + format(player.g.goldGrass) + "</h3> golden grass, which multiplies activated fuel by x" + format(player.ro.activatedFuelContributions[1]) + "."}, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
+                            ["raw-html", function () { return "你有 <h3>" + format(player.oi.oil) + "</h3> oil, which multiplies activated fuel x" + format(player.ro.activatedFuelContributions[2]) + "." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
+                            ["raw-html", function () { return "你有 <h3>" + format(player.fa.charge) + "</h3> charge, which multiplies activated fuel x" + format(player.ro.activatedFuelContributions[3]) + "." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
                     ["blank", "25px"],
                     ], {width: "1000px", borderRight: "2px solid srgb(27, 0, 36)"}],
                     ], {width: "1000px", border: "3px solid #0a0c19", backgroundColor: "#191e40"}],
@@ -1140,7 +1140,7 @@
                 content: [
                     ["blank", "25px"],
                     ["style-column", [
-                        ["raw-html", function () { return "You have <h3>" + formatWhole(player.ro.rocketParts) + "</h3> rocket parts." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                        ["raw-html", function () { return "你有 <h3>" + formatWhole(player.ro.rocketParts) + "</h3> rocket parts." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
                         ["raw-html", function () { return "Rocket parts boosts moonstone value by x<h3>" + format(player.ro.rocketPartsEffect) + "</h3>." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
                         ["raw-html", function () { return "You will gain <h3>" + formatWhole(player.ro.rocketPartsToGet) + "</h3> rocket parts on reset." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
                     ], {width: "1000px", border: "3px solid #0a0c19", borderBottom: "0px", backgroundColor: "#191e40", paddingTop: "5px", paddingBottom: "5px", borderRadius: "15px 15px 0px 0px"}],
@@ -1148,10 +1148,10 @@
                         ["style-column", [
                     ["blank", "25px"],
                     ["raw-html", function () { return "Ingredients:" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
-                    ["raw-html", function () { return "You have <h3>" + format(player.gh.steel) + "</h3> steel, which gives a base of " + format(player.ro.rocketPartsContributions[0]) + " rocket parts." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
-                            ["raw-html", function () { return "You have <h3>" + formatWhole(player.sma.starmetalAlloy) + "</h3> starmetal alloy, which multiplies rocket parts by x" + format(player.ro.rocketPartsContributions[1]) + "."}, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
-                            ["raw-html", function () { return "You have <h3>" + format(player.p.crystals) + "</h3> crystals, which multiplies rocket parts x" + format(player.ro.rocketPartsContributions[2]) + "." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
-                            ["raw-html", function () { return "You have <h3>" + format(player.g.moonstone) + "</h3> moonstone, which multiplies rocket parts x" + format(player.ro.rocketPartsContributions[3]) + "." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
+                    ["raw-html", function () { return "你有 <h3>" + format(player.gh.steel) + "</h3> steel, which gives a base of " + format(player.ro.rocketPartsContributions[0]) + " rocket parts." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
+                            ["raw-html", function () { return "你有 <h3>" + formatWhole(player.sma.starmetalAlloy) + "</h3> starmetal alloy, which multiplies rocket parts by x" + format(player.ro.rocketPartsContributions[1]) + "."}, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
+                            ["raw-html", function () { return "你有 <h3>" + format(player.p.crystals) + "</h3> crystals, which multiplies rocket parts x" + format(player.ro.rocketPartsContributions[2]) + "." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
+                            ["raw-html", function () { return "你有 <h3>" + format(player.g.moonstone) + "</h3> moonstone, which multiplies rocket parts x" + format(player.ro.rocketPartsContributions[3]) + "." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
                     ["blank", "25px"],
                     ], {width: "1000px", borderRight: "2px solid srgb(27, 0, 36)"}],
                     ], {width: "1000px", border: "3px solid #0a0c19", backgroundColor: "#191e40"}],
@@ -1190,7 +1190,7 @@
                     ], {width: "1000px", border: "3px solid #dbdbdb", borderBottom: "0px", backgroundColor: "#1c1c1c"}],
                     ["style-column", [
                         ["raw-html", function () { return "Common Pets" }, { "color": "#9bedff", "font-size": "36px", "font-family": "monospace" }],
-                    ["raw-html", function () { return "You have <h3>" + formatWhole(player.cb.evolutionShards) + "</h3> evolution shards. (Total passenger cost: " + formatWhole(player.ro.evoCost) + " evo shards)" }, { "color": "#9bedff", "font-size": "16px", "font-family": "monospace" }],
+                    ["raw-html", function () { return "你有 <h3>" + formatWhole(player.cb.evolutionShards) + "</h3> evolution shards. (Total passenger cost: " + formatWhole(player.ro.evoCost) + " evo shards)" }, { "color": "#9bedff", "font-size": "16px", "font-family": "monospace" }],
                     ], {width: "1000px", border: "3px solid #9bedff", borderBottom: "0px", backgroundColor: "#1f2f33", paddingTop: "5px", paddingBottom: "5px", borderRadius: "0px 0px 0px 0px"}],
                     ["style-row", [
                         ["style-column", [
@@ -1202,7 +1202,7 @@
                     ["style-row", [
                         ["style-column", [
                     ["raw-html", function () { return "Uncommon Pets" }, { "color": "#88e688", "font-size": "36px", "font-family": "monospace" }],
-                    ["raw-html", function () { return "You have <h3>" + formatWhole(player.cb.paragonShards) + "</h3> paragon shards. (Total passenger cost: " + formatWhole(player.ro.paragonCost) + " paragon shards)"  }, { "color": "#88e688", "font-size": "16px", "font-family": "monospace" }],
+                    ["raw-html", function () { return "你有 <h3>" + formatWhole(player.cb.paragonShards) + "</h3> paragon shards. (Total passenger cost: " + formatWhole(player.ro.paragonCost) + " paragon shards)"  }, { "color": "#88e688", "font-size": "16px", "font-family": "monospace" }],
                     ], {width: "1000px", borderRight: "2px solid srgb(27, 0, 36)"}],
                     ], {width: "1000px", border: "3px solid #88e688", borderBottom: "0px", backgroundColor: "#1b2e1b"}],
                     ["style-row", [
@@ -1216,7 +1216,7 @@
                 ["style-row", [
                         ["style-column", [
                     ["raw-html", function () { return "Rare Pets" }, { "color": "#4e7cff", "font-size": "36px", "font-family": "monospace" }],
-                    ["raw-html", function () { return "You have <h3>" + formatWhole(player.stagnantSynestia.temporalShard) + "</h3> temporal shards. (Total passenger cost: " + formatWhole(player.ro.temporalCost) + " temporal shards)"  }, { "color": "#4e7cff", "font-size": "16px", "font-family": "monospace" }],
+                    ["raw-html", function () { return "你有 <h3>" + formatWhole(player.stagnantSynestia.temporalShard) + "</h3> temporal shards. (Total passenger cost: " + formatWhole(player.ro.temporalCost) + " temporal shards)"  }, { "color": "#4e7cff", "font-size": "16px", "font-family": "monospace" }],
                     ], {width: "1000px", borderRight: "2px solid srgb(27, 0, 36)"}],
                     ], () => { return player.zarDungeon.zarDefeated ? {width: "1000px", border: "3px solid #4e7cff", borderBottom: "0px", backgroundColor: "#0a1124"}: {display: "none !important"}}],
                     ["style-row", [
@@ -1253,7 +1253,7 @@
                     ["style-row", [
                     ["style-column", [
                     ["blank", "25px"],
-                    ["raw-html", function () { return "You have <h3>" + formatWhole(player.au2.stars) + "</h3> stars." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                    ["raw-html", function () { return "你有 <h3>" + formatWhole(player.au2.stars) + "</h3> stars." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
                     ["raw-html", function () { return "You will gain " + formatWhole(player.au2.starsToGet) + " stars on launch." }, { "color": "white", "font-size": "20px", "font-family": "monospace" }],
                     ["blank", "25px"],
                     ["raw-html", function () { return "Evolution shard cost: " + formatWhole(player.ro.evoCost) + "" }, { "color": "#d487fd", "font-size": "24px", "font-family": "monospace" }],

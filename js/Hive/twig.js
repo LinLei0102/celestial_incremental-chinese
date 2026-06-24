@@ -1053,7 +1053,7 @@ addLayer("tw", {
                 return look
             },
         },
-        // Twig per second buff based on min/max mult
+        // Twig 每秒 buff based on min/max mult
     },
     microtabs: {
         stuff: {
@@ -1104,7 +1104,7 @@ addLayer("tw", {
     },
     tabFormat: [
         ["row", [
-            ["raw-html", () => {return "You have " + formatSimple(player.tw.twigs) + " twigs"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+            ["raw-html", () => {return "你有 " + formatSimple(player.tw.twigs) + " twigs"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
             ["raw-html", () => {return "(+" + formatSimple(player.tw.twigsGain) + ")"}, {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
             ["raw-html", () => {return getBuyableAmount("tw", 51).gt(0) ? "[+" + formatSimple(player.tw.twigsGain.mul(buyableEffect("tw", 51).sub(1)), 2) + "/s]" : ""}, {color: "white", fontSize: "16px", fontFamily: "monospace", marginLeft: "8px"}],
         ]],

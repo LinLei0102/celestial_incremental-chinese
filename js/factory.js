@@ -469,7 +469,7 @@
                 return 'Crystal Generator'
             },
             display() {
-                return 'which are producing ' + format(tmp[this.layer].buyables[this.id].effect.mul(100)) + '% of crystals per second.\n\
+                return 'which are producing ' + format(tmp[this.layer].buyables[this.id].effect.mul(100)) + '% of crystals 每秒.\n\
                     Cost: ' + format(tmp[this.layer].buyables[this.id].cost) + ' Crystals'
             },
             buy(mult) {
@@ -545,7 +545,7 @@
                 return 'Oil Generator'
             },
             display() {
-                return 'which are producing ' + format(tmp[this.layer].buyables[this.id].effect.mul(100)) + '% of oil per second.\n\
+                return 'which are producing ' + format(tmp[this.layer].buyables[this.id].effect.mul(100)) + '% of oil 每秒.\n\
                     Cost: ' + format(tmp[this.layer].buyables[this.id].cost) + ' Oil'
             },
             buy(mult) {
@@ -695,7 +695,7 @@
                 return "Ancient CF"
             },
             display() {
-                return 'Assembles ' + formatSimple(tmp[this.layer].buyables[this.id].effect.sub(1).mul(100)) + '% ancient core fragments per second.\n\
+                return 'Assembles ' + formatSimple(tmp[this.layer].buyables[this.id].effect.sub(1).mul(100)) + '% ancient core fragments 每秒.\n\
                     Cost: ' + formatWhole(player.cof.coreFragments[0]) + '/' + formatWhole(tmp[this.layer].buyables[this.id].cost) + ' Ancient CF'
             },
             buy(mult) {
@@ -729,7 +729,7 @@
                 return "Natural CF"
             },
             display() {
-                return 'Assembles ' + formatSimple(tmp[this.layer].buyables[this.id].effect.sub(1).mul(100)) + '% natural core fragments per second.\n\
+                return 'Assembles ' + formatSimple(tmp[this.layer].buyables[this.id].effect.sub(1).mul(100)) + '% natural core fragments 每秒.\n\
                     Cost: ' + formatWhole(player.cof.coreFragments[1]) + '/' + formatWhole(tmp[this.layer].buyables[this.id].cost) + ' Natural CF'
             },
             buy(mult) {
@@ -763,7 +763,7 @@
                 return "Technological CF"
             },
             display() {
-                return 'Assembles ' + formatSimple(tmp[this.layer].buyables[this.id].effect.sub(1).mul(100)) + '% technological core fragments per second.\n\
+                return 'Assembles ' + formatSimple(tmp[this.layer].buyables[this.id].effect.sub(1).mul(100)) + '% technological core fragments 每秒.\n\
                     Cost: ' + formatWhole(player.cof.coreFragments[2]) + '/' + formatWhole(tmp[this.layer].buyables[this.id].cost) + ' Technological CF'
             },
             buy(mult) {
@@ -797,7 +797,7 @@
                 return "Paradox CF"
             },
             display() {
-                return 'Assembles ' + formatSimple(tmp[this.layer].buyables[this.id].effect.sub(1).mul(100)) + '% paradox core fragments per second.\n\
+                return 'Assembles ' + formatSimple(tmp[this.layer].buyables[this.id].effect.sub(1).mul(100)) + '% paradox core fragments 每秒.\n\
                     Cost: ' + formatWhole(player.cof.coreFragments[3]) + '/' + formatWhole(tmp[this.layer].buyables[this.id].cost) + ' Paradox CF'
             },
             buy(mult) {
@@ -831,7 +831,7 @@
                 return "Radioactive CF"
             },
             display() {
-                return 'Assembles ' + formatSimple(tmp[this.layer].buyables[this.id].effect.sub(1).mul(100)) + '% radioactive core fragments per second.\n\
+                return 'Assembles ' + formatSimple(tmp[this.layer].buyables[this.id].effect.sub(1).mul(100)) + '% radioactive core fragments 每秒.\n\
                     Cost: ' + formatWhole(player.cof.coreFragments[4]) + '/' + formatWhole(tmp[this.layer].buyables[this.id].cost) + ' Radioactive CF'
             },
             buy(mult) {
@@ -865,7 +865,7 @@
                 return "Cosmic CF"
             },
             display() {
-                return 'Assembles ' + formatSimple(tmp[this.layer].buyables[this.id].effect.sub(1).mul(100)) + '% cosmic core fragments per second.\n\
+                return 'Assembles ' + formatSimple(tmp[this.layer].buyables[this.id].effect.sub(1).mul(100)) + '% cosmic core fragments 每秒.\n\
                     Cost: ' + formatWhole(player.cof.coreFragments[5]) + '/' + formatWhole(tmp[this.layer].buyables[this.id].cost) + ' Cosmic CF'
             },
             buy(mult) {
@@ -899,7 +899,7 @@
                 return "Temporal CF"
             },
             display() {
-                return 'Assembles ' + formatSimple(tmp[this.layer].buyables[this.id].effect.sub(1).mul(100)) + '% temporal core fragments per second.\n\
+                return 'Assembles ' + formatSimple(tmp[this.layer].buyables[this.id].effect.sub(1).mul(100)) + '% temporal core fragments 每秒.\n\
                     Cost: ' + formatWhole(player.cof.coreFragments[6]) + '/' + formatWhole(tmp[this.layer].buyables[this.id].cost) + ' Temporal CF'
             },
             buy(mult) {
@@ -1301,12 +1301,12 @@
                 content: [
                     ["blank", "25px"],
                     ["raw-html", () => { return format(player.fa.foundryEffect) + "x/" + format(player.fa.foundryEffectMax) + "x to steel gain based on time since last steelie reset."}, {color: "white", fontSize: "24px", fontFamily: "monospace" }],
-                    ["raw-html", () => { return "(+" + format(player.fa.foundryEffectPerSecond) + "/s)" }, {color: "white", fontSize: "24px", fontFamily: "monospace" }],
+                    ["raw-html", () => { return "(+" + format(player.fa.foundryEffectPerSecond) + "/秒）" }, {color: "white", fontSize: "24px", fontFamily: "monospace" }],
                     ["blank", "25px"],
-                    ["raw-html", () => { return "You have <h3>" + format(player.r.timeCubes) + "</h3> Time Cubes" }, {color: "white", fontSize: "16px", fontFamily: "monospace" }],
-                    ["raw-html", () => { return "You have <h3>" + format(player.p.crystals) + "</h3> Crystals" }, {color: "white", fontSize: "16px", fontFamily: "monospace" }],
-                    ["raw-html", () => { return "You have <h3>" + format(player.an.anonymity) + "</h3> Anonymity" }, {color: "white", fontSize: "16px", fontFamily: "monospace" }],
-                    ["raw-html", () => { return "You have <h3>" + format(player.oi.oil) + "</h3> Oil" }, {color: "white", fontSize: "16px", fontFamily: "monospace" }],
+                    ["raw-html", () => { return "你有 <h3>" + format(player.r.timeCubes) + "</h3> Time Cubes" }, {color: "white", fontSize: "16px", fontFamily: "monospace" }],
+                    ["raw-html", () => { return "你有 <h3>" + format(player.p.crystals) + "</h3> Crystals" }, {color: "white", fontSize: "16px", fontFamily: "monospace" }],
+                    ["raw-html", () => { return "你有 <h3>" + format(player.an.anonymity) + "</h3> Anonymity" }, {color: "white", fontSize: "16px", fontFamily: "monospace" }],
+                    ["raw-html", () => { return "你有 <h3>" + format(player.oi.oil) + "</h3> Oil" }, {color: "white", fontSize: "16px", fontFamily: "monospace" }],
                     ["blank", "25px"],
                     ["style-row", [["ex-buyable", 101], ["ex-buyable", 102],
                         ["ex-buyable", 103], ["ex-buyable", 104]], {maxWidth: "600px"}],
@@ -1318,9 +1318,9 @@
                 unlocked() { return player.fa.buyables[12].gte(1)  },
                 content: [
                     ["blank", "25px"],
-                    ["raw-html", () => { return "You have <h3>" + format(player.p.crystals) + "</h3> Crystals" }, {color: "white", fontSize: "16px", fontFamily: "monospace" }],
-                    ["raw-html", () => { return "You have <h3>" + format(player.rg.repliGrass) + "</h3> Repli-Grass" }, {color: "white", fontSize: "16px", fontFamily: "monospace" }],
-                    ["raw-html", () => { return "You have <h3>" + format(player.oi.oil) + "</h3> Oil" }, {color: "white", fontSize: "16px", fontFamily: "monospace" }],
+                    ["raw-html", () => { return "你有 <h3>" + format(player.p.crystals) + "</h3> Crystals" }, {color: "white", fontSize: "16px", fontFamily: "monospace" }],
+                    ["raw-html", () => { return "你有 <h3>" + format(player.rg.repliGrass) + "</h3> Repli-Grass" }, {color: "white", fontSize: "16px", fontFamily: "monospace" }],
+                    ["raw-html", () => { return "你有 <h3>" + format(player.oi.oil) + "</h3> Oil" }, {color: "white", fontSize: "16px", fontFamily: "monospace" }],
                     ["blank", "25px"],
                     ["style-row", [["ex-buyable", 202], ["ex-buyable", 203], ["ex-buyable", 204],
                         ["ex-buyable", 206], ["ex-buyable", 207], ["ex-buyable", 208]], {maxWidth: "900px"}],
@@ -1332,8 +1332,8 @@
                 content: [
                     ["blank", "25px"],
                     ["row", [
-                        ["raw-html", () => { return "You have <h3>" + format(player.fa.charge) + "</h3> Charge" }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-                        ["raw-html", () => { return "(+" + format(player.fa.chargeRate) + "/s)" }, {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
+                        ["raw-html", () => { return "你有 <h3>" + format(player.fa.charge) + "</h3> Charge" }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                        ["raw-html", () => { return "(+" + format(player.fa.chargeRate) + "/秒）" }, {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
                     ]],
                     ["raw-html", () => { return "Best charge: " + format(player.fa.bestCharge) + ""}, {color: "white", fontSize: "20px", fontFamily: "monospace" }],
                     ["raw-html", () => { return "(Charge is reset on steel and infinity resets, and best charge is reset on singularity resets.)"}, {color: "white", fontSize: "16px", fontFamily: "monospace" }],
@@ -1370,7 +1370,7 @@
                 unlocked() {return player.fa.buyables[15].gte(1)},
                 content: [
                     ["blank", "25px"],
-                    ["raw-html", () => { return "You have <h3>" + format(player.rf.rocketFuel) + "</h3> Rocket Fuel" }, {color: "white", fontSize: "16px", fontFamily: "monospace" }],
+                    ["raw-html", () => { return "你有 <h3>" + format(player.rf.rocketFuel) + "</h3> Rocket Fuel" }, {color: "white", fontSize: "16px", fontFamily: "monospace" }],
                     ["blank", "25px"],
                     ["style-row", [
                         ["ex-buyable", 401], ["ex-buyable", 402], ["ex-buyable", 403], ["ex-buyable", 404],
@@ -1390,7 +1390,7 @@
     },
 
     tabFormat: [
-        ["raw-html", () => { return "You have <h3>" + format(player.gh.steel) + "</h3> Steel" }, {color: "white", fontSize: "24px", fontFamily: "monospace" }],
+        ["raw-html", () => { return "你有 <h3>" + format(player.gh.steel) + "</h3> Steel" }, {color: "white", fontSize: "24px", fontFamily: "monospace" }],
         ["microtabs", "stuff", { 'border-width': '0px' }],
         ["blank", "25px"],
     ],

@@ -364,15 +364,15 @@
         11: {
             title() {
                 if (player.r.rank.lte(20)) {
-                    return "<h2>Reset celestial points, but rank up.</h2><br><h3>Req: " + format(player.r.rankReq) + " Points</h3>"
+                    return "<h2>Reset 天体点数, but rank up.</h2><br><h3>Req: " + format(player.r.rankReq) + " Points</h3>"
                 } else if (player.r.rank.lte(100)) {
-                    return "<h2>Reset celestial points, but rank up.</h2><br><h3>Req: " + format(player.r.rankReq) + " Points<br><small style='color:darkred'>[SOFTCAPPED]</small></h3>"
+                    return "<h2>Reset 天体点数, but rank up.</h2><br><h3>Req: " + format(player.r.rankReq) + " Points<br><small style='color:darkred'>[SOFTCAPPED]</small></h3>"
                 } else if (player.r.rank.lt("1e4000")) {
-                    return "<h2>Reset celestial points, but rank up.</h2><br><h3>Req: " + format(player.r.rankReq) + " Points<br><small style='color:darkred'>[SOFTCAPPED<sup>2</sup>]</small></h3>"
+                    return "<h2>Reset 天体点数, but rank up.</h2><br><h3>Req: " + format(player.r.rankReq) + " Points<br><small style='color:darkred'>[SOFTCAPPED<sup>2</sup>]</small></h3>"
                 } else if (!hasUpgrade("cs", 101)) {
-                    return "<h2>Reset celestial points, but rank up.</h2><br><h3><small style='color:darkred'>[HARDCAPPED]</small></h3>"
+                    return "<h2>Reset 天体点数, but rank up.</h2><br><h3><small style='color:darkred'>[HARDCAPPED]</small></h3>"
                 } else {
-                    return "<h2>Reset celestial points, but rank up.</h2><br><h3>Req: " + format(player.r.rankReq) + " Points<br><small style='color:darkred'>[SOFTCAPPED<sup>3</sup>]</small></h3>"
+                    return "<h2>Reset 天体点数, but rank up.</h2><br><h3>Req: " + format(player.r.rankReq) + " Points<br><small style='color:darkred'>[SOFTCAPPED<sup>3</sup>]</small></h3>"
                 }
             },
             canClick() { return player.points.gte(player.r.rankReq) && !hasUpgrade("p", 17) },
@@ -390,7 +390,7 @@
             },
         },
         12: {
-            title() { return "<h2>Reset celestial points and ranks, but tier up.</h2><br><h3>Req: " + formatWhole(player.r.tierReq) + " Rank</h3>" },
+            title() { return "<h2>Reset 天体点数 and ranks, but tier up.</h2><br><h3>Req: " + formatWhole(player.r.tierReq) + " Rank</h3>" },
             canClick() { return player.r.rank.gte(player.r.tierReq) && !hasUpgrade("p", 18) },
             unlocked() { return true },
             onClick() {
@@ -407,7 +407,7 @@
             },
         },
         13: {
-            title() { return "<h2>Reset celestial points, ranks, and tiers, but tetr up.</h2><br><h3>Req: " + formatWhole(player.r.tetrReq) + " Tier</h3>" },
+            title() { return "<h2>Reset 天体点数, ranks, and tiers, but tetr up.</h2><br><h3>Req: " + formatWhole(player.r.tetrReq) + " Tier</h3>" },
             canClick() { return player.r.tier.gte(player.r.tetrReq) && !hasUpgrade("p", 22) && !hasMilestone("s", 19)},
             unlocked() { return hasUpgrade("i", 13) },
             onClick() {
@@ -623,7 +623,7 @@
         },
         13: {
             requirementDescription: "<h3>Pent 3",
-            effectDescription: "Autobuys grass buyables, and unlocks tree factor VI.<br>Second grass effect now multiplies celestial points.",
+            effectDescription: "Autobuys grass buyables, and unlocks tree factor VI.<br>Second grass effect now multiplies 天体点数.",
             done() { return player.r.pent.gte(3) },
             style: {width: "600px", height: "70px", color: "rgba(0,0,0,0.5)", border: "5px solid rgba(0,0,0,0.5)", borderRadius: "10px", margin: "-2.5px"},
         },
@@ -739,7 +739,7 @@
         },
         29: {
             requirementDescription: "<h3>Pent 50,000",
-            effectDescription() { return "Produce 0.2% of moonstone value per second." },
+            effectDescription() { return "Produce 0.2% of moonstone value 每秒." },
             done() { return (player.r.pent.gte(50000) || player.st.buyables[304].gte(1)) && this.unlocked()  },
             unlocked() { return (hasUpgrade("s", 16) && hasMilestone("r", 28)) || player.st.buyables[304].gte(1) },
             style: {width: "600px", height: "55px", color: "rgba(0,0,0,0.5)", border: "5px solid rgba(0,0,0,0.5)", borderRadius: "10px", margin: "-2.5px"},
@@ -865,8 +865,8 @@
                     ["blank", "25px"],
                     ["style-column", [
                         ["style-row", [
-                            ["raw-html", () => {return "You have " + format(player.r.timeCubes) + " time cubes"}, { color: "white", fontSize: "24px", fontFamily: "monospace" }],
-                            ["raw-html", () => {return "(" + format(player.r.timeCubesPerSecond) + "/s)"}, {color: "white", fontSize: "20px", fontFamily: "monospace", marginLeft: "12px"}],
+                            ["raw-html", () => {return "你有 " + format(player.r.timeCubes) + " time cubes"}, { color: "white", fontSize: "24px", fontFamily: "monospace" }],
+                            ["raw-html", () => {return "(" + format(player.r.timeCubesPerSecond) + "/秒）"}, {color: "white", fontSize: "20px", fontFamily: "monospace", marginLeft: "12px"}],
                             ["raw-html", () => {return player.r.timeCubesPerSecond.gte("1e10000") ? "<small style='margin-left:10px'>[SOFTCAPPED]</small>" : ""}, {color: "red", fontSize: "20px", fontFamily: "monospace"}],
                         ], {width: "650px", height: "50px", borderBottom: "2px solid #d82cd4"}],
                         ["style-column", [
@@ -885,7 +885,7 @@
     },
 
     tabFormat: [
-        ["raw-html", () => { return "You have <h3>" + format(player.points) + "</h3> celestial points (" + format(player.gain) + "/s)." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+        ["raw-html", () => { return "你有 <h3>" + format(player.points) + "</h3> 天体点数 (" + format(player.gain) + "/秒）." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
         ["raw-html", () => {return player.gain.gt(player.i.doomSoftcapStart) ? "SOFTCAP OF DOOM: Gain past " + format(player.i.doomSoftcapStart) + " is raised by ^" + format(player.i.doomSoftcap, 3) + "." : ""}, {color: "red", fontSize: "16px", fontFamily: "monospace"}],
         ["microtabs", "stuff", { 'border-width': '0px' }],
         ["blank", "25px"],

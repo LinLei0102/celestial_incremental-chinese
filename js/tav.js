@@ -1649,49 +1649,49 @@
                     ["blank", "25px"],
                     ["row", [
                         ["style-column", [
-                            ["raw-html", function () { return "1st Dimensional Power (" + format(buyableEffect("ta", 11)) + "x): " + format(player.ta.dimensionPower[0]) + " (+" + format(player.ta.dimensionPowerPerSecond[0]) + "/s)"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }],
+                            ["raw-html", function () { return "1st Dimensional Power (" + format(buyableEffect("ta", 11)) + "x): " + format(player.ta.dimensionPower[0]) + " (+" + format(player.ta.dimensionPowerPerSecond[0]) + "/秒）"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }],
                             ["raw-html", function () { return "Boosts antimatter by x" + format(player.ta.dimensionPowerEffects[0])}, { color: "white", fontSize: "16px", fontFamily: "monospace" }]
                         ], {width: "700px"}],
                         ["buyable", 11]]],
                     ["row", [
                         ["style-column", [
-                            ["raw-html", function () { return "2nd Dimensional Power (" + format(buyableEffect("ta", 12)) + "x): " + format(player.ta.dimensionPower[1]) + " (+" + format(player.ta.dimensionPowerPerSecond[1]) + "/s)"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }],
+                            ["raw-html", function () { return "2nd Dimensional Power (" + format(buyableEffect("ta", 12)) + "x): " + format(player.ta.dimensionPower[1]) + " (+" + format(player.ta.dimensionPowerPerSecond[1]) + "/秒）"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }],
                             ["raw-html", function () { return "Boosts 1st dimensions by x" + format(player.ta.dimensionPowerEffects[1])}, { color: "white", fontSize: "16px", fontFamily: "monospace" }]
                         ], {width: "700px"}],
                         ["buyable", 12]]],
                     ["row", [
                         ["style-column", [
-                            ["raw-html", function () { return "3rd Dimensional Power (" + format(buyableEffect("ta", 13)) + "x): " + format(player.ta.dimensionPower[2]) + " (+" + format(player.ta.dimensionPowerPerSecond[2]) + "/s)"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }],
+                            ["raw-html", function () { return "3rd Dimensional Power (" + format(buyableEffect("ta", 13)) + "x): " + format(player.ta.dimensionPower[2]) + " (+" + format(player.ta.dimensionPowerPerSecond[2]) + "/秒）"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }],
                             ["raw-html", function () { return "Boosts 2nd dimensions by x" + format(player.ta.dimensionPowerEffects[2])}, { color: "white", fontSize: "16px", fontFamily: "monospace" }]
                         ], {width: "700px"}],
                         ["buyable", 13]]],
                     ["row", [
                         ["style-column", [
-                            ["raw-html", function () { return "4th Dimensional Power (" + format(buyableEffect("ta", 14)) + "x): " + format(player.ta.dimensionPower[3]) + " (+" + format(player.ta.dimensionPowerPerSecond[3]) + "/s)"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }],
+                            ["raw-html", function () { return "4th Dimensional Power (" + format(buyableEffect("ta", 14)) + "x): " + format(player.ta.dimensionPower[3]) + " (+" + format(player.ta.dimensionPowerPerSecond[3]) + "/秒）"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }],
                             ["raw-html", function () { return "Boosts 3rd dimensions by x" + format(player.ta.dimensionPowerEffects[3])}, { color: "white", fontSize: "16px", fontFamily: "monospace" }]
                         ], {width: "700px"}],
                         ["buyable", 14]]],
                     ["row", [
                         ["style-column", [
-                            ["raw-html", function () { return "5th Dimensional Power (" + format(buyableEffect("ta", 15)) + "x): " + format(player.ta.dimensionPower[4]) + " (+" + format(player.ta.dimensionPowerPerSecond[4]) + "/s)"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }],
+                            ["raw-html", function () { return "5th Dimensional Power (" + format(buyableEffect("ta", 15)) + "x): " + format(player.ta.dimensionPower[4]) + " (+" + format(player.ta.dimensionPowerPerSecond[4]) + "/秒）"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }],
                             ["raw-html", function () { return "Boosts 4th dimensions by x" + format(player.ta.dimensionPowerEffects[4])}, { color: "white", fontSize: "16px", fontFamily: "monospace" }]
                         ], {width: "700px"}],
                         ["buyable", 15]]],
                     ["row", [
                         ["style-column", [
-                            ["raw-html", function () { return "6th Dimensional Power (" + format(buyableEffect("ta", 16)) + "x): " + format(player.ta.dimensionPower[5]) + " (+" + format(player.ta.dimensionPowerPerSecond[5]) + "/s)"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }],
+                            ["raw-html", function () { return "6th Dimensional Power (" + format(buyableEffect("ta", 16)) + "x): " + format(player.ta.dimensionPower[5]) + " (+" + format(player.ta.dimensionPowerPerSecond[5]) + "/秒）"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }],
                             ["raw-html", function () { return "Boosts 5th dimensions by x" + format(player.ta.dimensionPowerEffects[5])}, { color: "white", fontSize: "16px", fontFamily: "monospace" }]
                         ], {width: "700px"}],
                         ["buyable", 16]]],
                     ["row", [
                         ["style-column", [
-                            ["raw-html", function () { return "7th Dimensional Power (" + format(buyableEffect("ta", 17)) + "x): " + format(player.ta.dimensionPower[6]) + " (+" + format(player.ta.dimensionPowerPerSecond[6]) + "/s)"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }],
+                            ["raw-html", function () { return "7th Dimensional Power (" + format(buyableEffect("ta", 17)) + "x): " + format(player.ta.dimensionPower[6]) + " (+" + format(player.ta.dimensionPowerPerSecond[6]) + "/秒）"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }],
                             ["raw-html", function () { return "Boosts 6th dimensions by x" + format(player.ta.dimensionPowerEffects[6])}, { color: "white", fontSize: "16px", fontFamily: "monospace" }]
                         ], {width: "700px"}],
                         ["buyable", 17]]],
                     ["row", [
                         ["style-column", [
-                            ["raw-html", function () { return "8th Dimensional Power (" + format(buyableEffect("ta", 18)) + "x): " + format(player.ta.dimensionPower[7]) + " (+" + format(player.ta.dimensionPowerPerSecond[7]) + "/s)"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }],
+                            ["raw-html", function () { return "8th Dimensional Power (" + format(buyableEffect("ta", 18)) + "x): " + format(player.ta.dimensionPower[7]) + " (+" + format(player.ta.dimensionPowerPerSecond[7]) + "/秒）"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }],
                             ["raw-html", function () { return "Boosts 7th dimensions by x" + format(player.ta.dimensionPowerEffects[7])}, { color: "white", fontSize: "16px", fontFamily: "monospace" }]
                         ], {width: "700px"}],
                         ["buyable", 18]]],
@@ -1784,8 +1784,8 @@
                 unlocked() { return hasUpgrade("ta", 17) },
                 content: [
                     ["blank", "25px"],
-                    ["raw-html", function () { return "You have <h3>" + format(player.d.dicePoints) + "</h3> dice points. (highest: "  + format(player.ta.highestDicePoints) + ")" }, { color: "white", fontSize: "20px", fontFamily: "monospace" }],
-                    ["raw-html", function () { return "You have <h3>" + format(player.rf.rocketFuel) + "</h3> rocket fuel. (highest: "  + format(player.ta.highestRocketFuel) + ")"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }],
+                    ["raw-html", function () { return "你有 <h3>" + format(player.d.dicePoints) + "</h3> dice points. (highest: "  + format(player.ta.highestDicePoints) + ")" }, { color: "white", fontSize: "20px", fontFamily: "monospace" }],
+                    ["raw-html", function () { return "你有 <h3>" + format(player.rf.rocketFuel) + "</h3> rocket fuel. (highest: "  + format(player.ta.highestRocketFuel) + ")"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }],
                     ["raw-html", function () { return (player.po.hex || hasUpgrade("s", 18)) ? "You have <h3>" + format(player.h.hexPoint) + "</h3> hex points. (highest: " + format(player.ta.highestHexPoints) + ")" :""}, { color: "white", fontSize: "20px", fontFamily: "monospace" }],
                     ["raw-html", function () { return (!player.po.hex && !hasUpgrade("s", 18)) ? "You have <h3><s>" + format(player.h.hexPoint) + "</s></h3> hex points. (highest: " + format(player.ta.highestHexPoints) + ")" : ""}, { color: "white", fontSize: "20px", fontFamily: "monospace" }],
                     ["blank", "25px"],
@@ -1814,15 +1814,15 @@
 
     tabFormat: [
         ["row", [
-            ["raw-html", () => {return "You have <h3>" + format(player.ad.antimatter) + "</h3> antimatter"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
-            ["raw-html", () => {return "(+" + format(player.ad.antimatterPerSecond) + "/s)"}, () => {
+            ["raw-html", () => {return "你有 <h3>" + format(player.ad.antimatter) + "</h3> antimatter"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+            ["raw-html", () => {return "(+" + format(player.ad.antimatterPerSecond) + "/秒）"}, () => {
                 look = {color: "white", fontSize: "16px", fontFamily: "monospace", marginLeft: "10px"}
                 player.ad.antimatterPerSecond.gt(0) ? look.color = "white" : look.color = "gray"
                 return look
             }],
         ]],
         ["row", [
-            ["raw-html", () => { return "You have <h3>" + format(player.ta.negativeInfinityPoints) + "</h3> negative infinity points" }, { color: "white", fontSize: "24px", fontFamily: "monospace" }],
+            ["raw-html", () => { return "你有 <h3>" + format(player.ta.negativeInfinityPoints) + "</h3> negative infinity points" }, { color: "white", fontSize: "24px", fontFamily: "monospace" }],
             ["raw-html", () => { return "(+" + format(player.ta.negativeInfinityPointsToGet) + ")" }, () => {
                 let look = {fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                 if (player.ad.antimatter.gt("1e308") || !player.ta.unlockedReverseBreak) {look.color = "white"} else {look.color = "gray"}

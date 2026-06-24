@@ -151,7 +151,7 @@
                     ["style-row", [
                         ["style-column", [
                             ["raw-html", function () { return format(player.ar.rankPoints) + " Rank Points"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
-                            ["raw-html", function () { return player.ar.rankPointsPerSec.gt(0) ? "(+" + formatWhole(player.ar.rankPointsToGet.mul(player.ar.rankPointsPerSec)) + "/s)" : ""}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+                            ["raw-html", function () { return player.ar.rankPointsPerSec.gt(0) ? "(+" + formatWhole(player.ar.rankPointsToGet.mul(player.ar.rankPointsPerSec)) + "/秒）" : ""}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ["raw-html", function () { return "+" + format(player.ar.rankPointsEffect) + "x Replicanti Point Mult" }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],    
                         ], {width: "399px", height: "75px"}],
                         ["clickable", 11],
@@ -159,7 +159,7 @@
                     ["style-row", [
                         ["style-column", [
                             ["raw-html", function () { return format(player.ar.tierPoints) + " Tier Points"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
-                            ["raw-html", function () { return player.ar.tierPointsPerSec.gt(0) ? "(+" + formatWhole(player.ar.tierPointsToGet.mul(player.ar.tierPointsPerSec)) + "/s)" : ""}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+                            ["raw-html", function () { return player.ar.tierPointsPerSec.gt(0) ? "(+" + formatWhole(player.ar.tierPointsToGet.mul(player.ar.tierPointsPerSec)) + "/秒）" : ""}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ["raw-html", function () { return "x" + format(player.ar.tierPointsEffect) + " Rank Points" }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],    
                         ], {width: "399px", height: "75px"}],
                         ["clickable", 12],
@@ -167,7 +167,7 @@
                     ["style-row", [
                         ["style-column", [
                             ["raw-html", function () { return format(player.ar.tetrPoints) + " Tetr Points"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
-                            ["raw-html", function () { return player.ar.tetrPointsPerSec.gt(0) ? "(+" + formatWhole(player.ar.tetrPointsToGet.mul(player.ar.tetrPointsPerSec)) + "/s)" : ""}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+                            ["raw-html", function () { return player.ar.tetrPointsPerSec.gt(0) ? "(+" + formatWhole(player.ar.tetrPointsToGet.mul(player.ar.tetrPointsPerSec)) + "/秒）" : ""}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ["raw-html", function () { return "x" + format(player.ar.tetrPointsEffect) + " Rank and Tier Points" }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],    
                         ], {width: "399px", height: "75px", borderRadius: "0px 0px 0px 13px"}],
                         ["clickable", 13],
@@ -177,7 +177,7 @@
         },
     },
     tabFormat: [
-        ["raw-html", () => {return "You have <h3>" + format(player.cp.replicantiPoints) + "</h3> replicanti points."}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+        ["raw-html", () => {return "你有 <h3>" + format(player.cp.replicantiPoints) + "</h3> replicanti points."}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
         ["raw-html", () => {return "Replicanti Mult: " + format(player.cp.replicantiPointsMult, 4) + "x"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
         ["row", [["bar", "replicantiBar"]]],
         ["microtabs", "stuff", { 'border-width': '0px' }],

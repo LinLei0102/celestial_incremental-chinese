@@ -194,7 +194,7 @@
                 return "Lengthener"
             },
             display() {
-                return "which are producing " + format(tmp[this.layer].buyables[this.id].effect) + " length per second.\n\
+                return "which are producing " + format(tmp[this.layer].buyables[this.id].effect) + " length 每秒.\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Space Energy"
             },
             buy(mult) {
@@ -228,7 +228,7 @@
                 return "Widthener"
             },
             display() {
-                return "which are producing " + format(tmp[this.layer].buyables[this.id].effect) + " width per second.\n\
+                return "which are producing " + format(tmp[this.layer].buyables[this.id].effect) + " width 每秒.\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Space Energy"
             },
             buy(mult) {
@@ -262,7 +262,7 @@
                 return "Depthener"
             },
             display() {
-                return "which are producing " + format(tmp[this.layer].buyables[this.id].effect) + " depth per second.\n\
+                return "which are producing " + format(tmp[this.layer].buyables[this.id].effect) + " depth 每秒.\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Space Energy"
             },
             buy(mult) {
@@ -296,7 +296,7 @@
                 return "Spissitudiner"
             },
             display() {
-                return "which are producing " + format(tmp[this.layer].buyables[this.id].effect) + " spissitude per second.\n\
+                return "which are producing " + format(tmp[this.layer].buyables[this.id].effect) + " spissitude 每秒.\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Space Energy"
             },
             buy(mult) {
@@ -628,7 +628,7 @@
                 content: [
                     ["blank", "10px"],
                     ["row", [
-                        ["raw-html", () => { return "You have " + format(player.ds.spaceEnergy) + " space energy"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                        ["raw-html", () => { return "你有 " + format(player.ds.spaceEnergy) + " space energy"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                         ["raw-html", () => { return "(+" + format(player.ds.spaceEnergyToGet) + ")"}, () => {
                             let look = {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                             player.ds.spaceEnergyToGet.gte(1) ? look.color = "white" : look.color = "gray"
@@ -641,14 +641,14 @@
                     ["blank", "25px"],
                     ["row", [["clickable", 11]]],
                     ["blank", "25px"],
-                    ["raw-html", () => { return "You have " + format(player.ds.space) + " space. (based on product of length, width, and depth)"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                    ["raw-html", () => { return "你有 " + format(player.ds.space) + " space. (based on product of length, width, and depth)"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                     ["raw-html", () => { return "Boosts starmetal alloy gain by x" + format(player.ds.spaceEffect) + "."}, {color: "white", fontSize: "18px", fontFamily: "monospace"}],
                     ["raw-html", () => { return !hasUpgrade("sma", 20) ? "<h4>(Reset on space energy reset)" : ""}, {color: "white", fontSize: "18px", fontFamily: "monospace"}],
                     ["blank", "25px"],
-                    ["raw-html", () => { return "Length: " + format(player.ds.length) + ". (+" + format(player.ds.lengthPerSecond) + "/s)"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-                    ["raw-html", () => { return "Width: " + format(player.ds.width) + ". (+" + format(player.ds.widthPerSecond) + "/s)"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-                    ["raw-html", () => { return "Depth: " + format(player.ds.depth) + ". (+" + format(player.ds.depthPerSecond) + "/s)"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-                    ["raw-html", () => { return getLevelableTier("pu", 212, true) ? "Spissitude: " + format(player.ds.spissitude) + ". (+" + format(player.ds.spissitudePerSecond) + "/s)" : ""}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                    ["raw-html", () => { return "Length: " + format(player.ds.length) + ". (+" + format(player.ds.lengthPerSecond) + "/秒）"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                    ["raw-html", () => { return "Width: " + format(player.ds.width) + ". (+" + format(player.ds.widthPerSecond) + "/秒）"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                    ["raw-html", () => { return "Depth: " + format(player.ds.depth) + ". (+" + format(player.ds.depthPerSecond) + "/秒）"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                    ["raw-html", () => { return getLevelableTier("pu", 212, true) ? "Spissitude: " + format(player.ds.spissitude) + ". (+" + format(player.ds.spissitudePerSecond) + "/秒）" : ""}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                     ["blank", "25px"],
                     ["row", [["dark-buyable", 11], ["dark-buyable", 12], ["dark-buyable", 13], ["dark-buyable", 14]]],
                 ]
@@ -658,7 +658,7 @@
                 unlocked() { return true },
                 content: [
                     ["blank", "10px"],
-                    ["raw-html", () => { return "You have " + format(player.ds.space) + " space. (based on product of length, width, and depth)"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                    ["raw-html", () => { return "你有 " + format(player.ds.space) + " space. (based on product of length, width, and depth)"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                     ["raw-html", () => { return "<h4>Buying these will reset space back to 1."}, {color: "white", fontSize: "18px", fontFamily: "monospace"}],
                     ["blank", "25px"],
                     ["row", [["dark-buyable", 101], ["dark-buyable", 102], ["dark-buyable", 103]]],
@@ -675,8 +675,8 @@
         },
     },
     tabFormat: [
-        ["raw-html", () => { return "You have <h3>" + format(player.du.points) + "</h3> dark celestial points." }, {color: "white", fontSize: "24px", fontFamily: "monospace" }],
-        ["raw-html", () => { return "You are gaining <h3>" + format(player.du.pointGain) + "</h3> dark celestial points per second." }, {color: "white", fontSize: "16px", fontFamily: "monospace" }],
+        ["raw-html", () => { return "你有 <h3>" + format(player.du.points) + "</h3> dark 天体点数." }, {color: "white", fontSize: "24px", fontFamily: "monospace" }],
+        ["raw-html", () => { return "You are gaining <h3>" + format(player.du.pointGain) + "</h3> dark 天体点数 每秒." }, {color: "white", fontSize: "16px", fontFamily: "monospace" }],
         ["raw-html", () => { return "UNAVOIDABLE SOFTCAP: /" + format(player.du.pointSoftcap) + " to gain." }, {color: "red", fontSize: "16px", fontFamily: "monospace" }],
         ["raw-html", () => { return player.du.pointGain.gte(player.du.secondSoftcapStart) ? "UNAVOIDABLE SOFTCAP<sup>2</sup>: Gain past " + format(player.du.secondSoftcapStart) + " is raised by ^" + format(player.du.pointSoftcap2) + "." : "" }, {color: "red", fontSize: "16px", fontFamily: "monospace"}],
         ["raw-html", () => { return player.pet.legPetTimers[0].current.gt(0) ? "ECLIPSE IS ACTIVE: " + formatTime(player.pet.legPetTimers[0].current) + "." : ""}, {color: "#FEEF5F", fontSize: "20px", fontFamily: "monospace"}],

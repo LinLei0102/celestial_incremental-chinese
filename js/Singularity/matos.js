@@ -2766,7 +2766,7 @@
         14: {
             title: "This upgrade should've been here a long time ago...",
             unlocked: true,
-            description: "Gain 100% of time cubes per second.",
+            description: "Gain 100% of time cubes 每秒.",
             cost: new Decimal("12"),
             currencyLocation() { return player.ma },
             currencyDisplayName: "Epic Matos Fragments",
@@ -4175,7 +4175,7 @@
                         ], {width: "247px", height: "130px", borderRadius: "0 0 17px 0"}],
                     ], {width: "750px", height: "130px", backgroundColor: "#8a0e79", border: "3px solid #8a0e79", borderRadius: "0 0 20px 20px", marginTop: "-3px"}],
                     ["blank", "10px"],
-                    ["raw-html", () => { return "You have <h3>" + formatWhole(player.sma.starmetalAlloy) + "</h3> starmetal alloy" }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                    ["raw-html", () => { return "你有 <h3>" + formatWhole(player.sma.starmetalAlloy) + "</h3> starmetal alloy" }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                     ["blank", "10px"],
                     ["row", [["ex-buyable", 11], ["ex-buyable", 12], ["ex-buyable", 13]]],
                     ["row", [["ex-buyable", 101], ["ex-buyable", 102], ["ex-buyable", 103]]],
@@ -4197,7 +4197,7 @@
                         ], {width: "250px", height: "87px", backgroundColor: "#241c04", borderRadius: "0 0 17px 17px"}],
                     ], {width: "250px", height: "130px", backgroundColor: "#8a0e79", border: "3px solid #8a0e79", borderRadius: "20px"}],
                     ["blank", "10px"],
-                    ["raw-html", () => {return "You have <h3>" + formatWhole(player.sma.eclipseShards) + "</h3> eclipse shards"}, {color: "#f5ff68", fontSize: "24px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "你有 <h3>" + formatWhole(player.sma.eclipseShards) + "</h3> eclipse shards"}, {color: "#f5ff68", fontSize: "24px", fontFamily: "monospace"}],
                     ["blank", "10px"],
                     ["row", [["ex-buyable", 201], ["ex-buyable", 202], ["ex-buyable", 203]]],
                     ["row", [["ex-buyable", 104]]],
@@ -4494,10 +4494,10 @@
                     ["row", [["clickable", 12]]],
                     ["blank", "25px"],
                     ["style-column", [
-                        ["raw-html", () => {return "You have <h3>" + formatShortWhole(player.ma.commonMatosFragments) + "</h3> common matos fragments."}, {color: "#9bedff", fontSize: "16px", fontFamily: "monospace"}],
-                        ["raw-html", () => {return "You have <h3>" + formatShortWhole(player.ma.rareMatosFragments) + "</h3> rare matos fragments."}, {color: "#4e7cff", fontSize: "16px", fontFamily: "monospace"}],
-                        ["raw-html", () => {return "You have <h3>" + formatShortWhole(player.ma.epicMatosFragments) + "</h3> epic matos fragments."}, {color: "#cb79ed", fontSize: "16px", fontFamily: "monospace"}],
-                        ["raw-html", () => {return "You have <h3>" + formatShortWhole(player.ma.legendaryMatosFragments) + "</h3> legendary matos fragments."}, {color: "#eed200", fontSize: "16px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "你有 <h3>" + formatShortWhole(player.ma.commonMatosFragments) + "</h3> common matos fragments."}, {color: "#9bedff", fontSize: "16px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "你有 <h3>" + formatShortWhole(player.ma.rareMatosFragments) + "</h3> rare matos fragments."}, {color: "#4e7cff", fontSize: "16px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "你有 <h3>" + formatShortWhole(player.ma.epicMatosFragments) + "</h3> epic matos fragments."}, {color: "#cb79ed", fontSize: "16px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "你有 <h3>" + formatShortWhole(player.ma.legendaryMatosFragments) + "</h3> legendary matos fragments."}, {color: "#eed200", fontSize: "16px", fontFamily: "monospace"}],
                     ], {width: "500px", height: "110px", backgroundColor: "#1b0218", border: "3px solid #8a0e79", borderRadius: "20px"}],
                 ],  
             },
@@ -4532,10 +4532,10 @@
                 content: [
                     ["blank", "25px"],
                     ["style-column", [
-                        ["raw-html", () => {return "You have <h3>" + formatShortWhole(player.ma.commonMatosFragments) + "</h3> common matos fragments."}, {color: "#9bedff", fontSize: "16px", fontFamily: "monospace"}],
-                        ["raw-html", () => {return "You have <h3>" + formatShortWhole(player.ma.rareMatosFragments) + "</h3> rare matos fragments."}, {color: "#4e7cff", fontSize: "16px", fontFamily: "monospace"}],
-                        ["raw-html", () => {return "You have <h3>" + formatShortWhole(player.ma.epicMatosFragments) + "</h3> epic matos fragments."}, {color: "#cb79ed", fontSize: "16px", fontFamily: "monospace"}],
-                        ["raw-html", () => {return "You have <h3>" + formatShortWhole(player.ma.legendaryMatosFragments) + "</h3> legendary matos fragments."}, {color: "#eed200", fontSize: "16px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "你有 <h3>" + formatShortWhole(player.ma.commonMatosFragments) + "</h3> common matos fragments."}, {color: "#9bedff", fontSize: "16px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "你有 <h3>" + formatShortWhole(player.ma.rareMatosFragments) + "</h3> rare matos fragments."}, {color: "#4e7cff", fontSize: "16px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "你有 <h3>" + formatShortWhole(player.ma.epicMatosFragments) + "</h3> epic matos fragments."}, {color: "#cb79ed", fontSize: "16px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "你有 <h3>" + formatShortWhole(player.ma.legendaryMatosFragments) + "</h3> legendary matos fragments."}, {color: "#eed200", fontSize: "16px", fontFamily: "monospace"}],
                     ], {width: "500px", height: "110px", backgroundColor: "#1b0218", border: "3px solid #8a0e79", borderRadius: "20px"}],
                     ["blank", "25px"],
                     ["style-row", [
@@ -4552,10 +4552,10 @@
                 content: [
                     ["blank", "25px"],
                     ["style-column", [
-                        ["raw-html", () => {return "You have <h3>" + formatShortWhole(player.ma.commonMatosFragments) + "</h3> common matos fragments."}, {color: "#9bedff", fontSize: "16px", fontFamily: "monospace"}],
-                        ["raw-html", () => {return "You have <h3>" + formatShortWhole(player.ma.rareMatosFragments) + "</h3> rare matos fragments."}, {color: "#4e7cff", fontSize: "16px", fontFamily: "monospace"}],
-                        ["raw-html", () => {return "You have <h3>" + formatShortWhole(player.ma.epicMatosFragments) + "</h3> epic matos fragments."}, {color: "#cb79ed", fontSize: "16px", fontFamily: "monospace"}],
-                        ["raw-html", () => {return "You have <h3>" + formatShortWhole(player.ma.legendaryMatosFragments) + "</h3> legendary matos fragments."}, {color: "#eed200", fontSize: "16px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "你有 <h3>" + formatShortWhole(player.ma.commonMatosFragments) + "</h3> common matos fragments."}, {color: "#9bedff", fontSize: "16px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "你有 <h3>" + formatShortWhole(player.ma.rareMatosFragments) + "</h3> rare matos fragments."}, {color: "#4e7cff", fontSize: "16px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "你有 <h3>" + formatShortWhole(player.ma.epicMatosFragments) + "</h3> epic matos fragments."}, {color: "#cb79ed", fontSize: "16px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "你有 <h3>" + formatShortWhole(player.ma.legendaryMatosFragments) + "</h3> legendary matos fragments."}, {color: "#eed200", fontSize: "16px", fontFamily: "monospace"}],
                     ], {width: "500px", height: "110px", backgroundColor: "#1b0218", border: "3px solid #8a0e79", borderRadius: "20px"}],
                     ["blank", "25px"],
                         ["row", [ // Common

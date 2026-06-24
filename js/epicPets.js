@@ -272,7 +272,7 @@
                 return "Dotknight Cookies"
             },
             display() {
-                return 'which are boosting cookies per second by x' + format(tmp[this.layer].buyables[this.id].effect) + '.\n\
+                return 'which are boosting cookies 每秒 by x' + format(tmp[this.layer].buyables[this.id].effect) + '.\n\
                     Cost: ' + format(tmp[this.layer].buyables[this.id].cost) + ' Dotknight Points'
             },
             buy(mult) {
@@ -322,7 +322,7 @@
         },
     },
     tabFormat: [
-        ["raw-html", () => { return "You have <h3>" + format(player.ep0.dotknightPoints) + "</h3> dotknight points." }, {color: "white", fontSize: "32px", fontFamily: "monospace"}],
+        ["raw-html", () => { return "你有 <h3>" + format(player.ep0.dotknightPoints) + "</h3> dotknight points." }, {color: "white", fontSize: "32px", fontFamily: "monospace"}],
         ["microtabs", "stuff", { 'border-width': '0px' }],
         ["blank", "25px"],
     ],
@@ -504,7 +504,7 @@ addLayer("ep1", {
         13: {
             title: "Dragon Upgrade III",
             unlocked() { return true },
-            description() { return "Boosts cookies per second based on dragon points." },
+            description() { return "Boosts cookies 每秒 based on dragon points." },
             cost: new Decimal(500),
             currencyLocation() { return player.ep1 },
             currencyDisplayName: "Dragon Points",
@@ -649,7 +649,7 @@ addLayer("ep1", {
         },
     },
     tabFormat: [
-        ["raw-html", () => {return "You have <h3>" + format(player.ep1.dragonPoints) + "</h3> dragon points."}, {color: "white", fontSize: "32px", fontFamily: "monospace"}],
+        ["raw-html", () => {return "你有 <h3>" + format(player.ep1.dragonPoints) + "</h3> dragon points."}, {color: "white", fontSize: "32px", fontFamily: "monospace"}],
         ["microtabs", "stuff", { 'border-width': '0px' }],
         ["blank", "25px"],
     ],

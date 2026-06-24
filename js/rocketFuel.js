@@ -573,7 +573,7 @@
         12: {
             title: "Rocket Fuel Upgrade II",
             unlocked() { return true },
-            description() { return "Gain 20% of prestige points and grass value per second." },
+            description() { return "Gain 20% of prestige points and grass value 每秒." },
             cost: new Decimal(12),
             currencyLocation() { return player.rf },
             currencyDisplayName: "火箭燃料",
@@ -593,7 +593,7 @@
         14: {
             title: "Rocket Fuel Upgrade IV",
             unlocked() { return hasUpgrade("rf", 13) },
-            description() { return "Gain 1% of grasshoppers per second." },
+            description() { return "Gain 1% of grasshoppers 每秒." },
             cost: new Decimal(120),
             currencyLocation() { return player.rf },
             currencyDisplayName: "火箭燃料",
@@ -651,7 +651,7 @@
         18: {
             title: "Rocket Fuel Upgrade VIII",
             unlocked() { return hasUpgrade("rf", 17) && inChallenge("ip", 16)},
-            description: "Gain 20% of rocket fuel per second.",
+            description: "Gain 20% of rocket fuel 每秒.",
             cost: new Decimal(1e12),
             currencyLocation() { return player.rf },
             currencyDisplayName: "火箭燃料",
@@ -685,10 +685,10 @@
     infoboxes: {},
     microtabs: {},
     tabFormat: [
-        ["raw-html", function () { return "You have <h3>" + format(player.points) + "</h3> celestial points (" + format(player.gain) + "/s)." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
+        ["raw-html", function () { return "你有 <h3>" + format(player.points) + "</h3> 天体点数 (" + format(player.gain) + "/秒）." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
         ["raw-html", () => {return player.gain.gt(player.i.doomSoftcapStart) ? "SOFTCAP OF DOOM: Gain past " + format(player.i.doomSoftcapStart) + " is raised by ^" + format(player.i.doomSoftcap, 3) + "." : ""}, {color: "red", fontSize: "12px", fontFamily: "monospace"}],
         ["row", [
-            ["raw-html", () => {return "You have <h3>" + format(player.rf.rocketFuel) + "</h3 rocket fuel"}, {color: "#949494", fontSize: "24px", fontFamily: "monospace"}],
+            ["raw-html", () => {return "你有 <h3>" + format(player.rf.rocketFuel) + "</h3 rocket fuel"}, {color: "#949494", fontSize: "24px", fontFamily: "monospace"}],
             ["raw-html", () => {return "(+" + format(player.rf.rocketFuelToGet) + ")"}, () => {
                 let look = {color: "#949494", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                 player.rf.rocketFuelToGet.gte(1) ? look.color = "#949494" : look.color = "gray"

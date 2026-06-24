@@ -113,7 +113,7 @@ addLayer("hre", {
         },
         0: {
             requirementDescription: "<h3>12 Refinements",
-            effectDescription: "Hex point formula now uses best celestial points.",
+            effectDescription: "Hex point formula now uses best 天体点数.",
             done() { return player.hre.refinement.gte(12)},
             unlocked() { return hasMilestone("hre", 100) },
             style: {width: "500px", height: "50px", color: "rgba(0,0,0,0.5)", border: "5px solid rgba(0,0,0,0.5)", borderRadius: "10px", margin: "-2.5px"},
@@ -209,7 +209,7 @@ addLayer("hre", {
         },
         12: {
             requirementDescription: "<h3>84 Refinements",
-            effectDescription: "Produce 1% of blessings per second (excluding RC1).",
+            effectDescription: "Produce 1% of blessings 每秒 (excluding RC1).",
             done() { return player.hre.refinement.gte(84)},
             unlocked() { return hasMilestone("hre", 11) },
             style: {width: "500px", height: "50px", color: "rgba(0,0,0,0.5)", border: "5px solid rgba(0,0,0,0.5)", borderRadius: "10px", margin: "-2.5px"},
@@ -382,8 +382,8 @@ addLayer("hre", {
     },
     tabFormat: [
         ["row", [
-            ["raw-html", () => {return "You have <h3>" + format(player.h.hexPoint) + "</h3> hex points."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-            ["raw-html", () => {return player.h.hexPointGain.eq(0) ? "" : player.h.hexPointGain.gt(0) ? "(+" + format(player.h.hexPointGain) + "/s)" : "<span style='color:red'>(" + format(player.h.hexPointGain) + "/s)</span>"}, {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
+            ["raw-html", () => {return "你有 <h3>" + format(player.h.hexPoint) + "</h3> hex points."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+            ["raw-html", () => {return player.h.hexPointGain.eq(0) ? "" : player.h.hexPointGain.gt(0) ? "(+" + format(player.h.hexPointGain) + "/秒）" : "<span style='color:red'>(" + format(player.h.hexPointGain) + "/秒）</span>"}, {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
             ["raw-html", () => {return (inChallenge("hrm", 14) || player.h.hexPointGain.gte(1e308)) ? "[SOFTCAPPED]" : "" }, {color: "red", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
         ]],
         ["raw-html", () => {return inChallenge("hrm", 15) ? "Time Remaining: " + formatTime(player.hrm.dreamTimer) : ""}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],

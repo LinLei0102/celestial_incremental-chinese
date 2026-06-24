@@ -472,7 +472,7 @@
                 return "Factor I"
             },
             display() {
-                return "which are boosting celestial points by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "which are boosting 天体点数 by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Celestial Points"
             },
             buy(mult) {
@@ -511,7 +511,7 @@
                 return "Factor II"
             },
             display() {
-                return "which are boosting celestial points by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "which are boosting 天体点数 by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Celestial Points"
             },
             buy(mult) {
@@ -549,7 +549,7 @@
                 return "Factor III"
             },
             display() {
-                return "which are boosting celestial points by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "which are boosting 天体点数 by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Celestial Points"
             },
             buy(mult) {
@@ -587,7 +587,7 @@
                 return "Factor IV"
             },
             display() {
-                return "which are boosting celestial points by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "which are boosting 天体点数 by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Celestial Points"
             },
             buy(mult) {
@@ -625,7 +625,7 @@
                 return "Factor V"
             },
             display() {
-                return "which are boosting celestial points by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "which are boosting 天体点数 by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Celestial Points"
             },
             buy(mult) {
@@ -662,7 +662,7 @@
                 return "Factor VI"
             },
             display() {
-                return "which are boosting celestial points by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "which are boosting 天体点数 by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Celestial Points"
             },
             buy(mult) {
@@ -699,7 +699,7 @@
                 return "Factor VII"
             },
             display() {
-                return "which are boosting celestial points by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "which are boosting 天体点数 by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Celestial Points"
             },
             buy(mult) {
@@ -736,7 +736,7 @@
                 return "Factor VIII"
             },
             display() {
-                return "which are boosting celestial points by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "which are boosting 天体点数 by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Celestial Points"
             },
             buy(mult) {
@@ -1373,7 +1373,7 @@
                 return "Point Factor"
             },
             display() {
-                return "which are boosting celestial points by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "which are boosting 天体点数 by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Celestial Points"
             },
             buy(mult) {
@@ -1524,22 +1524,22 @@
                 content: [
                     ["blank", "25px"],
                     ["row", [
-                        ["raw-html", () => { return "You have " + format(player.f.factorPower) + " factor power." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-                        ["raw-html", () => { return "(+" + format(player.f.factorPowerPerSecond) + "/s)" }, () => {
+                        ["raw-html", () => { return "你有 " + format(player.f.factorPower) + " factor power." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                        ["raw-html", () => { return "(+" + format(player.f.factorPowerPerSecond) + "/秒）" }, () => {
                             let look = {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                             player.f.factorPowerPerSecond.gt(0) ? look.color = "white" : look.color = "gray"
                             return look
                         }],
                     ]],
                     ["row", [
-                        ["raw-html", () => { return "Boosts celestial points by x" + format(player.f.factorPowerEffect) + "." }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                        ["raw-html", () => { return "Boosts 天体点数 by x" + format(player.f.factorPowerEffect) + "." }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                         ["raw-html", () => { return player.f.factorPowerEffect.gte("1e25000") ? "[SOFTCAPPED]" : "" }, {color: "red", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}],
                     ]],
                     ["blank", "25px"],
                     ["raw-html", () => { return "<h3>You have " + format(player.p.prestigePoints) + " prestige points." }, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                     ["blank", "25px"],
                     ["raw-html", function () { return !tmp.f.buyables[23].unlocked ?  "Next factor unlocks at 10,000 prestige points." : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
-                    ["raw-html", function () { return tmp.f.buyables[23].unlocked && !tmp.f.buyables[24].unlocked ?  "Next factor unlocks at 1e14 celestial points." : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                    ["raw-html", function () { return tmp.f.buyables[23].unlocked && !tmp.f.buyables[24].unlocked ?  "Next factor unlocks at 1e14 天体点数." : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
                     ["raw-html", function () { return tmp.f.buyables[24].unlocked && !tmp.f.buyables[25].unlocked ?  "Next factor unlocks at tetr 11." : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
                     ["raw-html", function () { return tmp.f.buyables[25].unlocked && !tmp.f.buyables[26].unlocked ?  "Next factor unlocks at 25 trees." : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
                     ["raw-html", function () { return tmp.f.buyables[26].unlocked && !tmp.f.buyables[27].unlocked ?  "Next factor unlocks at ???." : "" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
@@ -1587,8 +1587,8 @@
                 content: [
                     ["blank", "25px"],
                     ["row", [
-                        ["raw-html", () => { return "You have " + format(player.f.factorPower) + " factor power." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-                        ["raw-html", () => { return "(+" + format(player.f.factorPowerPerSecond) + "/s)" }, () => {
+                        ["raw-html", () => { return "你有 " + format(player.f.factorPower) + " factor power." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                        ["raw-html", () => { return "(+" + format(player.f.factorPowerPerSecond) + "/秒）" }, () => {
                             let look = {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                             player.f.factorPowerPerSecond.gt(0) ? look.color = "white" : look.color = "gray"
                             return look
@@ -1596,7 +1596,7 @@
                     ]],
                     ["raw-html", () => {return player.f.factorPowerPerSecond.gt(player.f.doomSoftcapStart) ? "SOFTCAP OF DOOM: Gain past " + format(player.f.doomSoftcapStart) + " is raised by ^" + format(player.f.doomSoftcap, 3) + "." : ""}, {color: "red", fontSize: "16px", fontFamily: "monospace"}],
                     ["row", [
-                        ["raw-html", () => { return "Boosts celestial points by x" + format(player.f.factorPowerEffect) + "." }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                        ["raw-html", () => { return "Boosts 天体点数 by x" + format(player.f.factorPowerEffect) + "." }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                         ["raw-html", () => { return player.f.factorPowerEffect.gte("1e25000") ? "[SOFTCAPPED]" : "" }, {color: "red", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}],
                     ]],
                     ["blank", "25px"],
@@ -1612,7 +1612,7 @@
     },
 
     tabFormat: [
-        ["raw-html", () => { return "You have <h3>" + format(player.points) + "</h3> celestial points (" + format(player.gain) + "/s)." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+        ["raw-html", () => { return "你有 <h3>" + format(player.points) + "</h3> 天体点数 (" + format(player.gain) + "/秒）." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
         ["raw-html", () => {return player.gain.gt(player.i.doomSoftcapStart) ? "SOFTCAP OF DOOM: Gain past " + format(player.i.doomSoftcapStart) + " is raised by ^" + format(player.i.doomSoftcap, 3) + "." : ""}, {color: "red", fontSize: "16px", fontFamily: "monospace"}],
         ["microtabs", "stuff", { 'border-width': '0px' }],
         ["blank", "25px"],

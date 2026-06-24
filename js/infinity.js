@@ -582,7 +582,7 @@
     infoboxes: {
         1: {
             title: "无限",
-            body() { return "Tav, the celestial of limits, has placed a barrier on the superphysical value of celestial points. He introduced the magic number: 1.7976931...e308. A constant value that represented the point at which celestial points condensed into an infinity. When celestial points are condensed into an infinity, it also produces infinity points as a byproduct. This process is called a big crunch. Infinities are an ancient power, tracing back to the time of the original seven." },
+            body() { return "Tav, the celestial of limits, has placed a barrier on the superphysical value of 天体点数. He introduced the magic number: 1.7976931...e308. A constant value that represented the point at which 天体点数 condensed into an infinity. When 天体点数 are condensed into an infinity, it also produces infinity points as a byproduct. This process is called a big crunch. Infinities are an ancient power, tracing back to the time of the original seven." },
             unlocked() { return true },      
         },
         2: {
@@ -622,7 +622,7 @@
                     ], {width: "158px", height: "50px", backgroundColor: "black", border: "2px solid white", borderRadius: "10px", userSelect: "none"}],
                     ["blank", "25px"],
                     ["clickable", 11],
-                    ["raw-html", () => { return player.in.pylonBuilt ? "You have <h3>" + format(player.in.pylonEnergy) + "/" + format(player.in.pylonEnergyMax) +  "</h3> paradox pylon energy (" + format(player.in.pylonEnergyPerSecond) + "/s)." : "" }, {color: "#000000ff", fontSize: "24px", fontFamily: "monospace"}],
+                    ["raw-html", () => { return player.in.pylonBuilt ? "You have <h3>" + format(player.in.pylonEnergy) + "/" + format(player.in.pylonEnergyMax) +  "</h3> paradox pylon energy (" + format(player.in.pylonEnergyPerSecond) + "/秒）." : "" }, {color: "#000000ff", fontSize: "24px", fontFamily: "monospace"}],
                     ["raw-html", () => {return player.in.pylonBuilt ? "Boosts U2 tickspeed by x" + format(player.in.pylonEnergyEffect) + "." : ""}, {color: "black", fontSize: "20px", fontFamily: "monospace"}],
                     ["raw-html", () => {return player.in.pylonBuilt ? "Boosts infinities by x" + format(player.in.pylonEnergyEffect2) + "." : ""}, {color: "black", fontSize: "20px", fontFamily: "monospace"}],
                     ["raw-html", () => {return player.in.pylonBuilt ? "Boosts ancient pylon energy by x" + format(player.in.pylonEnergyEffect3) + "." : ""}, {color: "black", fontSize: "20px", fontFamily: "monospace"}],
@@ -639,8 +639,8 @@
     },
     tabFormat: [
         ["row", [
-            ["raw-html", () => {return "You have <h3>" + format(player.ad.antimatter) + "</h3> antimatter"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-            ["raw-html", () => {return "(+" + format(player.ad.antimatterPerSecond) + "/s)"}, () => {
+            ["raw-html", () => {return "你有 <h3>" + format(player.ad.antimatter) + "</h3> antimatter"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+            ["raw-html", () => {return "(+" + format(player.ad.antimatterPerSecond) + "/秒）"}, () => {
                 look = {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                 player.ad.antimatterPerSecond.gt(0) ? look.color = "white" : look.color = "gray"
                 return look
@@ -720,7 +720,7 @@ addLayer("bigc", {
     challenges: {},
     infoboxes: {},
     tabFormat: [
-        ["raw-html", function () { return "<h2>1e308 celestial points- impossible." }, { "color": "black", "font-size": "16px", "font-family": "monospace" }],
+        ["raw-html", function () { return "<h2>1e308 天体点数- impossible." }, { "color": "black", "font-size": "16px", "font-family": "monospace" }],
         ["blank", "150px"],
         ["row", [["clickable", 11]]],
         ["blank", "25px"],

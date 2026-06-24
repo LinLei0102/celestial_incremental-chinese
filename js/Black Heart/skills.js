@@ -174,7 +174,7 @@ BHA.general_block = {
 }
 BHA.general_poisonNeedle = {
     name: "Poison Needle",
-    description() {return "Shoot a poison needle that does " + formatWhole(new Decimal(75).add(player.bh.skillData["general_poisonNeedle"].level.mul(15))) + "% ranged damage, then " + formatWhole(new Decimal(10).add(player.bh.skillData["general_poisonNeedle"].level.mul(2))) + "% spirit damage per second for 5 seconds"},
+    description() {return "Shoot a poison needle that does " + formatWhole(new Decimal(75).add(player.bh.skillData["general_poisonNeedle"].level.mul(15))) + "% ranged damage, then " + formatWhole(new Decimal(10).add(player.bh.skillData["general_poisonNeedle"].level.mul(2))) + "% spirit damage 每秒 for 5 seconds"},
     passiveText() {return "+" + formatSimple(player.bh.skillData["general_poisonNeedle"].maxLevel.div(2)) + " AGI"},
     char: "general",
     spCost: new Decimal(14),
@@ -456,7 +456,7 @@ BHA.nav_fireball = {
 }
 BHA.nav_soulShred = {
     name: "Soul Shred",
-    description(char) {return "Gain a " + formatSimple(Decimal.mul(8, Decimal.div(Decimal.add(100, char.luck), 100))) + "% chance to deal " + formatWhole(new Decimal(20).add(player.bh.skillData["nav_soulShred"].level.mul(4))) + "% spirit damage per second for 10 seconds when Nav does an action"},
+    description(char) {return "Gain a " + formatSimple(Decimal.mul(8, Decimal.div(Decimal.add(100, char.luck), 100))) + "% chance to deal " + formatWhole(new Decimal(20).add(player.bh.skillData["nav_soulShred"].level.mul(4))) + "% spirit damage 每秒 for 10 seconds when Nav does an action"},
     passiveText() {return "+" + formatSimple(player.bh.skillData["nav_soulShred"].maxLevel.div(2)) + " LUCK"},
     char: "nav",
     spCost: new Decimal(12),
@@ -644,7 +644,7 @@ BHA.sel_scavenger = {
 // Eclipse Skills
 BHA.eclipse_drain = {
     name: "Drain",
-    description() {return "Deal " + formatWhole(new Decimal(10).add(player.bh.skillData["eclipse_drain"].level.mul(2))) + "% spirit damage per second"},
+    description() {return "Deal " + formatWhole(new Decimal(10).add(player.bh.skillData["eclipse_drain"].level.mul(2))) + "% spirit damage 每秒"},
     passiveText() {return "+" + formatSimple(player.bh.skillData["eclipse_drain"].maxLevel.div(5)) + " DMG"},
     char: "eclipse",
     spCost: new Decimal(6),
@@ -842,7 +842,7 @@ BHA.geroa_selfRepair = {
 }
 BHA.geroa_cosmicRay = {
     name: "Cosmic Ray",
-    description() {return "Deal " + formatWhole(new Decimal(40).add(player.bh.skillData["geroa_cosmicRay"].level.mul(8))) + "% spirit damage per second for 5 seconds"},
+    description() {return "Deal " + formatWhole(new Decimal(40).add(player.bh.skillData["geroa_cosmicRay"].level.mul(8))) + "% spirit damage 每秒 for 5 seconds"},
     passiveText() {return "+" + formatSimple(player.bh.skillData["geroa_cosmicRay"].maxLevel.div(5)) + " DMG"},
     char: "geroa",
     spCost: new Decimal(12),
@@ -915,7 +915,7 @@ BHA.geroa_defenseSatellites = {
 // Vespasian Skills
 BHA.vespasian_poisonStinger = {
     name: "Poison Stinger",
-    description() {return "Shoots 3 poison stingers that do " + formatWhole(new Decimal(25).add(player.bh.skillData["vespasian_poisonStinger"].level.mul(5))) + "% ranged damage, then " + formatWhole(new Decimal(10).add(player.bh.skillData["vespasian_poisonStinger"].level.mul(2))) + "% spirit damage per second for 5 seconds"},
+    description() {return "Shoots 3 poison stingers that do " + formatWhole(new Decimal(25).add(player.bh.skillData["vespasian_poisonStinger"].level.mul(5))) + "% ranged damage, then " + formatWhole(new Decimal(10).add(player.bh.skillData["vespasian_poisonStinger"].level.mul(2))) + "% spirit damage 每秒 for 5 seconds"},
     passiveText() {return "+" + formatSimple(player.bh.skillData["vespasian_poisonStinger"].maxLevel.div(2)) + " AGI"},
     char: "vespasian",
     spCost: new Decimal(10),

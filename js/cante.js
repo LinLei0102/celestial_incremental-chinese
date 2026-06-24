@@ -848,7 +848,7 @@
                 unlocked() { return player.ca.unlockedCante },
                 content: [
                     ["blank", "25px"],
-                    ["raw-html", () => {return "You have <h3>" + format(player.ca.replicanti) + "</h3> replicanti." }, { "color": "white", "font-size": "26px", "font-family": "monospace" }],
+                    ["raw-html", () => {return "你有 <h3>" + format(player.ca.replicanti) + "</h3> replicanti." }, { "color": "white", "font-size": "26px", "font-family": "monospace" }],
                     ["raw-html", () => {return "Boosts infinity points by x" + format(player.ca.replicantiEffect)}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                     ["raw-html", () => {return "Boosts infinity dimensions by x" + format(player.ca.replicantiEffect2)}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                     ["raw-html", () => {return "Boosts points by x" + format(player.ca.replicantiEffect3)}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
@@ -871,9 +871,9 @@
                 unlocked() { return player.ca.unlockedCante && hasUpgrade("bi", 26) },
                 content: [
                     ["blank", "25px"],
-                    ["raw-html", () => {return "You have <h3>" + format(player.ca.replicanti) + "</h3> replicanti." }, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "你有 <h3>" + format(player.ca.replicanti) + "</h3> replicanti." }, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                     ["row", [
-                        ["raw-html", () => {return "You have <h3>" + format(player.ca.galaxyDust) + "</h3> galaxy dust"}, {color: "#979EE8", fontSize: "24px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "你有 <h3>" + format(player.ca.galaxyDust) + "</h3> galaxy dust"}, {color: "#979EE8", fontSize: "24px", fontFamily: "monospace"}],
                         ["raw-html", () => {return "(+" + format(player.ca.galaxyDustToGet) + ")"}, () => {
                             let look = {color: "#979EE8", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                             player.ca.replicanti.gte(1e10) ? look.color = "#979EE8" : look.color = "gray"
@@ -886,7 +886,7 @@
                     ["blank", "25px"],
                     ["style-row", [["ex-buyable", 21], ["ex-buyable", 22], ["ex-buyable", 23], ["ex-buyable", 24]], {maxWidth: "1200px"}],
                     ["blank", "25px"],
-                    ["raw-html", () => {return "You have <h3>" + formatWhole(player.ca.replicantiGalaxies) + "/" + formatWhole(player.ca.replicantiGalaxiesCap) + "</h3> replicanti galaxies." }, {color: "#979EE8", fontSize: "24px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "你有 <h3>" + formatWhole(player.ca.replicantiGalaxies) + "/" + formatWhole(player.ca.replicantiGalaxiesCap) + "</h3> replicanti galaxies." }, {color: "#979EE8", fontSize: "24px", fontFamily: "monospace"}],
                     ["raw-html", () => {return "(They just act like regular antimatter galaxies)" }, {color: "#979EE8", fontSize: "16px", fontFamily: "monospace"}],
                     ["blank", "25px"],
                     ["row", [["clickable", 13]]],
@@ -900,17 +900,17 @@
                     ["bar", "bar"],
                     ["style-row", [
                         ["style-column", [
-                            ["raw-html", () => {return "You have <h3>" + formatWhole(player.ca.canteCores) + "</h3> Cante cores."}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                            ["raw-html", () => {return "你有 <h3>" + formatWhole(player.ca.canteCores) + "</h3> Cante cores."}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                             ["raw-html", () => {return "Energy multiplier: <h3>" + format(player.ca.canteEnergyMult) + "</h3>x"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ["blank", "20px"],
                             ["raw-html", "Cante energy is gained by clicking on check back buttons.", {color: "white", fontSize: "12px", fontFamily: "monospace"}],
                             ["blank", "10px"],
                         ], () => {return hasUpgrade("cp", 18) ? {width: "347px", height: "220px", borderRight: "3px solid white"} : {width: "700px", height: "220px"}}],
                         ["style-column", [
-                            ["raw-html", () => {return "You have <h3>" + formatWhole(player.ca.rememberanceCores) + "</h3> remembrance cores."}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                            ["raw-html", () => {return "你有 <h3>" + formatWhole(player.ca.rememberanceCores) + "</h3> remembrance cores."}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                             ["raw-html", () => {return "Boosts cante energy gain by x<h3>" + format(player.ca.rememberanceCoresEffect) + "</h3>."}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ["blank", "10px"],
-                            ["raw-html", () => {return "You have <h3>" + format(player.oi.protoMemories) + "</h3> proto memories."}, {color: "white", fontSize: "12px", fontFamily: "monospace"}],
+                            ["raw-html", () => {return "你有 <h3>" + format(player.oi.protoMemories) + "</h3> proto memories."}, {color: "white", fontSize: "12px", fontFamily: "monospace"}],
                             ["blank", "20px"],
                             ["clickable", 15],
                         ], () => {return hasUpgrade("cp", 18) ? {width: "350px", height: "220px"} : {display: "none !important"}}],
@@ -964,8 +964,8 @@
         },
     },
     tabFormat: [
-        ["raw-html", function () { return "You have <h3>" + format(player.in.infinityPoints) + "</h3> infinity points." }, { "color": "white", "font-size": "20px", "font-family": "monospace" }],
-        ["raw-html", function () { return "You have <h3>" + format(player.ta.negativeInfinityPoints) + "</h3> negative infinity points." }, { "color": "white", "font-size": "20px", "font-family": "monospace" }],
+        ["raw-html", function () { return "你有 <h3>" + format(player.in.infinityPoints) + "</h3> infinity points." }, { "color": "white", "font-size": "20px", "font-family": "monospace" }],
+        ["raw-html", function () { return "你有 <h3>" + format(player.ta.negativeInfinityPoints) + "</h3> negative infinity points." }, { "color": "white", "font-size": "20px", "font-family": "monospace" }],
         ["microtabs", "stuff", { 'border-width': '0px' }],
         ["blank", "25px"],
     ],

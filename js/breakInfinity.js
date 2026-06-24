@@ -666,8 +666,8 @@
         },
     },
     tabFormat: [
-        ["raw-html", () => { return "You have <h3>" + formatWhole(player.in.infinityPoints) + "</h3> infinity points." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-        ["raw-html", () => { return "You have <h3>" + formatWhole(player.ta.negativeInfinityPoints) + "</h3> negative infinity points." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+        ["raw-html", () => { return "你有 <h3>" + formatWhole(player.in.infinityPoints) + "</h3> infinity points." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+        ["raw-html", () => { return "你有 <h3>" + formatWhole(player.ta.negativeInfinityPoints) + "</h3> negative infinity points." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
         ["microtabs", "stuff", { 'border-width': '0px' }],
         ["blank", "25px"],
     ],

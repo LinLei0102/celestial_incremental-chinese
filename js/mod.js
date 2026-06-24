@@ -1004,7 +1004,7 @@ let changelog = `<h1>Changelog:</h1><br>
 			- Reduced Cante's antimatter requirement.<br>
 			- Reduced late game marcel upgrade costs.<br>
 			- Buffed Geroa's orbital cannon skill.<br>
-			- Nerfed M-03's regen from 10/s->6/s.<br>
+			- Nerfed M-03's regen from 10/s->6/秒。<br>
 			- Buffed Matos' damage from 6->10.<br>
 			- Increased timers for bullet hell maze attacks.<br>
 			- Black heart shields now decay at 1 every 20s.<br>
@@ -1237,7 +1237,7 @@ let changelog = `<h1>Changelog:</h1><br>
 			- Added a faster booster dice toggle, unlocked through an achievement.<br>
 			- Added softcap warnings to the 'Buys another die' buyable.<br>
 			- Changed dice roll text to make the roll range more clear.<br>
-			- Added a rocket fuel upgrade that gives +1% grasshoppers per second.<br>
+			- Added a rocket fuel upgrade that gives +1% grasshoppers 每秒.<br>
 			- Added 2 rocket fuel upgrades while in IC6 to make it less painful to beat.<br>
 			- Revamped AD automation to be visually better, more performant, and cheaper to upgrade.<br>
 			- Added infinity challenge completion warnings to the U2 icon.<br><br>
@@ -1257,9 +1257,9 @@ let changelog = `<h1>Changelog:</h1><br>
 			- Added a softcap to Might E:3.<br>
 			- Buffed 2nd refinement effects slightly.<br>
 			- Moved Refinement 12 milestone to Refinement 6.<br>
-			- New Refinement 12 milestone makes hex point gain based on highest celestial points.<br>
+			- New Refinement 12 milestone makes hex point gain based on highest 天体点数.<br>
 			- Made Refinement 84 milestones effect a native feature of blessing automation.<br>
-			- New Refinement 84 milestone gives +1% Blessings per second (excluding RC1).<br>
+			- New Refinement 84 milestone gives +1% Blessings 每秒 (excluding RC1).<br>
 			- Added a level cap of 99 to cores.<br>
 			- Made infinity resets before infinity 5 reset AD resources instead of purchases.<br>
 			- Replaced Kres/Nav/Sel Upgrade II (as they didn't even do anything).<br>
@@ -1732,7 +1732,7 @@ let changelog = `<h1>Changelog:</h1><br>
 	 	- Fixed star pet evolution buyable costs not being rounded.<br>
    		- Fixed bug where buying dice pet evolution checked for current dice points instead of highest.<br>
      		- Fixed cutscene 8 also playing cutscene 10.<br>
-       		- Fixed challenge 1 not automatically crunching when reaching infinite celestial points.<br><br>
+       		- Fixed challenge 1 not automatically crunching when reaching infinite 天体点数.<br><br>
        		QoL:<br>
 	 	- Added an alert toggle to the pet shop.<br>
    		- Reworked the leveling system to allow for bulk leveling.<br><br>

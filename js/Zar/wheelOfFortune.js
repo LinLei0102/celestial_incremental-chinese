@@ -552,7 +552,7 @@
                     
                     ["style-column", [ 
                     ["style-column", [ 
-                    ["raw-html", function () { return "You have <h3>" + format(player.wof.wheelPoints) + "</h3> wheel points." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                    ["raw-html", function () { return "你有 <h3>" + format(player.wof.wheelPoints) + "</h3> wheel points." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
                     ["raw-html", function () { return "Boosts chance point gain by x" + format(player.wof.wheelPointsEffect) + "." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
                     ["raw-html", function () { return "Extends chance point softcap by x" + format(player.wof.wheelPointsEffect2) + "." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
                     ["raw-html", function () { return "Boosts heads and tails gain by x" + format(player.wof.wheelPointsEffect3) + "." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
@@ -571,7 +571,7 @@
         },
     },
     tabFormat: [
-                ["raw-html", function () { return "You have <h3>" + format(player.za.chancePoints) + "</h3> chance points. (+" + format(player.za.chancePointsPerSecond) + "/s)" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                ["raw-html", function () { return "你有 <h3>" + format(player.za.chancePoints) + "</h3> chance points. (+" + format(player.za.chancePointsPerSecond) + "/秒）" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
         ["raw-html", () => { return player.za.chancePoints.gte(player.za.chancePointsSoftcapStart) ? "After " + format(player.za.chancePointsSoftcapStart) + " chance points, gain is divided by /" + format(player.za.chancePointsSoftcapEffect) + "." : "Softcap start: " + format(player.za.chancePointsSoftcapStart) + "." }, {color: "red", fontSize: "16px", fontFamily: "monospace"}],
         ["microtabs", "stuff", { 'border-width': '0px' }],
     ],

@@ -4033,7 +4033,7 @@ class SpaceArena {
     applyShipDamage(dmg) {
         // When asteroid minigame is paused, ship should not take damage
         if (this._asteroidMinigamePaused) return false;
-        // invulnerability duration: ~333ms (max 3 hits per second)
+        // invulnerability duration: ~333ms (max 3 hits 每秒)
         const INVULN_MS = 1000 / 3;
         if (this.shipHitInvuln && this.shipHitInvuln > 0) return false;
 

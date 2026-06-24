@@ -173,7 +173,7 @@
         12: {
             title: "Singularity Upgrade II",
             unlocked() { return true},
-            description: "Gain 4% of all mastery points per second, and gain is based on highest of each currency.",
+            description: "Gain 4% of all mastery points 每秒, and gain is based on highest of each currency.",
             cost: new Decimal("50"),
             currencyLocation() { return player.s },
             currencyDisplayName: "Singularity Points",
@@ -297,7 +297,7 @@
         24: {
             title: "Singularity Upgrade XIV",
             unlocked() { return true},
-            description: "Gain 100% of IP per second.",  
+            description: "Gain 100% of IP 每秒.",  
             cost: new Decimal("1e100"),
             currencyLocation() { return player.s },
             currencyDisplayName: "Singularity Points",
@@ -307,7 +307,7 @@
         25: {
             title: "Singularity Upgrade XV",
             unlocked() { return true},
-            description: "Gain 100% of NIP per second.",  
+            description: "Gain 100% of NIP 每秒.",  
             cost: new Decimal("1e120"),
             currencyLocation() { return player.s },
             currencyDisplayName: "Singularity Points",
@@ -599,7 +599,7 @@
         },
         13: {
             requirementDescription: "<h3>3 Singularities",
-            effectDescription: "Produce 5% of blessings per second (excluding RC1), produce 1% of galaxy dust per second, autobuy infinity power, and unlock radiation.",
+            effectDescription: "Produce 5% of blessings 每秒 (excluding RC1), produce 1% of galaxy dust 每秒, autobuy infinity power, and unlock radiation.",
             done() { return player.s.singularities.gte(3) },
             style: {width: "800px", height: "85px", color: "rgba(0,0,0,0.5)", border: "5px solid rgba(0,0,0,0.5)", borderRadius: "10px", margin: "-2.5px"},
         },
@@ -718,7 +718,7 @@
                 content: [
                     ["blank", "20px"],
                     ["row", [
-                        ["raw-html", () => {return "You have <h3>" + formatWhole(player.s.singularities) + "</h3> singularities" }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "你有 <h3>" + formatWhole(player.s.singularities) + "</h3> singularities" }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                         ["raw-html", () => {return "(+" + formatWhole(player.s.singularitiesToGet) + ")" }, {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
                     ]],
                     ["raw-html", () => {return hasUpgrade("fu", 19) ? "Boosts core scraps by x" + format(player.s.singularitiesEffect) : ""}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
@@ -774,7 +774,7 @@
                     ], {width: "158px", height: "50px", backgroundColor: "black", border: "2px solid white", borderRadius: "10px", userSelect: "none"}],
                     ["blank", "25px"],
                     ["clickable", 11],
-                    ["raw-html", () => { return player.s.pylonBuilt ? "You have <h3>" + format(player.s.pylonEnergy) + "/" + format(player.s.pylonEnergyMax) +  "</h3> radioactive pylon energy (" + format(player.s.pylonEnergyPerSecond) + "/s)." : "" }, {color: "#000000ff", fontSize: "24px", fontFamily: "monospace"}],
+                    ["raw-html", () => { return player.s.pylonBuilt ? "You have <h3>" + format(player.s.pylonEnergy) + "/" + format(player.s.pylonEnergyMax) +  "</h3> radioactive pylon energy (" + format(player.s.pylonEnergyPerSecond) + "/秒）." : "" }, {color: "#000000ff", fontSize: "24px", fontFamily: "monospace"}],
                     ["raw-html", () => {return player.s.pylonBuilt ? "Boosts U3 tickspeed by x" + format(player.s.pylonEnergyEffect) + "." : ""}, {color: "black", fontSize: "20px", fontFamily: "monospace"}],
                     ["raw-html", () => {return player.s.pylonBuilt ? "Boosts radiation by x" + format(player.s.pylonEnergyEffect2) + "." : ""}, {color: "black", fontSize: "20px", fontFamily: "monospace"}],
                     ["raw-html", () => {return player.s.pylonBuilt ? "Boosts core scraps x" + format(player.s.pylonEnergyEffect3) + "." : ""}, {color: "black", fontSize: "20px", fontFamily: "monospace"}],
@@ -792,7 +792,7 @@
     },
     tabFormat: [
         ["row", [
-            ["raw-html", () => {return "You have <h3>" + format(player.s.singularityPoints) + "</h3> singularity points"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+            ["raw-html", () => {return "你有 <h3>" + format(player.s.singularityPoints) + "</h3> singularity points"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
             ["raw-html", () => {return "(+" + format(player.s.singularityPointsToGet) + ")"}, () => {
                 let look = {fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                 if (player.in.infinityPoints.gte(1e40)) {look.color = "white"} else {look.color = "gray"} 

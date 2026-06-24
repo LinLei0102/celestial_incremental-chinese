@@ -502,7 +502,7 @@
         },
     },
     tabFormat: [
-        ["raw-html", () => { return "You have <h3>" + format(player.dgr.grass) + "</h3> dark grass"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+        ["raw-html", () => { return "你有 <h3>" + format(player.dgr.grass) + "</h3> dark grass"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
         ["style-row", [
             ["raw-html", () => {return "Boosts generator power effect by ^" + format(player.dgr.grassEffect)}, {color: "white", fontSize: "20px", fontFamily: "monospace", paddingRight: "10px"}],
             ["raw-html", () => { return (player.dgr.grass.lt(1e15) && player.dgr.grass.gte(1e5)) ? "[SOFTCAPPED]" : ""}, {color: "red", fontSize: "18px", fontFamily: "monospace"}],

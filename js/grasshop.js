@@ -531,7 +531,7 @@
             display() {
                 return "<h3>Grass Study I</h3>\n\
                     (" + formatWhole(getBuyableAmount(this.layer, this.id)) + "/5)\n\
-                    Produce " + formatWhole(tmp[this.layer].buyables[this.id].effect.mul(100)) + "% of grass value per second.\n\ \n\
+                    Produce " + formatWhole(tmp[this.layer].buyables[this.id].effect.mul(100)) + "% of grass value 每秒.\n\ \n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Fertilizer"
             },
             buy() {
@@ -632,7 +632,7 @@
             display() {
                 return "<h3>Prestige Study I</h3>\n\
                     (" + formatWhole(getBuyableAmount(this.layer, this.id)) + "/100)\n\
-                    Produce " + formatWhole(tmp[this.layer].buyables[this.id].effect.mul(100)) + "% of prestige points per second.\n\ \n\
+                    Produce " + formatWhole(tmp[this.layer].buyables[this.id].effect.mul(100)) + "% of prestige points 每秒.\n\ \n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Fertilizer"
             },
             branches: [13],
@@ -769,7 +769,7 @@
             display() {
                 return "<h3>Grass Study IV</h3>\n\
                     (" + formatWhole(getBuyableAmount(this.layer, this.id)) + "/100)\n\
-                    Produce " + formatSimple(tmp[this.layer].buyables[this.id].effect.mul(100), 1) + "% of golden grass value per second.\n\ \n\
+                    Produce " + formatSimple(tmp[this.layer].buyables[this.id].effect.mul(100), 1) + "% of golden grass value 每秒.\n\ \n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Fertilizer"
             },
             branches: [16, 15],
@@ -1338,8 +1338,8 @@
                 content: [
                     ["blank", "5px"],
                     ["row", [
-                        ["raw-html", () => { return "You have <h3>" + format(player.gh.fertilizer) + "</h3> fertilizer" }, {color: "#EFD4B9", fontSize: "24px", fontFamily: "monospace"}],
-                        ["raw-html", () => { return "(+" + format(player.gh.fertilizerPerSecond) + "/s)"}, {color: "#EFD4B9", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
+                        ["raw-html", () => { return "你有 <h3>" + format(player.gh.fertilizer) + "</h3> fertilizer" }, {color: "#EFD4B9", fontSize: "24px", fontFamily: "monospace"}],
+                        ["raw-html", () => { return "(+" + format(player.gh.fertilizerPerSecond) + "/秒）"}, {color: "#EFD4B9", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
                         ["raw-html", () => {return player.gh.fertilizerEffect.gte("1e15000") ? "[SOFTCAPPED]" : ""}, {color: "red", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}],
                     ]],
                     ["raw-html", () => {return player.gh.fertilizerPerSecond.gt(player.gh.doomSoftcap2Start) ? "SOFTCAP OF DOOM: Gain past " + format(player.gh.doomSoftcap2Start) + " is raised by ^" + format(player.gh.doomSoftcap2, 3) + "." : ""}, {color: "red", fontSize: "16px", fontFamily: "monospace"}],
@@ -1389,7 +1389,7 @@
                 content: [
                     ["blank", "25px"],
                     ["row", [
-                        ["raw-html", () => {return "You have <h3>" + format(player.gh.steel) + "</h3> steel." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "你有 <h3>" + format(player.gh.steel) + "</h3> steel." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                         ["raw-html", () => {return "(+" + format(player.gh.steelToGet) + ")" }, () => {
                             let look = {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                             player.gh.steelToGet.gte(1) ? look.color = "white" : look.color = "gray"
@@ -1408,9 +1408,9 @@
     },
 
     tabFormat: [
-        ["raw-html", () => {return "You have <h3>" + format(player.g.grass) + "</h3> grass"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+        ["raw-html", () => {return "你有 <h3>" + format(player.g.grass) + "</h3> grass"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
         ["row", [
-            ["raw-html", () => {return "You have <h3>" + format(player.gh.grasshoppers) + "</h3> grasshoppers"}, {color: "#19e04d", fontSize: "24px", fontFamily: "monospace"}],
+            ["raw-html", () => {return "你有 <h3>" + format(player.gh.grasshoppers) + "</h3> grasshoppers"}, {color: "#19e04d", fontSize: "24px", fontFamily: "monospace"}],
             ["raw-html", () => {return "(+" + format(player.gh.grasshoppersToGet) + ")"}, () => {
                 let look = {fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                 if (player.gh.grasshoppersToGet.gt(1)) {look.color = "#19e04d"} else {look.color = "gray"}

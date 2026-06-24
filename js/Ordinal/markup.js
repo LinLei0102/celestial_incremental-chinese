@@ -99,14 +99,14 @@ addLayer("mu", {
         ["style-row", [
             ["style-column", [
                 ["raw-html", () => {return layers.od.ordinalDisplay(player.od.co, player.od.ob)}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-                ["raw-html", () => {return "(+" + formatWhole(player.od.ops) + "/s)"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+                ["raw-html", () => {return "(+" + formatWhole(player.od.ops) + "/秒）"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
             ], {width:"500px", height: "73px", background: "#0c3200", borderRight: "2px solid white", borderRadius: "18px 0 0 18px"}],
             ["style-row", [
                 ["raw-html", () => {return formatWhole(player.od.ob)}, {color: "white", fontSize: "30px", fontFamily: "monospace"}],
             ], {width:"75px", height: "73px", backgroundColor: "#103f00", borderRadius: "0 18px 18px 0"}],
         ], {width: "577px", border: "2px solid white", borderRadius: "20px"}],
         ["blank", "25px"],
-        ["raw-html", () => {return "You have " + formatSimple(player.mu.cp) + " Ordinal Power."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+        ["raw-html", () => {return "你有 " + formatSimple(player.mu.cp) + " Ordinal Power."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
         ["blank", "25px"],
         ["row", [
             ["clickable", 101], ["raw-html", "&nbsp;", {fontSize: "25px"}], ["clickable", 102],

@@ -249,7 +249,7 @@
                 unlocked() { return true },
                 content: [
                     ["blank", "25px"],
-                    ["raw-html", () => { return "You have <h3>" + formatWhole(player.au2.stars) + "</h3> stars." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                    ["raw-html", () => { return "你有 <h3>" + formatWhole(player.au2.stars) + "</h3> stars." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
                     ["blank", "25px"],
                     ["raw-html", () => { return "You will sacrifice <h3>" + formatWhole(player.pl.starInputAmount) + "</h3> stars to find planets." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                     ["row", [
@@ -268,8 +268,8 @@
                 unlocked() { return true },
                 content: [
                     ["blank", "25px"],
-                    ["raw-html", function () { return "You have <h3>" + format(player.pl.spaceDust) + "/" + format(player.pl.spaceDustCapacity) + "</h3> space dust." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
-                    ["raw-html", function () { return "You are gaining <h3>" + format(player.pl.spaceDustPerSecond) + "</h3> space dust per second. (based on planets)" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                    ["raw-html", function () { return "你有 <h3>" + format(player.pl.spaceDust) + "/" + format(player.pl.spaceDustCapacity) + "</h3> space dust." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                    ["raw-html", function () { return "You are gaining <h3>" + format(player.pl.spaceDustPerSecond) + "</h3> space dust 每秒. (based on planets)" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
                     ["blank", "25px"],
                     ["style-column", [
                         ["style-column", [
@@ -289,7 +289,7 @@
         },
     },
     tabFormat: [
-        ["raw-html", function () { return "You have <h3>" + formatWhole(player.pl.planets) + "</h3> planets." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+        ["raw-html", function () { return "你有 <h3>" + formatWhole(player.pl.planets) + "</h3> planets." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
         ["microtabs", "stuff", { 'border-width': '0px' }],
         ["blank", "25px"],
     ],

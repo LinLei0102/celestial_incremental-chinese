@@ -470,7 +470,7 @@
         31: {
             title: "自动CDP",
             unlocked() { return (hasUpgrade("i", 28) && hasUpgrade("bi", 106) && player.po.dice && player.ca.unlockedCante && player.ev.evolutionsUnlocked[5]) || hasUpgrade("i", 31)},
-            description: "Gain 5% challenge dice points per second.",
+            description: "Gain 5% challenge dice points 每秒.",
             cost: new Decimal("1e4600"),
             currencyLocation() { return player },
             currencyDisplayName: "Celestial Points",
@@ -697,7 +697,7 @@
                     ], {width: "158px", height: "50px", backgroundColor: "black", border: "2px solid white", borderRadius: "10px", userSelect: "none"}],
                     ["blank", "25px"],
                     ["clickable", 12],
-                    ["raw-html", () => { return player.i.pylonBuilt ? "You have <h3>" + format(player.i.pylonEnergy) + "/" + format(player.i.pylonEnergyMax) +  "</h3> ancient pylon energy (" + format(player.i.pylonEnergyPerSecond) + "/s)." : "" }, {color: "#000000ff", fontSize: "24px", fontFamily: "monospace"}],
+                    ["raw-html", () => { return player.i.pylonBuilt ? "You have <h3>" + format(player.i.pylonEnergy) + "/" + format(player.i.pylonEnergyMax) +  "</h3> ancient pylon energy (" + format(player.i.pylonEnergyPerSecond) + "/秒）." : "" }, {color: "#000000ff", fontSize: "24px", fontFamily: "monospace"}],
                     ["raw-html", () => {return player.i.pylonBuilt ? "Boosts U1 tickspeed by x" + format(player.i.pylonEnergyEffect) + "." : ""}, {color: "black", fontSize: "20px", fontFamily: "monospace"}],
                     ["row", [
                         ["raw-html", () => {return player.i.pylonBuilt ? "Boosts pre-otf multiplier by ^" + format(player.i.pylonEnergyEffect2) + "." : ""}, {color: "black", fontSize: "20px", fontFamily: "monospace"}],
@@ -733,7 +733,7 @@
         },
     },
     tabFormat: [
-        ["raw-html", () => {return "You have <h3>" + format(player.points) + "</h3> celestial points (" + format(player.gain) + "/s)."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+        ["raw-html", () => {return "你有 <h3>" + format(player.points) + "</h3> 天体点数 (" + format(player.gain) + "/秒）."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
         ["raw-html", () => {return player.gain.gt(player.i.doomSoftcapStart) ? "SOFTCAP OF DOOM: Gain past " + format(player.i.doomSoftcapStart) + " is raised by ^" + format(player.i.doomSoftcap, 3) + "." : ""}, {color: "red", fontSize: "16px", fontFamily: "monospace"}],
         ["bar", "infbar"],
         ["style-row", [

@@ -310,8 +310,8 @@
                 unlocked() { return true },
                 content: [
                     ["blank", "25px"],
-                    ["raw-html", () => {return "You have <h3>" + format(player.dv.clouds) + "</h3> clouds, which raises the point softcap by ^" + format(player.dv.cloudEffect) + "."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-                    ["raw-html", () => {return "You are gaining " + format(player.dv.cloudsPerSecond) + "</h3> clouds per second."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "你有 <h3>" + format(player.dv.clouds) + "</h3> clouds, which raises the point softcap by ^" + format(player.dv.cloudEffect) + "."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "You are gaining " + format(player.dv.cloudsPerSecond) + "</h3> clouds 每秒."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                     ["raw-html", () => {return "your clouds increase the eclipse timer tickspeed by x" + format(player.dv.timeDrainRate) + "."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                     ["blank", "25px"],
                     ["row", [["clickable", 11], ["clickable", 12], ["clickable", 13],]],
@@ -323,8 +323,8 @@
         },
     },
     tabFormat: [
-        ["raw-html", () => { return "You have <h3>" + format(player.du.points) + "</h3> dark celestial points." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-        ["raw-html", () => { return "You are gaining <h3>" + format(player.du.pointGain) + "</h3> dark celestial points per second." }, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+        ["raw-html", () => { return "你有 <h3>" + format(player.du.points) + "</h3> dark 天体点数." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+        ["raw-html", () => { return "You are gaining <h3>" + format(player.du.pointGain) + "</h3> dark 天体点数 每秒." }, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
         ["raw-html", () => { return "UNAVOIDABLE SOFTCAP: /" + format(player.du.pointSoftcap) + " to gain." }, {color: "red", fontSize: "16px", fontFamily: "monospace"}],
         ["raw-html", () => { return player.pet.legPetTimers[0].active ? "ECLIPSE IS ACTIVE: " + formatTime(player.pet.legPetTimers[0].current) + "." : ""}, {color: "#FEEF5F", fontSize: "20px", fontFamily: "monospace"}],
         ["microtabs", "stuff", { 'border-width': '0px' }],

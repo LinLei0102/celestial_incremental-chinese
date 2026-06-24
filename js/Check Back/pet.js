@@ -5279,7 +5279,7 @@ addLayer("pet", {
                         ["style-row", [
                             ["style-column", [
                                 ["raw-html", () => { return "Currently selecting: " + run(layers.pet.levelables[player.pet.banners[player.pet.bannerIndex].id].title, layers.pet.levelables[player.pet.banners[player.pet.bannerIndex].id])}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
-                                ["raw-html", () => { return "You have " + formatWhole(getLevelableXP("pet", player.pet.banners[player.pet.bannerIndex].id)) + " of this pet."}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+                                ["raw-html", () => { return "你有 " + formatWhole(getLevelableXP("pet", player.pet.banners[player.pet.bannerIndex].id)) + " of this pet."}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ], {width: "347px", height: "54px", borderRight: "3px solid #190c1e"}],
                             ["style-column", [
                                 ["clickable", 100],

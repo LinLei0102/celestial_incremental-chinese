@@ -965,7 +965,7 @@
         },
     },
     tabFormat: [
-        ["raw-html", function () { return !player.ir.inBattle ? "You have <h3>" + format(player.za.chancePoints) + "</h3> chance points. (+" + format(player.za.chancePointsPerSecond) + "/s)" : ""}, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+        ["raw-html", function () { return !player.ir.inBattle ? "You have <h3>" + format(player.za.chancePoints) + "</h3> chance points. (+" + format(player.za.chancePointsPerSecond) + "/秒）" : ""}, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
         ["raw-html", () => { return !player.ir.inBattle && player.za.chancePoints.gte(player.za.chancePointsSoftcapStart) ? "After " + format(player.za.chancePointsSoftcapStart) + " chance points, gain is divided by /" + format(player.za.chancePointsSoftcapEffect) + "." : "" }, {color: "red", fontSize: "16px", fontFamily: "monospace"}],
         ["microtabs", "stuff", { 'border-width': '0px' }],
     ],
@@ -2419,7 +2419,7 @@ class RitualArena extends SpaceArena {
                         navFireball: true,
                         color: '#a040ff'
                     });
-                    this.nav.cooldown = 250; // Roughly 1.33 shots per second
+                    this.nav.cooldown = 250; // Roughly 1.33 shots 每秒
                 }
             }
         }

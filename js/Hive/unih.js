@@ -1269,7 +1269,7 @@ addLayer("bee", {
     tabFormat: [
         ["row", [
             ["raw-html", () => {return player.bee.bees.eq(1) ? "You have <h3>" + format(player.bee.bees) + "</h3> bee" : "You have <h3>" + format(player.bee.bees) + "</h3> bees"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-            ["raw-html", () => {return "(+" + format(player.bee.bps) + "/s)" }, {color: "white", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}],
+            ["raw-html", () => {return "(+" + format(player.bee.bps) + "/秒）" }, {color: "white", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}],
         ]],
         ["blank", "10px"],
         ["row", [["clickable", 1], ["clickable", 2]]],
@@ -1376,7 +1376,7 @@ addLayer("bee", {
                 ["style-row", [
                     ["style-column", [
                         ["raw-html", () => { return "Improved Hamuli - " + formatWhole(getBuyableAmount("bee", 32)) + "/" + formatWhole(layers.bee.buyables[32].purchaseLimit())}, { color: "#312f17", fontSize: "24px", fontFamily: "monospace" }],
-                        ["raw-html", () => { return hasUpgrade("al", 112) ? "Multiplies Pollen per second by x" + formatSimple(buyableEffect("bee", 32), 1) : "Divides Pollen cooldown by /" + formatSimple(buyableEffect("bee", 32), 1)}, { color: "#312f17", fontSize: "16px", fontFamily: "monospace" }]
+                        ["raw-html", () => { return hasUpgrade("al", 112) ? "Multiplies Pollen 每秒 by x" + formatSimple(buyableEffect("bee", 32), 1) : "Divides Pollen cooldown by /" + formatSimple(buyableEffect("bee", 32), 1)}, { color: "#312f17", fontSize: "16px", fontFamily: "monospace" }]
                     ], {width: "396px"}],
                     ["style-row", [], {width: "4px", height: "60px", background: "#8e4200"}],
                     ["buyable", 32],

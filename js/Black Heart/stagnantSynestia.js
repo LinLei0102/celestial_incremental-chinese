@@ -293,8 +293,8 @@ addLayer("stagnantSynestia", {
                     ["style-row", [
                         ["style-column", [
                             ["style-column", [
-                                ["raw-html", () => {return "You have " + formatShortWhole(player.stagnantSynestia.temporalDust) + " temporal dust."}, {color: "var(--textColor)", fontSize: "14px", fontFamily: "monospace"}],
-                                ["raw-html", () => {return "You have " + formatShortWhole(player.stagnantSynestia.temporalShard) + " temporal shards."}, {color: "var(--textColor)", fontSize: "14px", fontFamily: "monospace"}],
+                                ["raw-html", () => {return "你有 " + formatShortWhole(player.stagnantSynestia.temporalDust) + " temporal dust."}, {color: "var(--textColor)", fontSize: "14px", fontFamily: "monospace"}],
+                                ["raw-html", () => {return "你有 " + formatShortWhole(player.stagnantSynestia.temporalShard) + " temporal shards."}, {color: "var(--textColor)", fontSize: "14px", fontFamily: "monospace"}],
                             ], {width: "272px", height: "52px", background: "var(--miscButtonHover)", borderBottom: "3px solid var(--regBorder)"}],
                             ["theme-scroll-column", [
                                 ["blank", "2px"],
@@ -365,8 +365,8 @@ addLayer("stagnantSynestia", {
                     ["style-row", [
                         ["style-column", [
                             ["style-column", [
-                                ["raw-html", () => {return "You have " + formatShortWhole(player.stagnantSynestia.temporalDust) + " temporal dust."}, {color: "var(--textColor)", fontSize: "14px", fontFamily: "monospace"}],
-                                ["raw-html", () => {return "You have " + formatShortWhole(player.stagnantSynestia.temporalShard) + " temporal shards."}, {color: "var(--textColor)", fontSize: "14px", fontFamily: "monospace"}],
+                                ["raw-html", () => {return "你有 " + formatShortWhole(player.stagnantSynestia.temporalDust) + " temporal dust."}, {color: "var(--textColor)", fontSize: "14px", fontFamily: "monospace"}],
+                                ["raw-html", () => {return "你有 " + formatShortWhole(player.stagnantSynestia.temporalShard) + " temporal shards."}, {color: "var(--textColor)", fontSize: "14px", fontFamily: "monospace"}],
                             ], {width: "272px", height: "52px", background: "var(--miscButtonHover)", borderBottom: "3px solid var(--regBorder)"}],
                             ["theme-scroll-column", [
                                 ["blank", "2px"],

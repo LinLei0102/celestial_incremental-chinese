@@ -1000,7 +1000,7 @@
     }, 
     tabFormat: [
         ["row", [
-            ["raw-html", () => {return "You have <h3>" + format(player.s.singularityPoints) + "</h3> singularity points"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+            ["raw-html", () => {return "你有 <h3>" + format(player.s.singularityPoints) + "</h3> singularity points"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
             ["raw-html", () => {return "(+" + format(player.s.singularityPointsToGet) + ")"}, () => {
                 let look = {fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                 if (player.in.infinityPoints.gte(1e40)) {look.color = "white"} else {look.color = "gray"} 
@@ -1116,7 +1116,7 @@
             ], {width: "788px", height: "37px", background: "var(--miscButton)", borderBottom: "3px solid var(--regBorder)"}],
             ["top-column", [
                     ["blank", "10px"],
-                    ["raw-html", () => { return "You have <h3>" + formatWhole(player.cof.coreFragments[player.cof.fragmentIndex]) + "</h3> " + player.cof.coreFragmentNames[player.cof.fragmentIndex] + "." }, {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => { return "你有 <h3>" + formatWhole(player.cof.coreFragments[player.cof.fragmentIndex]) + "</h3> " + player.cof.coreFragmentNames[player.cof.fragmentIndex] + "." }, {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}],
                     ["raw-html", () => { return player.cof.fragmentIndex == 0 ? "Your " + player.cof.coreFragmentNames[player.cof.fragmentIndex] + " boosts points by ^" + format(player.cof.coreFragmentEffects[player.cof.fragmentIndex], 3) + "." : ""}, {color: "var(--textColor)", fontSize: "18px", fontFamily: "monospace"}],
                     ["raw-html", () => { return player.cof.fragmentIndex == 1 ? "Your " + player.cof.coreFragmentNames[player.cof.fragmentIndex] + " boosts golden grass by x" + format(player.cof.coreFragmentEffects[player.cof.fragmentIndex]) + "." : ""}, {color: "var(--textColor)", fontSize: "18px", fontFamily: "monospace"}],
                     ["raw-html", () => { return player.cof.fragmentIndex == 2 ? "Your " + player.cof.coreFragmentNames[player.cof.fragmentIndex] + " boosts steel by ^" + format(player.cof.coreFragmentEffects[player.cof.fragmentIndex], 3) + "." : ""}, {color: "var(--textColor)", fontSize: "18px", fontFamily: "monospace"}],

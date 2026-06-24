@@ -548,8 +548,8 @@ addLayer("hbl", {
                 content: [
                     ["blank", "5px"],
                     ["row", [
-                        ["raw-html", () => {return "You have <h3>" + format(player.hbl.boons) + "</h3> boons." }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
-                        ["raw-html", () => {return player.hbl.boonsGain.eq(0) ? "" : player.hbl.boonsGain.gt(0) ? "(+" + format(player.hbl.boonsGain) + "/s)" : "<span style='color:red'>(" + format(player.hbl.boonsGain) + "/s)</span>" }, {color: "white", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}],
+                        ["raw-html", () => {return "你有 <h3>" + format(player.hbl.boons) + "</h3> boons." }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return player.hbl.boonsGain.eq(0) ? "" : player.hbl.boonsGain.gt(0) ? "(+" + format(player.hbl.boonsGain) + "/秒）" : "<span style='color:red'>(" + format(player.hbl.boonsGain) + "/秒）</span>" }, {color: "white", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}],
                         ["raw-html", () => {return inChallenge("hrm", 12) && player.hbl.boonsGain.gt(0) ? "<small>[SOFTCAPPED]</small>" : "" }, {color: "red", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}],
                     ]],
                     ["blank", "10px"],
@@ -618,8 +618,8 @@ addLayer("hbl", {
     },
     tabFormat: [
         ["row", [
-            ["raw-html", () => {return "You have <h3>" + format(player.h.hexPoint) + "</h3> hex points."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-            ["raw-html", () => {return player.h.hexPointGain.eq(0) ? "" : player.h.hexPointGain.gt(0) ? "(+" + format(player.h.hexPointGain) + "/s)" : "<span style='color:red'>(" + format(player.h.hexPointGain) + "/s)</span>"}, {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
+            ["raw-html", () => {return "你有 <h3>" + format(player.h.hexPoint) + "</h3> hex points."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+            ["raw-html", () => {return player.h.hexPointGain.eq(0) ? "" : player.h.hexPointGain.gt(0) ? "(+" + format(player.h.hexPointGain) + "/秒）" : "<span style='color:red'>(" + format(player.h.hexPointGain) + "/秒）</span>"}, {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
             ["raw-html", () => {return (inChallenge("hrm", 14) || player.h.hexPointGain.gte(1e308)) ? "[SOFTCAPPED]" : "" }, {color: "red", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
         ]],
         ["raw-html", () => {return inChallenge("hrm", 15) ? "Time Remaining: " + formatTime(player.hrm.dreamTimer) : ""}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
@@ -629,13 +629,13 @@ addLayer("hbl", {
         ], {width: "800px", height: "50px", backgroundColor: "#4c3900", border: "3px solid white", borderRadius: "20px"}],
         ["blank", "10px"],
         ["tooltip-row", [
-            ["raw-html", () => {return "You have <h3>" + format(player.hbl.blessings) + "</h3> blessings." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+            ["raw-html", () => {return "你有 <h3>" + format(player.hbl.blessings) + "</h3> blessings." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
             ["raw-html", () => {return "(+" + format(player.hbl.blessingsGain) + ")" }, () => {
                 let look = {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                 player.hre.refinement.gte(18) ? look.color = "white" : look.color = "gray"
                 return look
             }],
-            ["raw-html", () => {return player.hbl.blessingPerSec.eq(0) ? "" : player.hbl.blessingPerSec.gt(0) ? "(+" + format(player.hbl.blessingPerSec) + "/s)" : "<span style='color:red'>(" + format(player.hbl.blessingPerSec) + "/s)</span>" }, {color: "white", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}],
+            ["raw-html", () => {return player.hbl.blessingPerSec.eq(0) ? "" : player.hbl.blessingPerSec.gt(0) ? "(+" + format(player.hbl.blessingPerSec) + "/秒）" : "<span style='color:red'>(" + format(player.hbl.blessingPerSec) + "/秒）</span>" }, {color: "white", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}],
             ["raw-html", "<div class='bottomTooltip'>Base Formula<hr><small>(Refinements-17)^1.6</small></div>"],
         ]],
         ["raw-html", () => {return inChallenge("hrm", 11) ? "Bless resets used: " + formatWhole(player.hrm.blessLimit) + "/6" : ""}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],

@@ -313,7 +313,7 @@ addLayer("al", {
         103: {
             title: "Honeycomb <small>(1, 3)</small>",
             unlocked: true,
-            description: "Produce 100% of bee drones per second.",
+            description: "Produce 100% of bee drones 每秒.",
             cost: new Decimal(10),
             currencyLocation() { return player.al },
             currencyDisplayName: "Honeycombs",
@@ -355,7 +355,7 @@ addLayer("al", {
         106: {
             title: "Honeycomb <small>(2, 3)</small>",
             unlocked: true,
-            description: "Produce 50% of bee workers per second.",
+            description: "Produce 50% of bee workers 每秒.",
             cost: new Decimal(200),
             currencyLocation() { return player.al },
             currencyDisplayName: "Honeycombs",
@@ -401,7 +401,7 @@ addLayer("al", {
         109: {
             title: "Honeycomb <small>(3, 3)</small>",
             unlocked: true,
-            description: "Produce 25% of bee queens per second.",
+            description: "Produce 25% of bee queens 每秒.",
             cost: new Decimal(5000),
             currencyLocation() { return player.al },
             currencyDisplayName: "Honeycombs",
@@ -619,7 +619,7 @@ addLayer("al", {
         124: {
             title: "Honeycomb <small>(8, 3)</small>",
             unlocked() {return hasChallenge("fu", 12)},
-            description: "Produce 10% of empress bees per second.",
+            description: "Produce 10% of empress bees 每秒.",
             cost: new Decimal(1e22),
             currencyLocation() { return player.al },
             currencyDisplayName: "Honeycombs",
@@ -703,7 +703,7 @@ addLayer("al", {
         130: {
             title: "Honeycomb <small>(10, 3)</small>",
             unlocked() {return getBuyableAmount("n", 51).gte(3)},
-            description: "Produce 1% of bee bread production gain per second.",
+            description: "Produce 1% of bee bread production gain 每秒.",
             cost: new Decimal(1e40),
             currencyLocation() { return player.al },
             currencyDisplayName: "Honeycombs",
@@ -748,7 +748,7 @@ addLayer("al", {
         203: {
             title: "Royal J. <small>(1, 3)</small>",
             unlocked: true,
-            description: "Produce 100% of nectar α per second.",
+            description: "Produce 100% of nectar α 每秒.",
             cost: new Decimal(10),
             currencyLocation() { return player.al },
             currencyDisplayName: "Royal Jelly",
@@ -790,7 +790,7 @@ addLayer("al", {
         206: {
             title: "Royal J. <small>(2, 3)</small>",
             unlocked: true,
-            description: "Produce 50% of nectar β per second.",
+            description: "Produce 50% of nectar β 每秒.",
             cost: new Decimal(200),
             currencyLocation() { return player.al },
             currencyDisplayName: "Royal Jelly",
@@ -832,7 +832,7 @@ addLayer("al", {
         209: {
             title: "Royal J. <small>(3, 3)</small>",
             unlocked: true,
-            description: "Produce 25% of nectar γ per second.",
+            description: "Produce 25% of nectar γ 每秒.",
             cost: new Decimal(5000),
             currencyLocation() { return player.al },
             currencyDisplayName: "Royal Jelly",
@@ -874,7 +874,7 @@ addLayer("al", {
         212: {
             title: "Royal J. <small>(4, 3)</small>",
             unlocked() {return player.tad.hiveExpand},
-            description: "Produce 10% of nectar δ per second.",
+            description: "Produce 10% of nectar δ 每秒.",
             cost: new Decimal(1.2e6),
             currencyLocation() { return player.al },
             currencyDisplayName: "Royal Jelly",
@@ -1008,7 +1008,7 @@ addLayer("al", {
         221: {
             title: "Royal J. <small>(7, 3)</small>",
             unlocked() {return hasChallenge("fu", 12)},
-            description: "Produce 5% of nectar ε per second.",
+            description: "Produce 5% of nectar ε 每秒.",
             cost: new Decimal(1e19),
             currencyLocation() { return player.al },
             currencyDisplayName: "Royal Jelly",
@@ -1134,7 +1134,7 @@ addLayer("al", {
         230: {
             title: "Royal J. <small>(10, 3)</small>",
             unlocked() {return getBuyableAmount("n", 51).gte(3)},
-            description: "Produce 1% of honey-cells per second.",
+            description: "Produce 1% of honey-cells 每秒.",
             cost: new Decimal(1e40),
             currencyLocation() { return player.al },
             currencyDisplayName: "Royal Jelly",
@@ -1549,7 +1549,7 @@ addLayer("al", {
                             ["top-column", [
                                 ["style-column", [
                                     ["row", [
-                                        ["raw-html", () => {return "You have <h3>" + formatWhole(player.al.honeycomb) + "</h3> Honeycombs"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+                                        ["raw-html", () => {return "你有 <h3>" + formatWhole(player.al.honeycomb) + "</h3> Honeycombs"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                                         ["raw-html", () => {return "(+" + formatWhole(player.al.honeycombGain) + ")"}, {color: "white", fontSize: "14px", fontFamily: "monospace", marginLeft: "7px"}],
                                     ]],
                                     ["raw-html", () => {return hasUpgrade("n", 21) ? "Boosts bees by x" + formatSimple(player.al.honeycombEffect) : ""}, {color: "white", fontSize: "14px", fontFamily: "monospace"}],
@@ -1579,7 +1579,7 @@ addLayer("al", {
                             ["top-column", [
                                 ["style-column", [
                                     ["row", [
-                                        ["raw-html", () => {return "You have <h3>" + formatWhole(player.al.royalJelly) + "</h3> Royal Jelly"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+                                        ["raw-html", () => {return "你有 <h3>" + formatWhole(player.al.royalJelly) + "</h3> Royal Jelly"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                                         ["raw-html", () => {return "(+" + formatWhole(player.al.royalJellyGain) + ")"}, {color: "white", fontSize: "14px", fontFamily: "monospace", marginLeft: "7px"}],
                                     ]],
                                     ["raw-html", () => {return hasUpgrade("n", 22) ? "Boosts pre-aleph resources by x" + formatSimple(player.al.royalJellyEffect) : ""}, {color: "white", fontSize: "14px", fontFamily: "monospace"}],
@@ -1784,12 +1784,12 @@ addLayer("al", {
     },
     tabFormat: [
         ["style-row", [
-            ["raw-html", () => {return "You have " + format(player.bb.beeBread) + " Bee Bread"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
-            ["raw-html", () => {return "(" + format(player.bb.beeBreadPerSecond) + "/s)"}, {color: "white", fontSize: "16px", fontFamily: "monospace", marginLeft: "10px"}],
+            ["raw-html", () => {return "你有 " + format(player.bb.beeBread) + " Bee Bread"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+            ["raw-html", () => {return "(" + format(player.bb.beeBreadPerSecond) + "/秒）"}, {color: "white", fontSize: "16px", fontFamily: "monospace", marginLeft: "10px"}],
         ]],
         ["style-row", [
-            ["raw-html", () => {return "You have " + format(player.ho.honey) + " Honey"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
-            ["raw-html", () => {return "(" + format(player.ho.honeyPerSecond) + "/s)"}, {color: "white", fontSize: "16px", fontFamily: "monospace", marginLeft: "10px"}],
+            ["raw-html", () => {return "你有 " + format(player.ho.honey) + " Honey"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+            ["raw-html", () => {return "(" + format(player.ho.honeyPerSecond) + "/秒）"}, {color: "white", fontSize: "16px", fontFamily: "monospace", marginLeft: "10px"}],
         ]],
         ["blank", "10px"],
         ["microtabs", "Tabs", {borderWidth: "0"}],

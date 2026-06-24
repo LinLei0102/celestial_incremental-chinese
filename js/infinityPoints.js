@@ -537,13 +537,13 @@
         },
         12: {
             requirementDescription: "<h3>3 Infinities",
-            effectDescription: "Keep check back unlocked,<br>and gain 5% of prestige points per second.",
+            effectDescription: "Keep check back unlocked,<br>and gain 5% of prestige points 每秒.",
             done() { return player.in.infinities.gte(3) },
             style: {width: "600px", height: "70px", color: "rgba(0,0,0,0.5)", border: "5px solid rgba(0,0,0,0.5)", borderRadius: "10px", margin: "-2.5px"},
         },
         13: {
             requirementDescription: "<h3>4 Infinities",
-            effectDescription: "Gain 5% of grass per second.",
+            effectDescription: "Gain 5% of grass 每秒.",
             done() { return player.in.infinities.gte(4) },
             style: {width: "600px", height: "55px", color: "rgba(0,0,0,0.5)", border: "5px solid rgba(0,0,0,0.5)", borderRadius: "10px", margin: "-2.5px"},
         },
@@ -598,7 +598,7 @@
         },
         22: {
             requirementDescription: "<h3>100 Infinities",
-            effectDescription() { return "Gain 10% of grasshoppers and code experience per second." },
+            effectDescription() { return "Gain 10% of grasshoppers and code experience 每秒." },
             done() { return player.in.infinities.gte(100) && hasChallenge("ip", 14) },
             unlocked() { return hasChallenge("ip", 14) },
             style: {width: "600px", height: "55px", color: "rgba(0,0,0,0.5)", border: "5px solid rgba(0,0,0,0.5)", borderRadius: "10px", margin: "-2.5px"},
@@ -640,7 +640,7 @@
         },
         28: {
             requirementDescription: "<h3>100,000 Infinities",
-            effectDescription() { return "Multiply infinity gain based on celestial points beyond infinity.<br>Currently: x" + formatSimple(player.points.add(1).log("1.79e308").pow(0.7).max(1)) },
+            effectDescription() { return "Multiply infinity gain based on 天体点数 beyond infinity.<br>Currently: x" + formatSimple(player.points.add(1).log("1.79e308").pow(0.7).max(1)) },
             done() { return player.in.infinities.gte(100000) && player.in.unlockedBreak },
             unlocked() { return player.in.unlockedBreak},
             style: {width: "600px", height: "70px", color: "rgba(0,0,0,0.5)", border: "5px solid rgba(0,0,0,0.5)", borderRadius: "10px", margin: "-2.5px"},
@@ -731,7 +731,7 @@
             marked: false,
             challengeDescription() { return "<h4>Hex... A feature seemingly coming from thin air. No check back effects either..." },
             goalDescription() {
-                if (hasUpgrade("bi", 28) && challengeCompletions(this.layer, this.id) >= 1) return "1e2400 celestial points"
+                if (hasUpgrade("bi", 28) && challengeCompletions(this.layer, this.id) >= 1) return "1e2400 天体点数"
                 return "2 Refinements"
             },
             goal() {
@@ -777,7 +777,7 @@
             marked: false,
             challengeDescription() { return "<h4>IP and AD upgrades are disabled, some IP milestones are disabled, and pent divides point gain, but is necessary to unlock OTFs." },
             goalDescription() {
-                if (hasUpgrade("bi", 28) && challengeCompletions(this.layer, this.id) >= 1) return "1e6000 celestial points"
+                if (hasUpgrade("bi", 28) && challengeCompletions(this.layer, this.id) >= 1) return "1e6000 天体点数"
                 return "Pent 30"
             },
             goal() {
@@ -806,7 +806,7 @@
         15: {
             name: "Challenge V",
             challengeDescription() { return "<h4>You are stuck in dice, the booster dice automatically rolls but on every roll, it does a reset equivalent to a big crunch. There are also general debuffs." },
-            goalDescription() { return "1.79e308 celestial points" },
+            goalDescription() { return "1.79e308 天体点数" },
             goal() { return new Decimal("1.79e308") },
             canComplete: function () { return player.points.gte(1.79e308) },
             rewardDescription: "Unlock new booster dice effects, and booster dice automation.",
@@ -850,7 +850,7 @@
             goalDescription() { return "1.79e308 prestige points" },
             goal() { return new Decimal("1.79e308") },
             canComplete: function () { return player.p.prestigePoints.gte(1.79e308) },
-            rewardDescription: "Unlock new rocket fuel abilities, and gain 20% of rocket fuel per second.",
+            rewardDescription: "Unlock new rocket fuel abilities, and gain 20% of rocket fuel 每秒.",
             unlocked() { return hasChallenge("ip", 15) },
             onEnter() {
                 //OTF is reset here and not in crunch to prevent a bug
@@ -1006,7 +1006,7 @@
 
     tabFormat: [
         ["row", [
-            ["raw-html", () => { return "You have <h3>" + format(player.in.infinityPoints) + "</h3> infinity points" }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+            ["raw-html", () => { return "你有 <h3>" + format(player.in.infinityPoints) + "</h3> infinity points" }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
             ["raw-html", () => { return "(+" + format(player.in.infinityPointsToGet) + ")"}, () => {
                 let look = {fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                 if (player.points.gt("1e308") || !player.in.breakInfinity) {look.color = "white"} else {look.color = "gray"} 
@@ -1014,7 +1014,7 @@
             }],
         ]],
         ["row", [
-            ["raw-html", () => { return "You have <h3>" + formatSimple(player.in.infinities, 1) + "</h3> infinities." }, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+            ["raw-html", () => { return "你有 <h3>" + formatSimple(player.in.infinities, 1) + "</h3> infinities." }, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
             ["raw-html", () => { return player.in.infinitiesToGet.gt(1) ? "(+" + formatSimple(player.in.infinitiesToGet, 1) + ")" : "" }, {color: "white", fontSize: "16px", fontFamily: "monospace", marginLeft: "8px"}],
         ]],
         ["microtabs", "stuff", { 'border-width': '0px' }],

@@ -606,50 +606,50 @@
                 unlocked() { return hasUpgrade("bi", 17) },
                 content: [
                     ["blank", "25px"],
-                    ["raw-html", () => { return "You have <h3>" + format(player.points) + "</h3> points." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
-                    ["raw-html", () => { return "You have <h3>" + format(player.in.infinityPoints) + "</h3> infinity points." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
+                    ["raw-html", () => { return "你有 <h3>" + format(player.points) + "</h3> points." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
+                    ["raw-html", () => { return "你有 <h3>" + format(player.in.infinityPoints) + "</h3> infinity points." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
                     ["blank", "25px"],
                     ["row", [["buyable", 1], ["clickable", 2], ["clickable", 3]]],
                     ["blank", "25px"],
                     ["row", [
                         ["style-row", [
-                            ["raw-html", function () { return getBuyableAmount("id", 1).gte(1) ? "1st dimension (" + format(buyableEffect("id", "11")) + "x): " + format(player.id.dimensionAmounts[0]) + " (+" + format(player.id.dimensionsPerSecond[0]) + "/s)" : ""}, { color: "white", fontSize: "24px", fontFamily: "monospace" }]
+                            ["raw-html", function () { return getBuyableAmount("id", 1).gte(1) ? "1st dimension (" + format(buyableEffect("id", "11")) + "x): " + format(player.id.dimensionAmounts[0]) + " (+" + format(player.id.dimensionsPerSecond[0]) + "/秒）" : ""}, { color: "white", fontSize: "24px", fontFamily: "monospace" }]
                         ], {width: "700px"}], 
                         ["buyable", 11],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["raw-html", function () { return getBuyableAmount("id", 1).gte(2) ? "2nd dimension (" + format(buyableEffect("id", "12")) + "x): " + format(player.id.dimensionAmounts[1]) + " (+" + format(player.id.dimensionsPerSecond[1]) + "/s)" : ""}, { color: "white", fontSize: "24px", fontFamily: "monospace" }]
+                            ["raw-html", function () { return getBuyableAmount("id", 1).gte(2) ? "2nd dimension (" + format(buyableEffect("id", "12")) + "x): " + format(player.id.dimensionAmounts[1]) + " (+" + format(player.id.dimensionsPerSecond[1]) + "/秒）" : ""}, { color: "white", fontSize: "24px", fontFamily: "monospace" }]
                         ], {width: "700px"}], 
                         ["buyable", 12],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["raw-html", function () { return getBuyableAmount("id", 1).gte(3) ? "3rd dimension (" + format(buyableEffect("id", "13")) + "x): " + format(player.id.dimensionAmounts[2]) + " (+" + format(player.id.dimensionsPerSecond[2]) + "/s)" : ""}, { color: "white", fontSize: "24px", fontFamily: "monospace" }]
+                            ["raw-html", function () { return getBuyableAmount("id", 1).gte(3) ? "3rd dimension (" + format(buyableEffect("id", "13")) + "x): " + format(player.id.dimensionAmounts[2]) + " (+" + format(player.id.dimensionsPerSecond[2]) + "/秒）" : ""}, { color: "white", fontSize: "24px", fontFamily: "monospace" }]
                         ], {width: "700px"}], 
                         ["buyable", 13],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["raw-html", function () { return getBuyableAmount("id", 1).gte(4) ? "4th dimension (" + format(buyableEffect("id", "14")) + "x): " + format(player.id.dimensionAmounts[3]) + " (+" + format(player.id.dimensionsPerSecond[3]) + "/s)" : ""}, { color: "white", fontSize: "24px", fontFamily: "monospace" }]
+                            ["raw-html", function () { return getBuyableAmount("id", 1).gte(4) ? "4th dimension (" + format(buyableEffect("id", "14")) + "x): " + format(player.id.dimensionAmounts[3]) + " (+" + format(player.id.dimensionsPerSecond[3]) + "/秒）" : ""}, { color: "white", fontSize: "24px", fontFamily: "monospace" }]
                         ], {width: "700px"}], 
                         ["buyable", 14],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["raw-html", function () { return getBuyableAmount("id", 1).gte(5) ? "5th dimension (" + format(buyableEffect("id", "15")) + "x): " + format(player.id.dimensionAmounts[4]) + " (+" + format(player.id.dimensionsPerSecond[4]) + "/s)" : ""}, { color: "white", fontSize: "24px", fontFamily: "monospace" }]
+                            ["raw-html", function () { return getBuyableAmount("id", 1).gte(5) ? "5th dimension (" + format(buyableEffect("id", "15")) + "x): " + format(player.id.dimensionAmounts[4]) + " (+" + format(player.id.dimensionsPerSecond[4]) + "/秒）" : ""}, { color: "white", fontSize: "24px", fontFamily: "monospace" }]
                         ], {width: "700px"}], 
                         ["buyable", 15],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["raw-html", function () { return getBuyableAmount("id", 1).gte(6) ? "6th dimension (" + format(buyableEffect("id", "16")) + "x): " + format(player.id.dimensionAmounts[5]) + " (+" + format(player.id.dimensionsPerSecond[5]) + "/s)" : ""}, { color: "white", fontSize: "24px", fontFamily: "monospace" }]
+                            ["raw-html", function () { return getBuyableAmount("id", 1).gte(6) ? "6th dimension (" + format(buyableEffect("id", "16")) + "x): " + format(player.id.dimensionAmounts[5]) + " (+" + format(player.id.dimensionsPerSecond[5]) + "/秒）" : ""}, { color: "white", fontSize: "24px", fontFamily: "monospace" }]
                         ], {width: "700px"}], 
                         ["buyable", 16],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["raw-html", function () { return getBuyableAmount("id", 1).gte(7) ? "7th dimension (" + format(buyableEffect("id", "17")) + "x): " + format(player.id.dimensionAmounts[6]) + " (+" + format(player.id.dimensionsPerSecond[6]) + "/s)" : ""}, { color: "white", fontSize: "24px", fontFamily: "monospace" }]
+                            ["raw-html", function () { return getBuyableAmount("id", 1).gte(7) ? "7th dimension (" + format(buyableEffect("id", "17")) + "x): " + format(player.id.dimensionAmounts[6]) + " (+" + format(player.id.dimensionsPerSecond[6]) + "/秒）" : ""}, { color: "white", fontSize: "24px", fontFamily: "monospace" }]
                         ], {width: "700px"}], 
                         ["buyable", 17],
                     ]],
@@ -674,8 +674,8 @@
     },
     tabFormat: [
         ["row", [
-            ["raw-html", () => {return "You have <h3>" + format(player.id.infinityPower) + "</h3> infinity power"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-            ["raw-html", () => {return "(+" + format(player.id.infinityPowerPerSecond) + "/s)"}, () => {
+            ["raw-html", () => {return "你有 <h3>" + format(player.id.infinityPower) + "</h3> infinity power"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+            ["raw-html", () => {return "(+" + format(player.id.infinityPowerPerSecond) + "/秒）"}, () => {
                 let look = {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                 player.id.infinityPowerPerSecond.gt(0) ? look.color = "white" : look.color = "gray"
                 return look

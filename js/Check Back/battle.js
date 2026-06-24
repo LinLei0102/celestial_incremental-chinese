@@ -320,7 +320,7 @@ addLayer("ba", {
             ],
             [
                 [
-                "Drains a celestialite's health by 1% of damage per second for the rest of the wave.", 
+                "Drains a celestialite's health by 1% of damage 每秒 for the rest of the wave.", 
                 "Random teammate deals x1.4 damage for the rest of the wave.", 
                 "Shields random teammate for the rest of the wave from 50% of incoming damage."
                 ],
@@ -582,7 +582,7 @@ addLayer("ba", {
             player.ba.drainCelestialite = celestialiteID
             player.ba.eclipseID = petID2
 
-            logPrintBattle("<span style='color: #ccb73dff;'>Eclipse is draining health from " + player.ba.celestialiteNames[player.ba.celestialiteIDs[celestialiteID]] + " at a rate of " + formatWhole(damage) + " health/s." )
+            logPrintBattle("<span style='color: #ccb73dff;'>Eclipse is draining health from " + player.ba.celestialiteNames[player.ba.celestialiteIDs[celestialiteID]] + " at a rate of " + formatWhole(damage) + " health/秒。" )
         }
         if (rarity == 1 && petID == 0 && attackID == 1)
         {

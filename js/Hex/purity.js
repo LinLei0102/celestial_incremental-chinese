@@ -249,7 +249,7 @@ addLayer("hpu", {
         7: {
             title() {
                 let str = "<h3>Amended Automation</h3><br>Lv." + formatWhole(player.hpu.purifiers[4].amount) + "<br>+" + formatWhole(player.hpu.purifiers[4].effect.mul(100)) + "% blessings/s"
-                str = str.concat("<br><small>(" + format(player.hbl.blessingsGain.mul(player.hpu.purifiers[4].effect)) + "/s)</small>")
+                str = str.concat("<br><small>(" + format(player.hbl.blessingsGain.mul(player.hpu.purifiers[4].effect)) + "/秒）</small>")
                 if (player.hpu.purifiers[4].effect.gt(3.2)) str = str.concat("<br><small style='color:darkred'>[SOFTCAPPED]</small>")
                 if (inChallenge("hrm", 11)) str = str.concat("<br><small style='color:red'>[DISABLED BY CREATOR REALM]</small>")
                 return str
@@ -324,8 +324,8 @@ addLayer("hpu", {
     },
     tabFormat: [
         ["row", [
-            ["raw-html", () => {return "You have <h3>" + format(player.h.hexPoint) + "</h3> hex points."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-            ["raw-html", () => {return player.h.hexPointGain.eq(0) ? "" : player.h.hexPointGain.gt(0) ? "(+" + format(player.h.hexPointGain) + "/s)" : "<span style='color:red'>(" + format(player.h.hexPointGain) + "/s)</span>"}, {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
+            ["raw-html", () => {return "你有 <h3>" + format(player.h.hexPoint) + "</h3> hex points."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+            ["raw-html", () => {return player.h.hexPointGain.eq(0) ? "" : player.h.hexPointGain.gt(0) ? "(+" + format(player.h.hexPointGain) + "/秒）" : "<span style='color:red'>(" + format(player.h.hexPointGain) + "/秒）</span>"}, {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
             ["raw-html", () => {return (inChallenge("hrm", 14) || player.h.hexPointGain.gte(1e308)) ? "[SOFTCAPPED]" : "" }, {color: "red", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
         ]],
         ["raw-html", () => {return inChallenge("hrm", 15) ? "Time Remaining: " + formatTime(player.hrm.dreamTimer) : ""}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
@@ -335,7 +335,7 @@ addLayer("hpu", {
         ], {width: "800px", height: "50px", backgroundColor: "#433f33", border: "3px solid white", borderRadius: "20px"}],
         ["blank", "10px"],
         ["row", [
-            ["raw-html", () => {return "You have <h3>" + formatWhole(player.hpu.purity) + "</h3> purity." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+            ["raw-html", () => {return "你有 <h3>" + formatWhole(player.hpu.purity) + "</h3> purity." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
             ["raw-html", () => {return hasMilestone("hre", 15) ? "(+" + formatWhole(player.hpu.purityGain) + ")" : "" }, () => {
                 let look = {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                 player.hpu.purityGain.gt(0) ? look.color = "white" : look.color = "gray"

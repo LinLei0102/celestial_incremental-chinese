@@ -342,7 +342,7 @@
         30: {
             title: "<small>Celestial Points",
             display() {
-                let str = "<hr style='border:1px solid black'>" + formatSimple(player.points) + "<br>(+" + formatSimple(player.gain) + "/s)<hr style='border:1px solid black'>"
+                let str = "<hr style='border:1px solid black'>" + formatSimple(player.points) + "<br>(+" + formatSimple(player.gain) + "/秒）<hr style='border:1px solid black'>"
                 if (player.po.halter.points.enabled == 0) {str = str.concat("{" + formatSimple(player.po.halter.points.halt) + "}<br><span style='color:red'>[DISABLED]")}
                 if (player.po.halter.points.enabled == 1) {str = str.concat("/" + formatSimple(player.po.halter.points.halt) + "<br><span style='color:green'>[ENABLED]")}
                 if (player.po.halter.points.enabled == 2) {str = str.concat("Cap: " + formatSimple(player.po.halter.points.halt) + "<br><span style='color:green'>[ENABLED]")}
@@ -362,7 +362,7 @@
         31: {
             title: "<small>Factor Power",
             display() {
-                let str = "<hr style='border:1px solid black'>" + formatSimple(player.f.factorPower) + "<br>(+" + formatSimple(player.f.factorPowerPerSecond) + "/s)<hr style='border:1px solid black'>"
+                let str = "<hr style='border:1px solid black'>" + formatSimple(player.f.factorPower) + "<br>(+" + formatSimple(player.f.factorPowerPerSecond) + "/秒）<hr style='border:1px solid black'>"
                 if (player.po.halter.factor.enabled == 0) {str = str.concat("{" + formatSimple(player.po.halter.factor.halt) + "}<br><span style='color:red'>[DISABLED]")}
                 if (player.po.halter.factor.enabled == 1) {str = str.concat("/" + formatSimple(player.po.halter.factor.halt) + "<br><span style='color:green'>[ENABLED]")}
                 if (player.po.halter.factor.enabled == 2) {str = str.concat("Cap: " + formatSimple(player.po.halter.factor.halt) + "<br><span style='color:green'>[ENABLED]")}
@@ -542,7 +542,7 @@
         40: {
             title: "<small>Antimatter",
             display() {
-                let str = "<hr style='border:1px solid black'>" + formatSimple(player.ad.antimatter) + "<br>(+" + formatSimple(player.ad.antimatterPerSecond) + "/s)<hr style='border:1px solid black'>"
+                let str = "<hr style='border:1px solid black'>" + formatSimple(player.ad.antimatter) + "<br>(+" + formatSimple(player.ad.antimatterPerSecond) + "/秒）<hr style='border:1px solid black'>"
                 if (player.po.halter.antimatter.enabled == 0) {str = str.concat("{" + formatSimple(player.po.halter.antimatter.halt) + "}<br><span style='color:red'>[DISABLED]")}
                 if (player.po.halter.antimatter.enabled == 1) {str = str.concat("/" + formatSimple(player.po.halter.antimatter.halt) + "<br><span style='color:green'>[ENABLED]")}
                 if (player.po.halter.antimatter.enabled == 2) {str = str.concat("Cap: " + formatSimple(player.po.halter.antimatter.halt) + "<br><span style='color:green'>[ENABLED]")}

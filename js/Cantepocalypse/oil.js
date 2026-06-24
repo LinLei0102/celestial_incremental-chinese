@@ -697,7 +697,7 @@
                 [
                     ["blank", "25px"],
                     ["row", [
-                        ["raw-html", () => {return "You have <h3>" + format(player.oi.oil) + "</h3> oil."}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "你有 <h3>" + format(player.oi.oil) + "</h3> oil."}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                         ["raw-html", () => {return "(+" + format(player.oi.oilToGet) + ")"}, () => {
                             let look = {color: "white", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}
                             player.oi.oilToGet.gte(1) ? look.color = "white" : look.color = "gray"
@@ -716,7 +716,7 @@
                 content:
                 [
                     ["blank", "25px"],
-                    ["raw-html", () => {return "You have <h3>" + format(player.oi.oil) + "</h3> oil."}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "你有 <h3>" + format(player.oi.oil) + "</h3> oil."}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                     ["blank", "25px"],
                     ["style-column", [
                         ["raw-html", () => { return "Linking Powers"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
@@ -727,7 +727,7 @@
                                 ["raw-html", () => { return "Point Linking Power"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ], {width: "273px", height: "30px", backgroundColor: "#102143", borderBottom: "3px solid #0c1a36"}],
                             ["style-column", [
-                                ["raw-html", () => { return format(player.oi.linkingPower[0]) + "<small> (+" + format(player.oi.linkingPowerPerSecond[0]) + "/s)</small>"}, {color: "white", fontSize: "18px", fontFamily: "monospace"}],
+                                ["raw-html", () => { return format(player.oi.linkingPower[0]) + "<small> (+" + format(player.oi.linkingPowerPerSecond[0]) + "/秒）</small>"}, {color: "white", fontSize: "18px", fontFamily: "monospace"}],
                                 ["raw-html", () => { return "x" + format(player.oi.linkingPowerEffect[0]) + "<small> Replicanti Point Mult</small>"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],    
                             ], {width: "273px", height: "67px", backgroundColor: "#162e5e"}],
                         ], {width: "273px", height: "100px", borderRight: "3px solid #0c1a36"}],
@@ -736,7 +736,7 @@
                                 ["raw-html", () => { return "Factor Power Linking Power"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ], {width: "273px", height: "30px", backgroundColor: "#102143", borderBottom: "3px solid #0c1a36"}],
                             ["style-column", [
-                                ["raw-html", () => { return format(player.oi.linkingPower[1]) + "<small> (+" + format(player.oi.linkingPowerPerSecond[1]) + "/s)</small>"}, {color: "white", fontSize: "18px", fontFamily: "monospace"}],
+                                ["raw-html", () => { return format(player.oi.linkingPower[1]) + "<small> (+" + format(player.oi.linkingPowerPerSecond[1]) + "/秒）</small>"}, {color: "white", fontSize: "18px", fontFamily: "monospace"}],
                                 ["raw-html", () => { return "x" + format(player.oi.linkingPowerEffect[1]) + "<small> Perk Points</small>"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],    
                             ], {width: "273px", height: "67px", backgroundColor: "#162e5e"}],
                         ], {width: "273px", height: "100px", borderRight: "3px solid #0c1a36"}],
@@ -745,7 +745,7 @@
                                 ["raw-html", () => { return "Prestige Point Linking Power"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ], {width: "273px", height: "30px", backgroundColor: "#102143", borderBottom: "3px solid #0c1a36"}],
                             ["style-column", [
-                                ["raw-html", () => { return format(player.oi.linkingPower[2]) + "<small> (+" + format(player.oi.linkingPowerPerSecond[2]) + "/s)</small>"}, {color: "white", fontSize: "18px", fontFamily: "monospace"}],
+                                ["raw-html", () => { return format(player.oi.linkingPower[2]) + "<small> (+" + format(player.oi.linkingPowerPerSecond[2]) + "/秒）</small>"}, {color: "white", fontSize: "18px", fontFamily: "monospace"}],
                                 ["raw-html", () => { return "x" + format(player.oi.linkingPowerEffect[2]) + "<small> Anonymity</small>"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],    
                             ], {width: "273px", height: "67px", backgroundColor: "#162e5e"}],
                         ], {width: "273px", height: "100px"}],
@@ -756,7 +756,7 @@
                                 ["raw-html", () => { return "Tree Linking Power"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ], {width: "273px", height: "30px", backgroundColor: "#102143", borderBottom: "3px solid #0c1a36"}],
                             ["style-column", [
-                                ["raw-html", () => { return format(player.oi.linkingPower[3]) + "<small> (+" + format(player.oi.linkingPowerPerSecond[3]) + "/s)</small>"}, {color: "white", fontSize: "18px", fontFamily: "monospace"}],
+                                ["raw-html", () => { return format(player.oi.linkingPower[3]) + "<small> (+" + format(player.oi.linkingPowerPerSecond[3]) + "/秒）</small>"}, {color: "white", fontSize: "18px", fontFamily: "monospace"}],
                                 ["raw-html", () => { return "x" + format(player.oi.linkingPowerEffect[3]) + "<small> Repli-Trees</small>"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],    
                             ], {width: "273px", height: "67px", backgroundColor: "#162e5e"}],
                         ], {width: "273px", height: "100px", borderRight: "3px solid #0c1a36"}],
@@ -765,7 +765,7 @@
                                 ["raw-html", () => { return "Grass Linking Power"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ], {width: "273px", height: "30px", backgroundColor: "#102143", borderBottom: "3px solid #0c1a36"}],
                             ["style-column", [
-                                ["raw-html", () => { return format(player.oi.linkingPower[4]) + "<small> (+" + format(player.oi.linkingPowerPerSecond[4]) + "/s)</small>"}, {color: "white", fontSize: "18px", fontFamily: "monospace"}],
+                                ["raw-html", () => { return format(player.oi.linkingPower[4]) + "<small> (+" + format(player.oi.linkingPowerPerSecond[4]) + "/秒）</small>"}, {color: "white", fontSize: "18px", fontFamily: "monospace"}],
                                 ["raw-html", () => { return "x" + format(player.oi.linkingPowerEffect[4]) + "<small> Repli-Grass Mult</small>"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],    
                             ], {width: "273px", height: "67px", backgroundColor: "#162e5e"}],
                         ], {width: "273px", height: "100px", borderRight: "3px solid #0c1a36"}],
@@ -774,7 +774,7 @@
                                 ["raw-html", () => { return "Grasshopper Linking Power"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ], {width: "273px", height: "30px", backgroundColor: "#102143", borderBottom: "3px solid #0c1a36"}],
                             ["style-column", [
-                                ["raw-html", () => { return format(player.oi.linkingPower[5]) + "<small> (+" + format(player.oi.linkingPowerPerSecond[5]) + "/s)</small>"}, {color: "white", fontSize: "18px", fontFamily: "monospace"}],
+                                ["raw-html", () => { return format(player.oi.linkingPower[5]) + "<small> (+" + format(player.oi.linkingPowerPerSecond[5]) + "/秒）</small>"}, {color: "white", fontSize: "18px", fontFamily: "monospace"}],
                                 ["raw-html", () => { return "x" + format(player.oi.linkingPowerEffect[5]) + "<small> Grass-Skippers</small>"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],    
                             ], {width: "273px", height: "67px", backgroundColor: "#162e5e"}],
                         ], {width: "273px", height: "100px"}],
@@ -799,7 +799,7 @@
                                 ["raw-html", () => { return "Point Linking Power"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ], {width: "273px", height: "20px", backgroundColor: "#102143", borderBottom: "3px solid #0c1a36"}],
                             ["style-column", [
-                                ["raw-html", () => { return format(player.oi.linkingPower[0]) + "<small> (+" + format(player.oi.linkingPowerPerSecond[0]) + "/s)</small>"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+                                ["raw-html", () => { return format(player.oi.linkingPower[0]) + "<small> (+" + format(player.oi.linkingPowerPerSecond[0]) + "/秒）</small>"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ], {width: "273px", height: "27px", backgroundColor: "#162e5e"}],
                         ], {width: "273px", height: "50px", borderRight: "3px solid #0c1a36"}],
                         ["style-column", [
@@ -807,7 +807,7 @@
                                 ["raw-html", () => { return "Factor Power Linking Power"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ], {width: "273px", height: "20px", backgroundColor: "#102143", borderBottom: "3px solid #0c1a36"}],
                             ["style-column", [
-                                ["raw-html", () => { return format(player.oi.linkingPower[1]) + "<small> (+" + format(player.oi.linkingPowerPerSecond[1]) + "/s)</small>"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+                                ["raw-html", () => { return format(player.oi.linkingPower[1]) + "<small> (+" + format(player.oi.linkingPowerPerSecond[1]) + "/秒）</small>"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ], {width: "273px", height: "27px", backgroundColor: "#162e5e"}],
                         ], {width: "273px", height: "50px", borderRight: "3px solid #0c1a36"}],
                         ["style-column", [
@@ -815,7 +815,7 @@
                                 ["raw-html", () => { return "Prestige Point Linking Power"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ], {width: "273px", height: "20px", backgroundColor: "#102143", borderBottom: "3px solid #0c1a36"}],
                             ["style-column", [
-                                ["raw-html", () => { return format(player.oi.linkingPower[2]) + "<small> (+" + format(player.oi.linkingPowerPerSecond[2]) + "/s)</small>"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+                                ["raw-html", () => { return format(player.oi.linkingPower[2]) + "<small> (+" + format(player.oi.linkingPowerPerSecond[2]) + "/秒）</small>"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ], {width: "273px", height: "27px", backgroundColor: "#162e5e"}],
                         ], {width: "273px", height: "50px"}],
                     ], {width: "825px", border: "3px solid #0c1a36"}],
@@ -825,7 +825,7 @@
                                 ["raw-html", () => { return "Tree Linking Power"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ], {width: "273px", height: "20px", backgroundColor: "#102143", borderBottom: "3px solid #0c1a36"}],
                             ["style-column", [
-                                ["raw-html", () => { return format(player.oi.linkingPower[3]) + "<small> (+" + format(player.oi.linkingPowerPerSecond[3]) + "/s)</small>"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+                                ["raw-html", () => { return format(player.oi.linkingPower[3]) + "<small> (+" + format(player.oi.linkingPowerPerSecond[3]) + "/秒）</small>"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ], {width: "273px", height: "27px", backgroundColor: "#162e5e"}],
                         ], {width: "273px", height: "50px", borderRight: "3px solid #0c1a36"}],
                         ["style-column", [
@@ -833,7 +833,7 @@
                                 ["raw-html", () => { return "Grass Linking Power"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ], {width: "273px", height: "20px", backgroundColor: "#102143", borderBottom: "3px solid #0c1a36"}],
                             ["style-column", [
-                                ["raw-html", () => { return format(player.oi.linkingPower[4]) + "<small> (+" + format(player.oi.linkingPowerPerSecond[4]) + "/s)</small>"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+                                ["raw-html", () => { return format(player.oi.linkingPower[4]) + "<small> (+" + format(player.oi.linkingPowerPerSecond[4]) + "/秒）</small>"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ], {width: "273px", height: "27px", backgroundColor: "#162e5e"}],
                         ], {width: "273px", height: "50px", borderRight: "3px solid #0c1a36"}],
                         ["style-column", [
@@ -841,15 +841,15 @@
                                 ["raw-html", () => { return "Grasshopper Linking Power"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ], {width: "273px", height: "20px", backgroundColor: "#102143", borderBottom: "3px solid #0c1a36"}],
                             ["style-column", [
-                                ["raw-html", () => { return format(player.oi.linkingPower[5]) + "<small> (+" + format(player.oi.linkingPowerPerSecond[5]) + "/s)</small>"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+                                ["raw-html", () => { return format(player.oi.linkingPower[5]) + "<small> (+" + format(player.oi.linkingPowerPerSecond[5]) + "/秒）</small>"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                             ], {width: "273px", height: "27px", backgroundColor: "#162e5e"}],
                         ], {width: "273px", height: "50px"}],
                     ], {width: "825px", borderLeft: "3px solid #0c1a36", borderRight: "3px solid #0c1a36", borderBottom: "3px solid #0c1a36"}],
                     ["blank", "25px"],
-                    ["raw-html", function () { return "You have <h3>" + format(player.oi.protoMemories) + "</h3> proto memories." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
-                    ["raw-html", function () { return player.oi.protoMemorySeconds.gt(0) ? "You are gaining <h3>" + format(player.oi.protoMemoriesPerSecond) + "</h3> proto memories per second. (based on total linking power)" : "You currently have no proto memory production time." }, { "color": "white", "font-size": "20px", "font-family": "monospace" }],
+                    ["raw-html", function () { return "你有 <h3>" + format(player.oi.protoMemories) + "</h3> proto memories." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                    ["raw-html", function () { return player.oi.protoMemorySeconds.gt(0) ? "You are gaining <h3>" + format(player.oi.protoMemoriesPerSecond) + "</h3> proto memories 每秒. (based on total linking power)" : "You currently have no proto memory production time." }, { "color": "white", "font-size": "20px", "font-family": "monospace" }],
                     ["blank", "25px"],
-                    ["raw-html", function () { return "You have <h3>" + formatTime(player.oi.protoMemorySeconds) + "</h3> to produce proto memories." }, { "color": "white", "font-size": "20px", "font-family": "monospace" }],
+                    ["raw-html", function () { return "你有 <h3>" + formatTime(player.oi.protoMemorySeconds) + "</h3> to produce proto memories." }, { "color": "white", "font-size": "20px", "font-family": "monospace" }],
                     ["raw-html", function () { return "You will gain <h3>" + formatTime(player.oi.protoMemorySecondsToGet) + "</h3> of proto memory production on reset." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
                     ["blank", "25px"],
                     ["row", [["clickable", 14]]],
@@ -863,11 +863,11 @@
                 content: [
                     ["layer-proxy", ["ca", [
                         ["blank", "25px"],
-                        ["raw-html", () => {return "You have <h3>" + formatWhole(player.ca.rememberanceCores) + "</h3> rememberance cores."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "你有 <h3>" + formatWhole(player.ca.rememberanceCores) + "</h3> rememberance cores."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                         ["raw-html", () => {return "Boosts cante energy gain by x<h3>" + format(player.ca.rememberanceCoresEffect) + "</h3>."}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                         ["blank", "25px"],
-                        ["raw-html", () => {return "You have <h3>" + formatWhole(player.ca.canteCores) + "</h3> Cante cores."}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
-                        ["raw-html", () => {return "You have <h3>" + format(player.oi.protoMemories) + "</h3> proto memories."}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "你有 <h3>" + formatWhole(player.ca.canteCores) + "</h3> Cante cores."}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "你有 <h3>" + format(player.oi.protoMemories) + "</h3> proto memories."}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                         ["blank", "25px"],
                         ["clickable", 15],
                     ]]],
@@ -876,7 +876,7 @@
         },
     },
     tabFormat: [
-        ["raw-html", () => {return "You have <h3>" + format(player.cp.replicantiPoints) + "</h3> replicanti points."}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+        ["raw-html", () => {return "你有 <h3>" + format(player.cp.replicantiPoints) + "</h3> replicanti points."}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
         ["raw-html", () => {return "Replicanti Mult: " + format(player.cp.replicantiPointsMult, 4) + "x"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
         ["row", [["bar", "replicantiBar"]]],
         ["microtabs", "stuff", { 'border-width': '0px' }],

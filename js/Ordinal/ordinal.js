@@ -85,7 +85,7 @@ addLayer("od", {
         ["style-row", [
             ["style-column", [
                 ["raw-html", () => {return layers.od.ordinalDisplay(player.od.co, player.od.ob)}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-                ["raw-html", () => {return "(+" + formatWhole(player.od.ops) + "/s)"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+                ["raw-html", () => {return "(+" + formatWhole(player.od.ops) + "/秒）"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
             ], {width:"500px", height: "73px", background: "#0c3200", borderRight: "2px solid white", borderRadius: "18px 0 0 18px"}],
             ["style-row", [
                 ["raw-html", () => {return formatWhole(player.od.ob)}, {color: "white", fontSize: "30px", fontFamily: "monospace"}],

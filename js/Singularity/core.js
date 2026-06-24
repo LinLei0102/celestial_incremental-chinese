@@ -1678,7 +1678,7 @@ addLayer("co", {
     },
     tabFormat: [
         ["row", [
-            ["raw-html", () => {return "You have <h3>" + format(player.s.singularityPoints) + "</h3> singularity points"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+            ["raw-html", () => {return "你有 <h3>" + format(player.s.singularityPoints) + "</h3> singularity points"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
             ["raw-html", () => {return "(+" + format(player.s.singularityPointsToGet) + ")"}, () => {
                 let look = {fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                 if (player.in.infinityPoints.gte(1e40)) {look.color = "white"} else {look.color = "gray"} 

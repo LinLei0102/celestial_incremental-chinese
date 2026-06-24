@@ -4100,13 +4100,13 @@ let py = (window.ultimateAttackPlayerPos && window.ultimateAttackPlayerPos.y != 
     const bulletRadius = 12;
     const bulletSpeed = 5;
     let lastBulletTime = 0;
-    const bulletRate = 18; // bullets per second
+    const bulletRate = 18; // bullets 每秒
 
     // Knives
     let knives = window.ultimateAttackProjectiles.knives;
     const knifeLength = 64, knifeWidth = 16, knifeSpeed = 8;
     let lastKnifeTime = 0;
-    const knifeRate = 1.5; // knives per second
+    const knifeRate = 1.5; // knives 每秒
 
     function updateKeys(e, isDown) {
         if (["ArrowUp", "w", "W"].includes(e.key)) keys.up = isDown;

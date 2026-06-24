@@ -883,43 +883,43 @@
                     ["blank", "25px"],
                     ["row", [
                         ["style-row", [
-                            ["raw-html", function () { return "1st dimension (" + format(buyableEffect("ad", "11")) + "x): " + format(player.ad.dimensionAmounts[0]) + " (+" + format(player.ad.dimensionsPerSecond[0]) + "/s)"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }]
+                            ["raw-html", function () { return "1st dimension (" + format(buyableEffect("ad", "11")) + "x): " + format(player.ad.dimensionAmounts[0]) + " (+" + format(player.ad.dimensionsPerSecond[0]) + "/秒）"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }]
                         ], {width: "650px"}], 
                         ["buyable", 11],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["raw-html", function () { return "2nd dimension (" + format(buyableEffect("ad", "12")) + "x): " + format(player.ad.dimensionAmounts[1]) + " (+" + format(player.ad.dimensionsPerSecond[1]) + "/s)"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }]
+                            ["raw-html", function () { return "2nd dimension (" + format(buyableEffect("ad", "12")) + "x): " + format(player.ad.dimensionAmounts[1]) + " (+" + format(player.ad.dimensionsPerSecond[1]) + "/秒）"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }]
                         ], {width: "650px"}], 
                         ["buyable", 12],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["raw-html", function () { return "3rd dimension (" + format(buyableEffect("ad", "13")) + "x): " + format(player.ad.dimensionAmounts[2]) + " (+" + format(player.ad.dimensionsPerSecond[2]) + "/s)"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }]
+                            ["raw-html", function () { return "3rd dimension (" + format(buyableEffect("ad", "13")) + "x): " + format(player.ad.dimensionAmounts[2]) + " (+" + format(player.ad.dimensionsPerSecond[2]) + "/秒）"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }]
                         ], {width: "650px"}], 
                         ["buyable", 13],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["raw-html", function () { return "4th dimension (" + format(buyableEffect("ad", "14")) + "x): " + format(player.ad.dimensionAmounts[3]) + " (+" + format(player.ad.dimensionsPerSecond[3]) + "/s)"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }]
+                            ["raw-html", function () { return "4th dimension (" + format(buyableEffect("ad", "14")) + "x): " + format(player.ad.dimensionAmounts[3]) + " (+" + format(player.ad.dimensionsPerSecond[3]) + "/秒）"}, { color: "white", fontSize: "20px", fontFamily: "monospace" }]
                         ], {width: "650px"}], 
                         ["buyable", 14],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["raw-html", function () { return getBuyableAmount("ad", 2).gte(1) ? "5th dimension (" + format(buyableEffect("ad", "15")) + "x): " + format(player.ad.dimensionAmounts[4]) + " (+" + format(player.ad.dimensionsPerSecond[4]) + "/s)" : ""}, { color: "white", fontSize: "20px", fontFamily: "monospace" }]
+                            ["raw-html", function () { return getBuyableAmount("ad", 2).gte(1) ? "5th dimension (" + format(buyableEffect("ad", "15")) + "x): " + format(player.ad.dimensionAmounts[4]) + " (+" + format(player.ad.dimensionsPerSecond[4]) + "/秒）" : ""}, { color: "white", fontSize: "20px", fontFamily: "monospace" }]
                         ], {width: "650px"}], 
                         ["buyable", 15],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["raw-html", function () { return getBuyableAmount("ad", 2).gte(2) ? "6th dimension (" + format(buyableEffect("ad", "16")) + "x): " + format(player.ad.dimensionAmounts[5]) + " (+" + format(player.ad.dimensionsPerSecond[5]) + "/s)" : ""}, { color: "white", fontSize: "20px", fontFamily: "monospace" }]
+                            ["raw-html", function () { return getBuyableAmount("ad", 2).gte(2) ? "6th dimension (" + format(buyableEffect("ad", "16")) + "x): " + format(player.ad.dimensionAmounts[5]) + " (+" + format(player.ad.dimensionsPerSecond[5]) + "/秒）" : ""}, { color: "white", fontSize: "20px", fontFamily: "monospace" }]
                         ], {width: "650px"}], 
                         ["buyable", 16],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["raw-html", function () { return getBuyableAmount("ad", 2).gte(3) ? "7th dimension (" + format(buyableEffect("ad", "17")) + "x): " + format(player.ad.dimensionAmounts[6]) + " (+" + format(player.ad.dimensionsPerSecond[6]) + "/s)" : ""}, { color: "white", fontSize: "20px", fontFamily: "monospace" }]
+                            ["raw-html", function () { return getBuyableAmount("ad", 2).gte(3) ? "7th dimension (" + format(buyableEffect("ad", "17")) + "x): " + format(player.ad.dimensionAmounts[6]) + " (+" + format(player.ad.dimensionsPerSecond[6]) + "/秒）" : ""}, { color: "white", fontSize: "20px", fontFamily: "monospace" }]
                         ], {width: "650px"}], 
                         ["buyable", 17],
                     ]],
@@ -956,8 +956,8 @@
 
     tabFormat: [
         ["row", [
-            ["raw-html", () => {return "You have <h3>" + format(player.ad.antimatter) + "</h3> antimatter"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-            ["raw-html", () => {return "(+" + format(player.ad.antimatterPerSecond) + "/s)"}, () => {
+            ["raw-html", () => {return "你有 <h3>" + format(player.ad.antimatter) + "</h3> antimatter"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+            ["raw-html", () => {return "(+" + format(player.ad.antimatterPerSecond) + "/秒）"}, () => {
                 look = {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                 player.ad.antimatterPerSecond.gt(0) ? look.color = "white" : look.color = "gray"
                 return look

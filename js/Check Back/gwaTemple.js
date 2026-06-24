@@ -1143,7 +1143,7 @@ addLayer("gwaTemple", {
     },
     tabFormat: [
         ["row", [
-            ["raw-html", () => { return "You have <h3>" + format(player.gwaTemple.gwaPoints) + "</h3> gwa points" }, {color: "#ffb", fontSize: "24px", fontFamily: "monospace" }],
+            ["raw-html", () => { return "你有 <h3>" + format(player.gwaTemple.gwaPoints) + "</h3> gwa points" }, {color: "#ffb", fontSize: "24px", fontFamily: "monospace" }],
             ["raw-html", () => { return player.gwaTemple.gwaPointsGain.gt(0) ? "(+" + format(player.gwaTemple.gwaPointsGain) + ")" : ""}, {color: "#ffb", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
         ]],
         ["raw-html", () => {return hasUpgrade("gwaTemple", 5) ? "Boosts gwa pet effects by ^" + formatSimple(player.gwaTemple.gwaPointsEffect, 3) : ""}, {color: "#ffb", fontSize: "20px", fontFamily: "monospace"}],

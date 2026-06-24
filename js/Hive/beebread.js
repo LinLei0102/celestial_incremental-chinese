@@ -220,15 +220,15 @@ addLayer("bb", {
     tabFormat: [
         ["row", [
             ["raw-html", () => {return player.bee.bees.eq(1) ? "You have <h3>" + format(player.bee.bees) + "</h3> bee" : "You have <h3>" + format(player.bee.bees) + "</h3> bees"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
-            ["raw-html", () => {return "(+" + format(player.bee.bps) + "/s)" }, {color: "white", fontSize: "14px", fontFamily: "monospace", marginLeft: "10px"}],
+            ["raw-html", () => {return "(+" + format(player.bee.bps) + "/秒）" }, {color: "white", fontSize: "14px", fontFamily: "monospace", marginLeft: "10px"}],
         ]],
         ["row", [
-            ["raw-html", () => {return "You have <h3>" + format(player.bpl.pollen) + "</h3> pollen"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
-            ["raw-html", () => {return hasUpgrade("al", 112) ? "(+" + format(player.bpl.pollenGain) + "/s)" : "(+" + format(player.bpl.pollenGain) + ")"}, {color: "white", fontSize: "16px", fontFamily: "monospace", marginLeft: "10px"}],
+            ["raw-html", () => {return "你有 <h3>" + format(player.bpl.pollen) + "</h3> pollen"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+            ["raw-html", () => {return hasUpgrade("al", 112) ? "(+" + format(player.bpl.pollenGain) + "/秒）" : "(+" + format(player.bpl.pollenGain) + ")"}, {color: "white", fontSize: "16px", fontFamily: "monospace", marginLeft: "10px"}],
         ]],
         ["blank", "10px"],
         ["style-column", [
-            ["raw-html", () => {return "You have <h3>" + format(player.bb.beeBread) + " Bee Bread (" + format(player.bb.beeBreadPerSecond) + "/s)"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+            ["raw-html", () => {return "你有 <h3>" + format(player.bb.beeBread) + " Bee Bread (" + format(player.bb.beeBreadPerSecond) + "/秒）"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
             ["raw-html", () => {return "You will gain <h3>+" + format(player.bb.beeBreadGain) + "</h3> BB/s on reset"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
         ], {height: "60px", background: "#2f2218", borderTop: "3px solid #1e160f", borderLeft: "3px solid #1e160f", borderRight: "3px solid #1e160f"}],
         ["style-row", [["clickable", 11], ["style-row", [], {width: "3px", height: "100px", background: "#1e160f"}], ["clickable", 12]], {border: "3px solid #1e160f", backgroundColor: "#986F4C"}],

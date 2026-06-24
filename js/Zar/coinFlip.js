@@ -832,7 +832,7 @@
                     ["style-row", [
                     ["style-column", [ //heads
                     ["style-column", [ 
-                    ["raw-html", function () { return "You have <h3>" + format(player.cf.heads) + "</h3> heads. (+" + format(player.cf.headsToGet) + ")" }, { "color": "white", "font-size": "18px", "font-family": "monospace" }],
+                    ["raw-html", function () { return "你有 <h3>" + format(player.cf.heads) + "</h3> heads. (+" + format(player.cf.headsToGet) + ")" }, { "color": "white", "font-size": "18px", "font-family": "monospace" }],
                     ["raw-html", () => { return player.cf.heads.gte(player.cf.headsSoftcapStart) ? "After " + format(player.cf.headsSoftcapStart) + " heads, gain is divided by /" + format(player.cf.headsSoftcapEffect) + "." : "" }, {color: "red", fontSize: "14px", fontFamily: "monospace"}],
                     ["raw-html", function () { return "Boosts chance points by x" + format(player.cf.headsEffect) + "." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
                     ["raw-html", function () { return "Boosts tails gain by x" + format(player.cf.headsEffect2) + "." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
@@ -864,7 +864,7 @@
 
                     ["style-column", [ //tails
                     ["style-column", [ 
-                    ["raw-html", function () { return "You have <h3>" + format(player.cf.tails) + "</h3> tails. (+" + format(player.cf.tailsToGet) + ")" }, { "color": "white", "font-size": "18px", "font-family": "monospace" }],
+                    ["raw-html", function () { return "你有 <h3>" + format(player.cf.tails) + "</h3> tails. (+" + format(player.cf.tailsToGet) + ")" }, { "color": "white", "font-size": "18px", "font-family": "monospace" }],
                     ["raw-html", () => { return player.cf.tails.gte(player.cf.tailsSoftcapStart) ? "After " + format(player.cf.tailsSoftcapStart) + " tails, gain is divided by /" + format(player.cf.tailsSoftcapEffect) + "." : "" }, {color: "red", fontSize: "14px", fontFamily: "monospace"}],
                     ["raw-html", function () { return "Extends chance point softcap by x" + format(player.cf.tailsEffect) + "." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
                     ["raw-html", function () { return "Boosts heads gain by x" + format(player.cf.tailsEffect2) + "." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
@@ -883,7 +883,7 @@
         },
     },
     tabFormat: [
-                ["raw-html", function () { return "You have <h3>" + format(player.za.chancePoints) + "</h3> chance points. (+" + format(player.za.chancePointsPerSecond) + "/s)" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                ["raw-html", function () { return "你有 <h3>" + format(player.za.chancePoints) + "</h3> chance points. (+" + format(player.za.chancePointsPerSecond) + "/秒）" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
         ["raw-html", () => { return player.za.chancePoints.gte(player.za.chancePointsSoftcapStart) ? "After " + format(player.za.chancePointsSoftcapStart) + " chance points, gain is divided by /" + format(player.za.chancePointsSoftcapEffect) + "." : "Softcap start: " + format(player.za.chancePointsSoftcapStart) + "." }, {color: "red", fontSize: "16px", fontFamily: "monospace"}],
 
         ["microtabs", "stuff", { 'border-width': '0px' }],

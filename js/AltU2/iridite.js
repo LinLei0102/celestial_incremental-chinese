@@ -1159,8 +1159,8 @@ addLayer("ir", {
                             ["blank", "25px"],
                             ["clickable", 11],
                             ["blank", "25px"],
-                            ["raw-html", function () { return "You have " + formatWhole(player.ir.spaceRock) + " space rocks." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
-                            ["raw-html", function () { return "You have " + formatWhole(player.ir.spaceGem) + " space gems." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                            ["raw-html", function () { return "你有 " + formatWhole(player.ir.spaceRock) + " space rocks." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                            ["raw-html", function () { return "你有 " + formatWhole(player.ir.spaceGem) + " space gems." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
                             ["blank", "15px"],
                             ["style-column", [
                                 ["levelable-display", [
@@ -1186,8 +1186,8 @@ addLayer("ir", {
                 unlocked() { return player.ir.iriditeUnlocked && !player.ir.inBattle },
                 content: [
                     ["blank", "25px"],
-                    ["raw-html", function () { return "You have " + formatWhole(player.ir.spaceRock) + " space rocks." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
-                    ["raw-html", function () { return "You have " + formatWhole(player.ir.spaceGem) + " space gem." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                    ["raw-html", function () { return "你有 " + formatWhole(player.ir.spaceRock) + " space rocks." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                    ["raw-html", function () { return "你有 " + formatWhole(player.ir.spaceGem) + " space gem." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
                     ["blank", "25px"],
                     ["raw-html", "Space Rocks", { "color": "white", "font-size": "24px", "font-family": "monospace" }],
                     ["row", [["upgrade", 11],["upgrade", 12],["upgrade", 13],["upgrade", 14],["upgrade", 15],["upgrade", 16],]],

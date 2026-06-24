@@ -873,7 +873,7 @@
         24: {
             title: "Automatic Lawnmower",
             unlocked() { return player.ir.iriditeDefeated && !player.pet.legPetTimers[0].active },
-            description: "Generate 100% of grass value per second.",
+            description: "Generate 100% of grass value 每秒.",
             cost: new Decimal("1e308"),
             currencyLocation() { return player.du },
             currencyDisplayName: "Dark Celestial Points",
@@ -1125,7 +1125,7 @@
                     ["blank", "25px"],
                     ["raw-html", () => { return "(Eclipse shards are worth " + formatWhole(player.le.eclipseShardsValue) + " XP each for leveling punchcards.)" }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                     ["blank", "10px"],
-                    ["raw-html", () => {return "You have <h3>" + formatWhole(player.sma.eclipseShards) + "</h3> eclipse shards"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "你有 <h3>" + formatWhole(player.sma.eclipseShards) + "</h3> eclipse shards"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                     ["blank", "10px"],
                     ["row", [["dark-buyable", 11]]],
                 ]
@@ -1157,7 +1157,7 @@
                     ["layer-proxy", ["sma", [
                         ["style-column", [
                             ["blank", "5px"],
-                            ["raw-html", () => { return "You have <h3>" + formatWhole(player.sma.starmetalAlloy) + "</h3> starmetal alloy." }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                            ["raw-html", () => { return "你有 <h3>" + formatWhole(player.sma.starmetalAlloy) + "</h3> starmetal alloy." }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                             ["blank", "5px"],
                             ["style-row", [["upgrade", 10], ["upgrade", 11], ["upgrade", 12], ["upgrade", 13], ["upgrade", 14], ["upgrade", 15], ["upgrade", 16],
                                 ["upgrade", 17], ["upgrade", 18], ["upgrade", 19], ["upgrade", 20], ["upgrade", 21]], {maxWidth: "800px"}],
@@ -1174,8 +1174,8 @@
         },
     },
     tabFormat: [
-        ["raw-html", () => { return "You have <h3>" + format(player.du.points) + "</h3> dark celestial points." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-        ["raw-html", () => { return "You are gaining <h3>" + format(player.du.pointGain) + "</h3> dark celestial points per second." }, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+        ["raw-html", () => { return "你有 <h3>" + format(player.du.points) + "</h3> dark 天体点数." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+        ["raw-html", () => { return "You are gaining <h3>" + format(player.du.pointGain) + "</h3> dark 天体点数 每秒." }, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
         ["raw-html", () => { return "UNAVOIDABLE SOFTCAP: /" + format(player.du.pointSoftcap) + " to gain." }, {color: "red", fontSize: "16px", fontFamily: "monospace"}],
         ["raw-html", () => { return player.du.pointGain.gte(player.du.secondSoftcapStart) ? "UNAVOIDABLE SOFTCAP<sup>2</sup>: Gain past " + format(player.du.secondSoftcapStart) + " is raised by ^" + format(player.du.pointSoftcap2) + "." : "" }, {color: "red", fontSize: "16px", fontFamily: "monospace"}],
         ["raw-html", () => { return player.pet.legPetTimers[0].current.gt(0) ? "ECLIPSE IS ACTIVE: " + formatTime(player.pet.legPetTimers[0].current) + "." : ""}, {color: "#FEEF5F", fontSize: "20px", fontFamily: "monospace"}],

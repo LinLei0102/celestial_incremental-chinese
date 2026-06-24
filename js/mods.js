@@ -226,7 +226,7 @@
             style: { width: '75px', minHeight: '50px', }
         },
         11: {
-            title() { return "<h3>Reset everything except grasshop and pent for code experience. <br>(Req: 10,000,000 trees and 1e65 celestial points)" },
+            title() { return "<h3>Reset everything except grasshop and pent for code experience. <br>(Req: 10,000,000 trees and 1e65 天体点数)" },
             canClick() { return player.m.codeExperienceToGet.gte(1) && player.points.gte(1e65) && player.t.trees.gte(10000000) },
             unlocked() { return true },
             onClick() {
@@ -331,7 +331,7 @@
             textStyle: {fontSize: "14px"},
             display() {
                 if (player.m.linesOfCodePerSecond.div(20).gt(player.m.modsReq)) return "There is currently an excess of code."
-                let str = format(player.m.linesOfCode) + "/" + format(player.m.modsReq) + " (+" + format(player.m.linesOfCodePerSecond) + "/s)<br>Lines of code to make a mod."
+                let str = format(player.m.linesOfCode) + "/" + format(player.m.modsReq) + " (+" + format(player.m.linesOfCodePerSecond) + "/秒）<br>Lines of code to make a mod."
                 if (player.m.mods.gte(player.m.modSoftcapStart)) str = str.concat("<br><small style='color:red;font-size:12px'>After " + formatWhole(player.m.modSoftcapStart) + " mods, lines of code are divided by " + format(player.m.modSoftcap) + "</small>")
                 return str
             },
@@ -619,10 +619,10 @@
     infoboxes: {},
     microtabs: {},
     tabFormat: [
-        ["raw-html", () => { return "You have <h3>" + format(player.points) + "</h3> celestial points (" + format(player.gain) + "/s)." }, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+        ["raw-html", () => { return "你有 <h3>" + format(player.points) + "</h3> 天体点数 (" + format(player.gain) + "/秒）." }, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
         ["raw-html", () => {return player.gain.gt(player.i.doomSoftcapStart) ? "SOFTCAP OF DOOM: Gain past " + format(player.i.doomSoftcapStart) + " is raised by ^" + format(player.i.doomSoftcap, 3) + "." : ""}, {color: "red", fontSize: "12px", fontFamily: "monospace"}],
         ["row", [
-            ["raw-html", () => { return "You have <h3>" + format(player.m.codeExperience) + "</h3> Code Experience" }, {color: "#1377BF", fontSize: "24px", fontFamily: "monospace"}],
+            ["raw-html", () => { return "你有 <h3>" + format(player.m.codeExperience) + "</h3> Code Experience" }, {color: "#1377BF", fontSize: "24px", fontFamily: "monospace"}],
             ["raw-html", () => { return "(+" + format(player.m.codeExperienceToGet) + ")"}, () => {
                 let look = {fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                 if (player.m.codeExperienceToGet.gt(1)) {look.color = "#1377BF"} else {look.color = "gray"}
@@ -637,8 +637,8 @@
         ["style-column", [
             ["blank", "10px"],
             ["row", [
-                ["raw-html", () => { return "You have " + formatWhole(player.m.mods) + " mods"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-                ["raw-html", () => { return player.m.linesOfCodePerSecond.div(20).gt(player.m.modsReq) ? "(+" + format(player.m.modsToGet, 1) + "/s)" : "(+" + format(player.m.modsToGet, 1) + ")"}, {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
+                ["raw-html", () => { return "你有 " + formatWhole(player.m.mods) + " mods"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                ["raw-html", () => { return player.m.linesOfCodePerSecond.div(20).gt(player.m.modsReq) ? "(+" + format(player.m.modsToGet, 1) + "/秒）" : "(+" + format(player.m.modsToGet, 1) + ")"}, {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
             ]],
             ["raw-html", () => {return player.m.modsToGet.gt(player.m.doomSoftcap2Start) ? "SOFTCAP OF DOOM: Gain past " + format(player.m.doomSoftcap2Start) + " is raised by ^" + format(player.m.doomSoftcap2, 3) + "." : ""}, {color: "red", fontSize: "14px", fontFamily: "monospace"}],
             ["raw-html", () => {return "Boosts tree gain by x" + format(player.m.modEffect) + "."}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],

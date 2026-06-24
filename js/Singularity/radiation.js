@@ -287,7 +287,7 @@
                 unlocked() { return true },
                 content: [
                     ["blank", "10px"],
-                    ["raw-html", function () { return "You have " + format(player.ra.radiation) + " radiation. <small>(" + format(player.ra.radiationPerSecond) + "/s)</small>" }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                    ["raw-html", function () { return "你有 " + format(player.ra.radiation) + " radiation. <small>(" + format(player.ra.radiationPerSecond) + "/秒）</small>" }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                     ["raw-html", function () { return "(Stored radiation: " + format(player.ra.storedRadiation) + ")" }, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                     ["raw-html", () => {return "After " + format(player.ra.radiationSoftcapStart) + " radiation, radiation gain is divided by /" + format(player.ra.radiationSoftcapEffect)},
                         () => {return player.ra.radiation.gte(player.ra.radiationSoftcapStart) ? {color: "red", fontSize: "20px", fontFamily: "monospace"} : {color: "gray", fontSize: "16px", fontFamily: "monospace"}}],
@@ -304,7 +304,7 @@
     }, 
     tabFormat: [
         ["row", [
-            ["raw-html", () => {return "You have <h3>" + format(player.s.singularityPoints) + "</h3> singularity points"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+            ["raw-html", () => {return "你有 <h3>" + format(player.s.singularityPoints) + "</h3> singularity points"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
             ["raw-html", () => {return "(+" + format(player.s.singularityPointsToGet) + ")"}, () => {
                 let look = {fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                 if (player.in.infinityPoints.gte(1e40)) {look.color = "white"} else {look.color = "gray"} 

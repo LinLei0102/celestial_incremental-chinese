@@ -532,9 +532,9 @@ addLayer("depth2", {
                     ["style-row", [
                         ["style-column", [
                             ["style-column", [
-                                ["raw-html", () => {return "You have " + formatShortWhole(player.depth2.faintUmbrite) + " faint umbrite."}, {color: "var(--textColor)", fontSize: "14px", fontFamily: "monospace"}],
-                                ["raw-html", () => {return "You have " + formatShortWhole(player.depth2.clearUmbrite) + " clear umbrite."}, {color: "var(--textColor)", fontSize: "14px", fontFamily: "monospace"}],
-                                ["raw-html", () => {return "You have " + formatShortWhole(player.bh.darkEssence) + " dark essence."}, {color: "var(--textColor)", fontSize: "14px", fontFamily: "monospace"}],
+                                ["raw-html", () => {return "你有 " + formatShortWhole(player.depth2.faintUmbrite) + " faint umbrite."}, {color: "var(--textColor)", fontSize: "14px", fontFamily: "monospace"}],
+                                ["raw-html", () => {return "你有 " + formatShortWhole(player.depth2.clearUmbrite) + " clear umbrite."}, {color: "var(--textColor)", fontSize: "14px", fontFamily: "monospace"}],
+                                ["raw-html", () => {return "你有 " + formatShortWhole(player.bh.darkEssence) + " dark essence."}, {color: "var(--textColor)", fontSize: "14px", fontFamily: "monospace"}],
                             ], {width: "272px", height: "72px", background: "var(--miscButtonHover)", borderBottom: "3px solid var(--regBorder)"}],
                             ["theme-scroll-column", [
                                 ["blank", "2px"],

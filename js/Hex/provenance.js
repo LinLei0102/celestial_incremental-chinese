@@ -231,8 +231,8 @@ addLayer("hpr", {
     },
     tabFormat: [
         ["row", [
-            ["raw-html", () => {return "You have <h3>" + format(player.h.hexPoint) + "</h3> hex points."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-            ["raw-html", () => {return player.h.hexPointGain.eq(0) ? "" : player.h.hexPointGain.gt(0) ? "(+" + format(player.h.hexPointGain) + "/s)" : "<span style='color:red'>(" + format(player.h.hexPointGain) + "/s)</span>"}, {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
+            ["raw-html", () => {return "你有 <h3>" + format(player.h.hexPoint) + "</h3> hex points."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+            ["raw-html", () => {return player.h.hexPointGain.eq(0) ? "" : player.h.hexPointGain.gt(0) ? "(+" + format(player.h.hexPointGain) + "/秒）" : "<span style='color:red'>(" + format(player.h.hexPointGain) + "/秒）</span>"}, {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
             ["raw-html", () => {return (inChallenge("hrm", 14) || player.h.hexPointGain.gte(1e308)) ? "[SOFTCAPPED]" : "" }, {color: "red", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
         ]],
         ["raw-html", () => {return inChallenge("hrm", 15) ? "Time Remaining: " + formatTime(player.hrm.dreamTimer) : ""}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
@@ -257,7 +257,7 @@ addLayer("hpr", {
                     ]],
                 ], {width: "250px", height: "50px", borderBottom: "2px solid white"}],
                 ["style-column", [
-                    ["raw-html", () => {return "x" + format(player.hpr.rankEffect[0][0]) + " celestial points<br>x" + format(player.hpr.rankEffect[0][1]) + " hex points"}, {color: "white", fontSize: "14px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "x" + format(player.hpr.rankEffect[0][0]) + " 天体点数<br>x" + format(player.hpr.rankEffect[0][1]) + " hex points"}, {color: "white", fontSize: "14px", fontFamily: "monospace"}],
                 ], {width: "250px", height: "76px", borderBottom: "2px solid white"}],
                 ["clickable", 1],
             ], {width: "250px", height: "205px", backgroundColor: "#001333", border: "2px solid white", margin: "5px", borderRadius: "10px"}],
@@ -271,7 +271,7 @@ addLayer("hpr", {
                     }],
                 ], {width: "250px", height: "50px", borderBottom: "2px solid white"}],
                 ["style-column", [
-                    ["raw-html", () => {return "x" + format(player.hpr.rankEffect[1][0]) + " celestial points<br>x" + format(player.hpr.rankEffect[1][1]) + " hex points"}, {color: "white", fontSize: "14px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "x" + format(player.hpr.rankEffect[1][0]) + " 天体点数<br>x" + format(player.hpr.rankEffect[1][1]) + " hex points"}, {color: "white", fontSize: "14px", fontFamily: "monospace"}],
                 ], {width: "250px", height: "76px", borderBottom: "2px solid white"}],
                 ["clickable", 2],
             ], {width: "250px", height: "205px", backgroundColor: "#001333", border: "2px solid white", margin: "5px", borderRadius: "10px"}],
@@ -285,7 +285,7 @@ addLayer("hpr", {
                     }],
                 ], {width: "250px", height: "50px", borderBottom: "2px solid white"}],
                 ["style-column", [
-                    ["raw-html", () => {return "x" + format(player.hpr.rankEffect[2][0]) + " celestial points<br>x" + format(player.hpr.rankEffect[2][1]) + " hex points"}, {color: "white", fontSize: "14px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "x" + format(player.hpr.rankEffect[2][0]) + " 天体点数<br>x" + format(player.hpr.rankEffect[2][1]) + " hex points"}, {color: "white", fontSize: "14px", fontFamily: "monospace"}],
                 ], {width: "250px", height: "76px", borderBottom: "2px solid white"}],
                 ["clickable", 3],
             ], {width: "250px", height: "205px", backgroundColor: "#001333", border: "2px solid white", margin: "5px", borderRadius: "10px"}],
@@ -301,7 +301,7 @@ addLayer("hpr", {
                     }],
                 ], {width: "250px", height: "50px", borderBottom: "2px solid white"}],
                 ["style-column", [
-                    ["raw-html", () => {return "x" + format(player.hpr.rankEffect[3][0]) + " celestial points<br>x" + format(player.hpr.rankEffect[3][1]) + " hex points"}, {color: "white", fontSize: "14px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "x" + format(player.hpr.rankEffect[3][0]) + " 天体点数<br>x" + format(player.hpr.rankEffect[3][1]) + " hex points"}, {color: "white", fontSize: "14px", fontFamily: "monospace"}],
                 ], {width: "250px", height: "76px", borderBottom: "2px solid white"}],
                 ["clickable", 4],
             ], {width: "250px", height: "205px", backgroundColor: "#001333", border: "2px solid white", margin: "5px", borderRadius: "10px"}],
@@ -315,7 +315,7 @@ addLayer("hpr", {
                     }],
                 ], {width: "250px", height: "50px", borderBottom: "2px solid white"}],
                 ["style-column", [
-                    ["raw-html", () => {return "x" + format(player.hpr.rankEffect[4][0]) + " celestial points<br>x" + format(player.hpr.rankEffect[4][1]) + " hex points"}, {color: "white", fontSize: "14px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "x" + format(player.hpr.rankEffect[4][0]) + " 天体点数<br>x" + format(player.hpr.rankEffect[4][1]) + " hex points"}, {color: "white", fontSize: "14px", fontFamily: "monospace"}],
                 ], {width: "250px", height: "76px", borderBottom: "2px solid white"}],
                 ["clickable", 5],
             ], {width: "250px", height: "205px", backgroundColor: "#001333", border: "2px solid white", margin: "5px", borderRadius: "10px"}],
@@ -329,7 +329,7 @@ addLayer("hpr", {
                     }],
                 ], {width: "250px", height: "50px", borderBottom: "2px solid white"}],
                 ["style-column", [
-                   ["raw-html", () => {return "x" + format(player.hpr.rankEffect[5][0]) + " celestial points<br>x" + format(player.hpr.rankEffect[5][1]) + " hex points"}, {color: "white", fontSize: "14px", fontFamily: "monospace"}],
+                   ["raw-html", () => {return "x" + format(player.hpr.rankEffect[5][0]) + " 天体点数<br>x" + format(player.hpr.rankEffect[5][1]) + " hex points"}, {color: "white", fontSize: "14px", fontFamily: "monospace"}],
                 ], {width: "250px", height: "76px", borderBottom: "2px solid white"}],
                 ["clickable", 6],
             ], {width: "250px", height: "205px", backgroundColor: "#001333", border: "2px solid white", margin: "5px", borderRadius: "10px"}],

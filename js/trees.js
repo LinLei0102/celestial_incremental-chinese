@@ -175,7 +175,7 @@
             textStyle: {fontSize: "14px"},
             display() {
                 if (player.t.leavesPerSecond.div(100).gt(player.t.treeReq)) return "There is currently an excess of leaves."
-                let str = format(player.t.leaves) + "/" + format(player.t.treeReq) + " (+" + format(player.t.leavesPerSecond) + "/s)<br>Leaves to gain a tree."
+                let str = format(player.t.leaves) + "/" + format(player.t.treeReq) + " (+" + format(player.t.leavesPerSecond) + "/秒）<br>Leaves to gain a tree."
                 if (player.t.trees.gte(player.t.treeSoftcapStart)) str = str.concat("<br><small style='color:red;font-size:12px'>After " + formatWhole(player.t.treeSoftcapStart) + " trees, leaves are divided by " + format(player.t.treeSoftcap) + "</small>")
                 return str
             },
@@ -202,7 +202,7 @@
                 return "Leaf Producer"
             },
             display() {
-                return "which are producing " + format(tmp[this.layer].buyables[this.id].effect) + " leaves per second.\n\
+                return "which are producing " + format(tmp[this.layer].buyables[this.id].effect) + " leaves 每秒.\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Prestige Points"
             },
             buy(mult) {
@@ -359,7 +359,7 @@
                 return "Celestial Point Booster"
             },
             display() {
-                return "which are boosting celestial point gain by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
+                return "which are boosting 天体点数 gain by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Trees"
             },
             buy(mult) {
@@ -511,8 +511,8 @@
                     ["style-column", [
                         ["blank", "10px"],
                         ["row", [
-                            ["raw-html", () => { return "You have " + formatWhole(player.t.trees) + " trees"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-                            ["raw-html", () => { return player.t.leavesPerSecond.div(20).gt(player.t.treeReq) ? "(+" + format(player.t.treesToGet, 1) + "/s)" : "(+" + format(player.t.treesToGet, 1) + ")"}, {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
+                            ["raw-html", () => { return "你有 " + formatWhole(player.t.trees) + " trees"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                            ["raw-html", () => { return player.t.leavesPerSecond.div(20).gt(player.t.treeReq) ? "(+" + format(player.t.treesToGet, 1) + "/秒）" : "(+" + format(player.t.treesToGet, 1) + ")"}, {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
                         ]],
                         ["raw-html", () => {return player.t.treesToGet.gt(player.t.doomSoftcapStart) ? "SOFTCAP OF DOOM: Gain past " + format(player.t.doomSoftcapStart) + " is raised by ^" + format(player.t.doomSoftcap, 3) + "." : ""}, {color: "red", fontSize: "14px", fontFamily: "monospace"}],
                         ["row", [
@@ -532,9 +532,9 @@
     },
 
     tabFormat: [
-        ["raw-html", function () { return "You have <h3>" + format(player.points) + "</h3> celestial points (" + format(player.gain) + "/s)." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
+        ["raw-html", function () { return "你有 <h3>" + format(player.points) + "</h3> 天体点数 (" + format(player.gain) + "/秒）." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
         ["raw-html", () => {return player.gain.gt(player.i.doomSoftcapStart) ? "SOFTCAP OF DOOM: Gain past " + format(player.i.doomSoftcapStart) + " is raised by ^" + format(player.i.doomSoftcap, 3) + "." : ""}, {color: "red", fontSize: "12px", fontFamily: "monospace"}],
-        ["raw-html", function () { return "You have <h3>" + format(player.p.prestigePoints) + "</h3> prestige points." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+        ["raw-html", function () { return "你有 <h3>" + format(player.p.prestigePoints) + "</h3> prestige points." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
         ["microtabs", "stuff", { 'border-width': '0px' }],
         ["blank", "25px"],
     ],

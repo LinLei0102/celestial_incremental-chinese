@@ -272,7 +272,7 @@
         13: {
             title: "Dark Starmetal Upgrade IV",
             unlocked() { return hasUpgrade("sma", 12)},
-            description: "Dark prestige points boost dark celestial point gain.",
+            description: "Dark prestige points boost dark 天体点数 gain.",
             cost: new Decimal("8"),
             currencyLocation() { return player.sma },
             currencyDisplayName: "星金属合金",
@@ -451,7 +451,7 @@
         103: {
             title: "Light Starmetal Upgrade III",
             unlocked() { return hasUpgrade("sma", 102)},
-            description: "Gain 10% of steel per second.",
+            description: "Gain 10% of steel 每秒.",
             cost: new Decimal("12"),
             currencyLocation() { return player.sma },
             currencyDisplayName: "星金属合金",
@@ -507,7 +507,7 @@
         107: {
             title: "Light Starmetal Upgrade VII",
             unlocked() { return hasUpgrade("sma", 106)},
-            description: "Produce 1% core scrap per second",
+            description: "Produce 1% core scrap 每秒",
             cost: new Decimal("500"),
             currencyLocation() { return player.sma },
             currencyDisplayName: "星金属合金",
@@ -554,7 +554,7 @@
         202: {
             title: "Eclipse Shard Upgrade II",
             unlocked() { return true},
-            description: "Always generate 1% of dark prestige points per second.",
+            description: "Always generate 1% of dark prestige points 每秒.",
             cost: new Decimal("10"),
             currencyLocation() { return player.sma },
             currencyDisplayName: "Eclipse Shards",
@@ -600,7 +600,7 @@
         205: {
             title: "Eclipse Shard Upgrade V",
             unlocked() { return true},
-            description: "Always generate 1% of dark generators per second.",
+            description: "Always generate 1% of dark generators 每秒.",
             cost: new Decimal("24"),
             currencyLocation() { return player.sma },
             currencyDisplayName: "Eclipse Shards",
@@ -646,7 +646,7 @@
         208: {
             title: "Eclipse Shard Upgrade VIII",
             unlocked() { return true},
-            description: "Always generate 1% of normality per second.",
+            description: "Always generate 1% of normality 每秒.",
             cost: new Decimal(750),
             currencyLocation() { return player.sma },
             currencyDisplayName: "Eclipse Shards",
@@ -1009,7 +1009,7 @@
                 unlocked() { return player.pet.levelables[501][0].gte(1) },
                 content: [
                     ["blank", "25px"],
-                    ["raw-html", () => {return "You have <h3>" + formatWhole(player.sma.eclipseShards) + "</h3> eclipse shards"}, {color: "white", fontSize: "30px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "你有 <h3>" + formatWhole(player.sma.eclipseShards) + "</h3> eclipse shards"}, {color: "white", fontSize: "30px", fontFamily: "monospace"}],
                     ["blank", "25px"],
                     ["style-column", [
                         ["blank", "5px"],
@@ -1027,7 +1027,7 @@
         },
     }, 
     tabFormat: [
-        ["raw-html", () => {return "You have <h3>" + formatWhole(player.sma.starmetalAlloy) + "</h3> starmetal alloy." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+        ["raw-html", () => {return "你有 <h3>" + formatWhole(player.sma.starmetalAlloy) + "</h3> starmetal alloy." }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
         ["microtabs", "stuff", { 'border-width': '0px' }],
         ["blank", "25px"],
     ],

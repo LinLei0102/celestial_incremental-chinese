@@ -713,7 +713,7 @@ addLayer('g', {
                 return 'Grass Celestial Point Boost'
             },
             display() {
-                return 'which are boosting celestial point gain by x' + format(tmp[this.layer].buyables[this.id].effect) + '.\n\
+                return 'which are boosting 天体点数 gain by x' + format(tmp[this.layer].buyables[this.id].effect) + '.\n\
                     Cost: ' + format(tmp[this.layer].buyables[this.id].cost) + ' Grass'
             },
             buy(mult) {
@@ -1301,7 +1301,7 @@ addLayer('g', {
     },
     tabFormat: [
         ["row", [
-            ["raw-html", () => {return "You have " + format(player.g.grass) + " grass"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+            ["raw-html", () => {return "你有 " + format(player.g.grass) + " grass"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
             ["raw-html", () => {return "(+" + format(player.g.grassVal) + " GV)"}, {color: "white", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}],
             ['raw-html', () => {return player.g.grassVal.gte("1e100000") ? "[SOFTCAPPED]" : ""}, {color: "red", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}]
         ]],
@@ -1311,11 +1311,11 @@ addLayer('g', {
             ['raw-html', () => {return player.g.grassEffect.gte("1e25000") ? "[SOFTCAPPED]" : ""}, {color: "red", fontSize: "16px", fontFamily: "monospace", marginLeft: "10px"}]
         ]],
         ["style-row", [
-            ["raw-html", () => {return hasMilestone("r", 13) ? "Boosts tree and celestial point gain by x" + format(player.g.grassEffect2) : hasUpgrade("g", 12) ? "Boosts tree gain by x" + format(player.g.grassEffect2) : ""}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+            ["raw-html", () => {return hasMilestone("r", 13) ? "Boosts tree and 天体点数 gain by x" + format(player.g.grassEffect2) : hasUpgrade("g", 12) ? "Boosts tree gain by x" + format(player.g.grassEffect2) : ""}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
             ['raw-html', () => {return player.g.grassEffect2.gte("1e10000") ? "[SOFTCAPPED]" : ""}, {color: "red", fontSize: "16px", fontFamily: "monospace", marginLeft: "10px"}],
         ], () => {return hasUpgrade("g", 12) ? {marginBottom: "10px"} : {display: "none !important"}}],
         ["row", [
-            ["raw-html", () => {return "You have " + format(player.g.goldGrass) + " golden grass"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+            ["raw-html", () => {return "你有 " + format(player.g.goldGrass) + " golden grass"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
             ["raw-html", () => {return "(+" + format(player.g.goldGrassVal) + " GGV)"}, {color: "white", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}],
         ], () => {return hasUpgrade("g", 13) ? {} : {display: "none !important"}}],
         ["raw-html", () => {return hasUpgrade('g', 13) ? "Boosts grass value by x" + format(player.g.goldGrassEffect) : ""}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],

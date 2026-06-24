@@ -604,7 +604,7 @@ addLayer("n", {
         },
         13: {
             requirementDescription: "3 Nest Resets",
-            effectDescription() { return "Increase red flower amounts by " + formatWhole(player.n.flowerPercentage.mul(100)) + "% of flower gain per second" },
+            effectDescription() { return "Increase red flower amounts by " + formatWhole(player.n.flowerPercentage.mul(100)) + "% of flower gain 每秒" },
             done() { return player.n.nestReset.gte(3) },
             style() {
                 let look = {width: "500px", minHeight: "75px", color: "black", border: "3px solid #9e6a55", borderTop: "0px", borderRadius: "0px"}
@@ -624,7 +624,7 @@ addLayer("n", {
         },
         15: {
             requirementDescription: "6 Nest Resets",
-            effectDescription() { return "Increase blue flower amounts by " + formatWhole(player.n.flowerPercentage.mul(100)) + "% of flower gain per second" },
+            effectDescription() { return "Increase blue flower amounts by " + formatWhole(player.n.flowerPercentage.mul(100)) + "% of flower gain 每秒" },
             done() { return player.n.nestReset.gte(6) },
             style() {
                 let look = {width: "500px", minHeight: "75px", color: "black", border: "3px solid #9e6a55", borderTop: "0px", borderRadius: "0px"}
@@ -644,7 +644,7 @@ addLayer("n", {
         },
         17: {
             requirementDescription: "10 Nest Resets",
-            effectDescription() { return "Increase green flower amounts by " + formatWhole(player.n.flowerPercentage.mul(100)) + "% of flower gain per second" },
+            effectDescription() { return "Increase green flower amounts by " + formatWhole(player.n.flowerPercentage.mul(100)) + "% of flower gain 每秒" },
             done() { return player.n.nestReset.gte(10) },
             style() {
                 let look = {width: "500px", minHeight: "75px", color: "black", border: "3px solid #9e6a55", borderTop: "0px", borderRadius: "0px"}
@@ -674,7 +674,7 @@ addLayer("n", {
         },
         20: {
             requirementDescription: "18 Nest Resets",
-            effectDescription() { return "Increase pink flower amounts by " + formatWhole(player.n.flowerPercentage.mul(100)) + "% of flower gain per second" },
+            effectDescription() { return "Increase pink flower amounts by " + formatWhole(player.n.flowerPercentage.mul(100)) + "% of flower gain 每秒" },
             done() { return player.n.nestReset.gte(18) },
             style() {
                 let look = {width: "500px", minHeight: "75px", color: "black", border: "3px solid #9e6a55", borderTop: "0px", borderRadius: "0px"}
@@ -704,7 +704,7 @@ addLayer("n", {
         },
         23: {
             requirementDescription: "28 Nest Resets",
-            effectDescription() { return "Increase yellow flower amounts by " + formatWhole(player.n.flowerPercentage.mul(100)) + "% of flower gain per second" },
+            effectDescription() { return "Increase yellow flower amounts by " + formatWhole(player.n.flowerPercentage.mul(100)) + "% of flower gain 每秒" },
             done() { return player.n.nestReset.gte(28) },
             style() {
                 let look = {width: "500px", minHeight: "75px", color: "black", border: "3px solid #9e6a55", borderTop: "0px", borderRadius: "0px"}
@@ -764,7 +764,7 @@ addLayer("n", {
         },
         29: {
             requirementDescription: "80 Nest Resets",
-            effectDescription() { return "Increase purple flower amounts by " + formatWhole(player.n.flowerPercentage.mul(100)) + "% of flower gain per second" },
+            effectDescription() { return "Increase purple flower amounts by " + formatWhole(player.n.flowerPercentage.mul(100)) + "% of flower gain 每秒" },
             done() { return player.n.nestReset.gte(80) },
             style() {
                 let look = {width: "500px", minHeight: "75px", color: "black", border: "3px solid #9e6a55", borderTop: "0px", borderRadius: "0px"}
@@ -958,7 +958,7 @@ addLayer("n", {
                         ], {width: "158px", height: "50px",}],
                     ], {width: "158px", height: "50px", backgroundColor: "black", border: "2px solid white", borderRadius: "10px", userSelect: "none"}],
                     ["blank", "25px"],
-                    ["raw-html", () => { return "You have <h3>" + format(player.n.pylonEnergy) + "/" + format(player.n.pylonEnergyMax) +  "</h3> natural pylon energy (" + format(player.n.pylonEnergyPerSecond) + "/s)."}, {color: "#000000ff", fontSize: "24px", fontFamily: "monospace"}],
+                    ["raw-html", () => { return "你有 <h3>" + format(player.n.pylonEnergy) + "/" + format(player.n.pylonEnergyMax) +  "</h3> natural pylon energy (" + format(player.n.pylonEnergyPerSecond) + "/秒）."}, {color: "#000000ff", fontSize: "24px", fontFamily: "monospace"}],
                     ["raw-html", () => {return "Boosts UB tickspeed by x" + format(player.n.pylonEnergyEffect) + "."}, {color: "black", fontSize: "20px", fontFamily: "monospace"}],
                     ["raw-html", () => {return "Boosts glossary effect base by x" + format(player.n.pylonEnergyEffect2) + "."}, {color: "black", fontSize: "20px", fontFamily: "monospace"}],
                     ["raw-html", () => {return "Boosts temporal pylon energy by x" + format(player.n.pylonEnergyEffect3) + "."}, {color: "black", fontSize: "20px", fontFamily: "monospace"}],
@@ -974,8 +974,8 @@ addLayer("n", {
         },
     },
     tabFormat: [
-        ["raw-html", () => {return "You have " + format(player.al.honeycomb) + " Honeycombs"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
-        ["raw-html", () => {return "You have " + format(player.al.royalJelly) + " Royal Jelly"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+        ["raw-html", () => {return "你有 " + format(player.al.honeycomb) + " Honeycombs"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+        ["raw-html", () => {return "你有 " + format(player.al.royalJelly) + " Royal Jelly"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
         ["blank", "10px"],
         ["microtabs", "Tabs", {borderWidth: "0"}],
         ["blank", "20px"],

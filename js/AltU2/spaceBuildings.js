@@ -276,7 +276,7 @@
                 unlocked() { return true },
                 content: [
                     ["blank", "25px"],
-                    ["raw-html", () => { return "You have <h3>" + format(player.sb.storedSpaceEnergy) + "</h3> space energy. (From Dark Universe)" }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                    ["raw-html", () => { return "你有 <h3>" + format(player.sb.storedSpaceEnergy) + "</h3> space energy. (From Dark Universe)" }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                     ["raw-html", () => { return "Boosts space building effects by " + formatSimple(player.sb.sseEffect.sub(1).mul(100)) + "%" }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                     ["blank", "25px"],
                     ["row", [["ex-buyable", 12],]],
@@ -288,8 +288,8 @@
         },
     },
     tabFormat: [
-        ["raw-html", function () { return "You have <h3>" + formatWhole(player.ir.spaceRock) + "</h3> space rocks." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
-        ["raw-html", function () { return "You have <h3>" + formatWhole(player.ir.spaceGem) + "</h3> space gems." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+        ["raw-html", function () { return "你有 <h3>" + formatWhole(player.ir.spaceRock) + "</h3> space rocks." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+        ["raw-html", function () { return "你有 <h3>" + formatWhole(player.ir.spaceGem) + "</h3> space gems." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
         ["microtabs", "stuff", { 'border-width': '0px' }],
         ["blank", "25px"],
     ],

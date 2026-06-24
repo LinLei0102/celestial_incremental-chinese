@@ -310,7 +310,7 @@
                     ["blank", "10px"],
                     ["style-column", [
                         ["row", [
-                            ["raw-html", () => {return "You have <h3>" + format(player.om.diceMasteryPoints) + "</h3> dice mastery points."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                            ["raw-html", () => {return "你有 <h3>" + format(player.om.diceMasteryPoints) + "</h3> dice mastery points."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                             ["raw-html", () => {return "(+" + format(player.om.diceMasteryPointsToGet) + ")"}, () => {
                                 let look = {fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                                 if (player.po.dice) {look.color = "white"} else {look.color = "gray"}
@@ -320,7 +320,7 @@
                         ["raw-html", () => {return "which boost infinity points by <h3>" + format(player.om.diceMasteryPointsEffect) + "</h3>x." }, { "color": "white", "font-size": "20px", "font-family": "monospace" }],
                         ["blank", "10px"],
                         ["row", [
-                            ["raw-html", () => {return "You have <h3>" + format(player.om.rocketFuelMasteryPoints) + "</h3> rocket fuel mastery points."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                            ["raw-html", () => {return "你有 <h3>" + format(player.om.rocketFuelMasteryPoints) + "</h3> rocket fuel mastery points."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                             ["raw-html", () => {return "(+" + format(player.om.rocketFuelMasteryPointsToGet) + ")"}, () => {
                                 let look = {fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                                 if (player.po.rocketFuel) {look.color = "white"} else {look.color = "gray"}
@@ -330,7 +330,7 @@
                         ["raw-html", () => {return "which boost negative infinity points by <h3>" + format(player.om.rocketFuelMasteryPointsEffect) + "</h3>x." }, { "color": "white", "font-size": "20px", "font-family": "monospace" }],
                         ["blank", "10px"],
                         ["row", [
-                            ["raw-html", () => {return "You have <h3>" + format(player.om.hexMasteryPoints) + "</h3> hex mastery points."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                            ["raw-html", () => {return "你有 <h3>" + format(player.om.hexMasteryPoints) + "</h3> hex mastery points."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                             ["raw-html", () => {return "(+" + format(player.om.hexMasteryPointsToGet) + ")"}, () => {
                                 let look = {fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                                 if (player.po.hex || hasUpgrade("s", 18)) {look.color = "white"} else {look.color = "gray"}

@@ -275,7 +275,7 @@ addLayer("ne", {
         102: {
             title: "Nectar α-2",
             unlocked: true,
-            description: "Triple bees per second.",
+            description: "Triple bees 每秒.",
             cost() {
                 if (player.bee.path != 2) return new Decimal(8000)
                 return new Decimal(20)
@@ -477,14 +477,14 @@ addLayer("ne", {
     tabFormat: [
         ["row", [
             ["raw-html", () => {return player.bee.bees.eq(1) ? "You have <h3>" + format(player.bee.bees) + "</h3> bee" : "You have <h3>" + format(player.bee.bees) + "</h3> bees"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-            ["raw-html", () => {return "(+" + format(player.bee.bps) + "/s)" }, {color: "white", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}],
+            ["raw-html", () => {return "(+" + format(player.bee.bps) + "/秒）" }, {color: "white", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}],
         ]],
         ["blank", "25px"],
         ["row", [
             ["style-column", [
                 ["style-column", [
                     ["row", [
-                        ["raw-html", () => {return "You have " + format(player.ne.alpha.amount) + " Nectar α"}, {color: "#161616", fontSize: "16px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "你有 " + format(player.ne.alpha.amount) + " Nectar α"}, {color: "#161616", fontSize: "16px", fontFamily: "monospace"}],
                         ["raw-html", () => {return "(+" + format(player.ne.alpha.gain) + ")"}, {color: "#161616", fontSize: "16px", fontFamily: "monospace", marginLeft: "10px"}],
                         ["raw-html", () => {return player.ne.alpha.gain.gte(1e250) ? "<small style='margin-left:7px'>[SOFTCAPPED]" : ""}, {color: "red", fontSize: "14px", fontFamily: "monospace"}],
                     ]],
@@ -502,7 +502,7 @@ addLayer("ne", {
             ["style-column", [
                 ["style-column", [
                     ["row", [
-                        ["raw-html", () => {return "You have " + format(player.ne.beta.amount) + " Nectar β"}, {color: "#161616", fontSize: "16px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "你有 " + format(player.ne.beta.amount) + " Nectar β"}, {color: "#161616", fontSize: "16px", fontFamily: "monospace"}],
                         ["raw-html", () => {return "(+" + format(player.ne.beta.gain) + ")"}, {color: "#161616", fontSize: "16px", fontFamily: "monospace", marginLeft: "10px"}],
                     ]],
                     ["raw-html", () => {return "Boosts flower gain by x" + formatSimple(player.ne.beta.effect, 2)}, {color: "#161616", fontSize: "14px", fontFamily: "monospace"}],
@@ -516,7 +516,7 @@ addLayer("ne", {
             ["style-column", [
                 ["style-column", [
                     ["row", [
-                        ["raw-html", () => {return "You have " + format(player.ne.gamma.amount) + " Nectar γ"}, {color: "#161616", fontSize: "16px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "你有 " + format(player.ne.gamma.amount) + " Nectar γ"}, {color: "#161616", fontSize: "16px", fontFamily: "monospace"}],
                         ["raw-html", () => {return "(+" + format(player.ne.gamma.gain) + ")"}, {color: "#161616", fontSize: "16px", fontFamily: "monospace", marginLeft: "10px"}],
                     ]],
                     ["raw-html", () => {return "Boosts glossary effect base by +" + formatSimple(player.ne.gamma.effect, 2)}, {color: "#161616", fontSize: "14px", fontFamily: "monospace"}],
@@ -530,7 +530,7 @@ addLayer("ne", {
             ["style-column", [
                 ["style-column", [
                     ["row", [
-                        ["raw-html", () => {return "You have " + format(player.ne.delta.amount) + " Nectar δ"}, {color: "#161616", fontSize: "16px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "你有 " + format(player.ne.delta.amount) + " Nectar δ"}, {color: "#161616", fontSize: "16px", fontFamily: "monospace"}],
                         ["raw-html", () => {return "(+" + format(player.ne.delta.gain) + ")"}, {color: "#161616", fontSize: "16px", fontFamily: "monospace", marginLeft: "10px"}],
                     ]],
                     ["raw-html", () => {return "Boosts nectar gain by x" + formatSimple(player.ne.delta.effect, 2)}, {color: "#161616", fontSize: "14px", fontFamily: "monospace"}],
@@ -544,7 +544,7 @@ addLayer("ne", {
             ["style-column", [
                 ["style-column", [
                     ["row", [
-                        ["raw-html", () => {return "You have " + format(player.ne.epsilon.amount) + " Nectar ε"}, {color: "#161616", fontSize: "16px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "你有 " + format(player.ne.epsilon.amount) + " Nectar ε"}, {color: "#161616", fontSize: "16px", fontFamily: "monospace"}],
                         ["raw-html", () => {return "(+" + format(player.ne.epsilon.gain) + ")"}, {color: "#161616", fontSize: "16px", fontFamily: "monospace", marginLeft: "10px"}],
                     ]],
                     ["raw-html", () => {return "Boosts pollen gain by x" + formatSimple(player.ne.epsilon.effect, 2)}, {color: "#161616", fontSize: "14px", fontFamily: "monospace"}],

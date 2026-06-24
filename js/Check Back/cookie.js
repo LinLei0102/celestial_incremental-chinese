@@ -152,7 +152,7 @@ addLayer("ep2", {
         cookies: new Decimal(0),
         cookiesPerClick: new Decimal(1),
         cookiesPerSecond: new Decimal(0),
-        cpsbm: new Decimal(0), // cookies per second before multiplier
+        cpsbm: new Decimal(0), // cookies 每秒 before multiplier
 
         totalBuildings: new Decimal(0),
 
@@ -373,7 +373,7 @@ addLayer("ep2", {
             img: "resources/currencies/celestial_points.png",
             unlocked() {return getBuyableAmount("ep2", 1).gte(15)},
             title: "<span style='color:#3A812Bcc'>Parallel Points</span>",
-            description() {return "Point buildings multiply celestial points.<br>Currently: x" + formatWhole(upgradeEffect(this.layer, this.id), 0)},
+            description() {return "Point buildings multiply 天体点数.<br>Currently: x" + formatWhole(upgradeEffect(this.layer, this.id), 0)},
             cost: new Decimal(10000),
             currencyLocation() { return player.ep2 },
             currencyDisplayName: "Cookies",
@@ -2833,7 +2833,7 @@ addLayer("ep2", {
                     ["style-column", [
                         ["raw-html", () => {return formatWhole(player.ep2.cookies) + " Cookies"}, {color: "white", fontSize: "28px", fontFamily: "monospace", pointerEvents: "none"}],
                         ["tooltip-row", [
-                            ["raw-html", () => {return "per second: " + formatSimple(player.ep2.cookiesPerSecond)}, {color: "white", fontSize: "14px", fontFamily: "monospace", pointerEvents: "none"}],
+                            ["raw-html", () => {return "每秒: " + formatSimple(player.ep2.cookiesPerSecond)}, {color: "white", fontSize: "14px", fontFamily: "monospace", pointerEvents: "none"}],
                             ["raw-html", () => {return "<div class='bottomTooltip'><small>CPS Before Multipliers<br>" + formatWhole(player.ep2.cpsbm) + "</small></div>"}],
                         ]],
                     ], {width: "350px", background: "rgba(0,0,0,0.4)", padding: "2px 0"}],

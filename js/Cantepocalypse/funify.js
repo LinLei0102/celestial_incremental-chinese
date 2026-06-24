@@ -946,7 +946,7 @@
         109: {
             title: "Apathy IX",
             unlocked() {return player.fu.enterNumb},
-            description: "Gain 10% anonymity per second while in numbness challenge.",
+            description: "Gain 10% anonymity 每秒 while in numbness challenge.",
             cost: new Decimal(48),
             currencyLocation() {return player.fu},
             currencyDisplayName: "Apathy",
@@ -1075,7 +1075,7 @@
                 return "Fun SFRGT Generation"
             },
             display() {
-                return "which are producing +" + format(tmp[this.layer].buyables[this.id].effect) + " SFRGT per second.\n\
+                return "which are producing +" + format(tmp[this.layer].buyables[this.id].effect) + " SFRGT 每秒.\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Fun."
             },
             buy(mult) {
@@ -1487,7 +1487,7 @@
                 return "Happiness Generator"
             },
             display() {
-                return "which are generating " + format(tmp[this.layer].buyables[this.id].effect) + " happiness per second.\n\
+                return "which are generating " + format(tmp[this.layer].buyables[this.id].effect) + " happiness 每秒.\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Fun."
             },
             buy(mult) {
@@ -1761,7 +1761,7 @@
                 return "Sadness Generator"
             },
             display() {
-                return "which are generating " + format(tmp[this.layer].buyables[this.id].effect) + " sadness per second.\n\
+                return "which are generating " + format(tmp[this.layer].buyables[this.id].effect) + " sadness 每秒.\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Fun."
             },
             buy(mult) {
@@ -2035,7 +2035,7 @@
                 return "Anger Generator"
             },
             display() {
-                return "which are generating " + format(tmp[this.layer].buyables[this.id].effect) + " anger per second.\n\
+                return "which are generating " + format(tmp[this.layer].buyables[this.id].effect) + " anger 每秒.\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Fun."
             },
             buy(mult) {
@@ -2309,7 +2309,7 @@
                 return "Fear Generator"
             },
             display() {
-                return "which are generating " + format(tmp[this.layer].buyables[this.id].effect) + " fear per second.\n\
+                return "which are generating " + format(tmp[this.layer].buyables[this.id].effect) + " fear 每秒.\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Fun."
             },
             buy(mult) {
@@ -2690,7 +2690,7 @@
                 return "Fun Generation"
             },
             display() {
-                return "which are producing " + formatWhole(tmp[this.layer].buyables[this.id].effect.mul(100)) + "% of fun gain per second.\n\
+                return "which are producing " + formatWhole(tmp[this.layer].buyables[this.id].effect.mul(100)) + "% of fun gain 每秒.\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Jocus Essence."
             },
             buy(mult) {
@@ -3218,12 +3218,12 @@
                 content: [
                     ["blank", "25px"],
                     ["raw-html", () => {return "You are having <h3>" + format(player.fu.fun) + "</h3> fun."  }, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
-                    ["raw-html", () => {return "You have <h3>" + format(player.s.singularityPoints) + "</h3> singularity points."  }, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
-                    ["raw-html", () => {return "You have <h3>" + format(player.in.infinityPoints) + "</h3> infinity points."  }, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
-                    ["raw-html", () => {return "You have <h3>" + format(player.gh.steel) + "</h3> steel."  }, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "你有 <h3>" + format(player.s.singularityPoints) + "</h3> singularity points."  }, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "你有 <h3>" + format(player.in.infinityPoints) + "</h3> infinity points."  }, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "你有 <h3>" + format(player.gh.steel) + "</h3> steel."  }, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                     ["blank", "25px"],
-                    ["raw-html", () => {return "You have <h3>" + format(player.fu.sfrgt) + "</h3> SFRGT (Super fun real good time)."}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
-                    ["raw-html", () => {return "You are gaining <h3>" + format(player.fu.sfrgtPerSecond) + "</h3> SFRGT per second."}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "你有 <h3>" + format(player.fu.sfrgt) + "</h3> SFRGT (Super fun real good time)."}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "You are gaining <h3>" + format(player.fu.sfrgtPerSecond) + "</h3> SFRGT 每秒."}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                     ["blank", "25px"],
                     ["style-row", [["ex-buyable", 11], ["ex-buyable", 12], ["ex-buyable", 13], ["ex-buyable", 14],
                         ["ex-buyable", 15], ["ex-buyable", 16], ["ex-buyable", 17], ["ex-buyable", 18]], {maxWidth: "1200px"}],
@@ -3301,7 +3301,7 @@
                             return look
                         }],
                     ]],
-                    ["raw-html", () => { return inChallenge("fu", 12) ? "Produces +" + formatSimple(player.fu.apathyEffect) + " numbness per second" : hasUpgrade("fu", 106) ? "Effects only active in Numbness Challenge" : player.fu.enterNumb ? "Effect only active in Numbness Challenge" : "" }, () => {
+                    ["raw-html", () => { return inChallenge("fu", 12) ? "Produces +" + formatSimple(player.fu.apathyEffect) + " numbness 每秒" : hasUpgrade("fu", 106) ? "Effects only active in Numbness Challenge" : player.fu.enterNumb ? "Effect only active in Numbness Challenge" : "" }, () => {
                         let look = {fontSize: "20px", fontFamily: "monospace"}
                         if (inChallenge("fu", 12)) {look.color = "white"} else {look.color = "gray"}
                         return look
@@ -3332,7 +3332,7 @@
                     ], {width: "800px", border: "3px solid #5e8503", backgroundImage: "linear-gradient(120deg, #fcff04 0%, #befa32 100%)", borderBottom: "5px", paddingTop: "5px", paddingBottom: "5px", borderRadius: "15px 15px 0px 0px"}],
                     ["style-column", [
                         ["raw-html", "<u>Effects</u>", {color: "rgba(0,0,0,0.6)", fontSize: "20px", fontFamily: "monospace"}],
-                        ["raw-html", "Gain 100% of time cubes per second.", {color: "rgba(0,0,0,0.6)", fontSize: "18px", fontFamily: "monospace"}],
+                        ["raw-html", "Gain 100% of time cubes 每秒.", {color: "rgba(0,0,0,0.6)", fontSize: "18px", fontFamily: "monospace"}],
                         ["raw-html", "x10 singularity points.", {color: "rgba(0,0,0,0.6)", fontSize: "18px", fontFamily: "monospace"}],
                         ["raw-html", "x10 fun.", {color: "rgba(0,0,0,0.6)", fontSize: "18px", fontFamily: "monospace"}],
                         ["raw-html", "x3 core scraps.", {color: "rgba(0,0,0,0.6)", fontSize: "18px", fontFamily: "monospace"}],
@@ -3346,8 +3346,8 @@
             "Happiness": {
                 content: [
                     ["row", [
-                        ["raw-html", () => {return "You have <h3>" + format(player.fu.happiness) + "</h3> happiness"}, {color: "#fcff04", fontSize: "24px", fontFamily: "monospace"}],
-                        ["raw-html", () => {return "(+" + format(player.fu.happinessPerSecond) + "/s)"}, () => {
+                        ["raw-html", () => {return "你有 <h3>" + format(player.fu.happiness) + "</h3> happiness"}, {color: "#fcff04", fontSize: "24px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "(+" + format(player.fu.happinessPerSecond) + "/秒）"}, () => {
                             let look = {fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                             if (player.fu.happinessProduce) {look.color = "#fcff04"} else {look.color = "gray"}
                             return look
@@ -3365,8 +3365,8 @@
             "Sadness": {
                 content: [
                     ["row", [
-                        ["raw-html", () => {return "You have <h3>" + format(player.fu.sadness) + "</h3> sadness"}, {color: "#110057", fontSize: "24px", fontFamily: "monospace"}],
-                        ["raw-html", () => {return "(+" + format(player.fu.sadnessPerSecond) + "/s)"}, () => {
+                        ["raw-html", () => {return "你有 <h3>" + format(player.fu.sadness) + "</h3> sadness"}, {color: "#110057", fontSize: "24px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "(+" + format(player.fu.sadnessPerSecond) + "/秒）"}, () => {
                             let look = {fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                             if (player.fu.sadnessProduce) {look.color = "#110057"} else {look.color = "gray"}
                             return look
@@ -3384,8 +3384,8 @@
             "Anger": {
                 content: [
                     ["row", [
-                        ["raw-html", () => {return "You have <h3>" + format(player.fu.anger) + "</h3> anger"}, {color: "#ff2b3d", fontSize: "24px", fontFamily: "monospace"}],
-                        ["raw-html", () => {return "(+" + format(player.fu.angerPerSecond) + "/s)"}, () => {
+                        ["raw-html", () => {return "你有 <h3>" + format(player.fu.anger) + "</h3> anger"}, {color: "#ff2b3d", fontSize: "24px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "(+" + format(player.fu.angerPerSecond) + "/秒）"}, () => {
                             let look = {fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                             if (player.fu.angerProduce) {look.color = "#ff2b3d"} else {look.color = "gray"}
                             return look
@@ -3403,8 +3403,8 @@
             "Fear": {
                 content: [
                     ["row", [
-                        ["raw-html", () => {return "You have <h3>" + format(player.fu.fear) + "</h3> fear"}, {color: "gray", fontSize: "24px", fontFamily: "monospace"}],
-                        ["raw-html", () => {return "(+" + format(player.fu.fearPerSecond) + "/s)"}, () => {
+                        ["raw-html", () => {return "你有 <h3>" + format(player.fu.fear) + "</h3> fear"}, {color: "gray", fontSize: "24px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "(+" + format(player.fu.fearPerSecond) + "/秒）"}, () => {
                             let look = {fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                             if (player.fu.fearProduce && inChallenge("fu", 11)) {look.color = "gray"} else {look.color = "#222"}
                             return look
@@ -3426,8 +3426,8 @@
             "Numbness": {
                 content: [
                     ["row", [
-                        ["raw-html", () => {return "You have <h3>" + format(player.fu.numb) + "</h3> numbness"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-                        ["raw-html", () => {return "(+" + format(player.fu.numbPerSecond) + "/s)"}, () => {
+                        ["raw-html", () => {return "你有 <h3>" + format(player.fu.numb) + "</h3> numbness"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "(+" + format(player.fu.numbPerSecond) + "/秒）"}, () => {
                             let look = {fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                             if (player.fu.numbProduce && inChallenge("fu", 12)) {look.color = "white"} else {look.color = "gray"}
                             return look
@@ -3453,7 +3453,7 @@
     },
 
     tabFormat: [
-        ["raw-html", () => {return "You have <h3>" + format(player.cp.replicantiPoints) + "</h3> replicanti points."}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+        ["raw-html", () => {return "你有 <h3>" + format(player.cp.replicantiPoints) + "</h3> replicanti points."}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
         ["raw-html", () => {return "Replicanti Mult: " + format(player.cp.replicantiPointsMult, 4) + "x"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
         ["row", [["bar", "replicantiBar"]]],
         ["microtabs", "stuff", { 'border-width': '0px' }],

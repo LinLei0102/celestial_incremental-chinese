@@ -937,7 +937,7 @@
             unlocked() { return true },
             canAfford() { return player.d.dicePoints.gte(this.cost()) && player.d.buyables[11].lt(24)},
             title() {
-                return "You have " + format(player.d.dice, 0) + "/24 dice."
+                return "你有 " + format(player.d.dice, 0) + "/24 dice."
             },
             display() {
                 let str = "Buys another die.\n\
@@ -1119,7 +1119,7 @@
                 return "Booster Dice Producer!"
             },
             display() {
-                return "which are producing +" + format(tmp[this.layer].buyables[this.id].effect) + " of all tier 1 booster dice effects per second.\n\
+                return "which are producing +" + format(tmp[this.layer].buyables[this.id].effect) + " of all tier 1 booster dice effects 每秒.\n\
                     Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Challenge Dice Points"
             },
             buy(mult) {
@@ -1326,7 +1326,7 @@
                 content: [
                     ["blank", "25px"],
                     ["row", [
-                        ["raw-html", () => { return "You have <h3>" + format(player.d.challengeDicePoints) + "</h3> challenge dice points" }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                        ["raw-html", () => { return "你有 <h3>" + format(player.d.challengeDicePoints) + "</h3> challenge dice points" }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                         ["raw-html", () => { return "(+" + format(player.d.challengeDicePointsToGet) + " on BDR)" }, {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
                     ]],
                     ["raw-html", () => {return "Boosts dice point gain by x" + format(player.d.challengeDicePointsEffect)}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
@@ -1356,7 +1356,7 @@
                     ["raw-html", "^0.65 Code Experience Gain.", {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                     ["blank", "10px"],
                     ["raw-html", "Tip:", {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-                    ["raw-html", "Pets only work after getting<br>1e100 celestial points", {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", "Pets only work after getting<br>1e100 天体点数", {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                 ]
             },
             "The Rift": {
@@ -1371,9 +1371,9 @@
     },
 
     tabFormat: [
-        ["raw-html", () => { return "You have <h3>" + format(player.points) + "</h3> celestial points (+" + format(player.gain) + "/s)." }, {color: "white", fontSize: "12px", fontFamily: "monospace"}],
+        ["raw-html", () => { return "你有 <h3>" + format(player.points) + "</h3> 天体点数 (+" + format(player.gain) + "/秒）." }, {color: "white", fontSize: "12px", fontFamily: "monospace"}],
         ["raw-html", () => {return player.gain.gt(player.i.doomSoftcapStart) ? "SOFTCAP OF DOOM: Gain past " + format(player.i.doomSoftcapStart) + " is raised by ^" + format(player.i.doomSoftcap, 3) + "." : ""}, {color: "red", fontSize: "10px", fontFamily: "monospace"}],
-        ["raw-html", () => { return "You have <h3>" + formatWhole(player.d.dicePoints) + "</h3> dice points" }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+        ["raw-html", () => { return "你有 <h3>" + formatWhole(player.d.dicePoints) + "</h3> dice points" }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
         ["raw-html", () => { return "Boosts check back level effect by ^" + format(player.d.dicePointsEffect) }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
         ["raw-html", () => {return inChallenge("ip", 15) ? "IC5: Booster Collapse in " + formatTime(player.d.boosterDiceCooldown) : ""}, {color: "red", fontSize: "16px", fontFamily: "monospace"}],
         ["microtabs", "stuff", { 'border-width': '0px' }],

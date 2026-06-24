@@ -456,7 +456,7 @@
                 content: [
                     ["blank", "25px"],
                     ["row", [
-                        ["raw-html", () => {return "You have " + formatWhole(player.rt.repliTrees) + " repli-trees"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "你有 " + formatWhole(player.rt.repliTrees) + " repli-trees"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                         ["raw-html", () => {return "(+" + format(player.rt.repliTreesToGet, 1) + ")"}, {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
                     ]],
                     ["raw-html", () => {return "Boosts anonymity gain by x" + format(player.rt.repliTreesEffect)}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
@@ -475,7 +475,7 @@
     },
     tabFormat: [
         ["row", [
-            ["raw-html", () => { return "You have <h3>" + format(player.an.anonymity) + "</h3> anonymity." }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+            ["raw-html", () => { return "你有 <h3>" + format(player.an.anonymity) + "</h3> anonymity." }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
             ["raw-html", () => { return "(+" + format(player.an.anonymityToGet) + ")" }, {color: "white", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}],
         ]],
         ["microtabs", "stuff", { 'border-width': '0px' }],

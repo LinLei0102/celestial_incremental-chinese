@@ -381,7 +381,7 @@
                 content: [
                     ["blank", "20px"],
                     ["row", [
-                        ["raw-html", () => {return "You have <h3>" + format(player.pr.perkPoints) + "</h3> perk points."}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "你有 <h3>" + format(player.pr.perkPoints) + "</h3> perk points."}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                         ["raw-html", () => {return "(+" + format(player.pr.perkPointsToGet) + ")"}, {color: "white", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}],
                     ]],
                     ["raw-html", () => { return "Chance to gain perk points: <h3>" + format(player.pr.perkPointsChance.mul(100)) + "</h3>%" }, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
@@ -393,7 +393,7 @@
         },
     },
     tabFormat: [
-        ["raw-html", () => {return "You have <h3>" + format(player.cp.replicantiPoints) + "</h3> replicanti points."}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+        ["raw-html", () => {return "你有 <h3>" + format(player.cp.replicantiPoints) + "</h3> replicanti points."}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
         ["raw-html", () => {return "Replicanti Mult: " + format(player.cp.replicantiPointsMult, 4) + "x"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
         ["row", [["bar", "replicantiBar"]]],
         ["microtabs", "stuff", { 'border-width': '0px' }],

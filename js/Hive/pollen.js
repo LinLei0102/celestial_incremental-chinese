@@ -245,7 +245,7 @@ addLayer("bpl", {
             title: "Pollen Upgrade II",
             unlocked: true,
             description() {
-                if (hasUpgrade("al", 112)) return "Increase pollen per second by +5%."
+                if (hasUpgrade("al", 112)) return "Increase pollen 每秒 by +5%."
                 return "Reduce base pollen cooldown by 0.5s."
             },
             cost() {
@@ -318,7 +318,7 @@ addLayer("bpl", {
             title: "Pollen Upgrade VII",
             unlocked: true,
             description() {
-                if (hasUpgrade("al", 112)) return "Increase pollen per second by +5%, again."
+                if (hasUpgrade("al", 112)) return "Increase pollen 每秒 by +5%, again."
                 return "Reduce base pollen cooldown by 0.5s, again."
             },
             cost() {
@@ -383,11 +383,11 @@ addLayer("bpl", {
     tabFormat: [
         ["row", [
             ["raw-html", () => {return player.bee.bees.eq(1) ? "You have <h3>" + format(player.bee.bees) + "</h3> bee" : "You have <h3>" + format(player.bee.bees) + "</h3> bees"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
-            ["raw-html", () => {return "(+" + format(player.bee.bps) + "/s)" }, {color: "white", fontSize: "14px", fontFamily: "monospace", marginLeft: "10px"}],
+            ["raw-html", () => {return "(+" + format(player.bee.bps) + "/秒）" }, {color: "white", fontSize: "14px", fontFamily: "monospace", marginLeft: "10px"}],
         ]],
         ["row", [
-            ["raw-html", () => {return "You have <h3>" + format(player.bpl.pollen) + "</h3> pollen"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-            ["raw-html", () => {return hasUpgrade("al", 112) ? "(+" + format(player.bpl.pollenGain) + "/s)" : "(+" + format(player.bpl.pollenGain) + ")"}, {color: "white", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}],
+            ["raw-html", () => {return "你有 <h3>" + format(player.bpl.pollen) + "</h3> pollen"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+            ["raw-html", () => {return hasUpgrade("al", 112) ? "(+" + format(player.bpl.pollenGain) + "/秒）" : "(+" + format(player.bpl.pollenGain) + ")"}, {color: "white", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}],
             ["raw-html", () => {return player.bpl.pollenGain.gte(1e200) ? "[SOFTCAPPED]" : ""}, {color: "#c00", fontSize: "16px", fontFamily: "monospace", marginLeft: "8px"}],
         ]],
         ["bar", "pollenBar"],
@@ -398,9 +398,9 @@ addLayer("bpl", {
         ["style-column", [
             ["style-row", [
                 ["style-column", [
-                    ["raw-html", () => { return "You have " + format(player.bpl.roles.drone.amount) + " Drone Bees."}, { color: "white", fontSize: "24px", fontFamily: "monospace" }],
+                    ["raw-html", () => { return "你有 " + format(player.bpl.roles.drone.amount) + " Drone Bees."}, { color: "white", fontSize: "24px", fontFamily: "monospace" }],
                     ["row", [
-                        ["raw-html", () => { return "Which boosts bees per second by x" + format(player.bpl.roles.drone.effect)}, { color: "white", fontSize: "16px", fontFamily: "monospace" }],
+                        ["raw-html", () => { return "Which boosts bees 每秒 by x" + format(player.bpl.roles.drone.effect)}, { color: "white", fontSize: "16px", fontFamily: "monospace" }],
                         ["raw-html", () => {return player.bpl.roles.drone.amount.gte(1e100) ? "[SOFTCAPPED<sup>2</sup>]" : player.bpl.roles.drone.amount.gte(1e60) ? "[SOFTCAPPED]" : ""}, {color: "#c00", fontSize: "14px", fontFamily: "monospace", marginLeft: "8px"}],
                     ]],
                 ], {width: "525px"}],
@@ -409,7 +409,7 @@ addLayer("bpl", {
             ], {borderBottom: "4px solid white"}],
             ["style-row", [
                 ["style-column", [
-                    ["raw-html", () => {return "You have " + format(player.bpl.roles.worker.amount) + " Worker Bees."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "你有 " + format(player.bpl.roles.worker.amount) + " Worker Bees."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                     ["row", [
                         ["raw-html", () => {return "Which boosts pollen gain by x" + format(player.bpl.roles.worker.effect)}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                         ["raw-html", () => {return player.bpl.roles.worker.amount.gte(1e30) ? "[SOFTCAPPED]" : ""}, {color: "#c00", fontSize: "14px", fontFamily: "monospace", marginLeft: "8px"}],
@@ -420,7 +420,7 @@ addLayer("bpl", {
             ], () => { return hasUpgrade("bpl", 13) ? {borderBottom: "4px solid white"} : {display: "none !important"} }],
             ["style-row", [
                 ["style-column", [
-                    ["raw-html", () => { return "You have " + format(player.bpl.roles.queen.amount) + " Queen Bees."}, { color: "white", fontSize: "24px", fontFamily: "monospace" }],
+                    ["raw-html", () => { return "你有 " + format(player.bpl.roles.queen.amount) + " Queen Bees."}, { color: "white", fontSize: "24px", fontFamily: "monospace" }],
                     ["raw-html", () => { return "Which improves pollen conversion rate by x" + format(player.bpl.roles.queen.effect)}, { color: "white", fontSize: "16px", fontFamily: "monospace" }],
                 ], {width: "525px"}],
                 ["style-row", [], {width: "4px", height: "60px", background: "white"}],
@@ -428,7 +428,7 @@ addLayer("bpl", {
             ], () => { return hasUpgrade("bpl", 16) ? {borderBottom: "4px solid white"} : {display: "none !important"} }],
             ["style-row", [
                 ["style-column", [
-                    ["raw-html", () => { return "You have " + format(player.bpl.roles.empress.amount) + " Empress Bees."}, { color: "white", fontSize: "24px", fontFamily: "monospace" }],
+                    ["raw-html", () => { return "你有 " + format(player.bpl.roles.empress.amount) + " Empress Bees."}, { color: "white", fontSize: "24px", fontFamily: "monospace" }],
                     ["raw-html", () => { return "Which boosts flower gain by x" + format(player.bpl.roles.empress.effect)}, { color: "white", fontSize: "16px", fontFamily: "monospace" }],
                 ], {width: "525px"}],
                 ["style-row", [], {width: "4px", height: "60px", background: "white"}],

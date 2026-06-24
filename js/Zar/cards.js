@@ -1792,7 +1792,7 @@
             levelLimit() { return new Decimal(99) },
             description() {
                 let str = [
-                    "x" + format(this.effect()[0]) + " to dark celestial points.<br>", //not implemented
+                    "x" + format(this.effect()[0]) + " to dark 天体点数.<br>", //not implemented
                     "x" + format(this.effect()[1]) + " to heart points.",
                 ]
                 return str.join("")
@@ -2311,7 +2311,7 @@
         12: {
             title: "So lazy you can't even spin a wheel...",
             unlocked() { return player.cbs.shrineReactivated },
-            description: "Gain 25% of wheel point mult as wheel points per second.",
+            description: "Gain 25% of wheel point mult as wheel points 每秒.",
             cost: new Decimal(10),
             currencyLocation() { return player.car },
             currencyDisplayName: "Card Generators",
@@ -2321,7 +2321,7 @@
         13: {
             title: "It seems like you've maximized laziness out here.",
             unlocked() { return player.cbs.shrineReactivated },
-            description: "Gain 100% of heads and tails per second.",
+            description: "Gain 100% of heads and tails 每秒.",
             cost: new Decimal(100),
             currencyLocation() { return player.car },
             currencyDisplayName: "Card Generators",
@@ -2942,13 +2942,13 @@
                     ["style-row", [
                     ["blank", "25px"],
                     ["style-column", [
-                    ["raw-html", function () { return "You have <h3>" + formatWhole(player.car.cardGenerators) + "</h3> card generators. (+" + formatWhole(player.car.cardGeneratorsToGet) + ")" }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
+                    ["raw-html", function () { return "你有 <h3>" + formatWhole(player.car.cardGenerators) + "</h3> card generators. (+" + formatWhole(player.car.cardGeneratorsToGet) + ")" }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
                     ["blank", "25px"],
                     ["clickable", 11], 
                     ]],
                     ["row", [ ["raw-html", function () { return "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp" }, { "color": "white", "font-size": "12.5px", "font-family": "monospace" }], ["clickable", 104], ]],
                     ["style-column", [
-                    ["raw-html", function () { return "You have <h3>" + formatWhole(player.car.cardShreds) + "</h3> card shreds. (+" + formatWhole(player.car.cardShredsPerSecond) + "/s)" }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
+                    ["raw-html", function () { return "你有 <h3>" + formatWhole(player.car.cardShreds) + "</h3> card shreds. (+" + formatWhole(player.car.cardShredsPerSecond) + "/秒）" }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
                     ["raw-html", function () { return "+" + formatWhole(player.car.cardsToGet) + " cards on draw." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
                     ["blank", "25px"],
                     ["clickable", 12],
@@ -3026,7 +3026,7 @@
                     ["blank", "12.5px"],
                     ["style-column", [
                             ["style-column", [
-                                ["raw-html", () => {return "You have " + format(player.car.cardPoints[0]) + " spade points (+" + format(player.car.cardPointsPerSecond[0]) + "/s)"}, {color: "#1f1f1f", fontSize: "20px", fontFamily: "monospace"}],
+                                ["raw-html", () => {return "你有 " + format(player.car.cardPoints[0]) + " spade points (+" + format(player.car.cardPointsPerSecond[0]) + "/秒）"}, {color: "#1f1f1f", fontSize: "20px", fontFamily: "monospace"}],
                             ], {width: "785px", height: "30px", backgroundColor: "#dadada", borderTop: "3px solid #7f7f7f", borderBottom: "3px solid #7f7f7f", userSelect: "none"}],
                             ["style-row", [
 
@@ -3034,7 +3034,7 @@
                             ], {width: "775px", height: "135px", backgroundColor: "#303030", padding: "5px"}],
 
                             ["style-column", [
-                                ["raw-html", () => {return "You have " + format(player.car.cardPoints[1]) + " club points (+" + format(player.car.cardPointsPerSecond[1]) + "/s)"}, {color: "#1f1f1f", fontSize: "20px", fontFamily: "monospace"}],
+                                ["raw-html", () => {return "你有 " + format(player.car.cardPoints[1]) + " club points (+" + format(player.car.cardPointsPerSecond[1]) + "/秒）"}, {color: "#1f1f1f", fontSize: "20px", fontFamily: "monospace"}],
                             ], {width: "785px", height: "30px", backgroundColor: "#dadada", borderTop: "3px solid #7f7f7f", borderBottom: "3px solid #7f7f7f", userSelect: "none"}],
                             ["style-row", [
                             ["ex-buyable", 21], ["ex-buyable", 22], ["ex-buyable", 23], ["ex-buyable", 24],
@@ -3042,14 +3042,14 @@
                             ], () => {return {width: "775px", height: "135px", backgroundColor: "#303030", padding: "5px"}}],
 
                             ["style-column", [
-                                ["raw-html", () => {return "You have " + format(player.car.cardPoints[2]) + " diamond points (+" + format(player.car.cardPointsPerSecond[2]) + "/s)"}, {color: "#ff3333", fontSize: "20px", fontFamily: "monospace"}],
+                                ["raw-html", () => {return "你有 " + format(player.car.cardPoints[2]) + " diamond points (+" + format(player.car.cardPointsPerSecond[2]) + "/秒）"}, {color: "#ff3333", fontSize: "20px", fontFamily: "monospace"}],
                             ], () => {return {width: "785px", height: "30px", backgroundColor: "#dadada", borderTop: "3px solid #7f7f7f", borderBottom: "3px solid #7f7f7f", userSelect: "none"}}],
                             ["style-row", [
                             ["ex-buyable", 31], ["ex-buyable", 32], ["ex-buyable", 33], ["ex-buyable", 34],
 
                             ], () => {return {width: "775px", height: "135px", backgroundColor: "#490c0c", padding: "5px"}}],
                             ["style-column", [
-                                ["raw-html", () => {return "You have " + format(player.car.cardPoints[3]) + " heart points (+" + format(player.car.cardPointsPerSecond[3]) + "/s)"}, {color: "#ff3333", fontSize: "20px", fontFamily: "monospace"}],
+                                ["raw-html", () => {return "你有 " + format(player.car.cardPoints[3]) + " heart points (+" + format(player.car.cardPointsPerSecond[3]) + "/秒）"}, {color: "#ff3333", fontSize: "20px", fontFamily: "monospace"}],
 
                             ], () => {return {width: "785px", height: "30px", backgroundColor: "#dadada", borderTop: "3px solid #7f7f7f", borderBottom: "3px solid #7f7f7f", userSelect: "none"}}],
                             ["style-row", [
@@ -3068,7 +3068,7 @@
                     ["blank", "25px"],
                     ["clickable", 21], 
                     ["blank", "25px"],
-                    ["raw-html", function () { return "You have <h3>" + formatWhole(player.car.cardGenerators) + "</h3> card generators." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
+                    ["raw-html", function () { return "你有 <h3>" + formatWhole(player.car.cardGenerators) + "</h3> card generators." }, { "color": "white", "font-size": "16px", "font-family": "monospace" }],
                     ["blank", "25px"],
                     ["ex-buyable", 101],
                     ["blank", "25px"],
@@ -3078,7 +3078,7 @@
         },
     },
     tabFormat: [
-                ["raw-html", function () { return "You have <h3>" + format(player.za.chancePoints) + "</h3> chance points. (+" + format(player.za.chancePointsPerSecond) + "/s)" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                ["raw-html", function () { return "你有 <h3>" + format(player.za.chancePoints) + "</h3> chance points. (+" + format(player.za.chancePointsPerSecond) + "/秒）" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
         ["raw-html", () => { return player.za.chancePoints.gte(player.za.chancePointsSoftcapStart) ? "After " + format(player.za.chancePointsSoftcapStart) + " chance points, gain is divided by /" + format(player.za.chancePointsSoftcapEffect) + "." : "Softcap start: " + format(player.za.chancePointsSoftcapStart) + "." }, {color: "red", fontSize: "16px", fontFamily: "monospace"}],
         ["microtabs", "stuff", { 'border-width': '0px' }],
     ],

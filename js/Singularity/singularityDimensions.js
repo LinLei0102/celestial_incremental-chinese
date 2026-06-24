@@ -484,9 +484,9 @@
                 unlocked() { return true },
                 content: [
                     ["blank", "25px"],
-                    ["raw-html", function () { return "You have <h3>" + format(player.s.singularityPoints) + "</h3> singularity points." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                    ["raw-html", function () { return "你有 <h3>" + format(player.s.singularityPoints) + "</h3> singularity points." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
                     ["raw-html", function () { return "Stored radiation: " + format(player.ra.storedRadiation) + "" }, { "color": "white", "font-size": "20px", "font-family": "monospace" }],
-                    ["raw-html", function () { return "Radiation Usage: (" + format(player.sd.radiationUsage) + "/s)" }, { "color": "white", "font-size": "20px", "font-family": "monospace" }],
+                    ["raw-html", function () { return "Radiation Usage: (" + format(player.sd.radiationUsage) + "/秒）" }, { "color": "white", "font-size": "20px", "font-family": "monospace" }],
                     ["blank", "25px"],
                     ["row", [["buyable", 1], ["clickable", 2], ["clickable", 3], ["clickable", 4], ["clickable", 5]]],
                     ["raw-html", function () { return "Singularity power and dimension amounts are reset on singularity reset." }, { "color": "white", "font-size": "20px", "font-family": "monospace" }],
@@ -495,43 +495,43 @@
                     ["blank", "25px"],
                     ["row", [
                         ["style-row", [
-                            ["raw-html", function () { return getBuyableAmount("sd", 1).gte(1) ? "1st dimension (" + format(buyableEffect("sd", "11")) + "x): " + format(player.sd.dimensionAmounts[0]) + " (+" + format(player.sd.dimensionsPerSecond[0]) + "/s)" : ""}, { color: "white", fontSize: "24px", fontFamily: "monospace" }]
+                            ["raw-html", function () { return getBuyableAmount("sd", 1).gte(1) ? "1st dimension (" + format(buyableEffect("sd", "11")) + "x): " + format(player.sd.dimensionAmounts[0]) + " (+" + format(player.sd.dimensionsPerSecond[0]) + "/秒）" : ""}, { color: "white", fontSize: "24px", fontFamily: "monospace" }]
                         ], {width: "700px"}], 
                         ["buyable", 11],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["raw-html", function () { return getBuyableAmount("sd", 1).gte(2) ? "2nd dimension (" + format(buyableEffect("sd", "12")) + "x): " + format(player.sd.dimensionAmounts[1]) + " (+" + format(player.sd.dimensionsPerSecond[1]) + "/s)" : ""}, { color: "white", fontSize: "24px", fontFamily: "monospace" }]
+                            ["raw-html", function () { return getBuyableAmount("sd", 1).gte(2) ? "2nd dimension (" + format(buyableEffect("sd", "12")) + "x): " + format(player.sd.dimensionAmounts[1]) + " (+" + format(player.sd.dimensionsPerSecond[1]) + "/秒）" : ""}, { color: "white", fontSize: "24px", fontFamily: "monospace" }]
                         ], {width: "700px"}], 
                         ["buyable", 12],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["raw-html", function () { return getBuyableAmount("sd", 1).gte(3) ? "3rd dimension (" + format(buyableEffect("sd", "13")) + "x): " + format(player.sd.dimensionAmounts[2]) + " (+" + format(player.sd.dimensionsPerSecond[2]) + "/s)" : ""}, { color: "white", fontSize: "24px", fontFamily: "monospace" }]
+                            ["raw-html", function () { return getBuyableAmount("sd", 1).gte(3) ? "3rd dimension (" + format(buyableEffect("sd", "13")) + "x): " + format(player.sd.dimensionAmounts[2]) + " (+" + format(player.sd.dimensionsPerSecond[2]) + "/秒）" : ""}, { color: "white", fontSize: "24px", fontFamily: "monospace" }]
                         ], {width: "700px"}], 
                         ["buyable", 13],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["raw-html", function () { return getBuyableAmount("sd", 1).gte(4) ? "4th dimension (" + format(buyableEffect("sd", "14")) + "x): " + format(player.sd.dimensionAmounts[3]) + " (+" + format(player.sd.dimensionsPerSecond[3]) + "/s)" : ""}, { color: "white", fontSize: "24px", fontFamily: "monospace" }]
+                            ["raw-html", function () { return getBuyableAmount("sd", 1).gte(4) ? "4th dimension (" + format(buyableEffect("sd", "14")) + "x): " + format(player.sd.dimensionAmounts[3]) + " (+" + format(player.sd.dimensionsPerSecond[3]) + "/秒）" : ""}, { color: "white", fontSize: "24px", fontFamily: "monospace" }]
                         ], {width: "700px"}], 
                         ["buyable", 14],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["raw-html", function () { return getBuyableAmount("sd", 1).gte(5) ? "5th dimension (" + format(buyableEffect("sd", "15")) + "x): " + format(player.sd.dimensionAmounts[4]) + " (+" + format(player.sd.dimensionsPerSecond[4]) + "/s)" : ""}, { color: "white", fontSize: "24px", fontFamily: "monospace" }]
+                            ["raw-html", function () { return getBuyableAmount("sd", 1).gte(5) ? "5th dimension (" + format(buyableEffect("sd", "15")) + "x): " + format(player.sd.dimensionAmounts[4]) + " (+" + format(player.sd.dimensionsPerSecond[4]) + "/秒）" : ""}, { color: "white", fontSize: "24px", fontFamily: "monospace" }]
                         ], {width: "700px"}], 
                         ["buyable", 15],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["raw-html", function () { return getBuyableAmount("sd", 1).gte(6) ? "6th dimension (" + format(buyableEffect("sd", "16")) + "x): " + format(player.sd.dimensionAmounts[5]) + " (+" + format(player.sd.dimensionsPerSecond[5]) + "/s)" : ""}, { color: "white", fontSize: "24px", fontFamily: "monospace" }]
+                            ["raw-html", function () { return getBuyableAmount("sd", 1).gte(6) ? "6th dimension (" + format(buyableEffect("sd", "16")) + "x): " + format(player.sd.dimensionAmounts[5]) + " (+" + format(player.sd.dimensionsPerSecond[5]) + "/秒）" : ""}, { color: "white", fontSize: "24px", fontFamily: "monospace" }]
                         ], {width: "700px"}], 
                         ["buyable", 16],
                     ]],
                     ["row", [
                         ["style-row", [
-                            ["raw-html", function () { return getBuyableAmount("sd", 1).gte(7) ? "7th dimension (" + format(buyableEffect("sd", "17")) + "x): " + format(player.sd.dimensionAmounts[6]) + " (+" + format(player.sd.dimensionsPerSecond[6]) + "/s)" : ""}, { color: "white", fontSize: "24px", fontFamily: "monospace" }]
+                            ["raw-html", function () { return getBuyableAmount("sd", 1).gte(7) ? "7th dimension (" + format(buyableEffect("sd", "17")) + "x): " + format(player.sd.dimensionAmounts[6]) + " (+" + format(player.sd.dimensionsPerSecond[6]) + "/秒）" : ""}, { color: "white", fontSize: "24px", fontFamily: "monospace" }]
                         ], {width: "700px"}], 
                         ["buyable", 17],
                     ]],
@@ -548,8 +548,8 @@
 
     tabFormat: [
         ["row", [
-            ["raw-html", () => {return "You have " + format(player.sd.singularityPower) + " singularity power"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-            ["raw-html", () => {return "(+" + format(player.sd.singularityPowerPerSecond) + "/s)"}, () => {
+            ["raw-html", () => {return "你有 " + format(player.sd.singularityPower) + " singularity power"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+            ["raw-html", () => {return "(+" + format(player.sd.singularityPowerPerSecond) + "/秒）"}, () => {
                 let look = {fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                 if (player.sd.pausedDimensions && player.sd.producingDimensions) {look.color = "white"} else {look.color = "gray"}
                 return look

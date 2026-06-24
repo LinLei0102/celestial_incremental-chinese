@@ -820,7 +820,7 @@
             canAfford() { return this.currency().gte(this.cost()) },
             branches: [109,],
             display() {
-                return "Gain +" + format(tmp[this.layer].buyables[this.id].effect) + " wheel spins per second.\n\
+                return "Gain +" + format(tmp[this.layer].buyables[this.id].effect) + " wheel spins 每秒.\n\
                     Cost: " + formatWhole(tmp[this.layer].buyables[this.id].cost) + " Paragon Shards"
             },
             buy(mult) {
@@ -852,7 +852,7 @@
             canAfford() { return this.currency().gte(this.cost()) },
             branches: [111,],
             display() {
-                return "Gain +" + format(tmp[this.layer].buyables[this.id].effect) + " slot spins per second.\n\
+                return "Gain +" + format(tmp[this.layer].buyables[this.id].effect) + " slot spins 每秒.\n\
                     Cost: " + formatWhole(tmp[this.layer].buyables[this.id].cost) + " Evolution Shards"
             },
             buy(mult) {
@@ -1036,13 +1036,13 @@
                     
                     ["style-column", [ 
                     ["style-column", [ 
-                        ["raw-html", function () { return "You have " + format(player.sm.chips[0]) + " red chips. (+" + format(player.sm.chipsToGet[0]) + ")" }, { "color": "#ff7070ff", "font-size": "20px", "font-family": "monospace" }],
+                        ["raw-html", function () { return "你有 " + format(player.sm.chips[0]) + " red chips. (+" + format(player.sm.chipsToGet[0]) + ")" }, { "color": "#ff7070ff", "font-size": "20px", "font-family": "monospace" }],
                         ["raw-html", function () { return "Boosts chance point gain and extends softcap by x" + format(player.sm.chipsEffect[0]) + "." }, { "color": "#ff7070ff", "font-size": "16px", "font-family": "monospace" }],
                     ["blank", "10px"],
-                        ["raw-html", function () { return "You have " + format(player.sm.chips[1]) + " blue chips. (+" + format(player.sm.chipsToGet[1]) + ")" }, { "color": "#7970ffff", "font-size": "20px", "font-family": "monospace" }],
+                        ["raw-html", function () { return "你有 " + format(player.sm.chips[1]) + " blue chips. (+" + format(player.sm.chipsToGet[1]) + ")" }, { "color": "#7970ffff", "font-size": "20px", "font-family": "monospace" }],
                         ["raw-html", function () { return "Boosts heads and tails gain and extends softcap by x" + format(player.sm.chipsEffect[1]) + "." }, { "color": "#7970ffff", "font-size": "16px", "font-family": "monospace" }],
                     ["blank", "10px"],
-                        ["raw-html", function () { return "You have " + format(player.sm.chips[2]) + " yellow chips. (+" + format(player.sm.chipsToGet[2]) + ")" }, { "color": "#fffd70ff", "font-size": "20px", "font-family": "monospace" }],
+                        ["raw-html", function () { return "你有 " + format(player.sm.chips[2]) + " yellow chips. (+" + format(player.sm.chipsToGet[2]) + ")" }, { "color": "#fffd70ff", "font-size": "20px", "font-family": "monospace" }],
                         ["raw-html", function () { return "Boosts wheel point gain by x" + format(player.sm.chipsEffect[2]) + "." }, { "color": "#fffd70ff", "font-size": "16px", "font-family": "monospace" }],
                     ], {width: "597px", height: "200px", background: "rgba(96, 107, 30, 0.5)", border: "3px solid #ccc",  borderBottom: "0px", borderTop: "0px", borderRadius: "0px 15px 0px 0px"}],
                     ["style-column", [ 
@@ -1076,9 +1076,9 @@
                 unlocked() { return true },
                 content: [
                     ["blank", "12.5px"],
-                        ["raw-html", function () { return "You have " + format(player.sm.chips[0]) + " red chips. (+" + format(player.sm.chipsToGet[0]) + ")" }, { "color": "#ff7070ff", "font-size": "20px", "font-family": "monospace" }],
-                        ["raw-html", function () { return "You have " + format(player.sm.chips[1]) + " blue chips. (+" + format(player.sm.chipsToGet[1]) + ")" }, { "color": "#7970ffff", "font-size": "20px", "font-family": "monospace" }],
-                        ["raw-html", function () { return "You have " + format(player.sm.chips[2]) + " yellow chips. (+" + format(player.sm.chipsToGet[2]) + ")" }, { "color": "#fffd70ff", "font-size": "20px", "font-family": "monospace" }],
+                        ["raw-html", function () { return "你有 " + format(player.sm.chips[0]) + " red chips. (+" + format(player.sm.chipsToGet[0]) + ")" }, { "color": "#ff7070ff", "font-size": "20px", "font-family": "monospace" }],
+                        ["raw-html", function () { return "你有 " + format(player.sm.chips[1]) + " blue chips. (+" + format(player.sm.chipsToGet[1]) + ")" }, { "color": "#7970ffff", "font-size": "20px", "font-family": "monospace" }],
+                        ["raw-html", function () { return "你有 " + format(player.sm.chips[2]) + " yellow chips. (+" + format(player.sm.chipsToGet[2]) + ")" }, { "color": "#fffd70ff", "font-size": "20px", "font-family": "monospace" }],
                     ["blank", "12.5px"],
                             ["left-row", [
                     ["blank", "25px"],
@@ -1137,7 +1137,7 @@
         },
     },
     tabFormat: [
-        ["raw-html", function () { return "You have <h3>" + format(player.za.chancePoints) + "</h3> chance points. (+" + format(player.za.chancePointsPerSecond) + "/s)" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+        ["raw-html", function () { return "你有 <h3>" + format(player.za.chancePoints) + "</h3> chance points. (+" + format(player.za.chancePointsPerSecond) + "/秒）" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
         ["raw-html", () => { return player.za.chancePoints.gte(player.za.chancePointsSoftcapStart) ? "After " + format(player.za.chancePointsSoftcapStart) + " chance points, gain is divided by /" + format(player.za.chancePointsSoftcapEffect) + "." : "Softcap start: " + format(player.za.chancePointsSoftcapStart) + "." }, {color: "red", fontSize: "16px", fontFamily: "monospace"}],
         ["microtabs", "stuff", { 'border-width': '0px' }],
     ],

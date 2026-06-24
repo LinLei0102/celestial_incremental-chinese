@@ -649,7 +649,7 @@
                 content: [
                     ["blank", "25px"],
                     ["row", [
-                        ["raw-html", () => {return "You have <h3>" + format(player.bl.blood) + "</h3> blood."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "你有 <h3>" + format(player.bl.blood) + "</h3> blood."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                         ["raw-html", () => {return "(+" + format(player.bl.bloodToGet) + ")" }, () => {
                             let look = {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                             player.bl.bloodToGet.gte(1) ? look.color = "white" : look.color = "gray"
@@ -675,7 +675,7 @@
                 content: [
                     ["blank", "25px"],
                     ["row", [
-                        ["raw-html", () => {return "You have <h3>" + format(player.bl.blood) + "</h3> blood."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "你有 <h3>" + format(player.bl.blood) + "</h3> blood."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                         ["raw-html", () => {return "(+" + format(player.bl.bloodToGet) + ")" }, () => {
                             let look = {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                             player.bl.bloodToGet.gte(1) ? look.color = "white" : look.color = "gray"
@@ -683,22 +683,22 @@
                         }],
                 //        ["raw-html", () => {return (player.dp.prestigePointsToGet.gte(1e250)) ? "[SOFTCAPPED<sup>2</sup>]" : player.du.points.div(1000).pow(0.25).gte(1e7) ? "[SOFTCAPPED]" : ""}, {color: "red", fontSize: "18px", fontFamily: "monospace", marginLeft: "10px"}],
                     ]],
-                    ["raw-html", () => {return "You are draining " + format(player.bl.bloodDrainPerSecond) + " blood per second."}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
-                    ["raw-html", () => {return player.pet.legPetTimers[0].current.lte(0) ? "You will gain " + format(player.bl.xpGainPercentage.mul(100)) + "% of punchcard XP per second. (+"+ format(player.le.starmetalAlloyToGetTrue.mul(player.bl.xpGainPercentage)) +"/s) <br>(Only the currently active ones)" : ""}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
-                    ["raw-html", () => {return player.pet.legPetTimers[0].current.gt(0) ? "You will gain " + format(player.bl.xpGainPercentage.mul(100)) + "% of punchcard XP per second. (+"+ format(player.le.eclipseShardsToGetTrue.mul(player.bl.xpGainPercentage)) +"/s) <br>(Only the currently active ones)" : ""}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "You are draining " + format(player.bl.bloodDrainPerSecond) + " blood 每秒."}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return player.pet.legPetTimers[0].current.lte(0) ? "You will gain " + format(player.bl.xpGainPercentage.mul(100)) + "% of punchcard XP 每秒. (+"+ format(player.le.starmetalAlloyToGetTrue.mul(player.bl.xpGainPercentage)) +"/秒） <br>(Only the currently active ones)" : ""}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return player.pet.legPetTimers[0].current.gt(0) ? "You will gain " + format(player.bl.xpGainPercentage.mul(100)) + "% of punchcard XP 每秒. (+"+ format(player.le.eclipseShardsToGetTrue.mul(player.bl.xpGainPercentage)) +"/秒） <br>(Only the currently active ones)" : ""}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                     ["blank", "25px"],
                     ["row", [["clickable", 102], ["clickable", 103]]],
                     ["blank", "25px"],
                     ["style-row", [
                         ["style-column", [
                             ["style-column", [
-                                ["raw-html", function () { return "You have " + formatWhole(player.bl.bloodStones) + " blood stones." }, { "color": "white", "font-size": "20px", "font-family": "monospace" }],
+                                ["raw-html", function () { return "你有 " + formatWhole(player.bl.bloodStones) + " blood stones." }, { "color": "white", "font-size": "20px", "font-family": "monospace" }],
                             ], {width: "406px", height: "40px", borderRight: "2px solid #f57171ff"}],
                             ["row", [["dark-buyable", 11], ["dark-buyable", 12], ["dark-buyable", 13],["dark-buyable", 14]]],
                         ], {width: "408px"}],
                         ["style-column", [
                             ["style-column", [
-                                ["raw-html", function () { return "You have " + formatWhole(player.bl.bloodGems) + " blood gems." }, { "color": "white", "font-size": "20px", "font-family": "monospace" }],
+                                ["raw-html", function () { return "你有 " + formatWhole(player.bl.bloodGems) + " blood gems." }, { "color": "white", "font-size": "20px", "font-family": "monospace" }],
                             ], {width: "406px", height: "40px", borderLeft: "2px solid #f57171ff"}],
                             ["row", [["dark-buyable", 31], ["dark-buyable", 32], ["dark-buyable", 33],["dark-buyable", 34]]],
                         ], {width: "408px"}],
@@ -723,8 +723,8 @@
                                 ["clickable", 11],
                             ]]],
                             ["blank", "25px"],
-                            ["raw-html", function () { return "You have " + formatWhole(player.bl.bloodStones) + " blood stones." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
-                            ["raw-html", function () { return "You have " + formatWhole(player.bl.bloodGems) + " blood gems." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                            ["raw-html", function () { return "你有 " + formatWhole(player.bl.bloodStones) + " blood stones." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                            ["raw-html", function () { return "你有 " + formatWhole(player.bl.bloodGems) + " blood gems." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
                             ["blank", "25px"],
                             ["style-column", [
                                 ["levelable-display", [
@@ -809,8 +809,8 @@
         },
     },
     tabFormat: [
-        ["raw-html", () => { return !player.ir.inBattle ? "You have <h3>" + format(player.du.points) + "</h3> dark celestial points." : "" }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-        ["raw-html", () => { return !player.ir.inBattle ? "You are gaining <h3>" + format(player.du.pointGain) + "</h3> dark celestial points per second." : "" }, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+        ["raw-html", () => { return !player.ir.inBattle ? "You have <h3>" + format(player.du.points) + "</h3> dark 天体点数." : "" }, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+        ["raw-html", () => { return !player.ir.inBattle ? "You are gaining <h3>" + format(player.du.pointGain) + "</h3> dark 天体点数 每秒." : "" }, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
         ["raw-html", () => { return !player.ir.inBattle ? "UNAVOIDABLE SOFTCAP: /" + format(player.du.pointSoftcap) + " to gain." : "" }, {color: "red", fontSize: "16px", fontFamily: "monospace"}],
         ["raw-html", () => { return !player.ir.inBattle && player.du.pointGain.gte(player.du.secondSoftcapStart) ? "UNAVOIDABLE SOFTCAP<sup>2</sup>: Gain past " + format(player.du.secondSoftcapStart) + " is raised by ^" + format(player.du.pointSoftcap2) + "." : "" }, {color: "red", fontSize: "16px", fontFamily: "monospace"}],
         ["raw-html", () => { return !player.ir.inBattle && player.pet.legPetTimers[0].current.gt(0) ? "ECLIPSE IS ACTIVE: " + formatTime(player.pet.legPetTimers[0].current) + "." : ""}, {color: "#FEEF5F", fontSize: "20px", fontFamily: "monospace"}],
@@ -1698,7 +1698,7 @@ class BloodArena extends SpaceArena {
                                 enemy.angle = Math.atan2(dy, dx);
                             }
                             enemy.wrigglePhase = (enemy.wrigglePhase || 0) + 0.26;
-                            // Discrete drain: subtract 5 HP once per second using a cooldown (ms)
+                            // Discrete drain: subtract 5 HP once 每秒 using a cooldown (ms)
                             enemy.drainCooldown = (typeof enemy.drainCooldown === 'number') ? enemy.drainCooldown - dtMs : -dtMs;
                             while (typeof enemy.drainCooldown === 'number' && enemy.drainCooldown <= 0) {
                                 enemy.drainCooldown += 1000; // schedule next drain in 1s
@@ -1856,7 +1856,7 @@ class BloodArena extends SpaceArena {
                                 enemy.angle = Math.atan2(dy, dx);
                             }
                             enemy.wrigglePhase = (enemy.wrigglePhase || 0) + 0.14;
-                            // slower drain: 8 HP per second
+                            // slower drain: 8 HP 每秒
                             enemy.drainCooldown = (typeof enemy.drainCooldown === 'number') ? enemy.drainCooldown - dtMs : -dtMs;
                             while (typeof enemy.drainCooldown === 'number' && enemy.drainCooldown <= 0) {
                                 let dmg = 8

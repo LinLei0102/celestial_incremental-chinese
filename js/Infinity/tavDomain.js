@@ -2755,7 +2755,7 @@ addLayer("tad", {
                 content: [
                     ["blank", "15px"],
                     ["row", [
-                        ["raw-html", () => {return "You have " + formatSimple(player.tad.infinitum, 1) + " infinitum"}, {color: "black", fontSize: "24px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "你有 " + formatSimple(player.tad.infinitum, 1) + " infinitum"}, {color: "black", fontSize: "24px", fontFamily: "monospace"}],
                         ["raw-html", () => {return player.tad.infinitumGain.gt(1) ? "(+" + formatWhole(player.tad.infinitumGain) + ")" : ""}, {color: "black", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}],
                     ]],
                     ["raw-html", () => {return hasUpgrade("tad", 121) ? "Boosts matter gain by x" + formatSimple(player.tad.infinitumEffect) : ""}, {color: "black", fontSize: "20px", fontFamily: "monospace"}],
@@ -2798,13 +2798,13 @@ addLayer("tad", {
                 unlocked() { return hasUpgrade("tad", 135) },
                 content: [
                     ["blank", "10px"],
-                    ["raw-html", () => {return "You have " + formatSimple(player.in.infinities, 1) + " infinities"}, {color: "black", fontSize: "20px", fontFamily: "monospace"}],
-                    ["raw-html", () => {return "You have " + formatSimple(player.tad.infinitum, 1) + " infinitum"}, {color: "black", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "你有 " + formatSimple(player.in.infinities, 1) + " infinities"}, {color: "black", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "你有 " + formatSimple(player.tad.infinitum, 1) + " infinitum"}, {color: "black", fontSize: "20px", fontFamily: "monospace"}],
                     ["blank", "7px"],
                     ["style-row", [
                         ["style-column", [
                             ["style-column", [
-                                ["raw-html", () => {return "You have " + formatSimple(player.tad.altInfinities.broken.amount) + "<br>Broken Infinities"}, {color: "rgba(0,0,0,0.8)", fontSize: "16px", fontFamily: "monospace"}],
+                                ["raw-html", () => {return "你有 " + formatSimple(player.tad.altInfinities.broken.amount) + "<br>Broken Infinities"}, {color: "rgba(0,0,0,0.8)", fontSize: "16px", fontFamily: "monospace"}],
                                 ["raw-html", () => {return hasUpgrade("tad", 142) ? "(Highest: " + formatSimple(player.tad.altInfinities.broken.highest) + ")" : ""}, {color: "rgba(0,0,0,0.8)", fontSize: "12px", fontFamily: "monospace"}],
                             ], {width: "250px", height: "60px", borderRadius: "10px 10px 0 0"}],
                             ["style-column", [
@@ -2839,7 +2839,7 @@ addLayer("tad", {
                         ], {width: "250px", height: "272px", background: "#889110", border: "5px solid rgba(0,0,0,0.4)", borderRadius: "15px", margin: "3px"}],
                         ["style-column", [
                             ["style-column", [
-                                ["raw-html", () => {return "You have " + formatSimple(player.tad.altInfinities.shattered.amount) + "<br>Shattered Infinities"}, {color: "rgba(0,0,0,0.8)", fontSize: "16px", fontFamily: "monospace"}],
+                                ["raw-html", () => {return "你有 " + formatSimple(player.tad.altInfinities.shattered.amount) + "<br>Shattered Infinities"}, {color: "rgba(0,0,0,0.8)", fontSize: "16px", fontFamily: "monospace"}],
                                 ["raw-html", () => {return hasUpgrade("tad", 142) ? "(Highest: " + formatSimple(player.tad.altInfinities.shattered.highest) + ")" : ""}, {color: "rgba(0,0,0,0.8)", fontSize: "12px", fontFamily: "monospace"}],
                             ], {width: "250px", height: "60px", borderRadius: "10px 10px 0 0"}],
                             ["style-column", [
@@ -2874,7 +2874,7 @@ addLayer("tad", {
                         ], {width: "250px", height: "272px", background: "#73A112", border: "5px solid rgba(0,0,0,0.4)", borderRadius: "15px", margin: "3px"}],
                         ["style-column", [
                             ["style-column", [
-                                ["raw-html", () => {return "You have " + formatSimple(player.tad.altInfinities.fragmented.amount) + "<br>Fragmented Infinities"}, {color: "rgba(0,0,0,0.8)", fontSize: "16px", fontFamily: "monospace"}],
+                                ["raw-html", () => {return "你有 " + formatSimple(player.tad.altInfinities.fragmented.amount) + "<br>Fragmented Infinities"}, {color: "rgba(0,0,0,0.8)", fontSize: "16px", fontFamily: "monospace"}],
                                 ["raw-html", () => {return hasUpgrade("tad", 142) ? "(Highest: " + formatSimple(player.tad.altInfinities.fragmented.highest) + ")" : ""}, {color: "rgba(0,0,0,0.8)", fontSize: "12px", fontFamily: "monospace"}],
                             ], {width: "250px", height: "60px", borderRadius: "10px 10px 0 0"}],
                             ["style-column", [
@@ -2899,7 +2899,7 @@ addLayer("tad", {
                                         ["color-text", [() => {return "100"}, true, "black", () => {return player.tad.altInfinities.fragmented.milestone.gte(3)}, "rgba(0,0,0,0.5)"]],
                                     ], {width: "40px", height: "40px", borderRight: "3px solid #265314"}],
                                     ["style-row", [
-                                        ["color-text", [() => {return "<small>Produce +25% infinities per second.</small>"}, true, "black", () => {return player.tad.altInfinities.fragmented.milestone.gte(3)}, "rgba(0,0,0,0.5)"]],
+                                        ["color-text", [() => {return "<small>Produce +25% infinities 每秒.</small>"}, true, "black", () => {return player.tad.altInfinities.fragmented.milestone.gte(3)}, "rgba(0,0,0,0.5)"]],
                                     ], {width: "207px", height: "40px"}],
                                 ], {width: "250px", height: "40px"}],
                             ], {width: "250px", height: "126px", background: "#336f1b", borderTop: "3px solid #265314", borderBottom: "3px solid #265314"}],
@@ -2914,7 +2914,7 @@ addLayer("tad", {
                     ["style-row", [
                         ["style-column", [
                             ["style-column", [
-                                ["raw-html", () => {return "You have " + formatSimple(player.tad.altInfinities.corrupted.amount) + "<br>Corrupted Infinities"}, {color: "rgba(0,0,0,0.8)", fontSize: "16px", fontFamily: "monospace"}],
+                                ["raw-html", () => {return "你有 " + formatSimple(player.tad.altInfinities.corrupted.amount) + "<br>Corrupted Infinities"}, {color: "rgba(0,0,0,0.8)", fontSize: "16px", fontFamily: "monospace"}],
                                 ["raw-html", () => {return hasUpgrade("tad", 142) ? "(Highest: " + formatSimple(player.tad.altInfinities.corrupted.highest) + ")" : ""}, {color: "rgba(0,0,0,0.8)", fontSize: "12px", fontFamily: "monospace"}],
                             ], {width: "250px", height: "60px", borderRadius: "10px 10px 0 0"}],
                             ["style-column", [
@@ -2949,7 +2949,7 @@ addLayer("tad", {
                         ], {width: "250px", height: "272px", background: "#911088", border: "5px solid rgba(0,0,0,0.4)", borderRadius: "15px", margin: "3px"}],
                         ["style-column", [
                             ["style-column", [
-                                ["raw-html", () => {return "You have " + formatSimple(player.tad.altInfinities.disfigured.amount) + "<br>Disfigured Infinities"}, {color: "rgba(0,0,0,0.8)", fontSize: "16px", fontFamily: "monospace"}],
+                                ["raw-html", () => {return "你有 " + formatSimple(player.tad.altInfinities.disfigured.amount) + "<br>Disfigured Infinities"}, {color: "rgba(0,0,0,0.8)", fontSize: "16px", fontFamily: "monospace"}],
                                 ["raw-html", () => {return hasUpgrade("tad", 142) ? "(Highest: " + formatSimple(player.tad.altInfinities.disfigured.highest) + ")" : ""}, {color: "rgba(0,0,0,0.8)", fontSize: "12px", fontFamily: "monospace"}],
                             ], {width: "250px", height: "60px", borderRadius: "10px 10px 0 0"}],
                             ["style-column", [
@@ -2984,7 +2984,7 @@ addLayer("tad", {
                         ], {width: "250px", height: "272px", background: "#A11273", border: "5px solid rgba(0,0,0,0.4)", borderRadius: "15px", margin: "3px"}],
                         ["style-column", [
                             ["style-column", [
-                                ["raw-html", () => {return "You have " + formatSimple(player.tad.altInfinities.distorted.amount) + "<br>Distorted Infinities"}, {color: "rgba(0,0,0,0.8)", fontSize: "16px", fontFamily: "monospace"}],
+                                ["raw-html", () => {return "你有 " + formatSimple(player.tad.altInfinities.distorted.amount) + "<br>Distorted Infinities"}, {color: "rgba(0,0,0,0.8)", fontSize: "16px", fontFamily: "monospace"}],
                                 ["raw-html", () => {return hasUpgrade("tad", 142) ? "(Highest: " + formatSimple(player.tad.altInfinities.distorted.highest) + ")" : ""}, {color: "rgba(0,0,0,0.8)", fontSize: "12px", fontFamily: "monospace"}],
                             ], {width: "250px", height: "60px", borderRadius: "10px 10px 0 0"}],
                             ["style-column", [
@@ -3024,7 +3024,7 @@ addLayer("tad", {
                     ["style-row", [
                         ["style-column", [
                             ["style-column", [
-                                ["raw-html", () => {return "You have " + formatSimple(player.tad.altInfinities.infected.amount) + "<br>Infected Infinities"}, {color: "rgba(0,0,0,0.8)", fontSize: "16px", fontFamily: "monospace"}],
+                                ["raw-html", () => {return "你有 " + formatSimple(player.tad.altInfinities.infected.amount) + "<br>Infected Infinities"}, {color: "rgba(0,0,0,0.8)", fontSize: "16px", fontFamily: "monospace"}],
                                 ["raw-html", () => {return hasUpgrade("tad", 142) ? "(Highest: " + formatSimple(player.tad.altInfinities.infected.highest) + ")" : ""}, {color: "rgba(0,0,0,0.8)", fontSize: "12px", fontFamily: "monospace"}],
                             ], {width: "250px", height: "60px", borderRadius: "10px 10px 0 0"}],
                             ["style-column", [
@@ -3059,7 +3059,7 @@ addLayer("tad", {
                         ], {width: "250px", height: "272px", background: "#108891", border: "5px solid rgba(0,0,0,0.4)", borderRadius: "15px", margin: "3px"}],
                         ["style-column", [
                             ["style-column", [
-                                ["raw-html", () => {return "You have " + formatSimple(player.tad.altInfinities.infested.amount) + "<br>Infested Infinities"}, {color: "rgba(0,0,0,0.8)", fontSize: "16px", fontFamily: "monospace"}],
+                                ["raw-html", () => {return "你有 " + formatSimple(player.tad.altInfinities.infested.amount) + "<br>Infested Infinities"}, {color: "rgba(0,0,0,0.8)", fontSize: "16px", fontFamily: "monospace"}],
                                 ["raw-html", () => {return hasUpgrade("tad", 142) ? "(Highest: " + formatSimple(player.tad.altInfinities.infested.highest) + ")" : ""}, {color: "rgba(0,0,0,0.8)", fontSize: "12px", fontFamily: "monospace"}],
                             ], {width: "250px", height: "60px", borderRadius: "10px 10px 0 0"}],
                             ["style-column", [
@@ -3183,9 +3183,9 @@ addLayer("tad", {
                 content: [
                     ["clickable", 1],
                     ["blank", "15px"],
-                    ["raw-html", () => { return "You have <h3>" + formatWhole(player.in.infinityPoints) + "</h3> infinity points." }, {color: "black", fontSize: "16px", fontFamily: "monospace"}],
-                    ["raw-html", () => { return "You have <h3>" + formatWhole(player.ta.negativeInfinityPoints) + "</h3> negative infinity points." }, {color: "black", fontSize: "16px", fontFamily: "monospace"}],
-                    ["raw-html", () => { return "You have <h3>" + formatWhole(player.s.singularityPoints) + "</h3> singularity points."}, {color: "black", fontSize: "16px", fontFamily: "monospace"}],
+                    ["raw-html", () => { return "你有 <h3>" + formatWhole(player.in.infinityPoints) + "</h3> infinity points." }, {color: "black", fontSize: "16px", fontFamily: "monospace"}],
+                    ["raw-html", () => { return "你有 <h3>" + formatWhole(player.ta.negativeInfinityPoints) + "</h3> negative infinity points." }, {color: "black", fontSize: "16px", fontFamily: "monospace"}],
+                    ["raw-html", () => { return "你有 <h3>" + formatWhole(player.s.singularityPoints) + "</h3> singularity points."}, {color: "black", fontSize: "16px", fontFamily: "monospace"}],
                     ["blank", "25px"],
                     ["row", [["clickable", 26], ["clickable", 27]]],
                     ["blank", "10px"],
@@ -3246,13 +3246,13 @@ addLayer("tad", {
     },
     tabFormat: [
         ["tooltip-row", [
-            ["raw-html", () => {return "You have " + formatSimple(player.tad.matter) + " matter"}, {color: "black", fontSize: "24px", fontFamily: "monospace"}],
-            ["raw-html", () => {return "(+" + formatSimple(player.tad.matterGain) + "/s)"}, () => {
+            ["raw-html", () => {return "你有 " + formatSimple(player.tad.matter) + " matter"}, {color: "black", fontSize: "24px", fontFamily: "monospace"}],
+            ["raw-html", () => {return "(+" + formatSimple(player.tad.matterGain) + "/秒）"}, () => {
                 look = {color: "black", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}
                 player.tad.matterGain.gt(0) ? look.color = "black" : look.color = "#666"
                 return look
             }],
-            ["raw-html", () => {return "<div class='bottomTooltip'>Base Gain<hr><small>(+" + formatSimple(player.tad.matterBase) + "/s)</small></div>"}],
+            ["raw-html", () => {return "<div class='bottomTooltip'>Base Gain<hr><small>(+" + formatSimple(player.tad.matterBase) + "/秒）</small></div>"}],
         ]],
         ["raw-html", () => {return player.tad.matterGain.gte(1.79e308) ? "Matter Limiter: Gain past 1.79e308 is raised by ^" + formatSimple(player.tad.matterSoftcap, 3) : ""}, {color: "red", fontSize: "20px", fontFamily: "monospace"}],
         ["tooltip-row", [

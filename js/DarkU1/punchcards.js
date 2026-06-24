@@ -167,7 +167,7 @@ addLayer("pu", {
             title() { return "Reroll Punchcards<br>Req: " + format(player.pu.rerollCost) + " Reroll Points</h5>" },
             canClick() { return player.rp.rerollPoints.gte(player.pu.rerollCost)},
             unlocked() { return getLevelableTier("pu", 402, true)},
-            tooltip() { return "You have " + format(player.rp.rerollPoints) + " Reroll Points."},
+            tooltip() { return "你有 " + format(player.rp.rerollPoints) + " Reroll Points."},
             onClick() {
                 player.rp.rerollPoints = player.rp.rerollPoints.sub(player.pu.rerollCost)
                 player.pu.rerolls = player.pu.rerolls.add(1)

@@ -783,12 +783,12 @@ addLayer("fi", {
                     ["style-row", [
                 ["tooltip-row", [
                 ["raw-html", "<img src='resources/battle/temporalDust.png'style='width:60px;height:60px;margin:5px'></img>", {width: "70px", height: "70px", display: "block"}],
-                ["raw-html", () => { return "You have " + formatWhole(player.fi.temporalDust) + " temporal dust."}, {width: "180px", height: "50px", color: "#06366e", display: "inline-flex", alignItems: "center", paddingLeft: "5px"}],
+                ["raw-html", () => { return "你有 " + formatWhole(player.fi.temporalDust) + " temporal dust."}, {width: "180px", height: "50px", color: "#06366e", display: "inline-flex", alignItems: "center", paddingLeft: "5px"}],
                 ["raw-html", "<div class='bottomTooltip'>Temporal Dust<hr><small>(Gained from battle)</small></div>"],
                       ]],
                 ["tooltip-row", [
                 ["raw-html", "<img src='resources/battle/temporalShards.png'style='width:60px;height:60px;margin:5px'></img>", {width: "70px", height: "70px", display: "block"}],
-                ["raw-html", () => { return "You have " + formatWhole(player.fi.temporalShards) + " temporal shards."}, {width: "180px", height: "50px", color: "#06366e", display: "inline-flex", alignItems: "center", paddingLeft: "5px"}],
+                ["raw-html", () => { return "你有 " + formatWhole(player.fi.temporalShards) + " temporal shards."}, {width: "180px", height: "50px", color: "#06366e", display: "inline-flex", alignItems: "center", paddingLeft: "5px"}],
                 ["raw-html", "<div class='bottomTooltip'>Temporal Shards<hr><small>(Gained from battle)</small></div>"],
                       ]],                
                     ], {width: '550px', height: '80px', borderBottom: "3px solid rgb(218, 218, 218)", }], 

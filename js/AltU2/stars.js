@@ -296,7 +296,7 @@ addLayer("st", {
             image() { return this.canClick() ? "resources/Pets/gwaCommonPet.png" : "resources/secret.png"},
             title() { return "Gwa" },
             description() {
-                return "x" + format(this.effect()[0]) + " to dark celestial points.<br>"
+                return "x" + format(this.effect()[0]) + " to dark 天体点数.<br>"
             },
             levelLimit() { return getLevelableTier(this.layer, this.id).mul(5).add(10).min(50)},
             effect() {
@@ -688,7 +688,7 @@ addLayer("st", {
             image() { return this.canClick() ? "resources/Pets/testeUncommonPet.png" : "resources/secret.png"},
             title() { return "Teste" },
             description() {
-                return "^" + format(this.effect()[0]) + " to dark celestial point softcap.<br>"
+                return "^" + format(this.effect()[0]) + " to dark 天体点数 softcap.<br>"
             },
             levelLimit() { return getLevelableTier(this.layer, this.id).mul(5).add(10).min(50)},
             effect() {
@@ -2199,7 +2199,7 @@ addLayer("st", {
             cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()).floor() },
             canAfford() { return this.currency().gte(this.cost()) },
             display() {
-                return "Produce " + formatWhole(tmp[this.layer].buyables[this.id].effect.mul(100)) + "% of activated fuel per second.\n\
+                return "Produce " + formatWhole(tmp[this.layer].buyables[this.id].effect.mul(100)) + "% of activated fuel 每秒.\n\
                     Cost: " + formatWhole(tmp[this.layer].buyables[this.id].cost) + " Stars"
             },
             branches: [203],
@@ -2231,7 +2231,7 @@ addLayer("st", {
             cost(x) { return this.costGrowth().pow(x || getBuyableAmount(this.layer, this.id)).mul(this.costBase()).floor() },
             canAfford() { return this.currency().gte(this.cost()) },
             display() {
-                return "Produce " + formatWhole(tmp[this.layer].buyables[this.id].effect.mul(100)) + "% of rocket parts per second.\n\
+                return "Produce " + formatWhole(tmp[this.layer].buyables[this.id].effect.mul(100)) + "% of rocket parts 每秒.\n\
                     Cost: " + formatWhole(tmp[this.layer].buyables[this.id].cost) + " Planets"
             },
             branches: [204],
@@ -2449,7 +2449,7 @@ addLayer("st", {
                         ["style-row", [
                             ["style-column", [
                                 ["blank", "25px"],
-                                ["raw-html", function () { return "You have <h3>" + formatWhole(player.au2.stars) + "</h3> stars." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                                ["raw-html", function () { return "你有 <h3>" + formatWhole(player.au2.stars) + "</h3> stars." }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
                                 ["raw-html", function () { return "You will gain " + formatWhole(player.au2.starsToGet) + " stars on reset." }, { "color": "white", "font-size": "20px", "font-family": "monospace" }],
                                 ["blank", "25px"],
                                 ["raw-html", function () { return "Evolution shard cost: " + formatWhole(player.ro.evoCost) + "" }, { "color": "#d487fd", "font-size": "24px", "font-family": "monospace" }],
@@ -2516,8 +2516,8 @@ addLayer("st", {
                 content: [
                     ["blank", "25px"],
                     ["row", [
-                        ["raw-html", () => {return "You have " + formatWhole(player.st.starPower) + " star power"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-                        ["raw-html", () => {return "(+" + formatWhole(player.st.starPowerPerSecond) + "/s)"}, () => {
+                        ["raw-html", () => {return "你有 " + formatWhole(player.st.starPower) + " star power"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "(+" + formatWhole(player.st.starPowerPerSecond) + "/秒）"}, () => {
                             let look = {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                             player.st.starPowerPerSecond.gt(0) ? look.color = "white" : look.color = "gray"
                             return look
@@ -2536,7 +2536,7 @@ addLayer("st", {
                     ["blank", "25px"],
                     ["row", [
                         ["column", [
-                            ["raw-html", () => {return getBuyableAmount("st", 1).gte(1) ? "1st dimension power: " + formatShort(player.st.dimensionPower[0]) + " (+" + formatShort(player.st.dimensionPowerPerSecond[0]) + "/s, +" + formatShort(player.st.dimensionPowerEffects[0]) + " SP/s)" : ""}, { color: "white", fontSize: "20px", fontFamily: "monospace" }],
+                            ["raw-html", () => {return getBuyableAmount("st", 1).gte(1) ? "1st dimension power: " + formatShort(player.st.dimensionPower[0]) + " (+" + formatShort(player.st.dimensionPowerPerSecond[0]) + "/s, +" + formatShort(player.st.dimensionPowerEffects[0]) + " SP/秒）" : ""}, { color: "white", fontSize: "20px", fontFamily: "monospace" }],
                             ["raw-html", () => {return getBuyableAmount("st", 1).gte(1) ? "1st dimension (" + formatShort(buyableEffect("st", "11")) + "x): " + formatShort(player.st.dimensionAmounts[0]) + " (+" + formatShort(player.st.dimensionsGain[0]) + ")" : ""}, { color: "white", fontSize: "20px", fontFamily: "monospace" }]
                         ], {width: "700px"}],
                         ["style-row", [["bar", 0], ["buyable", 11]], {border: "2px solid white", borderRadius: "17px", margin: "-1px"}],
@@ -2678,7 +2678,7 @@ addLayer("st", {
     },
     tabFormat: [
         ["row", [
-            ["raw-html", () => {return "You have <h3>" + formatWhole(player.au2.stars) + "</h3> stars"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+            ["raw-html", () => {return "你有 <h3>" + formatWhole(player.au2.stars) + "</h3> stars"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
             ["raw-html", () => {return "(+" + formatWhole(player.au2.starsToGet) + ")"}, () => {
                 let look = {color: "white", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}
                 player.au2.starsToGet.gt(0) ? look.color = "white" : look.color = "gray"
@@ -2686,7 +2686,7 @@ addLayer("st", {
             }],
         ]],
         ["raw-html", () => {return player.au2.starSoftcapActive ? "After " + format(player.au2.starSoftcapStart) + " stars, raise star gain by ^" + format(player.au2.starSoftcapEffect) + "." : ""}, {color: "red", fontSize: "16px", fontFamily: "monospace"}],
-        ["raw-html", () => {return "You have " + formatWhole(player.pl.planets) + " planets"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+        ["raw-html", () => {return "你有 " + formatWhole(player.pl.planets) + " planets"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
         ["microtabs", "stuff", { 'border-width': '0px' }],
         ["blank", "25px"],
     ],

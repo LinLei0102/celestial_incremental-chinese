@@ -67,7 +67,7 @@
                     ], {width: "400px", padding: "10px 20px", backgroundColor: "#1a0b15", border: "3px solid #411c35", borderRadius: "20px"}],
                         ["blank", "10px"],
                     ["style-column", [
-                        ["raw-html", () => { return "<h2>Your pests are killing the grasshoppers,<br>so -" + formatShort(player.pe.pestEffect[7]*100) + "% grasshoppers per second." }, {color: "white", fontSize: "16px", fontFamily: "monospace" }],
+                        ["raw-html", () => { return "<h2>Your pests are killing the grasshoppers,<br>so -" + formatShort(player.pe.pestEffect[7]*100) + "% grasshoppers 每秒." }, {color: "white", fontSize: "16px", fontFamily: "monospace" }],
                         ["blank", "10px"],
                         ["raw-html", () => {return hasAchievement("achievements", 108) ? "<h2>Grasshops remove 20% of your pests." : "<h2>Grasshops remove 10% of your pests." }, {color: "white", fontSize: "16px", fontFamily: "monospace" }],
                     ], {width: "600px", padding: "10px", backgroundColor: "#1a0b15", border: "3px solid #411c35", borderRadius: "20px"}],
@@ -78,7 +78,7 @@
     tabFormat: [
         ["row", [
             ["raw-html", () => { return "There are <h3>" + format(player.pe.pests) + "</h3> pests" }, {color: "white", fontSize: "24px", fontFamily: "monospace" }],
-            ["raw-html", () => { return "(+" + format(player.pe.pestsPerSecond) + "/s)"}, {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
+            ["raw-html", () => { return "(+" + format(player.pe.pestsPerSecond) + "/秒）"}, {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
         ]],
         ["microtabs", "stuff", { 'border-width': '0px' }],
         ["blank", "25px"],

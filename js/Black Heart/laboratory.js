@@ -366,28 +366,28 @@ addLayer("laboratory", {
         ["style-row", [
             ["theme-scroll-column", [
                 ["style-row", [
-                    ["raw-html", () => {return "You have " + formatWhole(player.laboratory.matosDust) + " Matos Dust."}, {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "你有 " + formatWhole(player.laboratory.matosDust) + " Matos Dust."}, {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}],
                 ], {width: "547px", height: "35px", background: "var(--miscButtonHover)", borderBottom: "3px solid var(--regBorder)"}],
                 ["blank", "4px"],
                 ["row", [["upgrade", 1], ["upgrade", 2], ["upgrade", 3], ["upgrade", 4]]],
                 ["row", [["upgrade", 5], ["upgrade", 6], ["buyable", 1], ["buyable", 2]]],
                 ["blank", "4px"],
                 ["style-row", [
-                    ["raw-html", () => {return "You have " + formatWhole(player.laboratory.matosShard) + " Matos Shards."}, {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "你有 " + formatWhole(player.laboratory.matosShard) + " Matos Shards."}, {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}],
                 ], () => {return player.laboratory.highestCombo.gt(5) ? {width: "547px", height: "35px", background: "var(--miscButtonHover)", borderTop: "3px solid var(--regBorder)", borderBottom: "3px solid var(--regBorder)"} : {display: "none !important"}}],
                 ["blank", "4px"],
                 ["row", [["upgrade", 11], ["upgrade", 12], ["upgrade", 13], ["upgrade", 14]]],
                 ["row", [["upgrade", 15], ["upgrade", 16], ["buyable", 11], ["buyable", 12]]],
                 ["blank", "4px"],
                 ["style-column", [
-                    ["raw-html", () => {return "You have " + formatWhole(player.laboratory.matosFragment) + " Matos Fragments."}, {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "你有 " + formatWhole(player.laboratory.matosFragment) + " Matos Fragments."}, {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}],
                     ["raw-html", () => {return "Boosts matos dust gain by x" + formatSimple(player.laboratory.matosFragment.add(1).log(10).add(1))}, {color: "var(--textColor)", fontSize: "16px", fontFamily: "monospace"}],
                 ], () => {return player.laboratory.highestCombo.gt(10) ? {width: "547px", height: "40px", background: "var(--miscButtonHover)", borderTop: "3px solid var(--regBorder)", borderBottom: "3px solid var(--regBorder)"} : {display: "none !important"}}],
                 ["blank", "4px"],
 
                 ["blank", "4px"],
                 ["style-column", [
-                    ["raw-html", () => {return "You have " + formatWhole(player.laboratory.matosEssence) + " Matos Essence."}, {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "你有 " + formatWhole(player.laboratory.matosEssence) + " Matos Essence."}, {color: "var(--textColor)", fontSize: "20px", fontFamily: "monospace"}],
                     ["raw-html", () => {return "Boosts matos shard gain by x" + formatSimple(player.laboratory.matosEssence.add(1).log(10).add(1))}, {color: "var(--textColor)", fontSize: "16px", fontFamily: "monospace"}],
                 ], () => {return player.laboratory.highestCombo.gt(15) ? {width: "547px", height: "40px", background: "var(--miscButtonHover)", borderTop: "3px solid var(--regBorder)", borderBottom: "3px solid var(--regBorder)"} : {display: "none !important"}}],
                 ["blank", "4px"],

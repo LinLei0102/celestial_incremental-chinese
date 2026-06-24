@@ -936,8 +936,8 @@ addLayer("pol", {
     },
     tabFormat: [
         ["row", [
-            ["raw-html", () => { return "You have <h3>" + format(player.pol.pollinators) + "</h3> pollinators." }, {color: "#cb8e00", fontSize: "24px", fontFamily: "monospace"}],
-            ["raw-html", () => { return "(+" + format(player.pol.pollinatorsPerSecond) + "/s)" }, () => {
+            ["raw-html", () => { return "你有 <h3>" + format(player.pol.pollinators) + "</h3> pollinators." }, {color: "#cb8e00", fontSize: "24px", fontFamily: "monospace"}],
+            ["raw-html", () => { return "(+" + format(player.pol.pollinatorsPerSecond) + "/秒）" }, () => {
                 let look = {color: "#cb8e00", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                 player.pol.pollinatorsPerSecond.gt(0) ? look.color = "#cb8e00" : look.color = "gray"
                 return look

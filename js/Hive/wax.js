@@ -55,7 +55,7 @@ addLayer("wa", {
                 unlocked: true,
                 content: [
                     ["blank", "10px"],
-                    ["raw-html", () => {return "You have " + formatWhole(player.wa.wax) + " Wax"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                    ["raw-html", () => {return "你有 " + formatWhole(player.wa.wax) + " Wax"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                     ["raw-html", () => {return "(+" + formatWhole(player.wa.waxGain) + ")"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
                     ["blank", "10px"],
                     ["clickable", 1],
@@ -65,12 +65,12 @@ addLayer("wa", {
     },
     tabFormat: [
         ["style-row", [
-            ["raw-html", () => {return "You have " + format(player.bb.beeBread) + " Bee Bread"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
-            ["raw-html", () => {return "(" + format(player.bb.beeBreadPerSecond) + "/s)"}, {color: "white", fontSize: "16px", fontFamily: "monospace", marginLeft: "10px"}],
+            ["raw-html", () => {return "你有 " + format(player.bb.beeBread) + " Bee Bread"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+            ["raw-html", () => {return "(" + format(player.bb.beeBreadPerSecond) + "/秒）"}, {color: "white", fontSize: "16px", fontFamily: "monospace", marginLeft: "10px"}],
         ]],
         ["style-row", [
-            ["raw-html", () => {return "You have " + format(player.ho.honey) + " Honey"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
-            ["raw-html", () => {return "(" + format(player.ho.honeyPerSecond) + "/s)"}, {color: "white", fontSize: "16px", fontFamily: "monospace", marginLeft: "10px"}],
+            ["raw-html", () => {return "你有 " + format(player.ho.honey) + " Honey"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+            ["raw-html", () => {return "(" + format(player.ho.honeyPerSecond) + "/秒）"}, {color: "white", fontSize: "16px", fontFamily: "monospace", marginLeft: "10px"}],
         ]],
         ["blank", "10px"],
         ["microtabs", "Tabs", {borderWidth: "0"}],

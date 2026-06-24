@@ -229,7 +229,7 @@
         },    
         13: {
             title() { return "<br><h3>Start Game</h3><br><h4>Cost: " + formatWhole(player.zd.gameCost) + " Evo Shards" },
-            tooltip() { return "You have " + formatWhole(player.cb.evolutionShards) + " evolution shards." },
+            tooltip() { return "你有 " + formatWhole(player.cb.evolutionShards) + " evolution shards." },
             canClick() { return player.zd.gameOver && player.cb.evolutionShards.gte(player.zd.gameCost) },
             unlocked() { return true },
             onClick() {
@@ -678,7 +678,7 @@
                     ["blank", "50px"],
                     ["style-row", [
                     ["column", [
-                    ["raw-html", function () { return "You have <h3>" + formatWhole(player.zd.zarChips) + "</h3> zar chips. (+" + formatWhole(player.zd.zarChipsToGet) + ")"}, { "color": "white", "font-size": "24px", "font-family": "monospace" }], 
+                    ["raw-html", function () { return "你有 <h3>" + formatWhole(player.zd.zarChips) + "</h3> zar chips. (+" + formatWhole(player.zd.zarChipsToGet) + ")"}, { "color": "white", "font-size": "24px", "font-family": "monospace" }], 
                     ["blank", "15px"],
                     ]]
                     ], {width: "1277px", height: "75px", backgroundColor: "#303030", border: "3px solid #7f7f7f", padding: "5px"}],
@@ -716,7 +716,7 @@
                 content: [
                     ["blank", "25px"],
                     ["style-column", [
-                    ["raw-html", function () { return "You have <h3>" + formatWhole(player.zd.pips) + "</h3> dice pips."}, { "color": "white", "font-size": "24px", "font-family": "monospace" }], 
+                    ["raw-html", function () { return "你有 <h3>" + formatWhole(player.zd.pips) + "</h3> dice pips."}, { "color": "white", "font-size": "24px", "font-family": "monospace" }], 
                     ["style-row", [["upgrade", 11],["upgrade", 12],["upgrade", 13],["upgrade", 14],], {width: "502px", height: "200px",}],
                     ], {width: "1184px", height: "260px", backgroundColor: "#4e4e4e", border: "3px solid #dadada", borderRadius: "25px 25px 0px 0px", padding: "5px"}],
                     ["buttonless-microtabs", "stages", {borderWidth: "0"}],
@@ -725,7 +725,7 @@
         },
     },
     tabFormat: [
-                ["raw-html", function () { return "You have <h3>" + format(player.za.chancePoints) + "</h3> chance points. (+" + format(player.za.chancePointsPerSecond) + "/s)" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
+                ["raw-html", function () { return "你有 <h3>" + format(player.za.chancePoints) + "</h3> chance points. (+" + format(player.za.chancePointsPerSecond) + "/秒）" }, { "color": "white", "font-size": "24px", "font-family": "monospace" }],
         ["raw-html", () => { return player.za.chancePoints.gte(player.za.chancePointsSoftcapStart) ? "After " + format(player.za.chancePointsSoftcapStart) + " chance points, gain is divided by /" + format(player.za.chancePointsSoftcapEffect) + "." : "Softcap start: " + format(player.za.chancePointsSoftcapStart) + "." }, {color: "red", fontSize: "16px", fontFamily: "monospace"}],
         ["microtabs", "stuff", { 'border-width': '0px' }],
     ],

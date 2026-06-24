@@ -326,7 +326,7 @@ addLayer("dgj", {
             },
         },
         12: {
-            effectDescription() { return "Increase dark celestial point gain by 100% per grass jump<br>Currently: x" + format(player.dgj.milestone2Effect) + "." },
+            effectDescription() { return "Increase dark 天体点数 gain by 100% per grass jump<br>Currently: x" + format(player.dgj.milestone2Effect) + "." },
             done() { return player.dgj.grassJump.gte(2) },
             style() {
                 let look = {width: "500px", minHeight: "75px", color: "white", border: "3px solid #00488F", borderTop: "0px", borderRadius: "0px"}
@@ -447,8 +447,8 @@ addLayer("dgj", {
                 content: [
                     ["blank", "25px"],
                     ["row", [
-                        ["raw-html", () => {return "You have <h3>" + format(player.dgj.grassJumpers) + "</h3> grassjumpers"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
-                        ["raw-html", () => {return "(+" + format(player.dgj.grassJumpersGain) + "/s)"}, {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
+                        ["raw-html", () => {return "你有 <h3>" + format(player.dgj.grassJumpers) + "</h3> grassjumpers"}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "(+" + format(player.dgj.grassJumpersGain) + "/秒）"}, {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}],
                     ]],
                     ["blank", "25px"],
                     ["row", [["ex-buyable", 11], ["ex-buyable", 12], ["ex-buyable", 13]]],
@@ -458,7 +458,7 @@ addLayer("dgj", {
         },
     },
     tabFormat: [
-        ["raw-html", () => { return "You have <h3>" + format(player.dgr.grass) + "</h3> dark grass"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+        ["raw-html", () => { return "你有 <h3>" + format(player.dgr.grass) + "</h3> dark grass"}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
         ["raw-html", () => { return player.pet.legPetTimers[0].current.gt(0) ? "ECLIPSE IS ACTIVE: " + formatTime(player.pet.legPetTimers[0].current) + "." : ""}, {color: "#FEEF5F", fontSize: "20px", fontFamily: "monospace"}],
         ["microtabs", "stuff", { 'border-width': '0px' }],
         ["blank", "25px"],

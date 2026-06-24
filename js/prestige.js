@@ -345,7 +345,7 @@
         11: {
             title: "Prestige Upgrade I",
             unlocked() { return true },
-            description: "Triples celestial point gain.",
+            description: "Triples 天体点数 gain.",
             cost: new Decimal(1),
             currencyLocation() { return player.p },
             currencyDisplayName: "Prestige Points",
@@ -355,7 +355,7 @@
         12: {
             title: "Prestige Upgrade II",
             unlocked() { return true },
-            description: "Unlock a prestige effect that buffs celestial points.",
+            description: "Unlock a prestige effect that buffs 天体点数.",
             cost: new Decimal(2),
             currencyLocation() { return player.p },
             currencyDisplayName: "Prestige Points",
@@ -768,7 +768,7 @@
                 content: [
                     ["blank", "25px"],
                     ["row", [
-                        ["raw-html", () => {return "You have <h3>" + format(player.p.crystals) + "</h3> crystals."}, {color: "#b6658c", fontSize: "24px", fontFamily: "monospace"}],
+                        ["raw-html", () => {return "你有 <h3>" + format(player.p.crystals) + "</h3> crystals."}, {color: "#b6658c", fontSize: "24px", fontFamily: "monospace"}],
                         ["raw-html", () => {return "(+" + format(player.p.crystalsToGet) + ")"}, () => {
                             let look = {color: "#b6658c", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                             player.p.crystalsToGet.gte(1) ? look.color = "#b6658c" : look.color = "gray"
@@ -791,10 +791,10 @@
     },
 
     tabFormat: [
-        ["raw-html", () => { return "You have <h3>" + format(player.points) + "</h3> celestial points (" + format(player.gain) + "/s)." }, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
+        ["raw-html", () => { return "你有 <h3>" + format(player.points) + "</h3> 天体点数 (" + format(player.gain) + "/秒）." }, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
         ["raw-html", () => {return player.gain.gt(player.i.doomSoftcapStart) ? "SOFTCAP OF DOOM: Gain past " + format(player.i.doomSoftcapStart) + " is raised by ^" + format(player.i.doomSoftcap, 3) + "." : ""}, {color: "red", fontSize: "12px", fontFamily: "monospace"}],
         ["row", [
-            ["raw-html", () => { return "You have <h3>" + format(player.p.prestigePoints) + "</h3> prestige points." }, {color: "#31aeb0", fontSize: "24px", fontFamily: "monospace"}],
+            ["raw-html", () => { return "你有 <h3>" + format(player.p.prestigePoints) + "</h3> prestige points." }, {color: "#31aeb0", fontSize: "24px", fontFamily: "monospace"}],
             ["raw-html", () => { return "(+" + format(player.p.prestigePointsToGet) + ")"}, () => {
                 let look = {fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                 if (player.points.gt(100000)) {look.color = "#31aeb0"} else {look.color = "gray"}

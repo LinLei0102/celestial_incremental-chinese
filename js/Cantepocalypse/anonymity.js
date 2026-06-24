@@ -145,7 +145,7 @@
         13: {
             title: "Anonymity III",
             unlocked() { return true },
-            description: "Gain 5% of rank points per second.",
+            description: "Gain 5% of rank points 每秒.",
             cost: new Decimal(16),
             currencyLocation() { return player.an },
             currencyDisplayName: "匿名",
@@ -173,7 +173,7 @@
         15: {
             title: "Anonymity V",
             unlocked() { return true },
-            description: "Gain 25% of rank points per second, and gain 5% of tier points per second.",
+            description: "Gain 25% of rank points 每秒, and gain 5% of tier points 每秒.",
             cost: new Decimal(212),
             currencyLocation() { return player.an },
             currencyDisplayName: "匿名",
@@ -205,7 +205,7 @@
         17: {
             title: "Anonymity VII",
             unlocked() { return true },
-            description: "Gain 100% of rank points per second, and gain 25% of tier points per second, and gain 5% of tetr points per second.",
+            description: "Gain 100% of rank points 每秒, and gain 25% of tier points 每秒, and gain 5% of tetr points 每秒.",
             cost: new Decimal(2345),
             currencyLocation() { return player.an },
             currencyDisplayName: "匿名",
@@ -315,7 +315,7 @@
                 content: [
                     ["blank", "10px"],
                     ["row", [
-                        ["raw-html", () => { return "You have <h3>" + format(player.an.anonymity) + "</h3> anonymity." }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+                        ["raw-html", () => { return "你有 <h3>" + format(player.an.anonymity) + "</h3> anonymity." }, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
                         ["raw-html", () => { return "(+" + format(player.an.anonymityToGet) + ")" }, () => {
                             let look = {color: "white", fontSize: "20px", fontFamily: "monospace", marginLeft: "10px"}
                             player.an.anonymityToGet.gte(1) ? look.color = "white" : look.color = "gray"
@@ -333,7 +333,7 @@
         },
     },
     tabFormat: [
-        ["raw-html", () => {return "You have <h3>" + format(player.cp.replicantiPoints) + "</h3> replicanti points."}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
+        ["raw-html", () => {return "你有 <h3>" + format(player.cp.replicantiPoints) + "</h3> replicanti points."}, {color: "white", fontSize: "20px", fontFamily: "monospace"}],
         ["raw-html", () => {return "Replicanti Mult: " + format(player.cp.replicantiPointsMult, 4) + "x"}, {color: "white", fontSize: "16px", fontFamily: "monospace"}],
         ["row", [["bar", "replicantiBar"]]],
         ["microtabs", "stuff", { 'border-width': '0px' }],

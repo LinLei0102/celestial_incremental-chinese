@@ -470,7 +470,7 @@
         11: {
             title: "Focus Jocus",
             unlocked() { return true },
-            description: "Earn 25% of jocus essence per second while in fear challenge.",
+            description: "Earn 25% of jocus essence 每秒 while in fear challenge.",
             cost: new Decimal(100),
             currencyLocation() { return player.en },
             currencyDisplayName: "Enhance Points",
@@ -596,7 +596,7 @@
     },
     tabFormat: [
         ["row", [
-            ["raw-html", () => {return "You have <h3>" + format(player.en.enhancePoints) + "</h3> enhance points."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
+            ["raw-html", () => {return "你有 <h3>" + format(player.en.enhancePoints) + "</h3> enhance points."}, {color: "white", fontSize: "24px", fontFamily: "monospace"}],
                 ["raw-html", () => {return "(+" + format(player.en.enhancePointsToGet) + ")" }, () => {
                     let look = {color: "white", fontSize: "24px", fontFamily: "monospace", marginLeft: "10px"}
                     player.en.enhancePointsToGet.gte(1) ? look.color = "white" : look.color = "gray"
