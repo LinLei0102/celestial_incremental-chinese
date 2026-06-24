@@ -638,22 +638,22 @@
     infoboxes: {
         1: {
             title: "超物理值",
-            body() { return "Based on my research, a superphysical value refers to currencies such as points, prestige points, and infinity points; they aren't tangible items that physical beings can interact with, but they still exist in the universe for varying purposes. The main reason superphysical values exist within a Universe is to give structure and reason within the universe. They can also be used to promote growth of a real, non-superphysical value or physical objects. This also prevents total chaos from spawning. Superphysical values can be used to promote the growth of both real, physical values and other superphysical values. When a Universe is created, a default Superphysical Value is created with it. Superphysical Values can transform and evolve either by reaching a certain amount and causing a forced transformation, or through a manual transformation process." },
+            body() { return "根据我的研究，超物理值指的是如点数、威望点数和无限点数之类的货币；它们不是物理存在可以触碰的有形物品，但它们仍然存在于宇宙中，服务于不同的目的。超物理值存在于宇宙中的主要原因是为了赋予宇宙结构和意义。它们也可以用来促进真实的、非超物理值或物理物体的增长。这同时防止了完全的混沌产生。超物理值可以用来促进真实物理值和其他超物理值的增长。当一个宇宙被创造时，一个默认的超物理值也随之被创造。超物理值可以通过达到一定数量触发强制转化，或通过手动转化过程来转化和进化。" },
             unlocked() { return true },      
         },
         2: {
             title: "预知",
-            body() { return "The power of sensing superphysical values is a power only a few can achieve. However, this is not so rare among us celestials. I don\'t know why, but this power is within our nature. Superphysical values aren\'t visible by eye, but they are visible using some kind of sensors, which are also made of superphysical values. I\'ve yet to name these sensors. Some advanced forms of foresight can lead to the manipulation of super physical values. Cante can manipulate replicanti, and Nova can manipulate singularity. Another advanced form of foresight is using superphysical values in physical ways. I, for example, can manipulate the laws of physics using superphysical values." },
+            body() { return "感知超物理值的能力只有少数人能够掌握。不过，在我们天体精灵之中这并不罕见。我不知道为什么，但这种力量是我们的天性。超物理值肉眼无法看见，但可以通过某种传感器来观测，这些传感器同样由超物理值构成。我还没给这些传感器命名。某些高级形式的预知可以导致对超物理值的操控。坎特可以操控复制体，诺娃可以操控奇点。另一种高级形式的预知是以物理方式使用超物理值。例如，我可以用超物理值操控物理法则。" },
             unlocked() { return hasUpgrade("i", 15) },       
         },
         3: {
             title: "宇宙",
-            body() { return "Throughout my time of traversing the multiverse, I've noticed many different types of universes. The first type is an empty universe. Theses universes only consist of boundaries, and within those boundaries, are nothing. The second type is a non-living universe. These universes have an abundance of matter, but a lack of living organisms. The third type universe is a living universe. These universes contain lifeforms, and even advanced civilizations in some cases. The final type of universe is a fantasy universe. These universes contain magic power, which can lead to the universe containing different supernatural elements within it. Now. I am trying to create a fifth type of universe. A universe that runs completely on superphysical values. It would benefit the celestials a lot." },
+            body() { return "在我穿越多元宇宙的旅途中，我注意到了许多不同类型的宇宙。第一种是空宇宙。这些宇宙只有边界，边界之内空无一物。第二种是无生命宇宙。这些宇宙有大量的物质，但缺乏生命有机体。第三种宇宙是生命宇宙。这些宇宙包含生命体，有时甚至包含高级文明。最后一种宇宙是幻想宇宙。这些宇宙包含魔法力量，这会导致宇宙中出现不同的超自然元素。现在。我正在尝试创造第五种宇宙。一个完全以超物理值运行的宇宙。这对天体精灵们会有很大好处。" },
             unlocked() { return hasUpgrade("i", 21) },      
         },
         4: {
             title: "领域",
-            body() { return "The multiverse is divided into six realms. Each realm containing a certain amount of universes, and some realms are higher than others on a metaphysical plane. There are six realms: The creator realm, the higher plane of existence, the death realm, the dimensional realm, the dream realm, and the void. It is believed that long ago, a being of immense power had split the multiverse into the realms. Over time, each realm started to develop their own unique traits and lifeforms. Eventually, the realms started to have contact with one another, and a multiversal scale conflict broke out. Over time, some realms formed alliances against others. We are still in war." },
+            body() { return "多元宇宙被划分为六个领域。每个领域包含一定数量的宇宙，某些领域在形而上学层面上比其他领域更高。六个领域分别是：造物主领域、高阶存在位面、死亡领域、维度领域、梦境领域和虚空领域。据信在很久以前，一个拥有无上力量的存在将多元宇宙分裂成了这些领域。随着时间的推移，每个领域开始发展出自己独特的特性和生命形式。最终，领域之间开始相互接触，一场多元宇宙规模的冲突爆发了。随着时间的推移，一些领域结成了联盟对抗其他领域。战争仍在继续。" },
             unlocked() { return player.ca.defeatedCante || player.s.highestSingularityPoints.gt(0)},      
         },
     },
